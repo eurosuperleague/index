@@ -1,8 +1,0 @@
-{
-  "name": "index-modernizer",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "modernize": "node \"%CD%\\tools\\modernize-html.mjs\""
-  }
-}
