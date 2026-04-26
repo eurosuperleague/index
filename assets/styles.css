@@ -1,6 +1,5 @@
 /* ============================================================
    BSL Index — Global Stylesheet
-   Drop this in the root /index/ folder
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
@@ -8,35 +7,42 @@
 /* ── Reset & Base ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+html { -webkit-text-size-adjust: 100%; }
+
 body {
   font-family: 'Inter', Tahoma, Arial, sans-serif;
   background-color: #f0f2f5;
   background-image: none !important;
   color: #1a1a2e;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
-  padding: 20px;
+  padding: 12px;
+  overflow-x: hidden;
+  animation: fadein 0.3s ease;
+  max-width: 100vw;
 }
+
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
 
 /* ── Links ────────────────────────────────────────────────── */
 a { text-decoration: none; transition: color 0.15s; }
 a:hover { text-decoration: underline; }
 
 a.linkmain {
-  font-size: 10pt;
+  font-size: 9.5pt;
   font-weight: 500;
   color: #4a4a6a;
 }
 a.linkmain:hover { color: #1a1a2e; }
 
 a.linkhuman {
-  font-size: 10pt;
+  font-size: 9.5pt;
   font-weight: 600;
   color: #2563eb;
 }
 a.linkhuman:hover { color: #1d4ed8; }
 
-/* ── Tables ───────────────────────────────────────────────── */
+/* ── Tables — fit to screen ───────────────────────────────── */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -44,79 +50,102 @@ table {
   overflow: hidden;
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   margin-bottom: 6px;
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: fixed;
+}
+
+/* Tables with explicit width attrs scroll if needed */
+table[width] {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  table-layout: auto;
 }
 
 /* ── Header cells ─────────────────────────────────────────── */
 td.header {
   background: #1e293b !important;
-  font-size: 9.5pt;
+  font-size: 7.5pt;
   font-weight: 600;
   color: #f1f5f9 !important;
-  padding: 8px 10px;
-  letter-spacing: 0.03em;
+  padding: 6px 7px;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  font-size: 8.5pt;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 td.plainheader {
   background: #1e293b !important;
   font-family: 'Inter', Tahoma, sans-serif;
-  font-size: 20pt;
+  font-size: 16pt;
   font-weight: 700;
   color: #f1f5f9 !important;
-  padding: 14px 16px;
+  padding: 12px 14px;
+  white-space: nowrap;
 }
 
 td.headerbg {
   background: #1e293b !important;
   font-family: 'Inter', Tahoma, sans-serif;
-  font-size: 8pt;
+  font-size: 7.5pt;
   font-weight: 600;
   color: #94a3b8 !important;
-  padding: 6px 10px;
+  padding: 5px 8px;
 }
 
 /* ── Page title header ────────────────────────────────────── */
 td.newheader {
   font-family: 'Inter', Tahoma, sans-serif;
-  font-size: 22pt;
+  font-size: 17pt;
   font-weight: 700;
   color: #1e293b;
-  padding: 8px 0 4px;
+  padding: 6px 0 4px;
   letter-spacing: -0.02em;
 }
 
 /* ── Section / table title ────────────────────────────────── */
 td.tableheader {
-  font-size: 13pt;
+  font-size: 11pt;
   font-weight: 700;
   color: #1e293b;
-  padding: 14px 10px 6px;
+  padding: 10px 8px 5px;
 }
 
-/* ── Team header (player pages) ───────────────────────────── */
+/* ── Team header ──────────────────────────────────────────── */
 td.teamheader {
   font-family: 'Inter', Tahoma, sans-serif;
-  font-size: 20pt;
+  font-size: 16pt;
   font-weight: 700;
   color: #fff !important;
-  padding: 14px 16px 4px;
+  padding: 12px 14px 4px;
 }
 
 td.teamheader2 {
   font-family: 'Inter', Tahoma, sans-serif;
-  font-size: 10pt;
+  font-size: 9.5pt;
   font-weight: 500;
   color: #e2e8f0 !important;
-  padding: 2px 16px 10px;
+  padding: 2px 14px 8px;
 }
 
 /* ── Data cells ───────────────────────────────────────────── */
 td.main {
-  font-size: 10pt;
+  font-size: 9pt;
   font-weight: 400;
   color: #1e293b;
-  padding: 7px 10px;
+  padding: 5px 7px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+
+/* Name columns — allow more space */
+td.main:nth-child(2) {
+  max-width: 160px;
 }
 
 /* ── Alternating rows ─────────────────────────────────────── */
@@ -133,12 +162,12 @@ tr.teamcolor { color: #ffffff; }
 hr {
   border: none;
   border-top: 1px solid #cbd5e1;
-  margin: 12px 0;
+  margin: 10px 0;
 }
 
 /* ── Footer font ──────────────────────────────────────────── */
 font[size="2"] {
-  font-size: 9pt;
+  font-size: 8.5pt;
   color: #64748b;
 }
 
@@ -146,17 +175,19 @@ font[size="2"] {
 body[bgcolor="#212529"],
 body[style*="212529"] {
   background: #0f172a !important;
-  padding: 12px 8px;
+  padding: 10px 6px;
 }
 
 a.menulink {
-  font-size: 10pt;
+  font-size: 9.5pt;
   font-weight: 500;
   color: #e2e8f0 !important;
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 5px 8px;
   border-radius: 5px;
   transition: background 0.15s;
+  min-height: 36px;
 }
 
 a.menulink:hover {
@@ -166,48 +197,23 @@ a.menulink:hover {
 }
 
 /* ── Utility ──────────────────────────────────────────────── */
-br { display: block; margin: 6px 0; content: ""; }
+br { display: block; margin: 4px 0; content: ""; }
 
-table[width="800"] {
-  width: 95% !important;
-  max-width: 950px !important;
-}
-td.header, td.main {
-  white-space: nowrap;
-}
-
+/* Colour rating boxes */
 td[height="10"][width="10"] {
-  width: 40px !important;
-  min-width: 40px !important;
+  width: 20px !important;
+  min-width: 20px !important;
+  max-width: 32px!important;
   height: 10px !important;
   border-radius: 3px;
 }
-/* Target only the outer table that contains the width="320" finance sub-table */
+
+/* Hide finance sub-table wrapper */
 table[width="800"]:has(table[width="320"]) {
   display: none !important;
 }
 
-body { animation: fadein 0.3s ease; }
-@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
-
-table {
-  table-layout: auto;
-}
-
-td.header, td.main {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-table[width="800"],
-table[width] {
-  width: 100% !important;
-  max-width: 100% !important;
-  display: block;
-  overflow-x: auto;
-}
+/* ── Scrollbar styling ────────────────────────────────────── */
+table[width]::-webkit-scrollbar { height: 4px; }
+table[width]::-webkit-scrollbar-track { background: #e2e8f0; border-radius: 2px; }
+table[width]::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 2px; }
