@@ -186,3 +186,6 @@ td[height="10"][width="10"] {
 table[width="800"]:has(table[width="320"]) {
   display: none !important;
 }
+
+body { animation: fadein 0.3s ease; }
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
