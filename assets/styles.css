@@ -65,7 +65,6 @@ table[width] {
 
 /* ── Header cells ─────────────────────────────────────────── */
 td.header {
-  background: #1e293b !important;
   font-size: 7.5pt;
   font-weight: 600;
   color: #f1f5f9 !important;
@@ -203,7 +202,7 @@ br { display: block; margin: 4px 0; content: ""; }
 td[height="10"][width="10"] {
   width: 20px !important;
   min-width: 20px !important;
-  max-width: 32px!important;
+  max-width: 32!important;
   height: 10px !important;
   border-radius: 3px;
 }
@@ -214,6 +213,6 @@ table[width="800"]:has(table[width="320"]) {
 }
 
 /* ── Scrollbar styling ────────────────────────────────────── */
-table[width]::-webkit-scrollbar { height: 4px; }
+table[width]::-webkit-scrollbar { height: 8px; }
 table[width]::-webkit-scrollbar-track { background: #e2e8f0; border-radius: 2px; }
 table[width]::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 2px; }
