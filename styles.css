@@ -1,0 +1,188 @@
+/* ============================================================
+   BSL Index — Global Stylesheet
+   Drop this in the root /index/ folder
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', Tahoma, Arial, sans-serif;
+  background-color: #f0f2f5;
+  background-image: none !important;
+  color: #1a1a2e;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+/* ── Links ────────────────────────────────────────────────── */
+a { text-decoration: none; transition: color 0.15s; }
+a:hover { text-decoration: underline; }
+
+a.linkmain {
+  font-size: 10pt;
+  font-weight: 500;
+  color: #4a4a6a;
+}
+a.linkmain:hover { color: #1a1a2e; }
+
+a.linkhuman {
+  font-size: 10pt;
+  font-weight: 600;
+  color: #2563eb;
+}
+a.linkhuman:hover { color: #1d4ed8; }
+
+/* ── Tables ───────────────────────────────────────────────── */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  margin-bottom: 6px;
+}
+
+/* ── Header cells ─────────────────────────────────────────── */
+td.header {
+  background: #1e293b !important;
+  font-size: 9.5pt;
+  font-weight: 600;
+  color: #f1f5f9 !important;
+  padding: 8px 10px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 8.5pt;
+}
+
+td.plainheader {
+  background: #1e293b !important;
+  font-family: 'Inter', Tahoma, sans-serif;
+  font-size: 20pt;
+  font-weight: 700;
+  color: #f1f5f9 !important;
+  padding: 14px 16px;
+}
+
+td.headerbg {
+  background: #1e293b !important;
+  font-family: 'Inter', Tahoma, sans-serif;
+  font-size: 8pt;
+  font-weight: 600;
+  color: #94a3b8 !important;
+  padding: 6px 10px;
+}
+
+/* ── Page title header ────────────────────────────────────── */
+td.newheader {
+  font-family: 'Inter', Tahoma, sans-serif;
+  font-size: 22pt;
+  font-weight: 700;
+  color: #1e293b;
+  padding: 8px 0 4px;
+  letter-spacing: -0.02em;
+}
+
+/* ── Section / table title ────────────────────────────────── */
+td.tableheader {
+  font-size: 13pt;
+  font-weight: 700;
+  color: #1e293b;
+  padding: 14px 10px 6px;
+}
+
+/* ── Team header (player pages) ───────────────────────────── */
+td.teamheader {
+  font-family: 'Inter', Tahoma, sans-serif;
+  font-size: 20pt;
+  font-weight: 700;
+  color: #fff !important;
+  padding: 14px 16px 4px;
+}
+
+td.teamheader2 {
+  font-family: 'Inter', Tahoma, sans-serif;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #e2e8f0 !important;
+  padding: 2px 16px 10px;
+}
+
+/* ── Data cells ───────────────────────────────────────────── */
+td.main {
+  font-size: 10pt;
+  font-weight: 400;
+  color: #1e293b;
+  padding: 7px 10px;
+}
+
+/* ── Alternating rows ─────────────────────────────────────── */
+tr.row1 { background: #f8fafc; }
+tr.row1:hover { background: #e8f0fe; }
+
+tr.row2 { background: #eef2f7; }
+tr.row2:hover { background: #dbeafe; }
+
+/* ── Team colour row ──────────────────────────────────────── */
+tr.teamcolor { color: #ffffff; }
+
+/* ── HR divider ───────────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 1px solid #cbd5e1;
+  margin: 12px 0;
+}
+
+/* ── Footer font ──────────────────────────────────────────── */
+font[size="2"] {
+  font-size: 9pt;
+  color: #64748b;
+}
+
+/* ── Menu sidebar ─────────────────────────────────────────── */
+body[bgcolor="#212529"],
+body[style*="212529"] {
+  background: #0f172a !important;
+  padding: 12px 8px;
+}
+
+a.menulink {
+  font-size: 10pt;
+  font-weight: 500;
+  color: #e2e8f0 !important;
+  display: block;
+  padding: 5px 8px;
+  border-radius: 5px;
+  transition: background 0.15s;
+}
+
+a.menulink:hover {
+  background: rgba(255,255,255,0.1);
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* ── Utility ──────────────────────────────────────────────── */
+br { display: block; margin: 6px 0; content: ""; }
+
+table[width="800"] {
+  width: 95% !important;
+  max-width: 950px !important;
+}
+td.header, td.main {
+  white-space: nowrap;
+}
+
+td[height="10"][width="10"] {
+  width: 40px !important;
+  min-width: 40px !important;
+  height: 10px !important;
+  border-radius: 3px;
+}
+/* Target only the outer table that contains the width="320" finance sub-table */
+table[width="800"]:has(table[width="320"]) {
+  display: none !important;
+}
