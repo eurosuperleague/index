@@ -189,3 +189,25 @@ table[width="800"]:has(table[width="320"]) {
 
 body { animation: fadein 0.3s ease; }
 @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+
+table {
+  table-layout: auto;
+}
+
+td.header, td.main {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+table[width="800"],
+table[width] {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block;
+  overflow-x: auto;
+}
