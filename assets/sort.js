@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
       header.style.userSelect = 'none';
 
       var arrow = document.createElement('span');
-      arrow.style.cssText = 'margin-left:5px;opacity:0.45;font-size:9px;font-family:monospace;';
-      arrow.textContent = '^v';
+      arrow.style.cssText = 'margin-left:3px;opacity:0.45;font-size:6px;font-family:monospace;';
+      arrow.textContent = 'v';
       header.appendChild(arrow);
 
       var asc = true;
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Reset all arrows
         headers.forEach(function (h) {
           var a = h.querySelector('span');
-          if (a) { a.textContent = '^v'; a.style.opacity = '0.45'; }
+          if (a) { a.textContent = 'v'; a.style.opacity = '0.45'; }
         });
 
         rows.sort(function (a, b) {
