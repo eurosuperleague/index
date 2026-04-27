@@ -216,3 +216,23 @@ table[width="800"]:has(table[width="320"]) {
 table[width]::-webkit-scrollbar { height: 8px; }
 table[width]::-webkit-scrollbar-track { background: #e2e8f0; border-radius: 2px; }
 table[width]::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 2px; }
+/* Colour rating box — fixed width */
+td > table[border="1"][cellpadding="0"][cellspacing="0"] {
+  width: 24px !important;
+  min-width: 24px !important;
+  max-width: 24px !important;
+  display: inline-table !important;
+}
+
+td > table[border="1"][cellpadding="0"][cellspacing="0"] td {
+  width: 24px !important;
+  max-width: 24px !important;
+  height: 10px !important;
+  padding: 0 !important;
+}
+/* Shrink the td that contains the colour box */
+td:has(> table[border="1"][cellpadding="0"][cellspacing="0"]) {
+  width: 30px !important;
+  padding: 0 4px !important;
+  white-space: nowrap !important;
+}
