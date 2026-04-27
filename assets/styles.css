@@ -171,8 +171,8 @@ font[size="2"] {
 }
 
 /* ── Menu sidebar ─────────────────────────────────────────── */
-body[bgcolor="#212529"],
-body[style*="212529"] {
+body[bgcolor="#990000"],
+body[style*="990000"] {
   background: #0f172a !important;
   padding: 10px 6px;
 }
