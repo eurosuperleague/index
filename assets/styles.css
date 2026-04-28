@@ -155,24 +155,24 @@ tr.row2 { background: #e2e8f0; }
 tr.row2:hover { background: #dbeafe; }
 
 /* Standings page promotion/relegation bands */
-body > table:nth-of-type(1):has(td.newheader) + table[width="800"] tr:nth-child(3) {
+body.page-standings > table:nth-of-type(1):has(td.newheader) + table[width="800"] tr:nth-child(3) {
   background: #f4d35e !important;
 }
 
-body > table:nth-of-type(1):has(td.newheader) + table[width="800"] tr:nth-last-child(-n+2) {
+body.page-standings > table:nth-of-type(1):has(td.newheader) + table[width="800"] tr:nth-last-child(-n+2) {
   background: #efb6b6 !important;
 }
 
-body > table:nth-of-type(3):has(td.newheader) + table[width="800"] tr:nth-child(3),
-body > table:nth-of-type(3):has(td.newheader) + table[width="800"] tr:nth-child(4) {
+body.page-standings > table:nth-of-type(3):has(td.newheader) + table[width="800"] tr:nth-child(3),
+body.page-standings > table:nth-of-type(3):has(td.newheader) + table[width="800"] tr:nth-child(4) {
   background: #b7e3be !important;
 }
 
-body > table:nth-of-type(3):has(td.newheader) + table[width="800"] tr:last-child {
+body.page-standings > table:nth-of-type(3):has(td.newheader) + table[width="800"] tr:last-child {
   background: #efb6b6 !important;
 }
 
-body > table:nth-of-type(5):has(td.newheader) + table[width="800"] tr:nth-child(3) {
+body.page-standings > table:nth-of-type(5):has(td.newheader) + table[width="800"] tr:nth-child(3) {
   background: #b7e3be !important;
 }
 

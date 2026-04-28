@@ -112,6 +112,12 @@
     return /\/standings\.htm$/i.test(window.location.pathname) || /\\standings\.htm$/i.test(window.location.pathname);
   }
 
+  function markStandingsPage() {
+    if (shouldAttachStandingsSearch()) {
+      document.body.classList.add("page-standings");
+    }
+  }
+
   function ensureSearchRoot() {
     if (!shouldAttachStandingsSearch()) {
       return null;
@@ -246,6 +252,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    markStandingsPage();
     initPlayerSearch();
   });
 })();
