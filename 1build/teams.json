@@ -1,146 +1,146 @@
 [
     {
-        "id": "roster5",
-        "name": "Arsenal",
-        "file": "roster5.htm",
-        "url": "../rosters/roster5.htm"
-    },
-    {
-        "id": "roster6",
-        "name": "Aston Villa",
-        "file": "roster6.htm",
-        "url": "../rosters/roster6.htm"
-    },
-    {
-        "id": "roster21",
-        "name": "Bournemouth",
-        "file": "roster21.htm",
-        "url": "../rosters/roster21.htm"
-    },
-    {
-        "id": "roster22",
-        "name": "Brentford",
-        "file": "roster22.htm",
-        "url": "../rosters/roster22.htm"
-    },
-    {
-        "id": "roster23",
-        "name": "Brighton",
-        "file": "roster23.htm",
-        "url": "../rosters/roster23.htm"
-    },
-    {
-        "id": "roster7",
-        "name": "Chelsea",
-        "file": "roster7.htm",
-        "url": "../rosters/roster7.htm"
-    },
-    {
-        "id": "roster24",
-        "name": "Crystal Palace",
-        "file": "roster24.htm",
-        "url": "../rosters/roster24.htm"
-    },
-    {
-        "id": "roster8",
-        "name": "Everton",
-        "file": "roster8.htm",
-        "url": "../rosters/roster8.htm"
-    },
-    {
-        "id": "roster25",
-        "name": "Fulham",
-        "file": "roster25.htm",
-        "url": "../rosters/roster25.htm"
-    },
-    {
-        "id": "roster26",
-        "name": "Ipswich",
-        "file": "roster26.htm",
-        "url": "../rosters/roster26.htm"
-    },
-    {
-        "id": "roster18",
-        "name": "Leeds United",
-        "file": "roster18.htm",
-        "url": "../rosters/roster18.htm"
-    },
-    {
-        "id": "roster13",
-        "name": "Leicester",
-        "file": "roster13.htm",
-        "url": "../rosters/roster13.htm"
-    },
-    {
         "id": "roster9",
-        "name": "Liverpool",
+        "name": "AC Milan",
         "file": "roster9.htm",
         "url": "../rosters/roster9.htm"
     },
     {
-        "id": "roster10",
-        "name": "Manchester City",
-        "file": "roster10.htm",
-        "url": "../rosters/roster10.htm"
-    },
-    {
-        "id": "roster11",
-        "name": "Manchester United",
-        "file": "roster11.htm",
-        "url": "../rosters/roster11.htm"
-    },
-    {
-        "id": "roster14",
-        "name": "Newcastle",
-        "file": "roster14.htm",
-        "url": "../rosters/roster14.htm"
-    },
-    {
-        "id": "roster15",
-        "name": "Nottingham Forest",
-        "file": "roster15.htm",
-        "url": "../rosters/roster15.htm"
-    },
-    {
-        "id": "roster19",
-        "name": "Sheffield United",
-        "file": "roster19.htm",
-        "url": "../rosters/roster19.htm"
-    },
-    {
-        "id": "roster27",
-        "name": "Southampton",
-        "file": "roster27.htm",
-        "url": "../rosters/roster27.htm"
-    },
-    {
-        "id": "roster20",
-        "name": "Sunderland",
-        "file": "roster20.htm",
-        "url": "../rosters/roster20.htm"
-    },
-    {
         "id": "roster12",
-        "name": "Tottenham",
+        "name": "AFC Richmond",
         "file": "roster12.htm",
         "url": "../rosters/roster12.htm"
     },
     {
+        "id": "roster18",
+        "name": "Ajax",
+        "file": "roster18.htm",
+        "url": "../rosters/roster18.htm"
+    },
+    {
         "id": "roster16",
-        "name": "West Ham",
+        "name": "Arsenal",
         "file": "roster16.htm",
         "url": "../rosters/roster16.htm"
     },
     {
+        "id": "roster19",
+        "name": "Aston Villa",
+        "file": "roster19.htm",
+        "url": "../rosters/roster19.htm"
+    },
+    {
+        "id": "roster11",
+        "name": "Atletico Madrid",
+        "file": "roster11.htm",
+        "url": "../rosters/roster11.htm"
+    },
+    {
+        "id": "roster24",
+        "name": "Barcelona",
+        "file": "roster24.htm",
+        "url": "../rosters/roster24.htm"
+    },
+    {
+        "id": "roster7",
+        "name": "Bayern Munich",
+        "file": "roster7.htm",
+        "url": "../rosters/roster7.htm"
+    },
+    {
+        "id": "roster13",
+        "name": "Benfica",
+        "file": "roster13.htm",
+        "url": "../rosters/roster13.htm"
+    },
+    {
+        "id": "roster10",
+        "name": "Brighton",
+        "file": "roster10.htm",
+        "url": "../rosters/roster10.htm"
+    },
+    {
         "id": "roster17",
-        "name": "Wolves",
+        "name": "Chelsea",
         "file": "roster17.htm",
         "url": "../rosters/roster17.htm"
     },
     {
+        "id": "roster6",
+        "name": "Crystal Palace",
+        "file": "roster6.htm",
+        "url": "../rosters/roster6.htm"
+    },
+    {
         "id": "roster28",
-        "name": "Wrexham",
+        "name": "Dortmund(Open)",
         "file": "roster28.htm",
         "url": "../rosters/roster28.htm"
+    },
+    {
+        "id": "roster26",
+        "name": "Inter Milan",
+        "file": "roster26.htm",
+        "url": "../rosters/roster26.htm"
+    },
+    {
+        "id": "roster14",
+        "name": "Juventus",
+        "file": "roster14.htm",
+        "url": "../rosters/roster14.htm"
+    },
+    {
+        "id": "roster27",
+        "name": "Liverpool (Stabby)",
+        "file": "roster27.htm",
+        "url": "../rosters/roster27.htm"
+    },
+    {
+        "id": "roster5",
+        "name": "Manchester United",
+        "file": "roster5.htm",
+        "url": "../rosters/roster5.htm"
+    },
+    {
+        "id": "roster15",
+        "name": "Marseille",
+        "file": "roster15.htm",
+        "url": "../rosters/roster15.htm"
+    },
+    {
+        "id": "roster20",
+        "name": "Monaco",
+        "file": "roster20.htm",
+        "url": "../rosters/roster20.htm"
+    },
+    {
+        "id": "roster21",
+        "name": "Paris Saint-Germain",
+        "file": "roster21.htm",
+        "url": "../rosters/roster21.htm"
+    },
+    {
+        "id": "roster8",
+        "name": "Real Madrid",
+        "file": "roster8.htm",
+        "url": "../rosters/roster8.htm"
+    },
+    {
+        "id": "roster23",
+        "name": "Sporting CP",
+        "file": "roster23.htm",
+        "url": "../rosters/roster23.htm"
+    },
+    {
+        "id": "roster22",
+        "name": "Tottenham Hotspur",
+        "file": "roster22.htm",
+        "url": "../rosters/roster22.htm"
+    },
+    {
+        "id": "roster25",
+        "name": "Valencia",
+        "file": "roster25.htm",
+        "url": "../rosters/roster25.htm"
     }
 ]
