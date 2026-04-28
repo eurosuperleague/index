@@ -2,6 +2,32 @@
   "use strict";
 
   var SEARCH_STYLE_ID = "player-search-styles";
+  var TEAM_NAMES = {
+    roster5: "Arsenal",
+    roster6: "Aston Villa",
+    roster7: "Chelsea",
+    roster8: "Everton",
+    roster9: "Liverpool",
+    roster10: "Manchester City",
+    roster11: "Manchester United",
+    roster12: "Tottenham",
+    roster13: "Leicester",
+    roster14: "Newcastle",
+    roster15: "Nottingham Forest",
+    roster16: "West Ham",
+    roster17: "Wolves",
+    roster18: "Leeds United",
+    roster19: "Sheffield United",
+    roster20: "Sunderland",
+    roster21: "Bournemouth",
+    roster22: "Brentford",
+    roster23: "Brighton",
+    roster24: "Crystal Palace",
+    roster25: "Fulham",
+    roster26: "Ipswich",
+    roster27: "Southampton",
+    roster28: "Wrexham"
+  };
 
   function isNestedPage() {
     return /\/(players|rosters|boxes)\//i.test(window.location.pathname);
@@ -87,11 +113,12 @@
       ".player-search__input:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12); }",
       ".player-search__dropdown { position: absolute; top: calc(100% + 8px); left: 0; right: 0; z-index: 121; max-height: 240px; overflow-y: auto; border: 1px solid #dbe3ee; border-radius: 10px; background: #fff; box-shadow: 0 14px 28px rgba(15, 23, 42, 0.16); }",
       ".player-search__dropdown[hidden] { display: none; }",
-      ".player-search__option { display: block; width: 100%; padding: 9px 11px; border: 0; border-bottom: 1px solid #eef2f7; background: transparent; color: #0f172a; text-align: left; cursor: pointer; }",
+      ".player-search__option { display: block; width: 100%; padding: 10px 11px; border: 0; border-bottom: 1px solid #eef2f7; background: transparent; color: #0f172a; text-align: left; cursor: pointer; }",
       ".player-search__option:last-child { border-bottom: 0; }",
       ".player-search__option:hover, .player-search__option:focus { background: #f8fafc; outline: none; }",
       ".player-search__name { display: block; font: 600 12px/1.3 Inter, Tahoma, Arial, sans-serif; }",
-      ".player-search__meta { display: block; margin-top: 2px; font: 500 10px/1.3 Inter, Tahoma, Arial, sans-serif; color: #64748b; }",
+      ".player-search__meta { display: block; margin-top: 2px; font: 500 10px/1.3 Inter, Tahoma, Arial, sans-serif; color: #475569; }",
+      ".player-search__submeta { display: block; margin-top: 3px; font: 500 10px/1.3 Inter, Tahoma, Arial, sans-serif; color: #64748b; }",
       ".player-search__empty { padding: 10px 11px; font: 500 11px/1.4 Inter, Tahoma, Arial, sans-serif; color: #64748b; }",
       "@media (max-width: 900px) { #player-search-root { position: sticky; top: 8px; right: auto; margin: 0 0 12px auto; } .player-search { padding: 8px; } }"
     ].join("");
@@ -156,11 +183,19 @@
       var option = document.createElement("button");
       option.type = "button";
       option.className = "player-search__option";
+      var metaBits = [player.teamName, player.pos ? player.pos : null, player.age ? "Age " + player.age : null].filter(Boolean);
+      var submetaBits = [player.ht, player.wt ? player.wt + " lbs" : null].filter(Boolean);
       option.innerHTML =
         '<span class="player-search__name">' + escapeHtml(player.name) + "</span>" +
         '<span class="player-search__meta">' +
-        escapeHtml([player.pos, player.team].filter(Boolean).join(" | ")) +
+        escapeHtml(metaBits.join(" | ")) +
         "</span>";
+      if (submetaBits.length) {
+        option.innerHTML +=
+          '<span class="player-search__submeta">' +
+          escapeHtml(submetaBits.join(" | ")) +
+          "</span>";
+      }
       option.addEventListener("click", function () {
         navigateToPlayer(player);
       });
@@ -198,7 +233,11 @@
             name: player.name || "",
             url: normalizePlayerUrl(player.url),
             team: player.team || "",
+            teamName: TEAM_NAMES[player.team] || player.team || "",
             pos: player.pos || "",
+            age: player.age || "",
+            ht: player.ht || "",
+            wt: player.wt || "",
             searchName: (player.name || "").toLowerCase()
           };
         });
