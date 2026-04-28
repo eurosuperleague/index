@@ -46,7 +46,7 @@ a.linkhuman:hover { color: #1d4ed8; }
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   margin-bottom: 6px;
@@ -61,6 +61,7 @@ table[width] {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   table-layout: auto;
+  border-radius: 12px;
 }
 
 /* ── Header cells ─────────────────────────────────────────── */
@@ -128,6 +129,23 @@ td.teamheader2 {
   font-weight: 500;
   color: #e2e8f0 !important;
   padding: 2px 14px 8px;
+}
+
+/* Top roster/team banner: keep it as a normal table so the header doesn't collapse */
+body > table:first-of-type:has(td.teamheader) {
+  display: table !important;
+  width: 100% !important;
+  max-width: none !important;
+  overflow: visible !important;
+  table-layout: auto !important;
+}
+
+body > table:first-of-type:has(td.teamheader) td.teamheader,
+body > table:first-of-type:has(td.teamheader) td.teamheader2 {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  min-width: 0;
 }
 
 /* ── Data cells ───────────────────────────────────────────── */

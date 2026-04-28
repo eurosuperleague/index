@@ -3,39 +3,13 @@
 
   var SEARCH_STYLE_ID = "player-search-styles";
   var WAIVER_TABLE_STYLE_ID = "waiver-table-styles";
-  var TEAM_NAMES = {
-    roster5: "Arsenal",
-    roster6: "Aston Villa",
-    roster7: "Chelsea",
-    roster8: "Everton",
-    roster9: "Liverpool",
-    roster10: "Manchester City",
-    roster11: "Manchester United",
-    roster12: "Tottenham",
-    roster13: "Leicester",
-    roster14: "Newcastle",
-    roster15: "Nottingham Forest",
-    roster16: "West Ham",
-    roster17: "Wolves",
-    roster18: "Leeds United",
-    roster19: "Sheffield United",
-    roster20: "Sunderland",
-    roster21: "Bournemouth",
-    roster22: "Brentford",
-    roster23: "Brighton",
-    roster24: "Crystal Palace",
-    roster25: "Fulham",
-    roster26: "Ipswich",
-    roster27: "Southampton",
-    roster28: "Wrexham"
-  };
 
   function isNestedPage() {
     return /\/(players|rosters|boxes)\//i.test(window.location.pathname);
   }
 
-  function getPlayersJsonPath() {
-    return isNestedPage() ? "../1build/players.json" : "1build/players.json";
+  function getBuildJsonPath(filename) {
+    return isNestedPage() ? "../1build/" + filename : "1build/" + filename;
   }
 
   function normalizePlayerUrl(url) {
@@ -50,22 +24,22 @@
     return url;
   }
 
-  function loadPlayersData() {
-    var jsonPath = getPlayersJsonPath();
+  function loadJsonData(filename) {
+    var jsonPath = getBuildJsonPath(filename);
 
     return fetch(jsonPath)
       .then(function (response) {
         if (!response.ok) {
-          throw new Error("Failed to load player data");
+          throw new Error("Failed to load " + filename);
         }
         return response.json();
       })
       .catch(function () {
-        return loadPlayersDataFromFrame(jsonPath);
+        return loadJsonDataFromFrame(jsonPath);
       });
   }
 
-  function loadPlayersDataFromFrame(jsonPath) {
+  function loadJsonDataFromFrame(jsonPath) {
     return new Promise(function (resolve, reject) {
       var frame = document.createElement("iframe");
       frame.hidden = true;
@@ -134,33 +108,38 @@
     var style = document.createElement("style");
     style.id = WAIVER_TABLE_STYLE_ID;
     style.textContent = [
-      "#waiver-database-root { margin: 0; }",
-      ".waiver-database { margin: 4px 0 10px; }",
-      ".waiver-database__title { margin: 0 0 6px; font: 700 20px/1.2 Inter, Tahoma, Arial, sans-serif; color: #1e293b; }",
-      ".waiver-database__subtitle { margin: 0 0 8px; font: 500 12px/1.4 Inter, Tahoma, Arial, sans-serif; color: #64748b; }",
-      ".waiver-database__controls { display: flex; flex-wrap: wrap; gap: 6px; align-items: end; margin: 0 0 8px; }",
+      "#waiver-database-root { margin: 0; max-width: 800px; }",
+      ".waiver-database { margin: 0 0 10px; }",
+      ".waiver-database__title { margin: 0; font: 700 17pt/1.1 Inter, Tahoma, Arial, sans-serif; color: #1e293b; letter-spacing: -0.02em; }",
+      ".waiver-database__title-rule { margin: 6px 0 10px; border: 0; border-top: 1px solid #cbd5e1; }",
+      ".waiver-database__section-title { margin: 0 0 6px; padding: 0 8px; font: 700 11pt/1.2 Inter, Tahoma, Arial, sans-serif; color: #1e293b; }",
+      ".waiver-database__subtitle { margin: 6px 0 8px; font: 500 8.5pt/1.3 Inter, Tahoma, Arial, sans-serif; color: #64748b; }",
+      ".waiver-database__controls { display: flex; flex-wrap: wrap; gap: 4px; align-items: end; margin: 0 0 10px; }",
       ".waiver-database__control { display: flex; flex-direction: column; gap: 4px; }",
       ".waiver-database__control--search { min-width: 220px; flex: 1 1 220px; }",
-      ".waiver-database__control label { font: 700 10px/1.2 Inter, Tahoma, Arial, sans-serif; color: #64748b; text-transform: uppercase; letter-spacing: 0.04em; }",
-      ".waiver-database__control input, .waiver-database__control select { height: 32px; padding: 0 10px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff; color: #0f172a; font: 500 12px/1.2 Inter, Tahoma, Arial, sans-serif; }",
+      ".waiver-database__control label { font: 700 7.5pt/1.1 Inter, Tahoma, Arial, sans-serif; color: #64748b; text-transform: uppercase; letter-spacing: 0.04em; }",
+      ".waiver-database__control input, .waiver-database__control select { height: 28px; padding: 0 8px; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; color: #0f172a; font: 500 8.5pt/1.1 Inter, Tahoma, Arial, sans-serif; }",
       ".waiver-database__control input:focus, .waiver-database__control select:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12); }",
-      ".waiver-database__clear { height: 32px; padding: 0 12px; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; color: #0f172a; font: 600 12px/1 Inter, Tahoma, Arial, sans-serif; cursor: pointer; }",
+      ".waiver-database__clear { height: 28px; padding: 0 10px; border: 1px solid #cbd5e1; border-radius: 4px; background: #f8fafc; color: #0f172a; font: 600 8.5pt/1 Inter, Tahoma, Arial, sans-serif; cursor: pointer; }",
       ".waiver-database__clear:hover { background: #eef2f7; }",
-      ".waiver-database__table-wrap { overflow-x: auto; border-radius: 10px; box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08); }",
-      ".waiver-database__table { width: 100%; min-width: 1080px; border-collapse: collapse; background: #ffffff; table-layout: fixed; }",
-      ".waiver-database__table td.header { position: sticky; top: 0; z-index: 2; padding: 6px 4px; background: #7f1d1d; color: #ffffff !important; font: 700 9px/1.15 Inter, Tahoma, Arial, sans-serif; text-align: center; white-space: nowrap; }",
+      ".waiver-database__top-scroll { overflow-x: auto; overflow-y: hidden; height: 14px; margin: 0 0 4px; }",
+      ".waiver-database__top-scroll-inner { height: 1px; }",
+      ".waiver-database__table-wrap { overflow-x: auto; border-radius: 0; box-shadow: none; }",
+      ".waiver-database__table { width: 800px; min-width: 1155px; border-collapse: collapse; background: #ffffff; table-layout: fixed; }",
+      ".waiver-database__table td.header { position: sticky; top: 0; z-index: 2; padding: 6px 3px; background: #990000; color: #ffffff !important; font: 700 var(--waiver-header-font-size, 7.5pt)/1.05 Inter, Tahoma, Arial, sans-serif; text-align: center; white-space: nowrap; }",
       ".waiver-database__table td.header--sortable { cursor: pointer; user-select: none; }",
-      ".waiver-database__table td.header:first-child, .waiver-database__table tbody td:first-child { text-align: left; }",
-      ".waiver-database__table tbody td { padding: 5px 4px; border-bottom: 1px solid #e2e8f0; font: 500 9px/1.25 Inter, Tahoma, Arial, sans-serif; color: #1e293b; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }",
-      ".waiver-database__table tbody tr:nth-child(odd) { background: #f8fafc; }",
-      ".waiver-database__table tbody tr:nth-child(even) { background: #eef2f7; }",
-      ".waiver-database__table tbody tr:hover { background: #e0f2fe; }",
+      ".waiver-database__table td.header--left, .waiver-database__table tbody td.main--left { text-align: left; }",
+      ".waiver-database__table tbody td.main { padding: 5px 7px; border-bottom: 0; font: 400 var(--waiver-cell-font-size, 9pt)/1.2 Inter, Tahoma, Arial, sans-serif; color: #1e293b; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }",
+      ".waiver-database__table tbody tr.row1 { background: #f1f5f9; }",
+      ".waiver-database__table tbody tr.row2 { background: #e2e8f0; }",
+      ".waiver-database__table tbody tr.row1:hover { background: #e8f0fe; }",
+      ".waiver-database__table tbody tr.row2:hover { background: #dbeafe; }",
       ".waiver-database__sort-indicator { margin-left: 3px; opacity: 0.55; font-size: 8px; }",
-      ".waiver-database__table col.player { width: 170px; }",
-      ".waiver-database__table col.team { width: 110px; }",
-      ".waiver-database__table col.small { width: 42px; }",
+      ".waiver-database__table col.player { width: 150px; }",
+      ".waiver-database__table col.team { width: 150px; }",
+      ".waiver-database__table col.small { width: 40px; }",
       ".waiver-database__table col.medium { width: 50px; }",
-      ".waiver-database__player-link { color: #0f172a; font-weight: 600; text-decoration: none; }",
+      ".waiver-database__player-link { color: #4a4a6a; font-weight: 500; text-decoration: none; }",
       ".waiver-database__player-link:hover { text-decoration: underline; }"
     ].join("");
 
@@ -280,6 +259,8 @@
     ];
     var container = document.createElement("section");
     var title = document.createElement("h1");
+    var titleRule = document.createElement("hr");
+    var sectionTitle = document.createElement("div");
     var subtitle = document.createElement("p");
     var controls = document.createElement("div");
     var searchControl = document.createElement("div");
@@ -298,6 +279,8 @@
     var directionLabel = document.createElement("label");
     var directionSelect = document.createElement("select");
     var clearButton = document.createElement("button");
+    var topScroll = document.createElement("div");
+    var topScrollInner = document.createElement("div");
     var tableWrap = document.createElement("div");
     var table = document.createElement("table");
     var colgroup = document.createElement("colgroup");
@@ -313,6 +296,8 @@
 
     container.className = "waiver-database";
     title.className = "waiver-database__title";
+    titleRule.className = "waiver-database__title-rule";
+    sectionTitle.className = "waiver-database__section-title";
     subtitle.className = "waiver-database__subtitle";
     controls.className = "waiver-database__controls";
     searchControl.className = "waiver-database__control waiver-database__control--search";
@@ -321,11 +306,14 @@
     sortControl.className = "waiver-database__control";
     directionControl.className = "waiver-database__control";
     clearButton.className = "waiver-database__clear";
+    topScroll.className = "waiver-database__top-scroll";
+    topScrollInner.className = "waiver-database__top-scroll-inner";
     tableWrap.className = "waiver-database__table-wrap";
     table.className = "waiver-database__table";
 
-    title.textContent = "Player Database";
-    subtitle.textContent = players.length + " players loaded from the shared player database.";
+    title.textContent = "Waiver Wire";
+    sectionTitle.textContent = "Attributes";
+    subtitle.textContent = players.length + " players shown from the shared player database.";
 
     searchLabel.textContent = "Search";
     searchInput.type = "search";
@@ -389,6 +377,9 @@
       }
 
       cell.className = "header";
+      if (column.key === "name" || column.key === "teamName") {
+        cell.classList.add("header--left");
+      }
       cell.textContent = column.label;
       cell.dataset.sortKey = column.key;
       cell.classList.add("header--sortable");
@@ -414,11 +405,15 @@
 
     tbody.appendChild(headRow);
 
+    topScroll.appendChild(topScrollInner);
     table.appendChild(colgroup);
     table.appendChild(tbody);
     container.appendChild(title);
+    container.appendChild(titleRule);
+    container.appendChild(sectionTitle);
     container.appendChild(subtitle);
     container.appendChild(controls);
+    container.appendChild(topScroll);
     tableWrap.appendChild(table);
     container.appendChild(tableWrap);
 
@@ -463,7 +458,14 @@
 
     sortSelect.value = state.sortKey;
     directionSelect.value = state.sortDirection;
+    syncWaiverScrollbars(topScroll, tableWrap, topScrollInner, table);
     renderBody();
+    updateWaiverTableFontSize(table);
+
+    window.addEventListener("resize", function () {
+      updateWaiverTableFontSize(table);
+      syncWaiverScrollbars(topScroll, tableWrap, topScrollInner, table);
+    });
 
     return container;
 
@@ -472,19 +474,26 @@
 
       applyWaiverHeaderState(headRow, state);
 
-      getVisiblePlayers(players, state).forEach(function (player, index) {
+      var visiblePlayers = getVisiblePlayers(players, state);
+
+      visiblePlayers.forEach(function (player, index) {
         var row = document.createElement("tr");
         row.className = index % 2 === 0 ? "row1" : "row2";
 
         columns.forEach(function (column) {
           var cell = document.createElement("td");
+          cell.className = "main";
 
           if (column.key === "name") {
             var link = document.createElement("a");
             link.className = "waiver-database__player-link";
             link.href = normalizePlayerUrl(player.url);
             link.textContent = player.name || "";
+            cell.classList.add("main--left");
             cell.appendChild(link);
+          } else if (column.key === "teamName") {
+            cell.classList.add("main--left");
+            cell.textContent = player[column.key] || "";
           } else {
             cell.textContent = player[column.key] || "";
           }
@@ -495,7 +504,52 @@
         tbody.appendChild(row);
       });
 
-      subtitle.textContent = getVisiblePlayers(players, state).length + " players shown from the shared player database.";
+      subtitle.textContent = visiblePlayers.length + " players shown from the shared player database.";
+      updateWaiverTableFontSize(table);
+      syncWaiverScrollbars(topScroll, tableWrap, topScrollInner, table);
+    }
+  }
+
+  function updateWaiverTableFontSize(table) {
+    if (!table) {
+      return;
+    }
+
+    var playerCol = table.querySelector("col.player");
+    var teamCol = table.querySelector("col.team");
+    var smallCol = table.querySelector("col.small");
+    var playerWidth = playerCol ? parseInt(playerCol.style.width || playerCol.getAttribute("width") || 150, 10) : 150;
+    var teamWidth = teamCol ? parseInt(teamCol.style.width || teamCol.getAttribute("width") || 110, 10) : 110;
+    var statWidth = smallCol ? parseInt(smallCol.style.width || smallCol.getAttribute("width") || 42, 10) : 42;
+    var containerWidth = table.parentElement ? table.parentElement.clientWidth : 0;
+    var tableWidth = Math.max(table.scrollWidth, 1);
+    var scale = containerWidth > 0 ? Math.min(containerWidth / tableWidth, 1) : 1;
+    var baseHeader = 8;
+    var baseCell = 9;
+    var compressedHeader = Math.max(7, Math.min(baseHeader, Math.floor((statWidth * scale) / 4.3)));
+    var compressedCell = Math.max(7, Math.min(baseCell, Math.floor((Math.min(playerWidth, teamWidth, statWidth) * scale) / 4.7)));
+
+    table.style.setProperty("--waiver-header-font-size", compressedHeader + "px");
+    table.style.setProperty("--waiver-cell-font-size", compressedCell + "px");
+  }
+
+  function syncWaiverScrollbars(topScroll, tableWrap, topScrollInner, table) {
+    if (!topScroll || !tableWrap || !topScrollInner || !table) {
+      return;
+    }
+
+    topScrollInner.style.width = table.scrollWidth + "px";
+
+    if (!topScroll.dataset.bound) {
+      topScroll.addEventListener("scroll", function () {
+        tableWrap.scrollLeft = topScroll.scrollLeft;
+      });
+
+      tableWrap.addEventListener("scroll", function () {
+        topScroll.scrollLeft = tableWrap.scrollLeft;
+      });
+
+      topScroll.dataset.bound = "true";
     }
   }
 
@@ -589,6 +643,28 @@
     return parseInt(match[1], 10) * 12 + parseInt(match[2], 10);
   }
 
+  function buildTeamMap(teams) {
+    return (teams || []).reduce(function (map, team) {
+      if (team && team.id) {
+        map[team.id] = team.name || team.id;
+      }
+      return map;
+    }, {});
+  }
+
+  function enrichPlayers(players, teamMap) {
+    return (players || []).map(function (player) {
+      var copy = {};
+
+      Object.keys(player || {}).forEach(function (key) {
+        copy[key] = player[key];
+      });
+
+      copy.teamName = teamMap[player.team] || player.team || "";
+      return copy;
+    });
+  }
+
   function renderResults(dropdown, matches, navigateToPlayer) {
     dropdown.innerHTML = "";
 
@@ -636,7 +712,7 @@
       .replace(/'/g, "&#39;");
   }
 
-  function initPlayerSearch() {
+  function initPlayerSearch(teamMap) {
     var root = ensureSearchRoot();
     if (!root) {
       return;
@@ -648,14 +724,14 @@
     var input = document.getElementById("player-search-input");
     var dropdown = document.getElementById("player-search-dropdown");
 
-    loadPlayersData()
+    loadJsonData("players.json")
       .then(function (players) {
-        var searchIndex = (players || []).map(function (player) {
+        var searchIndex = enrichPlayers(players, teamMap).map(function (player) {
           return {
             name: player.name || "",
             url: normalizePlayerUrl(player.url),
             team: player.team || "",
-            teamName: TEAM_NAMES[player.team] || player.team || "",
+            teamName: player.teamName || "",
             pos: player.pos || "",
             age: player.age || "",
             ht: player.ht || "",
@@ -712,7 +788,7 @@
       });
   }
 
-  function initWaiverDatabaseTable() {
+  function initWaiverDatabaseTable(teamMap) {
     var root = ensureWaiverTableRoot();
     if (!root) {
       return;
@@ -720,18 +796,9 @@
 
     ensureWaiverTableStyles();
 
-    loadPlayersData()
+    loadJsonData("players.json")
       .then(function (players) {
-        var enrichedPlayers = (players || []).map(function (player) {
-          var copy = {};
-
-          Object.keys(player).forEach(function (key) {
-            copy[key] = player[key];
-          });
-
-          copy.teamName = TEAM_NAMES[player.team] || player.team || "";
-          return copy;
-        });
+        var enrichedPlayers = enrichPlayers(players, teamMap);
 
         root.innerHTML = "";
         root.appendChild(buildWaiverTable(enrichedPlayers));
@@ -743,7 +810,15 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     markStandingsPage();
-    initPlayerSearch();
-    initWaiverDatabaseTable();
+    loadJsonData("teams.json")
+      .then(function (teams) {
+        var teamMap = buildTeamMap(teams);
+        initPlayerSearch(teamMap);
+        initWaiverDatabaseTable(teamMap);
+      })
+      .catch(function () {
+        initPlayerSearch({});
+        initWaiverDatabaseTable({});
+      });
   });
 })();

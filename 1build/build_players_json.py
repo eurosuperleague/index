@@ -6,7 +6,8 @@ from html.parser import HTMLParser
 # 1. PATH SETUP
 ROOT = os.path.dirname(os.path.abspath(__file__))
 ROSTERS_DIR = os.path.normpath(os.path.join(ROOT, "..", "rosters"))
-OUT = os.path.join(ROOT, "players.json")
+PLAYERS_OUT = os.path.join(ROOT, "players.json")
+TEAMS_OUT = os.path.join(ROOT, "teams.json")
 
 # The 16 numerical stats in your roster files
 ATTR_KEYS = [
@@ -16,6 +17,18 @@ ATTR_KEYS = [
 
 def clean(txt):
     return re.sub(r"\s+", " ", txt.replace("\xa0", " ")).strip()
+
+def extract_team_metadata(html, filename):
+    team_id = os.path.splitext(filename)[0]
+    title_match = re.search(r"<title>(.*?)</title>", html, re.IGNORECASE | re.DOTALL)
+    title = clean(title_match.group(1)) if title_match else team_id
+
+    return {
+        "id": team_id,
+        "name": title,
+        "file": filename,
+        "url": f"../rosters/{filename}"
+    }
 
 class RosterParser(HTMLParser):
     def __init__(self, team):
@@ -100,6 +113,7 @@ def main():
         return
 
     all_players_unique = []
+    all_teams = []
     seen_names = set()
     
     files = [f for f in os.listdir(ROSTERS_DIR) if f.lower().endswith((".htm", ".html"))]
@@ -108,6 +122,8 @@ def main():
         path = os.path.join(ROSTERS_DIR, file)
         with open(path, "r", encoding="latin-1") as f:
             html = f.read()
+
+        all_teams.append(extract_team_metadata(html, file))
         
         parser = RosterParser(os.path.splitext(file)[0])
         parser.feed(html)
@@ -122,10 +138,16 @@ def main():
         
         print(f"File {file}: Added {count} new players.")
 
-    with open(OUT, "w", encoding="utf-8") as f:
+    with open(PLAYERS_OUT, "w", encoding="utf-8") as f:
         json.dump(all_players_unique, f, indent=4)
+
+    all_teams.sort(key=lambda team: team["name"])
+
+    with open(TEAMS_OUT, "w", encoding="utf-8") as f:
+        json.dump(all_teams, f, indent=4)
         
-    print(f"\nFinal count: {len(all_players_unique)} unique players saved to {OUT}")
+    print(f"\nFinal count: {len(all_players_unique)} unique players saved to {PLAYERS_OUT}")
+    print(f"Final count: {len(all_teams)} teams saved to {TEAMS_OUT}")
 
 if __name__ == "__main__":
     main()
