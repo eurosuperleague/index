@@ -3,6 +3,7 @@
 
   var SEARCH_STYLE_ID = "player-search-styles";
   var WAIVER_TABLE_STYLE_ID = "waiver-table-styles";
+  var PLAYER_RATING_STYLE_ID = "player-rating-pill-styles";
 
   function isNestedPage() {
     return /\/(players|rosters|boxes)\//i.test(window.location.pathname);
@@ -49,8 +50,25 @@
       frame.addEventListener("load", function () {
         try {
           var frameDocument = frame.contentDocument || frame.contentWindow.document;
-          var raw = frameDocument && frameDocument.body ? frameDocument.body.textContent : "";
+          var raw = "";
+
+          if (frameDocument) {
+            if (frameDocument.body && frameDocument.body.textContent) {
+              raw = frameDocument.body.textContent;
+            }
+
+            if (!raw && frameDocument.documentElement && frameDocument.documentElement.textContent) {
+              raw = frameDocument.documentElement.textContent;
+            }
+
+            if (!raw) {
+              var pre = frameDocument.querySelector("pre");
+              raw = pre && pre.textContent ? pre.textContent : "";
+            }
+          }
+
           frame.remove();
+          raw = String(raw || "").replace(/^\uFEFF/, "").trim();
 
           if (!raw) {
             reject(new Error("No player data found"));
@@ -164,10 +182,31 @@
     return /\/waiverwire\.htm$/i.test(window.location.pathname) || /\\waiverwire\.htm$/i.test(window.location.pathname);
   }
 
+  function isPlayerPage() {
+    return /\/players\/player\d+\.htm$/i.test(window.location.pathname) || /\\players\\player\d+\.htm$/i.test(window.location.pathname);
+  }
+
   function markStandingsPage() {
     if (shouldAttachStandingsSearch()) {
       document.body.classList.add("page-standings");
     }
+  }
+
+  function ensurePlayerRatingStyles() {
+    if (document.getElementById(PLAYER_RATING_STYLE_ID)) {
+      return;
+    }
+
+    var style = document.createElement("style");
+    style.id = PLAYER_RATING_STYLE_ID;
+    style.textContent = [
+      ".player-rating-pills-row td { padding-top: 6px; vertical-align: top; }",
+      ".player-rating-pill-cell { white-space: nowrap; }",
+      ".player-rating-pill { display: inline-flex; align-items: center; justify-content: center; min-width: 26px; padding: 2px 8px; border-radius: 999px; color: #ffffff; font: 700 10px/1 Inter, Tahoma, Arial, sans-serif; box-shadow: 0 2px 6px rgba(15, 23, 42, 0.18); }",
+      ".player-rating-pill--na { background: rgba(255, 255, 255, 0.18); color: #f8fafc; border: 1px solid rgba(255, 255, 255, 0.28); box-shadow: none; }",
+      ".player-rating-pill-separator { display: inline-block; margin-right: 6px; color: rgba(255, 255, 255, 0.92); font: 700 12px/1 Inter, Tahoma, Arial, sans-serif; }"
+    ].join("");
+    document.head.appendChild(style);
   }
 
   function ensureSearchRoot() {
@@ -213,6 +252,106 @@
     }
 
     return root;
+  }
+
+  function getCurrentPlayerPath() {
+    return window.location.pathname.replace(/\\/g, "/").toLowerCase();
+  }
+
+  function normalizeName(value) {
+    return String(value || "").replace(/\s+/g, " ").trim().toLowerCase();
+  }
+
+  function findCurrentPlayerRecord(players) {
+    var currentPath = getCurrentPlayerPath();
+    var currentFile = currentPath.split("/").pop();
+    var currentNameNode = document.querySelector("body > table:first-of-type td.teamheader table td.teamheader");
+    var currentName = normalizeName(currentNameNode ? currentNameNode.textContent : "");
+
+    return (players || []).find(function (player) {
+      var playerUrl = String(player && player.url ? player.url : "").replace(/\\/g, "/").toLowerCase();
+      var playerFile = playerUrl.split("/").pop();
+      if (playerFile && currentFile && playerFile === currentFile) {
+        return true;
+      }
+
+      if (playerUrl && currentPath && currentPath.indexOf(playerUrl.replace("../", "/")) !== -1) {
+        return true;
+      }
+
+      return currentName && normalizeName(player && player.name) === currentName;
+    }) || null;
+  }
+
+  function getColorBarCells() {
+    return Array.prototype.slice.call(
+      document.querySelectorAll("body > table:first-of-type td.teamheader table td[bgcolor]")
+    ).slice(0, 2);
+  }
+
+  function formatRatingValue(value) {
+    var text = String(value || "").trim();
+    return text || "N/A";
+  }
+
+  function createRatingPill(text, backgroundColor, fallbackClassName) {
+    var pill = document.createElement("span");
+    pill.className = "player-rating-pill" + (fallbackClassName ? " " + fallbackClassName : "");
+    pill.textContent = text;
+    if (backgroundColor) {
+      pill.style.backgroundColor = backgroundColor;
+    }
+    return pill;
+  }
+
+  function injectPlayerRatingPills(player) {
+    if (!isPlayerPage()) {
+      return;
+    }
+
+    var headerTable = document.querySelector("body > table:first-of-type td.teamheader table");
+    var headerRow = headerTable && headerTable.querySelector("tr");
+    var colorCells = getColorBarCells();
+
+    if (!headerTable || !headerRow || colorCells.length < 2 || headerTable.querySelector(".player-rating-pills-row")) {
+      return;
+    }
+
+    ensurePlayerRatingStyles();
+
+    var overallColor = colorCells[0].getAttribute("bgcolor") || "";
+    var potentialColor = colorCells[1].getAttribute("bgcolor") || overallColor;
+    var overallText = formatRatingValue(player && player.overall);
+    var potentialText = formatRatingValue(player && player.potential);
+
+    var ratingRow = document.createElement("tr");
+    ratingRow.className = "player-rating-pills-row";
+
+    var overallCell = document.createElement("td");
+    overallCell.className = "player-rating-pill-cell";
+    overallCell.appendChild(
+      createRatingPill(overallText, overallText === "N/A" ? "" : overallColor, overallText === "N/A" ? "player-rating-pill--na" : "")
+    );
+
+    var potentialCell = document.createElement("td");
+    potentialCell.className = "player-rating-pill-cell";
+    var separator = document.createElement("span");
+    separator.className = "player-rating-pill-separator";
+    separator.textContent = "/";
+    separator.setAttribute("aria-label", "OVR slash POT");
+    separator.title = "OVR/POT";
+    potentialCell.appendChild(separator);
+    potentialCell.appendChild(
+      createRatingPill(potentialText, potentialText === "N/A" ? "" : potentialColor, potentialText === "N/A" ? "player-rating-pill--na" : "")
+    );
+
+    var spacerCell = document.createElement("td");
+
+    ratingRow.appendChild(overallCell);
+    ratingRow.appendChild(potentialCell);
+    ratingRow.appendChild(spacerCell);
+
+    headerTable.appendChild(ratingRow);
   }
 
   function buildWaiverTable(players) {
@@ -808,8 +947,23 @@
       });
   }
 
+  function initPlayerRatings() {
+    if (!isPlayerPage()) {
+      return;
+    }
+
+    loadJsonData("players.json")
+      .then(function (players) {
+        injectPlayerRatingPills(findCurrentPlayerRecord(players));
+      })
+      .catch(function () {
+        injectPlayerRatingPills(null);
+      });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     markStandingsPage();
+    initPlayerRatings();
     loadJsonData("teams.json")
       .then(function (teams) {
         var teamMap = buildTeamMap(teams);
