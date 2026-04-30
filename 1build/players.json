@@ -992,8 +992,8 @@
     {
         "name": "Bernard King",
         "url": "../players/player713.htm",
-        "team": "Draft",
-        "teamLabel": "Draft",
+        "team": "roster7",
+        "teamLabel": "Bayern Munich",
         "pos": "SF",
         "age": "22",
         "ht": "6-7",
@@ -10202,8 +10202,8 @@
     {
         "name": "Marques Johnson",
         "url": "../players/player725.htm",
-        "team": "Draft",
-        "teamLabel": "Draft",
+        "team": "roster5",
+        "teamLabel": "Manchester United",
         "pos": "SF",
         "age": "24",
         "ht": "6-7",
@@ -10622,8 +10622,8 @@
     {
         "name": "Micheal Ray Richardson",
         "url": "../players/player729.htm",
-        "team": "Draft",
-        "teamLabel": "Draft",
+        "team": "roster7",
+        "teamLabel": "Bayern Munich",
         "pos": "SG",
         "age": "25",
         "ht": "6-5",
@@ -15182,8 +15182,8 @@
     {
         "name": "Walter Davis",
         "url": "../players/player706.htm",
-        "team": "Draft",
-        "teamLabel": "Draft",
+        "team": "roster5",
+        "teamLabel": "Manchester United",
         "pos": "SG",
         "age": "26",
         "ht": "6-6",

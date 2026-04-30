@@ -190,6 +190,17 @@
     return /\/players\/player\d+\.htm$/i.test(window.location.pathname) || /\\players\\player\d+\.htm$/i.test(window.location.pathname);
   }
 
+  function enableMenuFrameScroll() {
+    var menuFrame = document.querySelector('frame[name="Options"]');
+
+    if (!menuFrame) {
+      return;
+    }
+
+    menuFrame.setAttribute("scrolling", "auto");
+    menuFrame.style.overflow = "auto";
+  }
+
   function markStandingsPage() {
     if (shouldAttachStandingsSearch()) {
       document.body.classList.add("page-standings");
@@ -997,6 +1008,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    enableMenuFrameScroll();
     markStandingsPage();
     ensureCapReportMenuLink();
     initPlayerRatings();
