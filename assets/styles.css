@@ -215,6 +215,9 @@ body[bgcolor="#990000"],
 body[style*="990000"] {
   background: #0f172a !important;
   padding: 10px 6px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 a.menulink {

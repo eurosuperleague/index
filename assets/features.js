@@ -182,6 +182,10 @@
     return /\/waiverwire\.htm$/i.test(window.location.pathname) || /\\waiverwire\.htm$/i.test(window.location.pathname);
   }
 
+  function isMenuPage() {
+    return /\/menu\.htm$/i.test(window.location.pathname) || /\\menu\.htm$/i.test(window.location.pathname);
+  }
+
   function isPlayerPage() {
     return /\/players\/player\d+\.htm$/i.test(window.location.pathname) || /\\players\\player\d+\.htm$/i.test(window.location.pathname);
   }
@@ -252,6 +256,37 @@
     }
 
     return root;
+  }
+
+  function ensureCapReportMenuLink() {
+    if (!isMenuPage()) {
+      return;
+    }
+
+    var menuTable = document.querySelector("body > table");
+    if (!menuTable || menuTable.querySelector('a[href="capreport.htm"]')) {
+      return;
+    }
+
+    var anchor = menuTable.querySelector('a[href="injuries.htm"]');
+    var row = document.createElement("tr");
+    var cell = document.createElement("td");
+    var link = document.createElement("a");
+
+    row.setAttribute("valign", "top");
+    link.className = "menulink";
+    link.target = "data";
+    link.href = "capreport.htm";
+    link.textContent = "Cap Report";
+    cell.appendChild(link);
+    row.appendChild(cell);
+
+    if (anchor && anchor.parentNode && anchor.parentNode.parentNode && anchor.parentNode.parentNode.parentNode === menuTable) {
+      anchor.parentNode.parentNode.insertAdjacentElement("afterend", row);
+      return;
+    }
+
+    menuTable.appendChild(row);
   }
 
   function getCurrentPlayerPath() {
@@ -963,6 +998,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     markStandingsPage();
+    ensureCapReportMenuLink();
     initPlayerRatings();
     loadJsonData("teams.json")
       .then(function (teams) {
