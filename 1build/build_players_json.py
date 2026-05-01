@@ -2,14 +2,20 @@ import os
 import re
 import json
 import subprocess
+from html import unescape
 from html.parser import HTMLParser
 
 # 1. PATH SETUP
 ROOT = os.path.dirname(os.path.abspath(__file__))
+DATABASE_DIR = os.path.join(ROOT, "database")
 ROSTERS_DIR = os.path.normpath(os.path.join(ROOT, "..", "rosters"))
 PLAYERS_DIR = os.path.normpath(os.path.join(ROOT, "..", "players"))
-PLAYERS_OUT = os.path.join(ROOT, "players.json")
-TEAMS_OUT = os.path.join(ROOT, "teams.json")
+PLAYERS_OUT = os.path.join(DATABASE_DIR, "players.json")
+TEAMS_OUT = os.path.join(DATABASE_DIR, "teams.json")
+STANDINGS_OUT = os.path.join(DATABASE_DIR, "standings.json")
+CAPREPORT_OUT = os.path.join(DATABASE_DIR, "capreport.json")
+STANDINGS_PATH = os.path.normpath(os.path.join(ROOT, "..", "standings.htm"))
+CAPREPORT_PATH = os.path.normpath(os.path.join(ROOT, "..", "capreport.htm"))
 MDB_PATH = os.path.normpath(os.path.join(ROOT, "..", "LeagueOutput.mdb"))
 
 # The 16 numerical stats in your roster files
@@ -19,7 +25,7 @@ ATTR_KEYS = [
 ]
 
 def clean(txt):
-    return re.sub(r"\s+", " ", txt.replace("\xa0", " ")).strip()
+    return re.sub(r"\s+", " ", unescape(txt).replace("\xa0", " ")).strip()
 
 
 def normalize_name(name):
@@ -28,6 +34,32 @@ def normalize_name(name):
 
 def strip_tags(value):
     return clean(re.sub(r"<[^>]+>", " ", value))
+
+
+def parse_money_value(value):
+    text = strip_tags(value)
+    negative = "(" in text and ")" in text
+    digits = re.sub(r"[^0-9.]", "", text)
+    if not digits:
+        return None
+
+    amount = float(digits)
+    if negative:
+        amount *= -1
+    return amount
+
+
+def parse_numeric_value(value):
+    text = strip_tags(value)
+    if text in {"", "-"}:
+        return text
+
+    try:
+        if "." in text:
+            return float(text)
+        return int(text)
+    except ValueError:
+        return text
 
 
 def load_mdb_ratings():
@@ -264,13 +296,175 @@ def parse_player_page(html, filename, team_lookup, ratings_by_name):
     player["potential"] = rating_data.get("potential", "")
     return player
 
+
+def parse_standings_sections(html):
+    sections = []
+    title_matches = list(
+        re.finditer(r"<td class=newheader>(.*?)</td>", html, re.IGNORECASE | re.DOTALL)
+    )
+
+    for index, title_match in enumerate(title_matches):
+        section_title = strip_tags(title_match.group(1))
+        start = title_match.end()
+        end = title_matches[index + 1].start() if index + 1 < len(title_matches) else len(html)
+        section_html = html[start:end]
+        table_match = re.search(
+            r"<table[^>]*>(.*?)</table>",
+            section_html,
+            re.IGNORECASE | re.DOTALL,
+        )
+
+        if not table_match:
+            continue
+
+        table_html = table_match.group(1)
+        row_matches = re.findall(
+            r"<tr class=(row1|row2)\s+align=center>(.*?)</tr>",
+            table_html,
+            re.IGNORECASE | re.DOTALL,
+        )
+        teams = []
+
+        for row_class, row_html in row_matches:
+            cells = re.findall(r"<td[^>]*class=main[^>]*>(.*?)</td>", row_html, re.IGNORECASE | re.DOTALL)
+            link_match = re.search(
+                r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>',
+                row_html,
+                re.IGNORECASE | re.DOTALL,
+            )
+
+            if len(cells) < 14 or not link_match:
+                continue
+
+            team_name = strip_tags(link_match.group(2))
+            roster_url = clean(link_match.group(1))
+            roster_file = roster_url.split("/")[-1]
+
+            teams.append(
+                {
+                    "team": team_name,
+                    "rosterUrl": roster_url,
+                    "rosterFile": roster_file,
+                    "wins": parse_numeric_value(cells[1]),
+                    "losses": parse_numeric_value(cells[2]),
+                    "pct": parse_numeric_value(cells[3]),
+                    "gb": parse_numeric_value(cells[4]),
+                    "home": strip_tags(cells[5]),
+                    "road": strip_tags(cells[6]),
+                    "division": strip_tags(cells[7]),
+                    "conference": strip_tags(cells[8]),
+                    "pf": parse_numeric_value(cells[9]),
+                    "pa": parse_numeric_value(cells[10]),
+                    "diff": parse_numeric_value(cells[11]),
+                    "streak": strip_tags(cells[12]),
+                    "last10": strip_tags(cells[13]),
+                    "rowClass": row_class.lower(),
+                }
+            )
+
+        if teams:
+            sections.append(
+                {
+                    "title": section_title,
+                    "slug": re.sub(r"[^a-z0-9]+", "-", section_title.lower()).strip("-"),
+                    "teams": teams,
+                }
+            )
+
+    return sections
+
+
+def parse_capreport_sections(html):
+    sections = []
+    title_matches = list(
+        re.finditer(r"<td class=newheader>(.*?)</td>", html, re.IGNORECASE | re.DOTALL)
+    )
+
+    for index, title_match in enumerate(title_matches):
+        section_title = strip_tags(title_match.group(1))
+        start = title_match.end()
+        end = title_matches[index + 1].start() if index + 1 < len(title_matches) else len(html)
+        section_html = html[start:end]
+        table_match = re.search(
+            r"<table[^>]*>(.*?)</table>",
+            section_html,
+            re.IGNORECASE | re.DOTALL,
+        )
+
+        if not table_match:
+            continue
+
+        table_html = table_match.group(1)
+        row_matches = re.findall(
+            r"<tr align=center class=(row1|row2)>(.*?)</tr>",
+            table_html,
+            re.IGNORECASE | re.DOTALL,
+        )
+        entries = []
+
+        for row_class, row_html in row_matches:
+            cells = re.findall(r"<td[^>]*class=main[^>]*>(.*?)</td>", row_html, re.IGNORECASE | re.DOTALL)
+            link_match = re.search(
+                r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>',
+                row_html,
+                re.IGNORECASE | re.DOTALL,
+            )
+
+            if len(cells) < 7 or not link_match:
+                continue
+
+            team_name = strip_tags(link_match.group(2))
+            roster_url = clean(link_match.group(1))
+            roster_file = roster_url.split("/")[-1]
+
+            entries.append(
+                {
+                    "pick": parse_numeric_value(cells[0]),
+                    "team": team_name,
+                    "rosterUrl": roster_url,
+                    "rosterFile": roster_file,
+                    "salary": parse_money_value(cells[2]),
+                    "salaryText": strip_tags(cells[2]),
+                    "capRoom": parse_money_value(cells[3]),
+                    "capRoomText": strip_tags(cells[3]),
+                    "budgetRoom": parse_money_value(cells[4]),
+                    "budgetRoomText": strip_tags(cells[4]),
+                    "midException": parse_money_value(cells[5]),
+                    "midExceptionText": strip_tags(cells[5]),
+                    "lowException": parse_money_value(cells[6]),
+                    "lowExceptionText": strip_tags(cells[6]),
+                    "rowClass": row_class.lower(),
+                }
+            )
+
+        if entries:
+            sections.append(
+                {
+                    "title": section_title,
+                    "slug": re.sub(r"[^a-z0-9]+", "-", section_title.lower()).strip("-"),
+                    "entries": entries,
+                }
+            )
+
+    return sections
+
 def main():
+    os.makedirs(DATABASE_DIR, exist_ok=True)
+
     if not os.path.exists(ROSTERS_DIR):
         print(f"Error: {ROSTERS_DIR} not found.")
         return
 
     if not os.path.exists(PLAYERS_DIR):
         print(f"Error: {PLAYERS_DIR} not found.")
+        return
+
+    if not os.path.exists(STANDINGS_PATH):
+        print(f"Error: {STANDINGS_PATH} not found.")
+        return
+
+    if not os.path.exists(CAPREPORT_PATH):
+        print(f"Error: {CAPREPORT_PATH} not found.")
         return
 
     ratings_by_name = load_mdb_ratings()
@@ -309,9 +503,33 @@ def main():
 
     with open(TEAMS_OUT, "w", encoding="utf-8") as f:
         json.dump(all_teams, f, indent=4)
+
+    with open(STANDINGS_PATH, "r", encoding="latin-1") as f:
+        standings_html = f.read()
+
+    standings_data = {
+        "source": os.path.basename(STANDINGS_PATH),
+        "sections": parse_standings_sections(standings_html),
+    }
+
+    with open(STANDINGS_OUT, "w", encoding="utf-8") as f:
+        json.dump(standings_data, f, indent=4)
+
+    with open(CAPREPORT_PATH, "r", encoding="latin-1") as f:
+        capreport_html = f.read()
+
+    capreport_data = {
+        "source": os.path.basename(CAPREPORT_PATH),
+        "sections": parse_capreport_sections(capreport_html),
+    }
+
+    with open(CAPREPORT_OUT, "w", encoding="utf-8") as f:
+        json.dump(capreport_data, f, indent=4)
         
     print(f"\nFinal count: {len(all_players)} players saved to {PLAYERS_OUT}")
     print(f"Final count: {len(all_teams)} teams saved to {TEAMS_OUT}")
+    print(f"Final count: {len(standings_data['sections'])} standings sections saved to {STANDINGS_OUT}")
+    print(f"Final count: {len(capreport_data['sections'])} cap report sections saved to {CAPREPORT_OUT}")
 
 if __name__ == "__main__":
     main()

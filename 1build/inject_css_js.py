@@ -15,7 +15,7 @@ ROOT_FOLDER  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSS_FILENAME  = "assets/styles.css"
 JS_FILENAME   = "assets/sort.js"
 JS2_FILENAME  = "assets/features.js"
-FAVICON_FILE  = "assets/favicon.png"   # change to .ico if needed
+FAVICON_FILE  = "1build/database/favicon.png"   # change to .ico if needed
 # ────────────────────────────────────────────────────────────────────
 
 DRY_RUN       = "--dry-run" in sys.argv

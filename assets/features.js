@@ -10,7 +10,7 @@
   }
 
   function getBuildJsonPath(filename) {
-    return isNestedPage() ? "../1build/" + filename : "1build/" + filename;
+    return isNestedPage() ? "../1build/database/" + filename : "1build/database/" + filename;
   }
 
   function normalizePlayerUrl(url) {
