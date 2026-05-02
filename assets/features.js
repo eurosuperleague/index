@@ -215,7 +215,7 @@
       "Benfica": "benfica.jpg",
       "Juventus": "juventus.jpg",
       "Marseille": "marseille.jpg",
-      "Arsenal": "arsenal.jpg",
+      "Sheffield United": "arsenal.jpg",
       "Chelsea": "chelsea.jpg",
       "Ajax": "ajax.jpg",
       "Aston Villa": "astonvilla.jpg",
