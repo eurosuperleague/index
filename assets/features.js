@@ -190,6 +190,69 @@
     return /\/players\/player\d+\.htm$/i.test(window.location.pathname) || /\\players\\player\d+\.htm$/i.test(window.location.pathname);
   }
 
+  function isRosterPage() {
+    return /\/rosters\/roster\d+\.htm$/i.test(window.location.pathname) || /\\rosters\\roster\d+\.htm$/i.test(window.location.pathname);
+  }
+
+  function getRosterPhotoPath(filename) {
+    if (!filename) {
+      return "";
+    }
+
+    return isNestedPage() ? "../assets/photos/" + filename : "assets/photos/" + filename;
+  }
+
+  function getRosterPhotoFilename(teamName) {
+    var photoMap = {
+      "Manchester United": "manutd.jpg",
+      "Crystal Palace": "crystalpalace.jpg",
+      "Bayern Munich": "bayern.jpg",
+      "Real Madrid": "realmadrid.jpg",
+      "AC Milan": "acmilan.jpg",
+      "Brighton": "brighton.jpg",
+      "Atletico Madrid": "atletico.jpg",
+      "AFC Richmond": "richmond.jpg",
+      "Benfica": "benfica.jpg",
+      "Juventus": "juventus.jpg",
+      "Marseille": "marseille.jpg",
+      "Arsenal": "arsenal.jpg",
+      "Chelsea": "chelsea.jpg",
+      "Ajax": "ajax.jpg",
+      "Aston Villa": "astonvilla.jpg",
+      "Monaco": "monaco.jpg",
+      "Paris Saint-Germain": "psg.jpg",
+      "Tottenham Hotspur": "tottenham.jpg",
+      "Sporting CP": "sportingcp.jpg",
+      "Barcelona": "barcelona.jpg",
+      "Valencia": "valencia.jpg",
+      "Inter Milan": "intermilan.jpg",
+      "Dortmund(Open)": "dortmund.jpg"
+    };
+
+    return photoMap[teamName] || "";
+  }
+
+  function applyRosterHeaderPhoto() {
+    if (!isRosterPage()) {
+      return;
+    }
+
+    var teamName = document.title ? document.title.trim() : "";
+    var photoFilename = getRosterPhotoFilename(teamName);
+
+    if (!photoFilename) {
+      return;
+    }
+
+    var headerImage = document.querySelector("body > table img");
+
+    if (!headerImage) {
+      return;
+    }
+
+    headerImage.setAttribute("src", getRosterPhotoPath(photoFilename));
+  }
+
   function enableMenuFrameScroll() {
     var menuFrame = document.querySelector('frame[name="Options"]');
 
@@ -1010,6 +1073,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     enableMenuFrameScroll();
     markStandingsPage();
+    applyRosterHeaderPhoto();
     ensureCapReportMenuLink();
     initPlayerRatings();
     loadJsonData("teams.json")

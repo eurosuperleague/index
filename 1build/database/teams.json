@@ -18,12 +18,6 @@
         "url": "../rosters/roster18.htm"
     },
     {
-        "id": "roster16",
-        "name": "Arsenal",
-        "file": "roster16.htm",
-        "url": "../rosters/roster16.htm"
-    },
-    {
         "id": "roster19",
         "name": "Aston Villa",
         "file": "roster19.htm",
@@ -78,6 +72,12 @@
         "url": "../rosters/roster28.htm"
     },
     {
+        "id": "roster27",
+        "name": "FL Fart",
+        "file": "roster27.htm",
+        "url": "../rosters/roster27.htm"
+    },
+    {
         "id": "roster26",
         "name": "Inter Milan",
         "file": "roster26.htm",
@@ -88,12 +88,6 @@
         "name": "Juventus",
         "file": "roster14.htm",
         "url": "../rosters/roster14.htm"
-    },
-    {
-        "id": "roster27",
-        "name": "Liverpool",
-        "file": "roster27.htm",
-        "url": "../rosters/roster27.htm"
     },
     {
         "id": "roster5",
@@ -124,6 +118,12 @@
         "name": "Real Madrid",
         "file": "roster8.htm",
         "url": "../rosters/roster8.htm"
+    },
+    {
+        "id": "roster16",
+        "name": "Sheffield United",
+        "file": "roster16.htm",
+        "url": "../rosters/roster16.htm"
     },
     {
         "id": "roster23",
