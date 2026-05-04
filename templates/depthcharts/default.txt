@@ -1,0 +1,42 @@
+Team Depth Chart
+
+Minimum of 10 players required to be active
+Maximum of 13 players active for sim. Any player over the 13 player limit must go on IR
+Bold any changes that you make!!!!
+
+Format for Depth Charts:
+
+C: Name/Position(s)/Minutes
+PF: Name/Position(s)/Minutes
+SF: Name/Position(s)/Minutes
+SG: Name/Position(s)/Minutes
+PG: Name/Position(s)/Minutes
+6th: Name/Position(s)/Minutes
+7th: Name/Position(s)/Minutes
+8th: Name/Position(s)/Minutes
+9th: Name/Position(s)/Minutes
+10th: Name/Position(s)/Minutes
+11th: Name/Position(s)/Minutes
+12th: Name/Position(s)/Minutes
+13th: Name/Position(s)/Minutes
+
+IR: None
+
+Gameplan:
+Offense:
+Pace: 5
+Motion: 5
+3pt Usage: 5
+Focus: Balanced
+Crash Boards: 5
+
+Defense:
+Primary: Man
+Usage: 8
+Secondary: Zone
+Usage: 2
+Full Court Press: 0
+Crash Boards: 5
+
+Focus Players:
+None
