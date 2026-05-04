@@ -34,12 +34,7 @@ PLAYER_STAT_TABLES = {
     "Efficiency",
     "Playoff Averages",
     "Playoff Shooting",
-    "Playoff Totals",
-    "Playoff Efficiency",
-    "College Averages",
-    "College Totals",
     "Career Highs",
-    "Game Logs",
 }
 
 def clean(txt):

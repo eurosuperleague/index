@@ -226,7 +226,7 @@
       "Barcelona": "barcelona.jpg",
       "Valencia": "valencia.jpg",
       "Inter Milan": "intermilan.jpg",
-      "Dortmund(Open)": "dortmund.jpg"
+      "Manchester City": "dortmund.jpg"
     };
 
     return photoMap[teamName] || "";

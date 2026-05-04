@@ -66,12 +66,6 @@
         "url": "../rosters/roster6.htm"
     },
     {
-        "id": "roster28",
-        "name": "Dortmund(Open)",
-        "file": "roster28.htm",
-        "url": "../rosters/roster28.htm"
-    },
-    {
         "id": "roster27",
         "name": "FL Fart",
         "file": "roster27.htm",
@@ -88,6 +82,12 @@
         "name": "Juventus",
         "file": "roster14.htm",
         "url": "../rosters/roster14.htm"
+    },
+    {
+        "id": "roster28",
+        "name": "Manchester City",
+        "file": "roster28.htm",
+        "url": "../rosters/roster28.htm"
     },
     {
         "id": "roster5",
