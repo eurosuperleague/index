@@ -208,6 +208,30 @@
       width: 48px;
       color: #1e293b;
       font-weight: 800;
+      cursor: grab;
+      user-select: none;
+    }
+
+    .depth-role::before {
+      content: "::::";
+      display: inline-block;
+      margin-right: 5px;
+      color: #94a3b8;
+      font-size: 7pt;
+      letter-spacing: -2px;
+      vertical-align: 1px;
+    }
+
+    .depth-role:active {
+      cursor: grabbing;
+    }
+
+    .depth-row--dragging {
+      opacity: 0.5;
+    }
+
+    .depth-row--drop-target td {
+      background: #dbeafe;
     }
 
     .depth-minutes {
@@ -219,11 +243,38 @@
       text-align: center;
     }
 
+    .depth-hint {
+      margin: 0 0 6px;
+      color: #64748b;
+      font-size: 8pt;
+      font-weight: 600;
+    }
+
     .depth-gameplan {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 8px;
       margin-top: 10px;
+    }
+
+    .depth-gameplan-section {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      padding: 8px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .depth-gameplan-section-title {
+      grid-column: 1 / -1;
+      color: #1e293b;
+      font-size: 8pt;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
     }
 
     .depth-gameplan-value {
@@ -311,7 +362,8 @@
     @media (max-width: 980px) {
       .depth-header__inner,
       .depth-grid,
-      .depth-gameplan {
+      .depth-gameplan,
+      .depth-gameplan-section {
         grid-template-columns: 1fr;
       }
     }
@@ -341,6 +393,7 @@
           <span id="roster-summary">Loading</span>
         </div>
         <div class="depth-panel__body">
+          <p class="depth-hint">Drag the role labels to swap players between slots.</p>
           <table class="depth-table" id="depth-table">
             <thead>
               <tr>
@@ -362,128 +415,151 @@
           </div>
 
           <div class="depth-gameplan">
-            <div class="depth-control">
-              <label class="depth-label" for="pace-input">Pace</label>
-              <div class="depth-gameplan-value">
-                <input class="depth-input" id="pace-input" type="number" min="0" max="10" value="5">
-                <label class="depth-gameplan-bold" for="pace-bold-input">
-                  <input id="pace-bold-input" data-gameplan-bold-for="pace-input" type="checkbox">
-                  <span>Bold</span>
-                </label>
+            <div class="depth-gameplan-section">
+              <div class="depth-gameplan-section-title">Offense</div>
+              <div class="depth-control">
+                <label class="depth-label" for="pace-input">Pace</label>
+                <div class="depth-gameplan-value">
+                  <select class="depth-select" id="pace-input">
+                    <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                  </select>
+                  <label class="depth-gameplan-bold" for="pace-bold-input">
+                    <input id="pace-bold-input" data-gameplan-bold-for="pace-input" type="checkbox">
+                    <span>Bold</span>
+                  </label>
+                </div>
+              </div>
+              <div class="depth-control">
+                <label class="depth-label" for="motion-input">Motion</label>
+                <div class="depth-gameplan-value">
+                  <select class="depth-select" id="motion-input">
+                    <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                  </select>
+                  <label class="depth-gameplan-bold" for="motion-bold-input">
+                    <input id="motion-bold-input" data-gameplan-bold-for="motion-input" type="checkbox">
+                    <span>Bold</span>
+                  </label>
+                </div>
+              </div>
+              <div class="depth-control">
+                <label class="depth-label" for="three-input">3pt Usage</label>
+                <div class="depth-gameplan-value">
+                  <select class="depth-select" id="three-input">
+                    <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                  </select>
+                  <label class="depth-gameplan-bold" for="three-bold-input">
+                    <input id="three-bold-input" data-gameplan-bold-for="three-input" type="checkbox">
+                    <span>Bold</span>
+                  </label>
+                </div>
+              </div>
+              <div class="depth-control">
+                <label class="depth-label" for="focus-select">Offensive Focus</label>
+                <div class="depth-gameplan-value">
+                  <select class="depth-select" id="focus-select">
+                    <option>Inside</option>
+                    <option selected>Balanced</option>
+                    <option>Outside</option>
+                  </select>
+                  <label class="depth-gameplan-bold" for="focus-bold-input">
+                    <input id="focus-bold-input" data-gameplan-bold-for="focus-select" type="checkbox">
+                    <span>Bold</span>
+                  </label>
+                </div>
+              </div>
+              <div class="depth-control">
+                <label class="depth-label" for="off-boards-input">Offensive Crash Boards</label>
+                <div class="depth-gameplan-value">
+                  <select class="depth-select" id="off-boards-input">
+                    <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                  </select>
+                  <label class="depth-gameplan-bold" for="off-boards-bold-input">
+                    <input id="off-boards-bold-input" data-gameplan-bold-for="off-boards-input" type="checkbox">
+                    <span>Bold</span>
+                  </label>
+                </div>
               </div>
             </div>
-            <div class="depth-control">
-              <label class="depth-label" for="motion-input">Motion</label>
-              <div class="depth-gameplan-value">
-                <input class="depth-input" id="motion-input" type="number" min="0" max="10" value="5">
-                <label class="depth-gameplan-bold" for="motion-bold-input">
-                  <input id="motion-bold-input" data-gameplan-bold-for="motion-input" type="checkbox">
-                  <span>Bold</span>
-                </label>
+
+            <div class="depth-gameplan-section">
+              <div class="depth-gameplan-section-title">Defense</div>
+              <div class="depth-control">
+                <label class="depth-label" for="primary-defense-select">Primary Defense</label>
+                <div class="depth-gameplan-value">
+                  <select class="depth-select" id="primary-defense-select">
+                    <option selected>Man</option>
+                    <option>Zone</option>
+                    <option>Help</option>
+                    <option>Half-Trap</option>
+                  </select>
+                  <label class="depth-gameplan-bold" for="primary-defense-bold-input">
+                    <input id="primary-defense-bold-input" data-gameplan-bold-for="primary-defense-select" type="checkbox">
+                    <span>Bold</span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="depth-control">
-              <label class="depth-label" for="three-input">3pt Usage</label>
-              <div class="depth-gameplan-value">
-                <input class="depth-input" id="three-input" type="number" min="0" max="10" value="5">
-                <label class="depth-gameplan-bold" for="three-bold-input">
-                  <input id="three-bold-input" data-gameplan-bold-for="three-input" type="checkbox">
-                  <span>Bold</span>
-                </label>
+              <div class="depth-control">
+                <label class="depth-label" for="primary-usage-input">Primary Usage</label>
+                <div class="depth-gameplan-value">
+                  <select class="depth-select" id="primary-usage-input">
+                    <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option selected>8</option><option>9</option><option>10</option>
+                  </select>
+                  <label class="depth-gameplan-bold" for="primary-usage-bold-input">
+                    <input id="primary-usage-bold-input" data-gameplan-bold-for="primary-usage-input" type="checkbox">
+                    <span>Bold</span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="depth-control">
-              <label class="depth-label" for="focus-select">Offensive Focus</label>
-              <div class="depth-gameplan-value">
-                <select class="depth-select" id="focus-select">
-                  <option>Inside</option>
-                  <option selected>Balanced</option>
-                  <option>Outside</option>
-                </select>
-                <label class="depth-gameplan-bold" for="focus-bold-input">
-                  <input id="focus-bold-input" data-gameplan-bold-for="focus-select" type="checkbox">
-                  <span>Bold</span>
-                </label>
+              <div class="depth-control">
+                <label class="depth-label" for="secondary-defense-select">Secondary Defense</label>
+                <div class="depth-gameplan-value">
+                  <select class="depth-select" id="secondary-defense-select">
+                    <option>Man</option>
+                    <option selected>Zone</option>
+                    <option>Help</option>
+                    <option>Half-Trap</option>
+                  </select>
+                  <label class="depth-gameplan-bold" for="secondary-defense-bold-input">
+                    <input id="secondary-defense-bold-input" data-gameplan-bold-for="secondary-defense-select" type="checkbox">
+                    <span>Bold</span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="depth-control">
-              <label class="depth-label" for="off-boards-input">Offensive Crash Boards</label>
-              <div class="depth-gameplan-value">
-                <input class="depth-input" id="off-boards-input" type="number" min="0" max="10" value="5">
-                <label class="depth-gameplan-bold" for="off-boards-bold-input">
-                  <input id="off-boards-bold-input" data-gameplan-bold-for="off-boards-input" type="checkbox">
-                  <span>Bold</span>
-                </label>
+              <div class="depth-control">
+                <label class="depth-label" for="secondary-usage-input">Secondary Usage</label>
+                <div class="depth-gameplan-value">
+                  <select class="depth-select" id="secondary-usage-input">
+                    <option>0</option><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                  </select>
+                  <label class="depth-gameplan-bold" for="secondary-usage-bold-input">
+                    <input id="secondary-usage-bold-input" data-gameplan-bold-for="secondary-usage-input" type="checkbox">
+                    <span>Bold</span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="depth-control">
-              <label class="depth-label" for="primary-defense-select">Primary Defense</label>
-              <div class="depth-gameplan-value">
-                <select class="depth-select" id="primary-defense-select">
-                  <option selected>Man</option>
-                  <option>Zone</option>
-                  <option>Help</option>
-                  <option>Half-Trap</option>
-                </select>
-                <label class="depth-gameplan-bold" for="primary-defense-bold-input">
-                  <input id="primary-defense-bold-input" data-gameplan-bold-for="primary-defense-select" type="checkbox">
-                  <span>Bold</span>
-                </label>
+              <div class="depth-control">
+                <label class="depth-label" for="press-input">Full Court Press</label>
+                <div class="depth-gameplan-value">
+                  <select class="depth-select" id="press-input">
+                    <option selected>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                  </select>
+                  <label class="depth-gameplan-bold" for="press-bold-input">
+                    <input id="press-bold-input" data-gameplan-bold-for="press-input" type="checkbox">
+                    <span>Bold</span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="depth-control">
-              <label class="depth-label" for="primary-usage-input">Primary Usage</label>
-              <div class="depth-gameplan-value">
-                <input class="depth-input" id="primary-usage-input" type="number" min="0" max="10" value="8">
-                <label class="depth-gameplan-bold" for="primary-usage-bold-input">
-                  <input id="primary-usage-bold-input" data-gameplan-bold-for="primary-usage-input" type="checkbox">
-                  <span>Bold</span>
-                </label>
-              </div>
-            </div>
-            <div class="depth-control">
-              <label class="depth-label" for="secondary-defense-select">Secondary Defense</label>
-              <div class="depth-gameplan-value">
-                <select class="depth-select" id="secondary-defense-select">
-                  <option>Man</option>
-                  <option selected>Zone</option>
-                  <option>Help</option>
-                  <option>Half-Trap</option>
-                </select>
-                <label class="depth-gameplan-bold" for="secondary-defense-bold-input">
-                  <input id="secondary-defense-bold-input" data-gameplan-bold-for="secondary-defense-select" type="checkbox">
-                  <span>Bold</span>
-                </label>
-              </div>
-            </div>
-            <div class="depth-control">
-              <label class="depth-label" for="secondary-usage-input">Secondary Usage</label>
-              <div class="depth-gameplan-value">
-                <input class="depth-input" id="secondary-usage-input" type="number" min="0" max="10" value="2">
-                <label class="depth-gameplan-bold" for="secondary-usage-bold-input">
-                  <input id="secondary-usage-bold-input" data-gameplan-bold-for="secondary-usage-input" type="checkbox">
-                  <span>Bold</span>
-                </label>
-              </div>
-            </div>
-            <div class="depth-control">
-              <label class="depth-label" for="press-input">Full Court Press</label>
-              <div class="depth-gameplan-value">
-                <input class="depth-input" id="press-input" type="number" min="0" max="10" value="0">
-                <label class="depth-gameplan-bold" for="press-bold-input">
-                  <input id="press-bold-input" data-gameplan-bold-for="press-input" type="checkbox">
-                  <span>Bold</span>
-                </label>
-              </div>
-            </div>
-            <div class="depth-control">
-              <label class="depth-label" for="def-boards-input">Defensive Crash Boards</label>
-              <div class="depth-gameplan-value">
-                <input class="depth-input" id="def-boards-input" type="number" min="0" max="10" value="5">
-                <label class="depth-gameplan-bold" for="def-boards-bold-input">
-                  <input id="def-boards-bold-input" data-gameplan-bold-for="def-boards-input" type="checkbox">
-                  <span>Bold</span>
-                </label>
+              <div class="depth-control">
+                <label class="depth-label" for="def-boards-input">Defensive Crash Boards</label>
+                <div class="depth-gameplan-value">
+                  <select class="depth-select" id="def-boards-input">
+                    <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                  </select>
+                  <label class="depth-gameplan-bold" for="def-boards-bold-input">
+                    <input id="def-boards-bold-input" data-gameplan-bold-for="def-boards-input" type="checkbox">
+                    <span>Bold</span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>

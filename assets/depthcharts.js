@@ -273,6 +273,20 @@
     }) || null;
   }
 
+  function isStarterRole(role) {
+    return ["C", "PF", "SF", "SG", "PG"].indexOf(role) !== -1;
+  }
+
+  function getManualPositionForRow(row, player) {
+    var role = row.getAttribute("data-role");
+
+    if (player && isStarterRole(role)) {
+      return role;
+    }
+
+    return player ? player.pos : "Position(s)";
+  }
+
   function getSelectedTeamId() {
     return document.getElementById(TEAM_SELECT_ID).value || "";
   }
@@ -340,7 +354,7 @@
     body.innerHTML = ROLES.map(function (role) {
       return [
         '<tr data-role="' + escapeHtml(role) + '">',
-        '<td class="depth-role">' + escapeHtml(role) + "</td>",
+        '<td class="depth-role" draggable="true" title="Drag to swap this slot">' + escapeHtml(role) + "</td>",
         '<td><select class="depth-select depth-player-select"></select></td>',
         '<td><input class="depth-input depth-position-input" type="text" value="Position(s)"></td>',
         '<td><input class="depth-input depth-minutes" type="number" min="0" max="48" value=""></td>',
@@ -354,7 +368,7 @@
       select.addEventListener("change", function () {
         var row = select.closest("tr");
         var player = getPlayerByKey(select.value);
-        row.querySelector(".depth-position-input").value = player ? player.pos : "Position(s)";
+        row.querySelector(".depth-position-input").value = getManualPositionForRow(row, player);
         if (!player) {
           row.querySelector(".depth-minutes").value = "";
         }
@@ -367,6 +381,96 @@
     Array.prototype.forEach.call(document.querySelectorAll(".depth-position-input, .depth-minutes, .depth-bold-input"), function (input) {
       input.addEventListener("input", updateOutput);
       input.addEventListener("change", updateOutput);
+    });
+
+    bindDepthRowDrag();
+  }
+
+  function getRowFormState(row) {
+    return {
+      playerKey: row.querySelector(".depth-player-select").value,
+      positions: row.querySelector(".depth-position-input").value,
+      minutes: row.querySelector(".depth-minutes").value,
+      bold: row.querySelector(".depth-bold-input").checked
+    };
+  }
+
+  function applyRowFormState(row, rowState) {
+    var player = getPlayerByKey(rowState.playerKey);
+
+    row.querySelector(".depth-player-select").value = player ? rowState.playerKey : "";
+    row.querySelector(".depth-position-input").value = rowState.positions || (player ? player.pos : "Position(s)");
+    row.querySelector(".depth-minutes").value = rowState.minutes || "";
+    row.querySelector(".depth-bold-input").checked = !!rowState.bold;
+  }
+
+  function clearDragState() {
+    Array.prototype.forEach.call(document.querySelectorAll("#depth-slots tr"), function (row) {
+      row.classList.remove("depth-row--dragging", "depth-row--drop-target");
+    });
+  }
+
+  function swapDepthRows(sourceRow, targetRow) {
+    var sourceState = getRowFormState(sourceRow);
+    var targetState = getRowFormState(targetRow);
+
+    applyRowFormState(sourceRow, targetState);
+    applyRowFormState(targetRow, sourceState);
+    updateDroppedStarterPosition(sourceRow);
+    updateDroppedStarterPosition(targetRow);
+    refreshPlayerOptions();
+    refreshFocusOptions();
+    updateOutput();
+  }
+
+  function updateDroppedStarterPosition(row) {
+    var player = getPlayerByKey(row.querySelector(".depth-player-select").value);
+
+    if (player && isStarterRole(row.getAttribute("data-role"))) {
+      row.querySelector(".depth-position-input").value = row.getAttribute("data-role");
+    }
+  }
+
+  function bindDepthRowDrag() {
+    Array.prototype.forEach.call(document.querySelectorAll("#depth-slots tr"), function (row) {
+      var handle = row.querySelector(".depth-role");
+
+      if (!handle) {
+        return;
+      }
+
+      handle.addEventListener("dragstart", function (event) {
+        row.classList.add("depth-row--dragging");
+        event.dataTransfer.effectAllowed = "move";
+        event.dataTransfer.setData("text/plain", row.getAttribute("data-role"));
+      });
+
+      handle.addEventListener("dragend", clearDragState);
+
+      row.addEventListener("dragover", function (event) {
+        event.preventDefault();
+        if (!row.classList.contains("depth-row--dragging")) {
+          row.classList.add("depth-row--drop-target");
+        }
+      });
+
+      row.addEventListener("dragleave", function () {
+        row.classList.remove("depth-row--drop-target");
+      });
+
+      row.addEventListener("drop", function (event) {
+        var sourceRole = event.dataTransfer.getData("text/plain");
+        var sourceRow = document.querySelector('#depth-slots tr[data-role="' + sourceRole + '"]');
+
+        event.preventDefault();
+        clearDragState();
+
+        if (!sourceRow || sourceRow === row) {
+          return;
+        }
+
+        swapDepthRows(sourceRow, row);
+      });
     });
   }
 
@@ -692,11 +796,12 @@
 
   function formatDepthLine(row) {
     var line = row.role + ": ";
-    if (row.player) {
-      line += row.player.name + "/" + (row.positions || row.player.pos || "-") + "/" + (row.minutes || "0");
-    } else {
-      line += "Name/Position(s)/Minutes";
+
+    if (!row.player) {
+      return "";
     }
+
+    line += row.player.name + "/" + (row.positions || row.player.pos || "-") + "/" + (row.minutes || "0");
 
     return row.bold ? "**" + line + "**" : line;
   }
@@ -744,15 +849,12 @@
 
     lines.push((team ? team.name : "Team") + " Depth Chart");
     lines.push("");
-    lines.push("Minimum of 10 players required to be active");
-    lines.push("Maximum of 13 players active for sim. Any player over the 13 player limit must go on IR");
-    lines.push("Bold any changes that you make!!!!");
-    lines.push("");
-    lines.push("Format for Depth Charts:");
-    lines.push("");
 
     rows.forEach(function (row) {
-      lines.push(formatDepthLine(row));
+      var depthLine = formatDepthLine(row);
+      if (depthLine) {
+        lines.push(depthLine);
+      }
     });
 
     lines.push("");
