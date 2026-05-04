@@ -1,6 +1,6 @@
 """
 build.py
-Master build script — run this one file to update everything.
+Master build script - run this one file to update everything.
 
 Usage:
   python 1build/build.py           # full build
@@ -13,7 +13,7 @@ BUILD_DIR = os.path.dirname(os.path.abspath(__file__))
 DRY_RUN = "--dry-run" in sys.argv
 
 SCRIPTS = [
-    (os.path.join(BUILD_DIR, "build_players_json.py"), "Scraping player attributes → players.json"),
+    (os.path.join(BUILD_DIR, "build_players_json.py"), "Building database JSON files"),
     (os.path.join(BUILD_DIR, "inject_css_js.py"),      "Injecting CSS/JS links into all HTML files"),
 ]
 
@@ -21,7 +21,7 @@ def run(path, label):
     if not os.path.exists(path):
         print(f"  [SKIP] {os.path.basename(path)} not found")
         return
-    print(f"\n── {label}")
+    print(f"\n-- {label}")
     args = [sys.executable, path]
     if DRY_RUN:
         args.append("--dry-run")
@@ -37,4 +37,4 @@ print("=" * 50)
 for path, label in SCRIPTS:
     run(path, label)
 
-print("\n✓ Build complete")
+print("\nBuild complete")

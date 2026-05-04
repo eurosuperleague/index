@@ -11,11 +11,14 @@ DATABASE_DIR = os.path.join(ROOT, "database")
 ROSTERS_DIR = os.path.normpath(os.path.join(ROOT, "..", "rosters"))
 PLAYERS_DIR = os.path.normpath(os.path.join(ROOT, "..", "players"))
 PLAYERS_OUT = os.path.join(DATABASE_DIR, "players.json")
+PLAYER_STATS_OUT = os.path.join(DATABASE_DIR, "player_stats.json")
 TEAMS_OUT = os.path.join(DATABASE_DIR, "teams.json")
 STANDINGS_OUT = os.path.join(DATABASE_DIR, "standings.json")
 CAPREPORT_OUT = os.path.join(DATABASE_DIR, "capreport.json")
+INJURIES_OUT = os.path.join(DATABASE_DIR, "injuries.json")
 STANDINGS_PATH = os.path.normpath(os.path.join(ROOT, "..", "standings.htm"))
 CAPREPORT_PATH = os.path.normpath(os.path.join(ROOT, "..", "capreport.htm"))
+INJURIES_PATH = os.path.normpath(os.path.join(ROOT, "..", "injuries.htm"))
 MDB_PATH = os.path.normpath(os.path.join(ROOT, "..", "LeagueOutput.mdb"))
 
 # The 16 numerical stats in your roster files
@@ -23,6 +26,21 @@ ATTR_KEYS = [
     "Ins", "Jps", "Fts", "3ps", "Hnd", "Pas", "Orb", "Drb", 
     "Psd", "Prd", "Stl", "Blk", "Qkn", "Jmp", "Str", "Sta"
 ]
+
+PLAYER_STAT_TABLES = {
+    "Season Averages",
+    "Shooting Averages",
+    "Season Totals",
+    "Efficiency",
+    "Playoff Averages",
+    "Playoff Shooting",
+    "Playoff Totals",
+    "Playoff Efficiency",
+    "College Averages",
+    "College Totals",
+    "Career Highs",
+    "Game Logs",
+}
 
 def clean(txt):
     return re.sub(r"\s+", " ", unescape(txt).replace("\xa0", " ")).strip()
@@ -60,6 +78,29 @@ def parse_numeric_value(value):
         return int(text)
     except ValueError:
         return text
+
+
+def slugify(value):
+    text = clean(value).lower().replace("+/-", "plus_minus").replace("%", "_pct")
+    return re.sub(r"[^a-z0-9]+", "_", text).strip("_")
+
+
+def make_unique_headers(headers):
+    counts = {}
+    unique = []
+
+    for header in headers:
+        key = slugify(header)
+        if not key:
+            key = "value"
+
+        counts[key] = counts.get(key, 0) + 1
+        if counts[key] > 1:
+            key = f"{key}_{counts[key]}"
+
+        unique.append(key)
+
+    return unique
 
 
 def load_mdb_ratings():
@@ -297,6 +338,94 @@ def parse_player_page(html, filename, team_lookup, ratings_by_name):
     return player
 
 
+def parse_stat_table(table_html):
+    header_match = re.search(
+        r"<tr[^>]*>(?P<headers>.*?</tr>)",
+        table_html,
+        re.IGNORECASE | re.DOTALL,
+    )
+    if not header_match:
+        return {"headers": [], "rows": []}
+
+    header_cells = re.findall(
+        r"<td[^>]*class=header[^>]*>(.*?)</td>",
+        header_match.group("headers"),
+        re.IGNORECASE | re.DOTALL,
+    )
+    headers = [strip_tags(cell) for cell in header_cells]
+
+    while headers and not headers[-1]:
+        headers.pop()
+
+    header_keys = make_unique_headers(headers)
+    row_matches = re.findall(
+        r"<tr[^>]*class=(row1|row2)[^>]*>(.*?)</tr>",
+        table_html,
+        re.IGNORECASE | re.DOTALL,
+    )
+    rows = []
+
+    for row_class, row_html in row_matches:
+        cells = re.findall(r"<td[^>]*class=main[^>]*>(.*?)</td>", row_html, re.IGNORECASE | re.DOTALL)
+        values = [parse_numeric_value(cell) for cell in cells]
+
+        if not any(str(value).strip() for value in values):
+            continue
+
+        row = {"rowClass": row_class.lower()}
+        for index, key in enumerate(header_keys):
+            row[key] = values[index] if index < len(values) else ""
+
+        extra_values = values[len(header_keys):]
+        if any(str(value).strip() for value in extra_values):
+            row["extra"] = extra_values
+
+        rows.append(row)
+
+    return {
+        "headers": headers,
+        "rows": rows,
+    }
+
+
+def parse_player_stats_page(html, filename, player):
+    tables = {}
+    table_matches = re.finditer(
+        r"<table[^>]*>(?P<table>.*?)</table>",
+        html,
+        re.IGNORECASE | re.DOTALL,
+    )
+
+    for table_match in table_matches:
+        table_html = table_match.group("table")
+        title_match = re.search(
+            r"<td[^>]*class=tableheader[^>]*>(.*?)</td>",
+            table_html,
+            re.IGNORECASE | re.DOTALL,
+        )
+        if not title_match:
+            continue
+
+        title = strip_tags(title_match.group(1))
+        if title not in PLAYER_STAT_TABLES:
+            continue
+
+        table_key = slugify(title)
+        tables[table_key] = {
+            "title": title,
+            **parse_stat_table(table_html[title_match.end():]),
+        }
+
+    return {
+        "name": player.get("name", ""),
+        "url": player.get("url", f"../players/{filename}"),
+        "team": player.get("team", ""),
+        "teamLabel": player.get("teamLabel", ""),
+        "pos": player.get("pos", ""),
+        "stats": tables,
+    }
+
+
 def parse_standings_sections(html):
     sections = []
     title_matches = list(
@@ -448,6 +577,61 @@ def parse_capreport_sections(html):
 
     return sections
 
+
+def parse_injuries(html, team_lookup):
+    table_match = re.search(
+        r"<td class=header[^>]*>\s*&nbsp;Pos</td>.*?</tr>(.*?)</table>",
+        html,
+        re.IGNORECASE | re.DOTALL,
+    )
+
+    if not table_match:
+        return []
+
+    row_matches = re.findall(
+        r"<tr[^>]*class=(row1|row2)[^>]*>(.*?)</tr>",
+        table_match.group(1),
+        re.IGNORECASE | re.DOTALL,
+    )
+    injuries = []
+
+    for row_class, row_html in row_matches:
+        cells = re.findall(r"<td[^>]*class=main[^>]*>(.*?)</td>", row_html, re.IGNORECASE | re.DOTALL)
+        if len(cells) < 5:
+            continue
+
+        player_link = re.search(
+            r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>',
+            cells[1],
+            re.IGNORECASE | re.DOTALL,
+        )
+        team_link = re.search(
+            r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>',
+            cells[2],
+            re.IGNORECASE | re.DOTALL,
+        )
+
+        player_name = strip_tags(player_link.group(2)) if player_link else strip_tags(cells[1])
+        player_url = clean(player_link.group(1)) if player_link else ""
+        team_name = strip_tags(team_link.group(2)) if team_link else strip_tags(cells[2])
+        roster_url = clean(team_link.group(1)) if team_link else ""
+
+        injuries.append(
+            {
+                "pos": strip_tags(cells[0]),
+                "name": player_name,
+                "url": player_url,
+                "team": team_lookup.get(normalize_name(team_name), team_name),
+                "teamName": team_name,
+                "rosterUrl": roster_url,
+                "length": strip_tags(cells[3]),
+                "injury": strip_tags(cells[4]),
+                "rowClass": row_class.lower(),
+            }
+        )
+
+    return injuries
+
 def main():
     os.makedirs(DATABASE_DIR, exist_ok=True)
 
@@ -467,6 +651,10 @@ def main():
         print(f"Error: {CAPREPORT_PATH} not found.")
         return
 
+    if not os.path.exists(INJURIES_PATH):
+        print(f"Error: {INJURIES_PATH} not found.")
+        return
+
     ratings_by_name = load_mdb_ratings()
     all_teams = []
     roster_files = [f for f in os.listdir(ROSTERS_DIR) if f.lower().endswith((".htm", ".html"))]
@@ -480,6 +668,7 @@ def main():
 
     team_lookup = build_team_lookup(all_teams)
     all_players = []
+    all_player_stats = []
     player_files = sorted(
         f for f in os.listdir(PLAYERS_DIR)
         if f.lower().endswith((".htm", ".html"))
@@ -493,11 +682,21 @@ def main():
         player = parse_player_page(html, file, team_lookup, ratings_by_name)
         if player:
             all_players.append(player)
+            all_player_stats.append(parse_player_stats_page(html, file, player))
 
     all_players.sort(key=lambda player: player["name"])
+    all_player_stats.sort(key=lambda player: player["name"])
 
     with open(PLAYERS_OUT, "w", encoding="utf-8") as f:
         json.dump(all_players, f, indent=4)
+
+    player_stats_data = {
+        "source": "players/*.htm",
+        "players": all_player_stats,
+    }
+
+    with open(PLAYER_STATS_OUT, "w", encoding="utf-8") as f:
+        json.dump(player_stats_data, f, indent=4)
 
     all_teams.sort(key=lambda team: team["name"])
 
@@ -525,11 +724,24 @@ def main():
 
     with open(CAPREPORT_OUT, "w", encoding="utf-8") as f:
         json.dump(capreport_data, f, indent=4)
+
+    with open(INJURIES_PATH, "r", encoding="latin-1") as f:
+        injuries_html = f.read()
+
+    injuries_data = {
+        "source": os.path.basename(INJURIES_PATH),
+        "injuries": parse_injuries(injuries_html, team_lookup),
+    }
+
+    with open(INJURIES_OUT, "w", encoding="utf-8") as f:
+        json.dump(injuries_data, f, indent=4)
         
     print(f"\nFinal count: {len(all_players)} players saved to {PLAYERS_OUT}")
+    print(f"Final count: {len(all_player_stats)} player stat records saved to {PLAYER_STATS_OUT}")
     print(f"Final count: {len(all_teams)} teams saved to {TEAMS_OUT}")
     print(f"Final count: {len(standings_data['sections'])} standings sections saved to {STANDINGS_OUT}")
     print(f"Final count: {len(capreport_data['sections'])} cap report sections saved to {CAPREPORT_OUT}")
+    print(f"Final count: {len(injuries_data['injuries'])} injuries saved to {INJURIES_OUT}")
 
 if __name__ == "__main__":
     main()
