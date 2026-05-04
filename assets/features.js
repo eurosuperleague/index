@@ -147,7 +147,7 @@
       ".waiver-database__table td.header { position: sticky; top: 0; z-index: 2; padding: 6px 3px; background: #990000; color: #ffffff !important; font: 700 var(--waiver-header-font-size, 7.5pt)/1.05 Inter, Tahoma, Arial, sans-serif; text-align: center; white-space: nowrap; }",
       ".waiver-database__table td.header--sortable { cursor: pointer; user-select: none; }",
       ".waiver-database__table td.header--left, .waiver-database__table tbody td.main--left { text-align: left; }",
-      ".waiver-database__table tbody td.main { padding: 5px 7px; border-bottom: 0; font: 400 14pt/1.2 Inter ..., Tahoma, Arial, sans-serif; color: #1e293b; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }",
+      ".waiver-database__table tbody td.main { padding: 5px 7px; border-bottom: 0; font: 400 14pt/1.2 Inter ..., Tahoma, Arial, sans-serif; color: #1e293b; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }",
       ".waiver-database__table tbody tr.row1 { background: #f1f5f9; }",
       ".waiver-database__table tbody tr.row2 { background: #e2e8f0; }",
       ".waiver-database__table tbody tr.row1:hover { background: #e8f0fe; }",
