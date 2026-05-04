@@ -11,10 +11,10 @@ Usage:
 import os, sys
 
 # ── CONFIGURE ───────────────────────────────────────────────────────
-ROOT_FOLDER  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CSS_FILENAME  = "assets/styles.css"
-JS_FILENAME   = "assets/sort.js"
-JS2_FILENAME  = "assets/features.js"
+ROOT_FOLDER  = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+CSS_FILENAME  = "assets/css/styles.css"
+JS_FILENAME   = "assets/js/sort.js"
+JS2_FILENAME  = "assets/js/features.js"
 FAVICON_FILE  = "1build/database/favicon.png"   # change to .ico if needed
 # ────────────────────────────────────────────────────────────────────
 
@@ -24,8 +24,8 @@ files_skipped = 0
 
 for dirpath, dirnames, filenames in os.walk(ROOT_FOLDER):
 
-    # Skip the 1build folder itself
-    dirnames[:] = [d for d in dirnames if d != "1build"]
+    # Skip build and custom asset folders; generated league HTML lives outside them.
+    dirnames[:] = [d for d in dirnames if d not in {"1build", "assets"}]
 
     for filename in filenames:
         if not filename.lower().endswith((".html", ".htm")):

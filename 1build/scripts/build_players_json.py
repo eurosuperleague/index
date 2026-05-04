@@ -7,19 +7,21 @@ from html.parser import HTMLParser
 
 # 1. PATH SETUP
 ROOT = os.path.dirname(os.path.abspath(__file__))
-DATABASE_DIR = os.path.join(ROOT, "database")
-ROSTERS_DIR = os.path.normpath(os.path.join(ROOT, "..", "rosters"))
-PLAYERS_DIR = os.path.normpath(os.path.join(ROOT, "..", "players"))
+BUILD_DIR = os.path.dirname(ROOT)
+PROJECT_ROOT = os.path.dirname(BUILD_DIR)
+DATABASE_DIR = os.path.join(BUILD_DIR, "database")
+ROSTERS_DIR = os.path.normpath(os.path.join(PROJECT_ROOT, "rosters"))
+PLAYERS_DIR = os.path.normpath(os.path.join(PROJECT_ROOT, "players"))
 PLAYERS_OUT = os.path.join(DATABASE_DIR, "players.json")
 PLAYER_STATS_OUT = os.path.join(DATABASE_DIR, "player_stats.json")
 TEAMS_OUT = os.path.join(DATABASE_DIR, "teams.json")
 STANDINGS_OUT = os.path.join(DATABASE_DIR, "standings.json")
 CAPREPORT_OUT = os.path.join(DATABASE_DIR, "capreport.json")
 INJURIES_OUT = os.path.join(DATABASE_DIR, "injuries.json")
-STANDINGS_PATH = os.path.normpath(os.path.join(ROOT, "..", "standings.htm"))
-CAPREPORT_PATH = os.path.normpath(os.path.join(ROOT, "..", "capreport.htm"))
-INJURIES_PATH = os.path.normpath(os.path.join(ROOT, "..", "injuries.htm"))
-MDB_PATH = os.path.normpath(os.path.join(ROOT, "..", "LeagueOutput.mdb"))
+STANDINGS_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "standings.htm"))
+CAPREPORT_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "capreport.htm"))
+INJURIES_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "injuries.htm"))
+MDB_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "LeagueOutput.mdb"))
 
 # The 16 numerical stats in your roster files
 ATTR_KEYS = [
