@@ -72,6 +72,19 @@
       min-width: 0;
     }
 
+    .depth-grid > .depth-panel:last-child {
+      position: sticky;
+      top: 10px;
+      align-self: start;
+      max-height: calc(100vh - 20px);
+    }
+
+    .depth-grid > .depth-panel:last-child .depth-panel__body {
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto;
+      max-height: calc(100vh - 52px);
+    }
+
     .depth-panel__head {
       display: flex;
       justify-content: space-between;
@@ -365,6 +378,15 @@
       .depth-gameplan,
       .depth-gameplan-section {
         grid-template-columns: 1fr;
+      }
+
+      .depth-grid > .depth-panel:last-child {
+        position: static;
+        max-height: none;
+      }
+
+      .depth-grid > .depth-panel:last-child .depth-panel__body {
+        max-height: none;
       }
     }
   </style>

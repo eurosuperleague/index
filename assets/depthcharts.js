@@ -426,9 +426,13 @@
   function updateDroppedStarterPosition(row) {
     var player = getPlayerByKey(row.querySelector(".depth-player-select").value);
 
-    if (player && isStarterRole(row.getAttribute("data-role"))) {
-      row.querySelector(".depth-position-input").value = row.getAttribute("data-role");
+    if (!player) {
+      return;
     }
+
+    row.querySelector(".depth-position-input").value = isStarterRole(row.getAttribute("data-role"))
+      ? row.getAttribute("data-role")
+      : player.pos || "Position(s)";
   }
 
   function bindDepthRowDrag() {
