@@ -363,6 +363,37 @@
     menuTable.appendChild(row);
   }
 
+  function ensureDepthChartsMenuLink() {
+    if (!isMenuPage()) {
+      return;
+    }
+
+    var menuTable = document.querySelector("body > table");
+    if (!menuTable || menuTable.querySelector('a[href="assets/html/depthcharts.htm"]')) {
+      return;
+    }
+
+    var anchor = menuTable.querySelector('a[href="capreport.htm"]') || menuTable.querySelector('a[href="injuries.htm"]');
+    var row = document.createElement("tr");
+    var cell = document.createElement("td");
+    var link = document.createElement("a");
+
+    row.setAttribute("valign", "top");
+    link.className = "menulink";
+    link.target = "data";
+    link.href = "assets/html/depthcharts.htm";
+    link.textContent = "Depth Charts";
+    cell.appendChild(link);
+    row.appendChild(cell);
+
+    if (anchor && anchor.parentNode && anchor.parentNode.parentNode && anchor.parentNode.parentNode.parentNode === menuTable) {
+      anchor.parentNode.parentNode.insertAdjacentElement("afterend", row);
+      return;
+    }
+
+    menuTable.appendChild(row);
+  }
+
   function getCurrentPlayerPath() {
     return window.location.pathname.replace(/\\/g, "/").toLowerCase();
   }
@@ -1075,6 +1106,7 @@
     markStandingsPage();
     applyRosterHeaderPhoto();
     ensureCapReportMenuLink();
+    ensureDepthChartsMenuLink();
     initPlayerRatings();
     loadJsonData("teams.json")
       .then(function (teams) {
