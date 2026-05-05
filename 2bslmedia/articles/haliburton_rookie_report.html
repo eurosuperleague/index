@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23111b36'/><text x='50' y='75' font-family='serif' font-size='45' font-weight='900' fill='%23FFFFFF' text-anchor='middle'>ESL</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESL Rookie Report — Tyrese Haliburton</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @import url("../media-shared.css");
+  :root {
+    --gold: #D4A017;
+    --ink: #0F0F0F;
+    --off-white: #F5F0E8;
+    --red: #C0392B;
+    --mid: #3A3A3A;
+    --chi-red: #CE1141;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  nav {
+    background: var(--ink);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 52px;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #D4A017;
+    text-decoration: none;
+  }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: #D4A017; }
+
+  body {
+    background: var(--off-white);
+    color: var(--ink);
+    font-family: 'Barlow', sans-serif;
+    min-height: 100vh;
+  }
+
+  .paper {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #FEFCF7;
+    border-top: 6px solid var(--ink);
+    box-shadow: 4px 4px 0 var(--gold), 8px 8px 0 var(--ink);
+    padding: 3rem 3.5rem 3.5rem;
+  }
+
+  .masthead {
+    text-align: center;
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .league-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--chi-red);
+  }
+
+  .section-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-top: 0.4rem;
+  }
+
+  .headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.7rem;
+    font-weight: 900;
+    line-height: 1.05;
+    margin: 1.2rem 0 0.3rem;
+  }
+
+  .dek {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--mid);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .byline-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 0.35rem 0;
+    margin-bottom: 1.8rem;
+  }
+
+  .byline {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .dateline {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--mid);
+    font-style: italic;
+  }
+
+  .player-header {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: var(--chi-red);
+    color: white;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .player-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 1;
+    opacity: 0.25;
+  }
+
+  .player-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  .player-info .meta {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    opacity: 0.85;
+    margin-top: 0.3rem;
+  }
+
+  .stat-row {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.8rem;
+    flex-wrap: wrap;
+  }
+
+  .stat-card {
+    flex: 1;
+    min-width: 100px;
+    border-top: 3px solid var(--ink);
+    padding-top: 0.4rem;
+  }
+
+  .stat-card .pts {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--ink);
+  }
+
+  .stat-card .label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.65rem;
+    color: var(--mid);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .section-header {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--chi-red);
+    border-bottom: 2px solid var(--chi-red);
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.7rem;
+    margin-top: 1.4rem;
+  }
+
+  .body-text p {
+    font-size: 0.975rem;
+    line-height: 1.75;
+    margin-bottom: 0.8rem;
+    color: #1a1a1a;
+  }
+
+  .drop-cap::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.8rem;
+    font-weight: 900;
+    float: left;
+    line-height: 0.8;
+    margin: 0.1em 0.08em 0 0;
+    color: var(--chi-red);
+  }
+
+  .pull-quote {
+    border-left: 4px solid var(--gold);
+    border-right: 4px solid var(--gold);
+    margin: 1.6rem 0;
+    padding: 0.9rem 1.4rem;
+    text-align: center;
+    background: #FBF6EC;
+  }
+
+  .pull-quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--ink);
+    margin: 0 !important;
+  }
+
+  .grade-row {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  .grade-pill {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border: 2px solid var(--ink);
+  }
+
+  .grade-a { background: #1A6B2E; color: white; border-color: #1A6B2E; }
+  .grade-b { background: #1A3A6B; color: white; border-color: #1A3A6B; }
+  .grade-c { background: #6B6B1A; color: white; border-color: #6B6B1A; }
+  .grade-d { background: var(--chi-red); color: white; border-color: var(--chi-red); }
+
+  .footer-rule {
+    border: none;
+    border-top: 2px solid var(--ink);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.65rem;
+    color: var(--mid);
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body class="media-article">
+<header class="site-topbar">
+  <div class="site-topbar-inner">
+    <div class="site-topbar-brand">
+      <div class="site-edition-pill">Front Page</div>
+      <div>European Super League Sports Desk</div>
+    </div>
+    <ul class="site-topbar-nav">
+      <li><a href="../index.html" class="active">Home</a></li>
+      <li><a href="../all-articles.html">All Articles</a></li>
+      <li><a href="../articles/hornets_duren_trade.html">Latest</a></li>
+      <li><a href="../analysis.html">Analysis</a></li>
+      <li><a href="../scouting.html">Scouting</a></li>
+      <li><a href="../index.htm">League Site</a></li>
+    </ul>
+  </div>
+</header>
+<div class="site-masthead-wrap">
+  <div class="site-masthead-inner">
+    <div class="site-masthead-meta">
+      <div>Wednesday Edition · 1990 Season</div>
+      <div>European Super League · Official Coverage</div>
+    </div>
+    <div class="site-masthead-line">
+      <div></div>
+      <div class="site-wordmark">
+        <div class="site-wordmark-kicker">The Front Page</div>
+        <a href="../index.html"><img class="site-wordmark-logo" src="../article%20images/ESLM.png" alt="ESL Media"></a>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</div>
+<div class="site-ticker">
+  <div class="site-ticker-inner">
+    <span class="site-ticker-label">Top Story</span>
+    <div class="site-ticker-track">
+      <div class="site-ticker-item">Purple &amp; Gold, Black &amp; Blue leads today’s edition</div>
+      <div class="site-ticker-item">A redesigned front page gives the lede room to breathe</div>
+      <div class="site-ticker-item">Washington closes the season as champions</div>
+      <div class="site-ticker-item">Haliburton stays red-hot in Chicago</div>
+      <div class="site-ticker-item">Duren trade reshapes the conference picture</div>
+      <div class="site-ticker-item">League offices weigh a divisional return</div>
+      <div class="site-ticker-item">Purple &amp; Gold, Black &amp; Blue leads today’s edition</div>
+      <div class="site-ticker-item">A redesigned front page gives the lede room to breathe</div>
+      <div class="site-ticker-item">Washington closes the season as champions</div>
+      <div class="site-ticker-item">Haliburton stays red-hot in Chicago</div>
+      <div class="site-ticker-item">Duren trade reshapes the conference picture</div>
+      <div class="site-ticker-item">League offices weigh a divisional return</div>
+    </div>
+  </div>
+</div>
+<div class="page-wrapper">
+  <div class="paper">
+    <div class="masthead">
+      <div class="league-name">European Super League — Scouting Bureau</div>
+      <div class="section-label">1989 Season · Rookie Report</div>
+    </div>
+
+    <h1 class="headline">Wire-to-Wire Vision:<br>The Haliburton File</h1>
+    <p class="dek">Chicago's rookie guard is making the ESL look easy — and his ceiling may still be miles away.</p>
+
+    <div class="byline-bar">
+      <span class="byline">ESL Scouting Staff</span>
+      <span class="dateline">1989 Season · Chicago Bulls</span>
+    </div>
+
+    <div class="player-header">
+      <div class="player-number">#1</div>
+      <div class="player-info">
+        <h2>Tyrese Haliburton</h2>
+        <div class="meta">SG · 6-5, 191 lbs · Age 20 · Rookie · Iowa State · Oshkosh, WI</div>
+        <div class="meta" style="margin-top:0.2rem;">1989 ESL: 14.5 PPG · 5.8 AST · 2.0 REB · .427 3P%</div>
+      </div>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="pts">14.5</div>
+        <div class="label">Points Per Game</div>
+      </div>
+      <div class="stat-card">
+        <div class="pts">5.8</div>
+        <div class="label">Assists Per Game</div>
+      </div>
+      <div class="stat-card">
+        <div class="pts">3.47</div>
+        <div class="label">Assist/TO Ratio</div>
+      </div>
+      <div class="stat-card">
+        <div class="pts">.427</div>
+        <div class="label">3-Point %</div>
+      </div>
+    </div>
+
+    <div class="body-text">
+
+      <div class="section-header">Strengths</div>
+      <p class="drop-cap">Haliburton arrives in Chicago as the most polished playmaking guard in this rookie class, and the numbers back it up immediately. His 3.47 assist-to-turnover ratio as a 20-year-old rookie is extraordinary — a sign of elite decision-making that most guards take years to develop. With a 78 passing attribute and A-grade potential across shooting, handles, and passing, he projects as a true point-forward capable of running an offense. His .427 three-point clip through 33 games is already elite floor spacing, and his 80 three-point rating gives him legitimate range to all areas. At 6-5, he has the positional size to create mismatches and see over defenses, making his passing lanes even more dangerous.</p>
+
+      <div class="pull-quote">
+        <p>"A 3.47 assist-to-turnover ratio as a rookie. That's not a fluke — that's a basketball mind operating ahead of its years."</p>
+      </div>
+
+      <div class="section-header">Weaknesses</div>
+      <p>The concerns are real and worth monitoring. Haliburton is a featherweight at 191 pounds, and his 61 inside scoring and 59 strength ratings reflect a player who struggles to finish through contact in the paint. Bigger guards and physical defenders can bully him at both ends. His rebounding profile is a liability — just 13 ORB and 22 DRB — making him a nonfactor on the glass for his size. His 27 quickness is a legitimate red flag; quicker defenders can get under his handle and pressure his pull-up game. Blocking and interior defense (BLK 27) are predictably weak, meaning opposing guards can attack him in switch situations. He will need to add strength and become a more decisive scorer to alleviate pressure from teammates.</p>
+
+      <div class="section-header">Potential Grades</div>
+      <div class="grade-row">
+        <span class="grade-pill grade-a">INS: B</span>
+        <span class="grade-pill grade-a">JPS: A</span>
+        <span class="grade-pill grade-b">FT: A</span>
+        <span class="grade-pill grade-a">3PS: A</span>
+        <span class="grade-pill grade-a">HND: A</span>
+        <span class="grade-pill grade-a">PAS: A</span>
+        <span class="grade-pill grade-d">ORB: F</span>
+        <span class="grade-pill grade-d">DRB: D</span>
+        <span class="grade-pill grade-b">STL: B</span>
+        <span class="grade-pill grade-c">BLK: D</span>
+      </div>
+
+      <div class="section-header">Summary</div>
+      <p>Tyrese Haliburton is the most ESL-ready playmaker in the 1989 rookie class. His combination of three-point shooting, ball security, and passing instincts makes him an ideal fit in any up-tempo, spacing-oriented system. Chicago gets a day-one starter who won't beat himself — his 5.8 assists and near-perfect turnover ratio prove he already understands the professional game. The physical limitations are genuine concerns, but his A-grade potential in shooting, handles, and passing suggests the tools to become one of the league's premier lead guards. Add strength and improve off-the-ball movement defensively, and Haliburton has the profile to develop into a ESL All-Star. The floor is a reliable starter. The ceiling is a franchise cornerstone.</p>
+    </div>
+
+    <hr class="footer-rule">
+    <div class="footer-text">European Super League · 1989 Scouting Bureau · Rookie Evaluation Report</div>
+  </div>
+</div>
+<script src="../article-rail.js"></script>
+</body>
+</html>
+
+
+
+

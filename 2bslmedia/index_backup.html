@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23D4A017'/><text x='50' y='75' font-family='serif' font-size='45' font-weight='900' fill='%230F0F0F' text-anchor='middle'>BSL</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BSL Media — Breakstarter League</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     COLORS — change these to restyle the whole site at once
+  ============================================================ */
+  :root {
+    --gold:   #D4A017;
+    --ink:    #0F0F0F;
+    --paper:  #F5F0E8;
+    --cream:  #FEFCF7;
+    --red:    #C0392B;
+    --mid:    #3A3A3A;
+    --light:  #E8E2D5;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body { background: var(--paper); color: var(--ink); font-family: 'Barlow', sans-serif; }
+
+  /* NAV */
+  nav { background: var(--ink); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; height: 52px; }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 900; color: var(--gold); text-decoration: none; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.6); text-decoration: none; cursor: pointer; transition: color 0.2s; padding-bottom: 3px; border-bottom: 2px solid transparent; }
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+  /* MASTHEAD */
+  .masthead { background: var(--cream); border-bottom: 4px double var(--ink); text-align: center; padding: 2.5rem 1rem 1.8rem; }
+  .masthead-eyebrow { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.35em; text-transform: uppercase; color: var(--red); margin-bottom: 0.6rem; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(3rem, 8vw, 5.5rem); font-weight: 900; line-height: 0.95; letter-spacing: -1px; }
+  .masthead-title span { color: var(--red); }
+  .masthead-rule { display: flex; align-items: center; gap: 1rem; margin: 1rem auto 0.6rem; max-width: 400px; }
+  .masthead-rule::before, .masthead-rule::after { content: ''; flex: 1; height: 1px; background: var(--ink); }
+  .masthead-date { font-family: 'Barlow Condensed', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mid); white-space: nowrap; }
+  .masthead-tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.9rem; color: var(--mid); }
+
+  /* TICKER */
+  .ticker { background: var(--red); color: white; padding: 0.4rem 0; overflow: hidden; white-space: nowrap; border-bottom: 2px solid var(--ink); }
+  .ticker-inner { display: inline-block; animation: scroll-ticker 35s linear infinite; font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+  .ticker-inner span { margin: 0 3rem; opacity: 0.7; }
+  .ticker-inner strong { opacity: 1; }
+  @keyframes scroll-ticker { 0% { transform: translateX(100vw); } 100% { transform: translateX(-100%); } }
+
+  /* LAYOUT */
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* PAGE SECTIONS — JS toggles these */
+  .page-section { display: none; }
+  .page-section.active { display: block; }
+
+  /* SECTION LABEL */
+  .section-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.3em; text-transform: uppercase; color: var(--red); border-bottom: 2px solid var(--red); padding-bottom: 0.3rem; margin: 2.5rem 0 1.5rem; display: inline-block; }
+
+  /* HERO */
+  .hero { display: grid; grid-template-columns: 1fr 360px; gap: 2.5rem; padding: 2rem 0; border-bottom: 2px solid var(--ink); align-items: start; }
+  .hero-tag { display: inline-block; font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; background: var(--red); color: white; padding: 2px 8px; margin-bottom: 0.8rem; }
+  .hero-headline { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 900; line-height: 1.08; margin-bottom: 0.6rem; }
+  .hero-headline a { color: var(--ink); text-decoration: none; transition: color 0.2s; }
+  .hero-headline a:hover { color: var(--red); }
+  .hero-dek { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 600; color: var(--mid); line-height: 1.5; margin-bottom: 1rem; }
+  .hero-excerpt { font-size: 0.925rem; line-height: 1.7; color: #2a2a2a; margin-bottom: 1.2rem; }
+  .read-more { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--gold); padding-bottom: 1px; transition: color 0.2s, border-color 0.2s; }
+  .read-more:hover { color: var(--red); border-color: var(--red); }
+
+  /* SIDEBAR */
+  .hero-sidebar { border-left: 3px solid var(--ink); padding-left: 2rem; }
+  .sidebar-title { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.25em; text-transform: uppercase; color: var(--mid); border-bottom: 1px solid var(--ink); padding-bottom: 0.3rem; margin-bottom: 1rem; }
+  .stat-block { margin-bottom: 1.4rem; padding-bottom: 1.4rem; border-bottom: 1px dashed var(--light); }
+  .stat-block:last-child { border-bottom: none; margin-bottom: 0; }
+  .stat-player { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; margin-bottom: 0.2rem; }
+  .stat-team { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem; }
+  .stat-line { display: flex; gap: 1rem; }
+  .stat-num { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 900; line-height: 1; }
+  .stat-lbl { font-family: 'Barlow Condensed', sans-serif; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mid); }
+
+  /* ARTICLE GRID */
+  .article-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; padding-bottom: 3rem; }
+  .article-card { border-top: 3px solid var(--ink); padding-top: 1rem; display: flex; flex-direction: column; transition: transform 0.2s; }
+  .article-card:hover { transform: translateY(-2px); }
+  .card-tag { display: inline-block; font-family: 'Barlow Condensed', sans-serif; font-size: 0.6rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem; }
+  .card-headline { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.5rem; }
+  .card-headline a { color: var(--ink); text-decoration: none; transition: color 0.2s; }
+  .card-headline a:hover { color: var(--red); }
+  .card-dek { font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; font-weight: 600; color: var(--mid); line-height: 1.4; margin-bottom: 0.8rem; flex: 1; }
+  .card-meta { font-family: 'Barlow Condensed', sans-serif; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); border-top: 1px solid var(--light); padding-top: 0.6rem; margin-top: auto; display: flex; justify-content: space-between; }
+
+  /* STANDINGS TABLE */
+  .standings-table { width: 100%; border-collapse: collapse; margin-bottom: 3rem; font-family: 'Barlow Condensed', sans-serif; }
+  .standings-table th { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: white; background: var(--ink); padding: 0.6rem 1rem; text-align: left; }
+  .standings-table th:not(:first-child) { text-align: center; }
+  .standings-table td { padding: 0.65rem 1rem; font-size: 0.9rem; font-weight: 600; border-bottom: 1px solid var(--light); }
+  .standings-table td:not(:first-child) { text-align: center; }
+  .standings-table tr:nth-child(even) td { background: #F9F5EE; }
+  .standings-table tr:hover td { background: #F0E9D8; }
+  .standings-table .team-name { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 0.95rem; }
+  .standings-table .playoff-line td { border-bottom: 3px solid var(--red); }
+
+  hr.divider { border: none; border-top: 1px solid var(--ink); margin: 0.5rem 0 2.5rem; }
+
+  /* FOOTER */
+  footer { background: var(--ink); color: rgba(255,255,255,0.5); text-align: center; padding: 2rem; font-family: 'Barlow Condensed', sans-serif; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; }
+  footer strong { color: var(--gold); }
+
+  /* RESPONSIVE */
+  @media (max-width: 700px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-sidebar { border-left: none; border-top: 2px solid var(--ink); padding-left: 0; padding-top: 1.5rem; }
+    .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+  NAV BAR
+  HOW TO ADD A NEW NAV BUTTON:
+    1. Add a new <li><a data-section="your-id">Label</a></li> below
+    2. Add a matching <div id="your-id" class="page-section"> further down
+============================================================ -->
+<nav>
+  <a href="index.html" class="nav-logo">BSL Media</a>
+  <ul class="nav-links">
+    <li><a class="active" data-section="home">Home</a></li>
+    <li><a data-section="news">News</a></li>
+    <li><a data-section="scouting">Scouting</a></li>
+  </ul>
+</nav>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-eyebrow">The Official Voice of the Breakstarter League</div>
+  <div class="masthead-title">BSL<span> Media</span></div><!-- EDIT: site name -->
+  <div class="masthead-rule"><span class="masthead-date">1990 Season · Est. 1989</span></div><!-- EDIT: season -->
+  <div class="masthead-tagline">Where legends are made and legacies are written.</div><!-- EDIT: tagline -->
+</div>
+
+<!-- ============================================================
+  TICKER — the scrolling red bar
+  EDIT: Add or change items between the <strong> tags
+============================================================ -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <strong>BREAKING:</strong> WASHINGTON WIN THE 1989 BSL TITLE
+    <span>·</span>
+    <strong>SCOUTING:</strong> Pippen to join Haliburton in Chicago
+    <span>·</span>
+    <strong>MVP WATCH:</strong> Lebron cruises to an almost unanimous MVP
+    <span>·</span>
+    <strong>STAT LINE:</strong> Drexeler wins first guard DPOY ever with 3.4 SPG
+    <span>·</span>
+    <strong>ROOKIE:</strong> Haliburton posts 3.01 A/TO ratio playing all 82 games
+    <span>·</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ══════════════════════════════════════
+       HOME PAGE
+  ══════════════════════════════════════ -->
+  <div id="home" class="page-section active">
+
+    <div class="section-label">Featured Story</div>
+
+    <!-- ── HERO ──
+      EDIT: To swap the featured article, change:
+        - The tag text
+        - The <a href="..."> filename and headline
+        - The dek and excerpt paragraph
+        - The stat sidebar numbers
+    -->
+    <div class="hero">
+      <div class="hero-text">
+        <div class="hero-tag">BSL Lamora</div>
+        <h1 class="hero-headline">
+        <a href="articles/500_win_club_rankings.html">The 500-Win Club: BSL's Most Successful Franchises</a>
+        </h1>
+        <p class="hero-dek">After eleven seasons, thirteen teams have reached the 500-win milestone. Here's how they rank — from dynasty to contender to rebuild.</p>
+        <p class="hero-excerpt">After eleven seasons of BSL basketball, thirteen franchises have crossed the 500-win threshold. Some built dynasties. Some squandered talent. Some made the playoffs eight straight years without winning a single series. Here's how they stack up, ranked by regular-season win percentage.</p>
+        <a href="articles/500_win_club_rankings.html" class="read-more">Read Full Story →</a>
+      </div>
+
+      <div class="hero-sidebar">
+        <div class="sidebar-title">MVP Candidates · Current Stats</div>
+        <!-- EDIT: Update numbers each season -->
+        <div class="stat-block">
+          <div class="stat-player">LeBron James</div>
+          <div class="stat-team">SF · New Orleans · #12</div>
+          <div class="stat-line">
+            <div class="stat-item"><div class="stat-num">32.4</div><div class="stat-lbl">PPG</div></div>
+            <div class="stat-item"><div class="stat-num">6.4</div><div class="stat-lbl">REB</div></div>
+            <div class="stat-item"><div class="stat-num">5.8</div><div class="stat-lbl">AST</div></div>
+          </div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-player">Chris Bosh</div>
+          <div class="stat-team">PF · Denver · #53</div>
+          <div class="stat-line">
+            <div class="stat-item"><div class="stat-num">30.5</div><div class="stat-lbl">PPG</div></div>
+            <div class="stat-item"><div class="stat-num">7.3</div><div class="stat-lbl">REB</div></div>
+            <div class="stat-item"><div class="stat-num">2.7</div><div class="stat-lbl">AST</div></div>
+          </div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-player">Shaquille O'Neal</div>
+          <div class="stat-team">C · Cleveland · #44</div>
+          <div class="stat-line">
+            <div class="stat-item"><div class="stat-num">29.8</div><div class="stat-lbl">PPG</div></div>
+            <div class="stat-item"><div class="stat-num">8.3</div><div class="stat-lbl">REB</div></div>
+            <div class="stat-item"><div class="stat-num">2.9</div><div class="stat-lbl">AST</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">Latest Coverage</div>
+    <hr class="divider">
+
+    <!-- ══════════════════════════════════════
+      HOW TO ADD A NEW ARTICLE CARD:
+        1. Copy the block between the arrows below
+        2. Paste it inside this article-grid div
+        3. Change the tag, title, href, and summary
+        4. Upload the article HTML file to GitHub
+      ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+      <div class="article-card">
+        <span class="card-tag">CATEGORY · Team</span>
+        <h2 class="card-headline"><a href="YOUR_FILE.html">Headline Here</a></h2>
+        <p class="card-dek">One or two sentence summary.</p>
+        <div class="card-meta"><span>BSL Staff</span><span>1989 Season</span></div>
+      </div>
+      ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+    ══════════════════════════════════════ -->
+    <div class="article-grid">
+      <div class="article-card">
+        <span class="card-tag">Feature · Historical Analysis</span>
+        <h2 class="card-headline"><a href="articles/500_win_club_rankings.html">The 500-Win Club: BSL's Most Successful Franchises</a></h2>
+        <p class="card-dek">After eleven seasons, thirteen teams have reached the 500-win milestone. Here's how they rank — from dynasty to contender to rebuild.</p>
+        <div class="card-meta"><span>BSL Lamora</span><span>1990 Season</span></div>
+      </div>
+      <div class="article-card">
+        <span class="card-tag">Opinion · Commissioner's Poll</span>
+        <h2 class="card-headline"><a href="articles/divisions_editorial.html">The Case for Divisions: Why the BSL Needs Them Back</a></h2>
+        <p class="card-dek">Eight divisions. Real rivalries. Meaningful games in February. It's time to bring back what made BSL 1.0 special.</p>
+        <div class="card-meta"><span>BSL Editorial Board</span><span>1989 Season</span></div>
+      </div>
+      <div class="article-card">
+        <span class="card-tag">Playoff Preview</span>
+        <h2 class="card-headline"><a href="articles/orlando_magic_playoff_preview.html">Five Magic Players to Watch This Playoff Run</a></h2>
+        <p class="card-dek">Orlando's veteran core and emerging youth have the pieces — but can they make noise against Washington?</p>
+        <div class="card-meta"><span>BSL Cuffy</span><span>1989 Playoffs</span></div>
+      </div>
+      <!-- PASTE NEW ARTICLE CARDS ABOVE THIS LINE -->
+
+    </div>
+  </div><!-- /home -->
+
+
+  <!-- ══════════════════════════════════════
+       NEWS PAGE — all articles
+       EDIT: Mirror any new cards you add above
+  ══════════════════════════════════════ -->
+  
+  <div id="news" class="page-section">
+    <div class="section-label">All Stories</div>
+    <hr class="divider">
+    <div class="article-grid">
+      <div class="article-card">
+        <span class="card-tag">Feature · Historical Analysis</span>
+        <h2 class="card-headline"><a href="articles/500_win_club_rankings.html">The 500-Win Club: BSL's Most Successful Franchises</a></h2>
+        <p class="card-dek">After eleven seasons, thirteen teams have reached the 500-win milestone. Here's how they rank — from dynasty to contender to rebuild.</p>
+        <div class="card-meta"><span>BSL Lamora</span><span>1990 Season</span></div>
+      </div>
+      <div class="article-card">
+        <span class="card-tag">Opinion · Commissioner's Poll</span>
+        <h2 class="card-headline"><a href="articles/divisions_editorial.html">The Case for Divisions: Why the BSL Needs Them Back</a></h2>
+        <p class="card-dek">Eight divisions. Real rivalries. Meaningful games in February. It's time to bring back what made BSL 1.0 special.</p>
+        <div class="card-meta"><span>BSL Editorial Board</span><span>1989 Season</span></div>
+      </div>
+      <div class="article-card">
+        <span class="card-tag">Playoff Preview</span>
+        <h2 class="card-headline"><a href="articles/orlando_magic_playoff_preview.html">Five Magic Players to Watch This Playoff Run</a></h2>
+        <p class="card-dek">Orlando's veteran core and emerging youth have the pieces — but can they make noise against Washington?</p>
+        <div class="card-meta"><span>BSL Cuffy</span><span>1989 Playoffs</span></div>
+      </div>
+      
+      <div class="article-card">
+        <span class="card-tag">Hornets Swing for the Fences Acquire Duren</span>
+        <h2 class="card-headline"><a href="articles/hornets_duren_trade.html">Hornets Swing for the Fences, Acquire Duren</a></h2>
+        <p class="card-dek">New Orleans sends a franchise-altering haul to Toronto for the former BSL champion big man — and signals they're done rebuilding.</p>
+        <div class="card-meta"><span>BSL Christofu</span><span>1989 Season</span></div>
+      </div>       
+
+      <div class="article-card">
+        <span class="card-tag">MVP Race · 1989 Season</span>
+        <h2 class="card-headline"><a href="articles/bsl_mvp_race.html">Three Kings, One Trophy</a></h2>
+        <p class="card-dek">James, Bosh, and O'Neal are each making an ironclad case. The margin separating them is razor-thin.</p>
+        <div class="card-meta"><span>BSL Staff Writer</span><span>1989 Season</span></div>
+      </div>
+
+      <div class="article-card">
+        <span class="card-tag">Rookie Report · Chicago</span>
+        <h2 class="card-headline"><a href="articles/haliburton_rookie_report.html">Wire-to-Wire Vision: The Haliburton File</a></h2>
+        <p class="card-dek">Chicago's rookie guard is making the BSL look easy — and his ceiling may still be miles away.</p>
+        <div class="card-meta"><span>BSL Scouting Bureau</span><span>1989 Season</span></div>
+      </div>
+
+      <!-- PASTE NEW ARTICLE CARDS HERE TOO -->
+
+    </div>
+  </div><!-- /news -->
+
+
+  <!-- ══════════════════════════════════════
+       SCOUTING PAGE — rookie/player reports only
+       EDIT: Add scouting report cards here
+  ══════════════════════════════════════ -->
+  <div id="scouting" class="page-section">
+    <div class="section-label">Scouting Reports</div>
+    <hr class="divider">
+    <div class="article-grid">
+
+      <div class="article-card">
+        <span class="card-tag">Rookie Report · Chicago</span>
+        <h2 class="card-headline"><a href="articles/haliburton_rookie_report.html">Wire-to-Wire Vision: The Haliburton File</a></h2>
+        <p class="card-dek">Chicago's rookie guard is making the BSL look easy — and his ceiling may still be miles away.</p>
+        <div class="card-meta"><span>BSL Scouting Bureau</span><span>1989 Season</span></div>
+      </div>
+
+      <!-- PASTE NEW SCOUTING CARDS HERE -->
+
+    </div>
+  </div><!-- /scouting -->
+
+
+  <!-- ══════════════════════════════════════
+       STANDINGS PAGE
+       EDIT: Update W and L each week.
+       The row with class "playoff-line" draws
+       a red line to show the playoff cutoff.
+       Copy a <tr> to add more teams.
+  ══════════════════════════════════════ -->
+  <div id="standings" class="page-section">
+    <div class="section-label">1989 Season Standings</div>
+    <hr class="divider">
+    <table class="standings-table">
+      <thead>
+        <tr>
+          <th>#</th><th>Team</th><th>W</th><th>L</th><th>PCT</th><th>GB</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- EDIT: change team name, W, L numbers -->
+        <tr><td>1</td><td class="team-name">New Orleans</td><td>24</td><td>9</td><td>.727</td><td>—</td></tr>
+        <tr><td>2</td><td class="team-name">Denver</td><td>22</td><td>11</td><td>.667</td><td>2</td></tr>
+        <tr><td>3</td><td class="team-name">Cleveland</td><td>21</td><td>12</td><td>.636</td><td>3</td></tr>
+        <tr class="playoff-line"><td>4</td><td class="team-name">Chicago</td><td>19</td><td>14</td><td>.576</td><td>5</td></tr>
+        <!-- red line above = playoff cutoff -->
+        <tr><td>5</td><td class="team-name">Boston</td><td>15</td><td>18</td><td>.455</td><td>9</td></tr>
+        <tr><td>6</td><td class="team-name">Atlanta</td><td>12</td><td>21</td><td>.364</td><td>12</td></tr>
+        <tr><td>7</td><td class="team-name">Portland</td><td>8</td><td>25</td><td>.242</td><td>16</td></tr>
+        <tr><td>8</td><td class="team-name">Seattle</td><td>5</td><td>28</td><td>.152</td><td>19</td></tr>
+      </tbody>
+    </table>
+  </div><!-- /standings -->
+
+
+</div><!-- /container -->
+
+<footer>
+  <strong>BSL Media</strong> · Breakstarter League · 1989 Season · All Rights Reserved
+</footer>
+
+<!-- ============================================================
+  JAVASCRIPT — powers the nav buttons
+  You do NOT need to edit anything below this line.
+  It reads data-section on each nav link and shows
+  the matching <div id="..."> when clicked.
+============================================================ -->
+<script>
+  const navLinks = document.querySelectorAll('.nav-links a[data-section]');
+  const sections = document.querySelectorAll('.page-section');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('active'));
+      sections.forEach(s => s.classList.remove('active'));
+      link.classList.add('active');
+      document.getElementById(link.getAttribute('data-section')).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>
+

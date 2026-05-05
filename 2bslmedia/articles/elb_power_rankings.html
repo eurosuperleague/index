@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23111b36'/><text x='50' y='75' font-family='serif' font-size='45' font-weight='900' fill='%23FFFFFF' text-anchor='middle'>ESL</text></svg>">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Europa League Power Rankings - ESL Media</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    @import url("../media-shared.css");
+    :root{--gold:#111b36;--ink:#0F0F0F;--off-white:#F5F0E8;--red:#111b36;--mid:#3A3A3A;--light:#E8E2D5;--blue:#111b36}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--off-white);color:var(--ink);font-family:'Barlow',sans-serif;min-height:100vh}
+    .paper{max-width:820px;margin:0 auto;background:#FEFCF7;border-top:6px solid var(--ink);box-shadow:4px 4px 0 var(--gold),8px 8px 0 var(--ink);padding:3rem 3.5rem 3.5rem}
+    .masthead{text-align:center;border-bottom:3px double var(--ink);padding-bottom:1rem;margin-bottom:.5rem}
+    .league-name{font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:var(--red)}
+    .section-label{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--mid);margin-top:.4rem}
+    .breaking-flag{display:inline-block;background:var(--gold);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:.68rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;padding:3px 10px;margin-bottom:.8rem}
+    .headline{font-family:'Playfair Display',serif;font-size:2.7rem;font-weight:900;line-height:1.05;margin:.4rem 0;letter-spacing:-.5px}
+    .dek{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:600;color:var(--mid);margin-bottom:1rem;line-height:1.4}
+    .byline-bar{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:.35rem 0;margin-bottom:1.8rem}
+    .byline,.dateline{font-family:'Barlow Condensed',sans-serif;font-size:.72rem}
+    .byline{font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    .dateline{font-weight:400;color:var(--mid);font-style:italic}
+    .body-text p{font-size:.98rem;line-height:1.75;margin-bottom:1rem;color:#1a1a1a}
+    .drop-cap::first-letter{font-family:'Playfair Display',serif;font-size:3.8rem;font-weight:900;float:left;line-height:.8;margin:.1em .08em 0 0;color:var(--blue)}
+    .section-header{font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:var(--blue);border-bottom:2px solid var(--blue);padding-bottom:.25rem;margin:1.8rem 0 .9rem}
+    .power-board{border:2px solid var(--ink);margin:1.6rem 0;background:#f7f9fd}
+    .power-board-head{background:var(--ink);color:#fff;padding:.65rem 1rem;display:flex;justify-content:space-between;gap:1rem;font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    .power-list{list-style:none;padding:.5rem 1rem 1rem}
+    .power-item{padding:.9rem 0;border-bottom:1px solid var(--light)}
+    .power-item:last-child{border-bottom:none}
+    .power-rank{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;color:var(--blue);display:inline-block;width:2.4rem}
+    .power-team{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700}
+    .power-meta{font-family:'Barlow Condensed',sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mid);margin:.25rem 0 .35rem}
+    .power-note{font-size:.93rem;line-height:1.6;color:#222}
+    .stat-box{background:#f7f9fd;border:2px solid var(--ink);padding:1.1rem 1.2rem;margin:1.5rem 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;text-align:center}
+    .stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--blue);display:block}
+    .stat-label{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--mid)}
+    .footer-rule{border:none;border-top:2px solid var(--ink);margin-top:2.5rem;margin-bottom:.75rem}
+    .footer-text{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;color:var(--mid);text-align:center;letter-spacing:.15em;text-transform:uppercase}
+  </style>
+</head>
+<body class="media-article">
+<header class="site-topbar">
+  <div class="site-topbar-inner">
+    <div class="site-topbar-brand">
+      <div class="site-edition-pill">Front Page</div>
+      <div>European Super League Sports Desk</div>
+    </div>
+    <ul class="site-topbar-nav">
+      <li><a href="../index.html" class="active">Home</a></li>
+      <li><a href="../all-articles.html">All Articles</a></li>
+      <li><a href="../articles/hornets_duren_trade.html">Latest</a></li>
+      <li><a href="../analysis.html">Analysis</a></li>
+      <li><a href="../scouting.html">Scouting</a></li>
+      <li><a href="../index.htm">League Site</a></li>
+    </ul>
+  </div>
+</header>
+<div class="site-ticker">
+  <div class="site-ticker-inner">
+    <span class="site-ticker-label">Power Rankings</span>
+    <div class="site-ticker-track">
+      <div class="site-ticker-item">Chelsea's 5-1 opening run makes them the clear first No. 1 in the Europa board</div>
+      <div class="site-ticker-item">Benfica and Marseille remain the most stable chasers behind them</div>
+      <div class="site-ticker-item">Aston Villa has the tier's first true crisis after a 0-6 slide</div>
+      <div class="site-ticker-item">Chelsea's 5-1 opening run makes them the clear first No. 1 in the Europa board</div>
+      <div class="site-ticker-item">Benfica and Marseille remain the most stable chasers behind them</div>
+      <div class="site-ticker-item">Aston Villa has the tier's first true crisis after a 0-6 slide</div>
+    </div>
+  </div>
+</div>
+
+<div class="paper">
+  <div class="masthead">
+    <div class="league-name">European Super League - Europa League</div>
+    <div class="section-label">Power Rankings - Based on standings and roster data</div>
+  </div>
+
+  <div class="breaking-flag">Analysis Desk</div>
+  <h1 class="headline">Europa League Power Rankings: Chelsea earns the first top line</h1>
+  <p class="dek">The Europa board is less top-heavy than the Champions League table, but the opening six-game sample already gives Chelsea separation, Benfica a real chase case, and Aston Villa a hole to climb out of.</p>
+
+  <div class="byline-bar">
+    <span class="byline">ESL Media Desk</span>
+    <span class="dateline">Europa League board - first edition</span>
+  </div>
+
+  <div class="stat-box">
+    <div><span class="stat-num">5-1</span><span class="stat-label">Best Start</span></div>
+    <div><span class="stat-num">148</span><span class="stat-label">Top Overall: Moses Malone</span></div>
+    <div><span class="stat-num">0-6</span><span class="stat-label">Bottom Form Line</span></div>
+  </div>
+
+  <div class="body-text">
+    <p class="drop-cap">If the Champions League feels built on brand gravity, the Europa League board feels built on structure. There is less superstar overload here, but more teams with a believable route to solid basketball. The standings file gives one obvious opening truth: Chelsea owns the hottest line at 5-1. The roster data fills in the rest of the picture. Benfica has the tier's biggest singular hammer in Moses Malone, Marseille has enough veteran ballast to stay high, and the bottom of the board is already punishing any team that has not found a shape in the opening sample.</p>
+
+    <div class="section-header">The Board</div>
+  </div>
+
+  <div class="power-board">
+    <div class="power-board-head">
+      <span>Europa League</span>
+      <span>Opening six-game sample</span>
+    </div>
+    <ol class="power-list">
+      <li class="power-item"><span class="power-rank">1</span><span class="power-team">Chelsea</span><div class="power-meta">Last six: 5-1 | Core: Jack Sikma, Jim Paxson, Robert Reid</div><div class="power-note">The simplest call on any of the three boards. Chelsea has the best record in the section and a top trio strong enough to support it. Sikma gives them a center line with real authority, and the perimeter scoring balance keeps them from leaning on one answer too heavily.</div></li>
+      <li class="power-item"><span class="power-rank">2</span><span class="power-team">Benfica</span><div class="power-meta">Last six: 4-2 | Core: Moses Malone, Mychal Thompson, Ray Williams</div><div class="power-note">Malone is the biggest single talent swing in the tier, and that matters in an early ranking. Benfica may not yet own the cleanest record line, but any team with the best player on the floor that often is going to live near the top until proven otherwise.</div></li>
+      <li class="power-item"><span class="power-rank">3</span><span class="power-team">Marseille</span><div class="power-meta">Last six: 4-2 | Core: Robert Parish, Gus Williams, Jamaal Wilkes</div><div class="power-note">Marseille feels older and steadier than flashy. Parish gives them an interior baseline, Gus Williams gives them pace, and the 4-2 opening keeps them in the top line conversation without much argument.</div></li>
+      <li class="power-item"><span class="power-rank">4</span><span class="power-team">Juventus</span><div class="power-meta">Last six: 3-3 | Core: Kareem Abdul-Jabbar, Rolando Blackman, John Lucas</div><div class="power-note">A .500 start is not enough to break into the top three, but Kareem still changes the tone of any matchup. Juventus is the kind of team that can sit fourth on a ranking and still scare the clubs above them if the rhythm sharpens.</div></li>
+      <li class="power-item"><span class="power-rank">5</span><span class="power-team">Sheffield United</span><div class="power-meta">Last six: 3-3 | Core: Rickey Green, Bill Cartwright, Billy Knight</div><div class="power-note">This is the league's most conventional middle. Sheffield looks balanced, competent, and still a little ordinary. That is not a criticism so much as a reminder that this group still needs a signature trait before it can climb.</div></li>
+      <li class="power-item"><span class="power-rank">6</span><span class="power-team">Monaco</span><div class="power-meta">Last six: 3-3 | Core: Purvis Short, Danny Ainge, Wayne Cooper</div><div class="power-note">Monaco is harder to slot than Sheffield because the talent base is thinner, but Purvis Short and Danny Ainge give them enough offensive credibility to stay out of the bottom two. They are competitive without yet feeling threatening.</div></li>
+      <li class="power-item"><span class="power-rank">7</span><span class="power-team">Ajax</span><div class="power-meta">Last six: 2-4 | Core: Cliff Robinson, Maurice Cheeks, James Edwards</div><div class="power-note">The top of Ajax's roster is respectable, especially with Cheeks organizing the floor, but the opening results are too soft to ignore. There is room for a rebound here, just not enough evidence yet to rank them above the neutral clubs.</div></li>
+      <li class="power-item"><span class="power-rank">8</span><span class="power-team">Aston Villa</span><div class="power-meta">Last six: 0-6 | Core: Bill Laimbeer, Larry Nance, Dudley Bradley</div><div class="power-note">This one is non-negotiable. Villa is the only team in the entire three-tier snapshot that opens 0-6, and even a front line with Laimbeer and Nance cannot soften that. They do not just need a win; they need a reset.</div></li>
+    </ol>
+  </div>
+
+  <div class="body-text">
+    <div class="section-header">The Shape Of The Tier</div>
+
+    <p>The first thing that jumps off the Europa board is how little room there is between second and sixth. Benfica, Marseille, Juventus, Sheffield United, and Monaco all have some version of a workable identity. The gap is not really about whether they belong in the race. It is about whether they can turn that identity into week-to-week pressure. Chelsea has done that earliest, which is why the top spot is theirs without much drama.</p>
+
+    <p>The team with the easiest path upward is Juventus. Kareem Abdul-Jabbar is still the kind of centerpiece who can bend a ranking in a hurry, and a 3-3 opening is not a meaningful hole. The team under the heaviest pressure is Aston Villa, because 0-6 instantly changes the tone of every conversation around a roster. Larry Nance and Bill Laimbeer are too recognizable to stay buried forever, but the board cannot hand out sympathy points just because the names look familiar.</p>
+
+    <p>That is what makes this tier compelling. It does not have one royal club choking the oxygen out of the room. It has a live race, a real bottom, and several teams one decent week away from changing the conversation. For a first power-ranking edition, that is exactly what you want.</p>
+  </div>
+
+  <hr class="footer-rule">
+  <div class="footer-text">European Super League - Europa League - Compiled from standings.json, teams.json, and players.json</div>
+</div>
+<script src="../article-rail.js"></script>
+</body>
+</html>

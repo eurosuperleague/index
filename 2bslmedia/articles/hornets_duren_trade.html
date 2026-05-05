@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23111b36'/><text x='50' y='75' font-family='serif' font-size='45' font-weight='900' fill='%23FFFFFF' text-anchor='middle'>ESL</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hornets Swing for the Fences, Acquire Duren — ESL Media</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @import url("../media-shared.css");
+  :root {
+    --gold:     #D4A017;
+    --ink:      #0F0F0F;
+    --off-white:#F5F0E8;
+    --red:      #C0392B;
+    --mid:      #3A3A3A;
+    --light:    #E8E2D5;
+    --teal:     #00778B;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* NAV */
+  nav { background: var(--ink); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; height: 52px; }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 900; color: var(--gold); text-decoration: none; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--gold); }
+
+  body {
+    background: var(--off-white);
+    color: var(--ink);
+    font-family: 'Barlow', sans-serif;
+    min-height: 100vh;
+  }
+
+  .paper {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #FEFCF7;
+    border-top: 6px solid var(--ink);
+    box-shadow: 4px 4px 0 var(--gold), 8px 8px 0 var(--ink);
+    padding: 3rem 3.5rem 3.5rem;
+  }
+
+  /* MASTHEAD */
+  .masthead { text-align: center; border-bottom: 3px double var(--ink); padding-bottom: 1rem; margin-bottom: 0.5rem; }
+  .league-name { font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.25em; text-transform: uppercase; color: var(--red); }
+  .section-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: var(--mid); margin-top: 0.4rem; }
+
+  /* HEADLINE */
+  .breaking-flag { display: inline-block; background: var(--red); color: white; font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; padding: 3px 10px; margin-bottom: 0.8rem; }
+  .headline { font-family: 'Playfair Display', serif; font-size: 2.7rem; font-weight: 900; line-height: 1.05; margin: 0.4rem 0; letter-spacing: -0.5px; }
+  .dek { font-family: 'Barlow Condensed', sans-serif; font-size: 1.05rem; font-weight: 600; color: var(--mid); margin-bottom: 1rem; line-height: 1.4; }
+
+  .byline-bar { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 0.35rem 0; margin-bottom: 1.8rem; }
+  .byline { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+  .dateline { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; font-weight: 400; color: var(--mid); font-style: italic; }
+
+  /* TRADE BOX */
+  .trade-box { display: grid; grid-template-columns: 1fr auto 1fr; gap: 0; margin: 1.8rem 0; border: 2px solid var(--ink); }
+  .trade-side { padding: 1rem 1.2rem; }
+  .trade-side.sending { background: #FBF6EC; }
+  .trade-side.receiving { background: #EDF7F9; }
+  .trade-arrow { background: var(--ink); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 900; padding: 0 0.8rem; writing-mode: horizontal-tb; }
+  .trade-team { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); border-bottom: 1px solid var(--ink); padding-bottom: 0.4rem; margin-bottom: 0.7rem; }
+  .trade-team.noh { color: var(--teal); border-color: var(--teal); }
+  .trade-team.tor { color: #8B1A1A; border-color: #8B1A1A; }
+  .trade-player { font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; font-weight: 700; color: var(--ink); padding: 0.2rem 0; border-bottom: 1px dashed var(--light); }
+  .trade-player:last-child { border-bottom: none; }
+  .trade-player.key-piece { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: var(--ink); }
+  .trade-player.pick { font-style: italic; color: var(--mid); font-size: 0.78rem; }
+
+  /* BODY */
+  .body-text p { font-size: 0.975rem; line-height: 1.75; margin-bottom: 1rem; color: #1a1a1a; }
+  .drop-cap::first-letter { font-family: 'Playfair Display', serif; font-size: 3.8rem; font-weight: 900; float: left; line-height: 0.8; margin: 0.1em 0.08em 0 0; color: var(--teal); }
+
+  /* PULL QUOTE */
+  .pull-quote { border-left: 4px solid var(--gold); border-right: 4px solid var(--gold); margin: 1.8rem 0; padding: 1rem 1.5rem; text-align: center; background: #FBF6EC; }
+  .pull-quote p { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-style: italic; line-height: 1.5; color: var(--ink); margin: 0 !important; }
+  .pull-quote cite { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 0.68rem; font-style: normal; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mid); margin-top: 0.6rem; }
+
+  /* ROSTER BOX */
+  .roster-box { border: 2px solid var(--ink); margin: 1.8rem 0; }
+  .roster-header { background: var(--ink); color: var(--gold); font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.25em; text-transform: uppercase; padding: 0.5rem 1rem; }
+  .roster-group { padding: 0.8rem 1rem; border-bottom: 1px solid var(--light); }
+  .roster-group:last-child { border-bottom: none; }
+  .roster-group-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.6rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.4rem; }
+  .roster-names { font-family: 'Barlow Condensed', sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--ink); line-height: 1.6; }
+
+  .section-header { font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.25em; text-transform: uppercase; color: var(--teal); border-bottom: 2px solid var(--teal); padding-bottom: 0.25rem; margin: 1.6rem 0 0.8rem; }
+
+  .footer-rule { border: none; border-top: 2px solid var(--ink); margin-top: 2.5rem; margin-bottom: 0.75rem; }
+  .footer-text { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; color: var(--mid); text-align: center; letter-spacing: 0.15em; text-transform: uppercase; }
+</style>
+</head>
+<body class="media-article">
+<header class="site-topbar">
+  <div class="site-topbar-inner">
+    <div class="site-topbar-brand">
+      <div class="site-edition-pill">Front Page</div>
+      <div>European Super League Sports Desk</div>
+    </div>
+    <ul class="site-topbar-nav">
+      <li><a href="../index.html" class="active">Home</a></li>
+      <li><a href="../all-articles.html">All Articles</a></li>
+      <li><a href="../articles/hornets_duren_trade.html">Latest</a></li>
+      <li><a href="../analysis.html">Analysis</a></li>
+      <li><a href="../scouting.html">Scouting</a></li>
+      <li><a href="../index.htm">League Site</a></li>
+    </ul>
+  </div>
+</header>
+<div class="site-masthead-wrap">
+  <div class="site-masthead-inner">
+    <div class="site-masthead-meta">
+      <div>Wednesday Edition · 1990 Season</div>
+      <div>European Super League · Official Coverage</div>
+    </div>
+    <div class="site-masthead-line">
+      <div></div>
+      <div class="site-wordmark">
+        <div class="site-wordmark-kicker">The Front Page</div>
+        <a href="../index.html"><img class="site-wordmark-logo" src="../article%20images/ESLM.png" alt="ESL Media"></a>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</div>
+<div class="site-ticker">
+  <div class="site-ticker-inner">
+    <span class="site-ticker-label">Top Story</span>
+    <div class="site-ticker-track">
+      <div class="site-ticker-item">Purple &amp; Gold, Black &amp; Blue leads today’s edition</div>
+      <div class="site-ticker-item">A redesigned front page gives the lede room to breathe</div>
+      <div class="site-ticker-item">Washington closes the season as champions</div>
+      <div class="site-ticker-item">Haliburton stays red-hot in Chicago</div>
+      <div class="site-ticker-item">Duren trade reshapes the conference picture</div>
+      <div class="site-ticker-item">League offices weigh a divisional return</div>
+      <div class="site-ticker-item">Purple &amp; Gold, Black &amp; Blue leads today’s edition</div>
+      <div class="site-ticker-item">A redesigned front page gives the lede room to breathe</div>
+      <div class="site-ticker-item">Washington closes the season as champions</div>
+      <div class="site-ticker-item">Haliburton stays red-hot in Chicago</div>
+      <div class="site-ticker-item">Duren trade reshapes the conference picture</div>
+      <div class="site-ticker-item">League offices weigh a divisional return</div>
+    </div>
+  </div>
+</div>
+
+<div class="paper">
+
+  <div class="masthead">
+    <div class="league-name">European Super League — Trade Deadline</div>
+    <div class="section-label">New Orleans Hornets · Toronto Raptors</div>
+  </div>
+
+  <div class="breaking-flag">Breaking Trade</div>
+  <h1 class="headline">Hornets Swing for the Fences, Acquire Duren</h1>
+  <p class="dek">New Orleans sends a franchise-altering haul to Toronto for the former ESL champion big man — and signals they're done rebuilding.</p>
+
+  <div class="byline-bar">
+    <span class="byline">ESL Staff Writer</span>
+    <span class="dateline">1989 Season · Trade Deadline</span>
+  </div>
+
+  <!-- TRADE BREAKDOWN BOX -->
+  <div class="trade-box">
+    <div class="trade-side receiving">
+      <div class="trade-team noh">New Orleans Receives</div>
+      <div class="trade-player key-piece">Jalen Duren</div>
+      <div class="trade-player">Gary Garland</div>
+      <div class="trade-player">Sedale Threatt</div>
+    </div>
+    <div class="trade-arrow">⇄</div>
+    <div class="trade-side sending">
+      <div class="trade-team tor">Toronto Receives</div>
+      <div class="trade-player">Sidney Moncrief</div>
+      <div class="trade-player">Rumeal Robinson</div>
+      <div class="trade-player">Blair Rasmussen</div>
+      <div class="trade-player">Andray Blatch</div>
+      <div class="trade-player">Randy Wittman</div>
+      <div class="trade-player pick">PHI 1st Rd Pick (1990)</div>
+      <div class="trade-player pick">NOH 1st Rd Pick (1992)</div>
+    </div>
+  </div>
+
+  <div class="body-text">
+
+    <p class="drop-cap">The New Orleans Hornets have gone all in. After an offseason that saw New Orleans retool to recoup assets following the expensive acquisition of LeBron James last summer, the Hornets have yet again put all their chips on the table — acquiring star big man and former ESL champion Jalen Duren from the Toronto Raptors in a blockbuster deal that shakes the foundation of the Western Conference.</p>
+
+    <p>Sidney Moncrief's expiring contract did the bulk of the salary-matching work, and a promising collection of young pieces — point guard Rumeal Robinson, center Blair Rasmussen, forward Andray Blatch, and guard Randy Wittman — made their way north alongside New Orleans' last two tradeable picks: the Philadelphia first-rounder in 1990 and their own 1992 first.</p>
+
+    <div class="pull-quote">
+      <p>"You can't teach size. Jalen is a man playing a kids game. There aren't many bigs in the league that would bang around with Tree in the post and get their own, but Jalen is one of those guys."</p>
+      <cite>— Sus Cheeks, GM · New Orleans Hornets</cite>
+    </div>
+
+    <p>Duren, the former Memphis Tiger and Sharon Hill, PA product, will be no stranger to Hornets fans. He was the centerpiece of the 1984 and 1985 Toronto teams that met New Orleans in back-to-back ESL Finals — splitting the series one apiece in what remains the most storied rivalry in league history. Now those Finals adversaries become teammates, and the basketball world is paying attention.</p>
+
+    <div class="section-header">The Projected Lineup</div>
+
+    <p>With Duren in the fold, New Orleans' rotation snaps into focus. Sedale Threatt — briefly a Hornet earlier this season before being packaged to Toronto and now returned — slots in at point guard. Mookie Ellis and LeBron James, both top-ten scorers in the ESL, command the wings. Dennis Rodman and Duren anchor the frontcourt with perhaps the most disruptive defensive pairing in the conference.</p>
+
+  </div>
+
+  <!-- PROJECTED ROSTER BOX -->
+  <div class="roster-box">
+    <div class="roster-header">New Orleans Hornets — Projected Rotation</div>
+    <div class="roster-group">
+      <div class="roster-group-label">Starting Five</div>
+      <div class="roster-names">Sedale Threatt · Mookie Ellis · LeBron James · Dennis Rodman · Jalen Duren</div>
+    </div>
+    <div class="roster-group">
+      <div class="roster-group-label">Key Bench</div>
+      <div class="roster-names">Michael Cooper · Larry Bird · Hot Rod Williams</div>
+    </div>
+  </div>
+
+  <div class="body-text">
+
+    <p>The Hornets' bench is no afterthought either. Michael Cooper and Larry Bird — both carrying championship pedigree from previous ESL title runs — will log significant minutes and provide the kind of experience that young teams simply cannot manufacture. Hot Rod Williams, acquired from Houston earlier this season, will spell Duren and keep the frontcourt fresh deep into playoff runs.</p>
+
+    <div class="pull-quote">
+      <p>"Part of the reason I wanted to be traded here is I know this team cares about winning. We have a damn good group, I love that we're putting our chips on the table and really going for it."</p>
+      <cite>— LeBron James · New Orleans Hornets</cite>
+    </div>
+
+    <p>James spoke with reporters after shootaround, and his message was unambiguous. The star forward who forced his way to New Orleans for exactly this kind of commitment has now seen it delivered. The front office has matched his ambition dollar for dollar — and pick for pick.</p>
+
+    <p>The questions now are about chemistry and timing. New Orleans surrendered depth and youth to make this move, and the margin for error shrinks considerably when your two remaining first-round picks are already gone. If injuries strike — particularly to Duren or James — this roster could find itself short-handed in ways that are difficult to paper over.</p>
+
+    <p>But on paper, in a loaded Western Conference, this Hornets team has what it takes to make real noise in April, May, and June. The trade deadline gamble has been made. The chips are in the middle of the table. Now New Orleans finds out if it was worth it.</p>
+
+  </div>
+
+  <hr class="footer-rule">
+  <div class="footer-text">European Super League · 1989 Season · Trade Deadline Coverage</div>
+
+</div>
+<script src="../article-rail.js"></script>
+</body>
+</html>
+
+
+
+

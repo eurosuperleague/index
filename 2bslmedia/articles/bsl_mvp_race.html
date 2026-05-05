@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23111b36'/><text x='50' y='75' font-family='serif' font-size='45' font-weight='900' fill='%23FFFFFF' text-anchor='middle'>ESL</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESL MVP Race 1989</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @import url("../media-shared.css");
+  :root {
+    --gold: #D4A017;
+    --ink: #0F0F0F;
+    --off-white: #F5F0E8;
+    --red: #C0392B;
+    --mid: #3A3A3A;
+    --rule: #D4A017;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  nav {
+    background: var(--ink);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 52px;
+    margin-bottom: 0;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #D4A017;
+    text-decoration: none;
+  }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: #D4A017; }
+
+  body {
+    background: var(--off-white);
+    color: var(--ink);
+    font-family: 'Barlow', sans-serif;
+    min-height: 100vh;
+  }
+
+  .paper {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #FEFCF7;
+    border-top: 6px solid var(--ink);
+    box-shadow: 4px 4px 0 var(--gold), 8px 8px 0 var(--ink);
+    padding: 3rem 3.5rem 3.5rem;
+  }
+
+  .masthead {
+    text-align: center;
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .league-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--red);
+  }
+
+  .section-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-top: 0.4rem;
+  }
+
+  .headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.9rem;
+    font-weight: 900;
+    line-height: 1.05;
+    margin: 1.2rem 0 0.4rem;
+    letter-spacing: -0.5px;
+  }
+
+  .dek {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--mid);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .byline-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 0.35rem 0;
+    margin-bottom: 1.8rem;
+  }
+
+  .byline {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .dateline {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--mid);
+    font-style: italic;
+  }
+
+  .body-text p {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+  }
+
+  .drop-cap::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 900;
+    float: left;
+    line-height: 0.8;
+    margin: 0.1em 0.08em 0 0;
+    color: var(--red);
+  }
+
+  .pull-quote {
+    border-left: 4px solid var(--gold);
+    border-right: 4px solid var(--gold);
+    margin: 1.8rem 0;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    background: #FBF6EC;
+  }
+
+  .pull-quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--ink);
+    margin: 0 !important;
+  }
+
+  .player-tag {
+    display: inline-block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    margin-right: 4px;
+  }
+
+  .tag-bosh { background: #1A3A6B; color: white; }
+  .tag-shaq { background: #6B1A1A; color: white; }
+  .tag-lebron { background: #1A6B2E; color: white; }
+
+  .stat-row {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+  }
+
+  .stat-card {
+    flex: 1;
+    min-width: 130px;
+    border-top: 3px solid var(--ink);
+    padding-top: 0.5rem;
+  }
+
+  .stat-card .name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 0.2rem;
+  }
+
+  .stat-card .pts {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--ink);
+  }
+
+  .stat-card .label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.68rem;
+    color: var(--mid);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .footer-rule {
+    border: none;
+    border-top: 2px solid var(--ink);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.65rem;
+    color: var(--mid);
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body class="media-article">
+<header class="site-topbar">
+  <div class="site-topbar-inner">
+    <div class="site-topbar-brand">
+      <div class="site-edition-pill">Front Page</div>
+      <div>European Super League Sports Desk</div>
+    </div>
+    <ul class="site-topbar-nav">
+      <li><a href="../index.html" class="active">Home</a></li>
+      <li><a href="../all-articles.html">All Articles</a></li>
+      <li><a href="../articles/hornets_duren_trade.html">Latest</a></li>
+      <li><a href="../analysis.html">Analysis</a></li>
+      <li><a href="../scouting.html">Scouting</a></li>
+      <li><a href="../index.htm">League Site</a></li>
+    </ul>
+  </div>
+</header>
+<div class="site-masthead-wrap">
+  <div class="site-masthead-inner">
+    <div class="site-masthead-meta">
+      <div>Wednesday Edition · 1990 Season</div>
+      <div>European Super League · Official Coverage</div>
+    </div>
+    <div class="site-masthead-line">
+      <div></div>
+      <div class="site-wordmark">
+        <div class="site-wordmark-kicker">The Front Page</div>
+        <a href="../index.html"><img class="site-wordmark-logo" src="../article%20images/ESLM.png" alt="ESL Media"></a>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</div>
+<div class="site-ticker">
+  <div class="site-ticker-inner">
+    <span class="site-ticker-label">Top Story</span>
+    <div class="site-ticker-track">
+      <div class="site-ticker-item">Purple &amp; Gold, Black &amp; Blue leads today’s edition</div>
+      <div class="site-ticker-item">A redesigned front page gives the lede room to breathe</div>
+      <div class="site-ticker-item">Washington closes the season as champions</div>
+      <div class="site-ticker-item">Haliburton stays red-hot in Chicago</div>
+      <div class="site-ticker-item">Duren trade reshapes the conference picture</div>
+      <div class="site-ticker-item">League offices weigh a divisional return</div>
+      <div class="site-ticker-item">Purple &amp; Gold, Black &amp; Blue leads today’s edition</div>
+      <div class="site-ticker-item">A redesigned front page gives the lede room to breathe</div>
+      <div class="site-ticker-item">Washington closes the season as champions</div>
+      <div class="site-ticker-item">Haliburton stays red-hot in Chicago</div>
+      <div class="site-ticker-item">Duren trade reshapes the conference picture</div>
+      <div class="site-ticker-item">League offices weigh a divisional return</div>
+    </div>
+  </div>
+</div>
+<div class="paper">
+  <div class="masthead">
+    <div class="league-name">European Super League — Official Coverage</div>
+    <div class="section-label">1989 Season · MVP Watch</div>
+  </div>
+
+  <h1 class="headline">Three Kings, One Trophy</h1>
+  <p class="dek">James, Bosh, and O'Neal are putting the ESL on notice — but only one man can claim the Most Valuable crown.</p>
+
+  <div class="byline-bar">
+    <span class="byline">ESL Staff Writer</span>
+    <span class="dateline">1989 Season Report</span>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat-card">
+      <div class="name">LeBron James · NOH</div>
+      <div class="pts">32.4</div>
+      <div class="label">PPG · 6.4 REB · 5.8 AST</div>
+    </div>
+    <div class="stat-card">
+      <div class="name">Chris Bosh · DEN</div>
+      <div class="pts">30.5</div>
+      <div class="label">PPG · 7.3 REB · 2.7 AST</div>
+    </div>
+    <div class="stat-card">
+      <div class="name">Shaquille O'Neal · CLE</div>
+      <div class="pts">29.8</div>
+      <div class="label">PPG · 8.3 REB · 2.9 AST</div>
+    </div>
+  </div>
+
+  <div class="body-text">
+    <p class="drop-cap">The European Super League's inaugural season has delivered something no one saw coming: a legitimate three-man race for MVP that has front offices, fans, and pundits arguing into the early hours. <span class="player-tag tag-lebron">James</span> <span class="player-tag tag-bosh">Bosh</span> and <span class="player-tag tag-shaq">O'Neal</span> are each making an ironclad case, and the margin separating them is razor-thin.</p>
+
+    <p>Start with <strong>LeBron James</strong> of New Orleans, who leads the pack at 32.4 points per game on a blazing .599 field goal percentage. At just 29 years old and 6-8, 254 pounds, James does everything — he facilitates, rebounds, and scores at will. His 1.46 assist-to-turnover ratio speaks to his efficiency, and his attribute sheet reads like a cheat code: 86 jumpshooting, 100 inside, 88 quickness. If the award goes to the best all-around player, James wins going away.</p>
+
+    <div class="pull-quote">
+      <p>"You can make a case for all three — and that's exactly what makes this race the best story of the ESL's first season."</p>
+    </div>
+
+    <p>But Denver's <strong>Chris Bosh</strong> refuses to be overlooked. The 28-year-old Georgia Tech product is pouring in 30.5 points on a dominant .547 clip, adding 7.3 rebounds and 2.7 assists per night. Bosh's 100 inside score and A-grade offensive rebounding potential make him a matchup nightmare for any front court in the league. His contract — the league's richest, starting at $30 million — reflects exactly the kind of franchise-altering talent he's already proven to be.</p>
+
+    <p>Then there's Cleveland's <strong>Shaquille O'Neal</strong>, the most physically imposing force the ESL has ever seen. At 7-1 and 311 pounds with a perfect 100 inside score and a staggering 100 blocks rating, Shaq doesn't just score — he alters the entire fabric of a game. His 8.3 rebounds lead the trio, and on nights when defenses collapse around him, few players have ever looked more unstoppable. The knock against him remains the 40 free throw rating, but his .612 field goal percentage silences most critics.</p>
+
+    <p>When the votes are counted, the edge belongs to James — his combination of scoring volume, playmaking, and elite efficiency gives him the holistic dominance ESL voters historically reward. But don't be surprised if Bosh or O'Neal steal it. In a race this tight, any night could change everything.</p>
+  </div>
+
+  <hr class="footer-rule">
+  <div class="footer-text">European Super League · 1989 Season · All statistics through current games played</div>
+</div>
+<script src="../article-rail.js"></script>
+</body>
+</html>
+
+
+
+

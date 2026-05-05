@@ -1,0 +1,1338 @@
+/* Shared styles for the ESL Media landing page and article templates. */
+
+:root {
+  --gold: #111b36;
+  --ink: #0f0f0f;
+  --paper: #f4f2ec;
+  --cream: #ffffff;
+  --red: #111b36;
+  --mid: #524633;
+  --light: #e3d7bf;
+  --font-sans: "Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Tiempos Headline", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.site-topbar {
+  background: #111b36;
+  color: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 300;
+}
+
+.site-topbar-inner,
+.site-masthead-inner,
+.site-ticker-inner {
+  width: min(1280px, calc(100% - 2.5rem));
+  margin: 0 auto;
+}
+
+.site-topbar-inner {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.site-topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.site-topbar-brand > div:last-child {
+  position: relative;
+  width: min(220px, 34vw);
+  height: 30px;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.site-topbar-brand > div:last-child::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  -webkit-mask: url("article%20images/ESLM.png") left center / contain no-repeat;
+  mask: url("article%20images/ESLM.png") left center / contain no-repeat;
+}
+
+.site-edition-pill {
+  display: none;
+}
+
+.site-topbar-nav {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.site-topbar-nav a {
+  color: rgba(255, 255, 255, 0.92) !important;
+  text-decoration: none;
+}
+
+.site-topbar-nav a:hover,
+.site-topbar-nav a.active {
+  color: #fff !important;
+}
+
+.site-masthead-wrap {
+  display: none;
+}
+
+.site-masthead-inner {
+  padding: 0.3rem 0 0.28rem;
+}
+
+.site-masthead-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 0.18rem;
+}
+
+.site-masthead-line {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.site-masthead-line::before,
+.site-masthead-line::after {
+  content: "";
+  height: 1px;
+  background: var(--ink);
+}
+
+.site-wordmark {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.site-wordmark-kicker {
+  font-size: 0.5rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.site-wordmark-logo {
+  width: auto;
+  height: 42px;
+  max-width: min(260px, 28vw);
+  display: block;
+}
+
+.site-ticker {
+  background: #191919;
+  color: rgba(255, 255, 255, 0.86);
+  border-top: 1px solid rgba(17, 27, 54, 0.45);
+  border-bottom: 1px solid rgba(17, 27, 54, 0.45);
+}
+
+.site-ticker-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.46rem 0;
+  overflow: hidden;
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.site-ticker-label {
+  color: var(--gold);
+  font-weight: 700;
+  white-space: nowrap;
+  flex: 0 0 auto;
+  position: relative;
+  z-index: 2;
+  background: #191919;
+  padding-right: 0.75rem;
+}
+
+.site-ticker-track {
+  display: flex;
+  min-width: max-content;
+  width: max-content;
+  align-items: center;
+  gap: 1.1rem;
+  white-space: nowrap;
+  animation: ticker-scroll 30s linear infinite;
+  flex: 0 0 auto;
+}
+
+.site-ticker-inner:hover .site-ticker-track {
+  animation-play-state: paused;
+}
+
+.site-ticker-item::after {
+  content: "";
+  width: 1px;
+  height: 0.9rem;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.site-ticker-item:last-child::after {
+  display: none;
+}
+
+nav {
+  background: var(--ink);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 52px;
+}
+
+.nav-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.media-home .nav-links a {
+  cursor: pointer;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+.media-home .nav-links a.active {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+.media-home .mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--gold);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.media-home .mobile-menu {
+  display: none;
+  position: fixed;
+  top: 52px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--ink);
+  z-index: 99;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.media-home .mobile-menu.active {
+  display: block;
+}
+
+.media-home .mobile-menu-section {
+  margin-bottom: 2rem;
+}
+
+.media-home .mobile-menu-header {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(212, 160, 23, 0.3);
+}
+
+.media-home .mobile-menu-links {
+  list-style: none;
+}
+
+.media-home .mobile-menu-links li {
+  margin-bottom: 0.8rem;
+}
+
+.media-home .mobile-menu-links a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.media-home .mobile-menu-links a:hover,
+.media-home .mobile-menu-links a.active {
+  color: var(--gold);
+}
+
+.media-home .masthead {
+  background: var(--cream);
+  border-bottom: 4px double var(--ink);
+  text-align: center;
+  padding: 2.5rem 1rem 1.8rem;
+}
+
+.media-home .masthead-eyebrow {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.6rem;
+}
+
+.media-home .masthead-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -1px;
+}
+
+.media-home .masthead-title span {
+  color: var(--red);
+}
+
+.media-home .masthead-rule {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto 0.6rem;
+  max-width: 400px;
+}
+
+.media-home .masthead-rule::before,
+.media-home .masthead-rule::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--ink);
+}
+
+.media-home .masthead-date {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mid);
+  white-space: nowrap;
+}
+
+.media-home .masthead-tagline {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--mid);
+}
+
+.media-home .ticker {
+  background: var(--red);
+  color: white;
+  padding: 0.4rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 2px solid var(--ink);
+}
+
+.media-home .ticker-inner {
+  display: inline-block;
+  animation: scroll-ticker 35s linear infinite;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.media-home .ticker-inner span {
+  margin: 0 3rem;
+  opacity: 0.7;
+}
+
+.media-home .ticker-inner strong {
+  opacity: 1;
+}
+
+@keyframes scroll-ticker {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.media-home .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.media-home .page-section {
+  display: none;
+}
+
+.media-home .page-section.active {
+  display: block;
+}
+
+.media-home .section-label {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--red);
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 0.3rem;
+  margin: 2.5rem 0 1.5rem;
+  display: inline-block;
+}
+
+.media-home .hero {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 2.5rem;
+  padding: 2rem 0;
+  border-bottom: 2px solid var(--ink);
+  align-items: start;
+}
+
+.media-home .hero-tag {
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: var(--red);
+  color: white;
+  padding: 2px 8px;
+  margin-bottom: 0.8rem;
+}
+
+.media-home .hero-headline {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 900;
+  line-height: 1.08;
+  margin-bottom: 0.6rem;
+}
+
+.media-home .hero-headline a,
+.media-home .card-headline a {
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.media-home .hero-headline a:hover,
+.media-home .card-headline a:hover {
+  color: var(--red);
+}
+
+.media-home .hero-dek {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--mid);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.media-home .hero-excerpt {
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: #2a2a2a;
+  margin-bottom: 1.2rem;
+}
+
+.media-home .read-more {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.media-home .read-more:hover {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.media-home .hero-sidebar {
+  border-left: 3px solid var(--ink);
+  padding-left: 2rem;
+}
+
+.media-home .sidebar-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--mid);
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.media-home .stat-block {
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px dashed var(--light);
+}
+
+.media-home .stat-block:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.media-home .stat-player {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.media-home .stat-team {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 0.5rem;
+}
+
+.media-home .stat-line {
+  display: flex;
+  gap: 1rem;
+}
+
+.media-home .stat-num {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.media-home .stat-lbl {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
+.media-home .article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.media-home .article-card {
+  border-top: 3px solid var(--ink);
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.media-home .article-card:hover {
+  transform: translateY(-2px);
+}
+
+.media-home .card-tag {
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+
+.media-home .card-headline {
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.media-home .card-dek {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--mid);
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+  flex: 1;
+}
+
+.media-home .card-meta {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  border-top: 1px solid var(--light);
+  padding-top: 0.6rem;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.media-home .standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 3rem;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.media-home .standings-table th {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: white;
+  background: var(--ink);
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+
+.media-home .standings-table th:not(:first-child) {
+  text-align: center;
+}
+
+.media-home .standings-table td {
+  padding: 0.65rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--light);
+}
+
+.media-home .standings-table td:not(:first-child) {
+  text-align: center;
+}
+
+.media-home .standings-table tr:nth-child(even) td {
+  background: #f9f5ee;
+}
+
+.media-home .standings-table tr:hover td {
+  background: #f0e9d8;
+}
+
+.media-home .standings-table .team-name {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.media-home .standings-table .playoff-line td {
+  border-bottom: 3px solid var(--red);
+}
+
+.media-home hr.divider {
+  border: none;
+  border-top: 1px solid var(--ink);
+  margin: 0.5rem 0 2.5rem;
+}
+
+.media-home footer {
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.media-home footer strong {
+  color: var(--gold);
+}
+
+.media-article {
+  --article-accent: var(--red);
+  --paper-border: var(--ink);
+  --paper-shadow-accent: var(--gold);
+  --drop-cap-accent: var(--article-accent);
+  --section-accent: var(--article-accent);
+  --masthead-accent: var(--article-accent);
+  min-height: 100vh;
+}
+
+.media-article .paper {
+  margin-top: 1.5rem;
+}
+
+.media-article .article-shell {
+  width: min(1180px, calc(100% - 2.5rem));
+  margin: 1.5rem auto 2rem;
+  display: grid;
+  grid-template-columns: minmax(0, 780px) 300px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.media-article .paper {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  background: var(--cream);
+  border-top: 6px solid var(--paper-border);
+  box-shadow: 4px 4px 0 var(--paper-shadow-accent), 8px 8px 0 var(--ink);
+  padding: 3rem 3.5rem 3.5rem;
+}
+
+.media-article .article-rail {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.media-article .article-rail-card {
+  background: var(--cream);
+  border: 1px solid var(--light);
+  border-top: 3px solid var(--gold);
+  box-shadow: 3px 3px 0 rgba(17, 27, 54, 0.08);
+  padding: 1rem;
+}
+
+.media-article .article-rail-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 0.9rem;
+}
+
+.media-article .article-rail-title,
+.media-article .article-rail-label {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.media-article .article-rail-note {
+  font-family: var(--font-sans);
+  font-size: 0.67rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
+.media-article .article-rec-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.media-article .article-rec-item {
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--light);
+}
+
+.media-article .article-rec-item:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.media-article .article-rec-link {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
+  line-height: 1.22;
+  color: var(--ink);
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+}
+
+.media-article .article-rec-link:hover {
+  color: var(--gold);
+}
+
+.media-article .article-rec-meta {
+  font-family: var(--font-sans);
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+
+.media-article .article-rec-blurb {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--mid);
+}
+
+.media-article .article-ad-card img {
+  width: 100%;
+  display: block;
+  margin-top: 0.7rem;
+  border: 1px solid var(--light);
+}
+
+.media-article .masthead {
+  text-align: center;
+  border-bottom: 3px double var(--ink);
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.media-article .league-name {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--masthead-accent);
+}
+
+.media-article .section-label {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-top: 0.4rem;
+}
+
+.media-article .headline {
+  font-family: "Playfair Display", serif;
+  font-size: 2.7rem;
+  font-weight: 900;
+  line-height: 1.05;
+  margin: 1.2rem 0 0.4rem;
+  letter-spacing: -0.5px;
+}
+
+.media-article .dek {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--mid);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.media-article .byline-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: 0.35rem 0;
+  margin-bottom: 1.8rem;
+}
+
+.media-article .byline,
+.media-article .dateline {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.72rem;
+}
+
+.media-article .byline {
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.media-article .dateline {
+  font-weight: 400;
+  color: var(--mid);
+  font-style: italic;
+}
+
+.media-article .body-text p {
+  font-size: 0.975rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.media-article .drop-cap::first-letter {
+  font-family: "Playfair Display", serif;
+  font-size: 3.8rem;
+  font-weight: 900;
+  float: left;
+  line-height: 0.8;
+  margin: 0.1em 0.08em 0 0;
+  color: var(--drop-cap-accent);
+}
+
+.media-article .pull-quote {
+  border-left: 4px solid var(--gold);
+  border-right: 4px solid var(--gold);
+  margin: 1.8rem 0;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  background: #fbf6ec;
+}
+
+.media-article .pull-quote p {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0;
+}
+
+.media-article .section-header {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--section-accent);
+  border-bottom: 2px solid var(--section-accent);
+  padding-bottom: 0.25rem;
+  margin: 2rem 0 1rem;
+}
+
+.media-article .footer-rule {
+  border: none;
+  border-top: 2px solid var(--ink);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.media-article .footer-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.65rem;
+  color: var(--mid);
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.media-home,
+.media-article {
+  font-family: var(--font-sans);
+  --gold: #111b36;
+  --red: #111b36;
+  --paper: #f4f2ec;
+  --cream: #ffffff;
+  --off-white: #f4f2ec;
+  --mid: #524633;
+  --light: #e3d7bf;
+  --rule: #111b36;
+}
+
+.media-home .nav-logo,
+.media-home .masthead-title,
+.media-home .masthead-tagline,
+.media-home .hero-headline,
+.media-home .card-headline,
+.media-home .stat-player,
+.media-home .stat-num,
+.media-home .standings-table .team-name,
+.media-article .nav-logo,
+.media-article .headline,
+.media-article .drop-cap::first-letter,
+.media-article .pull-quote p {
+  font-family: var(--font-serif) !important;
+}
+
+.media-home .nav-links a,
+.media-home .mobile-menu-header,
+.media-home .mobile-menu-links a,
+.media-home .masthead-eyebrow,
+.media-home .masthead-date,
+.media-home .ticker-inner,
+.media-home .section-label,
+.media-home .hero-tag,
+.media-home .hero-dek,
+.media-home .read-more,
+.media-home .sidebar-title,
+.media-home .stat-team,
+.media-home .stat-lbl,
+.media-home .card-tag,
+.media-home .card-dek,
+.media-home .card-meta,
+.media-home .standings-table,
+.media-home footer,
+.media-article .league-name,
+.media-article .section-label,
+.media-article .dek,
+.media-article .byline,
+.media-article .dateline,
+.media-article .section-header,
+.media-article .footer-text {
+  font-family: var(--font-sans) !important;
+}
+
+.media-article .paper :is(
+  h1,
+  h2,
+  h3,
+  h4,
+  .headline,
+  .player-name,
+  .player-callout-name,
+  .rank-num,
+  .rank-team,
+  .sixty-team,
+  .sixty-count,
+  .champ-year-num,
+  .matchup-team,
+  .stat-name,
+  .player-num,
+  .player-number,
+  .player-info h2,
+  .stat-num,
+  .trade-arrow
+) {
+  font-family: var(--font-serif) !important;
+}
+
+.media-article .paper :is(
+  .opinion-flag,
+  .breaking-flag,
+  .league-name,
+  .section-label,
+  .dek,
+  .byline,
+  .dateline,
+  .section-header,
+  .footer-text,
+  .division-conf,
+  .matchup-label,
+  .matchup-seed,
+  .matchup-vs,
+  .stats-header,
+  .stat-pos,
+  .stat-val,
+  .stat-label,
+  .player-callout-role,
+  .rank-record,
+  .rank-stat-label,
+  .sixty-label,
+  .roster-header,
+  .roster-group-label,
+  .roster-names,
+  .trade-team,
+  .trade-player,
+  .trade-player.pick,
+  .trade-player.key-piece,
+  .footer-text
+) {
+  font-family: var(--font-sans) !important;
+}
+
+/* Rebrand shared surfaces to the new blue / black / white league palette. */
+.media-home body,
+.media-home,
+.media-article {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
+}
+
+.media-home .masthead,
+.media-article .paper,
+.media-article .stat-table,
+.media-article .sixty-card,
+.media-article .champ-year,
+.media-article .stats-row:nth-child(even),
+.media-article .division-box,
+.media-article .matchup-box,
+.media-article .stat-box,
+.media-article .player-callout,
+.media-article .pull-quote,
+.media-article .trade-side.sending,
+.media-article .roster-group,
+.media-home .standings-table tr:nth-child(even) td {
+  background: var(--cream) !important;
+}
+
+.media-home .ticker,
+.media-home .hero-tag,
+.media-article .opinion-flag,
+.media-article .breaking-flag {
+  background: var(--gold) !important;
+  color: #fff !important;
+}
+
+.media-home .nav-logo,
+.media-home .nav-links a:hover,
+.media-home .nav-links a.active,
+.media-home .mobile-toggle,
+.media-home .mobile-menu-header,
+.media-home .mobile-menu-links a:hover,
+.media-home .mobile-menu-links a.active,
+.media-home .masthead-title span,
+.media-home .masthead-eyebrow,
+.media-home .section-label,
+.media-home .card-tag,
+.media-home .hero-headline a:hover,
+.media-home .card-headline a:hover,
+.media-home .read-more:hover,
+.media-article .league-name,
+.media-article .section-header,
+.media-article .drop-cap::first-letter,
+.media-article .rank-num,
+.media-article .sixty-count,
+.media-article .player-num,
+.media-article .stats-header,
+.media-article .matchup-label,
+.media-article .division-conf,
+.media-article .trade-arrow,
+.media-article .roster-header {
+  color: var(--gold) !important;
+}
+
+.media-home .section-label,
+.media-article .section-header,
+.media-home .nav-links a.active,
+.media-home .read-more,
+.media-article .stat-table th,
+.media-article .player-block,
+.media-article .pull-quote,
+.media-article .player-callout,
+.media-article .trade-team.noh,
+.media-article .trade-team.tor {
+  border-color: var(--gold) !important;
+}
+
+.media-home .standings-table .playoff-line td,
+.media-article .stat-table th,
+.media-article .stats-header,
+.media-article .roster-header,
+.media-article .trade-arrow {
+  background: var(--ink) !important;
+}
+
+.media-article .stats-header,
+.media-article .roster-header,
+.media-article .trade-arrow,
+.media-article .stat-table thead {
+  color: #fff !important;
+}
+
+.media-home .standings-table tr:hover td,
+.media-article .stat-table tbody tr:hover,
+.media-article .stats-row:hover,
+.media-home .article-card:hover {
+  background: #f0ece3 !important;
+}
+
+@media (max-width: 700px) {
+  .media-home .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .media-home .hero-sidebar {
+    border-left: none;
+    border-top: 2px solid var(--ink);
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+
+  .media-home .nav-links {
+    display: none;
+  }
+
+  .media-home .mobile-toggle {
+    display: block;
+  }
+
+  .media-home nav {
+    padding: 0 1.5rem;
+  }
+
+  .media-home .container {
+    padding: 0 1rem;
+  }
+
+  .media-article nav {
+    height: auto;
+    min-height: 52px;
+    padding: 0.75rem 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .media-article .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .site-topbar-inner,
+  .site-masthead-inner,
+  .site-ticker-inner {
+    width: min(100%, calc(100% - 1.25rem));
+  }
+
+  .site-topbar-inner {
+    height: auto;
+    padding: 0.9rem 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-topbar-nav {
+    flex-wrap: wrap;
+    gap: 0.8rem 1rem;
+  }
+
+  .site-topbar-brand > div:last-child {
+    width: min(200px, 55vw);
+    height: 26px;
+  }
+
+  .site-masthead-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-masthead-line {
+    grid-template-columns: 1fr;
+  }
+
+  .site-wordmark-logo {
+    width: auto;
+    height: 34px;
+    max-width: 100%;
+  }
+
+  .site-masthead-line::before,
+  .site-masthead-line::after {
+    display: none;
+  }
+
+  .media-article .paper {
+    margin: 0 1rem 1.5rem;
+    padding: 2rem 1.25rem 2.25rem;
+    box-shadow: 3px 3px 0 var(--paper-shadow-accent), 6px 6px 0 var(--ink);
+  }
+
+  .media-article .article-shell {
+    width: 100%;
+    margin: 1rem 0 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .media-article .article-rail {
+    position: static;
+    order: 2;
+    margin: 0 1rem 1.5rem;
+  }
+
+  .media-article .headline {
+    font-size: clamp(2rem, 9vw, 2.7rem);
+  }
+
+  .media-article .byline-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+
+  .media-article .pull-quote {
+    padding: 1rem;
+  }
+}
+

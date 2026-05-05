@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23111b36'/><text x='50' y='75' font-family='serif' font-size='45' font-weight='900' fill='%23FFFFFF' text-anchor='middle'>ESL</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Five Magic Players to Watch This Playoff Run — ESL Media</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @import url("../media-shared.css");
+  :root{--gold:#D4A017;--ink:#0F0F0F;--off-white:#F5F0E8;--red:#C0392B;--mid:#3A3A3A;--light:#E8E2D5;--blue:#0066CC}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  nav{background:var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;height:52px}
+  .nav-logo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900;color:var(--gold);text-decoration:none}
+  .nav-links{display:flex;gap:2rem;list-style:none}
+  .nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.7);text-decoration:none;transition:color .2s}
+  .nav-links a:hover{color:var(--gold)}
+  body{background:var(--off-white);color:var(--ink);font-family:'Barlow',sans-serif;min-height:100vh}
+  .paper{max-width:760px;margin:0 auto;background:#FEFCF7;border-top:6px solid var(--ink);box-shadow:4px 4px 0 var(--gold),8px 8px 0 var(--ink);padding:3rem 3.5rem 3.5rem}
+  .masthead{text-align:center;border-bottom:3px double var(--ink);padding-bottom:1rem;margin-bottom:.5rem;position:relative}
+  .team-logo{position:absolute;top:0;right:0;width:80px;height:auto;opacity:.15}
+  .league-name{font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:var(--red)}
+  .section-label{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--mid);margin-top:.4rem}
+  .headline{font-family:'Playfair Display',serif;font-size:2.7rem;font-weight:900;line-height:1.05;margin:1.2rem 0 .4rem;letter-spacing:-.5px}
+  .dek{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:600;color:var(--mid);margin-bottom:1rem;line-height:1.4}
+  .byline-bar{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:.35rem 0;margin-bottom:1.8rem}
+  .byline{font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+  .dateline{font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:400;color:var(--mid);font-style:italic}
+  
+  .matchup-box{background:#F9F5EE;border:2px solid var(--ink);padding:1.2rem;margin:1.8rem 0;text-align:center}
+  .matchup-label{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:.8rem}
+  .matchup-teams{display:flex;align-items:center;justify-content:center;gap:1.5rem}
+  .matchup-team{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700}
+  .matchup-seed{font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:800;color:var(--mid);display:block;margin-top:.2rem}
+  .matchup-vs{font-family:'Barlow Condensed',sans-serif;font-size:.8rem;font-weight:700;color:var(--mid)}
+  
+  .stats-chart{margin:2rem 0;border:2px solid var(--ink)}
+  .stats-header{background:var(--ink);color:var(--gold);padding:.8rem 1rem;font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+  .stats-row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:.5rem;padding:.7rem 1rem;border-bottom:1px solid var(--light);align-items:center}
+  .stats-row:nth-child(even){background:#F9F5EE}
+  .stats-row:hover{background:#F0E9D8}
+  .stat-name{font-family:'Playfair Display',serif;font-size:.9rem;font-weight:700}
+  .stat-pos{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;color:var(--mid);letter-spacing:.1em}
+  .stat-val{font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:700;text-align:center}
+  .stat-label{font-family:'Barlow Condensed',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);text-align:center;padding:.5rem 0;border-bottom:1px solid var(--ink)}
+  
+  .body-text p{font-size:.975rem;line-height:1.75;margin-bottom:1rem;color:#1a1a1a}
+  .drop-cap::first-letter{font-family:'Playfair Display',serif;font-size:3.8rem;font-weight:900;float:left;line-height:.8;margin:.1em .08em 0 0;color:var(--red)}
+  .player-block{margin:1.8rem 0;border-left:4px solid var(--gold);padding-left:1.5rem}
+  .player-num{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:900;line-height:1;color:var(--gold);opacity:.25;margin-bottom:.3rem}
+  .player-name{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;margin-bottom:.5rem}
+  .player-text{font-size:.95rem;line-height:1.7;color:#2a2a2a}
+  .footer-rule{border:none;border-top:2px solid var(--ink);margin-top:2.5rem;margin-bottom:.75rem}
+  .footer-text{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;color:var(--mid);text-align:center;letter-spacing:.15em;text-transform:uppercase}
+  
+  @media(max-width:600px){.stats-row{grid-template-columns:1.5fr .8fr .8fr .8fr .8fr;font-size:.8rem}}
+</style>
+</head>
+<body class="media-article">
+<header class="site-topbar">
+  <div class="site-topbar-inner">
+    <div class="site-topbar-brand">
+      <div class="site-edition-pill">Front Page</div>
+      <div>European Super League Sports Desk</div>
+    </div>
+    <ul class="site-topbar-nav">
+      <li><a href="../index.html" class="active">Home</a></li>
+      <li><a href="../all-articles.html">All Articles</a></li>
+      <li><a href="../articles/hornets_duren_trade.html">Latest</a></li>
+      <li><a href="../analysis.html">Analysis</a></li>
+      <li><a href="../scouting.html">Scouting</a></li>
+      <li><a href="../index.htm">League Site</a></li>
+    </ul>
+  </div>
+</header>
+<div class="site-masthead-wrap">
+  <div class="site-masthead-inner">
+    <div class="site-masthead-meta">
+      <div>Wednesday Edition · 1990 Season</div>
+      <div>European Super League · Official Coverage</div>
+    </div>
+    <div class="site-masthead-line">
+      <div></div>
+      <div class="site-wordmark">
+        <div class="site-wordmark-kicker">The Front Page</div>
+        <a href="../index.html"><img class="site-wordmark-logo" src="../article%20images/ESLM.png" alt="ESL Media"></a>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</div>
+<div class="site-ticker">
+  <div class="site-ticker-inner">
+    <span class="site-ticker-label">Top Story</span>
+    <div class="site-ticker-track">
+      <div class="site-ticker-item">Purple &amp; Gold, Black &amp; Blue leads today’s edition</div>
+      <div class="site-ticker-item">A redesigned front page gives the lede room to breathe</div>
+      <div class="site-ticker-item">Washington closes the season as champions</div>
+      <div class="site-ticker-item">Haliburton stays red-hot in Chicago</div>
+      <div class="site-ticker-item">Duren trade reshapes the conference picture</div>
+      <div class="site-ticker-item">League offices weigh a divisional return</div>
+      <div class="site-ticker-item">Purple &amp; Gold, Black &amp; Blue leads today’s edition</div>
+      <div class="site-ticker-item">A redesigned front page gives the lede room to breathe</div>
+      <div class="site-ticker-item">Washington closes the season as champions</div>
+      <div class="site-ticker-item">Haliburton stays red-hot in Chicago</div>
+      <div class="site-ticker-item">Duren trade reshapes the conference picture</div>
+      <div class="site-ticker-item">League offices weigh a divisional return</div>
+    </div>
+  </div>
+</div>
+<div class="paper">
+  <div class="masthead">
+    <div class="league-name">European Super League — Playoff Preview</div>
+    <div class="section-label">Orlando Magic · 1989 Season</div>
+  </div>
+  <h1 class="headline">Five Magic Players to Watch This Playoff Run</h1>
+  <p class="dek">Orlando's veteran core and emerging youth have the pieces — but can they make noise against Washington?</p>
+  <div class="byline-bar">
+    <span class="byline">ESL Cuffy</span>
+    <span class="dateline">1989 Season · Playoff Preview</span>
+  </div>
+
+  <div class="matchup-box">
+    <div class="matchup-label">Eastern Conference · First Round</div>
+    <div class="matchup-teams">
+      <div class="matchup-team">
+        Orlando
+        <span class="matchup-seed">#8 Seed · 42-40</span>
+      </div>
+      <div class="matchup-vs">vs</div>
+      <div class="matchup-team">
+        Washington
+        <span class="matchup-seed">#1 Seed · 68-14</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="body-text">
+    <p class="drop-cap">The Orlando Magic enter the postseason with a roster built on veteran savvy and youthful upside. After finishing the regular season at 42-40, the Magic drew the short straw — a first-round matchup against the top-seeded Washington squad, who dominated the East with a 68-14 record. If Orlando is going to pull off the upset, these five players will need to deliver when it matters most.</p>
+  </div>
+
+  <div class="stats-chart">
+    <div class="stats-header">Key Players — Season Averages</div>
+    <div class="stats-row" style="background:var(--ink);color:white;font-weight:800;">
+      <div class="stat-label" style="text-align:left;border:none;">Player</div>
+      <div class="stat-label" style="border:none;">PPG</div>
+      <div class="stat-label" style="border:none;">RPG</div>
+      <div class="stat-label" style="border:none;">APG</div>
+      <div class="stat-label" style="border:none;">BPG</div>
+    </div>
+    <div class="stats-row">
+      <div><div class="stat-name">Kevin McHale</div><div class="stat-pos">C</div></div>
+      <div class="stat-val">19.8</div>
+      <div class="stat-val">7.6</div>
+      <div class="stat-val">2.4</div>
+      <div class="stat-val">3.0</div>
+    </div>
+    <div class="stats-row">
+      <div><div class="stat-name">Dragan Tarlac</div><div class="stat-pos">PF</div></div>
+      <div class="stat-val">11.3</div>
+      <div class="stat-val">8.4</div>
+      <div class="stat-val">2.3</div>
+      <div class="stat-val">3.1</div>
+    </div>
+    <div class="stats-row">
+      <div><div class="stat-name">Danny Granger</div><div class="stat-pos">SF</div></div>
+      <div class="stat-val">13.2</div>
+      <div class="stat-val">3.7</div>
+      <div class="stat-val">1.5</div>
+      <div class="stat-val">0.3</div>
+    </div>
+    <div class="stats-row">
+      <div><div class="stat-name">T.J. Ford</div><div class="stat-pos">PG</div></div>
+      <div class="stat-val">5.4</div>
+      <div class="stat-val">2.6</div>
+      <div class="stat-val">5.6</div>
+      <div class="stat-val">0.1</div>
+    </div>
+    <div class="stats-row">
+      <div><div class="stat-name">Joe Barry Carroll</div><div class="stat-pos">C</div></div>
+      <div class="stat-val">12.0</div>
+      <div class="stat-val">6.1</div>
+      <div class="stat-val">1.8</div>
+      <div class="stat-val">1.3</div>
+    </div>
+  </div>
+
+  <div class="body-text">
+    <div class="player-block">
+      <div class="player-num">1</div>
+      <div class="player-name">Kevin McHale</div>
+      <p class="player-text">McHale brings a veteran presence to the court that cannot be overstated. He is still a solid scorer and an even better defender. His blocks per game have always been high throughout his career, and the Magic are banking on that defensive anchor holding firm when the intensity ramps up in playoff basketball. McHale's ability to protect the rim and alter shots will be critical against Washington's interior threats.</p>
+    </div>
+
+    <div class="player-block">
+      <div class="player-num">2</div>
+      <div class="player-name">Dragan Tarlac</div>
+      <p class="player-text">It's going to be interesting to see where Orlando deploys Tarlac, as he is arguably the best defender on the roster. He will likely play whichever position allows him to match up against Washington's top big man. His versatility gives head coach flexibility in adjusting lineups on the fly, and his ability to bang in the post while staying disciplined defensively makes him an X-factor in this series.</p>
+    </div>
+
+    <div class="player-block">
+      <div class="player-num">3</div>
+      <div class="player-name">Danny Granger</div>
+      <p class="player-text">Granger is still very young and nowhere near his potential. But if the young buck gets hot from the perimeter, opposing teams better take notice. His physical tools are looking decent at this stage of his career, and the Magic are hoping to see him continue to develop in the coming years. If Granger can catch fire in a playoff game or two, he could be the difference-maker Orlando needs to steal a game on the road.</p>
+    </div>
+
+    <div class="player-block">
+      <div class="player-num">4</div>
+      <div class="player-name">T.J. Ford</div>
+      <p class="player-text">Ford is one of the top point guards in the league. When the Magic acquired Ford from the Pistons early in the season, they had high hopes he would be the floor general to take them deep into the playoffs. They shortly after picked up Tim Hardaway, who is also a solid guard, though both are getting up there in age. Either way, Ford is still going to be a player to watch. His ability to control tempo, distribute the ball, and pressure opposing defenses will set the tone for Orlando's offensive execution.</p>
+    </div>
+
+    <div class="player-block">
+      <div class="player-num">5</div>
+      <div class="player-name">Joe Barry Carroll</div>
+      <p class="player-text">The scoring big man could be a vital piece to this Magic playoff run. He never really got many nights where he logged significant starting minutes, but maybe the Magic's coaching staff will have to do something unconventional to slow down Washington's dominant frontcourt. Will we see Carroll deployed at small forward in small-ball lineups this postseason? His scoring touch and ability to stretch the floor could provide the Magic with a wrinkle that Washington isn't expecting.</p>
+    </div>
+
+    <p>Orlando enters the playoffs as a heavy underdog against the league's best team. But with the right performances from this core group and a few breaks going their way, they have the talent to make things interesting. The question is whether the veterans can hold up under playoff intensity and whether the young players can step up in the biggest moments of their careers. One thing is certain: all eyes will be on these five when the Magic take the floor.</p>
+  </div>
+
+  <hr class="footer-rule">
+  <div class="footer-text">European Super League · 1989 Season · Playoff Preview</div>
+</div>
+<script src="../article-rail.js"></script>
+</body>
+</html>
+
+
+
+

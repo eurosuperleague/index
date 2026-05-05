@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23111b36'/><text x='50' y='75' font-family='serif' font-size='45' font-weight='900' fill='%23FFFFFF' text-anchor='middle'>ESL</text></svg>">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purple &amp; Gold, Black &amp; Blue — ESL Media</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    @import url("../media-shared.css");
+    :root{--gold:#D4A017;--ink:#0F0F0F;--off-white:#F5F0E8;--red:#C0392B;--mid:#3A3A3A;--light:#E8E2D5;--purple:#52005B}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    nav{background:var(--ink);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;height:52px}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900;color:var(--gold);text-decoration:none}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.7);text-decoration:none;transition:color .2s}
+    .nav-links a:hover{color:var(--gold)}
+    body{background:var(--off-white);color:var(--ink);font-family:'Barlow',sans-serif;min-height:100vh}
+    .paper{max-width:760px;margin:0 auto;background:#FEFCF7;border-top:6px solid var(--purple);box-shadow:4px 4px 0 var(--gold),8px 8px 0 var(--ink);padding:3rem 3.5rem 3.5rem}
+    .masthead{text-align:center;border-bottom:3px double var(--ink);padding-bottom:1rem;margin-bottom:.5rem}
+    .league-name{font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:var(--red)}
+    .section-label{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--mid);margin-top:.4rem}
+    .opinion-flag{display:inline-block;background:var(--purple);color:white;font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;padding:3px 10px;margin-bottom:.8rem}
+    .headline{font-family:'Playfair Display',serif;font-size:2.7rem;font-weight:900;line-height:1.05;margin:1.2rem 0 .4rem;letter-spacing:-.5px}
+    .dek{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:600;color:var(--mid);margin-bottom:1rem;line-height:1.4}
+    .byline-bar{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:.35rem 0;margin-bottom:1.8rem}
+    .byline{font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    .dateline{font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:400;color:var(--mid);font-style:italic}
+    .body-text p{font-size:.975rem;line-height:1.75;margin-bottom:1rem;color:#1a1a1a}
+    .drop-cap::first-letter{font-family:'Playfair Display',serif;font-size:3.8rem;font-weight:900;float:left;line-height:.8;margin:.1em .08em 0 0;color:var(--purple)}
+    .pull-quote{border-left:4px solid var(--gold);border-right:4px solid var(--gold);margin:1.8rem 0;padding:1rem 1.5rem;text-align:center;background:#FBF6EC}
+    .pull-quote p{font-family:'Playfair Display',serif;font-size:1.2rem;font-style:italic;line-height:1.5;color:var(--ink);margin:0}
+    .section-header{font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:var(--purple);border-bottom:2px solid var(--purple);padding-bottom:.25rem;margin:2rem 0 1rem}
+    .stat-box{background:#F9F5EE;border:2px solid var(--ink);padding:1.2rem 1.5rem;margin:1.5rem 0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;text-align:center}
+    .stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--purple);display:block}
+    .stat-label{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--mid)}
+    .record-line{font-family:'Barlow Condensed',sans-serif;font-size:.8rem;font-weight:600;color:var(--mid);text-align:center;margin-top:.5rem;grid-column:1/-1}
+    .footer-rule{border:none;border-top:2px solid var(--ink);margin-top:2.5rem;margin-bottom:.75rem}
+    .footer-text{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;color:var(--mid);text-align:center;letter-spacing:.15em;text-transform:uppercase}
+  </style>
+</head>
+<body class="media-article">
+<header class="site-topbar">
+  <div class="site-topbar-inner">
+    <div class="site-topbar-brand">
+      <div class="site-edition-pill">Front Page</div>
+      <div>European Super League Sports Desk</div>
+    </div>
+    <ul class="site-topbar-nav">
+      <li><a href="../index.html" class="active">Home</a></li>
+      <li><a href="../all-articles.html">All Articles</a></li>
+      <li><a href="../articles/hornets_duren_trade.html">Latest</a></li>
+      <li><a href="../analysis.html">Analysis</a></li>
+      <li><a href="../scouting.html">Scouting</a></li>
+      <li><a href="../index.htm">League Site</a></li>
+    </ul>
+  </div>
+</header>
+<div class="site-masthead-wrap">
+  <div class="site-masthead-inner">
+    <div class="site-masthead-meta">
+      <div>Wednesday Edition · 1990 Season</div>
+      <div>European Super League · Official Coverage</div>
+    </div>
+    <div class="site-masthead-line">
+      <div></div>
+      <div class="site-wordmark">
+        <div class="site-wordmark-kicker">The Front Page</div>
+        <a href="../index.html"><img class="site-wordmark-logo" src="../article%20images/ESLM.png" alt="ESL Media"></a>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</div>
+<div class="site-ticker">
+  <div class="site-ticker-inner">
+    <span class="site-ticker-label">Top Story</span>
+    <div class="site-ticker-track">
+      <div class="site-ticker-item">Purple &amp; Gold, Black &amp; Blue leads today’s edition</div>
+      <div class="site-ticker-item">A redesigned front page gives the lede room to breathe</div>
+      <div class="site-ticker-item">Washington closes the season as champions</div>
+      <div class="site-ticker-item">Haliburton stays red-hot in Chicago</div>
+      <div class="site-ticker-item">Duren trade reshapes the conference picture</div>
+      <div class="site-ticker-item">League offices weigh a divisional return</div>
+      <div class="site-ticker-item">Purple &amp; Gold, Black &amp; Blue leads today’s edition</div>
+      <div class="site-ticker-item">A redesigned front page gives the lede room to breathe</div>
+      <div class="site-ticker-item">Washington closes the season as champions</div>
+      <div class="site-ticker-item">Haliburton stays red-hot in Chicago</div>
+      <div class="site-ticker-item">Duren trade reshapes the conference picture</div>
+      <div class="site-ticker-item">League offices weigh a divisional return</div>
+    </div>
+  </div>
+</div>
+
+<div class="paper">
+  <div class="masthead">
+    <div class="league-name">European Super League — Personal Essay</div>
+    <div class="section-label">Los Angeles Lakers · West Division · Fan Essay</div>
+  </div>
+
+  <div class="opinion-flag">FAN ESSAY</div>
+
+  <h1 class="headline">Purple &amp; Gold, Black &amp; Blue</h1>
+  <p class="dek">Twelve seasons of loyalty to the Los Angeles LAL have taught me one thing: loving this team is less a hobby and more a slow, deliberate act of self-destruction and I wouldn't trade it for anything.</p>
+
+  <div class="byline-bar">
+    <span class="byline">Christofu — Los Angeles Lakers Fan</span>
+    <span class="dateline">Season 13 1992 · West Division</span>
+  </div>
+
+  <div class="body-text">
+
+    <p class="drop-cap">There is a specific kind of pain that only a Lakers fan understands. It is not the clean agony of a team that was never supposed to win. It is something worse: the pain of a franchise that has been this close, so many times, for so long, and still cannot get over the hump. Twelve seasons. I have been here for all twelve. I have watched the purple and gold from the front row of every heartbreak this city has had to offer, and if you asked me right now whether I regret it, I would be lying if I said no — and lying harder if I said yes.</p>
+
+    <p>It started in 1979 with a man named Christofu. He came in with credentials you couldn't argue with — ESL-trained, sharp eye for talent, the kind of basketball IQ that doesn't come around often. On paper, he was exactly what this franchise needed. And that first season, he delivered: sixty-six wins. Sure, it ended in the first round, but sixty-six wins felt like a statement. Like a promise. The building was full. The city believed.</p>
+
+    <p>Then Moses Malone happened.</p>
+
+    <div class="section-header">The Choke That Built a Generation of Pain</div>
+
+    <p>Ask any true LAL fan about Moses Malone and watch their eyes go somewhere far away. Season after season, in the moments that mattered most, the universe seemed to conspire against this franchise in ways that felt almost personal. The playoffs became not a stage for glory but a recurring site of public humiliation. Eight appearances. Zero conference titles. A playoff record of 24 wins and 37 losses that reads less like a basketball stat and more like a medical diagnosis. The Christofu era, for all its regular-season brilliance, has been serially, spectacularly undone when the lights got brightest.</p>
+
+    <div class="stat-box">
+      <div>
+        <span class="stat-num">8</span>
+        <span class="stat-label">Playoff Appearances</span>
+      </div>
+      <div>
+        <span class="stat-num">0</span>
+        <span class="stat-label">Conference Titles</span>
+      </div>
+      <div>
+        <span class="stat-num">24–37</span>
+        <span class="stat-label">All-Time Playoff Record</span>
+      </div>
+      <div class="record-line">Current Season: 12–20 · 12th Place, West · Scoring –5.3 pts/game differential</div>
+    </div>
+
+    <p>There is a cruel symmetry to it all. You build a roster around a man like Chuck Person — 23.6 points, 7.5 rebounds, 4.7 assists a night, logging nearly 37 minutes every single game, carrying this team on his back through a 12–20 season — and still you find yourself sitting 12th in the West, watching playoff basketball happen somewhere else. Chuck is giving everything. The fans are giving everything. Eighteen thousand of us pack into Staples Center at 95.9 percent capacity every night despite a losing record, because this city is loyal to its bones. And still, it is not enough.</p>
+
+    <div class="pull-quote">
+      <p>"Eighteen thousand people show up every night for a losing team. That's not fandom. That's faith."</p>
+    </div>
+
+    <div class="section-header">What the Numbers Don't Tell You</div>
+
+    <p>People who don't follow this team see the box score. They see 12–20, they see 12th place, they see a point differential of minus five and they move on. What they don't see is Gerald Green, who was starting to find something this season before a torn ligament ended his year with eight days left on the injury clock. They don't see Dejan Tomasevic averaging 16.2 points and 7.1 rebounds while playing 34 minutes a night, doing everything asked of him on a roster that is one real point guard away from being competitive. They don't see Ricky Wilson running the offense with everything he has, limited as the supporting cast around him may be.</p>
+
+    <p>They don't see the way this fanbase treats a Tuesday loss in January like it physically hurt them, because it does. We have the market size to compete with anyone. We have an owner with a Very High desire to win. We have a general manager who won ESL GM of the Year in 1979 and has four division titles on his résumé. And yet here we are, watching another season slip away from us, muttering about Moses Malone like veterans mutter about old wars — not with anger anymore, but with the resigned familiarity of someone who has learned that certain kinds of pain simply become part of you.</p>
+
+    <div class="section-header">On Loyalty</div>
+
+    <p>People ask me why I stay. It's a fair question. Twelve seasons is a long time to invest in something that keeps breaking your heart. But I think about what this team represents — not just a franchise, but a city. Los Angeles, CA. Huge market, high economy, a place that runs on ambition and spectacle and the belief that the next thing, the next person, the next season will be the one that changes everything. That's the Lakers. That has always been the Lakers. Reinaldo De Saldanha bought this team in 1979 and has never once stopped believing it would be great. That kind of conviction is either delusional or admirable, and I have decided, after twelve years, that it is both simultaneously.</p>
+
+    <p>Christofu carries a 555–461 career record. He has kept this franchise relevant when the talent didn't always justify it, steered the ship through dark stretches — the 12–70 season of 1984, the 17–65 of 1985, the rebuilding years that tested every fan who had been there since the beginning. He has made mistakes, no doubt. The postseason ledger doesn't lie. But I think about what it means to build something over decades, to hold a city's basketball dreams in your hands for that long, and I feel something close to gratitude even when it is buried under frustration.</p>
+
+    <div class="pull-quote">
+      <p>"The worst part about loving a losing team isn't the losing. It's the hope. The hope is what destroys you."</p>
+    </div>
+
+    <div class="section-header">12th Place, Staples Center, Full House</div>
+
+    <p>Tonight, they will play again. They are 12–20. They are three games under .500 in a conference that does not forgive mediocrity. Chuck Person will probably score 24 or 25 points and it may not be enough. Ricky Wilson will push the pace and Dejan Tomasevic will grind in the post and the crowd at Staples — all 18,000 of them — will be there, because that is who we are. We are the fanbase that shows up when the team doesn't deserve it. We are the city that keeps buying tickets at $109 average when the standings suggest we probably shouldn't.</p>
+
+    <p>We are Lakers fans. We have been here for twelve seasons of almost. We have watched every playoff exit like a slow-motion car crash we couldn't look away from. We have whispered Moses Malone's name as both a curse and an explanation. We have watched Christofu craft rosters that look brilliant on paper and fracture under postseason pressure, year after year after year.</p>
+
+    <p>And we will be back next season. Because what else would we do? This is our team. This purple, this gold, this particular and specific heartbreak — it belongs to us. Every losing streak, every close-but-not-quite, every playoff series where we couldn't get over that final mountain. It is ours. And somewhere under all of it, still burning, still too stubborn to die: the belief that this is finally the year we figure it out.</p>
+
+    <p>Maybe that makes us fools. But the Staples Center is full every night, so at least we are fools together.</p>
+
+    <p style="margin-top:1.5rem;font-family:'Barlow Condensed',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.1em;color:var(--mid);">— Christofu, Los Angeles, CA · Season 13</p>
+
+  </div>
+
+  <hr class="footer-rule">
+  <div class="footer-text">European Super League · Season 13 · Fan Essay · Los Angeles LAL</div>
+</div>
+<script src="../article-rail.js"></script>
+</body>
+</html>
+
+
+
+
