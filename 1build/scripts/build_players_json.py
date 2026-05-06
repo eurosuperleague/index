@@ -77,6 +77,39 @@ def parse_numeric_value(value):
         return text
 
 
+def parse_current_salary(html):
+    contract_match = re.search(
+        r"<td class=tableheader[^>]*>\s*&nbsp;Contract</td></tr>(.*?)</table>",
+        html,
+        re.IGNORECASE | re.DOTALL,
+    )
+    if not contract_match:
+        return {"currentSalary": None, "currentSalaryText": ""}
+
+    value_row_match = re.search(
+        r"<tr[^>]*class=row1[^>]*>(.*?)</tr>",
+        contract_match.group(1),
+        re.IGNORECASE | re.DOTALL,
+    )
+    if not value_row_match:
+        return {"currentSalary": None, "currentSalaryText": ""}
+
+    cells = re.findall(
+        r"<td[^>]*class=main[^>]*>(.*?)</td>",
+        value_row_match.group(1),
+        re.IGNORECASE | re.DOTALL,
+    )
+    value_cells = [cell for cell in cells if "$" in strip_tags(cell)]
+    if not value_cells:
+        return {"currentSalary": None, "currentSalaryText": ""}
+
+    current_salary_cell = value_cells[0]
+    return {
+        "currentSalary": parse_money_value(current_salary_cell),
+        "currentSalaryText": strip_tags(current_salary_cell),
+    }
+
+
 def slugify(value):
     text = clean(value).lower().replace("+/-", "plus_minus").replace("%", "_pct")
     return re.sub(r"[^a-z0-9]+", "_", text).strip("_")
@@ -325,6 +358,7 @@ def parse_player_page(html, filename, team_lookup, ratings_by_name):
         "experience": experience,
         "source": "player_page",
     }
+    player.update(parse_current_salary(html))
 
     for key, value in zip(ATTR_KEYS, attr_values):
         player[key] = value
