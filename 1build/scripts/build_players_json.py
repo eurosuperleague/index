@@ -14,6 +14,7 @@ ROSTERS_DIR = os.path.normpath(os.path.join(PROJECT_ROOT, "rosters"))
 PLAYERS_DIR = os.path.normpath(os.path.join(PROJECT_ROOT, "players"))
 PLAYERS_OUT = os.path.join(DATABASE_DIR, "players.json")
 PLAYER_STATS_OUT = os.path.join(DATABASE_DIR, "player_stats.json")
+TEAM_STATS_OUT = os.path.join(DATABASE_DIR, "team_stats.json")
 TEAMS_OUT = os.path.join(DATABASE_DIR, "teams.json")
 STANDINGS_OUT = os.path.join(DATABASE_DIR, "standings.json")
 CAPREPORT_OUT = os.path.join(DATABASE_DIR, "capreport.json")
@@ -131,6 +132,71 @@ def make_unique_headers(headers):
         unique.append(key)
 
     return unique
+
+
+def parse_team_season_info(html, team):
+    table_match = re.search(
+        r"<td class=tableheader[^>]*>\s*&nbsp;Season Info</td></tr>(.*?)</table>",
+        html,
+        re.IGNORECASE | re.DOTALL,
+    )
+    stats = {}
+
+    if not table_match:
+        return {
+            "teamId": team["id"],
+            "team": team["name"],
+            "file": team["file"],
+            "url": team["url"],
+            "stats": stats,
+        }
+
+    row_matches = re.finditer(
+        r"<tr[^>]*class=row[12][^>]*>(.*?)</tr>",
+        table_match.group(1),
+        re.IGNORECASE | re.DOTALL,
+    )
+
+    for row_match in row_matches:
+        cells = re.findall(
+            r"<td[^>]*class=main[^>]*>(.*?)</td>",
+            row_match.group(1),
+            re.IGNORECASE | re.DOTALL,
+        )
+        if len(cells) < 12:
+            continue
+
+        label = strip_tags(cells[0]).rstrip(":")
+        key = slugify(label)
+        if not key:
+            continue
+
+        stats[key] = {
+            "label": label,
+            "team": {
+                "value": parse_numeric_value(cells[1]),
+                "conferenceRank": parse_numeric_value(cells[2]),
+                "totalRank": parse_numeric_value(cells[3]),
+            },
+            "opponent": {
+                "value": parse_numeric_value(cells[5]),
+                "conferenceRank": parse_numeric_value(cells[6]),
+                "totalRank": parse_numeric_value(cells[7]),
+            },
+            "margin": {
+                "value": parse_numeric_value(cells[9]),
+                "conferenceRank": parse_numeric_value(cells[10]),
+                "totalRank": parse_numeric_value(cells[11]),
+            },
+        }
+
+    return {
+        "teamId": team["id"],
+        "team": team["name"],
+        "file": team["file"],
+        "url": team["url"],
+        "stats": stats,
+    }
 
 
 def load_mdb_ratings():
@@ -688,6 +754,7 @@ def main():
 
     ratings_by_name = load_mdb_ratings()
     all_teams = []
+    all_team_stats = []
     roster_files = [f for f in os.listdir(ROSTERS_DIR) if f.lower().endswith((".htm", ".html"))]
 
     for file in roster_files:
@@ -695,7 +762,9 @@ def main():
         with open(path, "r", encoding="latin-1") as f:
             html = f.read()
 
-        all_teams.append(extract_team_metadata(html, file))
+        team = extract_team_metadata(html, file)
+        all_teams.append(team)
+        all_team_stats.append(parse_team_season_info(html, team))
 
     team_lookup = build_team_lookup(all_teams)
     all_players = []
@@ -728,6 +797,14 @@ def main():
 
     with open(PLAYER_STATS_OUT, "w", encoding="utf-8") as f:
         json.dump(player_stats_data, f, indent=4)
+
+    team_stats_data = {
+        "source": "rosters/*.htm",
+        "teams": sorted(all_team_stats, key=lambda team: team["team"]),
+    }
+
+    with open(TEAM_STATS_OUT, "w", encoding="utf-8") as f:
+        json.dump(team_stats_data, f, indent=4)
 
     all_teams.sort(key=lambda team: team["name"])
 
@@ -769,6 +846,7 @@ def main():
         
     print(f"\nFinal count: {len(all_players)} players saved to {PLAYERS_OUT}")
     print(f"Final count: {len(all_player_stats)} player stat records saved to {PLAYER_STATS_OUT}")
+    print(f"Final count: {len(team_stats_data['teams'])} team stat records saved to {TEAM_STATS_OUT}")
     print(f"Final count: {len(all_teams)} teams saved to {TEAMS_OUT}")
     print(f"Final count: {len(standings_data['sections'])} standings sections saved to {STANDINGS_OUT}")
     print(f"Final count: {len(capreport_data['sections'])} cap report sections saved to {CAPREPORT_OUT}")

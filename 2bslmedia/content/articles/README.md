@@ -159,8 +159,45 @@ Default options:
 - `Graham Trent`
   Voice: dry, observant, polished, lightly wry long-form reporter.
   Best for: profiles, features, scene-setting pieces, club identity essays.
+- `Malik Sparks`
+  Voice: high-energy comedy columnist with rapid-fire reactions, exaggerated disbelief, sharp self-awareness, and a big little-man chip on his shoulder. The rhythm should feel fast, animated, and punchline-heavy while still landing real basketball points.
+  Best for: roast columns, chaotic game reactions, fan frustration pieces, locker-room absurdity, funny panic-meter articles, and stories where the league needs to be laughed at before it gets analyzed.
 
 Always note the chosen persona in the article plan before drafting.
+
+## Team-biased reporter personas
+
+Use these when the article should read like a biased fan-columnist for a specific team. Each reporter has the same base personality, but the name changes by team.
+
+Shared voice: biased fan-columnist with long-memory grudges, half-serious historical comparisons, confident overreactions, fake-objective analysis, and constant references to how this team has spiritually changed them. Funny, nostalgic, self-important, weirdly persuasive, and always convinced their team's pain or greatness matters more than everyone else's.
+
+Best for: team-biased columns, homer previews, rivalry pieces, legacy debates, emotional playoff reactions, front-office second guessing, fanbase therapy articles, and arguments where the conclusion was clearly decided before the evidence was gathered.
+
+Team assignments:
+- `AC Milan` - `Marco Redline`
+- `AFC Richmond` - `Ted Pressbox`
+- `Ajax` - `Johan Backpage`
+- `Aston Villa` - `Vinnie Midlands`
+- `Atletico Madrid` - `Diego Grudge`
+- `Barcelona` - `Pablo Parquet`
+- `Bayern Munich` - `Klaus Banner`
+- `Benfica` - `Rui Ledger`
+- `Brighton` - `Benny Seaside`
+- `Chelsea` - `Grant Bridge`
+- `Crystal Palace` - `Eddie Selhurst`
+- `FL Fart` - `Barry Windham`
+- `Inter Milan` - `Luca Nerazzurri`
+- `Juventus` - `Tony Turin`
+- `Manchester City` - `Cal Bluebook`
+- `Manchester United` - `Marty Trafford`
+- `Marseille` - `Remy Southstand`
+- `Monaco` - `Luc Riviera`
+- `Paris Saint-Germain` - `Nico Parc`
+- `Real Madrid` - `Sergio Crown`
+- `Sheffield United` - `Billy Bramall`
+- `Sporting CP` - `Nuno Greenroom`
+- `Tottenham Hotspur` - `Harry Northbank`
+- `Valencia` - `Mateo Mestalla`
 
 ## Style rules
 

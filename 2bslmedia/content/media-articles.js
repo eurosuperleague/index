@@ -1,5 +1,16 @@
 window.ESL_MEDIA_ARTICLES = [
   {
+    file: "articles/larry_bird_ac_milan_interview.html",
+    title: "Larry Bird Has Notes For AC Milan",
+    category: "Interview",
+    desk: "Interview",
+    sortKey: "2026-05-06-06",
+    tag: "AC Milan",
+    author: "Malik Sparks",
+    meta: "One-On-One",
+    blurb: "Larry Bird is already scoring like AC Milan's centerpiece, but a 2-4 preseason has him asking sharper questions of the room around him."
+  },
+  {
     file: "articles/ecl_awards_predictions.html",
     title: "Conference League Awards Predictions: This Tier Is Messy, So Let’s Be Honest",
     category: "Analysis",
