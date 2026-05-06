@@ -138,6 +138,7 @@ Confirm these before writing:
 - rough length
 - writer persona/voice
 - whether it should be added to homepage, analysis, scouting, or archive pages
+- how it should appear on the homepage power board
 
 Only start writing once the user answers.
 
@@ -201,5 +202,19 @@ When a new article is added, add its metadata object there:
 - `blurb`
 
 If you skip this step, the page will still render, but the new article will not appear in recommendations.
+
+## Homepage power board rule
+
+Every newly published article must also be placed on the homepage power board in:
+- `2bslmedia/homepage.html`
+
+That is a required publishing step, not an optional promo step.
+
+When adding a new article:
+1. update the homepage power board entry text and link
+2. make sure the board reflects the newest live stories first
+3. remove older placeholder or superseded entries if space is limited
+
+Do not publish a new article without updating the homepage power board to include it.
 
 
