@@ -67,7 +67,7 @@ Use this structure in order:
         <li><a href="../articles/ecl_awards_predictions.html">Latest</a></li>
         <li><a href="../analysis.html">Analysis</a></li>
         <li><a href="../scouting.html">Scouting</a></li>
-        <li><a href="../../index.htm">League Site</a></li>
+        <li><a href="../../../index.htm">League Site</a></li>
       </ul>
     </div>
   </header>
