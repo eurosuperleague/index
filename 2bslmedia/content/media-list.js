@@ -1,7 +1,7 @@
 (() => {
   const STORAGE_KEY = "eslMediaReadArticles";
   const page = document.body?.dataset?.listingPage;
-  const validPages = new Set(["all-articles", "analysis", "scouting"]);
+  const validPages = new Set(["all-articles", "analysis", "scouting", "interviews"]);
 
   if (!validPages.has(page)) {
     return;

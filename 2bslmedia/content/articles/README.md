@@ -67,6 +67,7 @@ Use this structure in order:
         <li><a href="../articles/ecl_awards_predictions.html">Latest</a></li>
         <li><a href="../analysis.html">Analysis</a></li>
         <li><a href="../scouting.html">Scouting</a></li>
+        <li><a href="../interviews.html">Interviews</a></li>
         <li><a href="../../../index.htm">League Site</a></li>
       </ul>
     </div>
@@ -137,7 +138,7 @@ Confirm these before writing:
 - tier/category: CLB, ELB, ECL, Analysis, Scouting, etc.
 - rough length
 - writer persona/voice
-- whether it should be added to homepage, analysis, scouting, or archive pages
+- whether it should be added to homepage, analysis, scouting, interviews, or archive pages
 - how it should appear on the homepage power board
 
 Only start writing once the user answers.
@@ -237,6 +238,13 @@ When a new article is added, add its metadata object there:
 - `author`
 - `meta`
 - `blurb`
+
+For interview articles, always set:
+- `category: "Interview"`
+- `desk: "Interview"`
+
+The Interviews tab is powered automatically by that `desk` value through:
+- `2bslmedia/content/interviews.html`
 
 If you skip this step, the page will still render, but the new article will not appear in recommendations.
 

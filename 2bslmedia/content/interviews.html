@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESL Media Interviews</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23111b36'/><text x='50' y='75' font-family='serif' font-size='45' font-weight='900' fill='%23FFFFFF' text-anchor='middle'>ESL</text></svg>">
+  <style>
+    @import url("media-shared.css");
+
+    .page-wrap,
+    .footer-inner {
+      width: min(1280px, calc(100% - 2.5rem));
+      margin: 0 auto;
+    }
+
+    .page-wrap { padding: 2rem 0 3rem; }
+
+    .section-hero {
+      background: var(--cream);
+      border: 1px solid var(--ink);
+      border-top: 4px solid var(--gold);
+      padding: 1.5rem 1.5rem 1.6rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 6px 6px 0 rgba(17,27,54,.15);
+    }
+
+    .section-kicker {
+      color: var(--gold);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      margin-bottom: .8rem;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1;
+      letter-spacing: 0;
+      margin-bottom: .7rem;
+      max-width: 13ch;
+    }
+
+    .section-dek {
+      color: var(--mid);
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 62ch;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.35rem;
+    }
+
+    .article-card {
+      background: var(--cream);
+      border: 1px solid var(--light);
+      border-top: 3px solid var(--gold);
+      padding: 1.1rem 1.1rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .card-tag {
+      color: var(--gold);
+      font-size: .63rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+    }
+
+    .card-title {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      line-height: 1.12;
+      margin-bottom: .65rem;
+    }
+
+    .card-title a:hover { color: var(--gold); }
+
+    .card-dek {
+      color: var(--mid);
+      line-height: 1.55;
+      font-size: .95rem;
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+
+    .card-meta {
+      border-top: 1px solid var(--light);
+      padding-top: .7rem;
+      color: var(--mid);
+      font-size: .7rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-wrap {
+      border-top: 1px solid var(--ink);
+      background: #faf8f4;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 1rem 0 1.3rem;
+      font-size: .7rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    @media (max-width: 760px) {
+      .page-wrap,
+      .footer-inner { width: min(100%, calc(100% - 1.25rem)); }
+    }
+  </style>
+</head>
+<body data-listing-page="interviews">
+  <header class="site-topbar">
+    <div class="site-topbar-inner">
+      <div class="site-topbar-brand">
+        <div class="site-edition-pill">Front Page</div>
+        <div>European Super League Sports Desk</div>
+      </div>
+      <ul class="site-topbar-nav">
+        <li><a href="../homepage.html">Home</a></li>
+        <li><a href="all-articles.html">All Articles</a></li>
+        <li><a href="articles/ecl_awards_predictions.html">Latest</a></li>
+        <li><a href="analysis.html">Analysis</a></li>
+        <li><a href="scouting.html">Scouting</a></li>
+        <li><a href="interviews.html" class="active">Interviews</a></li>
+        <li><a href="../../index.htm">League Site</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="site-ticker">
+    <div class="site-ticker-inner">
+      <span class="site-ticker-label">Interviews</span>
+      <div class="site-ticker-track">
+        <div class="site-ticker-item">Player sitdowns, postgame reactions, and media-day pressure live here</div>
+        <div class="site-ticker-item">Malik Sparks opens the desk with Larry Bird and AC Milan's preseason tension</div>
+        <div class="site-ticker-item">Player sitdowns, postgame reactions, and media-day pressure live here</div>
+        <div class="site-ticker-item">Malik Sparks opens the desk with Larry Bird and AC Milan's preseason tension</div>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-wrap">
+    <section class="section-hero">
+      <div class="section-kicker">ESL Media - Interviews</div>
+      <h1 class="section-title">The room sounds different when players answer for themselves.</h1>
+      <p class="section-dek">One-on-one sitdowns, tunnel conversations, and player reaction pieces collect here, with the league's loudest personalities asked to explain the box score out loud.</p>
+    </section>
+
+    <section class="article-grid" data-hub-grid="interviews"></section>
+  </main>
+
+  <footer class="footer-wrap">
+    <div class="footer-inner">
+      <div>ESL Media - European Super League</div>
+      <div>Interviews Desk</div>
+    </div>
+  </footer>
+  <script src="media-articles.js"></script>
+  <script src="media-hubs.js"></script>
+  <script src="media-list.js"></script>
+</body>
+</html>

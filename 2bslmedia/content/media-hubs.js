@@ -43,11 +43,22 @@
     return;
   }
 
+  if (page === "interviews") {
+    const grid = document.querySelector("[data-hub-grid='interviews']");
+    const interviewArticles = articles.filter((article) => article.desk === "Interview").sort(bySortDesc);
+    if (grid) {
+      grid.innerHTML = interviewArticles.map(renderCard).join("");
+    }
+    return;
+  }
+
   if (page === "all-articles") {
     const analysisGrid = document.querySelector("[data-hub-grid='all-analysis']");
     const scoutingGrid = document.querySelector("[data-hub-grid='all-scouting']");
+    const interviewGrid = document.querySelector("[data-hub-grid='all-interviews']");
     const analysisArticles = articles.filter((article) => article.desk === "Analysis").sort(bySortDesc);
     const scoutingArticles = articles.filter((article) => article.desk === "Scouting").sort(bySortDesc);
+    const interviewArticles = articles.filter((article) => article.desk === "Interview").sort(bySortDesc);
 
     if (analysisGrid) {
       analysisGrid.innerHTML = analysisArticles.map(renderCard).join("");
@@ -55,8 +66,12 @@
     if (scoutingGrid) {
       scoutingGrid.innerHTML = scoutingArticles.map(renderCard).join("");
     }
+    if (interviewGrid) {
+      interviewGrid.innerHTML = interviewArticles.map(renderCard).join("");
+    }
 
     setSectionCount("[data-section-count='analysis']", analysisArticles.length);
     setSectionCount("[data-section-count='scouting']", scoutingArticles.length);
+    setSectionCount("[data-section-count='interviews']", interviewArticles.length);
   }
 })();
