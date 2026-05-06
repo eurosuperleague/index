@@ -1,0 +1,62 @@
+(() => {
+  const articles = Array.isArray(window.ESL_MEDIA_ARTICLES) ? window.ESL_MEDIA_ARTICLES : [];
+  const page = document.body?.dataset?.listingPage;
+  if (!page || !articles.length) {
+    return;
+  }
+
+  const bySortDesc = (a, b) => (b.sortKey || "").localeCompare(a.sortKey || "");
+
+  function renderCard(article) {
+    return `
+      <article class="article-card" data-sort-key="${article.sortKey}">
+        <div class="card-tag">${article.tag}</div>
+        <h2 class="card-title"><a href="${article.file}">${article.title}</a></h2>
+        <p class="card-dek">${article.blurb}</p>
+        <div class="card-meta"><span>${article.author}</span><span>${article.meta}</span></div>
+      </article>
+    `;
+  }
+
+  function setSectionCount(selector, count) {
+    const node = document.querySelector(selector);
+    if (node) {
+      node.textContent = `${count} ${count === 1 ? "story" : "stories"}`;
+    }
+  }
+
+  if (page === "analysis") {
+    const grid = document.querySelector("[data-hub-grid='analysis']");
+    const analysisArticles = articles.filter((article) => article.desk === "Analysis").sort(bySortDesc);
+    if (grid) {
+      grid.innerHTML = analysisArticles.map(renderCard).join("");
+    }
+    return;
+  }
+
+  if (page === "scouting") {
+    const grid = document.querySelector("[data-hub-grid='scouting']");
+    const scoutingArticles = articles.filter((article) => article.desk === "Scouting").sort(bySortDesc);
+    if (grid) {
+      grid.innerHTML = scoutingArticles.map(renderCard).join("");
+    }
+    return;
+  }
+
+  if (page === "all-articles") {
+    const analysisGrid = document.querySelector("[data-hub-grid='all-analysis']");
+    const scoutingGrid = document.querySelector("[data-hub-grid='all-scouting']");
+    const analysisArticles = articles.filter((article) => article.desk === "Analysis").sort(bySortDesc);
+    const scoutingArticles = articles.filter((article) => article.desk === "Scouting").sort(bySortDesc);
+
+    if (analysisGrid) {
+      analysisGrid.innerHTML = analysisArticles.map(renderCard).join("");
+    }
+    if (scoutingGrid) {
+      scoutingGrid.innerHTML = scoutingArticles.map(renderCard).join("");
+    }
+
+    setSectionCount("[data-section-count='analysis']", analysisArticles.length);
+    setSectionCount("[data-section-count='scouting']", scoutingArticles.length);
+  }
+})();

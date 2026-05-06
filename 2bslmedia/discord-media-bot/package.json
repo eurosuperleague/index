@@ -1,0 +1,11 @@
+{
+  "name": "esl-media-discord-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Discord notifier for newly published ESL Media articles",
+  "type": "module",
+  "scripts": {
+    "start": "node bot.js --watch",
+    "once": "node bot.js --once"
+  }
+}

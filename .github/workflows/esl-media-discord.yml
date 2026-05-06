@@ -1,0 +1,49 @@
+name: ESL Media Discord
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: esl-media-discord
+  cancel-in-progress: false
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run Discord article notifier
+        working-directory: 2bslmedia/discord-media-bot
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
+          DISCORD_ROLE_ID: ${{ secrets.DISCORD_ROLE_ID }}
+          MEDIA_ARTICLES_SOURCE: ../content/media-articles.js
+          ARTICLE_BASE_URL: https://eurosuperleague.github.io/index/2bslmedia/content/
+          CHECK_INTERVAL_MS: 300000
+        run: node bot.js --once
+
+      - name: Commit updated announcement state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 2bslmedia/discord-media-bot/data/announced-articles.json
+          git diff --cached --quiet || git commit -m "Update ESL Media Discord announcement state"
+
+      - name: Push updated state
+        run: git push

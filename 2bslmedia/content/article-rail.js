@@ -1,42 +1,11 @@
 (() => {
-  const articles = [
-    {
-      file: "clb_awards_predictions.html",
-      title: "Champions League Awards Predictions: Start With Magic, Then Start Arguing",
-      category: "Analysis",
-      blurb: "Damon Cross opens the preseason awards cycle with Magic Johnson, Artis Gilmore, and a star-heavy CLB first team."
-    },
-    {
-      file: "elb_awards_predictions.html",
-      title: "Europa League Awards Predictions: Big Men, Big Stakes, No Apologies",
-      category: "Analysis",
-      blurb: "The Europa board leans into Moses Malone, Robert Parish, and a brutal frontcourt race at the heart of the tier."
-    },
-    {
-      file: "ecl_awards_predictions.html",
-      title: "Conference League Awards Predictions: This Tier Is Messy, So Let?s Be Honest",
-      category: "Analysis",
-      blurb: "The Conference League awards picture starts with Isiah Thomas, Alton Lister, and a first team built for volatility."
-    },
-    {
-      file: "clb_power_rankings.html",
-      title: "Champions League Power Rankings: Richmond opens at No. 1",
-      category: "Analysis",
-      blurb: "The first Champions League board weighs the six-game form lines against star-loaded rosters."
-    },
-    {
-      file: "elb_power_rankings.html",
-      title: "Europa League Power Rankings: Chelsea earns the first top line",
-      category: "Analysis",
-      blurb: "Chelsea's 5-1 opening run gives them the edge in the deepest middle tier on the site."
-    },
-    {
-      file: "ecl_power_rankings.html",
-      title: "Conference League Power Rankings: Manchester City takes the first board",
-      category: "Analysis",
-      blurb: "In the most volatile tier, early results matter most and City gets rewarded for a 5-1 launch."
-    }
-  ];
+  const manifest = Array.isArray(window.ESL_MEDIA_ARTICLES) ? window.ESL_MEDIA_ARTICLES : [];
+  const articles = manifest.map((article) => ({
+    file: article.file.split("/").pop(),
+    title: article.title,
+    category: article.desk,
+    blurb: article.blurb
+  }));
 
   const adImages = [
     "../Ads/ChatGPT Image May 5, 2026, 10_04_21 PM (1).png",

@@ -1,6 +1,6 @@
-# ESL Media Article Template Guide
+﻿# ESL Media Article Template Guide
 
-This guide is for humans or AIs creating future files inside `2bslmedia/articles/`.
+This guide is for humans or AIs creating future files inside `2bslmedia/content/articles/`.
 
 The goal is simple:
 - every article should keep the same ESL Media article shell
@@ -10,7 +10,7 @@ The goal is simple:
 ## Required file setup
 
 Every article file should:
-- live in `2bslmedia/articles/`
+- live in `2bslmedia/content/articles/`
 - be a standalone `.html` file
 - include `@import url("../media-shared.css");` inside its `<style>` block
 - use `<body class="media-article">`
@@ -26,7 +26,7 @@ The `article-rail.js` script automatically:
 - nudges the article layout left on desktop
 - adds a right rail
 - shows a recommended-articles list
-- shows two random ads from `2bslmedia/Ads/`
+- shows two random ads from `2bslmedia/content/Ads/`
 
 ## Required page structure
 
@@ -62,12 +62,12 @@ Use this structure in order:
         <div>European Super League Sports Desk</div>
       </div>
       <ul class="site-topbar-nav">
-        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="../../homepage.html" class="active">Home</a></li>
         <li><a href="../all-articles.html">All Articles</a></li>
-        <li><a href="../articles/hornets_duren_trade.html">Latest</a></li>
+        <li><a href="../articles/ecl_awards_predictions.html">Latest</a></li>
         <li><a href="../analysis.html">Analysis</a></li>
         <li><a href="../scouting.html">Scouting</a></li>
-        <li><a href="../index.htm">League Site</a></li>
+        <li><a href="../../index.htm">League Site</a></li>
       </ul>
     </div>
   </header>
@@ -183,13 +183,23 @@ Follow this checklist:
 
 ## If updating recommendations
 
-The right-rail recommendation list is powered by:
-- `2bslmedia/article-rail.js`
+The live article metadata is powered by:
+- `2bslmedia/content/media-articles.js`
+
+The right-rail recommendation list is rendered from that shared manifest through:
+- `2bslmedia/content/article-rail.js`
 
 When a new article is added, add its metadata object there:
 - `file`
 - `title`
 - `category`
+- `desk`
+- `sortKey`
+- `tag`
+- `author`
+- `meta`
 - `blurb`
 
 If you skip this step, the page will still render, but the new article will not appear in recommendations.
+
+
