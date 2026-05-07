@@ -53,9 +53,9 @@ async function checkForNewArticles() {
   for (const article of freshArticles) {
     await sendArticleAnnouncement(article);
     announced.push(article.file);
+    saveState(announced);
   }
 
-  saveState(announced);
   console.log(`Announced ${freshArticles.length} new article(s).`);
 }
 
