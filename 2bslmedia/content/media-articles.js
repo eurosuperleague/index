@@ -1,5 +1,60 @@
 window.ESL_MEDIA_ARTICLES = [
   {
+    file: "articles/october_1981_month_in_review.html",
+    title: "October 1981 Month in Review: Preseason already has a tone",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-07-06",
+    tag: "Month In Review",
+    author: "Damon Cross",
+    meta: "Monthly Review",
+    blurb: "Chelsea and Manchester City set the pace, the Champions League got complicated fast, and October's preseason already gave every tier a personality."
+  },
+  {
+    file: "articles/promotion_relegation_watch_1_0.html",
+    title: "Promotion and Relegation Watch: November already has pressure lines",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-07-04",
+    tag: "Race Watch",
+    author: "Graham Trent",
+    meta: "Preseason Race Watch",
+    blurb: "Tier 1's trapdoor, Tier 2's split race, and Tier 3's one-slot chase all picked up real November pressure."
+  },
+  {
+    file: "articles/ecl_power_rankings_1_0.html",
+    title: "Conference League Power Rankings: City takes the opening board",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-07-03",
+    tag: "Conference League",
+    author: "Nina Vale",
+    meta: "Preseason Edition",
+    blurb: "Manchester City gets the first Tier 3 top line, PSG is the nearest threat, and the crowded middle is already fun."
+  },
+  {
+    file: "articles/elb_power_rankings_1_0.html",
+    title: "Europa League Power Rankings: Chelsea leads the opening board",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-07-02",
+    tag: "Europa League",
+    author: "Graham Trent",
+    meta: "Preseason Edition",
+    blurb: "Chelsea owns the cleanest Tier 2 case, Benfica is the closest threat, and Aston Villa already has the league's ugliest lower-tier file."
+  },
+  {
+    file: "articles/clb_power_rankings_1_0.html",
+    title: "Champions League Power Rankings: Palace opens on top",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-07-01",
+    tag: "Champions League",
+    author: "Nina Vale",
+    meta: "Preseason Edition",
+    blurb: "Crystal Palace gets the first Champions League top line, Bayern and Richmond sit close behind, and AC Milan already carries uncomfortable questions."
+  },
+  {
     file: "articles/larry_bird_ac_milan_interview.html",
     title: "Larry Bird Has Notes For AC Milan",
     category: "Interview",
@@ -42,39 +97,6 @@ window.ESL_MEDIA_ARTICLES = [
     author: "Damon Cross",
     meta: "Awards Preview",
     blurb: "Magic Johnson, Artis Gilmore, and a star-heavy first team open Damon Cross' preseason CLB ballot."
-  },
-  {
-    file: "articles/ecl_power_rankings.html",
-    title: "Conference League Power Rankings: Manchester City takes the first board",
-    category: "Analysis",
-    desk: "Analysis",
-    sortKey: "2026-05-01-03",
-    tag: "Conference League",
-    author: "ESL Media Desk",
-    meta: "First Edition",
-    blurb: "City turns a 5-1 start into the section's first No. 1, with PSG, FL Fart, and a volatile middle close behind."
-  },
-  {
-    file: "articles/elb_power_rankings.html",
-    title: "Europa League Power Rankings: Chelsea earns the first top line",
-    category: "Analysis",
-    desk: "Analysis",
-    sortKey: "2026-05-01-02",
-    tag: "Europa League",
-    author: "ESL Media Desk",
-    meta: "First Edition",
-    blurb: "Chelsea, Benfica, and Marseille lead the most balanced middle tier, while Aston Villa opens in a full emergency slot."
-  },
-  {
-    file: "articles/clb_power_rankings.html",
-    title: "Champions League Power Rankings: Richmond opens at No. 1",
-    category: "Analysis",
-    desk: "Analysis",
-    sortKey: "2026-05-01-01",
-    tag: "Champions League",
-    author: "ESL Media Desk",
-    meta: "First Edition",
-    blurb: "AFC Richmond starts on top, Palace sits right behind them, and Manchester United already carries the tier's heaviest early pressure."
   },
   {
     file: "articles/teams_with_a_foundation.html",

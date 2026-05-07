@@ -1,0 +1,1830 @@
+{
+    "source": [
+        "../../1build/database/monthly/latest_sim_results.json",
+        "../../1build/database/monthly/monthly_team_form.json",
+        "../../1build/database/monthly/overall_team_form.json",
+        "../../1build/database/monthly/tier_race_snapshot.json",
+        "../../1build/database/monthly/monthly_storylines.json"
+    ],
+    "period": {
+        "year": 1981,
+        "month": 11,
+        "label": "November 1981"
+    },
+    "package": {
+        "powerRankings": [
+            {
+                "id": "tier-1-power-rankings",
+                "type": "power_rankings",
+                "tier": "Tier 1",
+                "title": "Tier 1 Power Rankings",
+                "period": "November 1981",
+                "previousArticle": "../articles/clb_power_rankings_1_0.html",
+                "prompt": "Write a Tier 1 power rankings article for November 1981. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note changes from the last published power rankings article if those changes feel meaningful, but do not force movement notes for every team. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board.",
+                "writerNotes": [
+                    "Use the team pool as context, not as a locked final order.",
+                    "Base the ranking on overall form, not just one sim.",
+                    "Use the latest sim to justify movement, momentum, and skepticism.",
+                    "Call out at least one riser, one faller, and one team you are still unsure about."
+                ],
+                "availableContext": [
+                    "../../1build/database/monthly/overall_team_form.json",
+                    "../../1build/database/monthly/monthly_team_form.json",
+                    "../../1build/database/monthly/latest_sim_results.json",
+                    "../../1build/database/monthly/tier_race_snapshot.json",
+                    "../../1build/database/monthly/monthly_storylines.json",
+                    "../../1build/database/standings.json",
+                    "../../1build/database/game_results.json",
+                    "../../1build/database/teams.json",
+                    "../../1build/database/players.json",
+                    "../../1build/database/player_stats.json"
+                ],
+                "teamPool": [
+                    {
+                        "team": "Crystal Palace",
+                        "overall": {
+                            "record": "4-2",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": 7.5,
+                            "pointDiff": 45,
+                            "bestWin": {
+                                "date": "10/20/1981",
+                                "opponent": "Manchester United",
+                                "result": "W",
+                                "margin": 21,
+                                "score": "@Crystal Palace 103, Manchester United 82",
+                                "boxscoreUrl": "./boxes/box1-1.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/25/1981",
+                                "opponent": "Brighton",
+                                "result": "L",
+                                "margin": 7,
+                                "score": "@Brighton 104, Crystal Palace 97",
+                                "boxscoreUrl": "./boxes/box6-1.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster6.htm"
+                    },
+                    {
+                        "team": "AFC Richmond",
+                        "overall": {
+                            "record": "4-2",
+                            "streak": "L1",
+                            "last3": "LWL",
+                            "avgMargin": 6.33,
+                            "pointDiff": 38,
+                            "bestWin": {
+                                "date": "10/31/1981",
+                                "opponent": "Manchester United",
+                                "result": "W",
+                                "margin": 17,
+                                "score": "@AFC Richmond 110, Manchester United 93",
+                                "boxscoreUrl": "./boxes/box12-2.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/24/1981",
+                                "opponent": "Atletico Madrid",
+                                "result": "L",
+                                "margin": 4,
+                                "score": "@Atletico Madrid 96, AFC Richmond 92",
+                                "boxscoreUrl": "./boxes/box5-1.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 3
+                        },
+                        "latestSim": {
+                            "record": "0-1",
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -2.0,
+                            "pointDiff": -2,
+                            "bestWin": null,
+                            "worstLoss": {
+                                "date": "11/1/1981",
+                                "opponent": "Bayern Munich",
+                                "result": "L",
+                                "margin": 2,
+                                "score": "@Bayern Munich 84, AFC Richmond 82",
+                                "boxscoreUrl": "./boxes/box13-1.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "rosterUrl": "./rosters/roster12.htm"
+                    },
+                    {
+                        "team": "Bayern Munich",
+                        "overall": {
+                            "record": "4-2",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": 2.17,
+                            "pointDiff": 13,
+                            "bestWin": {
+                                "date": "10/29/1981",
+                                "opponent": "Atletico Madrid",
+                                "result": "W",
+                                "margin": 11,
+                                "score": "@Bayern Munich 97, Atletico Madrid 86",
+                                "boxscoreUrl": "./boxes/box10-1.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/20/1981",
+                                "opponent": "AC Milan",
+                                "result": "L",
+                                "margin": 13,
+                                "score": "@AC Milan 96, Bayern Munich 83",
+                                "boxscoreUrl": "./boxes/box1-3.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "latestSim": {
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 2.0,
+                            "pointDiff": 2,
+                            "bestWin": {
+                                "date": "11/1/1981",
+                                "opponent": "AFC Richmond",
+                                "result": "W",
+                                "margin": 2,
+                                "score": "@Bayern Munich 84, AFC Richmond 82",
+                                "boxscoreUrl": "./boxes/box13-1.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": null,
+                            "closeGameCount": 1
+                        },
+                        "rosterUrl": "./rosters/roster7.htm"
+                    },
+                    {
+                        "team": "Atletico Madrid",
+                        "overall": {
+                            "record": "3-3",
+                            "streak": "W1",
+                            "last3": "WLW",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": {
+                                "date": "10/31/1981",
+                                "opponent": "AC Milan",
+                                "result": "W",
+                                "margin": 23,
+                                "score": "@Atletico Madrid 102, AC Milan 79",
+                                "boxscoreUrl": "./boxes/box12-3.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/26/1981",
+                                "opponent": "AC Milan",
+                                "result": "L",
+                                "margin": 14,
+                                "score": "@AC Milan 93, Atletico Madrid 79",
+                                "boxscoreUrl": "./boxes/box7-1.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster11.htm"
+                    },
+                    {
+                        "team": "Brighton",
+                        "overall": {
+                            "record": "3-3",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": -0.33,
+                            "pointDiff": -2,
+                            "bestWin": {
+                                "date": "11/1/1981",
+                                "opponent": "AC Milan",
+                                "result": "W",
+                                "margin": 22,
+                                "score": "@Brighton 121, AC Milan 99",
+                                "boxscoreUrl": "./boxes/box13-2.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/27/1981",
+                                "opponent": "Manchester United",
+                                "result": "L",
+                                "margin": 20,
+                                "score": "@Manchester United 110, Brighton 90",
+                                "boxscoreUrl": "./boxes/box8-1.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "latestSim": {
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 22.0,
+                            "pointDiff": 22,
+                            "bestWin": {
+                                "date": "11/1/1981",
+                                "opponent": "AC Milan",
+                                "result": "W",
+                                "margin": 22,
+                                "score": "@Brighton 121, AC Milan 99",
+                                "boxscoreUrl": "./boxes/box13-2.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster10.htm"
+                    },
+                    {
+                        "team": "Real Madrid",
+                        "overall": {
+                            "record": "3-3",
+                            "streak": "L2",
+                            "last3": "WLL",
+                            "avgMargin": -1.0,
+                            "pointDiff": -6,
+                            "bestWin": {
+                                "date": "10/25/1981",
+                                "opponent": "Manchester United",
+                                "result": "W",
+                                "margin": 19,
+                                "score": "@Real Madrid 85, Manchester United 66",
+                                "boxscoreUrl": "./boxes/box6-2.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/30/1981",
+                                "opponent": "Crystal Palace",
+                                "result": "L",
+                                "margin": 18,
+                                "score": "@Crystal Palace 100, Real Madrid 82",
+                                "boxscoreUrl": "./boxes/box11-1.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster8.htm"
+                    },
+                    {
+                        "team": "AC Milan",
+                        "overall": {
+                            "record": "2-4",
+                            "streak": "L2",
+                            "last3": "WLL",
+                            "avgMargin": -6.5,
+                            "pointDiff": -39,
+                            "bestWin": {
+                                "date": "10/26/1981",
+                                "opponent": "Atletico Madrid",
+                                "result": "W",
+                                "margin": 14,
+                                "score": "@AC Milan 93, Atletico Madrid 79",
+                                "boxscoreUrl": "./boxes/box7-1.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/31/1981",
+                                "opponent": "Atletico Madrid",
+                                "result": "L",
+                                "margin": 23,
+                                "score": "@Atletico Madrid 102, AC Milan 79",
+                                "boxscoreUrl": "./boxes/box12-3.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "latestSim": {
+                            "record": "0-1",
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -22.0,
+                            "pointDiff": -22,
+                            "bestWin": null,
+                            "worstLoss": {
+                                "date": "11/1/1981",
+                                "opponent": "Brighton",
+                                "result": "L",
+                                "margin": 22,
+                                "score": "@Brighton 121, AC Milan 99",
+                                "boxscoreUrl": "./boxes/box13-2.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster9.htm"
+                    },
+                    {
+                        "team": "Manchester United",
+                        "overall": {
+                            "record": "1-5",
+                            "streak": "L2",
+                            "last3": "WLL",
+                            "avgMargin": -8.17,
+                            "pointDiff": -49,
+                            "bestWin": {
+                                "date": "10/27/1981",
+                                "opponent": "Brighton",
+                                "result": "W",
+                                "margin": 20,
+                                "score": "@Manchester United 110, Brighton 90",
+                                "boxscoreUrl": "./boxes/box8-1.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/20/1981",
+                                "opponent": "Crystal Palace",
+                                "result": "L",
+                                "margin": 21,
+                                "score": "@Crystal Palace 103, Manchester United 82",
+                                "boxscoreUrl": "./boxes/box1-1.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster5.htm"
+                    }
+                ]
+            },
+            {
+                "id": "tier-2-power-rankings",
+                "type": "power_rankings",
+                "tier": "Tier 2",
+                "title": "Tier 2 Power Rankings",
+                "period": "November 1981",
+                "previousArticle": "../articles/elb_power_rankings_1_0.html",
+                "prompt": "Write a Tier 2 power rankings article for November 1981. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note changes from the last published power rankings article if those changes feel meaningful, but do not force movement notes for every team. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board.",
+                "writerNotes": [
+                    "Use the team pool as context, not as a locked final order.",
+                    "Base the ranking on overall form, not just one sim.",
+                    "Use the latest sim to justify movement, momentum, and skepticism.",
+                    "Call out at least one riser, one faller, and one team you are still unsure about."
+                ],
+                "availableContext": [
+                    "../../1build/database/monthly/overall_team_form.json",
+                    "../../1build/database/monthly/monthly_team_form.json",
+                    "../../1build/database/monthly/latest_sim_results.json",
+                    "../../1build/database/monthly/tier_race_snapshot.json",
+                    "../../1build/database/monthly/monthly_storylines.json",
+                    "../../1build/database/standings.json",
+                    "../../1build/database/game_results.json",
+                    "../../1build/database/teams.json",
+                    "../../1build/database/players.json",
+                    "../../1build/database/player_stats.json"
+                ],
+                "teamPool": [
+                    {
+                        "team": "Chelsea",
+                        "overall": {
+                            "record": "5-1",
+                            "streak": "W5",
+                            "last3": "WWW",
+                            "avgMargin": 11.83,
+                            "pointDiff": 71,
+                            "bestWin": {
+                                "date": "10/30/1981",
+                                "opponent": "Benfica",
+                                "result": "W",
+                                "margin": 20,
+                                "score": "@Chelsea 102, Benfica 82",
+                                "boxscoreUrl": "./boxes/box11-3.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/20/1981",
+                                "opponent": "Monaco",
+                                "result": "L",
+                                "margin": 3,
+                                "score": "@Monaco 95, Chelsea 92",
+                                "boxscoreUrl": "./boxes/box1-7.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster17.htm"
+                    },
+                    {
+                        "team": "Benfica",
+                        "overall": {
+                            "record": "4-2",
+                            "streak": "W1",
+                            "last3": "LLW",
+                            "avgMargin": 6.83,
+                            "pointDiff": 41,
+                            "bestWin": {
+                                "date": "10/20/1981",
+                                "opponent": "Aston Villa",
+                                "result": "W",
+                                "margin": 27,
+                                "score": "@Benfica 109, Aston Villa 82",
+                                "boxscoreUrl": "./boxes/box1-6.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/30/1981",
+                                "opponent": "Chelsea",
+                                "result": "L",
+                                "margin": 20,
+                                "score": "@Chelsea 102, Benfica 82",
+                                "boxscoreUrl": "./boxes/box11-3.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "latestSim": {
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 5.0,
+                            "pointDiff": 5,
+                            "bestWin": {
+                                "date": "11/1/1981",
+                                "opponent": "Juventus",
+                                "result": "W",
+                                "margin": 5,
+                                "score": "@Benfica 86, Juventus 81",
+                                "boxscoreUrl": "./boxes/box13-3.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": null,
+                            "closeGameCount": 1
+                        },
+                        "rosterUrl": "./rosters/roster13.htm"
+                    },
+                    {
+                        "team": "Marseille",
+                        "overall": {
+                            "record": "4-2",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": 4.5,
+                            "pointDiff": 27,
+                            "bestWin": {
+                                "date": "10/29/1981",
+                                "opponent": "Monaco",
+                                "result": "W",
+                                "margin": 21,
+                                "score": "@Marseille 95, Monaco 74",
+                                "boxscoreUrl": "./boxes/box10-4.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/25/1981",
+                                "opponent": "Benfica",
+                                "result": "L",
+                                "margin": 14,
+                                "score": "@Benfica 110, Marseille 96",
+                                "boxscoreUrl": "./boxes/box6-5.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster15.htm"
+                    },
+                    {
+                        "team": "Sheffield United",
+                        "overall": {
+                            "record": "3-3",
+                            "streak": "W3",
+                            "last3": "WWW",
+                            "avgMargin": 5.17,
+                            "pointDiff": 31,
+                            "bestWin": {
+                                "date": "10/29/1981",
+                                "opponent": "Aston Villa",
+                                "result": "W",
+                                "margin": 34,
+                                "score": "@Sheffield United 103, Aston Villa 69",
+                                "boxscoreUrl": "./boxes/box10-3.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/22/1981",
+                                "opponent": "Juventus",
+                                "result": "L",
+                                "margin": 23,
+                                "score": "@Juventus 100, Sheffield United 77",
+                                "boxscoreUrl": "./boxes/box3-3.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster16.htm"
+                    },
+                    {
+                        "team": "Juventus",
+                        "overall": {
+                            "record": "3-3",
+                            "streak": "L2",
+                            "last3": "WLL",
+                            "avgMargin": 1.33,
+                            "pointDiff": 8,
+                            "bestWin": {
+                                "date": "10/22/1981",
+                                "opponent": "Sheffield United",
+                                "result": "W",
+                                "margin": 23,
+                                "score": "@Juventus 100, Sheffield United 77",
+                                "boxscoreUrl": "./boxes/box3-3.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/30/1981",
+                                "opponent": "Marseille",
+                                "result": "L",
+                                "margin": 15,
+                                "score": "@Marseille 100, Juventus 85",
+                                "boxscoreUrl": "./boxes/box11-2.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "0-1",
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -5.0,
+                            "pointDiff": -5,
+                            "bestWin": null,
+                            "worstLoss": {
+                                "date": "11/1/1981",
+                                "opponent": "Benfica",
+                                "result": "L",
+                                "margin": 5,
+                                "score": "@Benfica 86, Juventus 81",
+                                "boxscoreUrl": "./boxes/box13-3.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "rosterUrl": "./rosters/roster14.htm"
+                    },
+                    {
+                        "team": "Monaco",
+                        "overall": {
+                            "record": "3-3",
+                            "streak": "L3",
+                            "last3": "LLL",
+                            "avgMargin": -7.17,
+                            "pointDiff": -43,
+                            "bestWin": {
+                                "date": "10/21/1981",
+                                "opponent": "Ajax",
+                                "result": "W",
+                                "margin": 12,
+                                "score": "@Monaco 105, Ajax 93",
+                                "boxscoreUrl": "./boxes/box2-3.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/30/1981",
+                                "opponent": "Ajax",
+                                "result": "L",
+                                "margin": 23,
+                                "score": "@Ajax 99, Monaco 76",
+                                "boxscoreUrl": "./boxes/box11-4.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster20.htm"
+                    },
+                    {
+                        "team": "Ajax",
+                        "overall": {
+                            "record": "2-4",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": -3.67,
+                            "pointDiff": -22,
+                            "bestWin": {
+                                "date": "10/30/1981",
+                                "opponent": "Monaco",
+                                "result": "W",
+                                "margin": 23,
+                                "score": "@Ajax 99, Monaco 76",
+                                "boxscoreUrl": "./boxes/box11-4.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/27/1981",
+                                "opponent": "Sheffield United",
+                                "result": "L",
+                                "margin": 16,
+                                "score": "Sheffield United 108, @Ajax 92",
+                                "boxscoreUrl": "./boxes/box8-2.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster18.htm"
+                    },
+                    {
+                        "team": "Aston Villa",
+                        "overall": {
+                            "record": "0-6",
+                            "streak": "L6",
+                            "last3": "LLL",
+                            "avgMargin": -18.83,
+                            "pointDiff": -113,
+                            "bestWin": null,
+                            "worstLoss": {
+                                "date": "10/29/1981",
+                                "opponent": "Sheffield United",
+                                "result": "L",
+                                "margin": 34,
+                                "score": "@Sheffield United 103, Aston Villa 69",
+                                "boxscoreUrl": "./boxes/box10-3.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster19.htm"
+                    }
+                ]
+            },
+            {
+                "id": "tier-3-power-rankings",
+                "type": "power_rankings",
+                "tier": "Tier 3",
+                "title": "Tier 3 Power Rankings",
+                "period": "November 1981",
+                "previousArticle": "../articles/ecl_power_rankings_1_0.html",
+                "prompt": "Write a Tier 3 power rankings article for November 1981. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note changes from the last published power rankings article if those changes feel meaningful, but do not force movement notes for every team. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board.",
+                "writerNotes": [
+                    "Use the team pool as context, not as a locked final order.",
+                    "Base the ranking on overall form, not just one sim.",
+                    "Use the latest sim to justify movement, momentum, and skepticism.",
+                    "Call out at least one riser, one faller, and one team you are still unsure about."
+                ],
+                "availableContext": [
+                    "../../1build/database/monthly/overall_team_form.json",
+                    "../../1build/database/monthly/monthly_team_form.json",
+                    "../../1build/database/monthly/latest_sim_results.json",
+                    "../../1build/database/monthly/tier_race_snapshot.json",
+                    "../../1build/database/monthly/monthly_storylines.json",
+                    "../../1build/database/standings.json",
+                    "../../1build/database/game_results.json",
+                    "../../1build/database/teams.json",
+                    "../../1build/database/players.json",
+                    "../../1build/database/player_stats.json"
+                ],
+                "teamPool": [
+                    {
+                        "team": "Manchester City",
+                        "overall": {
+                            "record": "5-1",
+                            "streak": "W4",
+                            "last3": "WWW",
+                            "avgMargin": 8.67,
+                            "pointDiff": 52,
+                            "bestWin": {
+                                "date": "10/24/1981",
+                                "opponent": "Paris Saint-Germain",
+                                "result": "W",
+                                "margin": 18,
+                                "score": "@Manchester City 98, Paris Saint-Germain 80",
+                                "boxscoreUrl": "./boxes/box5-5.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/21/1981",
+                                "opponent": "Tottenham Hotspur",
+                                "result": "L",
+                                "margin": 7,
+                                "score": "@Tottenham Hotspur 86, Manchester City 79",
+                                "boxscoreUrl": "./boxes/box2-8.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster28.htm"
+                    },
+                    {
+                        "team": "Paris Saint-Germain",
+                        "overall": {
+                            "record": "4-2",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": 4.0,
+                            "pointDiff": 24,
+                            "bestWin": {
+                                "date": "10/29/1981",
+                                "opponent": "Valencia",
+                                "result": "W",
+                                "margin": 21,
+                                "score": "@Paris Saint-Germain 106, Valencia 85",
+                                "boxscoreUrl": "./boxes/box10-6.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/24/1981",
+                                "opponent": "Manchester City",
+                                "result": "L",
+                                "margin": 18,
+                                "score": "@Manchester City 98, Paris Saint-Germain 80",
+                                "boxscoreUrl": "./boxes/box5-5.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "latestSim": {
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 9.0,
+                            "pointDiff": 9,
+                            "bestWin": {
+                                "date": "11/1/1981",
+                                "opponent": "Inter Milan",
+                                "result": "W",
+                                "margin": 9,
+                                "score": "@Paris Saint-Germain 80, Inter Milan 71",
+                                "boxscoreUrl": "./boxes/box13-4.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster21.htm"
+                    },
+                    {
+                        "team": "FL Fart",
+                        "overall": {
+                            "record": "4-2",
+                            "streak": "W1",
+                            "last3": "LLW",
+                            "avgMargin": 3.83,
+                            "pointDiff": 23,
+                            "bestWin": {
+                                "date": "10/30/1981",
+                                "opponent": "Inter Milan",
+                                "result": "W",
+                                "margin": 16,
+                                "score": "@FL Fart 83, Inter Milan 67",
+                                "boxscoreUrl": "./boxes/box11-6.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/29/1981",
+                                "opponent": "Sporting CP",
+                                "result": "L",
+                                "margin": 13,
+                                "score": "@Sporting CP 99, FL Fart 86",
+                                "boxscoreUrl": "./boxes/box10-5.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster27.htm"
+                    },
+                    {
+                        "team": "Barcelona",
+                        "overall": {
+                            "record": "3-3",
+                            "streak": "W1",
+                            "last3": "WLW",
+                            "avgMargin": 5.67,
+                            "pointDiff": 34,
+                            "bestWin": {
+                                "date": "10/29/1981",
+                                "opponent": "Inter Milan",
+                                "result": "W",
+                                "margin": 28,
+                                "score": "@Barcelona 103, Inter Milan 75",
+                                "boxscoreUrl": "./boxes/box10-7.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/28/1981",
+                                "opponent": "Manchester City",
+                                "result": "L",
+                                "margin": 11,
+                                "score": "@Manchester City 101, Barcelona 90",
+                                "boxscoreUrl": "./boxes/box9-3.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster24.htm"
+                    },
+                    {
+                        "team": "Tottenham Hotspur",
+                        "overall": {
+                            "record": "3-3",
+                            "streak": "W1",
+                            "last3": "LLW",
+                            "avgMargin": -5.0,
+                            "pointDiff": -30,
+                            "bestWin": {
+                                "date": "11/1/1981",
+                                "opponent": "Sporting CP",
+                                "result": "W",
+                                "margin": 11,
+                                "score": "@Tottenham Hotspur 92, Sporting CP 81",
+                                "boxscoreUrl": "./boxes/box13-5.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/20/1981",
+                                "opponent": "Sporting CP",
+                                "result": "L",
+                                "margin": 34,
+                                "score": "@Sporting CP 103, Tottenham Hotspur 69",
+                                "boxscoreUrl": "./boxes/box1-8.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "latestSim": {
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 11.0,
+                            "pointDiff": 11,
+                            "bestWin": {
+                                "date": "11/1/1981",
+                                "opponent": "Sporting CP",
+                                "result": "W",
+                                "margin": 11,
+                                "score": "@Tottenham Hotspur 92, Sporting CP 81",
+                                "boxscoreUrl": "./boxes/box13-5.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster22.htm"
+                    },
+                    {
+                        "team": "Sporting CP",
+                        "overall": {
+                            "record": "2-4",
+                            "streak": "L2",
+                            "last3": "WLL",
+                            "avgMargin": 0.33,
+                            "pointDiff": 2,
+                            "bestWin": {
+                                "date": "10/20/1981",
+                                "opponent": "Tottenham Hotspur",
+                                "result": "W",
+                                "margin": 34,
+                                "score": "@Sporting CP 103, Tottenham Hotspur 69",
+                                "boxscoreUrl": "./boxes/box1-8.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/30/1981",
+                                "opponent": "Manchester City",
+                                "result": "L",
+                                "margin": 18,
+                                "score": "@Manchester City 87, Sporting CP 69",
+                                "boxscoreUrl": "./boxes/box11-5.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "latestSim": {
+                            "record": "0-1",
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -11.0,
+                            "pointDiff": -11,
+                            "bestWin": null,
+                            "worstLoss": {
+                                "date": "11/1/1981",
+                                "opponent": "Tottenham Hotspur",
+                                "result": "L",
+                                "margin": 11,
+                                "score": "@Tottenham Hotspur 92, Sporting CP 81",
+                                "boxscoreUrl": "./boxes/box13-5.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster23.htm"
+                    },
+                    {
+                        "team": "Valencia",
+                        "overall": {
+                            "record": "2-4",
+                            "streak": "W1",
+                            "last3": "LLW",
+                            "avgMargin": -5.5,
+                            "pointDiff": -33,
+                            "bestWin": {
+                                "date": "10/23/1981",
+                                "opponent": "Barcelona",
+                                "result": "W",
+                                "margin": 8,
+                                "score": "Valencia 93, @Barcelona 85",
+                                "boxscoreUrl": "./boxes/box4-9.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/29/1981",
+                                "opponent": "Paris Saint-Germain",
+                                "result": "L",
+                                "margin": 21,
+                                "score": "@Paris Saint-Germain 106, Valencia 85",
+                                "boxscoreUrl": "./boxes/box10-6.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "0-0",
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "bestWin": null,
+                            "worstLoss": null,
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster25.htm"
+                    },
+                    {
+                        "team": "Inter Milan",
+                        "overall": {
+                            "record": "1-5",
+                            "streak": "L3",
+                            "last3": "LLL",
+                            "avgMargin": -12.0,
+                            "pointDiff": -72,
+                            "bestWin": {
+                                "date": "10/24/1981",
+                                "opponent": "Sporting CP",
+                                "result": "W",
+                                "margin": 8,
+                                "score": "@Inter Milan 76, Sporting CP 68",
+                                "boxscoreUrl": "./boxes/box5-3.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "10/29/1981",
+                                "opponent": "Barcelona",
+                                "result": "L",
+                                "margin": 28,
+                                "score": "@Barcelona 103, Inter Milan 75",
+                                "boxscoreUrl": "./boxes/box10-7.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "latestSim": {
+                            "record": "0-1",
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -9.0,
+                            "pointDiff": -9,
+                            "bestWin": null,
+                            "worstLoss": {
+                                "date": "11/1/1981",
+                                "opponent": "Paris Saint-Germain",
+                                "result": "L",
+                                "margin": 9,
+                                "score": "@Paris Saint-Germain 80, Inter Milan 71",
+                                "boxscoreUrl": "./boxes/box13-4.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster26.htm"
+                    }
+                ]
+            }
+        ],
+        "promotionRelegationWatch": {
+            "id": "promotion-relegation-watch",
+            "type": "race_watch",
+            "title": "Promotion / Relegation Watch",
+            "period": "November 1981",
+            "prompt": "Write a promotion/relegation watch article for November 1981. Cover Tier 1 relegation, Tier 2 promotion and relegation, and Tier 3 promotion. Focus on the live line, the closest chasers, and who has momentum. You can use any of the linked JSON context if it helps explain why a race is tightening or loosening.",
+            "writerNotes": [
+                "Tier 1 has 2 relegation spots.",
+                "Tier 2 has 2 promotion spots and 1 relegation spot.",
+                "Tier 3 has 1 promotion spot.",
+                "Explain the pressure line clearly before making bigger editorial claims."
+            ],
+            "availableContext": [
+                "../../1build/database/monthly/tier_race_snapshot.json",
+                "../../1build/database/monthly/monthly_team_form.json",
+                "../../1build/database/monthly/overall_team_form.json",
+                "../../1build/database/monthly/latest_sim_results.json",
+                "../../1build/database/standings.json",
+                "../../1build/database/game_results.json"
+            ],
+            "races": [
+                {
+                    "id": "tier-1-relegation",
+                    "tier": "Tier 1",
+                    "type": "relegation",
+                    "slots": 2,
+                    "lineTeam": "AFC Richmond",
+                    "lineRecord": "0-1",
+                    "entries": [
+                        {
+                            "team": "AC Milan",
+                            "record": "0-1",
+                            "standingRank": 5,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -22.0,
+                            "pointDiff": -22,
+                            "gapToLine": 0,
+                            "status": "on_or_below_line",
+                            "rosterUrl": "./rosters/roster9.htm"
+                        },
+                        {
+                            "team": "AFC Richmond",
+                            "record": "0-1",
+                            "standingRank": 8,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -2.0,
+                            "pointDiff": -2,
+                            "gapToLine": 0,
+                            "status": "on_or_below_line",
+                            "rosterUrl": "./rosters/roster12.htm"
+                        },
+                        {
+                            "team": "Atletico Madrid",
+                            "record": "0-0",
+                            "standingRank": 7,
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "gapToLine": 0,
+                            "status": "on_or_below_line",
+                            "rosterUrl": "./rosters/roster11.htm"
+                        },
+                        {
+                            "team": "Real Madrid",
+                            "record": "0-0",
+                            "standingRank": 4,
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "gapToLine": 0,
+                            "status": "on_or_below_line",
+                            "rosterUrl": "./rosters/roster8.htm"
+                        }
+                    ]
+                },
+                {
+                    "id": "tier-2-promotion",
+                    "tier": "Tier 2",
+                    "type": "promotion",
+                    "slots": 2,
+                    "lineTeam": "Marseille",
+                    "lineRecord": "0-0",
+                    "entries": [
+                        {
+                            "team": "Benfica",
+                            "record": "1-0",
+                            "standingRank": 1,
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 5.0,
+                            "pointDiff": 5,
+                            "gapToLine": -1,
+                            "status": "on_or_above_line",
+                            "rosterUrl": "./rosters/roster13.htm"
+                        },
+                        {
+                            "team": "Marseille",
+                            "record": "0-0",
+                            "standingRank": 3,
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "gapToLine": 0,
+                            "status": "on_or_above_line",
+                            "rosterUrl": "./rosters/roster15.htm"
+                        },
+                        {
+                            "team": "Sheffield United",
+                            "record": "0-0",
+                            "standingRank": 4,
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "gapToLine": 0,
+                            "status": "on_or_above_line",
+                            "rosterUrl": "./rosters/roster16.htm"
+                        },
+                        {
+                            "team": "Chelsea",
+                            "record": "0-0",
+                            "standingRank": 5,
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "gapToLine": 0,
+                            "status": "on_or_above_line",
+                            "rosterUrl": "./rosters/roster17.htm"
+                        }
+                    ]
+                },
+                {
+                    "id": "tier-2-relegation",
+                    "tier": "Tier 2",
+                    "type": "relegation",
+                    "slots": 1,
+                    "lineTeam": "Juventus",
+                    "lineRecord": "0-1",
+                    "entries": [
+                        {
+                            "team": "Juventus",
+                            "record": "0-1",
+                            "standingRank": 2,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -5.0,
+                            "pointDiff": -5,
+                            "gapToLine": 0,
+                            "status": "on_or_below_line",
+                            "rosterUrl": "./rosters/roster14.htm"
+                        },
+                        {
+                            "team": "Monaco",
+                            "record": "0-0",
+                            "standingRank": 8,
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "gapToLine": 0,
+                            "status": "on_or_below_line",
+                            "rosterUrl": "./rosters/roster20.htm"
+                        },
+                        {
+                            "team": "Aston Villa",
+                            "record": "0-0",
+                            "standingRank": 7,
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "gapToLine": 0,
+                            "status": "on_or_below_line",
+                            "rosterUrl": "./rosters/roster19.htm"
+                        }
+                    ]
+                },
+                {
+                    "id": "tier-3-promotion",
+                    "tier": "Tier 3",
+                    "type": "promotion",
+                    "slots": 1,
+                    "lineTeam": "Tottenham Hotspur",
+                    "lineRecord": "1-0",
+                    "entries": [
+                        {
+                            "team": "Tottenham Hotspur",
+                            "record": "1-0",
+                            "standingRank": 2,
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 11.0,
+                            "pointDiff": 11,
+                            "gapToLine": 0,
+                            "status": "on_or_above_line",
+                            "rosterUrl": "./rosters/roster22.htm"
+                        },
+                        {
+                            "team": "Paris Saint-Germain",
+                            "record": "1-0",
+                            "standingRank": 1,
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 9.0,
+                            "pointDiff": 9,
+                            "gapToLine": 0,
+                            "status": "on_or_above_line",
+                            "rosterUrl": "./rosters/roster21.htm"
+                        },
+                        {
+                            "team": "Barcelona",
+                            "record": "0-0",
+                            "standingRank": 4,
+                            "streak": "-",
+                            "last3": "-",
+                            "avgMargin": 0.0,
+                            "pointDiff": 0,
+                            "gapToLine": 1,
+                            "status": "chasing",
+                            "rosterUrl": "./rosters/roster24.htm"
+                        }
+                    ]
+                }
+            ]
+        },
+        "stockUpStockDown": {
+            "id": "stock-up-stock-down",
+            "type": "stock_report",
+            "title": "Stock Up / Stock Down",
+            "period": "November 1981",
+            "prompt": "Write a Stock Up / Stock Down piece for November 1981. Pick exactly three teams up and three teams down from the latest sim and explain the change in plain language. You can pull supporting detail from any linked JSON source if a team's monthly record alone is too thin.",
+            "writerNotes": [
+                "Do not just sort by record; explain why the shape of the month matters.",
+                "A close 1-0 month can be less convincing than a dominant 1-0 month.",
+                "Use concise, punchy sections rather than one long essay."
+            ],
+            "availableContext": [
+                "../../1build/database/monthly/monthly_team_form.json",
+                "../../1build/database/monthly/overall_team_form.json",
+                "../../1build/database/monthly/monthly_storylines.json",
+                "../../1build/database/monthly/latest_sim_results.json",
+                "../../1build/database/standings.json",
+                "../../1build/database/game_results.json"
+            ],
+            "stockUpPool": [
+                {
+                    "team": "Brighton",
+                    "tier": "Tier 1",
+                    "tierShort": "T1",
+                    "standingRank": 6,
+                    "rosterUrl": "./rosters/roster10.htm",
+                    "rosterFile": "roster10.htm",
+                    "standingsLast10": "3-3",
+                    "wins": 1,
+                    "losses": 0,
+                    "games": 1,
+                    "pointsFor": 121,
+                    "pointsAgainst": 99,
+                    "pointDiff": 22,
+                    "avgMargin": 22.0,
+                    "streak": "W1",
+                    "recentResults": [
+                        {
+                            "date": "11/1/1981",
+                            "opponent": "AC Milan",
+                            "result": "W",
+                            "margin": 22,
+                            "score": "@Brighton 121, AC Milan 99",
+                            "boxscoreUrl": "./boxes/box13-2.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "bestWin": {
+                        "date": "11/1/1981",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 22,
+                        "score": "@Brighton 121, AC Milan 99",
+                        "boxscoreUrl": "./boxes/box13-2.htm",
+                        "section": "Preseason"
+                    },
+                    "worstLoss": null,
+                    "closeGames": [],
+                    "blowoutWins": [
+                        {
+                            "date": "11/1/1981",
+                            "opponent": "AC Milan",
+                            "result": "W",
+                            "margin": 22,
+                            "score": "@Brighton 121, AC Milan 99",
+                            "boxscoreUrl": "./boxes/box13-2.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "blowoutLosses": [],
+                    "record": "1-0",
+                    "closeGameCount": 0,
+                    "last3": "W"
+                },
+                {
+                    "team": "Tottenham Hotspur",
+                    "tier": "Tier 3",
+                    "tierShort": "T3",
+                    "standingRank": 2,
+                    "rosterUrl": "./rosters/roster22.htm",
+                    "rosterFile": "roster22.htm",
+                    "standingsLast10": "3-3",
+                    "wins": 1,
+                    "losses": 0,
+                    "games": 1,
+                    "pointsFor": 92,
+                    "pointsAgainst": 81,
+                    "pointDiff": 11,
+                    "avgMargin": 11.0,
+                    "streak": "W1",
+                    "recentResults": [
+                        {
+                            "date": "11/1/1981",
+                            "opponent": "Sporting CP",
+                            "result": "W",
+                            "margin": 11,
+                            "score": "@Tottenham Hotspur 92, Sporting CP 81",
+                            "boxscoreUrl": "./boxes/box13-5.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "bestWin": {
+                        "date": "11/1/1981",
+                        "opponent": "Sporting CP",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Tottenham Hotspur 92, Sporting CP 81",
+                        "boxscoreUrl": "./boxes/box13-5.htm",
+                        "section": "Preseason"
+                    },
+                    "worstLoss": null,
+                    "closeGames": [],
+                    "blowoutWins": [],
+                    "blowoutLosses": [],
+                    "record": "1-0",
+                    "closeGameCount": 0,
+                    "last3": "W"
+                },
+                {
+                    "team": "Paris Saint-Germain",
+                    "tier": "Tier 3",
+                    "tierShort": "T3",
+                    "standingRank": 1,
+                    "rosterUrl": "./rosters/roster21.htm",
+                    "rosterFile": "roster21.htm",
+                    "standingsLast10": "4-2",
+                    "wins": 1,
+                    "losses": 0,
+                    "games": 1,
+                    "pointsFor": 80,
+                    "pointsAgainst": 71,
+                    "pointDiff": 9,
+                    "avgMargin": 9.0,
+                    "streak": "W1",
+                    "recentResults": [
+                        {
+                            "date": "11/1/1981",
+                            "opponent": "Inter Milan",
+                            "result": "W",
+                            "margin": 9,
+                            "score": "@Paris Saint-Germain 80, Inter Milan 71",
+                            "boxscoreUrl": "./boxes/box13-4.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "bestWin": {
+                        "date": "11/1/1981",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 9,
+                        "score": "@Paris Saint-Germain 80, Inter Milan 71",
+                        "boxscoreUrl": "./boxes/box13-4.htm",
+                        "section": "Preseason"
+                    },
+                    "worstLoss": null,
+                    "closeGames": [],
+                    "blowoutWins": [],
+                    "blowoutLosses": [],
+                    "record": "1-0",
+                    "closeGameCount": 0,
+                    "last3": "W"
+                }
+            ],
+            "stockDownPool": [
+                {
+                    "team": "AC Milan",
+                    "tier": "Tier 1",
+                    "tierShort": "T1",
+                    "standingRank": 5,
+                    "rosterUrl": "./rosters/roster9.htm",
+                    "rosterFile": "roster9.htm",
+                    "standingsLast10": "2-4",
+                    "wins": 0,
+                    "losses": 1,
+                    "games": 1,
+                    "pointsFor": 99,
+                    "pointsAgainst": 121,
+                    "pointDiff": -22,
+                    "avgMargin": -22.0,
+                    "streak": "L1",
+                    "recentResults": [
+                        {
+                            "date": "11/1/1981",
+                            "opponent": "Brighton",
+                            "result": "L",
+                            "margin": 22,
+                            "score": "@Brighton 121, AC Milan 99",
+                            "boxscoreUrl": "./boxes/box13-2.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "bestWin": null,
+                    "worstLoss": {
+                        "date": "11/1/1981",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 22,
+                        "score": "@Brighton 121, AC Milan 99",
+                        "boxscoreUrl": "./boxes/box13-2.htm",
+                        "section": "Preseason"
+                    },
+                    "closeGames": [],
+                    "blowoutWins": [],
+                    "blowoutLosses": [
+                        {
+                            "date": "11/1/1981",
+                            "opponent": "Brighton",
+                            "result": "L",
+                            "margin": 22,
+                            "score": "@Brighton 121, AC Milan 99",
+                            "boxscoreUrl": "./boxes/box13-2.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "record": "0-1",
+                    "closeGameCount": 0,
+                    "last3": "L"
+                },
+                {
+                    "team": "Sporting CP",
+                    "tier": "Tier 3",
+                    "tierShort": "T3",
+                    "standingRank": 3,
+                    "rosterUrl": "./rosters/roster23.htm",
+                    "rosterFile": "roster23.htm",
+                    "standingsLast10": "2-4",
+                    "wins": 0,
+                    "losses": 1,
+                    "games": 1,
+                    "pointsFor": 81,
+                    "pointsAgainst": 92,
+                    "pointDiff": -11,
+                    "avgMargin": -11.0,
+                    "streak": "L1",
+                    "recentResults": [
+                        {
+                            "date": "11/1/1981",
+                            "opponent": "Tottenham Hotspur",
+                            "result": "L",
+                            "margin": 11,
+                            "score": "@Tottenham Hotspur 92, Sporting CP 81",
+                            "boxscoreUrl": "./boxes/box13-5.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "bestWin": null,
+                    "worstLoss": {
+                        "date": "11/1/1981",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Tottenham Hotspur 92, Sporting CP 81",
+                        "boxscoreUrl": "./boxes/box13-5.htm",
+                        "section": "Preseason"
+                    },
+                    "closeGames": [],
+                    "blowoutWins": [],
+                    "blowoutLosses": [],
+                    "record": "0-1",
+                    "closeGameCount": 0,
+                    "last3": "L"
+                },
+                {
+                    "team": "Inter Milan",
+                    "tier": "Tier 3",
+                    "tierShort": "T3",
+                    "standingRank": 6,
+                    "rosterUrl": "./rosters/roster26.htm",
+                    "rosterFile": "roster26.htm",
+                    "standingsLast10": "1-5",
+                    "wins": 0,
+                    "losses": 1,
+                    "games": 1,
+                    "pointsFor": 71,
+                    "pointsAgainst": 80,
+                    "pointDiff": -9,
+                    "avgMargin": -9.0,
+                    "streak": "L1",
+                    "recentResults": [
+                        {
+                            "date": "11/1/1981",
+                            "opponent": "Paris Saint-Germain",
+                            "result": "L",
+                            "margin": 9,
+                            "score": "@Paris Saint-Germain 80, Inter Milan 71",
+                            "boxscoreUrl": "./boxes/box13-4.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "bestWin": null,
+                    "worstLoss": {
+                        "date": "11/1/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "@Paris Saint-Germain 80, Inter Milan 71",
+                        "boxscoreUrl": "./boxes/box13-4.htm",
+                        "section": "Preseason"
+                    },
+                    "closeGames": [],
+                    "blowoutWins": [],
+                    "blowoutLosses": [],
+                    "record": "0-1",
+                    "closeGameCount": 0,
+                    "last3": "L"
+                }
+            ]
+        },
+        "monthInReview": {
+            "id": "month-in-review",
+            "type": "month_in_review",
+            "title": "Month in Review",
+            "period": "November 1981",
+            "prompt": "Write a Month in Review feature for November 1981. Use the featured storylines below to build a coherent recap of the sim: best performances, biggest swings, weirdest result, and what matters next. You can pull from any linked JSON source if the strongest story sits outside the featured shortlist.",
+            "writerNotes": [
+                "Lead with the strongest monthly theme, not just the biggest scoreline.",
+                "Work across tiers if the month demands it.",
+                "End with a forward-looking note about next month."
+            ],
+            "availableContext": [
+                "../../1build/database/monthly/monthly_storylines.json",
+                "../../1build/database/monthly/monthly_team_form.json",
+                "../../1build/database/monthly/overall_team_form.json",
+                "../../1build/database/monthly/tier_race_snapshot.json",
+                "../../1build/database/monthly/latest_sim_results.json",
+                "../../1build/database/standings.json",
+                "../../1build/database/game_results.json",
+                "../../1build/database/freeagents.json"
+            ],
+            "featuredStorylines": [
+                {
+                    "id": "biggest-blowout",
+                    "type": "game",
+                    "title": "Biggest Blowout of the Month",
+                    "summary": "Sporting CP beat Tottenham Hotspur by 34, the biggest margin of the sim.",
+                    "tier": "Tier 3",
+                    "importance": 104,
+                    "data": {
+                        "section": "Preseason",
+                        "sectionSlug": "preseason",
+                        "date": "10/20/1981",
+                        "matchupText": "@Sporting CP 103, Tottenham Hotspur 69",
+                        "boxscoreUrl": "./boxes/box1-8.htm",
+                        "boxscoreFile": "box1-8.htm",
+                        "homeTeam": "roster23",
+                        "homeTeamName": "Sporting CP",
+                        "homeScore": 103,
+                        "awayTeam": "roster22",
+                        "awayTeamName": "Tottenham Hotspur",
+                        "awayScore": 69,
+                        "winner": "roster23",
+                        "winnerName": "Sporting CP",
+                        "loser": "roster22",
+                        "loserName": "Tottenham Hotspur",
+                        "margin": 34
+                    }
+                },
+                {
+                    "id": "hottest-team",
+                    "type": "team_trend",
+                    "title": "Hottest Team of the Month",
+                    "summary": "Brighton posted the strongest month at 1-0 and closed on a W1 run.",
+                    "tier": "Tier 1",
+                    "importance": 88,
+                    "data": {
+                        "team": "Brighton",
+                        "record": "1-0",
+                        "streak": "W1",
+                        "avgMargin": 22.0,
+                        "bestWin": {
+                            "date": "11/1/1981",
+                            "opponent": "AC Milan",
+                            "result": "W",
+                            "margin": 22,
+                            "score": "@Brighton 121, AC Milan 99",
+                            "boxscoreUrl": "./boxes/box13-2.htm",
+                            "section": "Preseason"
+                        },
+                        "rosterUrl": "./rosters/roster10.htm"
+                    }
+                },
+                {
+                    "id": "closest-game",
+                    "type": "game",
+                    "title": "Closest Game of the Month",
+                    "summary": "Manchester City edged Valencia by 1 in the tightest finish of the sim.",
+                    "tier": "Tier 3",
+                    "importance": 84,
+                    "data": {
+                        "section": "Preseason",
+                        "sectionSlug": "preseason",
+                        "date": "10/20/1981",
+                        "matchupText": "Manchester City 101, @Valencia 100",
+                        "boxscoreUrl": "./boxes/box1-10.htm",
+                        "boxscoreFile": "box1-10.htm",
+                        "homeTeam": "roster25",
+                        "homeTeamName": "Valencia",
+                        "homeScore": 100,
+                        "awayTeam": "roster28",
+                        "awayTeamName": "Manchester City",
+                        "awayScore": 101,
+                        "winner": "roster28",
+                        "winnerName": "Manchester City",
+                        "loser": "roster25",
+                        "loserName": "Valencia",
+                        "margin": 1
+                    }
+                },
+                {
+                    "id": "coldest-team",
+                    "type": "team_trend",
+                    "title": "Coldest Team of the Month",
+                    "summary": "AC Milan had the roughest month at 0-1 and now carries a L1 slide.",
+                    "tier": "Tier 1",
+                    "importance": 84,
+                    "data": {
+                        "team": "AC Milan",
+                        "record": "0-1",
+                        "streak": "L1",
+                        "avgMargin": -22.0,
+                        "worstLoss": {
+                            "date": "11/1/1981",
+                            "opponent": "Brighton",
+                            "result": "L",
+                            "margin": 22,
+                            "score": "@Brighton 121, AC Milan 99",
+                            "boxscoreUrl": "./boxes/box13-2.htm",
+                            "section": "Preseason"
+                        },
+                        "rosterUrl": "./rosters/roster9.htm"
+                    }
+                },
+                {
+                    "id": "upset-of-the-month",
+                    "type": "game",
+                    "title": "Upset of the Month",
+                    "summary": "Manchester City landed the sharpest upset of the sim by beating Paris Saint-Germain.",
+                    "tier": "Tier 3",
+                    "importance": 82,
+                    "data": {
+                        "section": "Preseason",
+                        "sectionSlug": "preseason",
+                        "date": "10/24/1981",
+                        "matchupText": "@Manchester City 98, Paris Saint-Germain 80",
+                        "boxscoreUrl": "./boxes/box5-5.htm",
+                        "boxscoreFile": "box5-5.htm",
+                        "homeTeam": "roster28",
+                        "homeTeamName": "Manchester City",
+                        "homeScore": 98,
+                        "awayTeam": "roster21",
+                        "awayTeamName": "Paris Saint-Germain",
+                        "awayScore": 80,
+                        "winner": "roster28",
+                        "winnerName": "Manchester City",
+                        "loser": "roster21",
+                        "loserName": "Paris Saint-Germain",
+                        "margin": 18
+                    }
+                }
+            ],
+            "latestSimGameCount": 5
+        }
+    }
+}

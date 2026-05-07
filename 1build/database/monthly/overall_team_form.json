@@ -1,0 +1,3065 @@
+{
+    "source": [
+        "standings.json",
+        "game_results.json"
+    ],
+    "tiers": {
+        "Tier 1": [
+            {
+                "team": "Crystal Palace",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster6.htm",
+                "rosterFile": "roster6.htm",
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 618,
+                "pointsAgainst": 573,
+                "pointDiff": 45,
+                "avgMargin": 7.5,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 21,
+                        "score": "@Crystal Palace 103, Manchester United 82",
+                        "boxscoreUrl": "./boxes/box1-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/22/1981",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "Crystal Palace 104, @AC Milan 93",
+                        "boxscoreUrl": "./boxes/box3-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "@AFC Richmond 114, Crystal Palace 113",
+                        "boxscoreUrl": "./boxes/box4-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 7,
+                        "score": "@Brighton 104, Crystal Palace 97",
+                        "boxscoreUrl": "./boxes/box6-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/26/1981",
+                        "opponent": "Bayern Munich",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Crystal Palace 101, Bayern Munich 98",
+                        "boxscoreUrl": "./boxes/box7-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "@Crystal Palace 100, Real Madrid 82",
+                        "boxscoreUrl": "./boxes/box11-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/20/1981",
+                    "opponent": "Manchester United",
+                    "result": "W",
+                    "margin": 21,
+                    "score": "@Crystal Palace 103, Manchester United 82",
+                    "boxscoreUrl": "./boxes/box1-1.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/25/1981",
+                    "opponent": "Brighton",
+                    "result": "L",
+                    "margin": 7,
+                    "score": "@Brighton 104, Crystal Palace 97",
+                    "boxscoreUrl": "./boxes/box6-1.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "@AFC Richmond 114, Crystal Palace 113",
+                        "boxscoreUrl": "./boxes/box4-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/26/1981",
+                        "opponent": "Bayern Munich",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Crystal Palace 101, Bayern Munich 98",
+                        "boxscoreUrl": "./boxes/box7-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 21,
+                        "score": "@Crystal Palace 103, Manchester United 82",
+                        "boxscoreUrl": "./boxes/box1-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "@Crystal Palace 100, Real Madrid 82",
+                        "boxscoreUrl": "./boxes/box11-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "4-2",
+                "closeGameCount": 2,
+                "last3": "LWW"
+            },
+            {
+                "team": "AFC Richmond",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster12.htm",
+                "rosterFile": "roster12.htm",
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 615,
+                "pointsAgainst": 577,
+                "pointDiff": 38,
+                "avgMargin": 6.33,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "@AFC Richmond 110, Brighton 100",
+                        "boxscoreUrl": "./boxes/box1-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "AFC Richmond 107, @Real Madrid 91",
+                        "boxscoreUrl": "./boxes/box2-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "@AFC Richmond 114, Crystal Palace 113",
+                        "boxscoreUrl": "./boxes/box4-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@Atletico Madrid 96, AFC Richmond 92",
+                        "boxscoreUrl": "./boxes/box5-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/31/1981",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "@AFC Richmond 110, Manchester United 93",
+                        "boxscoreUrl": "./boxes/box12-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "@Bayern Munich 84, AFC Richmond 82",
+                        "boxscoreUrl": "./boxes/box13-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/31/1981",
+                    "opponent": "Manchester United",
+                    "result": "W",
+                    "margin": 17,
+                    "score": "@AFC Richmond 110, Manchester United 93",
+                    "boxscoreUrl": "./boxes/box12-2.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/24/1981",
+                    "opponent": "Atletico Madrid",
+                    "result": "L",
+                    "margin": 4,
+                    "score": "@Atletico Madrid 96, AFC Richmond 92",
+                    "boxscoreUrl": "./boxes/box5-1.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "@AFC Richmond 114, Crystal Palace 113",
+                        "boxscoreUrl": "./boxes/box4-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@Atletico Madrid 96, AFC Richmond 92",
+                        "boxscoreUrl": "./boxes/box5-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "@Bayern Munich 84, AFC Richmond 82",
+                        "boxscoreUrl": "./boxes/box13-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "AFC Richmond 107, @Real Madrid 91",
+                        "boxscoreUrl": "./boxes/box2-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/31/1981",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "@AFC Richmond 110, Manchester United 93",
+                        "boxscoreUrl": "./boxes/box12-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "4-2",
+                "closeGameCount": 3,
+                "last3": "LWL"
+            },
+            {
+                "team": "Bayern Munich",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster7.htm",
+                "rosterFile": "roster7.htm",
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 571,
+                "pointsAgainst": 558,
+                "pointDiff": 13,
+                "avgMargin": 2.17,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 13,
+                        "score": "@AC Milan 96, Bayern Munich 83",
+                        "boxscoreUrl": "./boxes/box1-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "@Bayern Munich 113, AC Milan 103",
+                        "boxscoreUrl": "./boxes/box2-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 6,
+                        "score": "Bayern Munich 96, @Atletico Madrid 90",
+                        "boxscoreUrl": "./boxes/box4-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/26/1981",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Crystal Palace 101, Bayern Munich 98",
+                        "boxscoreUrl": "./boxes/box7-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Bayern Munich 97, Atletico Madrid 86",
+                        "boxscoreUrl": "./boxes/box10-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "AFC Richmond",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "@Bayern Munich 84, AFC Richmond 82",
+                        "boxscoreUrl": "./boxes/box13-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/29/1981",
+                    "opponent": "Atletico Madrid",
+                    "result": "W",
+                    "margin": 11,
+                    "score": "@Bayern Munich 97, Atletico Madrid 86",
+                    "boxscoreUrl": "./boxes/box10-1.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/20/1981",
+                    "opponent": "AC Milan",
+                    "result": "L",
+                    "margin": 13,
+                    "score": "@AC Milan 96, Bayern Munich 83",
+                    "boxscoreUrl": "./boxes/box1-3.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/26/1981",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Crystal Palace 101, Bayern Munich 98",
+                        "boxscoreUrl": "./boxes/box7-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "AFC Richmond",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "@Bayern Munich 84, AFC Richmond 82",
+                        "boxscoreUrl": "./boxes/box13-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "4-2",
+                "closeGameCount": 2,
+                "last3": "LWW"
+            },
+            {
+                "team": "Atletico Madrid",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 7,
+                "rosterUrl": "./rosters/roster11.htm",
+                "rosterFile": "roster11.htm",
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 539,
+                "pointsAgainst": 539,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 6,
+                        "score": "Bayern Munich 96, @Atletico Madrid 90",
+                        "boxscoreUrl": "./boxes/box4-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "AFC Richmond",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@Atletico Madrid 96, AFC Richmond 92",
+                        "boxscoreUrl": "./boxes/box5-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/26/1981",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "@AC Milan 93, Atletico Madrid 79",
+                        "boxscoreUrl": "./boxes/box7-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/28/1981",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "Atletico Madrid 86, @Manchester United 82",
+                        "boxscoreUrl": "./boxes/box9-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Bayern Munich 97, Atletico Madrid 86",
+                        "boxscoreUrl": "./boxes/box10-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/31/1981",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Atletico Madrid 102, AC Milan 79",
+                        "boxscoreUrl": "./boxes/box12-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/31/1981",
+                    "opponent": "AC Milan",
+                    "result": "W",
+                    "margin": 23,
+                    "score": "@Atletico Madrid 102, AC Milan 79",
+                    "boxscoreUrl": "./boxes/box12-3.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/26/1981",
+                    "opponent": "AC Milan",
+                    "result": "L",
+                    "margin": 14,
+                    "score": "@AC Milan 93, Atletico Madrid 79",
+                    "boxscoreUrl": "./boxes/box7-1.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "AFC Richmond",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@Atletico Madrid 96, AFC Richmond 92",
+                        "boxscoreUrl": "./boxes/box5-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/28/1981",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "Atletico Madrid 86, @Manchester United 82",
+                        "boxscoreUrl": "./boxes/box9-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/31/1981",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Atletico Madrid 102, AC Milan 79",
+                        "boxscoreUrl": "./boxes/box12-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "3-3",
+                "closeGameCount": 2,
+                "last3": "WLW"
+            },
+            {
+                "team": "Brighton",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 6,
+                "rosterUrl": "./rosters/roster10.htm",
+                "rosterFile": "roster10.htm",
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 601,
+                "pointsAgainst": 603,
+                "pointDiff": -2,
+                "avgMargin": -0.33,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "@AFC Richmond 110, Brighton 100",
+                        "boxscoreUrl": "./boxes/box1-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "@Real Madrid 99, Brighton 91",
+                        "boxscoreUrl": "./boxes/box5-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 7,
+                        "score": "@Brighton 104, Crystal Palace 97",
+                        "boxscoreUrl": "./boxes/box6-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/27/1981",
+                        "opponent": "Manchester United",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "@Manchester United 110, Brighton 90",
+                        "boxscoreUrl": "./boxes/box8-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/31/1981",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 7,
+                        "score": "@Brighton 95, Real Madrid 88",
+                        "boxscoreUrl": "./boxes/box12-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 22,
+                        "score": "@Brighton 121, AC Milan 99",
+                        "boxscoreUrl": "./boxes/box13-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "11/1/1981",
+                    "opponent": "AC Milan",
+                    "result": "W",
+                    "margin": 22,
+                    "score": "@Brighton 121, AC Milan 99",
+                    "boxscoreUrl": "./boxes/box13-2.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/27/1981",
+                    "opponent": "Manchester United",
+                    "result": "L",
+                    "margin": 20,
+                    "score": "@Manchester United 110, Brighton 90",
+                    "boxscoreUrl": "./boxes/box8-1.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 22,
+                        "score": "@Brighton 121, AC Milan 99",
+                        "boxscoreUrl": "./boxes/box13-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "10/27/1981",
+                        "opponent": "Manchester United",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "@Manchester United 110, Brighton 90",
+                        "boxscoreUrl": "./boxes/box8-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 0,
+                "last3": "LWW"
+            },
+            {
+                "team": "Real Madrid",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 4,
+                "rosterUrl": "./rosters/roster8.htm",
+                "rosterFile": "roster8.htm",
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 527,
+                "pointsAgainst": 533,
+                "pointDiff": -6,
+                "avgMargin": -1.0,
+                "streak": "L2",
+                "recentResults": [
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "AFC Richmond 107, @Real Madrid 91",
+                        "boxscoreUrl": "./boxes/box2-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/22/1981",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "Real Madrid 82, @Manchester United 74",
+                        "boxscoreUrl": "./boxes/box3-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "@Real Madrid 99, Brighton 91",
+                        "boxscoreUrl": "./boxes/box5-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "@Real Madrid 85, Manchester United 66",
+                        "boxscoreUrl": "./boxes/box6-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "@Crystal Palace 100, Real Madrid 82",
+                        "boxscoreUrl": "./boxes/box11-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/31/1981",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 7,
+                        "score": "@Brighton 95, Real Madrid 88",
+                        "boxscoreUrl": "./boxes/box12-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/25/1981",
+                    "opponent": "Manchester United",
+                    "result": "W",
+                    "margin": 19,
+                    "score": "@Real Madrid 85, Manchester United 66",
+                    "boxscoreUrl": "./boxes/box6-2.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/30/1981",
+                    "opponent": "Crystal Palace",
+                    "result": "L",
+                    "margin": 18,
+                    "score": "@Crystal Palace 100, Real Madrid 82",
+                    "boxscoreUrl": "./boxes/box11-1.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "@Real Madrid 85, Manchester United 66",
+                        "boxscoreUrl": "./boxes/box6-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "AFC Richmond 107, @Real Madrid 91",
+                        "boxscoreUrl": "./boxes/box2-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "@Crystal Palace 100, Real Madrid 82",
+                        "boxscoreUrl": "./boxes/box11-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 0,
+                "last3": "WLL"
+            },
+            {
+                "team": "AC Milan",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster9.htm",
+                "rosterFile": "roster9.htm",
+                "standingsLast10": "2-4",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 563,
+                "pointsAgainst": 602,
+                "pointDiff": -39,
+                "avgMargin": -6.5,
+                "streak": "L2",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Bayern Munich",
+                        "result": "W",
+                        "margin": 13,
+                        "score": "@AC Milan 96, Bayern Munich 83",
+                        "boxscoreUrl": "./boxes/box1-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "@Bayern Munich 113, AC Milan 103",
+                        "boxscoreUrl": "./boxes/box2-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/22/1981",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "Crystal Palace 104, @AC Milan 93",
+                        "boxscoreUrl": "./boxes/box3-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/26/1981",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "@AC Milan 93, Atletico Madrid 79",
+                        "boxscoreUrl": "./boxes/box7-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/31/1981",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Atletico Madrid 102, AC Milan 79",
+                        "boxscoreUrl": "./boxes/box12-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 22,
+                        "score": "@Brighton 121, AC Milan 99",
+                        "boxscoreUrl": "./boxes/box13-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/26/1981",
+                    "opponent": "Atletico Madrid",
+                    "result": "W",
+                    "margin": 14,
+                    "score": "@AC Milan 93, Atletico Madrid 79",
+                    "boxscoreUrl": "./boxes/box7-1.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/31/1981",
+                    "opponent": "Atletico Madrid",
+                    "result": "L",
+                    "margin": 23,
+                    "score": "@Atletico Madrid 102, AC Milan 79",
+                    "boxscoreUrl": "./boxes/box12-3.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "10/31/1981",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Atletico Madrid 102, AC Milan 79",
+                        "boxscoreUrl": "./boxes/box12-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 22,
+                        "score": "@Brighton 121, AC Milan 99",
+                        "boxscoreUrl": "./boxes/box13-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "2-4",
+                "closeGameCount": 0,
+                "last3": "WLL"
+            },
+            {
+                "team": "Manchester United",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 1,
+                "rosterUrl": "./rosters/roster5.htm",
+                "rosterFile": "roster5.htm",
+                "standingsLast10": "1-5",
+                "wins": 1,
+                "losses": 5,
+                "games": 6,
+                "pointsFor": 507,
+                "pointsAgainst": 556,
+                "pointDiff": -49,
+                "avgMargin": -8.17,
+                "streak": "L2",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 21,
+                        "score": "@Crystal Palace 103, Manchester United 82",
+                        "boxscoreUrl": "./boxes/box1-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/22/1981",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "Real Madrid 82, @Manchester United 74",
+                        "boxscoreUrl": "./boxes/box3-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "@Real Madrid 85, Manchester United 66",
+                        "boxscoreUrl": "./boxes/box6-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/27/1981",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "@Manchester United 110, Brighton 90",
+                        "boxscoreUrl": "./boxes/box8-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/28/1981",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "Atletico Madrid 86, @Manchester United 82",
+                        "boxscoreUrl": "./boxes/box9-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/31/1981",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "@AFC Richmond 110, Manchester United 93",
+                        "boxscoreUrl": "./boxes/box12-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/27/1981",
+                    "opponent": "Brighton",
+                    "result": "W",
+                    "margin": 20,
+                    "score": "@Manchester United 110, Brighton 90",
+                    "boxscoreUrl": "./boxes/box8-1.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/20/1981",
+                    "opponent": "Crystal Palace",
+                    "result": "L",
+                    "margin": 21,
+                    "score": "@Crystal Palace 103, Manchester United 82",
+                    "boxscoreUrl": "./boxes/box1-1.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/28/1981",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "Atletico Madrid 86, @Manchester United 82",
+                        "boxscoreUrl": "./boxes/box9-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/27/1981",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "@Manchester United 110, Brighton 90",
+                        "boxscoreUrl": "./boxes/box8-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 21,
+                        "score": "@Crystal Palace 103, Manchester United 82",
+                        "boxscoreUrl": "./boxes/box1-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "@Real Madrid 85, Manchester United 66",
+                        "boxscoreUrl": "./boxes/box6-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/31/1981",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "@AFC Richmond 110, Manchester United 93",
+                        "boxscoreUrl": "./boxes/box12-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "1-5",
+                "closeGameCount": 1,
+                "last3": "WLL"
+            }
+        ],
+        "Tier 2": [
+            {
+                "team": "Chelsea",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster17.htm",
+                "rosterFile": "roster17.htm",
+                "standingsLast10": "5-1",
+                "wins": 5,
+                "losses": 1,
+                "games": 6,
+                "pointsFor": 548,
+                "pointsAgainst": 477,
+                "pointDiff": 71,
+                "avgMargin": 11.83,
+                "streak": "W5",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Monaco 95, Chelsea 92",
+                        "boxscoreUrl": "./boxes/box1-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 13,
+                        "score": "Chelsea 90, @Juventus 77",
+                        "boxscoreUrl": "./boxes/box2-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "@Chelsea 89, Ajax 79",
+                        "boxscoreUrl": "./boxes/box4-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "@Chelsea 82, Aston Villa 63",
+                        "boxscoreUrl": "./boxes/box6-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/28/1981",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 12,
+                        "score": "Chelsea 93, @Aston Villa 81",
+                        "boxscoreUrl": "./boxes/box9-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "@Chelsea 102, Benfica 82",
+                        "boxscoreUrl": "./boxes/box11-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/30/1981",
+                    "opponent": "Benfica",
+                    "result": "W",
+                    "margin": 20,
+                    "score": "@Chelsea 102, Benfica 82",
+                    "boxscoreUrl": "./boxes/box11-3.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/20/1981",
+                    "opponent": "Monaco",
+                    "result": "L",
+                    "margin": 3,
+                    "score": "@Monaco 95, Chelsea 92",
+                    "boxscoreUrl": "./boxes/box1-7.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Monaco 95, Chelsea 92",
+                        "boxscoreUrl": "./boxes/box1-7.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "@Chelsea 82, Aston Villa 63",
+                        "boxscoreUrl": "./boxes/box6-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "@Chelsea 102, Benfica 82",
+                        "boxscoreUrl": "./boxes/box11-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "5-1",
+                "closeGameCount": 1,
+                "last3": "WWW"
+            },
+            {
+                "team": "Benfica",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 1,
+                "rosterUrl": "./rosters/roster13.htm",
+                "rosterFile": "roster13.htm",
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 565,
+                "pointsAgainst": 524,
+                "pointDiff": 41,
+                "avgMargin": 6.83,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 27,
+                        "score": "@Benfica 109, Aston Villa 82",
+                        "boxscoreUrl": "./boxes/box1-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "Benfica 98, @Aston Villa 78",
+                        "boxscoreUrl": "./boxes/box4-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "@Benfica 110, Marseille 96",
+                        "boxscoreUrl": "./boxes/box6-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Ajax 85, Benfica 80",
+                        "boxscoreUrl": "./boxes/box10-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "@Chelsea 102, Benfica 82",
+                        "boxscoreUrl": "./boxes/box11-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Benfica 86, Juventus 81",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/20/1981",
+                    "opponent": "Aston Villa",
+                    "result": "W",
+                    "margin": 27,
+                    "score": "@Benfica 109, Aston Villa 82",
+                    "boxscoreUrl": "./boxes/box1-6.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/30/1981",
+                    "opponent": "Chelsea",
+                    "result": "L",
+                    "margin": 20,
+                    "score": "@Chelsea 102, Benfica 82",
+                    "boxscoreUrl": "./boxes/box11-3.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Ajax 85, Benfica 80",
+                        "boxscoreUrl": "./boxes/box10-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Benfica 86, Juventus 81",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 27,
+                        "score": "@Benfica 109, Aston Villa 82",
+                        "boxscoreUrl": "./boxes/box1-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "Benfica 98, @Aston Villa 78",
+                        "boxscoreUrl": "./boxes/box4-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "@Chelsea 102, Benfica 82",
+                        "boxscoreUrl": "./boxes/box11-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "4-2",
+                "closeGameCount": 2,
+                "last3": "LLW"
+            },
+            {
+                "team": "Marseille",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster15.htm",
+                "rosterFile": "roster15.htm",
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 564,
+                "pointsAgainst": 537,
+                "pointDiff": 27,
+                "avgMargin": 4.5,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 12,
+                        "score": "@Marseille 104, Ajax 92",
+                        "boxscoreUrl": "./boxes/box1-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "Marseille 81, @Aston Villa 80",
+                        "boxscoreUrl": "./boxes/box2-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "@Juventus 96, Marseille 88",
+                        "boxscoreUrl": "./boxes/box4-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "@Benfica 110, Marseille 96",
+                        "boxscoreUrl": "./boxes/box6-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 21,
+                        "score": "@Marseille 95, Monaco 74",
+                        "boxscoreUrl": "./boxes/box10-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Marseille 100, Juventus 85",
+                        "boxscoreUrl": "./boxes/box11-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/29/1981",
+                    "opponent": "Monaco",
+                    "result": "W",
+                    "margin": 21,
+                    "score": "@Marseille 95, Monaco 74",
+                    "boxscoreUrl": "./boxes/box10-4.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/25/1981",
+                    "opponent": "Benfica",
+                    "result": "L",
+                    "margin": 14,
+                    "score": "@Benfica 110, Marseille 96",
+                    "boxscoreUrl": "./boxes/box6-5.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "Marseille 81, @Aston Villa 80",
+                        "boxscoreUrl": "./boxes/box2-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 21,
+                        "score": "@Marseille 95, Monaco 74",
+                        "boxscoreUrl": "./boxes/box10-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Marseille 100, Juventus 85",
+                        "boxscoreUrl": "./boxes/box11-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "4-2",
+                "closeGameCount": 1,
+                "last3": "LWW"
+            },
+            {
+                "team": "Sheffield United",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 4,
+                "rosterUrl": "./rosters/roster16.htm",
+                "rosterFile": "roster16.htm",
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 567,
+                "pointsAgainst": 536,
+                "pointDiff": 31,
+                "avgMargin": 5.17,
+                "streak": "W3",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "Juventus 98, @Sheffield United 88",
+                        "boxscoreUrl": "./boxes/box1-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/22/1981",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Juventus 100, Sheffield United 77",
+                        "boxscoreUrl": "./boxes/box3-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Monaco 97, Sheffield United 94",
+                        "boxscoreUrl": "./boxes/box4-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "@Sheffield United 97, Monaco 80",
+                        "boxscoreUrl": "./boxes/box6-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/27/1981",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "Sheffield United 108, @Ajax 92",
+                        "boxscoreUrl": "./boxes/box8-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 34,
+                        "score": "@Sheffield United 103, Aston Villa 69",
+                        "boxscoreUrl": "./boxes/box10-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/29/1981",
+                    "opponent": "Aston Villa",
+                    "result": "W",
+                    "margin": 34,
+                    "score": "@Sheffield United 103, Aston Villa 69",
+                    "boxscoreUrl": "./boxes/box10-3.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/22/1981",
+                    "opponent": "Juventus",
+                    "result": "L",
+                    "margin": 23,
+                    "score": "@Juventus 100, Sheffield United 77",
+                    "boxscoreUrl": "./boxes/box3-3.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Monaco 97, Sheffield United 94",
+                        "boxscoreUrl": "./boxes/box4-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "@Sheffield United 97, Monaco 80",
+                        "boxscoreUrl": "./boxes/box6-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/27/1981",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "Sheffield United 108, @Ajax 92",
+                        "boxscoreUrl": "./boxes/box8-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 34,
+                        "score": "@Sheffield United 103, Aston Villa 69",
+                        "boxscoreUrl": "./boxes/box10-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "10/22/1981",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Juventus 100, Sheffield United 77",
+                        "boxscoreUrl": "./boxes/box3-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 1,
+                "last3": "WWW"
+            },
+            {
+                "team": "Juventus",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster14.htm",
+                "rosterFile": "roster14.htm",
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 537,
+                "pointsAgainst": 529,
+                "pointDiff": 8,
+                "avgMargin": 1.33,
+                "streak": "L2",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Sheffield United",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "Juventus 98, @Sheffield United 88",
+                        "boxscoreUrl": "./boxes/box1-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 13,
+                        "score": "Chelsea 90, @Juventus 77",
+                        "boxscoreUrl": "./boxes/box2-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/22/1981",
+                        "opponent": "Sheffield United",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Juventus 100, Sheffield United 77",
+                        "boxscoreUrl": "./boxes/box3-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "@Juventus 96, Marseille 88",
+                        "boxscoreUrl": "./boxes/box4-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Marseille",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Marseille 100, Juventus 85",
+                        "boxscoreUrl": "./boxes/box11-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Benfica 86, Juventus 81",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/22/1981",
+                    "opponent": "Sheffield United",
+                    "result": "W",
+                    "margin": 23,
+                    "score": "@Juventus 100, Sheffield United 77",
+                    "boxscoreUrl": "./boxes/box3-3.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/30/1981",
+                    "opponent": "Marseille",
+                    "result": "L",
+                    "margin": 15,
+                    "score": "@Marseille 100, Juventus 85",
+                    "boxscoreUrl": "./boxes/box11-2.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Benfica 86, Juventus 81",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/22/1981",
+                        "opponent": "Sheffield United",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Juventus 100, Sheffield United 77",
+                        "boxscoreUrl": "./boxes/box3-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Marseille",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Marseille 100, Juventus 85",
+                        "boxscoreUrl": "./boxes/box11-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 1,
+                "last3": "WLL"
+            },
+            {
+                "team": "Monaco",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster20.htm",
+                "rosterFile": "roster20.htm",
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 527,
+                "pointsAgainst": 570,
+                "pointDiff": -43,
+                "avgMargin": -7.17,
+                "streak": "L3",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Monaco 95, Chelsea 92",
+                        "boxscoreUrl": "./boxes/box1-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 12,
+                        "score": "@Monaco 105, Ajax 93",
+                        "boxscoreUrl": "./boxes/box2-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Sheffield United",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Monaco 97, Sheffield United 94",
+                        "boxscoreUrl": "./boxes/box4-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Sheffield United",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "@Sheffield United 97, Monaco 80",
+                        "boxscoreUrl": "./boxes/box6-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Marseille",
+                        "result": "L",
+                        "margin": 21,
+                        "score": "@Marseille 95, Monaco 74",
+                        "boxscoreUrl": "./boxes/box10-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Ajax 99, Monaco 76",
+                        "boxscoreUrl": "./boxes/box11-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/21/1981",
+                    "opponent": "Ajax",
+                    "result": "W",
+                    "margin": 12,
+                    "score": "@Monaco 105, Ajax 93",
+                    "boxscoreUrl": "./boxes/box2-3.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/30/1981",
+                    "opponent": "Ajax",
+                    "result": "L",
+                    "margin": 23,
+                    "score": "@Ajax 99, Monaco 76",
+                    "boxscoreUrl": "./boxes/box11-4.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Monaco 95, Chelsea 92",
+                        "boxscoreUrl": "./boxes/box1-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Sheffield United",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Monaco 97, Sheffield United 94",
+                        "boxscoreUrl": "./boxes/box4-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Sheffield United",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "@Sheffield United 97, Monaco 80",
+                        "boxscoreUrl": "./boxes/box6-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Marseille",
+                        "result": "L",
+                        "margin": 21,
+                        "score": "@Marseille 95, Monaco 74",
+                        "boxscoreUrl": "./boxes/box10-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Ajax 99, Monaco 76",
+                        "boxscoreUrl": "./boxes/box11-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 2,
+                "last3": "LLL"
+            },
+            {
+                "team": "Ajax",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 6,
+                "rosterUrl": "./rosters/roster18.htm",
+                "rosterFile": "roster18.htm",
+                "standingsLast10": "2-4",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 540,
+                "pointsAgainst": 562,
+                "pointDiff": -22,
+                "avgMargin": -3.67,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Marseille",
+                        "result": "L",
+                        "margin": 12,
+                        "score": "@Marseille 104, Ajax 92",
+                        "boxscoreUrl": "./boxes/box1-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 12,
+                        "score": "@Monaco 105, Ajax 93",
+                        "boxscoreUrl": "./boxes/box2-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "@Chelsea 89, Ajax 79",
+                        "boxscoreUrl": "./boxes/box4-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/27/1981",
+                        "opponent": "Sheffield United",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "Sheffield United 108, @Ajax 92",
+                        "boxscoreUrl": "./boxes/box8-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Ajax 85, Benfica 80",
+                        "boxscoreUrl": "./boxes/box10-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Ajax 99, Monaco 76",
+                        "boxscoreUrl": "./boxes/box11-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/30/1981",
+                    "opponent": "Monaco",
+                    "result": "W",
+                    "margin": 23,
+                    "score": "@Ajax 99, Monaco 76",
+                    "boxscoreUrl": "./boxes/box11-4.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/27/1981",
+                    "opponent": "Sheffield United",
+                    "result": "L",
+                    "margin": 16,
+                    "score": "Sheffield United 108, @Ajax 92",
+                    "boxscoreUrl": "./boxes/box8-2.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Ajax 85, Benfica 80",
+                        "boxscoreUrl": "./boxes/box10-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Ajax 99, Monaco 76",
+                        "boxscoreUrl": "./boxes/box11-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "10/27/1981",
+                        "opponent": "Sheffield United",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "Sheffield United 108, @Ajax 92",
+                        "boxscoreUrl": "./boxes/box8-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "2-4",
+                "closeGameCount": 1,
+                "last3": "LWW"
+            },
+            {
+                "team": "Aston Villa",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 7,
+                "rosterUrl": "./rosters/roster19.htm",
+                "rosterFile": "roster19.htm",
+                "standingsLast10": "0-6",
+                "wins": 0,
+                "losses": 6,
+                "games": 6,
+                "pointsFor": 453,
+                "pointsAgainst": 566,
+                "pointDiff": -113,
+                "avgMargin": -18.83,
+                "streak": "L6",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 27,
+                        "score": "@Benfica 109, Aston Villa 82",
+                        "boxscoreUrl": "./boxes/box1-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Marseille",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "Marseille 81, @Aston Villa 80",
+                        "boxscoreUrl": "./boxes/box2-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "Benfica 98, @Aston Villa 78",
+                        "boxscoreUrl": "./boxes/box4-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "@Chelsea 82, Aston Villa 63",
+                        "boxscoreUrl": "./boxes/box6-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/28/1981",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 12,
+                        "score": "Chelsea 93, @Aston Villa 81",
+                        "boxscoreUrl": "./boxes/box9-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Sheffield United",
+                        "result": "L",
+                        "margin": 34,
+                        "score": "@Sheffield United 103, Aston Villa 69",
+                        "boxscoreUrl": "./boxes/box10-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": null,
+                "worstLoss": {
+                    "date": "10/29/1981",
+                    "opponent": "Sheffield United",
+                    "result": "L",
+                    "margin": 34,
+                    "score": "@Sheffield United 103, Aston Villa 69",
+                    "boxscoreUrl": "./boxes/box10-3.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Marseille",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "Marseille 81, @Aston Villa 80",
+                        "boxscoreUrl": "./boxes/box2-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 27,
+                        "score": "@Benfica 109, Aston Villa 82",
+                        "boxscoreUrl": "./boxes/box1-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "Benfica 98, @Aston Villa 78",
+                        "boxscoreUrl": "./boxes/box4-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "@Chelsea 82, Aston Villa 63",
+                        "boxscoreUrl": "./boxes/box6-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Sheffield United",
+                        "result": "L",
+                        "margin": 34,
+                        "score": "@Sheffield United 103, Aston Villa 69",
+                        "boxscoreUrl": "./boxes/box10-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "0-6",
+                "closeGameCount": 1,
+                "last3": "LLL"
+            }
+        ],
+        "Tier 3": [
+            {
+                "team": "Manchester City",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster28.htm",
+                "rosterFile": "roster28.htm",
+                "standingsLast10": "5-1",
+                "wins": 5,
+                "losses": 1,
+                "games": 6,
+                "pointsFor": 554,
+                "pointsAgainst": 502,
+                "pointDiff": 52,
+                "avgMargin": 8.67,
+                "streak": "W4",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "Manchester City 101, @Valencia 100",
+                        "boxscoreUrl": "./boxes/box1-10.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 7,
+                        "score": "@Tottenham Hotspur 86, Manchester City 79",
+                        "boxscoreUrl": "./boxes/box2-8.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "@Manchester City 98, Paris Saint-Germain 80",
+                        "boxscoreUrl": "./boxes/box5-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "Manchester City 88, @FL Fart 77",
+                        "boxscoreUrl": "./boxes/box6-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/28/1981",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Manchester City 101, Barcelona 90",
+                        "boxscoreUrl": "./boxes/box9-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Sporting CP",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "@Manchester City 87, Sporting CP 69",
+                        "boxscoreUrl": "./boxes/box11-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/24/1981",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "W",
+                    "margin": 18,
+                    "score": "@Manchester City 98, Paris Saint-Germain 80",
+                    "boxscoreUrl": "./boxes/box5-5.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/21/1981",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "L",
+                    "margin": 7,
+                    "score": "@Tottenham Hotspur 86, Manchester City 79",
+                    "boxscoreUrl": "./boxes/box2-8.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "Manchester City 101, @Valencia 100",
+                        "boxscoreUrl": "./boxes/box1-10.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "@Manchester City 98, Paris Saint-Germain 80",
+                        "boxscoreUrl": "./boxes/box5-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Sporting CP",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "@Manchester City 87, Sporting CP 69",
+                        "boxscoreUrl": "./boxes/box11-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "5-1",
+                "closeGameCount": 1,
+                "last3": "WWW"
+            },
+            {
+                "team": "Paris Saint-Germain",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 1,
+                "rosterUrl": "./rosters/roster21.htm",
+                "rosterFile": "roster21.htm",
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 516,
+                "pointsAgainst": 492,
+                "pointDiff": 24,
+                "avgMargin": 4.0,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 13,
+                        "score": "Paris Saint-Germain 85, @Inter Milan 72",
+                        "boxscoreUrl": "./boxes/box1-11.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "FL Fart 82, @Paris Saint-Germain 73",
+                        "boxscoreUrl": "./boxes/box2-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Sporting CP",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "Paris Saint-Germain 92, @Sporting CP 84",
+                        "boxscoreUrl": "./boxes/box4-8.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "@Manchester City 98, Paris Saint-Germain 80",
+                        "boxscoreUrl": "./boxes/box5-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 21,
+                        "score": "@Paris Saint-Germain 106, Valencia 85",
+                        "boxscoreUrl": "./boxes/box10-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 9,
+                        "score": "@Paris Saint-Germain 80, Inter Milan 71",
+                        "boxscoreUrl": "./boxes/box13-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/29/1981",
+                    "opponent": "Valencia",
+                    "result": "W",
+                    "margin": 21,
+                    "score": "@Paris Saint-Germain 106, Valencia 85",
+                    "boxscoreUrl": "./boxes/box10-6.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/24/1981",
+                    "opponent": "Manchester City",
+                    "result": "L",
+                    "margin": 18,
+                    "score": "@Manchester City 98, Paris Saint-Germain 80",
+                    "boxscoreUrl": "./boxes/box5-5.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 21,
+                        "score": "@Paris Saint-Germain 106, Valencia 85",
+                        "boxscoreUrl": "./boxes/box10-6.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "@Manchester City 98, Paris Saint-Germain 80",
+                        "boxscoreUrl": "./boxes/box5-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "4-2",
+                "closeGameCount": 0,
+                "last3": "LWW"
+            },
+            {
+                "team": "FL Fart",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 7,
+                "rosterUrl": "./rosters/roster27.htm",
+                "rosterFile": "roster27.htm",
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 498,
+                "pointsAgainst": 475,
+                "pointDiff": 23,
+                "avgMargin": 3.83,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "@FL Fart 78, Barcelona 70",
+                        "boxscoreUrl": "./boxes/box1-9.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 9,
+                        "score": "FL Fart 82, @Paris Saint-Germain 73",
+                        "boxscoreUrl": "./boxes/box2-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "FL Fart 92, @Inter Milan 78",
+                        "boxscoreUrl": "./boxes/box4-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/25/1981",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "Manchester City 88, @FL Fart 77",
+                        "boxscoreUrl": "./boxes/box6-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Sporting CP",
+                        "result": "L",
+                        "margin": 13,
+                        "score": "@Sporting CP 99, FL Fart 86",
+                        "boxscoreUrl": "./boxes/box10-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@FL Fart 83, Inter Milan 67",
+                        "boxscoreUrl": "./boxes/box11-6.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/30/1981",
+                    "opponent": "Inter Milan",
+                    "result": "W",
+                    "margin": 16,
+                    "score": "@FL Fart 83, Inter Milan 67",
+                    "boxscoreUrl": "./boxes/box11-6.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/29/1981",
+                    "opponent": "Sporting CP",
+                    "result": "L",
+                    "margin": 13,
+                    "score": "@Sporting CP 99, FL Fart 86",
+                    "boxscoreUrl": "./boxes/box10-5.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@FL Fart 83, Inter Milan 67",
+                        "boxscoreUrl": "./boxes/box11-6.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "4-2",
+                "closeGameCount": 0,
+                "last3": "LLW"
+            },
+            {
+                "team": "Barcelona",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 4,
+                "rosterUrl": "./rosters/roster24.htm",
+                "rosterFile": "roster24.htm",
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 546,
+                "pointsAgainst": 512,
+                "pointDiff": 34,
+                "avgMargin": 5.67,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "@FL Fart 78, Barcelona 70",
+                        "boxscoreUrl": "./boxes/box1-9.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "Barcelona 90, @Valencia 73",
+                        "boxscoreUrl": "./boxes/box2-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "Valencia 93, @Barcelona 85",
+                        "boxscoreUrl": "./boxes/box4-9.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/26/1981",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@Barcelona 108, Tottenham Hotspur 92",
+                        "boxscoreUrl": "./boxes/box7-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/28/1981",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Manchester City 101, Barcelona 90",
+                        "boxscoreUrl": "./boxes/box9-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 28,
+                        "score": "@Barcelona 103, Inter Milan 75",
+                        "boxscoreUrl": "./boxes/box10-7.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/29/1981",
+                    "opponent": "Inter Milan",
+                    "result": "W",
+                    "margin": 28,
+                    "score": "@Barcelona 103, Inter Milan 75",
+                    "boxscoreUrl": "./boxes/box10-7.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/28/1981",
+                    "opponent": "Manchester City",
+                    "result": "L",
+                    "margin": 11,
+                    "score": "@Manchester City 101, Barcelona 90",
+                    "boxscoreUrl": "./boxes/box9-3.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "Barcelona 90, @Valencia 73",
+                        "boxscoreUrl": "./boxes/box2-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/26/1981",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@Barcelona 108, Tottenham Hotspur 92",
+                        "boxscoreUrl": "./boxes/box7-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 28,
+                        "score": "@Barcelona 103, Inter Milan 75",
+                        "boxscoreUrl": "./boxes/box10-7.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "3-3",
+                "closeGameCount": 0,
+                "last3": "WLW"
+            },
+            {
+                "team": "Tottenham Hotspur",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster22.htm",
+                "rosterFile": "roster22.htm",
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 497,
+                "pointsAgainst": 527,
+                "pointDiff": -30,
+                "avgMargin": -5.0,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Sporting CP",
+                        "result": "L",
+                        "margin": 34,
+                        "score": "@Sporting CP 103, Tottenham Hotspur 69",
+                        "boxscoreUrl": "./boxes/box1-8.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 7,
+                        "score": "@Tottenham Hotspur 86, Manchester City 79",
+                        "boxscoreUrl": "./boxes/box2-8.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "@Tottenham Hotspur 84, Valencia 76",
+                        "boxscoreUrl": "./boxes/box5-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/26/1981",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@Barcelona 108, Tottenham Hotspur 92",
+                        "boxscoreUrl": "./boxes/box7-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/31/1981",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 6,
+                        "score": "@Valencia 80, Tottenham Hotspur 74",
+                        "boxscoreUrl": "./boxes/box12-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "Sporting CP",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Tottenham Hotspur 92, Sporting CP 81",
+                        "boxscoreUrl": "./boxes/box13-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "11/1/1981",
+                    "opponent": "Sporting CP",
+                    "result": "W",
+                    "margin": 11,
+                    "score": "@Tottenham Hotspur 92, Sporting CP 81",
+                    "boxscoreUrl": "./boxes/box13-5.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/20/1981",
+                    "opponent": "Sporting CP",
+                    "result": "L",
+                    "margin": 34,
+                    "score": "@Sporting CP 103, Tottenham Hotspur 69",
+                    "boxscoreUrl": "./boxes/box1-8.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Sporting CP",
+                        "result": "L",
+                        "margin": 34,
+                        "score": "@Sporting CP 103, Tottenham Hotspur 69",
+                        "boxscoreUrl": "./boxes/box1-8.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/26/1981",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@Barcelona 108, Tottenham Hotspur 92",
+                        "boxscoreUrl": "./boxes/box7-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 0,
+                "last3": "LLW"
+            },
+            {
+                "team": "Sporting CP",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster23.htm",
+                "rosterFile": "roster23.htm",
+                "standingsLast10": "2-4",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 504,
+                "pointsAgainst": 502,
+                "pointDiff": 2,
+                "avgMargin": 0.33,
+                "streak": "L2",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 34,
+                        "score": "@Sporting CP 103, Tottenham Hotspur 69",
+                        "boxscoreUrl": "./boxes/box1-8.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "Paris Saint-Germain 92, @Sporting CP 84",
+                        "boxscoreUrl": "./boxes/box4-8.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "@Inter Milan 76, Sporting CP 68",
+                        "boxscoreUrl": "./boxes/box5-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 13,
+                        "score": "@Sporting CP 99, FL Fart 86",
+                        "boxscoreUrl": "./boxes/box10-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "@Manchester City 87, Sporting CP 69",
+                        "boxscoreUrl": "./boxes/box11-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Tottenham Hotspur 92, Sporting CP 81",
+                        "boxscoreUrl": "./boxes/box13-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/20/1981",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "W",
+                    "margin": 34,
+                    "score": "@Sporting CP 103, Tottenham Hotspur 69",
+                    "boxscoreUrl": "./boxes/box1-8.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/30/1981",
+                    "opponent": "Manchester City",
+                    "result": "L",
+                    "margin": 18,
+                    "score": "@Manchester City 87, Sporting CP 69",
+                    "boxscoreUrl": "./boxes/box11-5.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 34,
+                        "score": "@Sporting CP 103, Tottenham Hotspur 69",
+                        "boxscoreUrl": "./boxes/box1-8.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "@Manchester City 87, Sporting CP 69",
+                        "boxscoreUrl": "./boxes/box11-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "2-4",
+                "closeGameCount": 0,
+                "last3": "WLL"
+            },
+            {
+                "team": "Valencia",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster25.htm",
+                "rosterFile": "roster25.htm",
+                "standingsLast10": "2-4",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 507,
+                "pointsAgainst": 540,
+                "pointDiff": -33,
+                "avgMargin": -5.5,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "Manchester City 101, @Valencia 100",
+                        "boxscoreUrl": "./boxes/box1-10.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "Barcelona 90, @Valencia 73",
+                        "boxscoreUrl": "./boxes/box2-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "Valencia 93, @Barcelona 85",
+                        "boxscoreUrl": "./boxes/box4-9.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "@Tottenham Hotspur 84, Valencia 76",
+                        "boxscoreUrl": "./boxes/box5-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 21,
+                        "score": "@Paris Saint-Germain 106, Valencia 85",
+                        "boxscoreUrl": "./boxes/box10-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/31/1981",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 6,
+                        "score": "@Valencia 80, Tottenham Hotspur 74",
+                        "boxscoreUrl": "./boxes/box12-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/23/1981",
+                    "opponent": "Barcelona",
+                    "result": "W",
+                    "margin": 8,
+                    "score": "Valencia 93, @Barcelona 85",
+                    "boxscoreUrl": "./boxes/box4-9.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/29/1981",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "L",
+                    "margin": 21,
+                    "score": "@Paris Saint-Germain 106, Valencia 85",
+                    "boxscoreUrl": "./boxes/box10-6.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "Manchester City 101, @Valencia 100",
+                        "boxscoreUrl": "./boxes/box1-10.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "10/21/1981",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "Barcelona 90, @Valencia 73",
+                        "boxscoreUrl": "./boxes/box2-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 21,
+                        "score": "@Paris Saint-Germain 106, Valencia 85",
+                        "boxscoreUrl": "./boxes/box10-6.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "2-4",
+                "closeGameCount": 1,
+                "last3": "LLW"
+            },
+            {
+                "team": "Inter Milan",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 6,
+                "rosterUrl": "./rosters/roster26.htm",
+                "rosterFile": "roster26.htm",
+                "standingsLast10": "1-5",
+                "wins": 1,
+                "losses": 5,
+                "games": 6,
+                "pointsFor": 439,
+                "pointsAgainst": 511,
+                "pointDiff": -72,
+                "avgMargin": -12.0,
+                "streak": "L3",
+                "recentResults": [
+                    {
+                        "date": "10/20/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 13,
+                        "score": "Paris Saint-Germain 85, @Inter Milan 72",
+                        "boxscoreUrl": "./boxes/box1-11.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/23/1981",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "FL Fart 92, @Inter Milan 78",
+                        "boxscoreUrl": "./boxes/box4-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/24/1981",
+                        "opponent": "Sporting CP",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "@Inter Milan 76, Sporting CP 68",
+                        "boxscoreUrl": "./boxes/box5-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 28,
+                        "score": "@Barcelona 103, Inter Milan 75",
+                        "boxscoreUrl": "./boxes/box10-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@FL Fart 83, Inter Milan 67",
+                        "boxscoreUrl": "./boxes/box11-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "11/1/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "@Paris Saint-Germain 80, Inter Milan 71",
+                        "boxscoreUrl": "./boxes/box13-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/24/1981",
+                    "opponent": "Sporting CP",
+                    "result": "W",
+                    "margin": 8,
+                    "score": "@Inter Milan 76, Sporting CP 68",
+                    "boxscoreUrl": "./boxes/box5-3.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "10/29/1981",
+                    "opponent": "Barcelona",
+                    "result": "L",
+                    "margin": 28,
+                    "score": "@Barcelona 103, Inter Milan 75",
+                    "boxscoreUrl": "./boxes/box10-7.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "10/29/1981",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 28,
+                        "score": "@Barcelona 103, Inter Milan 75",
+                        "boxscoreUrl": "./boxes/box10-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "10/30/1981",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@FL Fart 83, Inter Milan 67",
+                        "boxscoreUrl": "./boxes/box11-6.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "1-5",
+                "closeGameCount": 0,
+                "last3": "LLL"
+            }
+        ]
+    }
+}
