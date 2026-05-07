@@ -15,6 +15,7 @@ Every article file should:
 - include `@import url("../media-shared.css");` inside its `<style>` block
 - use `<body class="media-article">`
 - include one main article container: `<div class="paper"> ... </div>`
+- keep the standard topbar nav unchanged so the shared Teams dropdown can inject correctly
 - include the shared rail script before `</body>`:
 
 ```html
@@ -238,6 +239,19 @@ When a new article is added, add its metadata object there:
 - `author`
 - `meta`
 - `blurb`
+- `teams`
+
+The `teams` array is required.
+
+It must include every ESL team explicitly mentioned anywhere in the article copy, headline, dek, pull quotes, or visible stat/summary blocks.
+
+Example:
+
+```js
+teams: ["Chelsea", "Benfica", "Marseille"]
+```
+
+The team directory and team-specific article pages are powered from that field. If you skip a mentioned team, that club's coverage page will be incomplete.
 
 For interview articles, always set:
 - `category: "Interview"`
@@ -261,5 +275,25 @@ When adding a new article:
 3. remove older placeholder or superseded entries if space is limited
 
 Do not publish a new article without updating the homepage power board to include it.
+
+## Team directory rule
+
+The site now has:
+- a Teams dropdown in the top navigation
+- a directory page at `2bslmedia/content/teams.html`
+- team coverage pages at `2bslmedia/content/team.html?team=TEAM-SLUG`
+
+Those pages are driven by:
+- `1build/database/standings.json` for team tier placement
+- `2bslmedia/content/media-articles.js`
+- `window.ESL_TEAM_LOGOS` for logo filenames only
+- each article's `teams` array
+
+When adding future articles:
+1. tag every mentioned team in the `teams` array
+2. keep the topbar markup standard so the dropdown injects correctly
+3. check that the article appears on the relevant team pages after updating the manifest
+
+Do not hardcode which tier a team belongs to in the media site. The Teams dropdown, Teams directory, and individual team pages should read the current standings JSON so promotion/relegation changes automatically move teams into the correct column after a build.
 
 

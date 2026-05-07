@@ -368,6 +368,40 @@ def build_team_lookup(teams):
     return lookup
 
 
+def rating_number(value):
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return -1
+
+
+def attach_star_players(teams, players):
+    star_by_team = {}
+
+    for player in players:
+        team_id = player.get("team", "")
+        if not team_id:
+            continue
+
+        overall = rating_number(player.get("overall"))
+        if overall < 0:
+            continue
+
+        current_star = star_by_team.get(team_id)
+        if not current_star or overall > rating_number(current_star.get("overall")):
+            star_by_team[team_id] = {
+                "name": player.get("name", ""),
+                "url": player.get("url", ""),
+                "pos": player.get("pos", ""),
+                "age": player.get("age", ""),
+                "overall": player.get("overall", ""),
+                "potential": player.get("potential", ""),
+            }
+
+    for team in teams:
+        team["starPlayer"] = star_by_team.get(team["id"])
+
+
 def parse_player_page(html, filename, team_lookup, ratings_by_name):
     name_matches = re.findall(r"<td class=teamheader>([^<]+?)&nbsp;", html, re.IGNORECASE)
     name = clean(name_matches[-1]) if name_matches else ""
@@ -1195,6 +1229,7 @@ def main():
     with open(TEAM_STATS_OUT, "w", encoding="utf-8") as f:
         json.dump(team_stats_data, f, indent=4)
 
+    attach_star_players(all_teams, all_players)
     all_teams.sort(key=lambda team: team["name"])
 
     with open(TEAMS_OUT, "w", encoding="utf-8") as f:

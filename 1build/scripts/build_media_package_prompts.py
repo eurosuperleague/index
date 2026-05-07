@@ -17,6 +17,7 @@ MONTHLY_TEAM_FORM_PATH = os.path.join(MONTHLY_DIR, "monthly_team_form.json")
 OVERALL_TEAM_FORM_PATH = os.path.join(MONTHLY_DIR, "overall_team_form.json")
 TIER_RACE_SNAPSHOT_PATH = os.path.join(MONTHLY_DIR, "tier_race_snapshot.json")
 MONTHLY_STORYLINES_PATH = os.path.join(MONTHLY_DIR, "monthly_storylines.json")
+TEAMS_PATH = os.path.join(DATABASE_DIR, "teams.json")
 
 TIER_ORDER = ["Tier 1", "Tier 2", "Tier 3"]
 POWER_RANKING_SERIES = {
@@ -51,7 +52,25 @@ def find_latest_power_ranking_article(tier_name):
     return f"../articles/{filename}"
 
 
-def build_power_rankings(overall_team_form, monthly_team_form, period_label):
+def build_team_star_lookup(teams):
+    return {
+        team.get("name", ""): team.get("starPlayer")
+        for team in teams
+        if team.get("name") and team.get("starPlayer")
+    }
+
+
+def compact_team_stars(team_star_lookup):
+    return [
+        {
+            "team": team,
+            "starPlayer": star_player,
+        }
+        for team, star_player in sorted(team_star_lookup.items())
+    ]
+
+
+def build_power_rankings(overall_team_form, monthly_team_form, period_label, team_star_lookup):
     prompts = []
     overall_tiers = overall_team_form.get("tiers", {})
     monthly_tiers = monthly_team_form.get("tiers", {})
@@ -76,12 +95,15 @@ def build_power_rankings(overall_team_form, monthly_team_form, period_label):
                     "and use the latest sim performance to explain changes, jumps, or drops from the previous board. "
                     "Explicitly note changes from the last published power rankings article if those changes feel "
                     "meaningful, but do not force movement notes for every team. You are allowed to pull extra "
-                    "context from any of the linked JSON sources if it strengthens the board."
+                    "context from any of the linked JSON sources if it strengthens the board. When it fits the "
+                    "article, mention the listed star players as roster context; starPlayer is the highest OVR "
+                    "player on that team's current roster."
                 ),
                 "writerNotes": [
                     "Use the team pool as context, not as a locked final order.",
                     "Base the ranking on overall form, not just one sim.",
                     "Use the latest sim to justify movement, momentum, and skepticism.",
+                    "Work in star-player mentions for the biggest teams, risers, fallers, or arguments where roster quality matters.",
                     "Call out at least one riser, one faller, and one team you are still unsure about.",
                 ],
                 "availableContext": [
@@ -120,6 +142,7 @@ def build_power_rankings(overall_team_form, monthly_team_form, period_label):
                             "closeGameCount": monthly_lookup.get(team["team"], {}).get("closeGameCount", 0),
                         },
                         "rosterUrl": team["rosterUrl"],
+                        "starPlayer": team_star_lookup.get(team["team"]),
                     }
                     for team in overall_teams
                 ],
@@ -202,7 +225,7 @@ def build_stock_report(monthly_team_form, period_label):
     }
 
 
-def build_month_in_review(monthly_storylines, latest_sim_results, period_label):
+def build_month_in_review(monthly_storylines, latest_sim_results, period_label, team_star_lookup):
     storyline_lookup = {item["id"]: item for item in monthly_storylines.get("storylines", [])}
     featured_ids = monthly_storylines.get("featured", [])
     featured = [storyline_lookup[item_id] for item_id in featured_ids if item_id in storyline_lookup]
@@ -215,11 +238,13 @@ def build_month_in_review(monthly_storylines, latest_sim_results, period_label):
         "prompt": (
             f"Write a Month in Review feature for {period_label}. Use the featured storylines below to build "
             "a coherent recap of the sim: best performances, biggest swings, weirdest result, and what matters next. "
-            "You can pull from any linked JSON source if the strongest story sits outside the featured shortlist."
+            "You can pull from any linked JSON source if the strongest story sits outside the featured shortlist. "
+            "Use star-player context when it helps explain a result, a hot team, or why a matchup mattered."
         ),
         "writerNotes": [
             "Lead with the strongest monthly theme, not just the biggest scoreline.",
             "Work across tiers if the month demands it.",
+            "Mention star players naturally, not as a checklist.",
             "End with a forward-looking note about next month.",
         ],
         "availableContext": [
@@ -230,9 +255,12 @@ def build_month_in_review(monthly_storylines, latest_sim_results, period_label):
             "../../1build/database/monthly/latest_sim_results.json",
             "../../1build/database/standings.json",
             "../../1build/database/game_results.json",
+            "../../1build/database/teams.json",
+            "../../1build/database/players.json",
             "../../1build/database/freeagents.json",
         ],
         "featuredStorylines": featured,
+        "teamStarPlayers": compact_team_stars(team_star_lookup),
         "latestSimGameCount": len(latest_sim_results.get("results", [])),
     }
 
@@ -245,8 +273,10 @@ def main():
     overall_team_form = load_json(OVERALL_TEAM_FORM_PATH)
     tier_race_snapshot = load_json(TIER_RACE_SNAPSHOT_PATH)
     monthly_storylines = load_json(MONTHLY_STORYLINES_PATH)
+    teams = load_json(TEAMS_PATH)
 
     period_label = latest_sim_results.get("period", {}).get("label", "Latest Sim")
+    team_star_lookup = build_team_star_lookup(teams)
 
     output = {
         "source": [
@@ -255,13 +285,14 @@ def main():
             "../../1build/database/monthly/overall_team_form.json",
             "../../1build/database/monthly/tier_race_snapshot.json",
             "../../1build/database/monthly/monthly_storylines.json",
+            "../../1build/database/teams.json",
         ],
         "period": latest_sim_results.get("period", {}),
         "package": {
-            "powerRankings": build_power_rankings(overall_team_form, monthly_team_form, period_label),
+            "powerRankings": build_power_rankings(overall_team_form, monthly_team_form, period_label, team_star_lookup),
             "promotionRelegationWatch": build_race_watch(tier_race_snapshot, period_label),
             "stockUpStockDown": build_stock_report(monthly_team_form, period_label),
-            "monthInReview": build_month_in_review(monthly_storylines, latest_sim_results, period_label),
+            "monthInReview": build_month_in_review(monthly_storylines, latest_sim_results, period_label, team_star_lookup),
         },
     }
 

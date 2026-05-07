@@ -4,7 +4,8 @@
         "../../1build/database/monthly/monthly_team_form.json",
         "../../1build/database/monthly/overall_team_form.json",
         "../../1build/database/monthly/tier_race_snapshot.json",
-        "../../1build/database/monthly/monthly_storylines.json"
+        "../../1build/database/monthly/monthly_storylines.json",
+        "../../1build/database/teams.json"
     ],
     "period": {
         "year": 1981,
@@ -20,11 +21,12 @@
                 "title": "Tier 1 Power Rankings",
                 "period": "November 1981",
                 "previousArticle": "../articles/clb_power_rankings_1_0.html",
-                "prompt": "Write a Tier 1 power rankings article for November 1981. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note changes from the last published power rankings article if those changes feel meaningful, but do not force movement notes for every team. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board.",
+                "prompt": "Write a Tier 1 power rankings article for November 1981. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note changes from the last published power rankings article if those changes feel meaningful, but do not force movement notes for every team. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board. When it fits the article, mention the listed star players as roster context; starPlayer is the highest OVR player on that team's current roster.",
                 "writerNotes": [
                     "Use the team pool as context, not as a locked final order.",
                     "Base the ranking on overall form, not just one sim.",
                     "Use the latest sim to justify movement, momentum, and skepticism.",
+                    "Work in star-player mentions for the biggest teams, risers, fallers, or arguments where roster quality matters.",
                     "Call out at least one riser, one faller, and one team you are still unsure about."
                 ],
                 "availableContext": [
@@ -78,7 +80,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster6.htm"
+                        "rosterUrl": "./rosters/roster6.htm",
+                        "starPlayer": {
+                            "name": "Artis Gilmore",
+                            "url": "../players/player707.htm",
+                            "pos": "C",
+                            "age": "30",
+                            "overall": "135",
+                            "potential": "137"
+                        }
                     },
                     {
                         "team": "AFC Richmond",
@@ -126,7 +136,15 @@
                             },
                             "closeGameCount": 1
                         },
-                        "rosterUrl": "./rosters/roster12.htm"
+                        "rosterUrl": "./rosters/roster12.htm",
+                        "starPlayer": {
+                            "name": "Magic Johnson",
+                            "url": "../players/player698.htm",
+                            "pos": "PG",
+                            "age": "20",
+                            "overall": "164",
+                            "potential": "173"
+                        }
                     },
                     {
                         "team": "Bayern Munich",
@@ -174,7 +192,15 @@
                             "worstLoss": null,
                             "closeGameCount": 1
                         },
-                        "rosterUrl": "./rosters/roster7.htm"
+                        "rosterUrl": "./rosters/roster7.htm",
+                        "starPlayer": {
+                            "name": "Bernard King",
+                            "url": "../players/player713.htm",
+                            "pos": "SF",
+                            "age": "21",
+                            "overall": "120",
+                            "potential": "127"
+                        }
                     },
                     {
                         "team": "Atletico Madrid",
@@ -214,7 +240,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster11.htm"
+                        "rosterUrl": "./rosters/roster11.htm",
+                        "starPlayer": {
+                            "name": "James Donaldson",
+                            "url": "../players/player712.htm",
+                            "pos": "C",
+                            "age": "22",
+                            "overall": "119",
+                            "potential": "127"
+                        }
                     },
                     {
                         "team": "Brighton",
@@ -262,7 +296,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster10.htm"
+                        "rosterUrl": "./rosters/roster10.htm",
+                        "starPlayer": {
+                            "name": "Kiki Vandeweghe",
+                            "url": "../players/player701.htm",
+                            "pos": "SF",
+                            "age": "21",
+                            "overall": "131",
+                            "potential": "145"
+                        }
                     },
                     {
                         "team": "Real Madrid",
@@ -302,7 +344,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster8.htm"
+                        "rosterUrl": "./rosters/roster8.htm",
+                        "starPlayer": {
+                            "name": "Sidney Moncrief",
+                            "url": "../players/player699.htm",
+                            "pos": "PG",
+                            "age": "22",
+                            "overall": "129",
+                            "potential": "146"
+                        }
                     },
                     {
                         "team": "AC Milan",
@@ -350,7 +400,15 @@
                             },
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster9.htm"
+                        "rosterUrl": "./rosters/roster9.htm",
+                        "starPlayer": {
+                            "name": "Larry Bird",
+                            "url": "../players/player697.htm",
+                            "pos": "SF",
+                            "age": "21",
+                            "overall": "161",
+                            "potential": "175"
+                        }
                     },
                     {
                         "team": "Manchester United",
@@ -390,7 +448,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster5.htm"
+                        "rosterUrl": "./rosters/roster5.htm",
+                        "starPlayer": {
+                            "name": "Walter Davis",
+                            "url": "../players/player706.htm",
+                            "pos": "SG",
+                            "age": "25",
+                            "overall": "128",
+                            "potential": "136"
+                        }
                     }
                 ]
             },
@@ -401,11 +467,12 @@
                 "title": "Tier 2 Power Rankings",
                 "period": "November 1981",
                 "previousArticle": "../articles/elb_power_rankings_1_0.html",
-                "prompt": "Write a Tier 2 power rankings article for November 1981. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note changes from the last published power rankings article if those changes feel meaningful, but do not force movement notes for every team. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board.",
+                "prompt": "Write a Tier 2 power rankings article for November 1981. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note changes from the last published power rankings article if those changes feel meaningful, but do not force movement notes for every team. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board. When it fits the article, mention the listed star players as roster context; starPlayer is the highest OVR player on that team's current roster.",
                 "writerNotes": [
                     "Use the team pool as context, not as a locked final order.",
                     "Base the ranking on overall form, not just one sim.",
                     "Use the latest sim to justify movement, momentum, and skepticism.",
+                    "Work in star-player mentions for the biggest teams, risers, fallers, or arguments where roster quality matters.",
                     "Call out at least one riser, one faller, and one team you are still unsure about."
                 ],
                 "availableContext": [
@@ -459,7 +526,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster17.htm"
+                        "rosterUrl": "./rosters/roster17.htm",
+                        "starPlayer": {
+                            "name": "Jack Sikma",
+                            "url": "../players/player870.htm",
+                            "pos": "C",
+                            "age": "22",
+                            "overall": "137",
+                            "potential": "139"
+                        }
                     },
                     {
                         "team": "Benfica",
@@ -507,7 +582,15 @@
                             "worstLoss": null,
                             "closeGameCount": 1
                         },
-                        "rosterUrl": "./rosters/roster13.htm"
+                        "rosterUrl": "./rosters/roster13.htm",
+                        "starPlayer": {
+                            "name": "Moses Malone",
+                            "url": "../players/player872.htm",
+                            "pos": "C",
+                            "age": "24",
+                            "overall": "148",
+                            "potential": "151"
+                        }
                     },
                     {
                         "team": "Marseille",
@@ -547,7 +630,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster15.htm"
+                        "rosterUrl": "./rosters/roster15.htm",
+                        "starPlayer": {
+                            "name": "Robert Parish",
+                            "url": "../players/player873.htm",
+                            "pos": "C",
+                            "age": "26",
+                            "overall": "137",
+                            "potential": "140"
+                        }
                     },
                     {
                         "team": "Sheffield United",
@@ -587,7 +678,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster16.htm"
+                        "rosterUrl": "./rosters/roster16.htm",
+                        "starPlayer": {
+                            "name": "Rickey Green",
+                            "url": "../players/player882.htm",
+                            "pos": "PG",
+                            "age": "25",
+                            "overall": "119",
+                            "potential": "124"
+                        }
                     },
                     {
                         "team": "Juventus",
@@ -635,7 +734,15 @@
                             },
                             "closeGameCount": 1
                         },
-                        "rosterUrl": "./rosters/roster14.htm"
+                        "rosterUrl": "./rosters/roster14.htm",
+                        "starPlayer": {
+                            "name": "Kareem Abdul-Jabbar",
+                            "url": "../players/player877.htm",
+                            "pos": "C",
+                            "age": "32",
+                            "overall": "131",
+                            "potential": "132"
+                        }
                     },
                     {
                         "team": "Monaco",
@@ -675,7 +782,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster20.htm"
+                        "rosterUrl": "./rosters/roster20.htm",
+                        "starPlayer": {
+                            "name": "Purvis Short",
+                            "url": "../players/player879.htm",
+                            "pos": "SF",
+                            "age": "22",
+                            "overall": "118",
+                            "potential": "130"
+                        }
                     },
                     {
                         "team": "Ajax",
@@ -715,7 +830,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster18.htm"
+                        "rosterUrl": "./rosters/roster18.htm",
+                        "starPlayer": {
+                            "name": "Cliff Robinson",
+                            "url": "../players/player881.htm",
+                            "pos": "SF",
+                            "age": "19",
+                            "overall": "119",
+                            "potential": "122"
+                        }
                     },
                     {
                         "team": "Aston Villa",
@@ -747,7 +870,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster19.htm"
+                        "rosterUrl": "./rosters/roster19.htm",
+                        "starPlayer": {
+                            "name": "Bill Laimbeer",
+                            "url": "../players/player874.htm",
+                            "pos": "C",
+                            "age": "22",
+                            "overall": "121",
+                            "potential": "143"
+                        }
                     }
                 ]
             },
@@ -758,11 +889,12 @@
                 "title": "Tier 3 Power Rankings",
                 "period": "November 1981",
                 "previousArticle": "../articles/ecl_power_rankings_1_0.html",
-                "prompt": "Write a Tier 3 power rankings article for November 1981. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note changes from the last published power rankings article if those changes feel meaningful, but do not force movement notes for every team. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board.",
+                "prompt": "Write a Tier 3 power rankings article for November 1981. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note changes from the last published power rankings article if those changes feel meaningful, but do not force movement notes for every team. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board. When it fits the article, mention the listed star players as roster context; starPlayer is the highest OVR player on that team's current roster.",
                 "writerNotes": [
                     "Use the team pool as context, not as a locked final order.",
                     "Base the ranking on overall form, not just one sim.",
                     "Use the latest sim to justify movement, momentum, and skepticism.",
+                    "Work in star-player mentions for the biggest teams, risers, fallers, or arguments where roster quality matters.",
                     "Call out at least one riser, one faller, and one team you are still unsure about."
                 ],
                 "availableContext": [
@@ -816,7 +948,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster28.htm"
+                        "rosterUrl": "./rosters/roster28.htm",
+                        "starPlayer": {
+                            "name": "Allen Leavell",
+                            "url": "../players/player1054.htm",
+                            "pos": "PG",
+                            "age": "22",
+                            "overall": "117",
+                            "potential": "118"
+                        }
                     },
                     {
                         "team": "Paris Saint-Germain",
@@ -864,7 +1004,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster21.htm"
+                        "rosterUrl": "./rosters/roster21.htm",
+                        "starPlayer": {
+                            "name": "Joe Barry Carroll",
+                            "url": "../players/player710.htm",
+                            "pos": "C",
+                            "age": "21",
+                            "overall": "118",
+                            "potential": "128"
+                        }
                     },
                     {
                         "team": "FL Fart",
@@ -904,7 +1052,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster27.htm"
+                        "rosterUrl": "./rosters/roster27.htm",
+                        "starPlayer": {
+                            "name": "Alton Lister",
+                            "url": "../players/player1050.htm",
+                            "pos": "C",
+                            "age": "21",
+                            "overall": "115",
+                            "potential": "123"
+                        }
                     },
                     {
                         "team": "Barcelona",
@@ -944,7 +1100,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster24.htm"
+                        "rosterUrl": "./rosters/roster24.htm",
+                        "starPlayer": {
+                            "name": "Kelly Tripucka",
+                            "url": "../players/player1049.htm",
+                            "pos": "SF",
+                            "age": "20",
+                            "overall": "122",
+                            "potential": "135"
+                        }
                     },
                     {
                         "team": "Tottenham Hotspur",
@@ -992,7 +1156,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster22.htm"
+                        "rosterUrl": "./rosters/roster22.htm",
+                        "starPlayer": {
+                            "name": "John Long",
+                            "url": "../players/player1052.htm",
+                            "pos": "SG",
+                            "age": "23",
+                            "overall": "114",
+                            "potential": "123"
+                        }
                     },
                     {
                         "team": "Sporting CP",
@@ -1040,7 +1212,15 @@
                             },
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster23.htm"
+                        "rosterUrl": "./rosters/roster23.htm",
+                        "starPlayer": {
+                            "name": "Buck Williams",
+                            "url": "../players/player1051.htm",
+                            "pos": "PF",
+                            "age": "19",
+                            "overall": "121",
+                            "potential": "130"
+                        }
                     },
                     {
                         "team": "Valencia",
@@ -1080,7 +1260,15 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster25.htm"
+                        "rosterUrl": "./rosters/roster25.htm",
+                        "starPlayer": {
+                            "name": "Isiah Thomas",
+                            "url": "../players/player1047.htm",
+                            "pos": "PG",
+                            "age": "18",
+                            "overall": "123",
+                            "potential": "141"
+                        }
                     },
                     {
                         "team": "Inter Milan",
@@ -1128,7 +1316,15 @@
                             },
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster26.htm"
+                        "rosterUrl": "./rosters/roster26.htm",
+                        "starPlayer": {
+                            "name": "World B. Free",
+                            "url": "../players/player1048.htm",
+                            "pos": "PG",
+                            "age": "24",
+                            "overall": "128",
+                            "potential": "134"
+                        }
                     }
                 ]
             }
@@ -1677,10 +1873,11 @@
             "type": "month_in_review",
             "title": "Month in Review",
             "period": "November 1981",
-            "prompt": "Write a Month in Review feature for November 1981. Use the featured storylines below to build a coherent recap of the sim: best performances, biggest swings, weirdest result, and what matters next. You can pull from any linked JSON source if the strongest story sits outside the featured shortlist.",
+            "prompt": "Write a Month in Review feature for November 1981. Use the featured storylines below to build a coherent recap of the sim: best performances, biggest swings, weirdest result, and what matters next. You can pull from any linked JSON source if the strongest story sits outside the featured shortlist. Use star-player context when it helps explain a result, a hot team, or why a matchup mattered.",
             "writerNotes": [
                 "Lead with the strongest monthly theme, not just the biggest scoreline.",
                 "Work across tiers if the month demands it.",
+                "Mention star players naturally, not as a checklist.",
                 "End with a forward-looking note about next month."
             ],
             "availableContext": [
@@ -1691,6 +1888,8 @@
                 "../../1build/database/monthly/latest_sim_results.json",
                 "../../1build/database/standings.json",
                 "../../1build/database/game_results.json",
+                "../../1build/database/teams.json",
+                "../../1build/database/players.json",
                 "../../1build/database/freeagents.json"
             ],
             "featuredStorylines": [
@@ -1821,6 +2020,272 @@
                         "loser": "roster21",
                         "loserName": "Paris Saint-Germain",
                         "margin": 18
+                    }
+                }
+            ],
+            "teamStarPlayers": [
+                {
+                    "team": "AC Milan",
+                    "starPlayer": {
+                        "name": "Larry Bird",
+                        "url": "../players/player697.htm",
+                        "pos": "SF",
+                        "age": "21",
+                        "overall": "161",
+                        "potential": "175"
+                    }
+                },
+                {
+                    "team": "AFC Richmond",
+                    "starPlayer": {
+                        "name": "Magic Johnson",
+                        "url": "../players/player698.htm",
+                        "pos": "PG",
+                        "age": "20",
+                        "overall": "164",
+                        "potential": "173"
+                    }
+                },
+                {
+                    "team": "Ajax",
+                    "starPlayer": {
+                        "name": "Cliff Robinson",
+                        "url": "../players/player881.htm",
+                        "pos": "SF",
+                        "age": "19",
+                        "overall": "119",
+                        "potential": "122"
+                    }
+                },
+                {
+                    "team": "Aston Villa",
+                    "starPlayer": {
+                        "name": "Bill Laimbeer",
+                        "url": "../players/player874.htm",
+                        "pos": "C",
+                        "age": "22",
+                        "overall": "121",
+                        "potential": "143"
+                    }
+                },
+                {
+                    "team": "Atletico Madrid",
+                    "starPlayer": {
+                        "name": "James Donaldson",
+                        "url": "../players/player712.htm",
+                        "pos": "C",
+                        "age": "22",
+                        "overall": "119",
+                        "potential": "127"
+                    }
+                },
+                {
+                    "team": "Barcelona",
+                    "starPlayer": {
+                        "name": "Kelly Tripucka",
+                        "url": "../players/player1049.htm",
+                        "pos": "SF",
+                        "age": "20",
+                        "overall": "122",
+                        "potential": "135"
+                    }
+                },
+                {
+                    "team": "Bayern Munich",
+                    "starPlayer": {
+                        "name": "Bernard King",
+                        "url": "../players/player713.htm",
+                        "pos": "SF",
+                        "age": "21",
+                        "overall": "120",
+                        "potential": "127"
+                    }
+                },
+                {
+                    "team": "Benfica",
+                    "starPlayer": {
+                        "name": "Moses Malone",
+                        "url": "../players/player872.htm",
+                        "pos": "C",
+                        "age": "24",
+                        "overall": "148",
+                        "potential": "151"
+                    }
+                },
+                {
+                    "team": "Brighton",
+                    "starPlayer": {
+                        "name": "Kiki Vandeweghe",
+                        "url": "../players/player701.htm",
+                        "pos": "SF",
+                        "age": "21",
+                        "overall": "131",
+                        "potential": "145"
+                    }
+                },
+                {
+                    "team": "Chelsea",
+                    "starPlayer": {
+                        "name": "Jack Sikma",
+                        "url": "../players/player870.htm",
+                        "pos": "C",
+                        "age": "22",
+                        "overall": "137",
+                        "potential": "139"
+                    }
+                },
+                {
+                    "team": "Crystal Palace",
+                    "starPlayer": {
+                        "name": "Artis Gilmore",
+                        "url": "../players/player707.htm",
+                        "pos": "C",
+                        "age": "30",
+                        "overall": "135",
+                        "potential": "137"
+                    }
+                },
+                {
+                    "team": "FL Fart",
+                    "starPlayer": {
+                        "name": "Alton Lister",
+                        "url": "../players/player1050.htm",
+                        "pos": "C",
+                        "age": "21",
+                        "overall": "115",
+                        "potential": "123"
+                    }
+                },
+                {
+                    "team": "Inter Milan",
+                    "starPlayer": {
+                        "name": "World B. Free",
+                        "url": "../players/player1048.htm",
+                        "pos": "PG",
+                        "age": "24",
+                        "overall": "128",
+                        "potential": "134"
+                    }
+                },
+                {
+                    "team": "Juventus",
+                    "starPlayer": {
+                        "name": "Kareem Abdul-Jabbar",
+                        "url": "../players/player877.htm",
+                        "pos": "C",
+                        "age": "32",
+                        "overall": "131",
+                        "potential": "132"
+                    }
+                },
+                {
+                    "team": "Manchester City",
+                    "starPlayer": {
+                        "name": "Allen Leavell",
+                        "url": "../players/player1054.htm",
+                        "pos": "PG",
+                        "age": "22",
+                        "overall": "117",
+                        "potential": "118"
+                    }
+                },
+                {
+                    "team": "Manchester United",
+                    "starPlayer": {
+                        "name": "Walter Davis",
+                        "url": "../players/player706.htm",
+                        "pos": "SG",
+                        "age": "25",
+                        "overall": "128",
+                        "potential": "136"
+                    }
+                },
+                {
+                    "team": "Marseille",
+                    "starPlayer": {
+                        "name": "Robert Parish",
+                        "url": "../players/player873.htm",
+                        "pos": "C",
+                        "age": "26",
+                        "overall": "137",
+                        "potential": "140"
+                    }
+                },
+                {
+                    "team": "Monaco",
+                    "starPlayer": {
+                        "name": "Purvis Short",
+                        "url": "../players/player879.htm",
+                        "pos": "SF",
+                        "age": "22",
+                        "overall": "118",
+                        "potential": "130"
+                    }
+                },
+                {
+                    "team": "Paris Saint-Germain",
+                    "starPlayer": {
+                        "name": "Joe Barry Carroll",
+                        "url": "../players/player710.htm",
+                        "pos": "C",
+                        "age": "21",
+                        "overall": "118",
+                        "potential": "128"
+                    }
+                },
+                {
+                    "team": "Real Madrid",
+                    "starPlayer": {
+                        "name": "Sidney Moncrief",
+                        "url": "../players/player699.htm",
+                        "pos": "PG",
+                        "age": "22",
+                        "overall": "129",
+                        "potential": "146"
+                    }
+                },
+                {
+                    "team": "Sheffield United",
+                    "starPlayer": {
+                        "name": "Rickey Green",
+                        "url": "../players/player882.htm",
+                        "pos": "PG",
+                        "age": "25",
+                        "overall": "119",
+                        "potential": "124"
+                    }
+                },
+                {
+                    "team": "Sporting CP",
+                    "starPlayer": {
+                        "name": "Buck Williams",
+                        "url": "../players/player1051.htm",
+                        "pos": "PF",
+                        "age": "19",
+                        "overall": "121",
+                        "potential": "130"
+                    }
+                },
+                {
+                    "team": "Tottenham Hotspur",
+                    "starPlayer": {
+                        "name": "John Long",
+                        "url": "../players/player1052.htm",
+                        "pos": "SG",
+                        "age": "23",
+                        "overall": "114",
+                        "potential": "123"
+                    }
+                },
+                {
+                    "team": "Valencia",
+                    "starPlayer": {
+                        "name": "Isiah Thomas",
+                        "url": "../players/player1047.htm",
+                        "pos": "PG",
+                        "age": "18",
+                        "overall": "123",
+                        "potential": "141"
                     }
                 }
             ],
