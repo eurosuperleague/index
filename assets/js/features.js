@@ -215,7 +215,7 @@
       "Benfica": "benfica.jpg",
       "Juventus": "juventus.jpg",
       "Marseille": "marseille.jpg",
-      "Sheffield United": "arsenal.jpg",
+      "Sheffield United": "sheffield.jpg",
       "Chelsea": "chelsea.jpg",
       "Ajax": "ajax.jpg",
       "Aston Villa": "astonvilla.jpg",
@@ -226,7 +226,8 @@
       "Barcelona": "barcelona.jpg",
       "Valencia": "valencia.jpg",
       "Inter Milan": "intermilan.jpg",
-      "Manchester City": "dortmund.jpg"
+      "Manchester City": "manchestercity.jpg",
+      "FL Fart": "flfart.jpg"
     };
 
     return photoMap[teamName] || "";

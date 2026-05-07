@@ -19,9 +19,16 @@ TEAMS_OUT = os.path.join(DATABASE_DIR, "teams.json")
 STANDINGS_OUT = os.path.join(DATABASE_DIR, "standings.json")
 CAPREPORT_OUT = os.path.join(DATABASE_DIR, "capreport.json")
 INJURIES_OUT = os.path.join(DATABASE_DIR, "injuries.json")
+SCHEDULE_OUT = os.path.join(DATABASE_DIR, "schedule.json")
+FREE_AGENTS_OUT = os.path.join(DATABASE_DIR, "freeagents.json")
+LEADERS_OUT = os.path.join(DATABASE_DIR, "leaders.json")
+GAME_RESULTS_OUT = os.path.join(DATABASE_DIR, "game_results.json")
 STANDINGS_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "standings.htm"))
 CAPREPORT_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "capreport.htm"))
 INJURIES_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "injuries.htm"))
+SCHEDULE_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "schedule.htm"))
+FREE_AGENTS_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "freeagents.htm"))
+LEADERS_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "leaders.htm"))
 MDB_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "LeagueOutput.mdb"))
 
 # The 16 numerical stats in your roster files
@@ -729,6 +736,376 @@ def parse_injuries(html, team_lookup):
 
     return injuries
 
+
+def extract_rating_color(cell_html):
+    color_match = re.search(r"bgcolor=([#A-Za-z0-9]+)", cell_html, re.IGNORECASE)
+    return color_match.group(1) if color_match else ""
+
+
+def parse_free_agents(html, ratings_by_name):
+    normalized_html = re.sub(
+        r"<table border=1 cellpadding=0 cellspacing=0><td bgcolor=([#A-Za-z0-9]+) width=10 height=10></td></tr></table>",
+        lambda match: f"__COLOR__{match.group(1)}__",
+        html,
+        flags=re.IGNORECASE,
+    )
+    row_matches = re.findall(
+        r"<tr align=center class=(row1|row2)>(.*?)</tr>",
+        normalized_html,
+        re.IGNORECASE | re.DOTALL,
+    )
+    free_agents = []
+
+    for row_class, row_html in row_matches:
+        cells = re.findall(r"<td[^>]*class=main[^>]*>(.*?)</td>", row_html, re.IGNORECASE | re.DOTALL)
+        if len(cells) < 24:
+            continue
+
+        player_link = re.search(
+            r'<a[^>]+href=(["\']?)([^"\'\s>]+)\1[^>]*>(.*?)</a>',
+            cells[1],
+            re.IGNORECASE | re.DOTALL,
+        )
+        if not player_link:
+            continue
+
+        name = strip_tags(player_link.group(3))
+        ratings = ratings_by_name.get(normalize_name(name), {})
+        player_url = normalize_schedule_url(player_link.group(2))
+        player_file = player_url.split("/")[-1]
+        player_number = parse_numeric_value(cells[0])
+        cur_color_match = re.search(r"__COLOR__([#A-Za-z0-9]+)__", cells[6], re.IGNORECASE)
+        fut_color_match = re.search(r"__COLOR__([#A-Za-z0-9]+)__", cells[7], re.IGNORECASE)
+        cur_color = cur_color_match.group(1) if cur_color_match else extract_rating_color(cells[6])
+        fut_color = fut_color_match.group(1) if fut_color_match else extract_rating_color(cells[7])
+
+        agent = {
+            "number": player_number,
+            "name": name,
+            "url": player_url,
+            "file": player_file,
+            "pos": strip_tags(cells[2]),
+            "age": parse_numeric_value(cells[3]),
+            "ht": strip_tags(cells[4]),
+            "wt": parse_numeric_value(cells[5]),
+            "currentRatingColor": cur_color,
+            "futureRatingColor": fut_color,
+            "currentRating": ratings.get("overall", "") or "",
+            "futureRating": ratings.get("potential", "") or "",
+            "Ins": parse_numeric_value(cells[8]),
+            "Jps": parse_numeric_value(cells[9]),
+            "Fts": parse_numeric_value(cells[10]),
+            "3ps": parse_numeric_value(cells[11]),
+            "Hnd": parse_numeric_value(cells[12]),
+            "Pas": parse_numeric_value(cells[13]),
+            "Orb": parse_numeric_value(cells[14]),
+            "Drb": parse_numeric_value(cells[15]),
+            "Psd": parse_numeric_value(cells[16]),
+            "Prd": parse_numeric_value(cells[17]),
+            "Stl": parse_numeric_value(cells[18]),
+            "Blk": parse_numeric_value(cells[19]),
+            "Qkn": parse_numeric_value(cells[20]),
+            "Jmp": parse_numeric_value(cells[21]),
+            "Str": parse_numeric_value(cells[22]),
+            "Sta": parse_numeric_value(cells[23]),
+            "rowClass": row_class.lower(),
+        }
+        free_agents.append(agent)
+
+    return free_agents
+
+
+def parse_leader_rows(table_html, team_lookup):
+    row_matches = re.findall(
+        r"<tr class=(row1|row2)>(.*?)</tr>",
+        table_html,
+        re.IGNORECASE | re.DOTALL,
+    )
+    leaders = []
+
+    for row_class, row_html in row_matches:
+        cells = re.findall(r"<td[^>]*class=main[^>]*>(.*?)</td>", row_html, re.IGNORECASE | re.DOTALL)
+        if len(cells) < 5:
+            continue
+
+        rank = parse_numeric_value(cells[0])
+        player_link = re.search(
+            r'<a[^>]+href=(["\']?)([^"\'\s>]+)\1[^>]*>(.*?)</a>',
+            cells[2],
+            re.IGNORECASE | re.DOTALL,
+        )
+        team_link = re.search(
+            r'<a[^>]+href=(["\']?)([^"\'\s>]+)\1[^>]*>(.*?)</a>',
+            cells[3],
+            re.IGNORECASE | re.DOTALL,
+        )
+
+        player_name = strip_tags(cells[2])
+        team_name = strip_tags(cells[3])
+        value_text = strip_tags(cells[4])
+
+        if player_name == "" and team_name == "" and value_text == "":
+            continue
+
+        leaders.append(
+            {
+                "rank": rank,
+                "player": player_name,
+                "playerUrl": normalize_schedule_url(player_link.group(2)) if player_link else "",
+                "playerFile": normalize_schedule_url(player_link.group(2)).split("/")[-1] if player_link else "",
+                "team": team_lookup.get(normalize_name(team_name), team_name) if team_name else "",
+                "teamName": team_name,
+                "teamUrl": normalize_schedule_url(team_link.group(2)) if team_link else "",
+                "teamFile": normalize_schedule_url(team_link.group(2)).split("/")[-1] if team_link else "",
+                "value": parse_numeric_value(value_text),
+                "valueText": value_text,
+                "rowClass": row_class.lower(),
+            }
+        )
+
+    return leaders
+
+
+def parse_leaders_sections(html, team_lookup):
+    sections = []
+    title_matches = list(
+        re.finditer(r"<tr><td class=newheader>(.*?)</td></tr>", html, re.IGNORECASE | re.DOTALL)
+    )
+
+    for index, title_match in enumerate(title_matches):
+        title = strip_tags(title_match.group(1))
+        start = title_match.end()
+        end = title_matches[index + 1].start() if index + 1 < len(title_matches) else len(html)
+        section_html = html[start:end]
+        categories = []
+        table_matches = re.findall(
+            r"<table width=375 border=0 cellspacing=0 cellpadding=0>(.*?)</table>",
+            section_html,
+            re.IGNORECASE | re.DOTALL,
+        )
+
+        for table_html in table_matches:
+            category_match = re.search(
+                r"<tr><td class=tableheader colspan=6>&nbsp;(.*?)</td></tr>",
+                table_html,
+                re.IGNORECASE | re.DOTALL,
+            )
+            if not category_match:
+                continue
+
+            category_name = strip_tags(category_match.group(1))
+            leaders = parse_leader_rows(table_html, team_lookup)
+            categories.append(
+                {
+                    "title": category_name,
+                    "slug": re.sub(r"[^a-z0-9]+", "-", category_name.lower()).strip("-"),
+                    "leaders": leaders,
+                }
+            )
+
+        sections.append(
+            {
+                "title": title,
+                "slug": re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-"),
+                "categories": categories,
+            }
+        )
+
+    return sections
+
+
+def normalize_schedule_url(url):
+    return clean(url).replace("\\", "/")
+
+
+def strip_leading_at_sign(value):
+    text = clean(value)
+    if text.startswith("@"):
+        return clean(text[1:])
+    return text
+
+
+def parse_played_schedule_game(game_html, team_lookup):
+    link_match = re.search(
+        r"<a[^>]+href=(['\"]?)([^'\"\s>]+)\1[^>]*>(.*?)</a>",
+        game_html,
+        re.IGNORECASE | re.DOTALL,
+    )
+    if not link_match:
+        return None
+
+    boxscore_url = normalize_schedule_url(link_match.group(2))
+    summary = strip_tags(link_match.group(3))
+    score_match = re.match(
+        r"(?P<first>.+?)\s+(?P<first_score>\d+)\s*,\s*(?P<second>.+?)\s+(?P<second_score>\d+)$",
+        summary,
+        re.IGNORECASE,
+    )
+    if not score_match:
+        return None
+
+    first_raw = clean(score_match.group("first"))
+    second_raw = clean(score_match.group("second"))
+    first_team = strip_leading_at_sign(first_raw)
+    second_team = strip_leading_at_sign(second_raw)
+    first_score = int(score_match.group("first_score"))
+    second_score = int(score_match.group("second_score"))
+    first_is_home = first_raw.startswith("@")
+    second_is_home = second_raw.startswith("@")
+
+    if first_is_home == second_is_home:
+        return None
+
+    if first_is_home:
+        home_team, home_score = first_team, first_score
+        away_team, away_score = second_team, second_score
+    else:
+        home_team, home_score = second_team, second_score
+        away_team, away_score = first_team, first_score
+
+    return {
+        "status": "completed",
+        "matchupText": summary,
+        "boxscoreUrl": boxscore_url,
+        "boxscoreFile": boxscore_url.split("/")[-1],
+        "homeTeam": team_lookup.get(normalize_name(home_team), home_team),
+        "homeTeamName": home_team,
+        "homeScore": home_score,
+        "awayTeam": team_lookup.get(normalize_name(away_team), away_team),
+        "awayTeamName": away_team,
+        "awayScore": away_score,
+        "winner": team_lookup.get(normalize_name(home_team), home_team) if home_score > away_score else team_lookup.get(normalize_name(away_team), away_team),
+        "winnerName": home_team if home_score > away_score else away_team,
+        "margin": abs(home_score - away_score),
+    }
+
+
+def parse_scheduled_game_links(game_html, team_lookup):
+    link_matches = re.findall(
+        r"<a[^>]+href=(['\"]?)([^'\"\s>]+)\1[^>]*>(.*?)</a>",
+        game_html,
+        re.IGNORECASE | re.DOTALL,
+    )
+    if len(link_matches) < 2:
+        return None
+
+    away_url = normalize_schedule_url(link_matches[0][1])
+    away_name = strip_tags(link_matches[0][2])
+    home_url = normalize_schedule_url(link_matches[1][1])
+    home_name = strip_tags(link_matches[1][2])
+
+    return {
+        "status": "scheduled",
+        "matchupText": strip_tags(game_html),
+        "awayTeam": team_lookup.get(normalize_name(away_name), away_name),
+        "awayTeamName": away_name,
+        "awayRosterUrl": away_url,
+        "awayRosterFile": away_url.split("/")[-1],
+        "homeTeam": team_lookup.get(normalize_name(home_name), home_name),
+        "homeTeamName": home_name,
+        "homeRosterUrl": home_url,
+        "homeRosterFile": home_url.split("/")[-1],
+    }
+
+
+def parse_schedule_sections(html, team_lookup):
+    sections = []
+    section_matches = list(
+        re.finditer(r"<tr><td class=tableheader>&nbsp;(.*?)</td></tr>", html, re.IGNORECASE | re.DOTALL)
+    )
+
+    for index, section_match in enumerate(section_matches):
+        section_title = strip_tags(section_match.group(1))
+        start = section_match.end()
+        end = section_matches[index + 1].start() if index + 1 < len(section_matches) else len(html)
+        section_html = html[start:end]
+        date_tables = re.findall(
+            r"<table width=250 border=0 cellspacing=0 cellpadding=0>(.*?)</table>",
+            section_html,
+            re.IGNORECASE | re.DOTALL,
+        )
+        days = []
+
+        for table_html in date_tables:
+            date_match = re.search(
+                r"<td class=header[^>]*>&nbsp;(.*?)</td>",
+                table_html,
+                re.IGNORECASE | re.DOTALL,
+            )
+            if not date_match:
+                continue
+
+            date_text = strip_tags(date_match.group(1))
+            row_matches = re.findall(
+                r"<tr[^>]*class=(row1|row2)[^>]*>\s*<td[^>]*class=main[^>]*>(.*?)</td>\s*</tr>",
+                table_html,
+                re.IGNORECASE | re.DOTALL,
+            )
+            games = []
+
+            for row_class, game_html in row_matches:
+                game = parse_played_schedule_game(game_html, team_lookup)
+                if not game:
+                    game = parse_scheduled_game_links(game_html, team_lookup)
+                if not game:
+                    continue
+
+                game["rowClass"] = row_class.lower()
+                games.append(game)
+
+            if games:
+                days.append(
+                    {
+                        "date": date_text,
+                        "games": games,
+                    }
+                )
+
+        if days:
+            sections.append(
+                {
+                    "title": section_title,
+                    "slug": re.sub(r"[^a-z0-9]+", "-", section_title.lower()).strip("-"),
+                    "days": days,
+                }
+            )
+
+    return sections
+
+
+def build_game_results(schedule_sections):
+    results = []
+
+    for section in schedule_sections:
+        for day in section.get("days", []):
+            for game in day.get("games", []):
+                if game.get("status") != "completed":
+                    continue
+
+                results.append(
+                    {
+                        "section": section.get("title", ""),
+                        "sectionSlug": section.get("slug", ""),
+                        "date": day.get("date", ""),
+                        "matchupText": game.get("matchupText", ""),
+                        "boxscoreUrl": game.get("boxscoreUrl", ""),
+                        "boxscoreFile": game.get("boxscoreFile", ""),
+                        "homeTeam": game.get("homeTeam", ""),
+                        "homeTeamName": game.get("homeTeamName", ""),
+                        "homeScore": game.get("homeScore", ""),
+                        "awayTeam": game.get("awayTeam", ""),
+                        "awayTeamName": game.get("awayTeamName", ""),
+                        "awayScore": game.get("awayScore", ""),
+                        "winner": game.get("winner", ""),
+                        "winnerName": game.get("winnerName", ""),
+                        "loser": game.get("awayTeam", "") if game.get("winner") == game.get("homeTeam") else game.get("homeTeam", ""),
+                        "loserName": game.get("awayTeamName", "") if game.get("winner") == game.get("homeTeam") else game.get("homeTeamName", ""),
+                        "margin": game.get("margin", ""),
+                    }
+                )
+
+    return results
+
 def main():
     os.makedirs(DATABASE_DIR, exist_ok=True)
 
@@ -750,6 +1127,18 @@ def main():
 
     if not os.path.exists(INJURIES_PATH):
         print(f"Error: {INJURIES_PATH} not found.")
+        return
+
+    if not os.path.exists(SCHEDULE_PATH):
+        print(f"Error: {SCHEDULE_PATH} not found.")
+        return
+
+    if not os.path.exists(FREE_AGENTS_PATH):
+        print(f"Error: {FREE_AGENTS_PATH} not found.")
+        return
+
+    if not os.path.exists(LEADERS_PATH):
+        print(f"Error: {LEADERS_PATH} not found.")
         return
 
     ratings_by_name = load_mdb_ratings()
@@ -843,6 +1232,47 @@ def main():
 
     with open(INJURIES_OUT, "w", encoding="utf-8") as f:
         json.dump(injuries_data, f, indent=4)
+
+    with open(SCHEDULE_PATH, "r", encoding="latin-1") as f:
+        schedule_html = f.read()
+
+    schedule_data = {
+        "source": os.path.basename(SCHEDULE_PATH),
+        "sections": parse_schedule_sections(schedule_html, team_lookup),
+    }
+
+    with open(SCHEDULE_OUT, "w", encoding="utf-8") as f:
+        json.dump(schedule_data, f, indent=4)
+
+    game_results_data = {
+        "source": os.path.basename(SCHEDULE_PATH),
+        "results": build_game_results(schedule_data["sections"]),
+    }
+
+    with open(GAME_RESULTS_OUT, "w", encoding="utf-8") as f:
+        json.dump(game_results_data, f, indent=4)
+
+    with open(FREE_AGENTS_PATH, "r", encoding="latin-1") as f:
+        free_agents_html = f.read()
+
+    free_agents_data = {
+        "source": os.path.basename(FREE_AGENTS_PATH),
+        "players": parse_free_agents(free_agents_html, ratings_by_name),
+    }
+
+    with open(FREE_AGENTS_OUT, "w", encoding="utf-8") as f:
+        json.dump(free_agents_data, f, indent=4)
+
+    with open(LEADERS_PATH, "r", encoding="latin-1") as f:
+        leaders_html = f.read()
+
+    leaders_data = {
+        "source": os.path.basename(LEADERS_PATH),
+        "sections": parse_leaders_sections(leaders_html, team_lookup),
+    }
+
+    with open(LEADERS_OUT, "w", encoding="utf-8") as f:
+        json.dump(leaders_data, f, indent=4)
         
     print(f"\nFinal count: {len(all_players)} players saved to {PLAYERS_OUT}")
     print(f"Final count: {len(all_player_stats)} player stat records saved to {PLAYER_STATS_OUT}")
@@ -851,6 +1281,10 @@ def main():
     print(f"Final count: {len(standings_data['sections'])} standings sections saved to {STANDINGS_OUT}")
     print(f"Final count: {len(capreport_data['sections'])} cap report sections saved to {CAPREPORT_OUT}")
     print(f"Final count: {len(injuries_data['injuries'])} injuries saved to {INJURIES_OUT}")
+    print(f"Final count: {len(schedule_data['sections'])} schedule sections saved to {SCHEDULE_OUT}")
+    print(f"Final count: {len(game_results_data['results'])} game results saved to {GAME_RESULTS_OUT}")
+    print(f"Final count: {len(free_agents_data['players'])} free agents saved to {FREE_AGENTS_OUT}")
+    print(f"Final count: {len(leaders_data['sections'])} leader sections saved to {LEADERS_OUT}")
 
 if __name__ == "__main__":
     main()
