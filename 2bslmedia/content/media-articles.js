@@ -220,6 +220,7 @@ window.ESL_MEDIA_ARTICLES = [
 
 (() => {
   let teamDirectory = [];
+  const hasDocument = typeof document !== "undefined";
 
   const slugifyTeam = (name) => name
     .toLowerCase()
@@ -236,7 +237,7 @@ window.ESL_MEDIA_ARTICLES = [
   };
 
   const getPathContext = () => {
-    const pathname = (window.location.pathname || "").replace(/\\/g, "/");
+    const pathname = ((window.location && window.location.pathname) || "").replace(/\\/g, "/");
     if (pathname.includes("/content/articles/")) {
       return {
         contentPrefix: "../",
@@ -280,6 +281,7 @@ window.ESL_MEDIA_ARTICLES = [
 
   const loadTeamDirectory = async () => {
     if (teamDirectory.length) return teamDirectory;
+    if (typeof fetch !== "function") return teamDirectory;
 
     const { standingsUrl } = getPathContext();
     const response = await fetch(standingsUrl);
@@ -290,12 +292,12 @@ window.ESL_MEDIA_ARTICLES = [
     return teamDirectory;
   };
 
-  window.ESL_TEAM_DIRECTORY_READY = loadTeamDirectory().catch((error) => {
+  window.ESL_TEAM_DIRECTORY_READY = hasDocument ? loadTeamDirectory().catch((error) => {
     console.warn(error);
     teamDirectory = [];
     window.ESL_TEAM_DIRECTORY = teamDirectory;
     return teamDirectory;
-  });
+  }) : Promise.resolve(teamDirectory);
 
   const buildTeamMenuMarkup = (directory = teamDirectory) => {
     const grouped = {};
@@ -537,6 +539,8 @@ window.ESL_MEDIA_ARTICLES = [
     updateLatestLinks();
     await window.injectEslTeamsNav();
   };
+
+  if (!hasDocument) return;
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init, { once: true });
