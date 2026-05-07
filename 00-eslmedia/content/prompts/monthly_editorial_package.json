@@ -1,11 +1,11 @@
 {
     "source": [
-        "../../.build/database/monthly/latest_sim_results.json",
-        "../../.build/database/monthly/monthly_team_form.json",
-        "../../.build/database/monthly/overall_team_form.json",
-        "../../.build/database/monthly/tier_race_snapshot.json",
-        "../../.build/database/monthly/monthly_storylines.json",
-        "../../.build/database/teams.json"
+        "../../00-build/database/monthly/latest_sim_results.json",
+        "../../00-build/database/monthly/monthly_team_form.json",
+        "../../00-build/database/monthly/overall_team_form.json",
+        "../../00-build/database/monthly/tier_race_snapshot.json",
+        "../../00-build/database/monthly/monthly_storylines.json",
+        "../../00-build/database/teams.json"
     ],
     "period": {
         "year": 1981,
@@ -30,16 +30,16 @@
                     "Call out at least one riser, one faller, and one team you are still unsure about."
                 ],
                 "availableContext": [
-                    "../../.build/database/monthly/overall_team_form.json",
-                    "../../.build/database/monthly/monthly_team_form.json",
-                    "../../.build/database/monthly/latest_sim_results.json",
-                    "../../.build/database/monthly/tier_race_snapshot.json",
-                    "../../.build/database/monthly/monthly_storylines.json",
-                    "../../.build/database/standings.json",
-                    "../../.build/database/game_results.json",
-                    "../../.build/database/teams.json",
-                    "../../.build/database/players.json",
-                    "../../.build/database/player_stats.json"
+                    "../../00-build/database/monthly/overall_team_form.json",
+                    "../../00-build/database/monthly/monthly_team_form.json",
+                    "../../00-build/database/monthly/latest_sim_results.json",
+                    "../../00-build/database/monthly/tier_race_snapshot.json",
+                    "../../00-build/database/monthly/monthly_storylines.json",
+                    "../../00-build/database/standings.json",
+                    "../../00-build/database/game_results.json",
+                    "../../00-build/database/teams.json",
+                    "../../00-build/database/players.json",
+                    "../../00-build/database/player_stats.json"
                 ],
                 "teamPool": [
                     {
@@ -476,16 +476,16 @@
                     "Call out at least one riser, one faller, and one team you are still unsure about."
                 ],
                 "availableContext": [
-                    "../../.build/database/monthly/overall_team_form.json",
-                    "../../.build/database/monthly/monthly_team_form.json",
-                    "../../.build/database/monthly/latest_sim_results.json",
-                    "../../.build/database/monthly/tier_race_snapshot.json",
-                    "../../.build/database/monthly/monthly_storylines.json",
-                    "../../.build/database/standings.json",
-                    "../../.build/database/game_results.json",
-                    "../../.build/database/teams.json",
-                    "../../.build/database/players.json",
-                    "../../.build/database/player_stats.json"
+                    "../../00-build/database/monthly/overall_team_form.json",
+                    "../../00-build/database/monthly/monthly_team_form.json",
+                    "../../00-build/database/monthly/latest_sim_results.json",
+                    "../../00-build/database/monthly/tier_race_snapshot.json",
+                    "../../00-build/database/monthly/monthly_storylines.json",
+                    "../../00-build/database/standings.json",
+                    "../../00-build/database/game_results.json",
+                    "../../00-build/database/teams.json",
+                    "../../00-build/database/players.json",
+                    "../../00-build/database/player_stats.json"
                 ],
                 "teamPool": [
                     {
@@ -898,16 +898,16 @@
                     "Call out at least one riser, one faller, and one team you are still unsure about."
                 ],
                 "availableContext": [
-                    "../../.build/database/monthly/overall_team_form.json",
-                    "../../.build/database/monthly/monthly_team_form.json",
-                    "../../.build/database/monthly/latest_sim_results.json",
-                    "../../.build/database/monthly/tier_race_snapshot.json",
-                    "../../.build/database/monthly/monthly_storylines.json",
-                    "../../.build/database/standings.json",
-                    "../../.build/database/game_results.json",
-                    "../../.build/database/teams.json",
-                    "../../.build/database/players.json",
-                    "../../.build/database/player_stats.json"
+                    "../../00-build/database/monthly/overall_team_form.json",
+                    "../../00-build/database/monthly/monthly_team_form.json",
+                    "../../00-build/database/monthly/latest_sim_results.json",
+                    "../../00-build/database/monthly/tier_race_snapshot.json",
+                    "../../00-build/database/monthly/monthly_storylines.json",
+                    "../../00-build/database/standings.json",
+                    "../../00-build/database/game_results.json",
+                    "../../00-build/database/teams.json",
+                    "../../00-build/database/players.json",
+                    "../../00-build/database/player_stats.json"
                 ],
                 "teamPool": [
                     {
@@ -1342,12 +1342,12 @@
                 "Explain the pressure line clearly before making bigger editorial claims."
             ],
             "availableContext": [
-                "../../.build/database/monthly/tier_race_snapshot.json",
-                "../../.build/database/monthly/monthly_team_form.json",
-                "../../.build/database/monthly/overall_team_form.json",
-                "../../.build/database/monthly/latest_sim_results.json",
-                "../../.build/database/standings.json",
-                "../../.build/database/game_results.json"
+                "../../00-build/database/monthly/tier_race_snapshot.json",
+                "../../00-build/database/monthly/monthly_team_form.json",
+                "../../00-build/database/monthly/overall_team_form.json",
+                "../../00-build/database/monthly/latest_sim_results.json",
+                "../../00-build/database/standings.json",
+                "../../00-build/database/game_results.json"
             ],
             "races": [
                 {
@@ -1572,12 +1572,12 @@
                 "Use concise, punchy sections rather than one long essay."
             ],
             "availableContext": [
-                "../../.build/database/monthly/monthly_team_form.json",
-                "../../.build/database/monthly/overall_team_form.json",
-                "../../.build/database/monthly/monthly_storylines.json",
-                "../../.build/database/monthly/latest_sim_results.json",
-                "../../.build/database/standings.json",
-                "../../.build/database/game_results.json"
+                "../../00-build/database/monthly/monthly_team_form.json",
+                "../../00-build/database/monthly/overall_team_form.json",
+                "../../00-build/database/monthly/monthly_storylines.json",
+                "../../00-build/database/monthly/latest_sim_results.json",
+                "../../00-build/database/standings.json",
+                "../../00-build/database/game_results.json"
             ],
             "stockUpPool": [
                 {
@@ -1881,16 +1881,16 @@
                 "End with a forward-looking note about next month."
             ],
             "availableContext": [
-                "../../.build/database/monthly/monthly_storylines.json",
-                "../../.build/database/monthly/monthly_team_form.json",
-                "../../.build/database/monthly/overall_team_form.json",
-                "../../.build/database/monthly/tier_race_snapshot.json",
-                "../../.build/database/monthly/latest_sim_results.json",
-                "../../.build/database/standings.json",
-                "../../.build/database/game_results.json",
-                "../../.build/database/teams.json",
-                "../../.build/database/players.json",
-                "../../.build/database/freeagents.json"
+                "../../00-build/database/monthly/monthly_storylines.json",
+                "../../00-build/database/monthly/monthly_team_form.json",
+                "../../00-build/database/monthly/overall_team_form.json",
+                "../../00-build/database/monthly/tier_race_snapshot.json",
+                "../../00-build/database/monthly/latest_sim_results.json",
+                "../../00-build/database/standings.json",
+                "../../00-build/database/game_results.json",
+                "../../00-build/database/teams.json",
+                "../../00-build/database/players.json",
+                "../../00-build/database/freeagents.json"
             ],
             "featuredStorylines": [
                 {

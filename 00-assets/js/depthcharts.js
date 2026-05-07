@@ -3,8 +3,8 @@
 
   var ROLES = ["C", "PF", "SF", "SG", "PG", "6th", "7th", "8th", "9th", "10th", "11th", "12th", "13th"];
   var TEAM_SELECT_ID = "team-select";
-  var PLAYERS_PATH = "../../.build/database/players.json";
-  var TEAMS_PATH = "../../.build/database/teams.json";
+  var PLAYERS_PATH = "../../00-build/database/players.json";
+  var TEAMS_PATH = "../../00-build/database/teams.json";
   var STORAGE_PREFIX = "bsl-depth-chart:";
   var LAST_TEAM_KEY = STORAGE_PREFIX + "last-team";
   var TEAM_COLOR_FALLBACK = "#1e293b";

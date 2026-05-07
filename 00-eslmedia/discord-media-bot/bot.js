@@ -14,7 +14,7 @@ const BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
 const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID;
 const ROLE_ID = process.env.DISCORD_ROLE_ID || "";
 const SOURCE = process.env.MEDIA_ARTICLES_SOURCE || "../content/media-articles.js";
-const ARTICLE_BASE_URL = process.env.ARTICLE_BASE_URL || "https://eurosuperleague.github.io/index/.eslmedia/content/";
+const ARTICLE_BASE_URL = process.env.ARTICLE_BASE_URL || "https://eurosuperleague.github.io/index/00-eslmedia/content/";
 const CHECK_INTERVAL_MS = Number(process.env.CHECK_INTERVAL_MS || 300000);
 
 const mode = process.argv.includes("--once") ? "once" : "watch";

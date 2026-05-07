@@ -1,6 +1,6 @@
 # ESL Media Article Template Guide
 
-This guide is for humans or AIs creating future files inside `.eslmedia/content/articles/`.
+This guide is for humans or AIs creating future files inside `00-eslmedia/content/articles/`.
 
 The goal is simple:
 - every article should keep the same ESL Media article shell
@@ -10,7 +10,7 @@ The goal is simple:
 ## Required file setup
 
 Every article file should:
-- live in `.eslmedia/content/articles/`
+- live in `00-eslmedia/content/articles/`
 - be a standalone `.html` file
 - include `@import url("../media-shared.css");` inside its `<style>` block
 - use `<body class="media-article">`
@@ -27,7 +27,7 @@ The `article-rail.js` script automatically:
 - nudges the article layout left on desktop
 - adds a right rail
 - shows a recommended-articles list
-- shows two random ads from `.eslmedia/content/Ads/`
+- shows two random ads from `00-eslmedia/content/Ads/`
 
 ## Required page structure
 
@@ -224,10 +224,10 @@ Follow this checklist:
 ## If updating recommendations
 
 The live article metadata is powered by:
-- `.eslmedia/content/media-articles.js`
+- `00-eslmedia/content/media-articles.js`
 
 The right-rail recommendation list is rendered from that shared manifest through:
-- `.eslmedia/content/article-rail.js`
+- `00-eslmedia/content/article-rail.js`
 
 When a new article is added, add its metadata object there:
 - `file`
@@ -258,14 +258,14 @@ For interview articles, always set:
 - `desk: "Interview"`
 
 The Interviews tab is powered automatically by that `desk` value through:
-- `.eslmedia/content/interviews.html`
+- `00-eslmedia/content/interviews.html`
 
 If you skip this step, the page will still render, but the new article will not appear in recommendations.
 
 ## Homepage power board rule
 
 Every newly published article must also be placed on the homepage power board in:
-- `.eslmedia/homepage.html`
+- `00-eslmedia/homepage.html`
 
 That is a required publishing step, not an optional promo step.
 
@@ -280,12 +280,12 @@ Do not publish a new article without updating the homepage power board to includ
 
 The site now has:
 - a Teams dropdown in the top navigation
-- a directory page at `.eslmedia/content/teams.html`
-- team coverage pages at `.eslmedia/content/team.html?team=TEAM-SLUG`
+- a directory page at `00-eslmedia/content/teams.html`
+- team coverage pages at `00-eslmedia/content/team.html?team=TEAM-SLUG`
 
 Those pages are driven by:
-- `.build/database/standings.json` for team tier placement
-- `.eslmedia/content/media-articles.js`
+- `00-build/database/standings.json` for team tier placement
+- `00-eslmedia/content/media-articles.js`
 - `window.ESL_TEAM_LOGOS` for logo filenames only
 - each article's `teams` array
 

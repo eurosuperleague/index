@@ -10,7 +10,7 @@
   }
 
   function getBuildJsonPath(filename) {
-    return isNestedPage() ? "../.build/database/" + filename : ".build/database/" + filename;
+    return isNestedPage() ? "../00-build/database/" + filename : "00-build/database/" + filename;
   }
 
   function normalizePlayerUrl(url) {
@@ -199,7 +199,7 @@
       return "";
     }
 
-    return isNestedPage() ? "../.assets/photos/" + filename : ".assets/photos/" + filename;
+    return isNestedPage() ? "../00-assets/photos/" + filename : "00-assets/photos/" + filename;
   }
 
   function getRosterPhotoFilename(teamName) {
@@ -370,7 +370,7 @@
     }
 
     var menuTable = document.querySelector("body > table");
-    if (!menuTable || menuTable.querySelector('a[href=".assets/html/depthcharts.htm"]')) {
+    if (!menuTable || menuTable.querySelector('a[href="00-assets/html/depthcharts.htm"]')) {
       return;
     }
 
@@ -382,7 +382,7 @@
     row.setAttribute("valign", "top");
     link.className = "menulink";
     link.target = "data";
-    link.href = ".assets/html/depthcharts.htm";
+    link.href = "00-assets/html/depthcharts.htm";
     link.textContent = "Depth Charts";
     cell.appendChild(link);
     row.appendChild(cell);

@@ -8,9 +8,9 @@ BUILD_DIR = os.path.dirname(ROOT)
 DATABASE_DIR = os.path.join(BUILD_DIR, "database")
 MONTHLY_DIR = os.path.join(DATABASE_DIR, "monthly")
 PROJECT_ROOT = os.path.dirname(BUILD_DIR)
-PROMPTS_DIR = os.path.join(PROJECT_ROOT, ".eslmedia", "content", "prompts")
+PROMPTS_DIR = os.path.join(PROJECT_ROOT, "00-eslmedia", "content", "prompts")
 OUTPUT_PATH = os.path.join(PROMPTS_DIR, "monthly_editorial_package.json")
-ARTICLES_DIR = os.path.join(PROJECT_ROOT, ".eslmedia", "content", "articles")
+ARTICLES_DIR = os.path.join(PROJECT_ROOT, "00-eslmedia", "content", "articles")
 
 LATEST_SIM_RESULTS_PATH = os.path.join(MONTHLY_DIR, "latest_sim_results.json")
 MONTHLY_TEAM_FORM_PATH = os.path.join(MONTHLY_DIR, "monthly_team_form.json")
@@ -107,16 +107,16 @@ def build_power_rankings(overall_team_form, monthly_team_form, period_label, tea
                     "Call out at least one riser, one faller, and one team you are still unsure about.",
                 ],
                 "availableContext": [
-                    "../../.build/database/monthly/overall_team_form.json",
-                    "../../.build/database/monthly/monthly_team_form.json",
-                    "../../.build/database/monthly/latest_sim_results.json",
-                    "../../.build/database/monthly/tier_race_snapshot.json",
-                    "../../.build/database/monthly/monthly_storylines.json",
-                    "../../.build/database/standings.json",
-                    "../../.build/database/game_results.json",
-                    "../../.build/database/teams.json",
-                    "../../.build/database/players.json",
-                    "../../.build/database/player_stats.json",
+                    "../../00-build/database/monthly/overall_team_form.json",
+                    "../../00-build/database/monthly/monthly_team_form.json",
+                    "../../00-build/database/monthly/latest_sim_results.json",
+                    "../../00-build/database/monthly/tier_race_snapshot.json",
+                    "../../00-build/database/monthly/monthly_storylines.json",
+                    "../../00-build/database/standings.json",
+                    "../../00-build/database/game_results.json",
+                    "../../00-build/database/teams.json",
+                    "../../00-build/database/players.json",
+                    "../../00-build/database/player_stats.json",
                 ],
                 "teamPool": [
                     {
@@ -171,12 +171,12 @@ def build_race_watch(tier_race_snapshot, period_label):
             "Explain the pressure line clearly before making bigger editorial claims.",
         ],
         "availableContext": [
-            "../../.build/database/monthly/tier_race_snapshot.json",
-            "../../.build/database/monthly/monthly_team_form.json",
-            "../../.build/database/monthly/overall_team_form.json",
-            "../../.build/database/monthly/latest_sim_results.json",
-            "../../.build/database/standings.json",
-            "../../.build/database/game_results.json",
+            "../../00-build/database/monthly/tier_race_snapshot.json",
+            "../../00-build/database/monthly/monthly_team_form.json",
+            "../../00-build/database/monthly/overall_team_form.json",
+            "../../00-build/database/monthly/latest_sim_results.json",
+            "../../00-build/database/standings.json",
+            "../../00-build/database/game_results.json",
         ],
         "races": tier_race_snapshot.get("races", []),
     }
@@ -213,12 +213,12 @@ def build_stock_report(monthly_team_form, period_label):
             "Use concise, punchy sections rather than one long essay.",
         ],
         "availableContext": [
-            "../../.build/database/monthly/monthly_team_form.json",
-            "../../.build/database/monthly/overall_team_form.json",
-            "../../.build/database/monthly/monthly_storylines.json",
-            "../../.build/database/monthly/latest_sim_results.json",
-            "../../.build/database/standings.json",
-            "../../.build/database/game_results.json",
+            "../../00-build/database/monthly/monthly_team_form.json",
+            "../../00-build/database/monthly/overall_team_form.json",
+            "../../00-build/database/monthly/monthly_storylines.json",
+            "../../00-build/database/monthly/latest_sim_results.json",
+            "../../00-build/database/standings.json",
+            "../../00-build/database/game_results.json",
         ],
         "stockUpPool": stock_up,
         "stockDownPool": stock_down,
@@ -248,16 +248,16 @@ def build_month_in_review(monthly_storylines, latest_sim_results, period_label, 
             "End with a forward-looking note about next month.",
         ],
         "availableContext": [
-            "../../.build/database/monthly/monthly_storylines.json",
-            "../../.build/database/monthly/monthly_team_form.json",
-            "../../.build/database/monthly/overall_team_form.json",
-            "../../.build/database/monthly/tier_race_snapshot.json",
-            "../../.build/database/monthly/latest_sim_results.json",
-            "../../.build/database/standings.json",
-            "../../.build/database/game_results.json",
-            "../../.build/database/teams.json",
-            "../../.build/database/players.json",
-            "../../.build/database/freeagents.json",
+            "../../00-build/database/monthly/monthly_storylines.json",
+            "../../00-build/database/monthly/monthly_team_form.json",
+            "../../00-build/database/monthly/overall_team_form.json",
+            "../../00-build/database/monthly/tier_race_snapshot.json",
+            "../../00-build/database/monthly/latest_sim_results.json",
+            "../../00-build/database/standings.json",
+            "../../00-build/database/game_results.json",
+            "../../00-build/database/teams.json",
+            "../../00-build/database/players.json",
+            "../../00-build/database/freeagents.json",
         ],
         "featuredStorylines": featured,
         "teamStarPlayers": compact_team_stars(team_star_lookup),
@@ -280,12 +280,12 @@ def main():
 
     output = {
         "source": [
-            "../../.build/database/monthly/latest_sim_results.json",
-            "../../.build/database/monthly/monthly_team_form.json",
-            "../../.build/database/monthly/overall_team_form.json",
-            "../../.build/database/monthly/tier_race_snapshot.json",
-            "../../.build/database/monthly/monthly_storylines.json",
-            "../../.build/database/teams.json",
+            "../../00-build/database/monthly/latest_sim_results.json",
+            "../../00-build/database/monthly/monthly_team_form.json",
+            "../../00-build/database/monthly/overall_team_form.json",
+            "../../00-build/database/monthly/tier_race_snapshot.json",
+            "../../00-build/database/monthly/monthly_storylines.json",
+            "../../00-build/database/teams.json",
         ],
         "period": latest_sim_results.get("period", {}),
         "package": {

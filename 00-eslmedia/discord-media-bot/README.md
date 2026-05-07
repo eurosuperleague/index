@@ -24,7 +24,7 @@ This bot watches the ESL Media article manifest and posts in Discord whenever a 
 
 ## Run it
 
-From `.eslmedia/discord-media-bot`:
+From `00-eslmedia/discord-media-bot`:
 
 ```powershell
 npm run once
@@ -60,7 +60,7 @@ Once those secrets are set, GitHub Actions will:
 
 The state file is:
 
-- `.eslmedia/discord-media-bot/data/announced-articles.json`
+- `00-eslmedia/discord-media-bot/data/announced-articles.json`
 
 It is intentionally committed so GitHub Actions knows what has already been announced across runs.
 
@@ -68,7 +68,7 @@ It is intentionally committed so GitHub Actions knows what has already been anno
 
 The bot reads from:
 
-- `.eslmedia/content/media-articles.js`
+- `00-eslmedia/content/media-articles.js`
 
 That means once a new article is added to the live media manifest, the bot will see it and announce it on the next check.
 
@@ -76,6 +76,6 @@ That means once a new article is added to the live media manifest, the bot will 
 
 The bot stores its announced state locally in:
 
-- `.eslmedia/discord-media-bot/data/announced-articles.json`
+- `00-eslmedia/discord-media-bot/data/announced-articles.json`
 
 If you delete that file, it will treat all current articles as unannounced again.

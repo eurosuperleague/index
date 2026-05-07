@@ -3,8 +3,8 @@ build.py
 Master build script - run this one file to update everything.
 
 Usage:
-  python .build/scripts/build.py           # full build
-  python .build/scripts/build.py --dry-run # preview only, no files written
+  python 00-build/scripts/build.py           # full build
+  python 00-build/scripts/build.py --dry-run # preview only, no files written
 """
 
 import subprocess, sys, os

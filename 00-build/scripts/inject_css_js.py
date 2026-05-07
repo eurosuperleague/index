@@ -12,10 +12,10 @@ import os, sys
 
 # ── CONFIGURE ───────────────────────────────────────────────────────
 ROOT_FOLDER  = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CSS_FILENAME  = ".assets/css/styles.css"
-JS_FILENAME   = ".assets/js/sort.js"
-JS2_FILENAME  = ".assets/js/features.js"
-FAVICON_FILE  = ".build/database/favicon.png"   # change to .ico if needed
+CSS_FILENAME  = "00-assets/css/styles.css"
+JS_FILENAME   = "00-assets/js/sort.js"
+JS2_FILENAME  = "00-assets/js/features.js"
+FAVICON_FILE  = "00-build/database/favicon.png"   # change to .ico if needed
 # ────────────────────────────────────────────────────────────────────
 
 DRY_RUN       = "--dry-run" in sys.argv
@@ -25,7 +25,7 @@ files_skipped = 0
 for dirpath, dirnames, filenames in os.walk(ROOT_FOLDER):
 
     # Skip build, asset, and custom media folders; generated league HTML lives outside them.
-    dirnames[:] = [d for d in dirnames if d not in {".build", ".assets", ".eslmedia"}]
+    dirnames[:] = [d for d in dirnames if d not in {"00-build", "00-assets", "00-eslmedia"}]
 
     for filename in filenames:
         if not filename.lower().endswith((".html", ".htm")):

@@ -5,8 +5,8 @@ This is a draft guide for running the extra site features. Read and edit this be
 ## Quick Start
 
 1. Put the latest sim export files in the project like normal.
-2. Run `.build/run_build.bat`.
-3. Run `.build/scripts/server.bat`.
+2. Run `00-build/run_build.bat`.
+3. Run `00-build/scripts/server.bat`.
 4. Open `http://localhost:8000/index.htm` in your browser.
 
 If you are only viewing the site locally from files, most pages still work by opening `index.htm`, but the local server is safer because browsers can block some JSON loading from `file://`.
@@ -16,10 +16,10 @@ If you are only viewing the site locally from files, most pages still work by op
 Run:
 
 ```bat
-.build/run_build.bat
+00-build/run_build.bat
 ```
 
-This runs `.build/scripts/build.py`, which currently does two main jobs:
+This runs `00-build/scripts/build.py`, which currently does two main jobs:
 
 1. Builds the shared JSON databases from the generated league HTML files.
 2. Injects the shared CSS and JavaScript links into the generated HTML pages.
@@ -27,7 +27,7 @@ This runs `.build/scripts/build.py`, which currently does two main jobs:
 The build creates or updates files in:
 
 ```text
-.build/database/
+00-build/database/
 ```
 
 Important JSON files:
@@ -48,7 +48,7 @@ These JSONs are what the newer JavaScript features read from. The features do no
 Run:
 
 ```bat
-.build/scripts/server.bat
+00-build/scripts/server.bat
 ```
 
 Then open:
@@ -57,48 +57,48 @@ Then open:
 http://localhost:8000/index.htm
 ```
 
-The server starts from the main repo folder, so links like `players/`, `rosters/`, `.assets/`, and `.build/database/` should all resolve correctly.
+The server starts from the main repo folder, so links like `players/`, `rosters/`, `00-assets/`, and `00-build/database/` should all resolve correctly.
 
 ## Main Feature Files
 
 Shared styling:
 
 ```text
-.assets/css/styles.css
+00-assets/css/styles.css
 ```
 
 General site features:
 
 ```text
-.assets/js/features.js
+00-assets/js/features.js
 ```
 
 Table sorting:
 
 ```text
-.assets/js/sort.js
+00-assets/js/sort.js
 ```
 
 Depth chart builder:
 
 ```text
-.assets/html/depthcharts.htm
-.assets/js/depthcharts.js
+00-assets/html/depthcharts.htm
+00-assets/js/depthcharts.js
 ```
 
 Build scripts:
 
 ```text
-.build/scripts/build.py
-.build/scripts/build_players_json.py
-.build/scripts/inject_css_js.py
+00-build/scripts/build.py
+00-build/scripts/build_players_json.py
+00-build/scripts/inject_css_js.py
 ```
 
 ## Current Features
 
 ### Shared Site Styling
 
-`.assets/css/styles.css` controls the newer look across the generated HTML pages. The build injects this into the HTML pages so the league output keeps the custom design after every sim update.
+`00-assets/css/styles.css` controls the newer look across the generated HTML pages. The build injects this into the HTML pages so the league output keeps the custom design after every sim update.
 
 ### Player Search
 
@@ -117,7 +117,7 @@ If ratings are missing, check that `LeagueOutput.mdb` exists in the project root
 The cap report data is generated into:
 
 ```text
-.build/database/capreport.json
+00-build/database/capreport.json
 ```
 
 The menu link is injected through JavaScript instead of manually editing `menu.htm`.
@@ -127,7 +127,7 @@ The menu link is injected through JavaScript instead of manually editing `menu.h
 The injury data is generated into:
 
 ```text
-.build/database/injuries.json
+00-build/database/injuries.json
 ```
 
 If the file is empty, the site will not have injury data to display yet. Once injuries are present, frontend features can use it for red injury tags, injury reports, or depth chart IR helpers.
@@ -143,7 +143,7 @@ If players are missing here, rebuild `players.json`.
 Open:
 
 ```text
-.assets/html/depthcharts.htm
+00-assets/html/depthcharts.htm
 ```
 
 The depth chart builder lets you:
@@ -167,8 +167,8 @@ Do this each time the league HTML output changes:
 
 1. Replace or update the generated league files.
 2. Make sure `LeagueOutput.mdb` is present if you want OVR/POT ratings.
-3. Run `.build/run_build.bat`.
-4. Run or restart `.build/scripts/server.bat`.
+3. Run `00-build/run_build.bat`.
+4. Run or restart `00-build/scripts/server.bat`.
 5. Refresh the browser.
 
 If a feature still looks old, do a hard refresh. Some browsers cache JavaScript aggressively.
@@ -191,11 +191,11 @@ menu.htm
 Prefer editing:
 
 ```text
-.assets/css/styles.css
-.assets/js/features.js
-.assets/js/depthcharts.js
-.assets/html/depthcharts.htm
-.build/scripts/
+00-assets/css/styles.css
+00-assets/js/features.js
+00-assets/js/depthcharts.js
+00-assets/html/depthcharts.htm
+00-build/scripts/
 ```
 
 This keeps custom features separate from generated league output.
@@ -204,14 +204,14 @@ This keeps custom features separate from generated league output.
 
 If a feature is missing:
 
-1. Run `.build/run_build.bat`.
-2. Check that the page has links to `.assets/css/styles.css`, `.assets/js/sort.js`, and `.assets/js/features.js`.
+1. Run `00-build/run_build.bat`.
+2. Check that the page has links to `00-assets/css/styles.css`, `00-assets/js/sort.js`, and `00-assets/js/features.js`.
 3. Use the local server instead of opening files directly.
 4. Hard refresh the browser.
 
 If JSON is missing or outdated:
 
-1. Check `.build/database/`.
+1. Check `00-build/database/`.
 2. Run the build again.
 3. Make sure the source HTML files exist, especially `players/`, `rosters/`, `standings.htm`, `capreport.htm`, and `injuries.htm`.
 
@@ -229,4 +229,4 @@ The build scripts turn that output into JSON databases.
 
 The JavaScript features read those JSON databases and upgrade the site in the browser.
 
-The custom feature code lives in `.assets/`, so it survives new sim uploads better than direct edits to generated HTML.
+The custom feature code lives in `00-assets/`, so it survives new sim uploads better than direct edits to generated HTML.

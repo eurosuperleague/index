@@ -241,21 +241,21 @@ window.ESL_MEDIA_ARTICLES = [
     if (pathname.includes("/content/articles/")) {
       return {
         contentPrefix: "../",
-        assetPrefix: "../../../.assets/photos/",
-        standingsUrl: "../../../.build/database/standings.json"
+        assetPrefix: "../../../00-assets/photos/",
+        standingsUrl: "../../../00-build/database/standings.json"
       };
     }
     if (pathname.includes("/content/")) {
       return {
         contentPrefix: "./",
-        assetPrefix: "../../.assets/photos/",
-        standingsUrl: "../../.build/database/standings.json"
+        assetPrefix: "../../00-assets/photos/",
+        standingsUrl: "../../00-build/database/standings.json"
       };
     }
     return {
       contentPrefix: "content/",
-      assetPrefix: "../.assets/photos/",
-      standingsUrl: "../.build/database/standings.json"
+      assetPrefix: "../00-assets/photos/",
+      standingsUrl: "../00-build/database/standings.json"
     };
   };
 
