@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESL Media Admin</title>
+  <link rel="stylesheet" href="media-shared.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23111b36'/><text x='50' y='75' font-family='serif' font-size='45' font-weight='900' fill='%23FFFFFF' text-anchor='middle'>ESL</text></svg>">
+  <style>
+    body {
+      background:
+        radial-gradient(circle at 14% 8%, rgba(17, 27, 54, 0.12), transparent 28rem),
+        linear-gradient(135deg, #f8f5ec 0%, #eee7d8 100%);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .admin-shell,
+    .admin-footer {
+      width: min(1280px, calc(100% - 2.5rem));
+      margin: 0 auto;
+    }
+
+    .admin-shell {
+      padding: 2rem 0 3.5rem;
+    }
+
+    .admin-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+      gap: 1.2rem;
+      align-items: stretch;
+      margin-bottom: 1.2rem;
+    }
+
+    .admin-card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(15, 15, 15, 0.14);
+      box-shadow: 6px 6px 0 rgba(17, 27, 54, 0.1);
+    }
+
+    .admin-intro {
+      padding: 1.4rem;
+      border-top: 5px solid var(--gold);
+    }
+
+    .admin-kicker,
+    .admin-label,
+    .package-type,
+    .status-pill,
+    .prompt-meta,
+    .admin-footer {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .admin-kicker,
+    .admin-label,
+    .package-type {
+      color: var(--gold);
+    }
+
+    .admin-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.1rem, 5vw, 4.8rem);
+      line-height: 0.92;
+      letter-spacing: -0.055em;
+      margin: 0.45rem 0 0.8rem;
+      max-width: 860px;
+    }
+
+    .admin-dek {
+      color: var(--mid);
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 760px;
+    }
+
+    .admin-period {
+      padding: 1.2rem;
+      background: #111b36;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 210px;
+    }
+
+    .period-value {
+      font-family: var(--font-serif);
+      font-size: 2.4rem;
+      line-height: 0.94;
+      letter-spacing: -0.04em;
+      margin-top: 0.7rem;
+    }
+
+    .period-note {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.82rem;
+      line-height: 1.5;
+      margin-top: 1rem;
+    }
+
+    .admin-stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.85rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .stat-card {
+      padding: 1rem;
+    }
+
+    .stat-value {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      line-height: 1;
+      margin-top: 0.35rem;
+    }
+
+    .stat-note {
+      color: var(--mid);
+      font-size: 0.8rem;
+      line-height: 1.4;
+      margin-top: 0.4rem;
+    }
+
+    .admin-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 1.2rem;
+      align-items: start;
+    }
+
+    .package-list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .package-card {
+      padding: 1rem;
+    }
+
+    .package-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: flex-start;
+      border-bottom: 1px solid rgba(15, 15, 15, 0.13);
+      padding-bottom: 0.8rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .package-title {
+      font-family: var(--font-serif);
+      font-size: 1.55rem;
+      letter-spacing: -0.035em;
+      margin-top: 0.18rem;
+    }
+
+    .status-pill {
+      border: 1px solid rgba(15, 15, 15, 0.18);
+      padding: 0.38rem 0.55rem;
+      white-space: nowrap;
+      background: #fff;
+    }
+
+    .status-published {
+      color: #166534;
+      background: #ecfdf3;
+      border-color: rgba(22, 101, 52, 0.25);
+    }
+
+    .status-missing {
+      color: #991b1b;
+      background: #fff1f1;
+      border-color: rgba(153, 27, 27, 0.22);
+    }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+      gap: 1rem;
+    }
+
+    .prompt-text {
+      background: #111b36;
+      color: rgba(255, 255, 255, 0.88);
+      padding: 0.85rem;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 0.78rem;
+      line-height: 1.55;
+      max-height: 190px;
+      overflow: auto;
+      white-space: pre-wrap;
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 0.42rem;
+      color: var(--mid);
+      font-size: 0.86rem;
+      line-height: 1.45;
+      margin-top: 0.7rem;
+    }
+
+    .mini-list div {
+      border-bottom: 1px solid rgba(15, 15, 15, 0.08);
+      padding-bottom: 0.42rem;
+    }
+
+    .prompt-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.8rem;
+    }
+
+    .admin-button {
+      border: 1px solid #111b36;
+      background: #111b36;
+      color: #fff;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.65rem 0.75rem;
+    }
+
+    .admin-button.secondary {
+      background: #fff;
+      color: #111b36;
+    }
+
+    .published-link {
+      display: inline-flex;
+      margin-top: 0.65rem;
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 0.82rem;
+    }
+
+    .side-panel {
+      position: sticky;
+      top: 72px;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .side-card {
+      padding: 1rem;
+    }
+
+    .source-list,
+    .missing-list {
+      display: grid;
+      gap: 0.48rem;
+      margin-top: 0.7rem;
+      color: var(--mid);
+      font-size: 0.82rem;
+      line-height: 1.4;
+      overflow-wrap: anywhere;
+    }
+
+    .source-list code {
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 0.76rem;
+    }
+
+    .error-box {
+      background: #fff1f1;
+      border: 1px solid rgba(153, 27, 27, 0.25);
+      color: #7f1d1d;
+      padding: 1rem;
+      line-height: 1.5;
+    }
+
+    .admin-footer {
+      color: var(--mid);
+      border-top: 2px solid var(--ink);
+      padding: 1rem 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    @media (max-width: 900px) {
+      .admin-hero,
+      .admin-layout,
+      .package-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .admin-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .side-panel {
+        position: static;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .admin-shell,
+      .admin-footer,
+      .site-topbar-inner {
+        width: min(100%, calc(100% - 1.25rem));
+      }
+
+      .site-topbar-inner {
+        height: auto;
+        padding: 0.9rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .site-topbar-nav {
+        flex-wrap: wrap;
+        gap: 0.8rem 1rem;
+      }
+
+      .admin-stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-topbar">
+    <div class="site-topbar-inner">
+      <div class="site-topbar-brand">
+        <div class="site-edition-pill">Admin</div>
+        <div>European Super League Sports Desk</div>
+      </div>
+      <ul class="site-topbar-nav">
+        <li><a href="../homepage.html">Home</a></li>
+        <li><a href="all-articles.html">All Articles</a></li>
+        <li><a href="articles/october_1981_month_in_review.html">Latest</a></li>
+        <li><a href="analysis.html">Analysis</a></li>
+        <li><a href="scouting.html">Scouting</a></li>
+        <li><a href="interviews.html">Interviews</a></li>
+        <li><a href="../../index.htm">League Site</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="admin-shell">
+    <section class="admin-hero">
+      <div class="admin-card admin-intro">
+        <div class="admin-kicker">ESL Media Control Room</div>
+        <h1 class="admin-title">Monthly package dashboard.</h1>
+        <p class="admin-dek">Use this page after the build runs to see the generated article prompts, which source JSONs are being handed to the writer, and which monthly package slots already have published matches.</p>
+      </div>
+      <aside class="admin-period">
+        <div>
+          <div class="admin-kicker">Current Package</div>
+          <div class="period-value" data-admin-period>Loading...</div>
+        </div>
+        <p class="period-note">This reads from <code>content/prompts/monthly_editorial_package.json</code>, so it updates after the monthly prompt build runs.</p>
+      </aside>
+    </section>
+
+    <section class="admin-stats" aria-label="Package summary">
+      <div class="admin-card stat-card">
+        <div class="admin-label">Prompts</div>
+        <div class="stat-value" data-stat-prompts>0</div>
+        <div class="stat-note">Article briefs in this package</div>
+      </div>
+      <div class="admin-card stat-card">
+        <div class="admin-label">Published</div>
+        <div class="stat-value" data-stat-published>0</div>
+        <div class="stat-note">Slots with matching articles</div>
+      </div>
+      <div class="admin-card stat-card">
+        <div class="admin-label">Missing</div>
+        <div class="stat-value" data-stat-missing>0</div>
+        <div class="stat-note">Slots still needing drafts</div>
+      </div>
+      <div class="admin-card stat-card">
+        <div class="admin-label">Sources</div>
+        <div class="stat-value" data-stat-sources>0</div>
+        <div class="stat-note">JSON files powering the package</div>
+      </div>
+    </section>
+
+    <section class="admin-layout">
+      <div>
+        <div class="package-list" data-package-list>
+          <div class="error-box">Loading monthly package...</div>
+        </div>
+      </div>
+
+      <aside class="side-panel">
+        <div class="admin-card side-card">
+          <div class="admin-label">Missing Drafts</div>
+          <div class="missing-list" data-missing-list>Loading...</div>
+        </div>
+        <div class="admin-card side-card">
+          <div class="admin-label">Source Context</div>
+          <div class="source-list" data-source-list>Loading...</div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="admin-footer">
+    <div>ESL Media Admin</div>
+    <div>Generated prompt package viewer</div>
+  </footer>
+
+  <script src="media-articles.js"></script>
+  <script>
+    (() => {
+      const promptPath = "prompts/monthly_editorial_package.json";
+      const packageList = document.querySelector("[data-package-list]");
+      const missingList = document.querySelector("[data-missing-list]");
+      const sourceList = document.querySelector("[data-source-list]");
+
+      const tierTagMap = {
+        "Tier 1": "Champions League",
+        "Tier 2": "Europa League",
+        "Tier 3": "Conference League"
+      };
+
+      const escapeHtml = (value = "") => String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+
+      const getAllPrompts = (pkg) => {
+        const packageData = pkg.package || {};
+        return [
+          ...(packageData.powerRankings || []),
+          packageData.promotionRelegationWatch,
+          packageData.stockUpStockDown,
+          packageData.monthInReview
+        ].filter(Boolean);
+      };
+
+      const findPublishedMatch = (prompt) => {
+        const articles = window.ESL_MEDIA_ARTICLES || [];
+        if (prompt.type === "power_rankings") {
+          const tierTag = tierTagMap[prompt.tier];
+          return articles.find((article) => article.tag === tierTag && /power rankings/i.test(article.title));
+        }
+        if (prompt.type === "race_watch") {
+          return articles.find((article) => article.tag === "Race Watch");
+        }
+        if (prompt.type === "stock_report") {
+          return articles.find((article) => /stock up|stock down/i.test(`${article.title} ${article.tag}`));
+        }
+        if (prompt.type === "month_in_review") {
+          return articles
+            .filter((article) => article.tag === "Month In Review")
+            .sort((a, b) => (b.sortKey || "").localeCompare(a.sortKey || ""))[0];
+        }
+        return null;
+      };
+
+      const getPromptMeta = (prompt) => {
+        if (prompt.type === "power_rankings") return `${prompt.tier} · ${prompt.teamPool?.length || 0} teams`;
+        if (prompt.type === "race_watch") return `${prompt.races?.length || 0} race snapshots`;
+        if (prompt.type === "stock_report") return `${prompt.stockUpPool?.length || 0} up · ${prompt.stockDownPool?.length || 0} down`;
+        if (prompt.type === "month_in_review") return `${prompt.featuredStorylines?.length || 0} featured storylines`;
+        return prompt.type || "Prompt";
+      };
+
+      const getStarPreview = (prompt) => {
+        const stars = [];
+        if (Array.isArray(prompt.teamPool)) {
+          prompt.teamPool.forEach((team) => {
+            if (team.starPlayer) stars.push(`${team.team}: ${team.starPlayer.name} (${team.starPlayer.overall} OVR)`);
+          });
+        }
+        if (Array.isArray(prompt.teamStarPlayers)) {
+          prompt.teamStarPlayers.slice(0, 8).forEach((team) => {
+            if (team.starPlayer) stars.push(`${team.team}: ${team.starPlayer.name} (${team.starPlayer.overall} OVR)`);
+          });
+        }
+        return stars.slice(0, 8);
+      };
+
+      const buildPromptPayload = (prompt) => JSON.stringify({
+        title: prompt.title,
+        period: prompt.period,
+        prompt: prompt.prompt,
+        writerNotes: prompt.writerNotes || [],
+        availableContext: prompt.availableContext || [],
+        context: {
+          teamPool: prompt.teamPool,
+          races: prompt.races,
+          stockUpPool: prompt.stockUpPool,
+          stockDownPool: prompt.stockDownPool,
+          featuredStorylines: prompt.featuredStorylines,
+          teamStarPlayers: prompt.teamStarPlayers,
+          previousArticle: prompt.previousArticle
+        }
+      }, null, 2);
+
+      const renderPromptCard = (prompt) => {
+        const match = findPublishedMatch(prompt);
+        const notes = prompt.writerNotes || [];
+        const context = prompt.availableContext || [];
+        const stars = getStarPreview(prompt);
+        const payload = buildPromptPayload(prompt);
+
+        return `
+          <article class="admin-card package-card">
+            <div class="package-head">
+              <div>
+                <div class="package-type">${escapeHtml(prompt.type || "Prompt")}</div>
+                <h2 class="package-title">${escapeHtml(prompt.title || "Untitled Prompt")}</h2>
+                <div class="prompt-meta">${escapeHtml(getPromptMeta(prompt))}</div>
+              </div>
+              <div class="status-pill ${match ? "status-published" : "status-missing"}">${match ? "Published" : "Missing"}</div>
+            </div>
+            <div class="package-grid">
+              <div>
+                <div class="admin-label">Writer Prompt</div>
+                <pre class="prompt-text">${escapeHtml(prompt.prompt || "")}</pre>
+                <div class="prompt-actions">
+                  <button class="admin-button" type="button" data-copy-prompt="${escapeHtml(payload)}">Copy Prompt</button>
+                  ${match ? `<a class="admin-button secondary" href="${escapeHtml(match.file)}">Open Match</a>` : ""}
+                </div>
+                ${match ? `<a class="published-link" href="${escapeHtml(match.file)}">${escapeHtml(match.title)}</a>` : ""}
+              </div>
+              <div>
+                <div class="admin-label">Checklist</div>
+                <div class="mini-list">
+                  ${notes.map((note) => `<div>${escapeHtml(note)}</div>`).join("") || "<div>No writer notes.</div>"}
+                </div>
+                <div class="admin-label" style="margin-top:0.95rem;">Star Context</div>
+                <div class="mini-list">
+                  ${stars.map((star) => `<div>${escapeHtml(star)}</div>`).join("") || "<div>No compact star-player context on this prompt.</div>"}
+                </div>
+                <div class="admin-label" style="margin-top:0.95rem;">JSON Context</div>
+                <div class="mini-list">
+                  ${context.slice(0, 6).map((item) => `<div>${escapeHtml(item)}</div>`).join("")}
+                  ${context.length > 6 ? `<div>+${context.length - 6} more source files</div>` : ""}
+                </div>
+              </div>
+            </div>
+          </article>
+        `;
+      };
+
+      const bindCopyButtons = () => {
+        document.querySelectorAll("[data-copy-prompt]").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const payload = button.getAttribute("data-copy-prompt") || "";
+            try {
+              await navigator.clipboard.writeText(payload);
+              button.textContent = "Copied";
+              window.setTimeout(() => { button.textContent = "Copy Prompt"; }, 1200);
+            } catch {
+              button.textContent = "Copy Failed";
+              window.setTimeout(() => { button.textContent = "Copy Prompt"; }, 1200);
+            }
+          });
+        });
+      };
+
+      const render = (pkg) => {
+        const prompts = getAllPrompts(pkg);
+        const matches = prompts.map((prompt) => ({ prompt, match: findPublishedMatch(prompt) }));
+        const missing = matches.filter((item) => !item.match).map((item) => item.prompt);
+        const sources = pkg.source || [];
+
+        document.querySelector("[data-admin-period]").textContent = pkg.period?.label || "Latest Sim";
+        document.querySelector("[data-stat-prompts]").textContent = prompts.length;
+        document.querySelector("[data-stat-published]").textContent = prompts.length - missing.length;
+        document.querySelector("[data-stat-missing]").textContent = missing.length;
+        document.querySelector("[data-stat-sources]").textContent = sources.length;
+
+        packageList.innerHTML = prompts.map(renderPromptCard).join("");
+        missingList.innerHTML = missing.length
+          ? missing.map((prompt) => `<div>${escapeHtml(prompt.title)}</div>`).join("")
+          : "<div>Nothing missing. The package is fully covered.</div>";
+        sourceList.innerHTML = sources.map((source) => `<div><code>${escapeHtml(source)}</code></div>`).join("");
+
+        bindCopyButtons();
+      };
+
+      fetch(promptPath)
+        .then((response) => {
+          if (!response.ok) throw new Error(`Could not load ${promptPath}: ${response.status}`);
+          return response.json();
+        })
+        .then(render)
+        .catch((error) => {
+          packageList.innerHTML = `<div class="error-box">${escapeHtml(error.message)}</div>`;
+          missingList.textContent = "Package failed to load.";
+          sourceList.textContent = "Package failed to load.";
+          document.querySelector("[data-admin-period]").textContent = "Unavailable";
+        });
+    })();
+  </script>
+</body>
+</html>

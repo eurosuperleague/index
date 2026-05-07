@@ -28,13 +28,13 @@ jobs:
           node-version: 22
 
       - name: Run Discord article notifier
-        working-directory: 2bslmedia/discord-media-bot
+        working-directory: .eslmedia/discord-media-bot
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
           DISCORD_ROLE_ID: ${{ secrets.DISCORD_ROLE_ID }}
           MEDIA_ARTICLES_SOURCE: ../content/media-articles.js
-          ARTICLE_BASE_URL: https://eurosuperleague.github.io/index/2bslmedia/content/
+          ARTICLE_BASE_URL: https://eurosuperleague.github.io/index/.eslmedia/content/
           CHECK_INTERVAL_MS: 300000
         run: node bot.js --once
 
@@ -42,7 +42,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add 2bslmedia/discord-media-bot/data/announced-articles.json
+          git add .eslmedia/discord-media-bot/data/announced-articles.json
           git diff --cached --quiet || git commit -m "Update ESL Media Discord announcement state"
 
       - name: Push updated state

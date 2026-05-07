@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Coverage - ESL Media</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23111b36'/><text x='50' y='75' font-family='serif' font-size='45' font-weight='900' fill='%23FFFFFF' text-anchor='middle'>ESL</text></svg>">
+  <style>
+    @import url("./media-shared.css");
+
+    body {
+      background: #f4f2ec;
+      color: #0f0f0f;
+      font-family: var(--font-sans);
+    }
+
+    .team-page {
+      width: min(1180px, calc(100% - 2.5rem));
+      margin: 2rem auto 3rem;
+      display: grid;
+      gap: 1.6rem;
+    }
+
+    .team-hero {
+      background: #fff;
+      border: 1px solid #0f0f0f;
+      border-top: 4px solid #111b36;
+      box-shadow: 6px 6px 0 rgba(17, 27, 54, 0.14);
+      padding: 1.6rem 1.6rem 1.8rem;
+      display: grid;
+      grid-template-columns: 96px minmax(0, 1fr);
+      gap: 1.15rem;
+      align-items: center;
+    }
+
+    .team-hero-logo {
+      display: block;
+      width: 96px !important;
+      height: 96px !important;
+      min-width: 96px;
+      min-height: 96px;
+      max-width: 96px;
+      max-height: 96px;
+      object-fit: contain;
+      border-radius: 50%;
+      border: 1px solid #ddd5c6;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .team-kicker {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #111b36;
+      margin-bottom: 0.35rem;
+    }
+
+    .team-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      line-height: 1;
+      margin-bottom: 0.45rem;
+    }
+
+    .team-dek {
+      color: #524633;
+      line-height: 1.6;
+      max-width: 60ch;
+    }
+
+    .team-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem 1.4rem;
+      padding-top: 0.9rem;
+      margin-top: 0.9rem;
+      border-top: 1px solid #ddd5c6;
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #524633;
+    }
+
+    .team-articles {
+      background: #fff;
+      border: 1px solid #ddd5c6;
+      padding: 1.25rem 1.25rem 1.4rem;
+    }
+
+    .team-section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      border-bottom: 2px solid #0f0f0f;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .team-section-title {
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #111b36;
+    }
+
+    .team-section-note {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #524633;
+    }
+
+    .team-article-list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .team-article-card {
+      border-bottom: 1px solid #e3d7bf;
+      padding-bottom: 1rem;
+    }
+
+    .team-article-card:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .team-article-tag {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #111b36;
+      margin-bottom: 0.35rem;
+    }
+
+    .team-article-headline {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      line-height: 1.18;
+      margin-bottom: 0.45rem;
+    }
+
+    .team-article-headline a {
+      color: #0f0f0f;
+      text-decoration: none;
+    }
+
+    .team-article-headline a:hover {
+      color: #111b36;
+    }
+
+    .team-article-blurb {
+      color: #524633;
+      line-height: 1.55;
+      margin-bottom: 0.65rem;
+    }
+
+    .team-article-meta {
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #524633;
+    }
+
+    .team-empty {
+      color: #524633;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 760px) {
+      .team-page {
+        width: min(100%, calc(100% - 1.25rem));
+      }
+
+      .team-hero {
+        grid-template-columns: 1fr;
+        padding: 1.2rem 1rem 1.35rem;
+      }
+
+      .team-hero-logo {
+        width: 72px !important;
+        height: 72px !important;
+        min-width: 72px;
+        min-height: 72px;
+        max-width: 72px;
+        max-height: 72px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-topbar">
+    <div class="site-topbar-inner">
+      <div class="site-topbar-brand">
+        <div class="site-edition-pill">Front Page</div>
+        <div>European Super League Sports Desk</div>
+      </div>
+      <ul class="site-topbar-nav">
+        <li><a href="../homepage.html">Home</a></li>
+        <li><a href="./all-articles.html">All Articles</a></li>
+        <li><a href="./articles/october_1981_month_in_review.html">Latest</a></li>
+        <li><a href="./analysis.html">Analysis</a></li>
+        <li><a href="./scouting.html">Scouting</a></li>
+        <li><a href="./interviews.html">Interviews</a></li>
+        <li><a href="../../index.htm">League Site</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="site-ticker">
+    <div class="site-ticker-inner">
+      <span class="site-ticker-label">Team Page</span>
+      <div class="site-ticker-track">
+        <div class="site-ticker-item">Every listed story here explicitly mentions the selected club in the article copy</div>
+        <div class="site-ticker-item">Use the Teams menu to jump between clubs without leaving the media site</div>
+        <div class="site-ticker-item">Every listed story here explicitly mentions the selected club in the article copy</div>
+        <div class="site-ticker-item">Use the Teams menu to jump between clubs without leaving the media site</div>
+      </div>
+    </div>
+  </div>
+
+  <main class="team-page">
+    <section class="team-hero" id="teamHero"></section>
+    <section class="team-articles">
+      <div class="team-section-head">
+        <div class="team-section-title">Coverage</div>
+        <div class="team-section-note" id="teamCoverageCount">Loading</div>
+      </div>
+      <div class="team-article-list" id="teamArticleList"></div>
+    </section>
+  </main>
+
+  <script src="./media-articles.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const teamSlug = params.get("team");
+    const articles = Array.isArray(window.ESL_MEDIA_ARTICLES) ? [...window.ESL_MEDIA_ARTICLES] : [];
+    const hero = document.getElementById("teamHero");
+    const articleList = document.getElementById("teamArticleList");
+    const coverageCount = document.getElementById("teamCoverageCount");
+
+    window.ESL_TEAM_DIRECTORY_READY.then(() => {
+      const team = window.ESL_MEDIA_HELPERS?.getTeamBySlug(teamSlug);
+
+      if (!team) {
+        document.title = "Team Not Found - ESL Media";
+        hero.innerHTML = `
+          <div class="team-kicker">Team Page</div>
+          <div>
+            <h1 class="team-title">Team not found</h1>
+            <p class="team-dek">That club does not have a media page yet. Head back to the directory and pick a team from the current ESL tiers.</p>
+            <div class="team-meta"><span><a href="./teams.html">Back to teams</a></span></div>
+          </div>
+        `;
+        coverageCount.textContent = "0 stories";
+        articleList.innerHTML = `<p class="team-empty">No matching team was found for this page.</p>`;
+        return;
+      }
+
+      const related = articles
+        .filter((article) => Array.isArray(article.teams) && article.teams.includes(team.name))
+        .sort((a, b) => b.sortKey.localeCompare(a.sortKey));
+
+      document.title = `${team.name} Coverage - ESL Media`;
+      hero.innerHTML = `
+        ${team.logo ? `<img class="team-hero-logo" src="../../.assets/photos/${team.logo}" alt="${team.name} logo" loading="lazy">` : `<span class="team-hero-logo"></span>`}
+        <div>
+          <div class="team-kicker">${team.tier}</div>
+          <h1 class="team-title">${team.name}</h1>
+          <p class="team-dek">Every ESL Media article currently tagged with ${team.name} lives here, from power boards and award columns to interviews and scouting pieces.</p>
+          <div class="team-meta">
+            <span>${related.length} tagged stories</span>
+            <span><a href="./teams.html">All Teams</a></span>
+          </div>
+        </div>
+      `;
+
+      coverageCount.textContent = `${related.length} ${related.length === 1 ? "story" : "stories"}`;
+      articleList.innerHTML = related.length
+        ? related.map((article) => `
+            <article class="team-article-card">
+              <div class="team-article-tag">${article.tag}</div>
+              <h2 class="team-article-headline"><a href="./${article.file}">${article.title}</a></h2>
+              <p class="team-article-blurb">${article.blurb}</p>
+              <div class="team-article-meta">${article.author} · ${article.meta}</div>
+            </article>
+          `).join("")
+        : `<p class="team-empty">No tagged ESL Media articles mention ${team.name} yet.</p>`;
+    });
+  </script>
+</body>
+</html>

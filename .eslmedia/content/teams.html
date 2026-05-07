@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teams - ESL Media</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23111b36'/><text x='50' y='75' font-family='serif' font-size='45' font-weight='900' fill='%23FFFFFF' text-anchor='middle'>ESL</text></svg>">
+  <style>
+    @import url("./media-shared.css");
+
+    body {
+      background: #f4f2ec;
+      color: #0f0f0f;
+      font-family: var(--font-sans);
+    }
+
+    .teams-page {
+      width: min(1240px, calc(100% - 2.5rem));
+      margin: 2rem auto 3rem;
+      background: #fff;
+      border: 1px solid #0f0f0f;
+      box-shadow: 6px 6px 0 rgba(17, 27, 54, 0.14);
+      padding: 2rem 2rem 2.25rem;
+    }
+
+    .teams-masthead {
+      border-bottom: 2px solid #0f0f0f;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .teams-kicker {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: #111b36;
+      margin-bottom: 0.45rem;
+    }
+
+    .teams-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      line-height: 1;
+      margin-bottom: 0.55rem;
+    }
+
+    .teams-dek {
+      max-width: 62ch;
+      color: #524633;
+      line-height: 1.6;
+    }
+
+    .teams-directory-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .teams-directory-column {
+      background: #faf8f2;
+      border: 1px solid #ddd5c6;
+      padding: 1rem 1rem 1.15rem;
+    }
+
+    .teams-directory-title {
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #111b36;
+      border-bottom: 1px solid #0f0f0f;
+      padding-bottom: 0.55rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .teams-directory-list {
+      display: grid;
+      gap: 0.7rem;
+    }
+
+    .teams-directory-link {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      color: #0f0f0f !important;
+      text-decoration: none !important;
+      padding: 0.2rem 0;
+      text-transform: none !important;
+      letter-spacing: 0 !important;
+      font-size: 0.96rem;
+      font-weight: 400;
+      line-height: 1.25;
+    }
+
+    .teams-directory-link:hover {
+      color: #111b36 !important;
+    }
+
+    .teams-directory-link span {
+      color: inherit !important;
+      display: inline !important;
+      text-transform: none !important;
+      letter-spacing: 0 !important;
+      font-size: 0.96rem;
+      font-weight: 400;
+      line-height: 1.25;
+      white-space: nowrap;
+    }
+
+    .teams-directory-logo {
+      display: block;
+      width: 26px !important;
+      height: 26px !important;
+      min-width: 26px;
+      min-height: 26px;
+      max-width: 26px;
+      max-height: 26px;
+      object-fit: contain;
+      border-radius: 50%;
+      border: 1px solid #ddd5c6;
+      background: #fff;
+      flex: 0 0 auto;
+      overflow: hidden;
+    }
+
+    @media (max-width: 900px) {
+      .teams-directory-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .teams-page {
+        width: min(100%, calc(100% - 1.25rem));
+        padding: 1.4rem 1rem 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-topbar">
+    <div class="site-topbar-inner">
+      <div class="site-topbar-brand">
+        <div class="site-edition-pill">Front Page</div>
+        <div>European Super League Sports Desk</div>
+      </div>
+      <ul class="site-topbar-nav">
+        <li><a href="../homepage.html">Home</a></li>
+        <li><a href="./all-articles.html">All Articles</a></li>
+        <li><a href="./articles/october_1981_month_in_review.html">Latest</a></li>
+        <li><a href="./analysis.html">Analysis</a></li>
+        <li><a href="./scouting.html">Scouting</a></li>
+        <li><a href="./interviews.html">Interviews</a></li>
+        <li><a href="../../index.htm">League Site</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="site-ticker">
+    <div class="site-ticker-inner">
+      <span class="site-ticker-label">Teams</span>
+      <div class="site-ticker-track">
+        <div class="site-ticker-item">Browse every ESL club by tier and jump straight into the coverage around them</div>
+        <div class="site-ticker-item">Every team page pulls together the full article file for that club</div>
+        <div class="site-ticker-item">Browse every ESL club by tier and jump straight into the coverage around them</div>
+        <div class="site-ticker-item">Every team page pulls together the full article file for that club</div>
+      </div>
+    </div>
+  </div>
+
+  <main class="teams-page">
+    <div class="teams-masthead">
+      <div class="teams-kicker">Team Directory</div>
+      <h1 class="teams-title">All Teams</h1>
+      <p class="teams-dek">Pick a club to open its media page. Each team page collects every ESL Media article that mentions that team, from power boards to interviews and scouting pieces.</p>
+    </div>
+
+    <div class="teams-directory-grid" id="teamsDirectoryGrid"></div>
+  </main>
+
+  <script src="./media-articles.js"></script>
+  <script>
+    const grid = document.getElementById("teamsDirectoryGrid");
+    const tiers = ["Champions League", "Europa League", "Conference League"];
+
+    window.ESL_TEAM_DIRECTORY_READY.then((teamDirectory) => {
+      grid.innerHTML = tiers.map((tier) => {
+        const teams = teamDirectory.filter((team) => team.tier === tier);
+        return `
+          <section class="teams-directory-column">
+            <div class="teams-directory-title">${tier}</div>
+            <div class="teams-directory-list">
+              ${teams.map((team) => `
+                <a class="teams-directory-link" href="./team.html?team=${team.slug}">
+                  ${team.logo ? `<img class="teams-directory-logo" src="../../.assets/photos/${team.logo}" alt="${team.name} logo" loading="lazy">` : `<span class="teams-directory-logo"></span>`}
+                  <span>${team.name}</span>
+                </a>
+              `).join("")}
+            </div>
+          </section>
+        `;
+      }).join("");
+    });
+  </script>
+</body>
+</html>
