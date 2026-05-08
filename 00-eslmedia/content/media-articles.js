@@ -50,6 +50,7 @@ window.ESL_MEDIA_ARTICLES = [
       "Manchester City",
       "Manchester United",
       "Marseille",
+      "Paris Saint-Germain",
       "Sheffield United",
       "Sporting CP",
       "Tottenham Hotspur",
@@ -221,6 +222,19 @@ window.ESL_MEDIA_ARTICLES = [
 (() => {
   let teamDirectory = [];
   const hasDocument = typeof document !== "undefined";
+  let articleTeamEnrichmentPromise = null;
+
+  const TEAM_NAME_ALIASES = {
+    "AC Milan": ["Milan"],
+    "AFC Richmond": ["Richmond"],
+    "Atletico Madrid": ["Atletico"],
+    "Bayern Munich": ["Bayern"],
+    "Crystal Palace": ["Palace"],
+    "Inter Milan": ["Inter"],
+    "Paris Saint-Germain": ["PSG"],
+    "Sporting CP": ["Sporting"],
+    "Tottenham Hotspur": ["Tottenham", "Spurs"]
+  };
 
   const slugifyTeam = (name) => name
     .toLowerCase()
@@ -299,6 +313,96 @@ window.ESL_MEDIA_ARTICLES = [
     return teamDirectory;
   }) : Promise.resolve(teamDirectory);
 
+  const normalizeArticleText = (value = "") => String(value)
+    .replace(/\u2019|\u2018/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  const escapeRegex = (value = "") => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+  const resolveArticleFileUrl = (articleFile) => {
+    const pathname = ((window.location && window.location.pathname) || "").replace(/\\/g, "/");
+    if (pathname.includes("/content/articles/")) {
+      return `./${articleFile.split("/").pop()}`;
+    }
+    if (pathname.includes("/content/")) {
+      return `./${articleFile}`;
+    }
+    return `content/${articleFile}`;
+  };
+
+  const extractReadableArticleText = (html = "") => {
+    if (typeof DOMParser !== "function") return normalizeArticleText(html);
+
+    const parsed = new DOMParser().parseFromString(html, "text/html");
+    parsed.querySelectorAll("script, style, noscript").forEach((node) => node.remove());
+    return normalizeArticleText(parsed.body?.textContent || parsed.documentElement?.textContent || "");
+  };
+
+  const buildTeamAliasMatchers = (directory = teamDirectory) => {
+    const aliasMap = new Map();
+
+    directory.forEach((team) => {
+      const aliases = [team.name, ...(TEAM_NAME_ALIASES[team.name] || [])];
+      aliases.forEach((alias) => {
+        const cleanAlias = normalizeArticleText(alias);
+        if (!cleanAlias) return;
+        if (!aliasMap.has(team.name)) aliasMap.set(team.name, []);
+        aliasMap.get(team.name).push(cleanAlias);
+      });
+    });
+
+    return Array.from(aliasMap.entries()).map(([teamName, aliases]) => ({
+      teamName,
+      aliases: [...new Set(aliases)].sort((a, b) => b.length - a.length),
+      patterns: [...new Set(aliases)].sort((a, b) => b.length - a.length).map((alias) => (
+        new RegExp(`(^|[^A-Za-z0-9])${escapeRegex(alias)}(?=$|[^A-Za-z0-9])`, "i")
+      ))
+    }));
+  };
+
+  const detectMentionedTeams = (articleText, directory = teamDirectory) => {
+    const normalized = normalizeArticleText(articleText);
+    if (!normalized || !directory.length) return [];
+
+    return buildTeamAliasMatchers(directory)
+      .filter(({ patterns }) => patterns.some((pattern) => pattern.test(normalized)))
+      .map(({ teamName }) => teamName)
+      .sort((a, b) => a.localeCompare(b));
+  };
+
+  const enrichArticleTeamsFromContent = async (directory = teamDirectory) => {
+    const articles = Array.isArray(window.ESL_MEDIA_ARTICLES) ? window.ESL_MEDIA_ARTICLES : [];
+    if (!articles.length || typeof fetch !== "function" || !directory.length) return articles;
+
+    await Promise.all(articles.map(async (article) => {
+      if (!article?.file) return;
+
+      try {
+        const response = await fetch(resolveArticleFileUrl(article.file));
+        if (!response.ok) return;
+
+        const html = await response.text();
+        const detectedTeams = detectMentionedTeams(extractReadableArticleText(html), directory);
+        const declaredTeams = Array.isArray(article.teams) ? article.teams : [];
+        article.teams = [...new Set([...declaredTeams, ...detectedTeams])].sort((a, b) => a.localeCompare(b));
+      } catch (error) {
+        console.warn(`Could not enrich team tags for ${article.file}`, error);
+      }
+    }));
+
+    return articles;
+  };
+
+  window.ESL_MEDIA_ARTICLES_READY = hasDocument ? (
+    articleTeamEnrichmentPromise ||= window.ESL_TEAM_DIRECTORY_READY
+      .then((directory) => enrichArticleTeamsFromContent(directory))
+      .catch((error) => {
+        console.warn(error);
+        return Array.isArray(window.ESL_MEDIA_ARTICLES) ? window.ESL_MEDIA_ARTICLES : [];
+      })
+  ) : Promise.resolve(Array.isArray(window.ESL_MEDIA_ARTICLES) ? window.ESL_MEDIA_ARTICLES : []);
+
   const buildTeamMenuMarkup = (directory = teamDirectory) => {
     const grouped = {};
     directory.forEach((team) => {
@@ -334,6 +438,7 @@ window.ESL_MEDIA_ARTICLES = [
     getPathContext,
     getTeamBySlug: (slug) => teamDirectory.find((team) => team.slug === slug) || null,
     getTeamByName: (name) => teamDirectory.find((team) => team.name === name) || null,
+    detectMentionedTeams,
     loadTeamDirectory,
     getLatestMonthInReview: () => {
       const articles = Array.isArray(window.ESL_MEDIA_ARTICLES) ? window.ESL_MEDIA_ARTICLES : [];

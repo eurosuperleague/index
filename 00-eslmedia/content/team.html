@@ -239,13 +239,16 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     const teamSlug = params.get("team");
-    const articles = Array.isArray(window.ESL_MEDIA_ARTICLES) ? [...window.ESL_MEDIA_ARTICLES] : [];
     const hero = document.getElementById("teamHero");
     const articleList = document.getElementById("teamArticleList");
     const coverageCount = document.getElementById("teamCoverageCount");
 
-    window.ESL_TEAM_DIRECTORY_READY.then(() => {
+    Promise.all([
+      window.ESL_TEAM_DIRECTORY_READY,
+      window.ESL_MEDIA_ARTICLES_READY || Promise.resolve(window.ESL_MEDIA_ARTICLES || [])
+    ]).then(([, readyArticles]) => {
       const team = window.ESL_MEDIA_HELPERS?.getTeamBySlug(teamSlug);
+      const articles = Array.isArray(readyArticles) ? [...readyArticles] : [];
 
       if (!team) {
         document.title = "Team Not Found - ESL Media";
