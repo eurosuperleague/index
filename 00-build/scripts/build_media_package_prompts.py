@@ -25,11 +25,27 @@ POWER_RANKING_SERIES = {
     "Tier 2": "elb_power_rankings",
     "Tier 3": "ecl_power_rankings",
 }
+GAME_RESULTS_CONTEXT = "../../00-build/database/game_results.json"
 
 
 def load_json(path):
     with open(path, "r", encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def is_preseason_game(game):
+    return str(game.get("sectionSlug") or game.get("section") or "").strip().casefold() == "preseason"
+
+
+def is_preseason_package(latest_sim_results):
+    results = latest_sim_results.get("results", [])
+    return bool(results) and all(is_preseason_game(game) for game in results)
+
+
+def context_sources(paths, include_preseason):
+    if include_preseason:
+        return paths
+    return [path for path in paths if path != GAME_RESULTS_CONTEXT]
 
 
 def find_latest_power_ranking_article(tier_name):
@@ -70,7 +86,7 @@ def compact_team_stars(team_star_lookup):
     ]
 
 
-def build_power_rankings(overall_team_form, monthly_team_form, period_label, team_star_lookup):
+def build_power_rankings(overall_team_form, monthly_team_form, period_label, team_star_lookup, include_preseason):
     prompts = []
     overall_tiers = overall_team_form.get("tiers", {})
     monthly_tiers = monthly_team_form.get("tiers", {})
@@ -106,18 +122,18 @@ def build_power_rankings(overall_team_form, monthly_team_form, period_label, tea
                     "Work in star-player mentions for the biggest teams, risers, fallers, or arguments where roster quality matters.",
                     "Call out at least one riser, one faller, and one team you are still unsure about.",
                 ],
-                "availableContext": [
+                "availableContext": context_sources([
                     "../../00-build/database/monthly/overall_team_form.json",
                     "../../00-build/database/monthly/monthly_team_form.json",
                     "../../00-build/database/monthly/latest_sim_results.json",
                     "../../00-build/database/monthly/tier_race_snapshot.json",
                     "../../00-build/database/monthly/monthly_storylines.json",
                     "../../00-build/database/standings.json",
-                    "../../00-build/database/game_results.json",
+                    GAME_RESULTS_CONTEXT,
                     "../../00-build/database/teams.json",
                     "../../00-build/database/players.json",
                     "../../00-build/database/player_stats.json",
-                ],
+                ], include_preseason),
                 "teamPool": [
                     {
                         "team": team["team"],
@@ -152,7 +168,7 @@ def build_power_rankings(overall_team_form, monthly_team_form, period_label, tea
     return prompts
 
 
-def build_race_watch(tier_race_snapshot, period_label):
+def build_race_watch(tier_race_snapshot, period_label, include_preseason):
     return {
         "id": "promotion-relegation-watch",
         "type": "race_watch",
@@ -170,19 +186,19 @@ def build_race_watch(tier_race_snapshot, period_label):
             "Tier 3 has 1 promotion spot.",
             "Explain the pressure line clearly before making bigger editorial claims.",
         ],
-        "availableContext": [
+        "availableContext": context_sources([
             "../../00-build/database/monthly/tier_race_snapshot.json",
             "../../00-build/database/monthly/monthly_team_form.json",
             "../../00-build/database/monthly/overall_team_form.json",
             "../../00-build/database/monthly/latest_sim_results.json",
             "../../00-build/database/standings.json",
-            "../../00-build/database/game_results.json",
-        ],
+            GAME_RESULTS_CONTEXT,
+        ], include_preseason),
         "races": tier_race_snapshot.get("races", []),
     }
 
 
-def build_stock_report(monthly_team_form, period_label):
+def build_stock_report(monthly_team_form, period_label, include_preseason):
     teams = [team for tier in monthly_team_form.get("tiers", {}).values() for team in tier]
     ordered_up = sorted(
         teams,
@@ -212,20 +228,20 @@ def build_stock_report(monthly_team_form, period_label):
             "A close 1-0 month can be less convincing than a dominant 1-0 month.",
             "Use concise, punchy sections rather than one long essay.",
         ],
-        "availableContext": [
+        "availableContext": context_sources([
             "../../00-build/database/monthly/monthly_team_form.json",
             "../../00-build/database/monthly/overall_team_form.json",
             "../../00-build/database/monthly/monthly_storylines.json",
             "../../00-build/database/monthly/latest_sim_results.json",
             "../../00-build/database/standings.json",
-            "../../00-build/database/game_results.json",
-        ],
+            GAME_RESULTS_CONTEXT,
+        ], include_preseason),
         "stockUpPool": stock_up,
         "stockDownPool": stock_down,
     }
 
 
-def build_month_in_review(monthly_storylines, latest_sim_results, period_label, team_star_lookup):
+def build_month_in_review(monthly_storylines, latest_sim_results, period_label, team_star_lookup, include_preseason):
     storyline_lookup = {item["id"]: item for item in monthly_storylines.get("storylines", [])}
     featured_ids = monthly_storylines.get("featured", [])
     featured = [storyline_lookup[item_id] for item_id in featured_ids if item_id in storyline_lookup]
@@ -247,18 +263,18 @@ def build_month_in_review(monthly_storylines, latest_sim_results, period_label, 
             "Mention star players naturally, not as a checklist.",
             "End with a forward-looking note about next month.",
         ],
-        "availableContext": [
+        "availableContext": context_sources([
             "../../00-build/database/monthly/monthly_storylines.json",
             "../../00-build/database/monthly/monthly_team_form.json",
             "../../00-build/database/monthly/overall_team_form.json",
             "../../00-build/database/monthly/tier_race_snapshot.json",
             "../../00-build/database/monthly/latest_sim_results.json",
             "../../00-build/database/standings.json",
-            "../../00-build/database/game_results.json",
+            GAME_RESULTS_CONTEXT,
             "../../00-build/database/teams.json",
             "../../00-build/database/players.json",
             "../../00-build/database/freeagents.json",
-        ],
+        ], include_preseason),
         "featuredStorylines": featured,
         "teamStarPlayers": compact_team_stars(team_star_lookup),
         "latestSimGameCount": len(latest_sim_results.get("results", [])),
@@ -277,6 +293,7 @@ def main():
 
     period_label = latest_sim_results.get("period", {}).get("label", "Latest Sim")
     team_star_lookup = build_team_star_lookup(teams)
+    include_preseason = is_preseason_package(latest_sim_results)
 
     output = {
         "source": [
@@ -289,10 +306,10 @@ def main():
         ],
         "period": latest_sim_results.get("period", {}),
         "package": {
-            "powerRankings": build_power_rankings(overall_team_form, monthly_team_form, period_label, team_star_lookup),
-            "promotionRelegationWatch": build_race_watch(tier_race_snapshot, period_label),
-            "stockUpStockDown": build_stock_report(monthly_team_form, period_label),
-            "monthInReview": build_month_in_review(monthly_storylines, latest_sim_results, period_label, team_star_lookup),
+            "powerRankings": build_power_rankings(overall_team_form, monthly_team_form, period_label, team_star_lookup, include_preseason),
+            "promotionRelegationWatch": build_race_watch(tier_race_snapshot, period_label, include_preseason),
+            "stockUpStockDown": build_stock_report(monthly_team_form, period_label, include_preseason),
+            "monthInReview": build_month_in_review(monthly_storylines, latest_sim_results, period_label, team_star_lookup, include_preseason),
         },
     }
 

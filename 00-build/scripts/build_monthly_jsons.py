@@ -37,6 +37,16 @@ def parse_game_date(value):
         return None
 
 
+def is_preseason_game(game):
+    return str(game.get("sectionSlug") or game.get("section") or "").strip().casefold() == "preseason"
+
+
+def filter_preseason_when_regular_exists(games):
+    if not any(not is_preseason_game(game) for game in games):
+        return list(games)
+    return [game for game in games if not is_preseason_game(game)]
+
+
 def make_team_lookup(standings_data):
     lookup = {}
     for config in TIER_CONFIG:
@@ -86,6 +96,7 @@ def build_latest_sim_results(game_results_data):
         for parsed_date, game in dated_results
         if parsed_date.year == latest_year and parsed_date.month == latest_month
     ]
+    filtered_results = filter_preseason_when_regular_exists(filtered_results)
 
     return {
         "source": ["game_results.json"],
@@ -427,10 +438,15 @@ def main():
 
     standings_data = load_json(STANDINGS_PATH)
     game_results_data = load_json(GAME_RESULTS_PATH)
+    overall_games = filter_preseason_when_regular_exists(game_results_data.get("results", []))
+    overall_game_results_data = {
+        **game_results_data,
+        "results": overall_games,
+    }
 
     overall_team_form = build_team_form(
         standings_data,
-        game_results_data,
+        overall_game_results_data,
         ["standings.json", "game_results.json"],
     )
     with open(OVERALL_TEAM_FORM_PATH, "w", encoding="utf-8") as handle:
@@ -452,7 +468,7 @@ def main():
     with open(TIER_RACE_SNAPSHOT_PATH, "w", encoding="utf-8") as handle:
         json.dump(tier_race_snapshot, handle, indent=4)
 
-    monthly_storylines = build_monthly_storylines(monthly_team_form, game_results_data, tier_race_snapshot)
+    monthly_storylines = build_monthly_storylines(monthly_team_form, latest_sim_results, tier_race_snapshot)
     with open(MONTHLY_STORYLINES_PATH, "w", encoding="utf-8") as handle:
         json.dump(monthly_storylines, handle, indent=4)
 

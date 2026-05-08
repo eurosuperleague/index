@@ -27,6 +27,138 @@ window.ESL_TEAM_LOGOS = {
 
 window.ESL_MEDIA_ARTICLES = [
   {
+    file: "articles/november_1981_month_in_review.html",
+    title: "November 1981 Month in Review: The regular season bites back",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-08-06",
+    tag: "Month In Review",
+    author: "Graham Trent",
+    meta: "Monthly Review",
+    blurb: "Sheffield surged, Aston Villa sank, Richmond led Tier 1, and the first regular-season pressure lines sharpened fast.",
+    teams: [
+      "AFC Richmond",
+      "Aston Villa",
+      "Barcelona",
+      "Crystal Palace",
+      "Manchester City",
+      "Marseille",
+      "Monaco",
+      "Sheffield United",
+      "Tottenham Hotspur"
+    ]
+  },
+  {
+    file: "articles/november_1981_stock_up_stock_down.html",
+    title: "Stock Up, Stock Down: Sheffield and Villa define November",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-08-05",
+    tag: "Stock Report",
+    author: "Damon Cross",
+    meta: "Monthly Stock Report",
+    blurb: "Sheffield United, Marseille, and AFC Richmond rise while Aston Villa, Monaco, and Manchester United wear the month's hardest falls.",
+    teams: [
+      "AFC Richmond",
+      "Aston Villa",
+      "Chelsea",
+      "Manchester United",
+      "Marseille",
+      "Monaco",
+      "Sheffield United"
+    ]
+  },
+  {
+    file: "articles/november_1981_promotion_relegation_watch.html",
+    title: "Promotion and Relegation Watch: The lines are already cruel",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-08-04",
+    tag: "Race Watch",
+    author: "Graham Trent",
+    meta: "November Race Watch",
+    blurb: "Manchester United, Crystal Palace, Sheffield United, Marseille, Barcelona, and Aston Villa define the current pressure map.",
+    teams: [
+      "Ajax",
+      "Aston Villa",
+      "Atletico Madrid",
+      "Barcelona",
+      "Benfica",
+      "Brighton",
+      "Chelsea",
+      "Crystal Palace",
+      "FL Fart",
+      "Inter Milan",
+      "Manchester United",
+      "Marseille",
+      "Monaco",
+      "Sheffield United"
+    ]
+  },
+  {
+    file: "articles/november_1981_tier_3_power_rankings.html",
+    title: "Conference League Power Rankings: Barcelona leads a strange board",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-08-03",
+    tag: "Conference League",
+    author: "Nina Vale",
+    meta: "November Edition",
+    blurb: "Barcelona owns the best Tier 3 record, but FL Fart's margin and Inter Milan's profile keep the board unsettled.",
+    teams: [
+      "Barcelona",
+      "FL Fart",
+      "Inter Milan",
+      "Manchester City",
+      "Paris Saint-Germain",
+      "Sporting CP",
+      "Tottenham Hotspur",
+      "Valencia"
+    ]
+  },
+  {
+    file: "articles/november_1981_tier_2_power_rankings.html",
+    title: "Europa League Power Rankings: Sheffield grabs the top line",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-08-02",
+    tag: "Europa League",
+    author: "Nina Vale",
+    meta: "November Edition",
+    blurb: "Sheffield United and Marseille both hit 6-1, while Benfica and Chelsea keep the promotion race alive.",
+    teams: [
+      "Ajax",
+      "Aston Villa",
+      "Benfica",
+      "Chelsea",
+      "Juventus",
+      "Marseille",
+      "Monaco",
+      "Sheffield United"
+    ]
+  },
+  {
+    file: "articles/november_1981_tier_1_power_rankings.html",
+    title: "Champions League Power Rankings: Richmond owns November",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-08-01",
+    tag: "Champions League",
+    author: "Nina Vale",
+    meta: "November Edition",
+    blurb: "AFC Richmond leads Tier 1, Bayern Munich surges, and Manchester United falls to the bottom of the Champions League board.",
+    teams: [
+      "AC Milan",
+      "AFC Richmond",
+      "Atletico Madrid",
+      "Bayern Munich",
+      "Brighton",
+      "Crystal Palace",
+      "Manchester United",
+      "Real Madrid"
+    ]
+  },
+  {
     file: "articles/october_1981_month_in_review.html",
     title: "October 1981 Month in Review: Preseason already has a tone",
     category: "Analysis",

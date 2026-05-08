@@ -49,14 +49,14 @@
                 },
                 {
                     "team": "Brighton",
-                    "record": "3-4",
+                    "record": "2-4",
                     "standingRank": 5,
                     "streak": "W1",
                     "last3": "LLW",
-                    "avgMargin": 0.71,
-                    "pointDiff": 5,
-                    "gapToLine": 1,
-                    "status": "above_safety",
+                    "avgMargin": -2.83,
+                    "pointDiff": -17,
+                    "gapToLine": 0,
+                    "status": "on_or_below_line",
                     "rosterUrl": "./rosters/roster10.htm"
                 }
             ]
@@ -95,14 +95,14 @@
                 },
                 {
                     "team": "Benfica",
-                    "record": "6-2",
+                    "record": "5-2",
                     "standingRank": 3,
                     "streak": "W2",
                     "last3": "LWW",
-                    "avgMargin": 3.38,
-                    "pointDiff": 27,
-                    "gapToLine": 0,
-                    "status": "on_or_above_line",
+                    "avgMargin": 3.14,
+                    "pointDiff": 22,
+                    "gapToLine": 1,
+                    "status": "chasing",
                     "rosterUrl": "./rosters/roster13.htm"
                 },
                 {
@@ -198,16 +198,16 @@
                     "rosterUrl": "./rosters/roster27.htm"
                 },
                 {
-                    "team": "Paris Saint-Germain",
-                    "record": "4-4",
-                    "standingRank": 5,
-                    "streak": "L1",
-                    "last3": "LWL",
-                    "avgMargin": 3.75,
-                    "pointDiff": 30,
+                    "team": "Inter Milan",
+                    "record": "4-2",
+                    "standingRank": 3,
+                    "streak": "W1",
+                    "last3": "LLW",
+                    "avgMargin": 6.17,
+                    "pointDiff": 37,
                     "gapToLine": 2,
                     "status": "chasing",
-                    "rosterUrl": "./rosters/roster21.htm"
+                    "rosterUrl": "./rosters/roster26.htm"
                 }
             ]
         }

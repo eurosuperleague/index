@@ -14,23 +14,14 @@
                 "rosterFile": "roster12.htm",
                 "standingsLast10": "7-3",
                 "wins": 6,
-                "losses": 3,
-                "games": 9,
-                "pointsFor": 966,
-                "pointsAgainst": 889,
-                "pointDiff": 77,
-                "avgMargin": 8.56,
+                "losses": 2,
+                "games": 8,
+                "pointsFor": 884,
+                "pointsAgainst": 805,
+                "pointDiff": 79,
+                "avgMargin": 9.88,
                 "streak": "L1",
                 "recentResults": [
-                    {
-                        "date": "11/1/1981",
-                        "opponent": "Bayern Munich",
-                        "result": "L",
-                        "margin": 2,
-                        "score": "@Bayern Munich 84, AFC Richmond 82",
-                        "boxscoreUrl": "./boxes/box13-1.htm",
-                        "section": "Preseason"
-                    },
                     {
                         "date": "11/4/1981",
                         "opponent": "Manchester United",
@@ -124,15 +115,6 @@
                 },
                 "closeGames": [
                     {
-                        "date": "11/1/1981",
-                        "opponent": "Bayern Munich",
-                        "result": "L",
-                        "margin": 2,
-                        "score": "@Bayern Munich 84, AFC Richmond 82",
-                        "boxscoreUrl": "./boxes/box13-1.htm",
-                        "section": "Preseason"
-                    },
-                    {
                         "date": "11/14/1981",
                         "opponent": "Real Madrid",
                         "result": "W",
@@ -181,8 +163,8 @@
                     }
                 ],
                 "blowoutLosses": [],
-                "record": "6-3",
-                "closeGameCount": 3,
+                "record": "6-2",
+                "closeGameCount": 2,
                 "last3": "LWL"
             },
             {
@@ -193,24 +175,15 @@
                 "rosterUrl": "./rosters/roster7.htm",
                 "rosterFile": "roster7.htm",
                 "standingsLast10": "8-2",
-                "wins": 6,
+                "wins": 5,
                 "losses": 1,
-                "games": 7,
-                "pointsFor": 737,
-                "pointsAgainst": 672,
-                "pointDiff": 65,
-                "avgMargin": 9.29,
+                "games": 6,
+                "pointsFor": 653,
+                "pointsAgainst": 590,
+                "pointDiff": 63,
+                "avgMargin": 10.5,
                 "streak": "W5",
                 "recentResults": [
-                    {
-                        "date": "11/1/1981",
-                        "opponent": "AFC Richmond",
-                        "result": "W",
-                        "margin": 2,
-                        "score": "@Bayern Munich 84, AFC Richmond 82",
-                        "boxscoreUrl": "./boxes/box13-1.htm",
-                        "section": "Preseason"
-                    },
                     {
                         "date": "11/3/1981",
                         "opponent": "AC Milan",
@@ -284,17 +257,7 @@
                     "boxscoreUrl": "./boxes/box15-3.htm",
                     "section": "Regular Season"
                 },
-                "closeGames": [
-                    {
-                        "date": "11/1/1981",
-                        "opponent": "AFC Richmond",
-                        "result": "W",
-                        "margin": 2,
-                        "score": "@Bayern Munich 84, AFC Richmond 82",
-                        "boxscoreUrl": "./boxes/box13-1.htm",
-                        "section": "Preseason"
-                    }
-                ],
+                "closeGames": [],
                 "blowoutWins": [
                     {
                         "date": "11/12/1981",
@@ -335,8 +298,8 @@
                         "section": "Regular Season"
                     }
                 ],
-                "record": "6-1",
-                "closeGameCount": 1,
+                "record": "5-1",
+                "closeGameCount": 0,
                 "last3": "WWW"
             },
             {
@@ -484,23 +447,14 @@
                 "rosterFile": "roster9.htm",
                 "standingsLast10": "5-5",
                 "wins": 4,
-                "losses": 4,
-                "games": 8,
-                "pointsFor": 906,
-                "pointsAgainst": 911,
-                "pointDiff": -5,
-                "avgMargin": -0.62,
+                "losses": 3,
+                "games": 7,
+                "pointsFor": 807,
+                "pointsAgainst": 790,
+                "pointDiff": 17,
+                "avgMargin": 2.43,
                 "streak": "L1",
                 "recentResults": [
-                    {
-                        "date": "11/1/1981",
-                        "opponent": "Brighton",
-                        "result": "L",
-                        "margin": 22,
-                        "score": "@Brighton 121, AC Milan 99",
-                        "boxscoreUrl": "./boxes/box13-2.htm",
-                        "section": "Preseason"
-                    },
                     {
                         "date": "11/3/1981",
                         "opponent": "Bayern Munich",
@@ -625,15 +579,6 @@
                 ],
                 "blowoutLosses": [
                     {
-                        "date": "11/1/1981",
-                        "opponent": "Brighton",
-                        "result": "L",
-                        "margin": 22,
-                        "score": "@Brighton 121, AC Milan 99",
-                        "boxscoreUrl": "./boxes/box13-2.htm",
-                        "section": "Preseason"
-                    },
-                    {
                         "date": "11/18/1981",
                         "opponent": "Bayern Munich",
                         "result": "L",
@@ -652,7 +597,7 @@
                         "section": "Regular Season"
                     }
                 ],
-                "record": "4-4",
+                "record": "4-3",
                 "closeGameCount": 1,
                 "last3": "LWL"
             },
@@ -664,24 +609,15 @@
                 "rosterUrl": "./rosters/roster10.htm",
                 "rosterFile": "roster10.htm",
                 "standingsLast10": "5-5",
-                "wins": 3,
+                "wins": 2,
                 "losses": 4,
-                "games": 7,
-                "pointsFor": 737,
-                "pointsAgainst": 732,
-                "pointDiff": 5,
-                "avgMargin": 0.71,
+                "games": 6,
+                "pointsFor": 616,
+                "pointsAgainst": 633,
+                "pointDiff": -17,
+                "avgMargin": -2.83,
                 "streak": "W1",
                 "recentResults": [
-                    {
-                        "date": "11/1/1981",
-                        "opponent": "AC Milan",
-                        "result": "W",
-                        "margin": 22,
-                        "score": "@Brighton 121, AC Milan 99",
-                        "boxscoreUrl": "./boxes/box13-2.htm",
-                        "section": "Preseason"
-                    },
                     {
                         "date": "11/3/1981",
                         "opponent": "Atletico Madrid",
@@ -738,13 +674,13 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "11/1/1981",
-                    "opponent": "AC Milan",
+                    "date": "11/28/1981",
+                    "opponent": "Crystal Palace",
                     "result": "W",
-                    "margin": 22,
-                    "score": "@Brighton 121, AC Milan 99",
-                    "boxscoreUrl": "./boxes/box13-2.htm",
-                    "section": "Preseason"
+                    "margin": 12,
+                    "score": "@Brighton 98, Crystal Palace 86",
+                    "boxscoreUrl": "./boxes/box40-1.htm",
+                    "section": "Regular Season"
                 },
                 "worstLoss": {
                     "date": "11/12/1981",
@@ -766,17 +702,7 @@
                         "section": "Regular Season"
                     }
                 ],
-                "blowoutWins": [
-                    {
-                        "date": "11/1/1981",
-                        "opponent": "AC Milan",
-                        "result": "W",
-                        "margin": 22,
-                        "score": "@Brighton 121, AC Milan 99",
-                        "boxscoreUrl": "./boxes/box13-2.htm",
-                        "section": "Preseason"
-                    }
-                ],
+                "blowoutWins": [],
                 "blowoutLosses": [
                     {
                         "date": "11/12/1981",
@@ -788,7 +714,7 @@
                         "section": "Regular Season"
                     }
                 ],
-                "record": "3-4",
+                "record": "2-4",
                 "closeGameCount": 1,
                 "last3": "LLW"
             },
@@ -1530,24 +1456,15 @@
                 "rosterUrl": "./rosters/roster13.htm",
                 "rosterFile": "roster13.htm",
                 "standingsLast10": "6-4",
-                "wins": 6,
+                "wins": 5,
                 "losses": 2,
-                "games": 8,
-                "pointsFor": 843,
-                "pointsAgainst": 816,
-                "pointDiff": 27,
-                "avgMargin": 3.38,
+                "games": 7,
+                "pointsFor": 757,
+                "pointsAgainst": 735,
+                "pointDiff": 22,
+                "avgMargin": 3.14,
                 "streak": "W2",
                 "recentResults": [
-                    {
-                        "date": "11/1/1981",
-                        "opponent": "Juventus",
-                        "result": "W",
-                        "margin": 5,
-                        "score": "@Benfica 86, Juventus 81",
-                        "boxscoreUrl": "./boxes/box13-3.htm",
-                        "section": "Preseason"
-                    },
                     {
                         "date": "11/4/1981",
                         "opponent": "Sheffield United",
@@ -1632,15 +1549,6 @@
                 },
                 "closeGames": [
                     {
-                        "date": "11/1/1981",
-                        "opponent": "Juventus",
-                        "result": "W",
-                        "margin": 5,
-                        "score": "@Benfica 86, Juventus 81",
-                        "boxscoreUrl": "./boxes/box13-3.htm",
-                        "section": "Preseason"
-                    },
-                    {
                         "date": "11/17/1981",
                         "opponent": "Chelsea",
                         "result": "W",
@@ -1681,8 +1589,8 @@
                         "section": "Regular Season"
                     }
                 ],
-                "record": "6-2",
-                "closeGameCount": 3,
+                "record": "5-2",
+                "closeGameCount": 2,
                 "last3": "LWW"
             },
             {
@@ -1857,23 +1765,14 @@
                 "rosterFile": "roster14.htm",
                 "standingsLast10": "5-5",
                 "wins": 3,
-                "losses": 4,
-                "games": 7,
-                "pointsFor": 695,
-                "pointsAgainst": 674,
-                "pointDiff": 21,
-                "avgMargin": 3.0,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 614,
+                "pointsAgainst": 588,
+                "pointDiff": 26,
+                "avgMargin": 4.33,
                 "streak": "L2",
                 "recentResults": [
-                    {
-                        "date": "11/1/1981",
-                        "opponent": "Benfica",
-                        "result": "L",
-                        "margin": 5,
-                        "score": "@Benfica 86, Juventus 81",
-                        "boxscoreUrl": "./boxes/box13-3.htm",
-                        "section": "Preseason"
-                    },
                     {
                         "date": "11/5/1981",
                         "opponent": "Chelsea",
@@ -1947,17 +1846,7 @@
                     "boxscoreUrl": "./boxes/box18-1.htm",
                     "section": "Regular Season"
                 },
-                "closeGames": [
-                    {
-                        "date": "11/1/1981",
-                        "opponent": "Benfica",
-                        "result": "L",
-                        "margin": 5,
-                        "score": "@Benfica 86, Juventus 81",
-                        "boxscoreUrl": "./boxes/box13-3.htm",
-                        "section": "Preseason"
-                    }
-                ],
+                "closeGames": [],
                 "blowoutWins": [
                     {
                         "date": "11/5/1981",
@@ -1979,8 +1868,8 @@
                     }
                 ],
                 "blowoutLosses": [],
-                "record": "3-4",
-                "closeGameCount": 1,
+                "record": "3-3",
+                "closeGameCount": 0,
                 "last3": "WLL"
             },
             {
@@ -2705,159 +2594,6 @@
                 "last3": "LWW"
             },
             {
-                "team": "Paris Saint-Germain",
-                "tier": "Tier 3",
-                "tierShort": "T3",
-                "standingRank": 5,
-                "rosterUrl": "./rosters/roster21.htm",
-                "rosterFile": "roster21.htm",
-                "standingsLast10": "5-5",
-                "wins": 4,
-                "losses": 4,
-                "games": 8,
-                "pointsFor": 827,
-                "pointsAgainst": 797,
-                "pointDiff": 30,
-                "avgMargin": 3.75,
-                "streak": "L1",
-                "recentResults": [
-                    {
-                        "date": "11/1/1981",
-                        "opponent": "Inter Milan",
-                        "result": "W",
-                        "margin": 9,
-                        "score": "@Paris Saint-Germain 80, Inter Milan 71",
-                        "boxscoreUrl": "./boxes/box13-4.htm",
-                        "section": "Preseason"
-                    },
-                    {
-                        "date": "11/5/1981",
-                        "opponent": "Manchester City",
-                        "result": "W",
-                        "margin": 13,
-                        "score": "@Paris Saint-Germain 118, Manchester City 105",
-                        "boxscoreUrl": "./boxes/box17-2.htm",
-                        "section": "Regular Season"
-                    },
-                    {
-                        "date": "11/6/1981",
-                        "opponent": "Barcelona",
-                        "result": "L",
-                        "margin": 3,
-                        "score": "Barcelona 94, @Paris Saint-Germain 91",
-                        "boxscoreUrl": "./boxes/box18-2.htm",
-                        "section": "Regular Season"
-                    },
-                    {
-                        "date": "11/10/1981",
-                        "opponent": "Sporting CP",
-                        "result": "L",
-                        "margin": 8,
-                        "score": "@Sporting CP 123, Paris Saint-Germain 115",
-                        "boxscoreUrl": "./boxes/box22-2.htm",
-                        "section": "Regular Season"
-                    },
-                    {
-                        "date": "11/14/1981",
-                        "opponent": "Tottenham Hotspur",
-                        "result": "W",
-                        "margin": 15,
-                        "score": "@Paris Saint-Germain 110, Tottenham Hotspur 95",
-                        "boxscoreUrl": "./boxes/box26-2.htm",
-                        "section": "Regular Season"
-                    },
-                    {
-                        "date": "11/18/1981",
-                        "opponent": "Tottenham Hotspur",
-                        "result": "L",
-                        "margin": 11,
-                        "score": "@Tottenham Hotspur 108, Paris Saint-Germain 97",
-                        "boxscoreUrl": "./boxes/box30-4.htm",
-                        "section": "Regular Season"
-                    },
-                    {
-                        "date": "11/22/1981",
-                        "opponent": "Tottenham Hotspur",
-                        "result": "W",
-                        "margin": 16,
-                        "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
-                        "boxscoreUrl": "./boxes/box34-5.htm",
-                        "section": "Regular Season"
-                    },
-                    {
-                        "date": "11/27/1981",
-                        "opponent": "Barcelona",
-                        "result": "L",
-                        "margin": 1,
-                        "score": "Barcelona 107, @Paris Saint-Germain 106",
-                        "boxscoreUrl": "./boxes/box39-4.htm",
-                        "section": "Regular Season"
-                    }
-                ],
-                "bestWin": {
-                    "date": "11/22/1981",
-                    "opponent": "Tottenham Hotspur",
-                    "result": "W",
-                    "margin": 16,
-                    "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
-                    "boxscoreUrl": "./boxes/box34-5.htm",
-                    "section": "Regular Season"
-                },
-                "worstLoss": {
-                    "date": "11/18/1981",
-                    "opponent": "Tottenham Hotspur",
-                    "result": "L",
-                    "margin": 11,
-                    "score": "@Tottenham Hotspur 108, Paris Saint-Germain 97",
-                    "boxscoreUrl": "./boxes/box30-4.htm",
-                    "section": "Regular Season"
-                },
-                "closeGames": [
-                    {
-                        "date": "11/6/1981",
-                        "opponent": "Barcelona",
-                        "result": "L",
-                        "margin": 3,
-                        "score": "Barcelona 94, @Paris Saint-Germain 91",
-                        "boxscoreUrl": "./boxes/box18-2.htm",
-                        "section": "Regular Season"
-                    },
-                    {
-                        "date": "11/27/1981",
-                        "opponent": "Barcelona",
-                        "result": "L",
-                        "margin": 1,
-                        "score": "Barcelona 107, @Paris Saint-Germain 106",
-                        "boxscoreUrl": "./boxes/box39-4.htm",
-                        "section": "Regular Season"
-                    }
-                ],
-                "blowoutWins": [
-                    {
-                        "date": "11/14/1981",
-                        "opponent": "Tottenham Hotspur",
-                        "result": "W",
-                        "margin": 15,
-                        "score": "@Paris Saint-Germain 110, Tottenham Hotspur 95",
-                        "boxscoreUrl": "./boxes/box26-2.htm",
-                        "section": "Regular Season"
-                    },
-                    {
-                        "date": "11/22/1981",
-                        "opponent": "Tottenham Hotspur",
-                        "result": "W",
-                        "margin": 16,
-                        "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
-                        "boxscoreUrl": "./boxes/box34-5.htm",
-                        "section": "Regular Season"
-                    }
-                ],
-                "blowoutLosses": [],
-                "record": "4-4",
-                "closeGameCount": 2,
-                "last3": "LWL"
-            },
-            {
                 "team": "Inter Milan",
                 "tier": "Tier 3",
                 "tierShort": "T3",
@@ -2866,23 +2602,14 @@
                 "rosterFile": "roster26.htm",
                 "standingsLast10": "5-5",
                 "wins": 4,
-                "losses": 3,
-                "games": 7,
-                "pointsFor": 664,
-                "pointsAgainst": 636,
-                "pointDiff": 28,
-                "avgMargin": 4.0,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 593,
+                "pointsAgainst": 556,
+                "pointDiff": 37,
+                "avgMargin": 6.17,
                 "streak": "W1",
                 "recentResults": [
-                    {
-                        "date": "11/1/1981",
-                        "opponent": "Paris Saint-Germain",
-                        "result": "L",
-                        "margin": 9,
-                        "score": "@Paris Saint-Germain 80, Inter Milan 71",
-                        "boxscoreUrl": "./boxes/box13-4.htm",
-                        "section": "Preseason"
-                    },
                     {
                         "date": "11/3/1981",
                         "opponent": "FL Fart",
@@ -2969,7 +2696,7 @@
                     }
                 ],
                 "blowoutLosses": [],
-                "record": "4-3",
+                "record": "4-2",
                 "closeGameCount": 0,
                 "last3": "LLW"
             },
@@ -3128,80 +2855,62 @@
                 "last3": "WWW"
             },
             {
-                "team": "Tottenham Hotspur",
+                "team": "Paris Saint-Germain",
                 "tier": "Tier 3",
                 "tierShort": "T3",
-                "standingRank": 8,
-                "rosterUrl": "./rosters/roster22.htm",
-                "rosterFile": "roster22.htm",
-                "standingsLast10": "3-7",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster21.htm",
+                "rosterFile": "roster21.htm",
+                "standingsLast10": "5-5",
                 "wins": 3,
-                "losses": 7,
-                "games": 10,
-                "pointsFor": 936,
-                "pointsAgainst": 994,
-                "pointDiff": -58,
-                "avgMargin": -5.8,
-                "streak": "L3",
+                "losses": 4,
+                "games": 7,
+                "pointsFor": 747,
+                "pointsAgainst": 726,
+                "pointDiff": 21,
+                "avgMargin": 3.0,
+                "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "11/1/1981",
-                        "opponent": "Sporting CP",
+                        "date": "11/5/1981",
+                        "opponent": "Manchester City",
                         "result": "W",
-                        "margin": 11,
-                        "score": "@Tottenham Hotspur 92, Sporting CP 81",
-                        "boxscoreUrl": "./boxes/box13-5.htm",
-                        "section": "Preseason"
-                    },
-                    {
-                        "date": "11/3/1981",
-                        "opponent": "Valencia",
-                        "result": "L",
-                        "margin": 3,
-                        "score": "Valencia 94, @Tottenham Hotspur 91",
-                        "boxscoreUrl": "./boxes/box15-6.htm",
+                        "margin": 13,
+                        "score": "@Paris Saint-Germain 118, Manchester City 105",
+                        "boxscoreUrl": "./boxes/box17-2.htm",
                         "section": "Regular Season"
                     },
                     {
-                        "date": "11/8/1981",
-                        "opponent": "Inter Milan",
+                        "date": "11/6/1981",
+                        "opponent": "Barcelona",
                         "result": "L",
-                        "margin": 11,
-                        "score": "@Inter Milan 95, Tottenham Hotspur 84",
-                        "boxscoreUrl": "./boxes/box20-4.htm",
+                        "margin": 3,
+                        "score": "Barcelona 94, @Paris Saint-Germain 91",
+                        "boxscoreUrl": "./boxes/box18-2.htm",
                         "section": "Regular Season"
                     },
                     {
                         "date": "11/10/1981",
-                        "opponent": "Manchester City",
+                        "opponent": "Sporting CP",
                         "result": "L",
-                        "margin": 13,
-                        "score": "@Manchester City 103, Tottenham Hotspur 90",
-                        "boxscoreUrl": "./boxes/box22-1.htm",
+                        "margin": 8,
+                        "score": "@Sporting CP 123, Paris Saint-Germain 115",
+                        "boxscoreUrl": "./boxes/box22-2.htm",
                         "section": "Regular Season"
                     },
                     {
                         "date": "11/14/1981",
-                        "opponent": "Paris Saint-Germain",
-                        "result": "L",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
                         "margin": 15,
                         "score": "@Paris Saint-Germain 110, Tottenham Hotspur 95",
                         "boxscoreUrl": "./boxes/box26-2.htm",
                         "section": "Regular Season"
                     },
                     {
-                        "date": "11/15/1981",
-                        "opponent": "Manchester City",
-                        "result": "W",
-                        "margin": 1,
-                        "score": "Tottenham Hotspur 104, @Manchester City 103",
-                        "boxscoreUrl": "./boxes/box27-2.htm",
-                        "section": "Regular Season"
-                    },
-                    {
                         "date": "11/18/1981",
-                        "opponent": "Paris Saint-Germain",
-                        "result": "W",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
                         "margin": 11,
                         "score": "@Tottenham Hotspur 108, Paris Saint-Germain 97",
                         "boxscoreUrl": "./boxes/box30-4.htm",
@@ -3209,76 +2918,66 @@
                     },
                     {
                         "date": "11/22/1981",
-                        "opponent": "Paris Saint-Germain",
-                        "result": "L",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
                         "margin": 16,
                         "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
                         "boxscoreUrl": "./boxes/box34-5.htm",
                         "section": "Regular Season"
                     },
                     {
-                        "date": "11/28/1981",
-                        "opponent": "Inter Milan",
+                        "date": "11/27/1981",
+                        "opponent": "Barcelona",
                         "result": "L",
-                        "margin": 14,
-                        "score": "@Inter Milan 85, Tottenham Hotspur 71",
-                        "boxscoreUrl": "./boxes/box40-5.htm",
-                        "section": "Regular Season"
-                    },
-                    {
-                        "date": "11/29/1981",
-                        "opponent": "FL Fart",
-                        "result": "L",
-                        "margin": 9,
-                        "score": "FL Fart 116, @Tottenham Hotspur 107",
-                        "boxscoreUrl": "./boxes/box41-2.htm",
+                        "margin": 1,
+                        "score": "Barcelona 107, @Paris Saint-Germain 106",
+                        "boxscoreUrl": "./boxes/box39-4.htm",
                         "section": "Regular Season"
                     }
                 ],
                 "bestWin": {
-                    "date": "11/1/1981",
-                    "opponent": "Sporting CP",
-                    "result": "W",
-                    "margin": 11,
-                    "score": "@Tottenham Hotspur 92, Sporting CP 81",
-                    "boxscoreUrl": "./boxes/box13-5.htm",
-                    "section": "Preseason"
-                },
-                "worstLoss": {
                     "date": "11/22/1981",
-                    "opponent": "Paris Saint-Germain",
-                    "result": "L",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "W",
                     "margin": 16,
                     "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
                     "boxscoreUrl": "./boxes/box34-5.htm",
                     "section": "Regular Season"
                 },
+                "worstLoss": {
+                    "date": "11/18/1981",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "L",
+                    "margin": 11,
+                    "score": "@Tottenham Hotspur 108, Paris Saint-Germain 97",
+                    "boxscoreUrl": "./boxes/box30-4.htm",
+                    "section": "Regular Season"
+                },
                 "closeGames": [
                     {
-                        "date": "11/3/1981",
-                        "opponent": "Valencia",
+                        "date": "11/6/1981",
+                        "opponent": "Barcelona",
                         "result": "L",
                         "margin": 3,
-                        "score": "Valencia 94, @Tottenham Hotspur 91",
-                        "boxscoreUrl": "./boxes/box15-6.htm",
+                        "score": "Barcelona 94, @Paris Saint-Germain 91",
+                        "boxscoreUrl": "./boxes/box18-2.htm",
                         "section": "Regular Season"
                     },
                     {
-                        "date": "11/15/1981",
-                        "opponent": "Manchester City",
-                        "result": "W",
+                        "date": "11/27/1981",
+                        "opponent": "Barcelona",
+                        "result": "L",
                         "margin": 1,
-                        "score": "Tottenham Hotspur 104, @Manchester City 103",
-                        "boxscoreUrl": "./boxes/box27-2.htm",
+                        "score": "Barcelona 107, @Paris Saint-Germain 106",
+                        "boxscoreUrl": "./boxes/box39-4.htm",
                         "section": "Regular Season"
                     }
                 ],
-                "blowoutWins": [],
-                "blowoutLosses": [
+                "blowoutWins": [
                     {
                         "date": "11/14/1981",
-                        "opponent": "Paris Saint-Germain",
-                        "result": "L",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
                         "margin": 15,
                         "score": "@Paris Saint-Germain 110, Tottenham Hotspur 95",
                         "boxscoreUrl": "./boxes/box26-2.htm",
@@ -3286,17 +2985,18 @@
                     },
                     {
                         "date": "11/22/1981",
-                        "opponent": "Paris Saint-Germain",
-                        "result": "L",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
                         "margin": 16,
                         "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
                         "boxscoreUrl": "./boxes/box34-5.htm",
                         "section": "Regular Season"
                     }
                 ],
-                "record": "3-7",
+                "blowoutLosses": [],
+                "record": "3-4",
                 "closeGameCount": 2,
-                "last3": "LLL"
+                "last3": "LWL"
             },
             {
                 "team": "Manchester City",
@@ -3433,23 +3133,14 @@
                 "rosterFile": "roster23.htm",
                 "standingsLast10": "3-7",
                 "wins": 2,
-                "losses": 6,
-                "games": 8,
-                "pointsFor": 821,
-                "pointsAgainst": 862,
-                "pointDiff": -41,
-                "avgMargin": -5.12,
+                "losses": 5,
+                "games": 7,
+                "pointsFor": 740,
+                "pointsAgainst": 770,
+                "pointDiff": -30,
+                "avgMargin": -4.29,
                 "streak": "L1",
                 "recentResults": [
-                    {
-                        "date": "11/1/1981",
-                        "opponent": "Tottenham Hotspur",
-                        "result": "L",
-                        "margin": 11,
-                        "score": "@Tottenham Hotspur 92, Sporting CP 81",
-                        "boxscoreUrl": "./boxes/box13-5.htm",
-                        "section": "Preseason"
-                    },
                     {
                         "date": "11/5/1981",
                         "opponent": "Barcelona",
@@ -3564,9 +3255,171 @@
                         "section": "Regular Season"
                     }
                 ],
-                "record": "2-6",
+                "record": "2-5",
                 "closeGameCount": 2,
                 "last3": "LWL"
+            },
+            {
+                "team": "Tottenham Hotspur",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster22.htm",
+                "rosterFile": "roster22.htm",
+                "standingsLast10": "3-7",
+                "wins": 2,
+                "losses": 7,
+                "games": 9,
+                "pointsFor": 844,
+                "pointsAgainst": 913,
+                "pointDiff": -69,
+                "avgMargin": -7.67,
+                "streak": "L3",
+                "recentResults": [
+                    {
+                        "date": "11/3/1981",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Valencia 94, @Tottenham Hotspur 91",
+                        "boxscoreUrl": "./boxes/box15-6.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/8/1981",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Inter Milan 95, Tottenham Hotspur 84",
+                        "boxscoreUrl": "./boxes/box20-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/10/1981",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 13,
+                        "score": "@Manchester City 103, Tottenham Hotspur 90",
+                        "boxscoreUrl": "./boxes/box22-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/14/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Paris Saint-Germain 110, Tottenham Hotspur 95",
+                        "boxscoreUrl": "./boxes/box26-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/15/1981",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "Tottenham Hotspur 104, @Manchester City 103",
+                        "boxscoreUrl": "./boxes/box27-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/18/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Tottenham Hotspur 108, Paris Saint-Germain 97",
+                        "boxscoreUrl": "./boxes/box30-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/22/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
+                        "boxscoreUrl": "./boxes/box34-5.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/28/1981",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "@Inter Milan 85, Tottenham Hotspur 71",
+                        "boxscoreUrl": "./boxes/box40-5.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/29/1981",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "FL Fart 116, @Tottenham Hotspur 107",
+                        "boxscoreUrl": "./boxes/box41-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "11/18/1981",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "W",
+                    "margin": 11,
+                    "score": "@Tottenham Hotspur 108, Paris Saint-Germain 97",
+                    "boxscoreUrl": "./boxes/box30-4.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "11/22/1981",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "L",
+                    "margin": 16,
+                    "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
+                    "boxscoreUrl": "./boxes/box34-5.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "11/3/1981",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Valencia 94, @Tottenham Hotspur 91",
+                        "boxscoreUrl": "./boxes/box15-6.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/15/1981",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "Tottenham Hotspur 104, @Manchester City 103",
+                        "boxscoreUrl": "./boxes/box27-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "11/14/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Paris Saint-Germain 110, Tottenham Hotspur 95",
+                        "boxscoreUrl": "./boxes/box26-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/22/1981",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
+                        "boxscoreUrl": "./boxes/box34-5.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "2-7",
+                "closeGameCount": 2,
+                "last3": "LLL"
             }
         ]
     }

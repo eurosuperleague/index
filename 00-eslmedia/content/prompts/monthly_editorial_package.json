@@ -36,7 +36,6 @@
                     "../../00-build/database/monthly/tier_race_snapshot.json",
                     "../../00-build/database/monthly/monthly_storylines.json",
                     "../../00-build/database/standings.json",
-                    "../../00-build/database/game_results.json",
                     "../../00-build/database/teams.json",
                     "../../00-build/database/players.json",
                     "../../00-build/database/player_stats.json"
@@ -45,11 +44,11 @@
                     {
                         "team": "AFC Richmond",
                         "overall": {
-                            "record": "10-4",
+                            "record": "6-2",
                             "streak": "L1",
                             "last3": "LWL",
-                            "avgMargin": 8.36,
-                            "pointDiff": 117,
+                            "avgMargin": 9.88,
+                            "pointDiff": 79,
                             "bestWin": {
                                 "date": "11/28/1981",
                                 "opponent": "AC Milan",
@@ -68,14 +67,14 @@
                                 "boxscoreUrl": "./boxes/box41-1.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 5
+                            "closeGameCount": 2
                         },
                         "latestSim": {
-                            "record": "6-3",
+                            "record": "6-2",
                             "streak": "L1",
                             "last3": "LWL",
-                            "avgMargin": 8.56,
-                            "pointDiff": 77,
+                            "avgMargin": 9.88,
+                            "pointDiff": 79,
                             "bestWin": {
                                 "date": "11/28/1981",
                                 "opponent": "AC Milan",
@@ -94,7 +93,7 @@
                                 "boxscoreUrl": "./boxes/box41-1.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 3
+                            "closeGameCount": 2
                         },
                         "rosterUrl": "./rosters/roster12.htm",
                         "starPlayer": {
@@ -109,11 +108,11 @@
                     {
                         "team": "Bayern Munich",
                         "overall": {
-                            "record": "9-3",
+                            "record": "5-1",
                             "streak": "W5",
                             "last3": "WWW",
-                            "avgMargin": 6.33,
-                            "pointDiff": 76,
+                            "avgMargin": 10.5,
+                            "pointDiff": 63,
                             "bestWin": {
                                 "date": "11/22/1981",
                                 "opponent": "Manchester United",
@@ -132,14 +131,14 @@
                                 "boxscoreUrl": "./boxes/box15-3.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 2
+                            "closeGameCount": 0
                         },
                         "latestSim": {
-                            "record": "6-1",
+                            "record": "5-1",
                             "streak": "W5",
                             "last3": "WWW",
-                            "avgMargin": 9.29,
-                            "pointDiff": 65,
+                            "avgMargin": 10.5,
+                            "pointDiff": 63,
                             "bestWin": {
                                 "date": "11/22/1981",
                                 "opponent": "Manchester United",
@@ -158,7 +157,7 @@
                                 "boxscoreUrl": "./boxes/box15-3.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 1
+                            "closeGameCount": 0
                         },
                         "rosterUrl": "./rosters/roster7.htm",
                         "starPlayer": {
@@ -173,11 +172,11 @@
                     {
                         "team": "Real Madrid",
                         "overall": {
-                            "record": "7-5",
+                            "record": "4-2",
                             "streak": "W3",
                             "last3": "WWW",
-                            "avgMargin": 2.92,
-                            "pointDiff": 35,
+                            "avgMargin": 6.83,
+                            "pointDiff": 41,
                             "bestWin": {
                                 "date": "11/3/1981",
                                 "opponent": "Crystal Palace",
@@ -235,77 +234,13 @@
                         }
                     },
                     {
-                        "team": "Crystal Palace",
-                        "overall": {
-                            "record": "6-8",
-                            "streak": "L1",
-                            "last3": "LWL",
-                            "avgMargin": -1.21,
-                            "pointDiff": -17,
-                            "bestWin": {
-                                "date": "10/20/1981",
-                                "opponent": "Manchester United",
-                                "result": "W",
-                                "margin": 21,
-                                "score": "@Crystal Palace 103, Manchester United 82",
-                                "boxscoreUrl": "./boxes/box1-1.htm",
-                                "section": "Preseason"
-                            },
-                            "worstLoss": {
-                                "date": "11/3/1981",
-                                "opponent": "Real Madrid",
-                                "result": "L",
-                                "margin": 24,
-                                "score": "@Real Madrid 97, Crystal Palace 73",
-                                "boxscoreUrl": "./boxes/box15-2.htm",
-                                "section": "Regular Season"
-                            },
-                            "closeGameCount": 5
-                        },
-                        "latestSim": {
-                            "record": "2-6",
-                            "streak": "L1",
-                            "last3": "LWL",
-                            "avgMargin": -7.75,
-                            "pointDiff": -62,
-                            "bestWin": {
-                                "date": "11/7/1981",
-                                "opponent": "Atletico Madrid",
-                                "result": "W",
-                                "margin": 9,
-                                "score": "Crystal Palace 93, @Atletico Madrid 84",
-                                "boxscoreUrl": "./boxes/box19-3.htm",
-                                "section": "Regular Season"
-                            },
-                            "worstLoss": {
-                                "date": "11/3/1981",
-                                "opponent": "Real Madrid",
-                                "result": "L",
-                                "margin": 24,
-                                "score": "@Real Madrid 97, Crystal Palace 73",
-                                "boxscoreUrl": "./boxes/box15-2.htm",
-                                "section": "Regular Season"
-                            },
-                            "closeGameCount": 3
-                        },
-                        "rosterUrl": "./rosters/roster6.htm",
-                        "starPlayer": {
-                            "name": "Artis Gilmore",
-                            "url": "../players/player707.htm",
-                            "pos": "C",
-                            "age": "30",
-                            "overall": "137",
-                            "potential": "138"
-                        }
-                    },
-                    {
                         "team": "AC Milan",
                         "overall": {
-                            "record": "6-7",
+                            "record": "4-3",
                             "streak": "L1",
                             "last3": "LWL",
-                            "avgMargin": -1.69,
-                            "pointDiff": -22,
+                            "avgMargin": 2.43,
+                            "pointDiff": 17,
                             "bestWin": {
                                 "date": "11/27/1981",
                                 "opponent": "Manchester United",
@@ -327,11 +262,11 @@
                             "closeGameCount": 1
                         },
                         "latestSim": {
-                            "record": "4-4",
+                            "record": "4-3",
                             "streak": "L1",
                             "last3": "LWL",
-                            "avgMargin": -0.62,
-                            "pointDiff": -5,
+                            "avgMargin": 2.43,
+                            "pointDiff": 17,
                             "bestWin": {
                                 "date": "11/27/1981",
                                 "opponent": "Manchester United",
@@ -365,45 +300,45 @@
                     {
                         "team": "Brighton",
                         "overall": {
-                            "record": "5-7",
+                            "record": "2-4",
                             "streak": "W1",
                             "last3": "LLW",
-                            "avgMargin": -1.58,
-                            "pointDiff": -19,
+                            "avgMargin": -2.83,
+                            "pointDiff": -17,
                             "bestWin": {
-                                "date": "11/1/1981",
-                                "opponent": "AC Milan",
+                                "date": "11/28/1981",
+                                "opponent": "Crystal Palace",
                                 "result": "W",
-                                "margin": 22,
-                                "score": "@Brighton 121, AC Milan 99",
-                                "boxscoreUrl": "./boxes/box13-2.htm",
-                                "section": "Preseason"
+                                "margin": 12,
+                                "score": "@Brighton 98, Crystal Palace 86",
+                                "boxscoreUrl": "./boxes/box40-1.htm",
+                                "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "10/27/1981",
-                                "opponent": "Manchester United",
+                                "date": "11/12/1981",
+                                "opponent": "Bayern Munich",
                                 "result": "L",
-                                "margin": 20,
-                                "score": "@Manchester United 110, Brighton 90",
-                                "boxscoreUrl": "./boxes/box8-1.htm",
-                                "section": "Preseason"
+                                "margin": 15,
+                                "score": "@Bayern Munich 113, Brighton 98",
+                                "boxscoreUrl": "./boxes/box24-2.htm",
+                                "section": "Regular Season"
                             },
                             "closeGameCount": 1
                         },
                         "latestSim": {
-                            "record": "3-4",
+                            "record": "2-4",
                             "streak": "W1",
                             "last3": "LLW",
-                            "avgMargin": 0.71,
-                            "pointDiff": 5,
+                            "avgMargin": -2.83,
+                            "pointDiff": -17,
                             "bestWin": {
-                                "date": "11/1/1981",
-                                "opponent": "AC Milan",
+                                "date": "11/28/1981",
+                                "opponent": "Crystal Palace",
                                 "result": "W",
-                                "margin": 22,
-                                "score": "@Brighton 121, AC Milan 99",
-                                "boxscoreUrl": "./boxes/box13-2.htm",
-                                "section": "Preseason"
+                                "margin": 12,
+                                "score": "@Brighton 98, Crystal Palace 86",
+                                "boxscoreUrl": "./boxes/box40-1.htm",
+                                "section": "Regular Season"
                             },
                             "worstLoss": {
                                 "date": "11/12/1981",
@@ -429,30 +364,30 @@
                     {
                         "team": "Atletico Madrid",
                         "overall": {
-                            "record": "5-7",
+                            "record": "2-4",
                             "streak": "L1",
                             "last3": "WWL",
-                            "avgMargin": -1.75,
+                            "avgMargin": -3.5,
                             "pointDiff": -21,
                             "bestWin": {
-                                "date": "10/31/1981",
-                                "opponent": "AC Milan",
+                                "date": "11/22/1981",
+                                "opponent": "Brighton",
                                 "result": "W",
-                                "margin": 23,
-                                "score": "@Atletico Madrid 102, AC Milan 79",
-                                "boxscoreUrl": "./boxes/box12-3.htm",
-                                "section": "Preseason"
+                                "margin": 11,
+                                "score": "@Atletico Madrid 115, Brighton 104",
+                                "boxscoreUrl": "./boxes/box34-1.htm",
+                                "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "10/26/1981",
-                                "opponent": "AC Milan",
+                                "date": "11/26/1981",
+                                "opponent": "Real Madrid",
                                 "result": "L",
-                                "margin": 14,
-                                "score": "@AC Milan 93, Atletico Madrid 79",
-                                "boxscoreUrl": "./boxes/box7-1.htm",
-                                "section": "Preseason"
+                                "margin": 12,
+                                "score": "Real Madrid 117, @Atletico Madrid 105",
+                                "boxscoreUrl": "./boxes/box38-1.htm",
+                                "section": "Regular Season"
                             },
-                            "closeGameCount": 3
+                            "closeGameCount": 1
                         },
                         "latestSim": {
                             "record": "2-4",
@@ -491,21 +426,85 @@
                         }
                     },
                     {
+                        "team": "Crystal Palace",
+                        "overall": {
+                            "record": "2-6",
+                            "streak": "L1",
+                            "last3": "LWL",
+                            "avgMargin": -7.75,
+                            "pointDiff": -62,
+                            "bestWin": {
+                                "date": "11/7/1981",
+                                "opponent": "Atletico Madrid",
+                                "result": "W",
+                                "margin": 9,
+                                "score": "Crystal Palace 93, @Atletico Madrid 84",
+                                "boxscoreUrl": "./boxes/box19-3.htm",
+                                "section": "Regular Season"
+                            },
+                            "worstLoss": {
+                                "date": "11/3/1981",
+                                "opponent": "Real Madrid",
+                                "result": "L",
+                                "margin": 24,
+                                "score": "@Real Madrid 97, Crystal Palace 73",
+                                "boxscoreUrl": "./boxes/box15-2.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 3
+                        },
+                        "latestSim": {
+                            "record": "2-6",
+                            "streak": "L1",
+                            "last3": "LWL",
+                            "avgMargin": -7.75,
+                            "pointDiff": -62,
+                            "bestWin": {
+                                "date": "11/7/1981",
+                                "opponent": "Atletico Madrid",
+                                "result": "W",
+                                "margin": 9,
+                                "score": "Crystal Palace 93, @Atletico Madrid 84",
+                                "boxscoreUrl": "./boxes/box19-3.htm",
+                                "section": "Regular Season"
+                            },
+                            "worstLoss": {
+                                "date": "11/3/1981",
+                                "opponent": "Real Madrid",
+                                "result": "L",
+                                "margin": 24,
+                                "score": "@Real Madrid 97, Crystal Palace 73",
+                                "boxscoreUrl": "./boxes/box15-2.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 3
+                        },
+                        "rosterUrl": "./rosters/roster6.htm",
+                        "starPlayer": {
+                            "name": "Artis Gilmore",
+                            "url": "../players/player707.htm",
+                            "pos": "C",
+                            "age": "30",
+                            "overall": "137",
+                            "potential": "138"
+                        }
+                    },
+                    {
                         "team": "Manchester United",
                         "overall": {
-                            "record": "3-10",
+                            "record": "2-5",
                             "streak": "L3",
                             "last3": "LLL",
-                            "avgMargin": -11.46,
-                            "pointDiff": -149,
+                            "avgMargin": -14.29,
+                            "pointDiff": -100,
                             "bestWin": {
-                                "date": "10/27/1981",
-                                "opponent": "Brighton",
+                                "date": "11/11/1981",
+                                "opponent": "Atletico Madrid",
                                 "result": "W",
-                                "margin": 20,
-                                "score": "@Manchester United 110, Brighton 90",
-                                "boxscoreUrl": "./boxes/box8-1.htm",
-                                "section": "Preseason"
+                                "margin": 6,
+                                "score": "@Manchester United 110, Atletico Madrid 104",
+                                "boxscoreUrl": "./boxes/box23-1.htm",
+                                "section": "Regular Season"
                             },
                             "worstLoss": {
                                 "date": "11/22/1981",
@@ -516,7 +515,7 @@
                                 "boxscoreUrl": "./boxes/box34-3.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 2
+                            "closeGameCount": 1
                         },
                         "latestSim": {
                             "record": "2-5",
@@ -578,84 +577,19 @@
                     "../../00-build/database/monthly/tier_race_snapshot.json",
                     "../../00-build/database/monthly/monthly_storylines.json",
                     "../../00-build/database/standings.json",
-                    "../../00-build/database/game_results.json",
                     "../../00-build/database/teams.json",
                     "../../00-build/database/players.json",
                     "../../00-build/database/player_stats.json"
                 ],
                 "teamPool": [
                     {
-                        "team": "Marseille",
-                        "overall": {
-                            "record": "10-3",
-                            "streak": "W4",
-                            "last3": "WWW",
-                            "avgMargin": 8.77,
-                            "pointDiff": 114,
-                            "bestWin": {
-                                "date": "11/21/1981",
-                                "opponent": "Ajax",
-                                "result": "W",
-                                "margin": 28,
-                                "score": "@Marseille 134, Ajax 106",
-                                "boxscoreUrl": "./boxes/box33-1.htm",
-                                "section": "Regular Season"
-                            },
-                            "worstLoss": {
-                                "date": "10/25/1981",
-                                "opponent": "Benfica",
-                                "result": "L",
-                                "margin": 14,
-                                "score": "@Benfica 110, Marseille 96",
-                                "boxscoreUrl": "./boxes/box6-5.htm",
-                                "section": "Preseason"
-                            },
-                            "closeGameCount": 2
-                        },
-                        "latestSim": {
-                            "record": "6-1",
-                            "streak": "W4",
-                            "last3": "WWW",
-                            "avgMargin": 12.43,
-                            "pointDiff": 87,
-                            "bestWin": {
-                                "date": "11/21/1981",
-                                "opponent": "Ajax",
-                                "result": "W",
-                                "margin": 28,
-                                "score": "@Marseille 134, Ajax 106",
-                                "boxscoreUrl": "./boxes/box33-1.htm",
-                                "section": "Regular Season"
-                            },
-                            "worstLoss": {
-                                "date": "11/11/1981",
-                                "opponent": "Juventus",
-                                "result": "L",
-                                "margin": 10,
-                                "score": "@Juventus 114, Marseille 104",
-                                "boxscoreUrl": "./boxes/box23-2.htm",
-                                "section": "Regular Season"
-                            },
-                            "closeGameCount": 1
-                        },
-                        "rosterUrl": "./rosters/roster15.htm",
-                        "starPlayer": {
-                            "name": "Robert Parish",
-                            "url": "../players/player873.htm",
-                            "pos": "C",
-                            "age": "26",
-                            "overall": "137",
-                            "potential": "140"
-                        }
-                    },
-                    {
                         "team": "Sheffield United",
                         "overall": {
-                            "record": "9-4",
+                            "record": "6-1",
                             "streak": "W5",
                             "last3": "WWW",
-                            "avgMargin": 11.62,
-                            "pointDiff": 151,
+                            "avgMargin": 17.14,
+                            "pointDiff": 120,
                             "bestWin": {
                                 "date": "11/26/1981",
                                 "opponent": "Aston Villa",
@@ -666,15 +600,15 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "10/22/1981",
-                                "opponent": "Juventus",
+                                "date": "11/9/1981",
+                                "opponent": "Chelsea",
                                 "result": "L",
-                                "margin": 23,
-                                "score": "@Juventus 100, Sheffield United 77",
-                                "boxscoreUrl": "./boxes/box3-3.htm",
-                                "section": "Preseason"
+                                "margin": 12,
+                                "score": "@Chelsea 115, Sheffield United 103",
+                                "boxscoreUrl": "./boxes/box21-1.htm",
+                                "section": "Regular Season"
                             },
-                            "closeGameCount": 3
+                            "closeGameCount": 2
                         },
                         "latestSim": {
                             "record": "6-1",
@@ -713,13 +647,141 @@
                         }
                     },
                     {
+                        "team": "Marseille",
+                        "overall": {
+                            "record": "6-1",
+                            "streak": "W4",
+                            "last3": "WWW",
+                            "avgMargin": 12.43,
+                            "pointDiff": 87,
+                            "bestWin": {
+                                "date": "11/21/1981",
+                                "opponent": "Ajax",
+                                "result": "W",
+                                "margin": 28,
+                                "score": "@Marseille 134, Ajax 106",
+                                "boxscoreUrl": "./boxes/box33-1.htm",
+                                "section": "Regular Season"
+                            },
+                            "worstLoss": {
+                                "date": "11/11/1981",
+                                "opponent": "Juventus",
+                                "result": "L",
+                                "margin": 10,
+                                "score": "@Juventus 114, Marseille 104",
+                                "boxscoreUrl": "./boxes/box23-2.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "6-1",
+                            "streak": "W4",
+                            "last3": "WWW",
+                            "avgMargin": 12.43,
+                            "pointDiff": 87,
+                            "bestWin": {
+                                "date": "11/21/1981",
+                                "opponent": "Ajax",
+                                "result": "W",
+                                "margin": 28,
+                                "score": "@Marseille 134, Ajax 106",
+                                "boxscoreUrl": "./boxes/box33-1.htm",
+                                "section": "Regular Season"
+                            },
+                            "worstLoss": {
+                                "date": "11/11/1981",
+                                "opponent": "Juventus",
+                                "result": "L",
+                                "margin": 10,
+                                "score": "@Juventus 114, Marseille 104",
+                                "boxscoreUrl": "./boxes/box23-2.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "rosterUrl": "./rosters/roster15.htm",
+                        "starPlayer": {
+                            "name": "Robert Parish",
+                            "url": "../players/player873.htm",
+                            "pos": "C",
+                            "age": "26",
+                            "overall": "137",
+                            "potential": "140"
+                        }
+                    },
+                    {
+                        "team": "Benfica",
+                        "overall": {
+                            "record": "5-2",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": 3.14,
+                            "pointDiff": 22,
+                            "bestWin": {
+                                "date": "11/12/1981",
+                                "opponent": "Ajax",
+                                "result": "W",
+                                "margin": 29,
+                                "score": "@Benfica 129, Ajax 100",
+                                "boxscoreUrl": "./boxes/box24-3.htm",
+                                "section": "Regular Season"
+                            },
+                            "worstLoss": {
+                                "date": "11/4/1981",
+                                "opponent": "Sheffield United",
+                                "result": "L",
+                                "margin": 29,
+                                "score": "@Sheffield United 134, Benfica 105",
+                                "boxscoreUrl": "./boxes/box16-2.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "latestSim": {
+                            "record": "5-2",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": 3.14,
+                            "pointDiff": 22,
+                            "bestWin": {
+                                "date": "11/12/1981",
+                                "opponent": "Ajax",
+                                "result": "W",
+                                "margin": 29,
+                                "score": "@Benfica 129, Ajax 100",
+                                "boxscoreUrl": "./boxes/box24-3.htm",
+                                "section": "Regular Season"
+                            },
+                            "worstLoss": {
+                                "date": "11/4/1981",
+                                "opponent": "Sheffield United",
+                                "result": "L",
+                                "margin": 29,
+                                "score": "@Sheffield United 134, Benfica 105",
+                                "boxscoreUrl": "./boxes/box16-2.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "rosterUrl": "./rosters/roster13.htm",
+                        "starPlayer": {
+                            "name": "Moses Malone",
+                            "url": "../players/player872.htm",
+                            "pos": "C",
+                            "age": "24",
+                            "overall": "148",
+                            "potential": "151"
+                        }
+                    },
+                    {
                         "team": "Chelsea",
                         "overall": {
-                            "record": "9-4",
+                            "record": "4-3",
                             "streak": "L1",
                             "last3": "WWL",
-                            "avgMargin": 10.31,
-                            "pointDiff": 134,
+                            "avgMargin": 9.0,
+                            "pointDiff": 63,
                             "bestWin": {
                                 "date": "11/20/1981",
                                 "opponent": "Monaco",
@@ -738,7 +800,7 @@
                                 "boxscoreUrl": "./boxes/box17-1.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 3
+                            "closeGameCount": 2
                         },
                         "latestSim": {
                             "record": "4-3",
@@ -777,103 +839,13 @@
                         }
                     },
                     {
-                        "team": "Benfica",
-                        "overall": {
-                            "record": "9-4",
-                            "streak": "W2",
-                            "last3": "LWW",
-                            "avgMargin": 4.85,
-                            "pointDiff": 63,
-                            "bestWin": {
-                                "date": "11/12/1981",
-                                "opponent": "Ajax",
-                                "result": "W",
-                                "margin": 29,
-                                "score": "@Benfica 129, Ajax 100",
-                                "boxscoreUrl": "./boxes/box24-3.htm",
-                                "section": "Regular Season"
-                            },
-                            "worstLoss": {
-                                "date": "11/4/1981",
-                                "opponent": "Sheffield United",
-                                "result": "L",
-                                "margin": 29,
-                                "score": "@Sheffield United 134, Benfica 105",
-                                "boxscoreUrl": "./boxes/box16-2.htm",
-                                "section": "Regular Season"
-                            },
-                            "closeGameCount": 4
-                        },
-                        "latestSim": {
-                            "record": "6-2",
-                            "streak": "W2",
-                            "last3": "LWW",
-                            "avgMargin": 3.38,
-                            "pointDiff": 27,
-                            "bestWin": {
-                                "date": "11/12/1981",
-                                "opponent": "Ajax",
-                                "result": "W",
-                                "margin": 29,
-                                "score": "@Benfica 129, Ajax 100",
-                                "boxscoreUrl": "./boxes/box24-3.htm",
-                                "section": "Regular Season"
-                            },
-                            "worstLoss": {
-                                "date": "11/4/1981",
-                                "opponent": "Sheffield United",
-                                "result": "L",
-                                "margin": 29,
-                                "score": "@Sheffield United 134, Benfica 105",
-                                "boxscoreUrl": "./boxes/box16-2.htm",
-                                "section": "Regular Season"
-                            },
-                            "closeGameCount": 3
-                        },
-                        "rosterUrl": "./rosters/roster13.htm",
-                        "starPlayer": {
-                            "name": "Moses Malone",
-                            "url": "../players/player872.htm",
-                            "pos": "C",
-                            "age": "24",
-                            "overall": "148",
-                            "potential": "151"
-                        }
-                    },
-                    {
                         "team": "Juventus",
                         "overall": {
-                            "record": "6-6",
+                            "record": "3-3",
                             "streak": "L2",
                             "last3": "WLL",
-                            "avgMargin": 2.83,
-                            "pointDiff": 34,
-                            "bestWin": {
-                                "date": "11/5/1981",
-                                "opponent": "Chelsea",
-                                "result": "W",
-                                "margin": 26,
-                                "score": "Juventus 120, @Chelsea 94",
-                                "boxscoreUrl": "./boxes/box17-1.htm",
-                                "section": "Regular Season"
-                            },
-                            "worstLoss": {
-                                "date": "10/30/1981",
-                                "opponent": "Marseille",
-                                "result": "L",
-                                "margin": 15,
-                                "score": "@Marseille 100, Juventus 85",
-                                "boxscoreUrl": "./boxes/box11-2.htm",
-                                "section": "Preseason"
-                            },
-                            "closeGameCount": 1
-                        },
-                        "latestSim": {
-                            "record": "3-4",
-                            "streak": "L2",
-                            "last3": "WLL",
-                            "avgMargin": 3.0,
-                            "pointDiff": 21,
+                            "avgMargin": 4.33,
+                            "pointDiff": 26,
                             "bestWin": {
                                 "date": "11/5/1981",
                                 "opponent": "Chelsea",
@@ -892,7 +864,33 @@
                                 "boxscoreUrl": "./boxes/box18-1.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 1
+                            "closeGameCount": 0
+                        },
+                        "latestSim": {
+                            "record": "3-3",
+                            "streak": "L2",
+                            "last3": "WLL",
+                            "avgMargin": 4.33,
+                            "pointDiff": 26,
+                            "bestWin": {
+                                "date": "11/5/1981",
+                                "opponent": "Chelsea",
+                                "result": "W",
+                                "margin": 26,
+                                "score": "Juventus 120, @Chelsea 94",
+                                "boxscoreUrl": "./boxes/box17-1.htm",
+                                "section": "Regular Season"
+                            },
+                            "worstLoss": {
+                                "date": "11/6/1981",
+                                "opponent": "Marseille",
+                                "result": "L",
+                                "margin": 12,
+                                "score": "@Marseille 112, Juventus 100",
+                                "boxscoreUrl": "./boxes/box18-1.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 0
                         },
                         "rosterUrl": "./rosters/roster14.htm",
                         "starPlayer": {
@@ -907,19 +905,19 @@
                     {
                         "team": "Ajax",
                         "overall": {
-                            "record": "4-8",
+                            "record": "2-4",
                             "streak": "L4",
                             "last3": "LLL",
-                            "avgMargin": -8.0,
-                            "pointDiff": -96,
+                            "avgMargin": -12.33,
+                            "pointDiff": -74,
                             "bestWin": {
-                                "date": "10/30/1981",
+                                "date": "11/8/1981",
                                 "opponent": "Monaco",
                                 "result": "W",
                                 "margin": 23,
-                                "score": "@Ajax 99, Monaco 76",
-                                "boxscoreUrl": "./boxes/box11-4.htm",
-                                "section": "Preseason"
+                                "score": "@Ajax 122, Monaco 99",
+                                "boxscoreUrl": "./boxes/box20-3.htm",
+                                "section": "Regular Season"
                             },
                             "worstLoss": {
                                 "date": "11/12/1981",
@@ -930,7 +928,7 @@
                                 "boxscoreUrl": "./boxes/box24-3.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 1
+                            "closeGameCount": 0
                         },
                         "latestSim": {
                             "record": "2-4",
@@ -971,19 +969,19 @@
                     {
                         "team": "Monaco",
                         "overall": {
-                            "record": "4-8",
+                            "record": "1-5",
                             "streak": "L1",
                             "last3": "LWL",
-                            "avgMargin": -13.92,
-                            "pointDiff": -167,
+                            "avgMargin": -20.67,
+                            "pointDiff": -124,
                             "bestWin": {
-                                "date": "10/21/1981",
-                                "opponent": "Ajax",
+                                "date": "11/22/1981",
+                                "opponent": "Aston Villa",
                                 "result": "W",
-                                "margin": 12,
-                                "score": "@Monaco 105, Ajax 93",
-                                "boxscoreUrl": "./boxes/box2-3.htm",
-                                "section": "Preseason"
+                                "margin": 1,
+                                "score": "Monaco 102, @Aston Villa 101",
+                                "boxscoreUrl": "./boxes/box34-4.htm",
+                                "section": "Regular Season"
                             },
                             "worstLoss": {
                                 "date": "11/13/1981",
@@ -994,7 +992,7 @@
                                 "boxscoreUrl": "./boxes/box25-2.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 3
+                            "closeGameCount": 1
                         },
                         "latestSim": {
                             "record": "1-5",
@@ -1035,11 +1033,11 @@
                     {
                         "team": "Aston Villa",
                         "overall": {
-                            "record": "0-14",
-                            "streak": "L14",
+                            "record": "0-8",
+                            "streak": "L8",
                             "last3": "LLL",
-                            "avgMargin": -16.64,
-                            "pointDiff": -233,
+                            "avgMargin": -15.0,
+                            "pointDiff": -120,
                             "bestWin": null,
                             "worstLoss": {
                                 "date": "11/26/1981",
@@ -1050,7 +1048,7 @@
                                 "boxscoreUrl": "./boxes/box38-2.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 3
+                            "closeGameCount": 2
                         },
                         "latestSim": {
                             "record": "0-8",
@@ -1104,92 +1102,27 @@
                     "../../00-build/database/monthly/tier_race_snapshot.json",
                     "../../00-build/database/monthly/monthly_storylines.json",
                     "../../00-build/database/standings.json",
-                    "../../00-build/database/game_results.json",
                     "../../00-build/database/teams.json",
                     "../../00-build/database/players.json",
                     "../../00-build/database/player_stats.json"
                 ],
                 "teamPool": [
                     {
-                        "team": "FL Fart",
-                        "overall": {
-                            "record": "9-4",
-                            "streak": "W2",
-                            "last3": "LWW",
-                            "avgMargin": 5.85,
-                            "pointDiff": 76,
-                            "bestWin": {
-                                "date": "11/7/1981",
-                                "opponent": "Valencia",
-                                "result": "W",
-                                "margin": 17,
-                                "score": "@FL Fart 121, Valencia 104",
-                                "boxscoreUrl": "./boxes/box19-4.htm",
-                                "section": "Regular Season"
-                            },
-                            "worstLoss": {
-                                "date": "10/29/1981",
-                                "opponent": "Sporting CP",
-                                "result": "L",
-                                "margin": 13,
-                                "score": "@Sporting CP 99, FL Fart 86",
-                                "boxscoreUrl": "./boxes/box10-5.htm",
-                                "section": "Preseason"
-                            },
-                            "closeGameCount": 0
-                        },
-                        "latestSim": {
-                            "record": "5-2",
-                            "streak": "W2",
-                            "last3": "LWW",
-                            "avgMargin": 7.57,
-                            "pointDiff": 53,
-                            "bestWin": {
-                                "date": "11/7/1981",
-                                "opponent": "Valencia",
-                                "result": "W",
-                                "margin": 17,
-                                "score": "@FL Fart 121, Valencia 104",
-                                "boxscoreUrl": "./boxes/box19-4.htm",
-                                "section": "Regular Season"
-                            },
-                            "worstLoss": {
-                                "date": "11/3/1981",
-                                "opponent": "Inter Milan",
-                                "result": "L",
-                                "margin": 10,
-                                "score": "@Inter Milan 96, FL Fart 86",
-                                "boxscoreUrl": "./boxes/box15-5.htm",
-                                "section": "Regular Season"
-                            },
-                            "closeGameCount": 0
-                        },
-                        "rosterUrl": "./rosters/roster27.htm",
-                        "starPlayer": {
-                            "name": "Alton Lister",
-                            "url": "../players/player1050.htm",
-                            "pos": "C",
-                            "age": "21",
-                            "overall": "117",
-                            "potential": "125"
-                        }
-                    },
-                    {
                         "team": "Barcelona",
                         "overall": {
-                            "record": "9-4",
+                            "record": "6-1",
                             "streak": "W2",
                             "last3": "LWW",
-                            "avgMargin": 3.85,
-                            "pointDiff": 50,
+                            "avgMargin": 2.29,
+                            "pointDiff": 16,
                             "bestWin": {
-                                "date": "10/29/1981",
-                                "opponent": "Inter Milan",
+                                "date": "11/5/1981",
+                                "opponent": "Sporting CP",
                                 "result": "W",
-                                "margin": 28,
-                                "score": "@Barcelona 103, Inter Milan 75",
-                                "boxscoreUrl": "./boxes/box10-7.htm",
-                                "section": "Preseason"
+                                "margin": 12,
+                                "score": "Barcelona 101, @Sporting CP 89",
+                                "boxscoreUrl": "./boxes/box17-3.htm",
+                                "section": "Regular Season"
                             },
                             "worstLoss": {
                                 "date": "11/19/1981",
@@ -1239,141 +1172,141 @@
                         }
                     },
                     {
-                        "team": "Paris Saint-Germain",
+                        "team": "FL Fart",
                         "overall": {
-                            "record": "7-6",
-                            "streak": "L1",
-                            "last3": "LWL",
-                            "avgMargin": 3.46,
-                            "pointDiff": 45,
+                            "record": "5-2",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": 7.57,
+                            "pointDiff": 53,
                             "bestWin": {
-                                "date": "10/29/1981",
+                                "date": "11/7/1981",
                                 "opponent": "Valencia",
                                 "result": "W",
-                                "margin": 21,
-                                "score": "@Paris Saint-Germain 106, Valencia 85",
-                                "boxscoreUrl": "./boxes/box10-6.htm",
-                                "section": "Preseason"
+                                "margin": 17,
+                                "score": "@FL Fart 121, Valencia 104",
+                                "boxscoreUrl": "./boxes/box19-4.htm",
+                                "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "10/24/1981",
-                                "opponent": "Manchester City",
+                                "date": "11/3/1981",
+                                "opponent": "Inter Milan",
                                 "result": "L",
-                                "margin": 18,
-                                "score": "@Manchester City 98, Paris Saint-Germain 80",
-                                "boxscoreUrl": "./boxes/box5-5.htm",
-                                "section": "Preseason"
+                                "margin": 10,
+                                "score": "@Inter Milan 96, FL Fart 86",
+                                "boxscoreUrl": "./boxes/box15-5.htm",
+                                "section": "Regular Season"
                             },
-                            "closeGameCount": 2
+                            "closeGameCount": 0
                         },
                         "latestSim": {
-                            "record": "4-4",
-                            "streak": "L1",
-                            "last3": "LWL",
-                            "avgMargin": 3.75,
-                            "pointDiff": 30,
+                            "record": "5-2",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": 7.57,
+                            "pointDiff": 53,
                             "bestWin": {
-                                "date": "11/22/1981",
-                                "opponent": "Tottenham Hotspur",
+                                "date": "11/7/1981",
+                                "opponent": "Valencia",
                                 "result": "W",
-                                "margin": 16,
-                                "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
-                                "boxscoreUrl": "./boxes/box34-5.htm",
+                                "margin": 17,
+                                "score": "@FL Fart 121, Valencia 104",
+                                "boxscoreUrl": "./boxes/box19-4.htm",
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "11/18/1981",
-                                "opponent": "Tottenham Hotspur",
+                                "date": "11/3/1981",
+                                "opponent": "Inter Milan",
                                 "result": "L",
-                                "margin": 11,
-                                "score": "@Tottenham Hotspur 108, Paris Saint-Germain 97",
-                                "boxscoreUrl": "./boxes/box30-4.htm",
+                                "margin": 10,
+                                "score": "@Inter Milan 96, FL Fart 86",
+                                "boxscoreUrl": "./boxes/box15-5.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 2
+                            "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster21.htm",
+                        "rosterUrl": "./rosters/roster27.htm",
                         "starPlayer": {
-                            "name": "Joe Barry Carroll",
-                            "url": "../players/player710.htm",
+                            "name": "Alton Lister",
+                            "url": "../players/player1050.htm",
                             "pos": "C",
                             "age": "21",
-                            "overall": "118",
-                            "potential": "128"
+                            "overall": "117",
+                            "potential": "125"
                         }
                     },
                     {
-                        "team": "Manchester City",
+                        "team": "Inter Milan",
                         "overall": {
-                            "record": "7-5",
-                            "streak": "L2",
-                            "last3": "WLL",
-                            "avgMargin": 2.33,
-                            "pointDiff": 28,
+                            "record": "4-2",
+                            "streak": "W1",
+                            "last3": "LLW",
+                            "avgMargin": 6.17,
+                            "pointDiff": 37,
                             "bestWin": {
-                                "date": "10/24/1981",
-                                "opponent": "Paris Saint-Germain",
-                                "result": "W",
-                                "margin": 18,
-                                "score": "@Manchester City 98, Paris Saint-Germain 80",
-                                "boxscoreUrl": "./boxes/box5-5.htm",
-                                "section": "Preseason"
-                            },
-                            "worstLoss": {
-                                "date": "11/27/1981",
+                                "date": "11/15/1981",
                                 "opponent": "Valencia",
-                                "result": "L",
-                                "margin": 17,
-                                "score": "Valencia 102, @Manchester City 85",
-                                "boxscoreUrl": "./boxes/box39-6.htm",
+                                "result": "W",
+                                "margin": 20,
+                                "score": "@Inter Milan 119, Valencia 99",
+                                "boxscoreUrl": "./boxes/box27-1.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 3
+                            "worstLoss": {
+                                "date": "11/19/1981",
+                                "opponent": "Valencia",
+                                "result": "L",
+                                "margin": 10,
+                                "score": "Valencia 112, @Inter Milan 102",
+                                "boxscoreUrl": "./boxes/box31-3.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 0
                         },
                         "latestSim": {
-                            "record": "2-4",
-                            "streak": "L2",
-                            "last3": "WLL",
-                            "avgMargin": -4.0,
-                            "pointDiff": -24,
+                            "record": "4-2",
+                            "streak": "W1",
+                            "last3": "LLW",
+                            "avgMargin": 6.17,
+                            "pointDiff": 37,
                             "bestWin": {
-                                "date": "11/10/1981",
-                                "opponent": "Tottenham Hotspur",
+                                "date": "11/15/1981",
+                                "opponent": "Valencia",
                                 "result": "W",
-                                "margin": 13,
-                                "score": "@Manchester City 103, Tottenham Hotspur 90",
-                                "boxscoreUrl": "./boxes/box22-1.htm",
+                                "margin": 20,
+                                "score": "@Inter Milan 119, Valencia 99",
+                                "boxscoreUrl": "./boxes/box27-1.htm",
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "11/27/1981",
+                                "date": "11/19/1981",
                                 "opponent": "Valencia",
                                 "result": "L",
-                                "margin": 17,
-                                "score": "Valencia 102, @Manchester City 85",
-                                "boxscoreUrl": "./boxes/box39-6.htm",
+                                "margin": 10,
+                                "score": "Valencia 112, @Inter Milan 102",
+                                "boxscoreUrl": "./boxes/box31-3.htm",
                                 "section": "Regular Season"
                             },
-                            "closeGameCount": 2
+                            "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster28.htm",
+                        "rosterUrl": "./rosters/roster26.htm",
                         "starPlayer": {
-                            "name": "Allen Leavell",
-                            "url": "../players/player1054.htm",
+                            "name": "World B. Free",
+                            "url": "../players/player1048.htm",
                             "pos": "PG",
-                            "age": "22",
-                            "overall": "117",
-                            "potential": "118"
+                            "age": "24",
+                            "overall": "128",
+                            "potential": "134"
                         }
                     },
                     {
                         "team": "Valencia",
                         "overall": {
-                            "record": "6-7",
+                            "record": "4-3",
                             "streak": "W3",
                             "last3": "WWW",
-                            "avgMargin": -2.85,
-                            "pointDiff": -37,
+                            "avgMargin": -0.57,
+                            "pointDiff": -4,
                             "bestWin": {
                                 "date": "11/27/1981",
                                 "opponent": "Manchester City",
@@ -1384,15 +1317,15 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "10/29/1981",
-                                "opponent": "Paris Saint-Germain",
+                                "date": "11/15/1981",
+                                "opponent": "Inter Milan",
                                 "result": "L",
-                                "margin": 21,
-                                "score": "@Paris Saint-Germain 106, Valencia 85",
-                                "boxscoreUrl": "./boxes/box10-6.htm",
-                                "section": "Preseason"
+                                "margin": 20,
+                                "score": "@Inter Milan 119, Valencia 99",
+                                "boxscoreUrl": "./boxes/box27-1.htm",
+                                "section": "Regular Season"
                             },
-                            "closeGameCount": 3
+                            "closeGameCount": 2
                         },
                         "latestSim": {
                             "record": "4-3",
@@ -1431,167 +1364,167 @@
                         }
                     },
                     {
-                        "team": "Inter Milan",
+                        "team": "Paris Saint-Germain",
                         "overall": {
-                            "record": "5-7",
-                            "streak": "W1",
-                            "last3": "LLW",
-                            "avgMargin": -2.92,
-                            "pointDiff": -35,
+                            "record": "3-4",
+                            "streak": "L1",
+                            "last3": "LWL",
+                            "avgMargin": 3.0,
+                            "pointDiff": 21,
                             "bestWin": {
-                                "date": "11/15/1981",
-                                "opponent": "Valencia",
-                                "result": "W",
-                                "margin": 20,
-                                "score": "@Inter Milan 119, Valencia 99",
-                                "boxscoreUrl": "./boxes/box27-1.htm",
-                                "section": "Regular Season"
-                            },
-                            "worstLoss": {
-                                "date": "10/29/1981",
-                                "opponent": "Barcelona",
-                                "result": "L",
-                                "margin": 28,
-                                "score": "@Barcelona 103, Inter Milan 75",
-                                "boxscoreUrl": "./boxes/box10-7.htm",
-                                "section": "Preseason"
-                            },
-                            "closeGameCount": 0
-                        },
-                        "latestSim": {
-                            "record": "4-3",
-                            "streak": "W1",
-                            "last3": "LLW",
-                            "avgMargin": 4.0,
-                            "pointDiff": 28,
-                            "bestWin": {
-                                "date": "11/15/1981",
-                                "opponent": "Valencia",
-                                "result": "W",
-                                "margin": 20,
-                                "score": "@Inter Milan 119, Valencia 99",
-                                "boxscoreUrl": "./boxes/box27-1.htm",
-                                "section": "Regular Season"
-                            },
-                            "worstLoss": {
-                                "date": "11/19/1981",
-                                "opponent": "Valencia",
-                                "result": "L",
-                                "margin": 10,
-                                "score": "Valencia 112, @Inter Milan 102",
-                                "boxscoreUrl": "./boxes/box31-3.htm",
-                                "section": "Regular Season"
-                            },
-                            "closeGameCount": 0
-                        },
-                        "rosterUrl": "./rosters/roster26.htm",
-                        "starPlayer": {
-                            "name": "World B. Free",
-                            "url": "../players/player1048.htm",
-                            "pos": "PG",
-                            "age": "24",
-                            "overall": "128",
-                            "potential": "134"
-                        }
-                    },
-                    {
-                        "team": "Tottenham Hotspur",
-                        "overall": {
-                            "record": "5-10",
-                            "streak": "L3",
-                            "last3": "LLL",
-                            "avgMargin": -6.6,
-                            "pointDiff": -99,
-                            "bestWin": {
-                                "date": "11/1/1981",
-                                "opponent": "Sporting CP",
-                                "result": "W",
-                                "margin": 11,
-                                "score": "@Tottenham Hotspur 92, Sporting CP 81",
-                                "boxscoreUrl": "./boxes/box13-5.htm",
-                                "section": "Preseason"
-                            },
-                            "worstLoss": {
-                                "date": "10/20/1981",
-                                "opponent": "Sporting CP",
-                                "result": "L",
-                                "margin": 34,
-                                "score": "@Sporting CP 103, Tottenham Hotspur 69",
-                                "boxscoreUrl": "./boxes/box1-8.htm",
-                                "section": "Preseason"
-                            },
-                            "closeGameCount": 2
-                        },
-                        "latestSim": {
-                            "record": "3-7",
-                            "streak": "L3",
-                            "last3": "LLL",
-                            "avgMargin": -5.8,
-                            "pointDiff": -58,
-                            "bestWin": {
-                                "date": "11/1/1981",
-                                "opponent": "Sporting CP",
-                                "result": "W",
-                                "margin": 11,
-                                "score": "@Tottenham Hotspur 92, Sporting CP 81",
-                                "boxscoreUrl": "./boxes/box13-5.htm",
-                                "section": "Preseason"
-                            },
-                            "worstLoss": {
                                 "date": "11/22/1981",
-                                "opponent": "Paris Saint-Germain",
-                                "result": "L",
+                                "opponent": "Tottenham Hotspur",
+                                "result": "W",
                                 "margin": 16,
                                 "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
                                 "boxscoreUrl": "./boxes/box34-5.htm",
                                 "section": "Regular Season"
                             },
+                            "worstLoss": {
+                                "date": "11/18/1981",
+                                "opponent": "Tottenham Hotspur",
+                                "result": "L",
+                                "margin": 11,
+                                "score": "@Tottenham Hotspur 108, Paris Saint-Germain 97",
+                                "boxscoreUrl": "./boxes/box30-4.htm",
+                                "section": "Regular Season"
+                            },
                             "closeGameCount": 2
                         },
-                        "rosterUrl": "./rosters/roster22.htm",
+                        "latestSim": {
+                            "record": "3-4",
+                            "streak": "L1",
+                            "last3": "LWL",
+                            "avgMargin": 3.0,
+                            "pointDiff": 21,
+                            "bestWin": {
+                                "date": "11/22/1981",
+                                "opponent": "Tottenham Hotspur",
+                                "result": "W",
+                                "margin": 16,
+                                "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
+                                "boxscoreUrl": "./boxes/box34-5.htm",
+                                "section": "Regular Season"
+                            },
+                            "worstLoss": {
+                                "date": "11/18/1981",
+                                "opponent": "Tottenham Hotspur",
+                                "result": "L",
+                                "margin": 11,
+                                "score": "@Tottenham Hotspur 108, Paris Saint-Germain 97",
+                                "boxscoreUrl": "./boxes/box30-4.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "rosterUrl": "./rosters/roster21.htm",
                         "starPlayer": {
-                            "name": "John Long",
-                            "url": "../players/player1052.htm",
-                            "pos": "SF",
-                            "age": "23",
-                            "overall": "114",
-                            "potential": "123"
+                            "name": "Joe Barry Carroll",
+                            "url": "../players/player710.htm",
+                            "pos": "C",
+                            "age": "21",
+                            "overall": "118",
+                            "potential": "128"
+                        }
+                    },
+                    {
+                        "team": "Manchester City",
+                        "overall": {
+                            "record": "2-4",
+                            "streak": "L2",
+                            "last3": "WLL",
+                            "avgMargin": -4.0,
+                            "pointDiff": -24,
+                            "bestWin": {
+                                "date": "11/10/1981",
+                                "opponent": "Tottenham Hotspur",
+                                "result": "W",
+                                "margin": 13,
+                                "score": "@Manchester City 103, Tottenham Hotspur 90",
+                                "boxscoreUrl": "./boxes/box22-1.htm",
+                                "section": "Regular Season"
+                            },
+                            "worstLoss": {
+                                "date": "11/27/1981",
+                                "opponent": "Valencia",
+                                "result": "L",
+                                "margin": 17,
+                                "score": "Valencia 102, @Manchester City 85",
+                                "boxscoreUrl": "./boxes/box39-6.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "latestSim": {
+                            "record": "2-4",
+                            "streak": "L2",
+                            "last3": "WLL",
+                            "avgMargin": -4.0,
+                            "pointDiff": -24,
+                            "bestWin": {
+                                "date": "11/10/1981",
+                                "opponent": "Tottenham Hotspur",
+                                "result": "W",
+                                "margin": 13,
+                                "score": "@Manchester City 103, Tottenham Hotspur 90",
+                                "boxscoreUrl": "./boxes/box22-1.htm",
+                                "section": "Regular Season"
+                            },
+                            "worstLoss": {
+                                "date": "11/27/1981",
+                                "opponent": "Valencia",
+                                "result": "L",
+                                "margin": 17,
+                                "score": "Valencia 102, @Manchester City 85",
+                                "boxscoreUrl": "./boxes/box39-6.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "rosterUrl": "./rosters/roster28.htm",
+                        "starPlayer": {
+                            "name": "Allen Leavell",
+                            "url": "../players/player1054.htm",
+                            "pos": "PG",
+                            "age": "22",
+                            "overall": "117",
+                            "potential": "118"
                         }
                     },
                     {
                         "team": "Sporting CP",
                         "overall": {
-                            "record": "4-9",
+                            "record": "2-5",
                             "streak": "L1",
                             "last3": "LWL",
-                            "avgMargin": -2.15,
-                            "pointDiff": -28,
+                            "avgMargin": -4.29,
+                            "pointDiff": -30,
                             "bestWin": {
-                                "date": "10/20/1981",
-                                "opponent": "Tottenham Hotspur",
+                                "date": "11/23/1981",
+                                "opponent": "Manchester City",
                                 "result": "W",
-                                "margin": 34,
-                                "score": "@Sporting CP 103, Tottenham Hotspur 69",
-                                "boxscoreUrl": "./boxes/box1-8.htm",
-                                "section": "Preseason"
+                                "margin": 9,
+                                "score": "Sporting CP 116, @Manchester City 107",
+                                "boxscoreUrl": "./boxes/box35-2.htm",
+                                "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "10/30/1981",
-                                "opponent": "Manchester City",
+                                "date": "11/27/1981",
+                                "opponent": "FL Fart",
                                 "result": "L",
-                                "margin": 18,
-                                "score": "@Manchester City 87, Sporting CP 69",
-                                "boxscoreUrl": "./boxes/box11-5.htm",
-                                "section": "Preseason"
+                                "margin": 17,
+                                "score": "@FL Fart 117, Sporting CP 100",
+                                "boxscoreUrl": "./boxes/box39-5.htm",
+                                "section": "Regular Season"
                             },
                             "closeGameCount": 2
                         },
                         "latestSim": {
-                            "record": "2-6",
+                            "record": "2-5",
                             "streak": "L1",
                             "last3": "LWL",
-                            "avgMargin": -5.12,
-                            "pointDiff": -41,
+                            "avgMargin": -4.29,
+                            "pointDiff": -30,
                             "bestWin": {
                                 "date": "11/23/1981",
                                 "opponent": "Manchester City",
@@ -1621,6 +1554,70 @@
                             "overall": "121",
                             "potential": "130"
                         }
+                    },
+                    {
+                        "team": "Tottenham Hotspur",
+                        "overall": {
+                            "record": "2-7",
+                            "streak": "L3",
+                            "last3": "LLL",
+                            "avgMargin": -7.67,
+                            "pointDiff": -69,
+                            "bestWin": {
+                                "date": "11/18/1981",
+                                "opponent": "Paris Saint-Germain",
+                                "result": "W",
+                                "margin": 11,
+                                "score": "@Tottenham Hotspur 108, Paris Saint-Germain 97",
+                                "boxscoreUrl": "./boxes/box30-4.htm",
+                                "section": "Regular Season"
+                            },
+                            "worstLoss": {
+                                "date": "11/22/1981",
+                                "opponent": "Paris Saint-Germain",
+                                "result": "L",
+                                "margin": 16,
+                                "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
+                                "boxscoreUrl": "./boxes/box34-5.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "latestSim": {
+                            "record": "2-7",
+                            "streak": "L3",
+                            "last3": "LLL",
+                            "avgMargin": -7.67,
+                            "pointDiff": -69,
+                            "bestWin": {
+                                "date": "11/18/1981",
+                                "opponent": "Paris Saint-Germain",
+                                "result": "W",
+                                "margin": 11,
+                                "score": "@Tottenham Hotspur 108, Paris Saint-Germain 97",
+                                "boxscoreUrl": "./boxes/box30-4.htm",
+                                "section": "Regular Season"
+                            },
+                            "worstLoss": {
+                                "date": "11/22/1981",
+                                "opponent": "Paris Saint-Germain",
+                                "result": "L",
+                                "margin": 16,
+                                "score": "@Paris Saint-Germain 110, Tottenham Hotspur 94",
+                                "boxscoreUrl": "./boxes/box34-5.htm",
+                                "section": "Regular Season"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "rosterUrl": "./rosters/roster22.htm",
+                        "starPlayer": {
+                            "name": "John Long",
+                            "url": "../players/player1052.htm",
+                            "pos": "SF",
+                            "age": "23",
+                            "overall": "114",
+                            "potential": "123"
+                        }
                     }
                 ]
             }
@@ -1642,8 +1639,7 @@
                 "../../00-build/database/monthly/monthly_team_form.json",
                 "../../00-build/database/monthly/overall_team_form.json",
                 "../../00-build/database/monthly/latest_sim_results.json",
-                "../../00-build/database/standings.json",
-                "../../00-build/database/game_results.json"
+                "../../00-build/database/standings.json"
             ],
             "races": [
                 {
@@ -1692,14 +1688,14 @@
                         },
                         {
                             "team": "Brighton",
-                            "record": "3-4",
+                            "record": "2-4",
                             "standingRank": 5,
                             "streak": "W1",
                             "last3": "LLW",
-                            "avgMargin": 0.71,
-                            "pointDiff": 5,
-                            "gapToLine": 1,
-                            "status": "above_safety",
+                            "avgMargin": -2.83,
+                            "pointDiff": -17,
+                            "gapToLine": 0,
+                            "status": "on_or_below_line",
                             "rosterUrl": "./rosters/roster10.htm"
                         }
                     ]
@@ -1738,14 +1734,14 @@
                         },
                         {
                             "team": "Benfica",
-                            "record": "6-2",
+                            "record": "5-2",
                             "standingRank": 3,
                             "streak": "W2",
                             "last3": "LWW",
-                            "avgMargin": 3.38,
-                            "pointDiff": 27,
-                            "gapToLine": 0,
-                            "status": "on_or_above_line",
+                            "avgMargin": 3.14,
+                            "pointDiff": 22,
+                            "gapToLine": 1,
+                            "status": "chasing",
                             "rosterUrl": "./rosters/roster13.htm"
                         },
                         {
@@ -1841,16 +1837,16 @@
                             "rosterUrl": "./rosters/roster27.htm"
                         },
                         {
-                            "team": "Paris Saint-Germain",
-                            "record": "4-4",
-                            "standingRank": 5,
-                            "streak": "L1",
-                            "last3": "LWL",
-                            "avgMargin": 3.75,
-                            "pointDiff": 30,
+                            "team": "Inter Milan",
+                            "record": "4-2",
+                            "standingRank": 3,
+                            "streak": "W1",
+                            "last3": "LLW",
+                            "avgMargin": 6.17,
+                            "pointDiff": 37,
                             "gapToLine": 2,
                             "status": "chasing",
-                            "rosterUrl": "./rosters/roster21.htm"
+                            "rosterUrl": "./rosters/roster26.htm"
                         }
                     ]
                 }
@@ -1872,8 +1868,7 @@
                 "../../00-build/database/monthly/overall_team_form.json",
                 "../../00-build/database/monthly/monthly_storylines.json",
                 "../../00-build/database/monthly/latest_sim_results.json",
-                "../../00-build/database/standings.json",
-                "../../00-build/database/game_results.json"
+                "../../00-build/database/standings.json"
             ],
             "stockUpPool": [
                 {
@@ -2191,23 +2186,14 @@
                     "rosterFile": "roster12.htm",
                     "standingsLast10": "7-3",
                     "wins": 6,
-                    "losses": 3,
-                    "games": 9,
-                    "pointsFor": 966,
-                    "pointsAgainst": 889,
-                    "pointDiff": 77,
-                    "avgMargin": 8.56,
+                    "losses": 2,
+                    "games": 8,
+                    "pointsFor": 884,
+                    "pointsAgainst": 805,
+                    "pointDiff": 79,
+                    "avgMargin": 9.88,
                     "streak": "L1",
                     "recentResults": [
-                        {
-                            "date": "11/1/1981",
-                            "opponent": "Bayern Munich",
-                            "result": "L",
-                            "margin": 2,
-                            "score": "@Bayern Munich 84, AFC Richmond 82",
-                            "boxscoreUrl": "./boxes/box13-1.htm",
-                            "section": "Preseason"
-                        },
                         {
                             "date": "11/4/1981",
                             "opponent": "Manchester United",
@@ -2301,15 +2287,6 @@
                     },
                     "closeGames": [
                         {
-                            "date": "11/1/1981",
-                            "opponent": "Bayern Munich",
-                            "result": "L",
-                            "margin": 2,
-                            "score": "@Bayern Munich 84, AFC Richmond 82",
-                            "boxscoreUrl": "./boxes/box13-1.htm",
-                            "section": "Preseason"
-                        },
-                        {
                             "date": "11/14/1981",
                             "opponent": "Real Madrid",
                             "result": "W",
@@ -2358,8 +2335,8 @@
                         }
                     ],
                     "blowoutLosses": [],
-                    "record": "6-3",
-                    "closeGameCount": 3,
+                    "record": "6-2",
+                    "closeGameCount": 2,
                     "last3": "LWL"
                 }
             ],
@@ -2845,7 +2822,6 @@
                 "../../00-build/database/monthly/tier_race_snapshot.json",
                 "../../00-build/database/monthly/latest_sim_results.json",
                 "../../00-build/database/standings.json",
-                "../../00-build/database/game_results.json",
                 "../../00-build/database/teams.json",
                 "../../00-build/database/players.json",
                 "../../00-build/database/freeagents.json"
@@ -2906,26 +2882,26 @@
                     "id": "closest-game",
                     "type": "game",
                     "title": "Closest Game of the Month",
-                    "summary": "Manchester City edged Valencia by 1 in the tightest finish of the sim.",
+                    "summary": "Tottenham Hotspur edged Manchester City by 1 in the tightest finish of the sim.",
                     "tier": "Tier 3",
                     "importance": 84,
                     "data": {
-                        "section": "Preseason",
-                        "sectionSlug": "preseason",
-                        "date": "10/20/1981",
-                        "matchupText": "Manchester City 101, @Valencia 100",
-                        "boxscoreUrl": "./boxes/box1-10.htm",
-                        "boxscoreFile": "box1-10.htm",
-                        "homeTeam": "roster25",
-                        "homeTeamName": "Valencia",
-                        "homeScore": 100,
-                        "awayTeam": "roster28",
-                        "awayTeamName": "Manchester City",
-                        "awayScore": 101,
-                        "winner": "roster28",
-                        "winnerName": "Manchester City",
-                        "loser": "roster25",
-                        "loserName": "Valencia",
+                        "section": "Regular Season",
+                        "sectionSlug": "regular-season",
+                        "date": "11/15/1981",
+                        "matchupText": "Tottenham Hotspur 104, @Manchester City 103",
+                        "boxscoreUrl": "./boxes/box27-2.htm",
+                        "boxscoreFile": "box27-2.htm",
+                        "homeTeam": "roster28",
+                        "homeTeamName": "Manchester City",
+                        "homeScore": 103,
+                        "awayTeam": "roster22",
+                        "awayTeamName": "Tottenham Hotspur",
+                        "awayScore": 104,
+                        "winner": "roster22",
+                        "winnerName": "Tottenham Hotspur",
+                        "loser": "roster28",
+                        "loserName": "Manchester City",
                         "margin": 1
                     }
                 },
@@ -2957,27 +2933,27 @@
                     "id": "upset-of-the-month",
                     "type": "game",
                     "title": "Upset of the Month",
-                    "summary": "Crystal Palace landed the sharpest upset of the sim by beating Bayern Munich.",
+                    "summary": "Crystal Palace landed the sharpest upset of the sim by beating AFC Richmond.",
                     "tier": "Tier 1",
                     "importance": 82,
                     "data": {
-                        "section": "Preseason",
-                        "sectionSlug": "preseason",
-                        "date": "10/26/1981",
-                        "matchupText": "@Crystal Palace 101, Bayern Munich 98",
-                        "boxscoreUrl": "./boxes/box7-2.htm",
-                        "boxscoreFile": "box7-2.htm",
+                        "section": "Regular Season",
+                        "sectionSlug": "regular-season",
+                        "date": "11/24/1981",
+                        "matchupText": "@Crystal Palace 105, AFC Richmond 101",
+                        "boxscoreUrl": "./boxes/box36-1.htm",
+                        "boxscoreFile": "box36-1.htm",
                         "homeTeam": "roster6",
                         "homeTeamName": "Crystal Palace",
-                        "homeScore": 101,
-                        "awayTeam": "roster7",
-                        "awayTeamName": "Bayern Munich",
-                        "awayScore": 98,
+                        "homeScore": 105,
+                        "awayTeam": "roster12",
+                        "awayTeamName": "AFC Richmond",
+                        "awayScore": 101,
                         "winner": "roster6",
                         "winnerName": "Crystal Palace",
-                        "loser": "roster7",
-                        "loserName": "Bayern Munich",
-                        "margin": 3
+                        "loser": "roster12",
+                        "loserName": "AFC Richmond",
+                        "margin": 4
                     }
                 }
             ],
@@ -3247,7 +3223,7 @@
                     }
                 }
             ],
-            "latestSimGameCount": 87
+            "latestSimGameCount": 82
         }
     }
 }
