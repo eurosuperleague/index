@@ -4,6 +4,9 @@
   var SEARCH_STYLE_ID = "player-search-styles";
   var WAIVER_TABLE_STYLE_ID = "waiver-table-styles";
   var PLAYER_RATING_STYLE_ID = "player-rating-pill-styles";
+  var MENU_STYLE_ID = "league-menu-enhancement-styles";
+  var RESPONSIVE_MENU_STYLE_ID = "responsive-menu-toggle-styles";
+  var MENU_BREAKPOINT = 760;
 
   function isNestedPage() {
     return /\/(players|rosters|boxes)\//i.test(window.location.pathname);
@@ -265,6 +268,117 @@
     menuFrame.style.overflow = "auto";
   }
 
+  function getParentFrameset() {
+    try {
+      if (window.parent === window || !window.parent.document) {
+        return null;
+      }
+
+      return window.parent.document.querySelector("frameset");
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function setParentMenuOpen(isOpen) {
+    var frameset = getParentFrameset();
+
+    if (!frameset) {
+      return;
+    }
+
+    frameset.setAttribute("cols", isOpen ? "150,*" : "0,*");
+  }
+
+  function isParentMenuOpen() {
+    var frameset = getParentFrameset();
+
+    if (!frameset) {
+      return false;
+    }
+
+    return String(frameset.getAttribute("cols") || "").split(",")[0] !== "0";
+  }
+
+  function syncResponsiveMenuState(button) {
+    var parentWindow;
+    var isNarrow;
+
+    try {
+      parentWindow = window.parent;
+      isNarrow = parentWindow.innerWidth <= MENU_BREAKPOINT;
+    } catch (error) {
+      return;
+    }
+
+    if (!isNarrow) {
+      setParentMenuOpen(true);
+      button.hidden = true;
+      parentWindow.__leagueMenuUserToggled = false;
+      return;
+    }
+
+    if (!parentWindow.__leagueMenuUserToggled) {
+      setParentMenuOpen(false);
+    }
+
+    button.hidden = false;
+    button.setAttribute("aria-expanded", String(isParentMenuOpen()));
+  }
+
+  function ensureResponsiveMenuToggleStyles() {
+    if (document.getElementById(RESPONSIVE_MENU_STYLE_ID)) {
+      return;
+    }
+
+    var style = document.createElement("style");
+    style.id = RESPONSIVE_MENU_STYLE_ID;
+    style.textContent = [
+      ".league-menu-hamburger { position: fixed; top: 8px; left: 8px; z-index: 3000; width: 36px; height: 34px; border: 1px solid rgba(255,255,255,0.24); border-radius: 8px; background: #111b36; color: #ffffff; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.22); cursor: pointer; font: 800 18px/1 Inter, Tahoma, Arial, sans-serif; }",
+      ".league-menu-hamburger:hover { background: #17274b; }",
+      ".league-menu-hamburger[hidden] { display: none; }"
+    ].join("");
+    document.head.appendChild(style);
+  }
+
+  function initResponsiveFrameMenu() {
+    var frameset = getParentFrameset();
+    var button;
+
+    if (!frameset || isMenuPage() || document.querySelector(".league-menu-hamburger")) {
+      return;
+    }
+
+    ensureResponsiveMenuToggleStyles();
+    button = document.createElement("button");
+    button.className = "league-menu-hamburger";
+    button.type = "button";
+    button.setAttribute("aria-label", "Toggle league menu");
+    button.textContent = "\u2630";
+    document.body.appendChild(button);
+
+    button.addEventListener("click", function () {
+      var parentWindow = window.parent;
+      var nextOpen = !isParentMenuOpen();
+
+      parentWindow.__leagueMenuUserToggled = true;
+      setParentMenuOpen(nextOpen);
+      button.setAttribute("aria-expanded", String(nextOpen));
+    });
+
+    syncResponsiveMenuState(button);
+
+    try {
+      window.parent.addEventListener("resize", function () {
+        syncResponsiveMenuState(button);
+      });
+    } catch (error) {
+      window.addEventListener("resize", function () {
+        syncResponsiveMenuState(button);
+      });
+    }
+  }
+
   function markStandingsPage() {
     if (shouldAttachStandingsSearch()) {
       document.body.classList.add("page-standings");
@@ -393,6 +507,158 @@
     }
 
     menuTable.appendChild(row);
+  }
+
+  function ensureLeagueMenuStyles() {
+    if (document.getElementById(MENU_STYLE_ID)) {
+      return;
+    }
+
+    var style = document.createElement("style");
+    style.id = MENU_STYLE_ID;
+    style.textContent = [
+      "body.menu-body { background: #111b36 !important; color: #ffffff; font-family: 'Inter', Tahoma, Arial, sans-serif; font-size: 10.8pt; line-height: 1.16; margin: 0; padding: 0; overflow-x: hidden; }",
+      ".league-menu-shell { display: flex; flex-direction: column; gap: 0; }",
+      ".league-menu-link, .league-menu-toggle { font-family: 'Inter', Tahoma, Arial, sans-serif; text-decoration: none; }",
+      ".league-menu-link { color: #ffffff; display: block; font-size: 9.8pt; font-weight: 600; line-height: 1.08; padding: 6px 2px; }",
+      ".league-menu-link:hover { background: rgba(255, 255, 255, 0.08); color: #ffffff; text-decoration: none; }",
+      ".league-menu-feature { align-items: center; background: #111b36; border-bottom: 1px solid rgba(148, 163, 184, 0.45); color: #ffffff !important; display: flex; justify-content: center; min-height: 38px; padding: 7px 2px; }",
+      ".league-menu-feature:hover { background: rgba(255, 255, 255, 0.08); }",
+      ".league-menu-logo { display: block; max-width: 112px; width: 100%; max-height: 23px; object-fit: contain; filter: brightness(0) invert(1); }",
+      ".league-menu-fallback { color: #ffffff; font: 800 11pt/1 Inter, Tahoma, Arial, sans-serif; letter-spacing: 0.05em; text-transform: uppercase; }",
+      ".league-menu-group { border-bottom: 1px solid rgba(148, 163, 184, 0.24); overflow: hidden; }",
+      ".league-menu-toggle { align-items: center; background: #111b36; border: 0; color: #ffffff; cursor: pointer; display: flex; font-size: 9pt; font-weight: 900; justify-content: space-between; letter-spacing: 0.04em; padding: 7px 2px 4px; text-align: left; text-transform: uppercase; width: 100%; }",
+      ".league-menu-toggle:hover { background: rgba(255, 255, 255, 0.08); }",
+      ".league-menu-toggle::after { content: '-'; font-weight: 800; }",
+      ".league-menu-group.is-collapsed .league-menu-toggle::after { content: '+'; }",
+      ".league-menu-links { display: flex; flex-direction: column; gap: 0; padding-top: 0; }",
+      ".league-menu-group.is-collapsed .league-menu-links { display: none; }",
+      "@media (max-height: 680px) { .league-menu-link { font-size: 9.2pt; padding: 5px 2px; } .league-menu-toggle { font-size: 8.5pt; padding: 6px 2px 3px; } .league-menu-feature { min-height: 32px; } .league-menu-logo { max-height: 20px; } }"
+    ].join("");
+    document.head.appendChild(style);
+  }
+
+  function makeMenuLink(label, href, className) {
+    var link = document.createElement("a");
+    link.className = className || "league-menu-link";
+    link.target = "data";
+    link.href = href;
+    link.textContent = label;
+    return link;
+  }
+
+  function makeEslMediaLink() {
+    var link = makeMenuLink("", "00-eslmedia/homepage.html", "league-menu-link league-menu-feature");
+    var logo = document.createElement("img");
+    var fallback = document.createElement("span");
+
+    link.target = "_top";
+    logo.className = "league-menu-logo";
+    logo.src = "00-eslmedia/content/article images/ESLM.png";
+    logo.alt = "ESL Media";
+
+    fallback.className = "league-menu-fallback";
+    fallback.textContent = "ESLM";
+
+    logo.addEventListener("error", function () {
+      logo.remove();
+      if (!link.contains(fallback)) {
+        link.appendChild(fallback);
+      }
+    });
+
+    link.appendChild(logo);
+    return link;
+  }
+
+  function makeMenuGroup(title, links) {
+    var section = document.createElement("section");
+    var toggle = document.createElement("button");
+    var linkWrap = document.createElement("div");
+
+    section.className = "league-menu-group";
+    toggle.className = "league-menu-toggle";
+    toggle.type = "button";
+    toggle.setAttribute("aria-expanded", "true");
+    toggle.textContent = title;
+    linkWrap.className = "league-menu-links";
+
+    links.forEach(function (link) {
+      linkWrap.appendChild(makeMenuLink(link.label, link.href));
+    });
+
+    toggle.addEventListener("click", function () {
+      var collapsed = section.classList.toggle("is-collapsed");
+      toggle.setAttribute("aria-expanded", String(!collapsed));
+    });
+
+    section.appendChild(toggle);
+    section.appendChild(linkWrap);
+    return section;
+  }
+
+  function enhanceLeagueMenu() {
+    if (!isMenuPage() || document.querySelector(".league-menu-shell")) {
+      return;
+    }
+
+    ensureLeagueMenuStyles();
+    document.body.className = (document.body.className ? document.body.className + " " : "") + "menu-body";
+    document.body.setAttribute("bgcolor", "#111b36");
+
+    var groups = [
+      {
+        title: "League",
+        links: [
+          { label: "Standings", href: "standings.htm" },
+          { label: "Schedule", href: "schedule.htm" },
+          { label: "League Leaders", href: "leaders.htm" },
+          { label: "Team Leaders", href: "teamleaders.htm" },
+          { label: "Transactions", href: "transactions.htm" }
+        ]
+      },
+      {
+        title: "Teams",
+        links: [
+          { label: "Injuries", href: "injuries.htm" },
+          { label: "Cap Report", href: "capreport.htm" },
+          { label: "Depth Charts", href: "00-assets/html/depthcharts.htm" },
+          { label: "Free Agents", href: "freeagents.htm" },
+          { label: "Waiver Wire", href: "waiverwire.htm" },
+          { label: "Potential FAs", href: "potentialfreeagents.htm" }
+        ]
+      },
+      {
+        title: "Season",
+        links: [
+          { label: "Draft Preview", href: "draft.htm" },
+          { label: "Awards", href: "awards.htm" },
+          { label: "Season Awards", href: "seasonawards.htm" },
+          { label: "Playoff Standings", href: "playoffstandings.htm" },
+          { label: "Playoffs", href: "playoffs.htm" },
+          { label: "Playoff Leaders", href: "playoffleaders.htm" },
+          { label: "Past Champs", href: "champs.htm" }
+        ]
+      },
+      {
+        title: "Admin",
+        links: [
+          { label: "Available Staff", href: "staff.htm" },
+          { label: "Human Coaches", href: "humancoaches.htm" }
+        ]
+      }
+    ];
+    var shell = document.createElement("nav");
+
+    shell.className = "league-menu-shell";
+    shell.setAttribute("aria-label", "League navigation");
+    shell.appendChild(makeEslMediaLink());
+    groups.forEach(function (group) {
+      shell.appendChild(makeMenuGroup(group.title, group.links));
+    });
+
+    document.body.innerHTML = "";
+    document.body.appendChild(shell);
   }
 
   function getCurrentPlayerPath() {
@@ -1104,10 +1370,12 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     enableMenuFrameScroll();
+    initResponsiveFrameMenu();
     markStandingsPage();
     applyRosterHeaderPhoto();
     ensureCapReportMenuLink();
     ensureDepthChartsMenuLink();
+    enhanceLeagueMenu();
     initPlayerRatings();
     loadJsonData("teams.json")
       .then(function (teams) {
