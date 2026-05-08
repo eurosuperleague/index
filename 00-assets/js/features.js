@@ -4,6 +4,7 @@
   var SEARCH_STYLE_ID = "player-search-styles";
   var WAIVER_TABLE_STYLE_ID = "waiver-table-styles";
   var PLAYER_RATING_STYLE_ID = "player-rating-pill-styles";
+  var ROSTER_RATING_STYLE_ID = "roster-rating-pill-styles";
   var MENU_STYLE_ID = "league-menu-enhancement-styles";
   var RESPONSIVE_MENU_STYLE_ID = "responsive-menu-toggle-styles";
   var MENU_BREAKPOINT = 760;
@@ -423,6 +424,21 @@
     document.head.appendChild(style);
   }
 
+  function ensureRosterRatingStyles() {
+    if (document.getElementById(ROSTER_RATING_STYLE_ID)) {
+      return;
+    }
+
+    var style = document.createElement("style");
+    style.id = ROSTER_RATING_STYLE_ID;
+    style.textContent = [
+      ".roster-rating-pill-host { text-align: center; }",
+      ".roster-rating-pill { align-items: center; border-radius: 999px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22); color: #ffffff !important; display: inline-block; font-family: Inter, Tahoma, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 600; justify-content: center; line-height: 1.05; min-height: 0; min-width: 28px; padding: 2px 7px; text-align: center; text-decoration: none; text-indent: 0; text-shadow: 0 1px 1px rgba(15, 23, 42, 0.35); vertical-align: middle; white-space: nowrap; }",
+      ".roster-rating-pill--na { background: rgba(148, 163, 184, 0.35); color: #e2e8f0; text-shadow: none; }"
+    ].join("");
+    document.head.appendChild(style);
+  }
+
   function ensureSearchRoot() {
     if (!shouldAttachStandingsSearch()) {
       return null;
@@ -766,6 +782,127 @@
       pill.style.backgroundColor = backgroundColor;
     }
     return pill;
+  }
+
+  function buildPlayerRecordMaps(players) {
+    var byUrl = {};
+    var byName = {};
+
+    (players || []).forEach(function (player) {
+      var normalizedUrl = normalizePlayerUrl(player && player.url ? player.url : "").replace(/\\/g, "/").toLowerCase();
+      var normalizedName = normalizeName(player && player.name);
+
+      if (normalizedUrl) {
+        byUrl[normalizedUrl] = player;
+      }
+
+      if (normalizedName && !byName[normalizedName]) {
+        byName[normalizedName] = player;
+      }
+    });
+
+    return {
+      byUrl: byUrl,
+      byName: byName
+    };
+  }
+
+  function findRosterRatingColor(cell) {
+    var colorNode = cell && cell.querySelector("[bgcolor]");
+    return colorNode ? colorNode.getAttribute("bgcolor") || "" : "";
+  }
+
+  function findRosterPlayerRecord(row, playerMaps) {
+    var playerLink = row.querySelector('a[href*="player"]');
+    var playerCell = row.children[1];
+    var href = playerLink ? normalizePlayerUrl(playerLink.getAttribute("href") || "").replace(/\\/g, "/").toLowerCase() : "";
+    var name = normalizeName(playerCell ? playerCell.textContent : "");
+
+    if (href && playerMaps.byUrl[href]) {
+      return playerMaps.byUrl[href];
+    }
+
+    return name && playerMaps.byName[name] ? playerMaps.byName[name] : null;
+  }
+
+  function setRosterRatingCell(cell, value, fallbackColor) {
+    var text = formatRatingValue(value);
+    var color = fallbackColor || "";
+    var pill = document.createElement("span");
+
+    cell.classList.add("roster-rating-pill-host");
+    cell.dataset.sortValue = text === "N/A" ? "" : String(value);
+    pill.className = "roster-rating-pill" + (text === "N/A" ? " roster-rating-pill--na" : "");
+    pill.textContent = text;
+    pill.style.color = text === "N/A" ? "#e2e8f0" : "#ffffff";
+    pill.style.fontFamily = "Inter, Tahoma, Arial, sans-serif";
+    pill.style.fontSize = "12px";
+    pill.style.fontWeight = "600";
+    pill.style.lineHeight = "1.05";
+    pill.style.textAlign = "center";
+    pill.style.whiteSpace = "nowrap";
+
+    if (text !== "N/A" && color) {
+      pill.style.backgroundColor = color;
+    }
+
+    cell.innerHTML = "";
+    cell.appendChild(pill);
+  }
+
+  function enhanceRosterRatingTables(players) {
+    if (!isRosterPage()) {
+      return;
+    }
+
+    var playerMaps = buildPlayerRecordMaps(players);
+    var tables = Array.prototype.slice.call(document.querySelectorAll("table"));
+    var enhancedCount = 0;
+
+    tables.forEach(function (table) {
+      var headerRow = Array.prototype.slice.call(table.querySelectorAll("tr")).find(function (row) {
+        return row.querySelector("td.header");
+      });
+      var headerCells = headerRow ? Array.prototype.slice.call(headerRow.querySelectorAll("td.header")) : [];
+      var curIndex = -1;
+      var futIndex = -1;
+
+      if (!headerCells.length) {
+        return;
+      }
+
+      headerCells.forEach(function (headerCell, index) {
+        var label = String(headerCell.textContent || "").replace(/[^a-zA-Z]/g, "").toUpperCase();
+        if (label.indexOf("CUR") === 0) {
+          curIndex = index;
+        } else if (label.indexOf("FUT") === 0) {
+          futIndex = index;
+        }
+      });
+
+      if (curIndex === -1 || futIndex === -1) {
+        return;
+      }
+
+      Array.prototype.slice.call(table.querySelectorAll("tr.row1, tr.row2")).forEach(function (row) {
+        var cells = row.children;
+        var player = findRosterPlayerRecord(row, playerMaps);
+        var curCell = cells[curIndex];
+        var futCell = cells[futIndex];
+
+        if (!curCell || !futCell || !player) {
+          return;
+        }
+
+        setRosterRatingCell(curCell, player.overall, findRosterRatingColor(curCell));
+        setRosterRatingCell(futCell, player.potential, findRosterRatingColor(futCell));
+        enhancedCount += 1;
+      });
+    });
+
+    if (enhancedCount) {
+      ensureRosterRatingStyles();
+    }
   }
 
   function injectPlayerRatingPills(player) {
@@ -1420,8 +1557,22 @@
       .then(function (players) {
         injectPlayerRatingPills(findCurrentPlayerRecord(players));
       })
+        .catch(function () {
+          injectPlayerRatingPills(null);
+        });
+  }
+
+  function initRosterRatings() {
+    if (!isRosterPage()) {
+      return;
+    }
+
+    loadJsonData("players.json")
+      .then(function (players) {
+        enhanceRosterRatingTables(players);
+      })
       .catch(function () {
-        injectPlayerRatingPills(null);
+        enhanceRosterRatingTables([]);
       });
   }
 
@@ -1434,6 +1585,7 @@
     ensureDepthChartsMenuLink();
     enhanceLeagueMenu();
     initPlayerRatings();
+    initRosterRatings();
     loadJsonData("teams.json")
       .then(function (teams) {
         var teamMap = buildTeamMap(teams);

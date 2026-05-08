@@ -43,8 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
           // Only direct child td elements — ignores nested table cells
           var aCells = Array.from(a.children);
           var bCells = Array.from(b.children);
-          var aText = (aCells[col] ? aCells[col].innerText.trim() : '');
-          var bText = (bCells[col] ? bCells[col].innerText.trim() : '');
+          var aCell = aCells[col];
+          var bCell = bCells[col];
+          var aText = (aCell ? ((aCell.dataset && aCell.dataset.sortValue) || aCell.innerText.trim()) : '');
+          var bText = (bCell ? ((bCell.dataset && bCell.dataset.sortValue) || bCell.innerText.trim()) : '');
 
           // Grade sort (A/B/C/D/F)
           if (gradeOrder[aText] !== undefined && gradeOrder[bText] !== undefined) {
