@@ -575,6 +575,16 @@
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--mid);
+      line-height: 1.35;
+    }
+
+    .snapshot-label a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .snapshot-label a:hover {
+      text-decoration: underline;
     }
 
     .front-grid {
@@ -994,8 +1004,10 @@
           <section class="rail-stack">
             <div class="rail-label">
               <span>League Leaders</span>
-              <span>Leaders</span>
+              <span id="leadersNote">CLB</span>
             </div>
+            <div class="standings-controls" id="leadersTabs"></div>
+            <div class="standings-status" id="leadersStatus">Loading league leaders</div>
             <div class="snapshot-grid">
               <div class="snapshot-card">
                 <div class="snapshot-value" id="leaderPointsValue">--</div>
@@ -1100,14 +1112,28 @@
     const standingsBody = document.getElementById("standingsBody");
     const standingsStatus = document.getElementById("standingsStatus");
     const standingsNote = document.getElementById("standingsNote");
+    const leadersTabs = document.getElementById("leadersTabs");
+    const leadersStatus = document.getElementById("leadersStatus");
+    const leadersNote = document.getElementById("leadersNote");
     const standingsDataUrl = "../00-build/database/standings.json";
-    const leadersPageUrl = "../leaders.htm";
+    const leadersDataUrl = "../00-build/database/leaders.json";
 
     let standingsSections = [];
     let activeStandingsSlug = null;
+    let leaderSections = [];
+    let activeLeadersSlug = null;
 
     function formatLeagueLabel(title) {
       return title.replace(/\s+Standings$/i, "").trim();
+    }
+
+    function formatLeadersLabel(title) {
+      return title.replace(/\s+League Leaders$/i, "").trim();
+    }
+
+    function normalizeLeagueHref(url) {
+      const cleanUrl = String(url || "").replace(/^\.\//, "");
+      return cleanUrl ? `../${cleanUrl}` : "#";
     }
 
     function sortTeamsForSnapshot(teams) {
@@ -1156,42 +1182,18 @@
       });
     }
 
-    function decodeHtml(value) {
-      const textarea = document.createElement("textarea");
-      textarea.innerHTML = value;
-      return textarea.value.replace(/\u00a0/g, " ").trim();
-    }
-
-    function extractLeaderFromSection(documentRoot, category) {
-      const headers = Array.from(documentRoot.querySelectorAll("td.tableheader"));
-      const header = headers.find((cell) => decodeHtml(cell.innerHTML).toLowerCase() === category.toLowerCase());
-      if (!header) return null;
-
-      const table = header.closest("table");
-      if (!table) return null;
-
-      const rows = Array.from(table.querySelectorAll("tr.row1, tr.row2"));
-      for (const row of rows) {
-        const cells = Array.from(row.querySelectorAll("td.main"));
-        if (cells.length < 5) continue;
-        const player = decodeHtml(cells[2].innerHTML);
-        const team = decodeHtml(cells[3].innerHTML);
-        const average = decodeHtml(cells[4].innerHTML);
-        if (!player || !team || !average) continue;
-        return { player, team, average };
-      }
-
-      return null;
-    }
-
     function applyLeaderCard(prefix, leader, category) {
       const valueNode = document.getElementById(`${prefix}Value`);
       const labelNode = document.getElementById(`${prefix}Label`);
       if (!valueNode || !labelNode) return;
 
       if (leader) {
-        valueNode.textContent = leader.average;
-        labelNode.textContent = `${leader.player} · ${leader.team}`;
+        valueNode.textContent = leader.valueText || leader.value || "--";
+        labelNode.innerHTML = `
+          <a href="${normalizeLeagueHref(leader.playerUrl)}">${leader.player}</a>
+          <span> - </span>
+          <a href="${normalizeLeagueHref(leader.teamUrl)}">${leader.teamName}</a>
+        `;
         return;
       }
 
@@ -1199,19 +1201,59 @@
       labelNode.textContent = `${category} Leader`;
     }
 
+    function findLeader(activeSection, category) {
+      const categoryData = activeSection.categories.find((item) => item.title.toLowerCase() === category.toLowerCase());
+      return categoryData && categoryData.leaders && categoryData.leaders.length ? categoryData.leaders[0] : null;
+    }
+
+    function renderLeaderTabs() {
+      leadersTabs.innerHTML = leaderSections.map((section) => {
+        const label = formatLeadersLabel(section.title);
+        const isActive = section.slug === activeLeadersSlug ? " active" : "";
+        return `<button class="standings-tab${isActive}" type="button" data-slug="${section.slug}">${label}</button>`;
+      }).join("");
+
+      leadersTabs.querySelectorAll(".standings-tab").forEach((button) => {
+        button.addEventListener("click", () => {
+          activeLeadersSlug = button.dataset.slug;
+          renderActiveLeaders();
+        });
+      });
+    }
+
+    function renderActiveLeaders() {
+      const activeSection = leaderSections.find((section) => section.slug === activeLeadersSlug);
+      if (!activeSection) return;
+
+      applyLeaderCard("leaderPoints", findLeader(activeSection, "Points"), "Points");
+      applyLeaderCard("leaderRebounds", findLeader(activeSection, "Rebounds"), "Rebounds");
+      applyLeaderCard("leaderAssists", findLeader(activeSection, "Assists"), "Assists");
+      applyLeaderCard("leaderBlocks", findLeader(activeSection, "Blocks"), "Blocks");
+
+      const label = formatLeadersLabel(activeSection.title);
+      leadersStatus.textContent = `${label} leaders`;
+      leadersNote.textContent = label;
+
+      leadersTabs.querySelectorAll(".standings-tab").forEach((button) => {
+        button.classList.toggle("active", button.dataset.slug === activeLeadersSlug);
+      });
+    }
+
     async function initLeadersSnapshot() {
       try {
-        const response = await fetch(leadersPageUrl);
+        const response = await fetch(leadersDataUrl);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        const html = await response.text();
-        const parser = new DOMParser();
-        const leadersDoc = parser.parseFromString(html, "text/html");
+        const data = await response.json();
 
-        applyLeaderCard("leaderPoints", extractLeaderFromSection(leadersDoc, "Points"), "Points");
-        applyLeaderCard("leaderRebounds", extractLeaderFromSection(leadersDoc, "Rebounds"), "Rebounds");
-        applyLeaderCard("leaderAssists", extractLeaderFromSection(leadersDoc, "Assists"), "Assists");
-        applyLeaderCard("leaderBlocks", extractLeaderFromSection(leadersDoc, "Blocks"), "Blocks");
+        leaderSections = Array.isArray(data.sections) ? data.sections : [];
+        if (!leaderSections.length) throw new Error("No leader sections found");
+
+        activeLeadersSlug = leaderSections[0].slug;
+        renderLeaderTabs();
+        renderActiveLeaders();
       } catch (error) {
+        leadersStatus.textContent = "Leaders unavailable";
+        leadersTabs.innerHTML = "";
         applyLeaderCard("leaderPoints", null, "Points");
         applyLeaderCard("leaderRebounds", null, "Rebounds");
         applyLeaderCard("leaderAssists", null, "Assists");
@@ -1242,6 +1284,7 @@
   </script>
 </body>
 </html>
+
 
 
 
