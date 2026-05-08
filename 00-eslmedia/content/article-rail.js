@@ -4,7 +4,8 @@
     file: article.file.split("/").pop(),
     title: article.title,
     category: article.desk,
-    blurb: article.blurb
+    blurb: article.blurb,
+    sortKey: article.sortKey || ""
   }));
 
   const adImages = [
@@ -44,7 +45,10 @@
   const pickRandom = (items, count) => shuffle(items).slice(0, count);
 
   const buildRecommendations = (currentArticle) => {
-    const pool = articles.filter((article) => article.file !== currentArticle.file);
+    const pool = articles
+      .filter((article) => article.file !== currentArticle.file)
+      .sort((a, b) => b.sortKey.localeCompare(a.sortKey))
+      .slice(0, 6);
     const sameCategory = pool.filter((article) => article.category === currentArticle.category);
     const others = pool.filter((article) => article.category !== currentArticle.category);
     return [...shuffle(sameCategory), ...shuffle(others)].slice(0, 3);

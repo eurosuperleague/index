@@ -35,6 +35,134 @@ POWER_RANKING_SERIES = {
     "Tier 3": "ecl_power_rankings",
 }
 GAME_RESULTS_CONTEXT = "../../00-build/database/game_results.json"
+ARTICLE_STYLE_REFERENCES = {
+    "power_rankings": [
+        {
+            "url": "https://www.nba.com/news/category/power-rankings",
+            "useFor": "Power Rankings",
+            "notes": (
+                "Use NBA.com Power Rankings as the clean movement model: current rank, recent form, "
+                "why the team moved or stayed, and one forward-looking pressure point."
+            ),
+        },
+        {
+            "url": "https://www.theringer.com/2026/03/17/nba/nba-power-rankings-2026-playoffs-contenders-bugonia",
+            "useFor": "Power Rankings",
+            "notes": (
+                "Use The Ringer-style ranking voice for sharper tier logic, belief/doubt framing, "
+                "and personality without turning the piece into jokes."
+            ),
+        },
+        {
+            "url": "https://www.espn.com/nba/story/_/id/48687450/nba-playoffs-2026-conference-semifinals-rankings-knicks-76ers-spurs-wolves-thunder-lakers-pistons-cavs",
+            "useFor": "Power Rankings",
+            "notes": (
+                "Use a playoff ranking-style structure: make each ranked team earn its spot with current form, "
+                "matchup/context stakes, reasons for belief, reasons for doubt, and what could change next."
+            ),
+        },
+    ],
+    "mvp_race": [
+        {
+            "url": "https://www.nba.com/news/kia-mvp-ladder-feb-27-2026",
+            "useFor": "MVP Race",
+            "notes": (
+                "Use an MVP Ladder-style structure: stage the stakes before the ballot, include a stat-to-know "
+                "or deciding-factor paragraph, then give each candidate a ranked case with stats, context, "
+                "movement, caveats, and a short next group."
+            ),
+        },
+        {
+            "url": "https://www.nba.com/news/kia-rookie-ladder-feb-4-2026",
+            "useFor": "MVP Race",
+            "notes": (
+                "Use Rookie Ladder-style movement logic: explain why a race changed this month, who surged, "
+                "who slipped, and which evidence matters most."
+            ),
+        },
+        {
+            "url": "https://sports.yahoo.com/nba/article/the-assassin-vs-the-alien-my-2026-nba-mvp-vote-141617400.html",
+            "useFor": "MVP Race",
+            "notes": (
+                "Use ballot-essay depth when the race is close: define what value means, compare competing "
+                "cases directly, and make the final order feel argued instead of sorted."
+            ),
+        },
+    ],
+    "race_watch": [
+        {
+            "url": "https://www.premierleague.com/en/news/4609609/premier-league-relegation-battle-how-it-stands-and-remaining-fixtures",
+            "useFor": "Promotion / Relegation Watch",
+            "notes": (
+                "Use the Premier League race explainer model: state the rules and line first, then sort teams "
+                "by safe, sweating, in trouble, chasing, and no-longer-in-control."
+            ),
+        },
+        {
+            "url": "https://www.espn.com/nba/story/_/id/48083437/nba-2025-26-postseason-tracker-clinched-playoff-play-spots",
+            "useFor": "Promotion / Relegation Watch",
+            "notes": (
+                "Use tracker-style clarity for who currently owns each slot, who is closest, and what outcome "
+                "would change the race next."
+            ),
+        },
+        {
+            "url": "https://www.espn.com/nba/story/_/id/48387069/what-watch-biggest-question-last-week-2025-2026-nba-regular-season-playoffs-postseason-standings",
+            "useFor": "Promotion / Relegation Watch",
+            "notes": (
+                "Use final-week question framing for stakes: what each team needs, what they can control, "
+                "and which weakness could decide the race."
+            ),
+        },
+    ],
+    "stock_report": [
+        {
+            "url": "https://www.theringer.com/2026/04/13/nba/nba-final-day-winners-losers-playoff-picture-bracket-matchups",
+            "useFor": "Stock Up / Stock Down",
+            "notes": (
+                "Use winners/losers structure: verdict first, evidence second, consequence third. "
+                "Each stock call should explain what changed and why it matters."
+            ),
+        },
+        {
+            "url": "https://www.theringer.com/2026/02/05/nba/nba-trade-deadline-2026-giannis-antetokounmpo-rumors",
+            "useFor": "Stock Up / Stock Down",
+            "notes": (
+                "Use trade-deadline winners/losers energy for sharper judgments and memorable section leads, "
+                "while keeping each take tied to concrete results."
+            ),
+        },
+    ],
+    "month_in_review": [
+        {
+            "url": "https://www.espn.com/nba/story/_/id/48506452/2026-nba-playoffs-western-conference-round-one-takeaways",
+            "useFor": "Month in Review",
+            "notes": (
+                "Use takeaways structure: do not recap every result; identify the three to five things the "
+                "month changed and explain what they mean next."
+            ),
+        },
+        {
+            "url": "https://www.theringer.com/2026/04/13/nba/nba-final-day-winners-losers-playoff-picture-bracket-matchups",
+            "useFor": "Month in Review",
+            "notes": (
+                "Use winners/losers voice to add editorial bite when the month clearly helped or hurt a team, "
+                "player, or race."
+            ),
+        },
+        {
+            "url": "https://www.nba.com/news/category/power-rankings",
+            "useFor": "Month in Review",
+            "notes": (
+                "Use ranking-recency logic to connect week-to-week movement, form, and changing expectations."
+            ),
+        },
+    ],
+}
+
+
+def style_references(article_type):
+    return ARTICLE_STYLE_REFERENCES.get(article_type, [])
 
 
 def load_json(path):
@@ -264,15 +392,23 @@ def build_power_rankings(overall_team_form, monthly_team_form, period_label, tea
                     "meaningful, but do not force movement notes for every team. You are allowed to pull extra "
                     "context from any of the linked JSON sources if it strengthens the board. When it fits the "
                     "article, mention the listed star players as roster context; starPlayer is the highest OVR "
-                    "player on that team's current roster."
+                    "player on that team's current roster. Use the style references to add substance: open with "
+                    "a clear ranking thesis, then make each team earn its spot with current form, evidence, "
+                    "belief, doubt, and what could change next. Give a little player reference where necessary, "
+                    "especially when a star, scorer, defender, or depth piece explains why the team's results "
+                    "are sustainable, misleading, or changing."
                 ),
                 "writerNotes": [
                     "Use the team pool as context, not as a locked final order.",
                     "Base the ranking on overall form, not just one sim.",
                     "Use the latest sim to justify movement, momentum, and skepticism.",
                     "Work in star-player mentions for the biggest teams, risers, fallers, or arguments where roster quality matters.",
+                    "Add player context only when it sharpens the team argument: who drives the offense, who covers a weakness, who is missing, or whose form changes the outlook.",
                     "Call out at least one riser, one faller, and one team you are still unsure about.",
+                    "Follow the ESPN-style ranking model: current form, stakes, reasons for belief, reasons for doubt, and the next change trigger.",
+                    "Each team capsule should include at least one concrete stat/result and one interpretive judgment.",
                 ],
+                "styleReferences": style_references("power_rankings"),
                 "availableContext": context_sources([
                     "../../00-build/database/monthly/overall_team_form.json",
                     "../../00-build/database/monthly/monthly_team_form.json",
@@ -329,14 +465,18 @@ def build_race_watch(tier_race_snapshot, period_label, include_preseason):
             f"Write a promotion/relegation watch article for {period_label}. Cover Tier 1 relegation, "
             "Tier 2 promotion and relegation, and Tier 3 promotion. Focus on the live line, the closest "
             "chasers, and who has momentum. You can use any of the linked JSON context if it helps explain "
-            "why a race is tightening or loosening."
+            "why a race is tightening or loosening. Use the style references to make the race easy to follow: "
+            "state the rules, define the line, identify who controls their fate, and explain what changes next."
         ),
         "writerNotes": [
             "Tier 1 has 2 relegation spots.",
             "Tier 2 has 2 promotion spots and 1 relegation spot.",
             "Tier 3 has 1 promotion spot.",
             "Explain the pressure line clearly before making bigger editorial claims.",
+            "Group teams by race status where useful: safe, sweating, chasing, in trouble, or no longer in control.",
+            "Each race section should include the current line team, nearest chasers, momentum, and one concrete next pressure point.",
         ],
+        "styleReferences": style_references("race_watch"),
         "availableContext": context_sources([
             "../../00-build/database/monthly/tier_race_snapshot.json",
             "../../00-build/database/monthly/monthly_team_form.json",
@@ -372,13 +512,18 @@ def build_stock_report(monthly_team_form, period_label, include_preseason):
         "prompt": (
             f"Write a Stock Up / Stock Down piece for {period_label}. Pick exactly three teams up and "
             "three teams down from the latest sim and explain the change in plain language. You can pull "
-            "supporting detail from any linked JSON source if a team's monthly record alone is too thin."
+            "supporting detail from any linked JSON source if a team's monthly record alone is too thin. "
+            "Use the style references for verdict-first sections: what changed, why it matters, and what "
+            "happens if it continues."
         ),
         "writerNotes": [
             "Do not just sort by record; explain why the shape of the month matters.",
             "A close 1-0 month can be less convincing than a dominant 1-0 month.",
             "Use concise, punchy sections rather than one long essay.",
+            "Each stock call needs a trigger, evidence, and consequence.",
+            "Use player context when a star explains the rise or fall, but keep the verdict on the team.",
         ],
+        "styleReferences": style_references("stock_report"),
         "availableContext": context_sources([
             "../../00-build/database/monthly/monthly_team_form.json",
             "../../00-build/database/monthly/overall_team_form.json",
@@ -406,14 +551,18 @@ def build_month_in_review(monthly_storylines, latest_sim_results, period_label, 
             f"Write a Month in Review feature for {period_label}. Use the featured storylines below to build "
             "a coherent recap of the sim: best performances, biggest swings, weirdest result, and what matters next. "
             "You can pull from any linked JSON source if the strongest story sits outside the featured shortlist. "
-            "Use star-player context when it helps explain a result, a hot team, or why a matchup mattered."
+            "Use star-player context when it helps explain a result, a hot team, or why a matchup mattered. "
+            "Use the style references to write takeaways, not a logbook: focus on what the month changed."
         ),
         "writerNotes": [
             "Lead with the strongest monthly theme, not just the biggest scoreline.",
             "Work across tiers if the month demands it.",
             "Mention star players naturally, not as a checklist.",
             "End with a forward-looking note about next month.",
+            "Organize around three to five takeaways or winners/losers rather than every game in order.",
+            "Every section should connect a result or stat to a larger implication.",
         ],
+        "styleReferences": style_references("month_in_review"),
         "availableContext": context_sources([
             "../../00-build/database/monthly/monthly_storylines.json",
             "../../00-build/database/monthly/monthly_team_form.json",
@@ -447,7 +596,9 @@ def build_mvp_race(player_stats_data, players, leaders_data, awards_data, overal
             "as a starting point, but do not treat the generated order as final if the stats, awards, and "
             "leaderboard context point to a better argument. Use player stats as the base, awards as evidence "
             "of recent peaks, and leaders as supporting context for category dominance. Balance raw production, "
-            "efficiency, team context, availability, and recent award momentum."
+            "efficiency, team context, availability, and recent award momentum. Use the style references to "
+            "build a more layered race: lead with the state of the ballot, include a stat-to-know or deciding "
+            "factor, then give every candidate a case, caveat, and path to move up."
         ),
         "writerNotes": [
             "Rank at least five MVP candidates for each tier: Tier 1, Tier 2, and Tier 3.",
@@ -456,7 +607,10 @@ def build_mvp_race(player_stats_data, players, leaders_data, awards_data, overal
             "Use leaders.json to call out category dominance, but do not make the piece a leaderboard recap.",
             "Only consider candidates who have played at least 60% of their tier's team games.",
             "Mention the biggest riser, the strongest statistical case, and one player whose numbers need team context.",
+            "Follow the NBA MVP Ladder model: establish the stakes before the list, then use statistics and context to make each candidate's rank feel argued.",
+            "Each candidate capsule should include production, team context, one reason to believe, one reason to hesitate, and what could change the ballot next.",
         ],
+        "styleReferences": style_references("mvp_race"),
         "availableContext": [
             "../../00-build/database/player_stats.json",
             "../../00-build/database/players.json",
