@@ -23,12 +23,14 @@ SCHEDULE_OUT = os.path.join(DATABASE_DIR, "schedule.json")
 FREE_AGENTS_OUT = os.path.join(DATABASE_DIR, "freeagents.json")
 LEADERS_OUT = os.path.join(DATABASE_DIR, "leaders.json")
 GAME_RESULTS_OUT = os.path.join(DATABASE_DIR, "game_results.json")
+AWARDS_OUT = os.path.join(DATABASE_DIR, "awards.json")
 STANDINGS_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "standings.htm"))
 CAPREPORT_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "capreport.htm"))
 INJURIES_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "injuries.htm"))
 SCHEDULE_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "schedule.htm"))
 FREE_AGENTS_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "freeagents.htm"))
 LEADERS_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "leaders.htm"))
+AWARDS_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "awards.htm"))
 MDB_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "LeagueOutput.mdb"))
 
 # The 16 numerical stats in your roster files
@@ -951,6 +953,109 @@ def parse_leaders_sections(html, team_lookup):
     return sections
 
 
+def parse_award_rows(table_html, team_lookup):
+    row_matches = re.findall(
+        r"<tr[^>]*class=(row1|row2)[^>]*>(.*?)</tr>",
+        table_html,
+        re.IGNORECASE | re.DOTALL,
+    )
+    awards = []
+
+    for row_class, row_html in row_matches:
+        cells = re.findall(r"<td[^>]*class=main[^>]*>(.*?)</td>", row_html, re.IGNORECASE | re.DOTALL)
+        if len(cells) < 9:
+            continue
+
+        date_text = strip_tags(cells[0])
+        player_name = strip_tags(cells[2])
+        team_name = strip_tags(cells[3])
+        if not date_text and not player_name and not team_name:
+            continue
+
+        player_link = re.search(
+            r'<a[^>]+href=(["\']?)([^"\'\s>]+)\1[^>]*>(.*?)</a>',
+            cells[2],
+            re.IGNORECASE | re.DOTALL,
+        )
+        team_link = re.search(
+            r'<a[^>]+href=(["\']?)([^"\'\s>]+)\1[^>]*>(.*?)</a>',
+            cells[3],
+            re.IGNORECASE | re.DOTALL,
+        )
+        player_url = normalize_schedule_url(player_link.group(2)) if player_link else ""
+        team_url = normalize_schedule_url(team_link.group(2)) if team_link else ""
+
+        awards.append(
+            {
+                "date": date_text,
+                "pos": strip_tags(cells[1]),
+                "player": player_name,
+                "playerUrl": player_url,
+                "playerFile": player_url.split("/")[-1] if player_url else "",
+                "team": team_lookup.get(normalize_name(team_name), team_name) if team_name else "",
+                "teamName": team_name,
+                "teamUrl": team_url,
+                "teamFile": team_url.split("/")[-1] if team_url else "",
+                "ppg": parse_numeric_value(cells[4]),
+                "rpg": parse_numeric_value(cells[5]),
+                "apg": parse_numeric_value(cells[6]),
+                "spg": parse_numeric_value(cells[7]),
+                "bpg": parse_numeric_value(cells[8]),
+                "rowClass": row_class.lower(),
+            }
+        )
+
+    return awards
+
+
+def parse_awards_sections(html, team_lookup):
+    sections = []
+    title_matches = list(
+        re.finditer(r"<tr><td class=newheader>(.*?)</td></tr>", html, re.IGNORECASE | re.DOTALL)
+    )
+
+    for index, title_match in enumerate(title_matches):
+        title = strip_tags(title_match.group(1))
+        start = title_match.end()
+        end = title_matches[index + 1].start() if index + 1 < len(title_matches) else len(html)
+        section_html = html[start:end]
+        categories = []
+        table_matches = re.findall(
+            r"<table width=800 border=\s*0\s*cellspacing=\s*0\s*cellpadding=\s*0\s*>(.*?)</table>",
+            section_html,
+            re.IGNORECASE | re.DOTALL,
+        )
+
+        for table_html in table_matches:
+            category_match = re.search(
+                r"<tr><td class=tableheader colspan=\d+>&nbsp;(.*?)</td></tr>",
+                table_html,
+                re.IGNORECASE | re.DOTALL,
+            )
+            if not category_match:
+                continue
+
+            category_name = strip_tags(category_match.group(1))
+            awards = parse_award_rows(table_html, team_lookup)
+            categories.append(
+                {
+                    "title": category_name,
+                    "slug": re.sub(r"[^a-z0-9]+", "-", category_name.lower()).strip("-"),
+                    "awards": awards,
+                }
+            )
+
+        sections.append(
+            {
+                "title": title,
+                "slug": re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-"),
+                "categories": categories,
+            }
+        )
+
+    return sections
+
+
 def normalize_schedule_url(url):
     return clean(url).replace("\\", "/")
 
@@ -1311,6 +1416,28 @@ def main():
 
     with open(LEADERS_OUT, "w", encoding="utf-8") as f:
         json.dump(leaders_data, f, indent=4)
+
+    awards_section_count = 0
+    awards_count = 0
+    if os.path.exists(AWARDS_PATH):
+        with open(AWARDS_PATH, "r", encoding="latin-1") as f:
+            awards_html = f.read()
+
+        awards_data = {
+            "source": os.path.basename(AWARDS_PATH),
+            "sections": parse_awards_sections(awards_html, team_lookup),
+        }
+        awards_section_count = len(awards_data["sections"])
+        awards_count = sum(
+            len(category.get("awards", []))
+            for section in awards_data["sections"]
+            for category in section.get("categories", [])
+        )
+
+        with open(AWARDS_OUT, "w", encoding="utf-8") as f:
+            json.dump(awards_data, f, indent=4)
+    else:
+        print(f"Warning: {AWARDS_PATH} not found. Skipping awards JSON.")
         
     print(f"\nFinal count: {len(all_players)} players saved to {PLAYERS_OUT}")
     print(f"Final count: {len(all_player_stats)} player stat records saved to {PLAYER_STATS_OUT}")
@@ -1323,6 +1450,8 @@ def main():
     print(f"Final count: {len(game_results_data['results'])} game results saved to {GAME_RESULTS_OUT}")
     print(f"Final count: {len(free_agents_data['players'])} free agents saved to {FREE_AGENTS_OUT}")
     print(f"Final count: {len(leaders_data['sections'])} leader sections saved to {LEADERS_OUT}")
+    if awards_section_count:
+        print(f"Final count: {awards_count} awards across {awards_section_count} sections saved to {AWARDS_OUT}")
 
 if __name__ == "__main__":
     main()

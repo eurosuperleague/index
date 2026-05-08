@@ -167,6 +167,18 @@ Default options:
 
 Always note the chosen persona in the article plan before drafting.
 
+## Voice Separation Rules
+
+Use these rules to keep reports from sounding interchangeable:
+
+- `Damon Cross` should sound like argument first, evidence second. Use short, forceful paragraphs, direct judgments, rhetorical questions, and phrases like "stop pretending," "that matters," or "the case is simple." He can be funny, but the main engine is pressure and conviction.
+- `Nina Vale` should sound like evidence first, judgment second. Use measured claims, explicit criteria, ranking logic, statistical qualifiers, and clean transitions. Avoid yelling, mockery, or theatrical phrasing; her authority comes from being precise.
+- `Graham Trent` should sound like a newspaper feature writer. Use polished sentences, dry understatement, scene-setting, and quiet irony. He should explain why a result feels meaningful without turning every paragraph into a take.
+- `Malik Sparks` should sound like controlled chaos with a basketball brain. Use punchlines, quick turns, exaggerated disbelief, and self-aware asides, but always land on a real tactical or statistical point before moving on.
+- Do not reuse the same opening rhythm across personas. Damon can open with a verdict, Nina with criteria, Graham with context, and Malik with a comic image or reaction.
+- Do not flatten every article into the same structure. A power ranking can use ordered logic, a race watch can use pressure lines, an awards/MVP piece can use ballot arguments, and a month review can use themes.
+- If an article includes multiple tiers, keep the writer voice consistent while varying the tier sections by argument: one tier may be obvious, one may be messy, and one may need a caveat.
+
 ## Team-biased reporter personas
 
 Use these when the article should read like a biased fan-columnist for a specific team. Each reporter has the same base personality, but the name changes by team.

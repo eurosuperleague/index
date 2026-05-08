@@ -27,6 +27,36 @@ window.ESL_TEAM_LOGOS = {
 
 window.ESL_MEDIA_ARTICLES = [
   {
+    file: "articles/november_1981_mvp_race.html",
+    title: "November MVP Race: Three tiers, three very different arguments",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-08-07",
+    tag: "MVP Race",
+    author: "Damon Cross",
+    meta: "Awards Desk",
+    blurb: "Magic Johnson, Moses Malone, and Kelly Tripucka lead the first serious tier-by-tier MVP ballot of the regular season.",
+    teams: [
+      "AC Milan",
+      "AFC Richmond",
+      "Atletico Madrid",
+      "Barcelona",
+      "Bayern Munich",
+      "Benfica",
+      "Brighton",
+      "Chelsea",
+      "Crystal Palace",
+      "FL Fart",
+      "Inter Milan",
+      "Juventus",
+      "Manchester City",
+      "Marseille",
+      "Paris Saint-Germain",
+      "Real Madrid",
+      "Sheffield United"
+    ]
+  },
+  {
     file: "articles/november_1981_month_in_review.html",
     title: "November 1981 Month in Review: The regular season bites back",
     category: "Analysis",

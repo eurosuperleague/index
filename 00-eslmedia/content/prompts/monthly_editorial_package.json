@@ -3224,6 +3224,766 @@
                 }
             ],
             "latestSimGameCount": 82
+        },
+        "mvpRace": {
+            "id": "mvp-race",
+            "type": "mvp_race",
+            "title": "MVP Race",
+            "period": "November 1981",
+            "prompt": "Write an MVP race article for November 1981. Build separate ranked MVP ballots for Tier 1, Tier 2, and Tier 3. Include at least five candidates in each tier. Use the tier candidate pools as a starting point, but do not treat the generated order as final if the stats, awards, and leaderboard context point to a better argument. Use player stats as the base, awards as evidence of recent peaks, and leaders as supporting context for category dominance. Balance raw production, efficiency, team context, availability, and recent award momentum.",
+            "writerNotes": [
+                "Rank at least five MVP candidates for each tier: Tier 1, Tier 2, and Tier 3.",
+                "Use player_stats.json for the main statistical case.",
+                "Use awards.json to identify recent Player of the Week/Month signals.",
+                "Use leaders.json to call out category dominance, but do not make the piece a leaderboard recap.",
+                "Only consider candidates who have played at least 60% of their tier's team games.",
+                "Mention the biggest riser, the strongest statistical case, and one player whose numbers need team context."
+            ],
+            "availableContext": [
+                "../../00-build/database/player_stats.json",
+                "../../00-build/database/players.json",
+                "../../00-build/database/awards.json",
+                "../../00-build/database/leaders.json",
+                "../../00-build/database/teams.json",
+                "../../00-build/database/standings.json",
+                "../../00-build/database/monthly/overall_team_form.json",
+                "../../00-build/database/monthly/monthly_team_form.json"
+            ],
+            "candidatePoolsByTier": {
+                "Tier 1": [
+                    {
+                        "name": "Adrian Dantley",
+                        "team": "roster11",
+                        "teamName": "Atletico Madrid",
+                        "pos": "SF",
+                        "url": "../players/player734.htm",
+                        "overall": "116",
+                        "season": {
+                            "games": 6,
+                            "minutes": 38.0,
+                            "points": 29.8,
+                            "rebounds": 5.0,
+                            "assists": 3.8,
+                            "steals": 2.0,
+                            "blocks": 0.0,
+                            "fgPct": 0.574,
+                            "ftPct": 0.859,
+                            "threePct": 0.0
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.2,
+                            "plusMinus": -3.2,
+                            "tsPct": 0.662,
+                            "usage": 28.3
+                        },
+                        "awardWinner": true,
+                        "leaderboardPresence": true,
+                        "candidateScore": 48.56
+                    },
+                    {
+                        "name": "Magic Johnson",
+                        "team": "roster12",
+                        "teamName": "AFC Richmond",
+                        "pos": "SF",
+                        "url": "../players/player698.htm",
+                        "overall": "164",
+                        "season": {
+                            "games": 8,
+                            "minutes": 32.1,
+                            "points": 26.0,
+                            "rebounds": 7.0,
+                            "assists": 5.9,
+                            "steals": 1.5,
+                            "blocks": 0.0,
+                            "fgPct": 0.547,
+                            "ftPct": 0.811,
+                            "threePct": 0.364
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.3,
+                            "plusMinus": 12.3,
+                            "tsPct": 0.646,
+                            "usage": 31.4
+                        },
+                        "awardWinner": true,
+                        "leaderboardPresence": true,
+                        "candidateScore": 46.68
+                    },
+                    {
+                        "name": "Artis Gilmore",
+                        "team": "roster6",
+                        "teamName": "Crystal Palace",
+                        "pos": "C",
+                        "url": "../players/player707.htm",
+                        "overall": "137",
+                        "season": {
+                            "games": 8,
+                            "minutes": 44.0,
+                            "points": 16.9,
+                            "rebounds": 12.5,
+                            "assists": 4.0,
+                            "steals": 1.3,
+                            "blocks": 3.3,
+                            "fgPct": 0.54,
+                            "ftPct": 0.672,
+                            "threePct": 0.0
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.9,
+                            "plusMinus": -7.8,
+                            "tsPct": 0.596,
+                            "usage": 17.6
+                        },
+                        "awardWinner": true,
+                        "leaderboardPresence": true,
+                        "candidateScore": 43.55
+                    },
+                    {
+                        "name": "Larry Bird",
+                        "team": "roster9",
+                        "teamName": "AC Milan",
+                        "pos": "PF",
+                        "url": "../players/player697.htm",
+                        "overall": "164",
+                        "season": {
+                            "games": 7,
+                            "minutes": 33.7,
+                            "points": 26.1,
+                            "rebounds": 8.7,
+                            "assists": 4.3,
+                            "steals": 1.9,
+                            "blocks": 0.9,
+                            "fgPct": 0.524,
+                            "ftPct": 0.955,
+                            "threePct": 0.529
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.4,
+                            "plusMinus": 5.7,
+                            "tsPct": 0.634,
+                            "usage": 26.5
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 40.6
+                    },
+                    {
+                        "name": "Sidney Moncrief",
+                        "team": "roster8",
+                        "teamName": "Real Madrid",
+                        "pos": "PG",
+                        "url": "../players/player699.htm",
+                        "overall": "133",
+                        "season": {
+                            "games": 6,
+                            "minutes": 35.7,
+                            "points": 26.8,
+                            "rebounds": 5.6,
+                            "assists": 2.7,
+                            "steals": 1.3,
+                            "blocks": 0.2,
+                            "fgPct": 0.529,
+                            "ftPct": 0.865,
+                            "threePct": 0.75
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.2,
+                            "plusMinus": 9.3,
+                            "tsPct": 0.63,
+                            "usage": 27.2
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 36.46
+                    },
+                    {
+                        "name": "Mark Aguirre",
+                        "team": "roster10",
+                        "teamName": "Brighton",
+                        "pos": "SF",
+                        "url": "../players/player702.htm",
+                        "overall": "131",
+                        "season": {
+                            "games": 6,
+                            "minutes": 30.0,
+                            "points": 25.2,
+                            "rebounds": 5.0,
+                            "assists": 4.3,
+                            "steals": 1.2,
+                            "blocks": 0.2,
+                            "fgPct": 0.453,
+                            "ftPct": 0.729,
+                            "threePct": 0.333
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -0.9,
+                            "plusMinus": -0.8,
+                            "tsPct": 0.555,
+                            "usage": 36.1
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 36.01
+                    },
+                    {
+                        "name": "Kevin McHale",
+                        "team": "roster7",
+                        "teamName": "Bayern Munich",
+                        "pos": "PF",
+                        "url": "../players/player717.htm",
+                        "overall": "109",
+                        "season": {
+                            "games": 6,
+                            "minutes": 35.0,
+                            "points": 21.2,
+                            "rebounds": 10.6,
+                            "assists": 1.7,
+                            "steals": 0.8,
+                            "blocks": 1.7,
+                            "fgPct": 0.588,
+                            "ftPct": 0.727,
+                            "threePct": 0.25
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.2,
+                            "plusMinus": 12.0,
+                            "tsPct": 0.646,
+                            "usage": 22.2
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 35.16
+                    },
+                    {
+                        "name": "George Gervin",
+                        "team": "roster9",
+                        "teamName": "AC Milan",
+                        "pos": "SG",
+                        "url": "../players/player1046.htm",
+                        "overall": "143",
+                        "season": {
+                            "games": 7,
+                            "minutes": 32.9,
+                            "points": 25.1,
+                            "rebounds": 4.0,
+                            "assists": 3.7,
+                            "steals": 1.1,
+                            "blocks": 0.6,
+                            "fgPct": 0.471,
+                            "ftPct": 0.843,
+                            "threePct": 0.214
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.2,
+                            "plusMinus": 3.7,
+                            "tsPct": 0.579,
+                            "usage": 29.3
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": false,
+                        "candidateScore": 30.64
+                    }
+                ],
+                "Tier 2": [
+                    {
+                        "name": "Moses Malone",
+                        "team": "roster13",
+                        "teamName": "Benfica",
+                        "pos": "C",
+                        "url": "../players/player872.htm",
+                        "overall": "148",
+                        "season": {
+                            "games": 7,
+                            "minutes": 44.0,
+                            "points": 38.7,
+                            "rebounds": 13.0,
+                            "assists": 1.7,
+                            "steals": 0.6,
+                            "blocks": 2.9,
+                            "fgPct": 0.503,
+                            "ftPct": 0.771,
+                            "threePct": 0.0
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.6,
+                            "plusMinus": 4.1,
+                            "tsPct": 0.589,
+                            "usage": 33.6
+                        },
+                        "awardWinner": true,
+                        "leaderboardPresence": true,
+                        "candidateScore": 63.04
+                    },
+                    {
+                        "name": "Kareem Abdul-Jabbar",
+                        "team": "roster14",
+                        "teamName": "Juventus",
+                        "pos": "C",
+                        "url": "../players/player877.htm",
+                        "overall": "131",
+                        "season": {
+                            "games": 6,
+                            "minutes": 39.7,
+                            "points": 27.7,
+                            "rebounds": 9.5,
+                            "assists": 2.5,
+                            "steals": 1.0,
+                            "blocks": 3.5,
+                            "fgPct": 0.507,
+                            "ftPct": 0.667,
+                            "threePct": 0.0
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.3,
+                            "plusMinus": 1.2,
+                            "tsPct": 0.529,
+                            "usage": 30.1
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 44.25
+                    },
+                    {
+                        "name": "Steve Johnson",
+                        "team": "roster16",
+                        "teamName": "Sheffield United",
+                        "pos": "PF",
+                        "url": "../players/player897.htm",
+                        "overall": "109",
+                        "season": {
+                            "games": 7,
+                            "minutes": 37.0,
+                            "points": 25.4,
+                            "rebounds": 9.1,
+                            "assists": 2.3,
+                            "steals": 0.9,
+                            "blocks": 1.4,
+                            "fgPct": 0.656,
+                            "ftPct": 0.634,
+                            "threePct": 0.0
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.5,
+                            "plusMinus": 13.0,
+                            "tsPct": 0.674,
+                            "usage": 23.7
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 37.83
+                    },
+                    {
+                        "name": "Jim Paxson",
+                        "team": "roster17",
+                        "teamName": "Chelsea",
+                        "pos": "SG",
+                        "url": "../players/player875.htm",
+                        "overall": "131",
+                        "season": {
+                            "games": 7,
+                            "minutes": 31.1,
+                            "points": 22.0,
+                            "rebounds": 3.2,
+                            "assists": 1.4,
+                            "steals": 1.3,
+                            "blocks": 0.1,
+                            "fgPct": 0.508,
+                            "ftPct": 0.714,
+                            "threePct": 0.462
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.1,
+                            "plusMinus": 5.4,
+                            "tsPct": 0.558,
+                            "usage": 28.0
+                        },
+                        "awardWinner": true,
+                        "leaderboardPresence": true,
+                        "candidateScore": 37.12
+                    },
+                    {
+                        "name": "Robert Parish",
+                        "team": "roster15",
+                        "teamName": "Marseille",
+                        "pos": "C",
+                        "url": "../players/player873.htm",
+                        "overall": "137",
+                        "season": {
+                            "games": 7,
+                            "minutes": 38.9,
+                            "points": 16.7,
+                            "rebounds": 12.8,
+                            "assists": 3.1,
+                            "steals": 0.9,
+                            "blocks": 2.7,
+                            "fgPct": 0.423,
+                            "ftPct": 0.707,
+                            "threePct": 0.0
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.4,
+                            "plusMinus": 10.7,
+                            "tsPct": 0.475,
+                            "usage": 20.0
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 34.43
+                    },
+                    {
+                        "name": "Mike Mitchell",
+                        "team": "roster15",
+                        "teamName": "Marseille",
+                        "pos": "SF",
+                        "url": "../players/player894.htm",
+                        "overall": "111",
+                        "season": {
+                            "games": 7,
+                            "minutes": 40.3,
+                            "points": 24.4,
+                            "rebounds": 7.7,
+                            "assists": 2.6,
+                            "steals": 0.4,
+                            "blocks": 0.3,
+                            "fgPct": 0.558,
+                            "ftPct": 0.787,
+                            "threePct": 0.0
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.5,
+                            "plusMinus": 10.1,
+                            "tsPct": 0.61,
+                            "usage": 22.1
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 33.66
+                    },
+                    {
+                        "name": "Gus Williams",
+                        "team": "roster15",
+                        "teamName": "Marseille",
+                        "pos": "PG",
+                        "url": "../players/player884.htm",
+                        "overall": "118",
+                        "season": {
+                            "games": 7,
+                            "minutes": 38.0,
+                            "points": 19.9,
+                            "rebounds": 2.3,
+                            "assists": 7.0,
+                            "steals": 2.4,
+                            "blocks": 0.1,
+                            "fgPct": 0.49,
+                            "ftPct": 0.769,
+                            "threePct": 0.167
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.5,
+                            "plusMinus": 12.6,
+                            "tsPct": 0.569,
+                            "usage": 21.8
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 31.16
+                    },
+                    {
+                        "name": "Alvan Adams",
+                        "team": "roster17",
+                        "teamName": "Chelsea",
+                        "pos": "SF",
+                        "url": "../players/player892.htm",
+                        "overall": "108",
+                        "season": {
+                            "games": 7,
+                            "minutes": 32.7,
+                            "points": 18.1,
+                            "rebounds": 6.0,
+                            "assists": 5.9,
+                            "steals": 1.7,
+                            "blocks": 0.0,
+                            "fgPct": 0.578,
+                            "ftPct": 0.886,
+                            "threePct": 0.0
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.2,
+                            "plusMinus": 8.1,
+                            "tsPct": 0.653,
+                            "usage": 22.2
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 30.58
+                    }
+                ],
+                "Tier 3": [
+                    {
+                        "name": "Kelly Tripucka",
+                        "team": "roster24",
+                        "teamName": "Barcelona",
+                        "pos": "SF",
+                        "url": "../players/player1049.htm",
+                        "overall": "122",
+                        "season": {
+                            "games": 7,
+                            "minutes": 41.4,
+                            "points": 37.1,
+                            "rebounds": 5.1,
+                            "assists": 2.1,
+                            "steals": 0.7,
+                            "blocks": 0.3,
+                            "fgPct": 0.527,
+                            "ftPct": 0.874,
+                            "threePct": 0.313
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.5,
+                            "plusMinus": 3.7,
+                            "tsPct": 0.64,
+                            "usage": 31.8
+                        },
+                        "awardWinner": true,
+                        "leaderboardPresence": true,
+                        "candidateScore": 52.64
+                    },
+                    {
+                        "name": "David Thompson",
+                        "team": "roster27",
+                        "teamName": "FL Fart",
+                        "pos": "SG",
+                        "url": "../players/player1075.htm",
+                        "overall": "103",
+                        "season": {
+                            "games": 7,
+                            "minutes": 32.9,
+                            "points": 27.7,
+                            "rebounds": 4.6,
+                            "assists": 2.0,
+                            "steals": 1.3,
+                            "blocks": 0.3,
+                            "fgPct": 0.583,
+                            "ftPct": 0.783,
+                            "threePct": 0.0
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.2,
+                            "plusMinus": 5.3,
+                            "tsPct": 0.647,
+                            "usage": 30.4
+                        },
+                        "awardWinner": true,
+                        "leaderboardPresence": true,
+                        "candidateScore": 44.32
+                    },
+                    {
+                        "name": "Calvin Natt",
+                        "team": "roster28",
+                        "teamName": "Manchester City",
+                        "pos": "SF",
+                        "url": "../players/player1055.htm",
+                        "overall": "108",
+                        "season": {
+                            "games": 6,
+                            "minutes": 42.5,
+                            "points": 30.5,
+                            "rebounds": 10.1,
+                            "assists": 3.0,
+                            "steals": 0.3,
+                            "blocks": 0.3,
+                            "fgPct": 0.537,
+                            "ftPct": 0.688,
+                            "threePct": 0.0
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.3,
+                            "plusMinus": -5.7,
+                            "tsPct": 0.594,
+                            "usage": 28.1
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 41.97
+                    },
+                    {
+                        "name": "Joe Barry Carroll",
+                        "team": "roster21",
+                        "teamName": "Paris Saint-Germain",
+                        "pos": "C",
+                        "url": "../players/player710.htm",
+                        "overall": "118",
+                        "season": {
+                            "games": 7,
+                            "minutes": 32.1,
+                            "points": 25.1,
+                            "rebounds": 7.5,
+                            "assists": 1.1,
+                            "steals": 0.7,
+                            "blocks": 1.3,
+                            "fgPct": 0.496,
+                            "ftPct": 0.734,
+                            "threePct": 0.0
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.2,
+                            "plusMinus": 1.9,
+                            "tsPct": 0.571,
+                            "usage": 30.2
+                        },
+                        "awardWinner": true,
+                        "leaderboardPresence": false,
+                        "candidateScore": 39.72
+                    },
+                    {
+                        "name": "Otis Birdsong",
+                        "team": "roster21",
+                        "teamName": "Paris Saint-Germain",
+                        "pos": "SG",
+                        "url": "../players/player730.htm",
+                        "overall": "113",
+                        "season": {
+                            "games": 7,
+                            "minutes": 37.9,
+                            "points": 24.3,
+                            "rebounds": 4.2,
+                            "assists": 4.1,
+                            "steals": 2.3,
+                            "blocks": 0.4,
+                            "fgPct": 0.481,
+                            "ftPct": 0.563,
+                            "threePct": 0.333
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.4,
+                            "plusMinus": 3.6,
+                            "tsPct": 0.521,
+                            "usage": 28.2
+                        },
+                        "awardWinner": true,
+                        "leaderboardPresence": false,
+                        "candidateScore": 39.36
+                    },
+                    {
+                        "name": "World B. Free",
+                        "team": "roster26",
+                        "teamName": "Inter Milan",
+                        "pos": "PG",
+                        "url": "../players/player1048.htm",
+                        "overall": "128",
+                        "season": {
+                            "games": 6,
+                            "minutes": 36.5,
+                            "points": 26.5,
+                            "rebounds": 4.0,
+                            "assists": 3.5,
+                            "steals": 1.5,
+                            "blocks": 0.0,
+                            "fgPct": 0.417,
+                            "ftPct": 0.859,
+                            "threePct": 0.4
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.2,
+                            "plusMinus": 3.5,
+                            "tsPct": 0.602,
+                            "usage": 30.4
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 35.6
+                    },
+                    {
+                        "name": "Mike Newlin",
+                        "team": "roster25",
+                        "teamName": "Valencia",
+                        "pos": "SG",
+                        "url": "../players/player1067.htm",
+                        "overall": "100",
+                        "season": {
+                            "games": 7,
+                            "minutes": 41.4,
+                            "points": 27.1,
+                            "rebounds": 3.8,
+                            "assists": 1.9,
+                            "steals": 0.6,
+                            "blocks": 0.1,
+                            "fgPct": 0.424,
+                            "ftPct": 0.924,
+                            "threePct": 0.412
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.5,
+                            "plusMinus": -0.3,
+                            "tsPct": 0.549,
+                            "usage": 26.7
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 33.14
+                    },
+                    {
+                        "name": "Buck Williams",
+                        "team": "roster23",
+                        "teamName": "Sporting CP",
+                        "pos": "C",
+                        "url": "../players/player1051.htm",
+                        "overall": "121",
+                        "season": {
+                            "games": 7,
+                            "minutes": 33.9,
+                            "points": 18.4,
+                            "rebounds": 11.5,
+                            "assists": 2.3,
+                            "steals": 1.3,
+                            "blocks": 0.3,
+                            "fgPct": 0.627,
+                            "ftPct": 0.703,
+                            "threePct": 0.0
+                        },
+                        "efficiency": {
+                            "per": 0.0,
+                            "ewa": -1.2,
+                            "plusMinus": -2.9,
+                            "tsPct": 0.674,
+                            "usage": 19.6
+                        },
+                        "awardWinner": false,
+                        "leaderboardPresence": true,
+                        "candidateScore": 32.06
+                    }
+                ]
+            },
+            "minimumGamesPlayedByTier": {
+                "Tier 1": 5,
+                "Tier 2": 5,
+                "Tier 3": 6
+            },
+            "awardsSource": "awards.htm",
+            "leadersSource": "leaders.htm"
         }
     }
 }

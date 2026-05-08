@@ -18,8 +18,17 @@ OVERALL_TEAM_FORM_PATH = os.path.join(MONTHLY_DIR, "overall_team_form.json")
 TIER_RACE_SNAPSHOT_PATH = os.path.join(MONTHLY_DIR, "tier_race_snapshot.json")
 MONTHLY_STORYLINES_PATH = os.path.join(MONTHLY_DIR, "monthly_storylines.json")
 TEAMS_PATH = os.path.join(DATABASE_DIR, "teams.json")
+PLAYERS_PATH = os.path.join(DATABASE_DIR, "players.json")
+PLAYER_STATS_PATH = os.path.join(DATABASE_DIR, "player_stats.json")
+LEADERS_PATH = os.path.join(DATABASE_DIR, "leaders.json")
+AWARDS_PATH = os.path.join(DATABASE_DIR, "awards.json")
 
 TIER_ORDER = ["Tier 1", "Tier 2", "Tier 3"]
+LEAGUE_TO_TIER = {
+    "CLB": "Tier 1",
+    "ELB": "Tier 2",
+    "ECL": "Tier 3",
+}
 POWER_RANKING_SERIES = {
     "Tier 1": "clb_power_rankings",
     "Tier 2": "elb_power_rankings",
@@ -84,6 +93,148 @@ def compact_team_stars(team_star_lookup):
         }
         for team, star_player in sorted(team_star_lookup.items())
     ]
+
+
+def build_player_lookup(players):
+    lookup = {}
+    for player in players:
+        name = player.get("name", "")
+        if not name:
+            continue
+        lookup[name] = {
+            "name": name,
+            "team": player.get("team", ""),
+            "teamName": player.get("teamName", ""),
+            "pos": player.get("pos", ""),
+            "overall": player.get("overall", ""),
+            "potential": player.get("potential", ""),
+            "url": player.get("url", ""),
+        }
+    return lookup
+
+
+def season_average_row(player_stat):
+    rows = player_stat.get("stats", {}).get("season_averages", {}).get("rows", [])
+    return next((row for row in rows if str(row.get("season")) != "Career" and row.get("g")), None)
+
+
+def efficiency_row(player_stat):
+    rows = player_stat.get("stats", {}).get("efficiency", {}).get("rows", [])
+    return next((row for row in rows if str(row.get("season")) != "Career"), None)
+
+
+def collect_leader_names(leaders_data):
+    names = set()
+    priority_categories = {"Points", "Rebounds", "Assists", "Blocks", "Steals", "Efficiency"}
+    for section in leaders_data.get("sections", []):
+        for category in section.get("categories", []):
+            if category.get("title") not in priority_categories:
+                continue
+            for leader in category.get("leaders", [])[:5]:
+                if leader.get("player"):
+                    names.add(leader["player"])
+    return names
+
+
+def collect_award_names(awards_data):
+    names = set()
+    for section in awards_data.get("sections", []):
+        for category in section.get("categories", []):
+            for award in category.get("awards", []):
+                if award.get("player"):
+                    names.add(award["player"])
+    return names
+
+
+def tier_games_played_floor(overall_team_form):
+    floors = {}
+    for tier_name, teams in overall_team_form.get("tiers", {}).items():
+        max_games = max((int(team.get("games", 0) or 0) for team in teams), default=0)
+        floors[tier_name] = max(1, int(max_games * 0.6 + 0.999)) if max_games else 1
+    return floors
+
+
+def build_mvp_candidates(player_stats_data, players, leaders_data, awards_data, overall_team_form):
+    player_lookup = build_player_lookup(players)
+    leader_names = collect_leader_names(leaders_data)
+    award_names = collect_award_names(awards_data)
+    games_floor_by_tier = tier_games_played_floor(overall_team_form)
+    candidates_by_tier = {tier: [] for tier in TIER_ORDER}
+
+    for player_stat in player_stats_data.get("players", []):
+        averages = season_average_row(player_stat)
+        if not averages or not averages.get("g"):
+            continue
+
+        tier_name = LEAGUE_TO_TIER.get(str(averages.get("lge", "")).upper())
+        if not tier_name:
+            continue
+        games = int(averages.get("g", 0) or 0)
+        if games < games_floor_by_tier.get(tier_name, 1):
+            continue
+
+        efficiency = efficiency_row(player_stat) or {}
+        name = player_stat.get("name", "")
+        profile = player_lookup.get(name, {})
+        pts = float(averages.get("pts", 0) or 0)
+        reb = float(averages.get("orb", 0) or 0) + float(averages.get("drb", 0) or 0)
+        ast = float(averages.get("ast", 0) or 0)
+        stl = float(averages.get("stl", 0) or 0)
+        blk = float(averages.get("blk", 0) or 0)
+        per = float(efficiency.get("per", 0) or 0)
+        ewa = float(efficiency.get("ewa", 0) or 0)
+        score = (
+            pts
+            + reb * 0.7
+            + ast * 0.7
+            + stl * 1.5
+            + blk * 1.5
+            + per * 0.25
+            + ewa * 2
+            + (8 if name in award_names else 0)
+            + (4 if name in leader_names else 0)
+        )
+
+        if score <= 0:
+            continue
+
+        candidates_by_tier[tier_name].append(
+            {
+                "name": name,
+                "team": profile.get("team") or player_stat.get("team", ""),
+                "teamName": profile.get("teamName") or player_stat.get("teamLabel", ""),
+                "pos": profile.get("pos") or player_stat.get("pos", ""),
+                "url": profile.get("url") or player_stat.get("url", ""),
+                "overall": profile.get("overall", ""),
+                "season": {
+                    "games": games,
+                    "minutes": averages.get("min"),
+                    "points": pts,
+                    "rebounds": round(reb, 1),
+                    "assists": ast,
+                    "steals": stl,
+                    "blocks": blk,
+                    "fgPct": averages.get("fg_pct"),
+                    "ftPct": averages.get("ft_pct"),
+                    "threePct": averages.get("3p_pct"),
+                },
+                "efficiency": {
+                    "per": efficiency.get("per", ""),
+                    "ewa": efficiency.get("ewa", ""),
+                    "plusMinus": efficiency.get("plus_minus", ""),
+                    "tsPct": efficiency.get("ts_pct", ""),
+                    "usage": efficiency.get("usg", ""),
+                },
+                "awardWinner": name in award_names,
+                "leaderboardPresence": name in leader_names,
+                "candidateScore": round(score, 2),
+            }
+        )
+
+    return {
+        tier_name: sorted(candidates, key=lambda player: player["candidateScore"], reverse=True)[:8]
+        for tier_name, candidates in candidates_by_tier.items()
+    }
 
 
 def build_power_rankings(overall_team_form, monthly_team_form, period_label, team_star_lookup, include_preseason):
@@ -281,6 +432,48 @@ def build_month_in_review(monthly_storylines, latest_sim_results, period_label, 
     }
 
 
+def build_mvp_race(player_stats_data, players, leaders_data, awards_data, overall_team_form, period_label):
+    candidates = build_mvp_candidates(player_stats_data, players, leaders_data, awards_data, overall_team_form)
+    games_floor_by_tier = tier_games_played_floor(overall_team_form)
+
+    return {
+        "id": "mvp-race",
+        "type": "mvp_race",
+        "title": "MVP Race",
+        "period": period_label,
+        "prompt": (
+            f"Write an MVP race article for {period_label}. Build separate ranked MVP ballots for Tier 1, "
+            "Tier 2, and Tier 3. Include at least five candidates in each tier. Use the tier candidate pools "
+            "as a starting point, but do not treat the generated order as final if the stats, awards, and "
+            "leaderboard context point to a better argument. Use player stats as the base, awards as evidence "
+            "of recent peaks, and leaders as supporting context for category dominance. Balance raw production, "
+            "efficiency, team context, availability, and recent award momentum."
+        ),
+        "writerNotes": [
+            "Rank at least five MVP candidates for each tier: Tier 1, Tier 2, and Tier 3.",
+            "Use player_stats.json for the main statistical case.",
+            "Use awards.json to identify recent Player of the Week/Month signals.",
+            "Use leaders.json to call out category dominance, but do not make the piece a leaderboard recap.",
+            "Only consider candidates who have played at least 60% of their tier's team games.",
+            "Mention the biggest riser, the strongest statistical case, and one player whose numbers need team context.",
+        ],
+        "availableContext": [
+            "../../00-build/database/player_stats.json",
+            "../../00-build/database/players.json",
+            "../../00-build/database/awards.json",
+            "../../00-build/database/leaders.json",
+            "../../00-build/database/teams.json",
+            "../../00-build/database/standings.json",
+            "../../00-build/database/monthly/overall_team_form.json",
+            "../../00-build/database/monthly/monthly_team_form.json",
+        ],
+        "candidatePoolsByTier": candidates,
+        "minimumGamesPlayedByTier": games_floor_by_tier,
+        "awardsSource": awards_data.get("source", ""),
+        "leadersSource": leaders_data.get("source", ""),
+    }
+
+
 def main():
     os.makedirs(PROMPTS_DIR, exist_ok=True)
 
@@ -290,6 +483,10 @@ def main():
     tier_race_snapshot = load_json(TIER_RACE_SNAPSHOT_PATH)
     monthly_storylines = load_json(MONTHLY_STORYLINES_PATH)
     teams = load_json(TEAMS_PATH)
+    players = load_json(PLAYERS_PATH)
+    player_stats = load_json(PLAYER_STATS_PATH)
+    leaders = load_json(LEADERS_PATH)
+    awards = load_json(AWARDS_PATH) if os.path.exists(AWARDS_PATH) else {"source": "", "sections": []}
 
     period_label = latest_sim_results.get("period", {}).get("label", "Latest Sim")
     team_star_lookup = build_team_star_lookup(teams)
@@ -310,6 +507,7 @@ def main():
             "promotionRelegationWatch": build_race_watch(tier_race_snapshot, period_label, include_preseason),
             "stockUpStockDown": build_stock_report(monthly_team_form, period_label, include_preseason),
             "monthInReview": build_month_in_review(monthly_storylines, latest_sim_results, period_label, team_star_lookup, include_preseason),
+            "mvpRace": build_mvp_race(player_stats, players, leaders, awards, overall_team_form, period_label),
         },
     }
 
