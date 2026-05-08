@@ -825,29 +825,11 @@
     return name && playerMaps.byName[name] ? playerMaps.byName[name] : null;
   }
 
-  function setRosterRatingCell(cell, value, fallbackColor) {
+  function setRosterRatingCell(cell, value) {
     var text = formatRatingValue(value);
-    var color = fallbackColor || "";
-    var pill = document.createElement("span");
 
-    cell.classList.add("roster-rating-pill-host");
     cell.dataset.sortValue = text === "N/A" ? "" : String(value);
-    pill.className = "roster-rating-pill" + (text === "N/A" ? " roster-rating-pill--na" : "");
-    pill.textContent = text;
-    pill.style.color = text === "N/A" ? "#e2e8f0" : "#ffffff";
-    pill.style.fontFamily = "Inter, Tahoma, Arial, sans-serif";
-    pill.style.fontSize = "12px";
-    pill.style.fontWeight = "600";
-    pill.style.lineHeight = "1.05";
-    pill.style.textAlign = "center";
-    pill.style.whiteSpace = "nowrap";
-
-    if (text !== "N/A" && color) {
-      pill.style.backgroundColor = color;
-    }
-
-    cell.innerHTML = "";
-    cell.appendChild(pill);
+    cell.title = text === "N/A" ? "Rating unavailable" : text;
   }
 
   function enhanceRosterRatingTables(players) {
@@ -894,8 +876,8 @@
           return;
         }
 
-        setRosterRatingCell(curCell, player.overall, findRosterRatingColor(curCell));
-        setRosterRatingCell(futCell, player.potential, findRosterRatingColor(futCell));
+        setRosterRatingCell(curCell, player.overall);
+        setRosterRatingCell(futCell, player.potential);
         enhancedCount += 1;
       });
     });
