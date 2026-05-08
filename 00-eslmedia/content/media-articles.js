@@ -27,6 +27,22 @@ window.ESL_TEAM_LOGOS = {
 
 window.ESL_MEDIA_ARTICLES = [
   {
+    file: "articles/tier_3_star_tier_1_fit.html",
+    title: "Tier 3 Star, Tier 1 Fit? Three ECL standouts whose skills translate immediately upward",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-08-08",
+    tag: "Tier Translation",
+    author: "Nina Vale",
+    meta: "Scouting Lens",
+    blurb: "Kelly Tripucka, David Thompson, and World B. Free pass very different parts of the Tier 1 translation test from ECL.",
+    teams: [
+      "Barcelona",
+      "FL Fart",
+      "Inter Milan"
+    ]
+  },
+  {
     file: "articles/november_1981_mvp_race.html",
     title: "November MVP Race: Three tiers, three very different arguments",
     category: "Analysis",

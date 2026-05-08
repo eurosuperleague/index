@@ -16,9 +16,11 @@ Every article file should:
 - use `<body class="media-article">`
 - include one main article container: `<div class="paper"> ... </div>`
 - keep the standard topbar nav unchanged so the shared Teams dropdown can inject correctly
-- include the shared rail script before `</body>`:
+- include shared scripts before `</body>`:
 
 ```html
+<script src="../media-articles.js"></script>
+<script src="../media-ads.js"></script>
 <script src="../article-rail.js"></script>
 </body>
 ```
@@ -28,6 +30,24 @@ The `article-rail.js` script automatically:
 - adds a right rail
 - shows a recommended-articles list
 - shows two random ads from `00-eslmedia/content/Ads/`
+
+## Standard metadata block
+
+Every article should include this metadata in `<head>` so social previews are consistent:
+
+```html
+<meta name="description" content="One sentence summary of the article.">
+<meta property="og:title" content="ARTICLE TITLE - ESL Media">
+<meta property="og:description" content="One sentence summary of the article.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="../article%20images/ESLM.png">
+<link rel="canonical" href="https://example.com/00-eslmedia/content/articles/ARTICLE_FILE.html">
+```
+
+Rules:
+- Keep `description` and `og:description` aligned.
+- Use the final article filename in the canonical URL.
+- Keep the canonical URL absolute.
 
 ## Required page structure
 
@@ -40,6 +60,12 @@ Use this structure in order:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ARTICLE TITLE - ESL Media</title>
+  <meta name="description" content="One sentence summary of the article.">
+  <meta property="og:title" content="ARTICLE TITLE - ESL Media">
+  <meta property="og:description" content="One sentence summary of the article.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="../article%20images/ESLM.png">
+  <link rel="canonical" href="https://example.com/00-eslmedia/content/articles/ARTICLE_FILE.html">
   <style>
     @import url("../media-shared.css");
 
@@ -109,6 +135,8 @@ Use this structure in order:
     <div class="footer-text">European Super League - Season - Desk</div>
   </div>
 
+  <script src="../media-articles.js"></script>
+  <script src="../media-ads.js"></script>
   <script src="../article-rail.js"></script>
 </body>
 </html>
@@ -179,6 +207,32 @@ Use these rules to keep reports from sounding interchangeable:
 - Do not flatten every article into the same structure. A power ranking can use ordered logic, a race watch can use pressure lines, an awards/MVP piece can use ballot arguments, and a month review can use themes.
 - If an article includes multiple tiers, keep the writer voice consistent while varying the tier sections by argument: one tier may be obvious, one may be messy, and one may need a caveat.
 
+## Author voice QA checklist
+
+Run this quick check before publishing any article:
+
+1. **Open and close test**
+   - Does the opening sound like the assigned writer immediately?
+   - Does the closing land in the same voice, not a generic recap voice?
+
+2. **Structure test**
+   - `Damon Cross`: verdict first, pressure framing, short forceful paragraphs.
+   - `Nina Vale`: criteria first, evidence chains, ranking logic before verdict.
+   - `Graham Trent`: context first, polished long-form cadence, dry understatement.
+   - `Malik Sparks`: punchline-to-point rhythm, comedic turns that still land basketball analysis.
+
+3. **Language test**
+   - Remove phrases that belong to another writer's voice (for example, theatrical lines inside Nina, or pure neutral analyst phrasing inside Damon).
+   - Confirm repeated transition phrases are not copied from another persona template.
+
+4. **Section consistency test**
+   - If the piece has multiple sections or tiers, does each section still sound like the same writer?
+   - No section should read like a different desk voice.
+
+5. **A/B identity test**
+   - Read any 2 random paragraphs without the byline.
+   - If you cannot correctly guess the writer persona, revise for stronger voice markers.
+
 ## Team-biased reporter personas
 
 Use these when the article should read like a biased fan-columnist for a specific team. Each reporter has the same base personality, but the name changes by team.
@@ -240,6 +294,9 @@ The live article metadata is powered by:
 
 The right-rail recommendation list is rendered from that shared manifest through:
 - `00-eslmedia/content/article-rail.js`
+
+Ad creatives are configured in:
+- `00-eslmedia/content/media-ads.js`
 
 When a new article is added, add its metadata object there:
 - `file`

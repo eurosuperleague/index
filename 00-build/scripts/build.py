@@ -17,6 +17,7 @@ SCRIPTS = [
     (os.path.join(BUILD_DIR, "build_monthly_jsons.py"), "Building monthly media JSON files"),
     (os.path.join(BUILD_DIR, "build_media_package_prompts.py"), "Building monthly editorial prompt package"),
     (os.path.join(BUILD_DIR, "inject_css_js.py"),      "Injecting CSS/JS links into all HTML files"),
+    (os.path.join(BUILD_DIR, "validate_media_site.py"), "Validating ESL Media publish surfaces"),
 ]
 
 def run(path, label):

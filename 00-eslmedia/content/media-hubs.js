@@ -6,10 +6,22 @@
   }
 
   const bySortDesc = (a, b) => (b.sortKey || "").localeCompare(a.sortKey || "");
+  const monthFromSortKey = (sortKey = "") => String(sortKey).slice(0, 7);
+  const safe = (value) => String(value == null ? "" : value).replace(/"/g, "&quot;");
 
   function renderCard(article) {
+    const teams = Array.isArray(article.teams) ? article.teams : [];
+    const month = monthFromSortKey(article.sortKey);
     return `
-      <article class="article-card" data-sort-key="${article.sortKey}">
+      <article
+        class="article-card"
+        data-sort-key="${safe(article.sortKey)}"
+        data-desk="${safe(article.desk)}"
+        data-category="${safe(article.category)}"
+        data-author="${safe(article.author)}"
+        data-tag="${safe(article.tag)}"
+        data-month="${safe(month)}"
+        data-teams="${safe(teams.join("|"))}">
         <div class="card-tag">${article.tag}</div>
         <h2 class="card-title"><a href="${article.file}">${article.title}</a></h2>
         <p class="card-dek">${article.blurb}</p>

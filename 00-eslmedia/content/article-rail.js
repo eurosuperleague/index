@@ -3,35 +3,15 @@
   const articles = manifest.map((article) => ({
     file: article.file.split("/").pop(),
     title: article.title,
-    category: article.desk,
+    category: article.category || article.desk || "",
+    desk: article.desk || "",
+    tag: article.tag || "",
+    teams: Array.isArray(article.teams) ? article.teams : [],
     blurb: article.blurb,
     sortKey: article.sortKey || ""
   }));
 
-  const adImages = [
-    "../Ads/ChatGPT Image May 5, 2026, 10_04_21 PM (1).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_04_21 PM (2).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_04_21 PM (3).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_04_24 PM (1).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_04_24 PM (2).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_04_25 PM (3).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_05_15 PM (1).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_05_15 PM (2).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_05_15 PM (3).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_05_21 PM (1).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_05_21 PM (2).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_05_21 PM (3).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_22_48 PM (1).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_22_48 PM (2).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_22_48 PM (3).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_22_48 PM (4).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_22_49 PM (5).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_22_49 PM (6).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_22_49 PM (7).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_22_49 PM (8).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_22_49 PM (9).png",
-    "../Ads/ChatGPT Image May 5, 2026, 10_22_50 PM (10).png"
-  ];
+  let adImages = Array.isArray(window.ESL_MEDIA_ADS) ? window.ESL_MEDIA_ADS : [];
 
   const shuffle = (items) => {
     const copy = [...items];
@@ -44,14 +24,32 @@
 
   const pickRandom = (items, count) => shuffle(items).slice(0, count);
 
+  const overlapCount = (a = [], b = []) => {
+    if (!a.length || !b.length) return 0;
+    const lookup = new Set(a);
+    return b.filter((item) => lookup.has(item)).length;
+  };
+
   const buildRecommendations = (currentArticle) => {
-    const pool = articles
+    const ranked = articles
       .filter((article) => article.file !== currentArticle.file)
-      .sort((a, b) => b.sortKey.localeCompare(a.sortKey))
-      .slice(0, 6);
-    const sameCategory = pool.filter((article) => article.category === currentArticle.category);
-    const others = pool.filter((article) => article.category !== currentArticle.category);
-    return [...shuffle(sameCategory), ...shuffle(others)].slice(0, 3);
+      .map((article) => {
+        let score = 0;
+        if (article.desk && article.desk === currentArticle.desk) score += 4;
+        if (article.category && article.category === currentArticle.category) score += 2;
+        if (article.tag && currentArticle.tag && article.tag === currentArticle.tag) score += 3;
+        score += overlapCount(currentArticle.teams, article.teams) * 2;
+        return { ...article, score };
+      })
+      .sort((a, b) => {
+        if (b.score !== a.score) return b.score - a.score;
+        return b.sortKey.localeCompare(a.sortKey);
+      });
+
+    const contextual = ranked.filter((article) => article.score > 0).slice(0, 3);
+    if (contextual.length >= 3) return contextual;
+    const fallback = ranked.filter((article) => !contextual.some((picked) => picked.file === article.file)).slice(0, 3 - contextual.length);
+    return [...contextual, ...fallback];
   };
 
   const createAdCard = (src, index) => {
@@ -87,12 +85,28 @@
     return card;
   };
 
-  const initRail = () => {
+  const loadAdsIfNeeded = async () => {
+    if (adImages.length || typeof fetch !== "function") return;
+    try {
+      const response = await fetch("../media-ads.js");
+      if (!response.ok) return;
+      const scriptText = await response.text();
+      // Evaluate trusted local config script to populate window.ESL_MEDIA_ADS.
+      Function(scriptText)();
+      adImages = Array.isArray(window.ESL_MEDIA_ADS) ? window.ESL_MEDIA_ADS : [];
+    } catch (_) {
+      adImages = [];
+    }
+  };
+
+  const initRail = async () => {
     const body = document.body;
     if (!body || !body.classList.contains("media-article")) return;
 
     const paper = document.querySelector(".paper");
     if (!paper || paper.closest(".article-shell")) return;
+
+    await loadAdsIfNeeded();
 
     const currentFile = window.location.pathname.split("/").pop();
     const currentArticle = articles.find((article) => article.file === currentFile) || articles[0];

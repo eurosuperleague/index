@@ -209,7 +209,7 @@
       background: var(--cream);
       border: 1px solid var(--ink);
       border-top: 4px solid var(--gold);
-      padding: 1.5rem 1.5rem 1.6rem;
+      padding: 1.1rem 1.25rem 1.2rem;
       margin-bottom: 1.5rem;
       box-shadow: 6px 6px 0 rgba(23,59,99,.12);
     }
@@ -225,22 +225,65 @@
 
     .section-title {
       font-family: var(--font-serif);
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      line-height: 1;
+      font-size: clamp(1.5rem, 2.6vw, 2.35rem);
+      line-height: 1.06;
       letter-spacing: -.04em;
-      margin-bottom: .7rem;
-      max-width: 11ch;
+      margin-bottom: .55rem;
+      max-width: 22ch;
     }
 
     .section-dek {
       color: var(--mid);
-      font-size: 1rem;
-      line-height: 1.6;
+      font-size: .96rem;
+      line-height: 1.5;
       max-width: 62ch;
     }
 
     .article-section {
       margin-top: 2rem;
+    }
+
+    .filters-wrap {
+      background: var(--cream);
+      border: 1px solid var(--light);
+      border-top: 3px solid var(--gold);
+      padding: 1rem 1rem 1.1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .filters-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 0.7rem;
+    }
+
+    .filters-grid label {
+      display: grid;
+      gap: 0.3rem;
+      font-size: .62rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--mid);
+      font-weight: 700;
+    }
+
+    .filters-grid select {
+      border: 1px solid var(--light);
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-size: .72rem;
+      letter-spacing: .06em;
+      padding: .48rem .42rem;
+      text-transform: none;
+    }
+
+    .filters-note {
+      margin-top: .7rem;
+      font-size: .68rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--blue);
     }
 
     .section-head {
@@ -360,6 +403,7 @@
       .site-masthead-line::after { display: none; }
       .site-wordmark-logo { height: 34px; max-width: 100%; }
       .footer-inner { flex-direction: column; }
+      .filters-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
   </style>
 </head>
@@ -414,6 +458,18 @@
       <div class="section-kicker">ESL Media Â· Full Archive</div>
       <h1 class="section-title">Every published piece, now with real tier power rankings.</h1>
       <p class="section-dek">The archive now opens with three standings-driven power ranking features, then rolls into the rest of the analysis, scouting, and desk coverage already on the site.</p>
+    </section>
+
+    <section class="filters-wrap" aria-label="Article filters">
+      <div class="filters-grid">
+        <label>Team<select id="filterTeam"><option value="">All</option></select></label>
+        <label>Desk<select id="filterDesk"><option value="">All</option></select></label>
+        <label>Author<select id="filterAuthor"><option value="">All</option></select></label>
+        <label>Category<select id="filterCategory"><option value="">All</option></select></label>
+        <label>Month<select id="filterMonth"><option value="">All</option></select></label>
+        <label>Read Status<select id="filterRead"><option value="">All</option><option value="read">Read</option><option value="unread">Unread</option></select></label>
+      </div>
+      <div class="filters-note" id="filtersNote">Filters ready</div>
     </section>
 
     <section class="article-section">

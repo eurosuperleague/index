@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ESL Media · European Super League</title>
+  <meta property="og:title" content="ESL Media · European Super League">
+  <meta property="og:description" content="Latest ESL Media coverage, rankings, interviews, and league analysis.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="content/article%20images/ESLM.png">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23111b36'/><text x='50' y='75' font-family='serif' font-size='45' font-weight='900' fill='%23FFFFFF' text-anchor='middle'>ESL</text></svg>">
   <style>
+    @import url("content/media-shared.css");
     :root {
       --gold: #111b36;
       --blue: #173b63;
@@ -625,6 +630,23 @@
       text-transform: uppercase;
     }
 
+    .section-note-button {
+      border: 1px solid var(--light);
+      background: #faf8f2;
+      color: var(--blue);
+      font: inherit;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.28rem 0.45rem;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .section-note-button:hover {
+      border-color: var(--blue);
+    }
+
     .standings-controls {
       display: flex;
       flex-wrap: wrap;
@@ -760,12 +782,47 @@
       font-size: 1rem;
     }
 
+    .standings-mini .divider-row td {
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      background: #f5f1e8;
+      text-align: center;
+      border-top: 1px solid var(--light);
+      border-bottom: 1px solid var(--light);
+      padding: 0.42rem 0.3rem;
+    }
+
+    .movement-badge {
+      display: inline-block;
+      margin-left: 0.45rem;
+      padding: 0.16rem 0.32rem;
+      font-size: 0.58rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 3px;
+      border: 1px solid currentColor;
+      vertical-align: middle;
+    }
+
+    .movement-badge.promotion {
+      color: #0d5f2c;
+      background: #e7f6ea;
+    }
+
+    .movement-badge.relegation {
+      color: #9d1f1f;
+      background: #fbe9e9;
+    }
+
     .lead-headline a:hover,
     .compact-headline a:hover,
     .story-row h3 a:hover,
     .brief-list a:hover {
       color: var(--blue);
     }
+
 
     .footer-wrap {
       border-top: 1px solid var(--ink);
@@ -870,6 +927,7 @@
       .snapshot-grid {
         grid-template-columns: 1fr;
       }
+
     }
   </style>
 </head>
@@ -938,13 +996,13 @@
               <div class="lead-media-label">November 1981 - Month In Review</div>
             </div>
           </div>
-          <div class="story-tag">Lead Story · Month In Review</div>
-  <h1 class="lead-headline"><a href="content/articles/november_1981_month_in_review.html">November 1981 Month in Review: The regular season bites back</a></h1>
-          <p class="lead-dek">November gave the league its first hard regular-season truths: Sheffield surged, Aston Villa sank, Richmond led, and the promotion lines sharpened fast.</p>
+          <div class="story-tag" id="homepageLeadTag">Lead Story · Month In Review</div>
+  <h1 class="lead-headline"><a id="homepageLeadLink" href="content/articles/november_1981_month_in_review.html">November 1981 Month in Review: The regular season bites back</a></h1>
+          <p class="lead-dek" id="homepageLeadDek">November gave the league its first hard regular-season truths: Sheffield surged, Aston Villa sank, Richmond led, and the promotion lines sharpened fast.</p>
           <div class="story-meta">
-            <span>Graham Trent</span>
-            <span>Monthly Review</span>
-            <span>November 1981 - Regular Season</span>
+            <span id="homepageLeadAuthor">Graham Trent</span>
+            <span id="homepageLeadMeta">Monthly Review</span>
+            <span id="homepageLeadDateline">November 1981 - Regular Season</span>
           </div>
         </article>
 
@@ -952,89 +1010,9 @@
           <section class="rail-stack">
             <div class="rail-label">
               <span>Power Boards</span>
-              <span>7 Stories</span>
+              <span id="homepagePowerCount">7 Stories</span>
             </div>
-
-            <article class="compact-story">
-              <div class="compact-thumb"><span class="compact-thumb-badge">MVP</span></div>
-              <div>
-                <div class="compact-tag">Awards Desk</div>
-                <h2 class="compact-headline"><a href="content/articles/november_1981_mvp_race.html">November MVP Race: Three tiers, three very different arguments</a></h2>
-                <div class="compact-meta">Damon Cross - Awards Desk</div>
-              </div>
-            </article>
-
-            <article class="compact-story">
-              <div class="compact-thumb"><span class="compact-thumb-badge">CLB</span></div>
-              <div>
-                <div class="compact-tag">Champions League</div>
-                <h2 class="compact-headline"><a href="content/articles/november_1981_tier_1_power_rankings.html">Champions League Power Rankings: Richmond owns November</a></h2>
-                <div class="compact-meta">Nina Vale - November Edition</div>
-              </div>
-            </article>
-
-            <article class="compact-story">
-              <div class="compact-thumb"><span class="compact-thumb-badge">ELB</span></div>
-              <div>
-                <div class="compact-tag">Europa League</div>
-  <h2 class="compact-headline"><a href="content/articles/november_1981_tier_2_power_rankings.html">Europa League Power Rankings: Sheffield grabs the top line</a></h2>
-                <div class="compact-meta">Nina Vale - November Edition</div>
-              </div>
-            </article>
-
-            <article class="compact-story">
-              <div class="compact-thumb"><span class="compact-thumb-badge">ECL</span></div>
-              <div>
-                <div class="compact-tag">Conference League</div>
-  <h2 class="compact-headline"><a href="content/articles/november_1981_tier_3_power_rankings.html">Conference League Power Rankings: Barcelona leads a strange board</a></h2>
-                <div class="compact-meta">Nina Vale - November Edition</div>
-              </div>
-            </article>
-
-            <article class="compact-story">
-              <div class="compact-thumb"><span class="compact-thumb-badge">RACE</span></div>
-              <div>
-                <div class="compact-tag">Analysis</div>
-                <h2 class="compact-headline"><a href="content/articles/november_1981_promotion_relegation_watch.html">Promotion and Relegation Watch: The lines are already cruel</a></h2>
-                <div class="compact-meta">Graham Trent - November Race Watch</div>
-              </div>
-            </article>
-
-            <article class="compact-story">
-              <div class="compact-thumb"><span class="compact-thumb-badge">STK</span></div>
-              <div>
-                <div class="compact-tag">Stock Report</div>
-                <h2 class="compact-headline"><a href="content/articles/november_1981_stock_up_stock_down.html">Stock Up, Stock Down: Sheffield and Villa define November</a></h2>
-                <div class="compact-meta">Damon Cross · Monthly Review</div>
-              </div>
-            </article>
-          </section>
-
-          <section class="rail-stack">
-            <div class="rail-label">
-              <span>League Leaders</span>
-              <span id="leadersNote">CLB</span>
-            </div>
-            <div class="standings-controls" id="leadersTabs"></div>
-            <div class="standings-status" id="leadersStatus">Loading league leaders</div>
-            <div class="snapshot-grid">
-              <div class="snapshot-card">
-                <div class="snapshot-value" id="leaderPointsValue">--</div>
-                <div class="snapshot-label" id="leaderPointsLabel">Points Leader</div>
-              </div>
-              <div class="snapshot-card">
-                <div class="snapshot-value" id="leaderReboundsValue">--</div>
-                <div class="snapshot-label" id="leaderReboundsLabel">Rebounds Leader</div>
-              </div>
-              <div class="snapshot-card">
-                <div class="snapshot-value" id="leaderAssistsValue">--</div>
-                <div class="snapshot-label" id="leaderAssistsLabel">Assists Leader</div>
-              </div>
-              <div class="snapshot-card">
-                <div class="snapshot-value" id="leaderBlocksValue">--</div>
-                <div class="snapshot-label" id="leaderBlocksLabel">Blocks Leader</div>
-              </div>
-            </div>
+            <div id="homepagePowerBoard"></div>
           </section>
         </aside>
       </section>
@@ -1046,56 +1024,50 @@
             <div class="section-note">Newest live package</div>
           </div>
 
-          <div class="story-list">
-            <article class="story-row">
-              <div class="story-tag">MVP Race</div>
-  <h3><a href="content/articles/november_1981_mvp_race.html">Magic, Moses, and Tripucka lead the first real MVP board</a></h3>
-              <p>The Awards Desk splits the race by tier, naming five qualified candidates in each league and weighing stats, awards, leaders, and team context.</p>
-              <div class="compact-meta">Damon Cross - Awards Desk</div>
-            </article>
+          <div class="story-list" id="homepageAnalysisList"></div>
 
-            <article class="story-row">
-              <div class="story-tag">Monthly Review</div>
-  <h3><a href="content/articles/november_1981_month_in_review.html">November gave the league its first hard truths</a></h3>
-              <p>Sheffield surged, Aston Villa sank, Richmond led Tier 1, and the promotion lines sharpened fast across the league.</p>
-              <div class="compact-meta">Damon Cross · Front Page</div>
-            </article>
-
-            <article class="story-row">
-              <div class="story-tag">Race Watch</div>
-  <h3><a href="content/articles/november_1981_promotion_relegation_watch.html">The pressure lines are already cruel</a></h3>
-              <p>United and Palace sit below the Tier 1 line, Sheffield and Marseille lead the Tier 2 race, and Barcelona owns Tier 3's only promotion slot.</p>
-              <div class="compact-meta">Graham Trent · Analysis</div>
-            </article>
-          </div>
+          <section style="margin-top: 1.25rem;">
+            <div class="section-head">
+              <div class="section-title">Analysis</div>
+              <div class="section-note">Three opening boards</div>
+            </div>
+            <ul class="brief-list" id="homepageBriefList"></ul>
+          </section>
         </section>
 
         <section class="front-column">
           <div class="section-head">
-            <div class="section-title">Analysis</div>
-            <div class="section-note">Three opening boards</div>
+            <div class="section-title">League Leaders</div>
+            <div class="section-note" id="leadersNote">CLB</div>
           </div>
 
-          <ul class="brief-list">
-            <li>
-  <a href="content/articles/november_1981_tier_1_power_rankings.html">Richmond owns November, with Bayern's W5 surge closing the gap</a>
-              <small>Champions League · Nina Vale</small>
-            </li>
-            <li>
-  <a href="content/articles/november_1981_tier_2_power_rankings.html">Sheffield takes the top line from Marseille on margin</a>
-              <small>Europa League · Graham Trent</small>
-            </li>
-            <li>
-  <a href="content/articles/november_1981_tier_3_power_rankings.html">Barcelona leads a strange Tier 3 board with FL Fart pushing hard</a>
-              <small>Conference League · Nina Vale</small>
-            </li>
-          </ul>
+          <div class="standings-controls" id="leadersTabs"></div>
+          <div class="standings-status" id="leadersStatus">Loading league leaders</div>
+          <div class="snapshot-grid">
+            <div class="snapshot-card">
+              <div class="snapshot-value" id="leaderPointsValue">--</div>
+              <div class="snapshot-label" id="leaderPointsLabel">Points Leader</div>
+            </div>
+            <div class="snapshot-card">
+              <div class="snapshot-value" id="leaderReboundsValue">--</div>
+              <div class="snapshot-label" id="leaderReboundsLabel">Rebounds Leader</div>
+            </div>
+            <div class="snapshot-card">
+              <div class="snapshot-value" id="leaderAssistsValue">--</div>
+              <div class="snapshot-label" id="leaderAssistsLabel">Assists Leader</div>
+            </div>
+            <div class="snapshot-card">
+              <div class="snapshot-value" id="leaderBlocksValue">--</div>
+              <div class="snapshot-label" id="leaderBlocksLabel">Blocks Leader</div>
+            </div>
+          </div>
+
         </section>
 
         <aside class="front-column">
           <div class="section-head">
             <div class="section-title">Standings Snapshot</div>
-            <div class="section-note" id="standingsNote">Top 4</div>
+            <button class="section-note-button" id="standingsToggleBtn" type="button">Top 4</button>
           </div>
 
           <div class="standings-controls" id="standingsTabs"></div>
@@ -1111,7 +1083,9 @@
             <tbody id="standingsBody"></tbody>
           </table>
         </aside>
+
       </section>
+
     </main>
 
     <footer class="footer-wrap">
@@ -1124,10 +1098,89 @@
 
   <script src="content/media-articles.js"></script>
   <script>
+    function getSortedArticles() {
+      return (Array.isArray(window.ESL_MEDIA_ARTICLES) ? [...window.ESL_MEDIA_ARTICLES] : [])
+        .sort((a, b) => String(b.sortKey || "").localeCompare(String(a.sortKey || "")));
+    }
+
+    function articleHref(article) {
+      return `content/${article.file}`;
+    }
+
+    function renderHomepageStories() {
+      const sorted = getSortedArticles();
+      if (!sorted.length) return;
+
+      const monthInReviewLead = sorted.find((article) => String(article.tag || "").toLowerCase() === "month in review");
+      const lead = monthInReviewLead || sorted[0];
+      const rest = sorted.filter((article) => article.file !== lead.file);
+      const leadLink = document.getElementById("homepageLeadLink");
+      const leadTag = document.getElementById("homepageLeadTag");
+      const leadDek = document.getElementById("homepageLeadDek");
+      const leadAuthor = document.getElementById("homepageLeadAuthor");
+      const leadMeta = document.getElementById("homepageLeadMeta");
+      const leadDateline = document.getElementById("homepageLeadDateline");
+
+      if (leadLink) {
+        leadLink.href = articleHref(lead);
+        leadLink.textContent = lead.title || "Latest Story";
+      }
+      if (leadTag) {
+        leadTag.textContent = `Lead Story · ${lead.tag || lead.desk || "Feature"}`;
+      }
+      if (leadDek) {
+        leadDek.textContent = lead.blurb || "Latest ESL Media coverage.";
+      }
+      if (leadAuthor) leadAuthor.textContent = lead.author || "ESL Media";
+      if (leadMeta) leadMeta.textContent = lead.meta || lead.desk || "Front Page";
+      if (leadDateline) leadDateline.textContent = lead.sortKey || "Current Edition";
+
+      const power = rest.slice(0, 6);
+      const powerRoot = document.getElementById("homepagePowerBoard");
+      const powerCount = document.getElementById("homepagePowerCount");
+      if (powerRoot) {
+        powerRoot.innerHTML = power.map((article) => `
+          <article class="compact-story">
+            <div class="compact-thumb"><span class="compact-thumb-badge">${String(article.tag || article.desk || "Story").slice(0, 4).toUpperCase()}</span></div>
+            <div>
+              <div class="compact-tag">${article.meta || article.desk || "ESL Media"}</div>
+              <h2 class="compact-headline"><a href="${articleHref(article)}">${article.title}</a></h2>
+              <div class="compact-meta">${article.author || "ESL Media"} - ${article.meta || article.desk || "Desk"}</div>
+            </div>
+          </article>
+        `).join("");
+      }
+      if (powerCount) powerCount.textContent = `${power.length} Stories`;
+
+      const analysisList = document.getElementById("homepageAnalysisList");
+      if (analysisList) {
+        const analysis = sorted.filter((article) => article.desk === "Analysis").slice(0, 3);
+        analysisList.innerHTML = analysis.map((article) => `
+          <article class="story-row">
+            <div class="story-tag">${article.tag || "Analysis"}</div>
+            <h3><a href="${articleHref(article)}">${article.title}</a></h3>
+            <p>${article.blurb || ""}</p>
+            <div class="compact-meta">${article.author || "ESL Media"} - ${article.meta || article.desk || "Desk"}</div>
+          </article>
+        `).join("");
+      }
+
+      const briefList = document.getElementById("homepageBriefList");
+      if (briefList) {
+        const briefs = rest.filter((article) => article.desk !== "Interview").slice(2, 5);
+        briefList.innerHTML = briefs.map((article) => `
+          <li>
+            <a href="${articleHref(article)}">${article.title}</a>
+            <small>${article.tag || article.desk || "Feature"} · ${article.author || "ESL Media"}</small>
+          </li>
+        `).join("");
+      }
+
+    }
     const standingsTabs = document.getElementById("standingsTabs");
     const standingsBody = document.getElementById("standingsBody");
     const standingsStatus = document.getElementById("standingsStatus");
-    const standingsNote = document.getElementById("standingsNote");
+    const standingsToggleBtn = document.getElementById("standingsToggleBtn");
     const leadersTabs = document.getElementById("leadersTabs");
     const leadersStatus = document.getElementById("leadersStatus");
     const leadersNote = document.getElementById("leadersNote");
@@ -1138,6 +1191,7 @@
     let activeStandingsSlug = null;
     let leaderSections = [];
     let activeLeadersSlug = null;
+    let showBottomStandings = false;
 
     function formatLeagueLabel(title) {
       return title.replace(/\s+Standings$/i, "").trim();
@@ -1180,21 +1234,57 @@
       const activeSection = standingsSections.find((section) => section.slug === activeStandingsSlug);
       if (!activeSection) return;
 
-      const topTeams = sortTeamsForSnapshot(activeSection.teams).slice(0, 4);
+      const orderedTeams = sortTeamsForSnapshot(activeSection.teams);
+      const topTeams = orderedTeams.slice(0, 4);
+      const bottomTeams = orderedTeams.slice(-4);
       const label = formatLeagueLabel(activeSection.title);
+      const movementFor = (index) => {
+        if (label === "CLB") {
+          if (index >= orderedTeams.length - 2) return { type: "relegation", text: "Relegation" };
+          return null;
+        }
+        if (label === "ELB") {
+          if (index <= 1) return { type: "promotion", text: "Promotion" };
+          if (index === orderedTeams.length - 1) return { type: "relegation", text: "Relegation" };
+          return null;
+        }
+        if (label === "ECL") {
+          if (index === 0) return { type: "promotion", text: "Promotion" };
+          return null;
+        }
+        return null;
+      };
 
-      standingsBody.innerHTML = topTeams.map((team) => `
-        <tr>
-          <td class="team">${team.team}</td>
-          <td>${team.wins}-${team.losses}</td>
-        </tr>
-      `).join("");
+      const renderRow = (team) => {
+        const index = orderedTeams.findIndex((entry) => entry.team === team.team);
+        const movement = movementFor(index);
+        const badge = movement ? `<span class="movement-badge ${movement.type}">${movement.text}</span>` : "";
+        return `
+          <tr>
+            <td class="team">${team.team}${badge}</td>
+            <td>${team.wins}-${team.losses}</td>
+          </tr>
+        `;
+      };
+
+      const rows = showBottomStandings ? bottomTeams.map(renderRow) : topTeams.map(renderRow);
+
+      standingsBody.innerHTML = rows.join("");
 
       standingsStatus.textContent = `${label} table`;
-      standingsNote.textContent = `Top ${topTeams.length}`;
+      if (standingsToggleBtn) {
+        standingsToggleBtn.textContent = showBottomStandings ? "BOT 4" : "TOP 4";
+      }
 
       standingsTabs.querySelectorAll(".standings-tab").forEach((button) => {
         button.classList.toggle("active", button.dataset.slug === activeStandingsSlug);
+      });
+    }
+
+    if (standingsToggleBtn) {
+      standingsToggleBtn.addEventListener("click", () => {
+        showBottomStandings = !showBottomStandings;
+        renderActiveStandings();
       });
     }
 
@@ -1297,6 +1387,7 @@
 
     initStandingsSnapshot();
     initLeadersSnapshot();
+    renderHomepageStories();
   </script>
 </body>
 </html>
