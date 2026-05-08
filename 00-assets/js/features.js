@@ -571,7 +571,7 @@
   }
 
   function makeLeagueLogoLink() {
-    var link = makeMenuLink("", "standings.htm", "league-menu-link league-menu-feature");
+    var link = makeMenuLink("", "league%20dashboard.htm", "league-menu-link league-menu-feature");
     var logo = document.createElement("img");
     var fallback = document.createElement("span");
 

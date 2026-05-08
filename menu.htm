@@ -1,6 +1,8 @@
 <HTML>
 <style type=text/css>
    a.menulink { font-size: 10pt; font-weight: 500; color: #FFFFFF; }
+   a.menu-logo-link { display: block; text-align: center; margin: 0 0 10px 0; }
+   img.menu-logo { width: 120px; height: auto; display: inline-block; }
 </style>
 <head>
   <link rel="icon" type="image/png" href="00-build/database/favicon.png">
@@ -9,7 +11,11 @@
   <script src="00-assets/js/features.js" defer></script>
 </head>
 <body bgcolor=#990000>
+<a class="menu-logo-link" target=data href="league%20dashboard.htm" title="Open League Dashboard" onclick="if(parent && parent.frames && parent.frames['data']){ parent.frames['data'].location.href='league%20dashboard.htm'; return false; }">
+  <img class="menu-logo" src="00-assets/images/ESLcropped-removebg-preview.png" alt="League Dashboard">
+</a>
 <table>
+<tr valign=top><td><a class=menulink target=data href="league%20dashboard.htm">League Dashboard</a></td></tr>
 <tr valign=top><td><a class=menulink target=data href=standings.htm>Standings</a></td></tr>
 <tr valign=top><td><a class=menulink target=data href=playoffstandings.htm>Playoff Standings</a></td></tr>
 <tr valign=top><td><a class=menulink target=data href=schedule.htm>Schedule</a></td></tr>

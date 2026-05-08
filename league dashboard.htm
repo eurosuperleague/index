@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>League Dashboard</title>
+  <link rel="stylesheet" href="00-assets/css/styles.css">
+  <style>
+    :root {
+      --ink: #0f0f0f;
+      --blue: #111b36;
+      --paper: #f4f2ec;
+      --card: #ffffff;
+      --mid: #524633;
+      --line: #ddd5c6;
+      --green: #1f6d3d;
+      --red: #9d1f1f;
+      --font-sans: "Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      --font-serif: "Tiempos Headline", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    }
+
+    body.dashboard-page {
+      margin: 0;
+      padding: 1.1rem;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      overflow-x: hidden;
+    }
+
+    .dash-shell {
+      width: min(1220px, 100%);
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .dash-header {
+      background: var(--card);
+      border: 1px solid var(--ink);
+      border-top: 4px solid var(--blue);
+      box-shadow: 4px 4px 0 rgba(17, 27, 54, 0.12);
+      padding: 0.75rem 1rem 0.9rem;
+    }
+
+    .kicker {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--blue);
+      font-weight: 700;
+      margin-bottom: 0.22rem;
+    }
+
+    .utility-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+      gap: 0.8rem;
+      align-items: start;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .quick-link {
+      border: 1px solid var(--line);
+      background: #faf8f2;
+      padding: 0.42rem 0.5rem;
+      font-size: 0.66rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .quick-link:hover {
+      border-color: var(--blue);
+      background: #f2efe7;
+    }
+
+    .search-wrap {
+      position: relative;
+      display: grid;
+      gap: 0.4rem;
+    }
+
+    .search-label {
+      font-size: 0.64rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--mid);
+      font-weight: 700;
+    }
+
+    .search-input {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      padding: 0.55rem 0.6rem;
+      font: inherit;
+      font-size: 0.9rem;
+    }
+
+    .search-results {
+      background: #fff;
+      border: 1px solid var(--line);
+      max-height: 220px;
+      overflow-y: auto;
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      right: 0;
+      z-index: 60;
+      box-shadow: 0 8px 20px rgba(17, 27, 54, 0.14);
+    }
+
+    .search-wrap.is-open .search-results {
+      display: grid;
+    }
+
+    .search-result {
+      display: block;
+      padding: 0.5rem 0.55rem;
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .search-result:last-child {
+      border-bottom: none;
+    }
+
+    .search-result:hover {
+      background: #f7f4eb;
+      color: var(--blue);
+    }
+
+    .search-result-name {
+      font-size: 0.88rem;
+      font-family: var(--font-serif);
+      line-height: 1.2;
+      margin-bottom: 0.1rem;
+    }
+
+    .search-result-meta {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    .league-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.85rem;
+    }
+
+    .league-btn {
+      border: 1px solid var(--line);
+      background: #faf8f2;
+      color: var(--mid);
+      font: inherit;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 0.48rem 0.62rem;
+      cursor: pointer;
+    }
+
+    .league-btn.active {
+      background: var(--blue);
+      color: #fff;
+      border-color: var(--blue);
+    }
+
+    .status-text {
+      font-size: 0.67rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      min-height: 1em;
+    }
+
+    .standings-head-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.35rem;
+    }
+
+    .standings-head-actions .league-controls {
+      margin-top: 0;
+      justify-content: flex-end;
+    }
+
+    .standings-head-actions .status-text {
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+    }
+
+    .dash-main {
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.95fr);
+      gap: 0.9rem;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 0.95rem;
+    }
+
+    .panel-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.7rem;
+      border-bottom: 2px solid var(--blue);
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .panel-title {
+      margin: 0;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--blue);
+    }
+
+    .panel-note {
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    .standings-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: auto;
+    }
+
+    .standings-table th,
+    .standings-table td {
+      padding: 0.48rem 0.3rem;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.86rem;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .standings-table th:first-child,
+    .standings-table td:first-child {
+      text-align: left;
+      padding-left: 0;
+    }
+
+    .standings-table th {
+      font-size: 0.62rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    .standings-table .team-name {
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+    }
+
+    .diff-pos {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .diff-neg {
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    .leaders-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem;
+      margin-top: 0.8rem;
+    }
+
+    .leader-card {
+      border: 1px solid var(--line);
+      background: #faf8f2;
+      padding: 0.65rem 0.7rem;
+    }
+
+    .leader-stat {
+      font-size: 0.62rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.22rem;
+    }
+
+    .leader-value {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      line-height: 1;
+      color: var(--blue);
+      margin-bottom: 0.22rem;
+    }
+
+    .leader-name {
+      font-size: 0.84rem;
+      line-height: 1.25;
+      margin-bottom: 0.1rem;
+    }
+
+    .leader-name a,
+    .injury-team a,
+    .cap-team a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .leader-name a:hover,
+    .injury-team a:hover,
+    .cap-team a:hover {
+      text-decoration: underline;
+      color: var(--blue);
+    }
+
+    .leader-team {
+      font-size: 0.66rem;
+      color: var(--mid);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .injury-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .injury-row {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.55rem;
+    }
+
+    .injury-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .injury-name {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      margin-bottom: 0.12rem;
+    }
+
+    .injury-team {
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.25rem;
+    }
+
+    .injury-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.6rem;
+      font-size: 0.8rem;
+    }
+
+    .injury-len {
+      font-weight: 700;
+      color: var(--red);
+    }
+
+    .top-players-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .top-player-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.6rem;
+      align-items: baseline;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.55rem;
+      font-size: 0.84rem;
+    }
+
+    .top-player-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .top-player-name {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+    }
+
+    .top-player-value {
+      font-weight: 700;
+      color: var(--blue);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 1020px) {
+      .utility-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .leaders-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .dash-main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      body.dashboard-page {
+        padding: 0.75rem;
+      }
+
+      .leaders-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="dashboard-page">
+  <div class="dash-shell">
+    <header class="dash-header">
+      <div class="kicker">League Intelligence Board</div>
+      <div class="utility-grid">
+        <div class="quick-links">
+          <a class="quick-link" href="standings.htm">Standings</a>
+          <a class="quick-link" href="leaders.htm">League Leaders</a>
+          <a class="quick-link" href="injuries.htm">Injuries</a>
+          <a class="quick-link" href="capreport.htm">Cap Report</a>
+          <a class="quick-link" href="transactions.htm">Transactions</a>
+        </div>
+        <div class="search-wrap">
+          <label class="search-label" for="globalSearchInput">Player / Team Search</label>
+          <input id="globalSearchInput" class="search-input" type="search" placeholder="Search players or teams">
+          <div id="searchResults" class="search-results"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="dash-main">
+      <div class="panel">
+        <div class="panel-head">
+          <h2 class="panel-title">Standings Pulse</h2>
+          <div class="standings-head-actions">
+            <div class="league-controls" id="leagueControls"></div>
+            <div class="status-text" id="statusText">Loading dashboard data</div>
+          </div>
+        </div>
+        <table class="standings-table">
+          <thead>
+            <tr>
+              <th>Team</th>
+              <th>W-L</th>
+              <th>Diff</th>
+              <th>Streak</th>
+            </tr>
+          </thead>
+          <tbody id="standingsBody">
+            <tr><td colspan="4">Loading standings</td></tr>
+          </tbody>
+        </table>
+
+        <div class="panel-head" style="margin-top: 0.9rem;">
+          <h2 class="panel-title">Category Leaders</h2>
+          <div class="panel-note">Top performer per category</div>
+        </div>
+        <div class="leaders-grid" id="leadersGrid"></div>
+      </div>
+
+      <div style="display: grid; gap: 0.9rem;">
+        <section class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">Injury Watch</h2>
+            <div class="panel-note">Longest current injuries</div>
+          </div>
+          <ul class="injury-list" id="injuryList">
+            <li class="injury-row">Loading injuries</li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">Top Players</h2>
+            <div class="panel-note">Points leaderboard</div>
+          </div>
+          <ul class="top-players-list" id="topPlayersList">
+            <li class="top-player-row"><span>Loading top players</span><span class="top-player-value">--</span></li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">Cap Room Leaders</h2>
+            <div class="panel-note" id="capLabel">League cap view</div>
+          </div>
+          <ul class="top-players-list" id="capList">
+            <li class="top-player-row"><span>Loading cap report</span><span class="top-player-value">--</span></li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const DATA_URLS = {
+      standings: "00-build/database/standings.json",
+      leaders: "00-build/database/leaders.json",
+      injuries: "00-build/database/injuries.json",
+      capreport: "00-build/database/capreport.json",
+      players: "00-build/database/players.json"
+    };
+
+    const state = {
+      standings: [],
+      leaders: [],
+      injuries: [],
+      capreport: [],
+      players: [],
+      activeLeagueSlug: null
+    };
+
+    function shortLeagueLabel(title) {
+      return String(title || "").replace(/\s+Standings$/i, "").trim();
+    }
+
+    function shortLeaderLabel(title) {
+      return String(title || "").replace(/\s+League Leaders$/i, "").trim();
+    }
+
+    function normalizeHref(url) {
+      const raw = String(url || "").trim();
+      const rosterMatch = raw.match(/roster-view\.htm\?file=([^&#]+)/i);
+      if (rosterMatch && rosterMatch[1]) {
+        const file = decodeURIComponent(rosterMatch[1]).replace(/^(\.\/|\.\.\/)+/, "");
+        return file ? `rosters/${file}` : "#";
+      }
+      const clean = raw.replace(/^(\.\/|\.\.\/)+/, "");
+      return clean ? clean : "#";
+    }
+
+    function num(value) {
+      const n = Number(value);
+      return Number.isFinite(n) ? n : 0;
+    }
+
+    function formatSigned(value) {
+      const n = num(value);
+      return `${n > 0 ? "+" : ""}${n.toFixed(1)}`;
+    }
+
+    function extractLeagueToken(title) {
+      return String(title || "").split(" ")[0].toUpperCase();
+    }
+
+    function findMatchingLeaders(leagueToken) {
+      return state.leaders.find((section) => extractLeagueToken(section.title) === leagueToken) || null;
+    }
+
+    function findMatchingCap(leagueToken) {
+      const tokenMap = {
+        CLB: "champions",
+        ELB: "europa",
+        ECL: "conference"
+      };
+      const expected = tokenMap[leagueToken];
+      if (!expected) return null;
+      return state.capreport.find((section) => String(section.title || "").toLowerCase().includes(expected)) || null;
+    }
+
+    function buildLeagueControls() {
+      const root = document.getElementById("leagueControls");
+      root.innerHTML = state.standings.map((section) => {
+        const label = shortLeagueLabel(section.title);
+        const activeClass = section.slug === state.activeLeagueSlug ? " active" : "";
+        return `<button type="button" class="league-btn${activeClass}" data-slug="${section.slug}">${label}</button>`;
+      }).join("");
+
+      root.querySelectorAll(".league-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          state.activeLeagueSlug = btn.dataset.slug;
+          renderDashboard();
+        });
+      });
+    }
+
+    function renderStandings(activeSection) {
+      const standingsBody = document.getElementById("standingsBody");
+      const teams = [...(activeSection.teams || [])]
+        .sort((a, b) => num(b.wins) - num(a.wins) || num(a.losses) - num(b.losses))
+        .slice(0, 8);
+
+      standingsBody.innerHTML = teams.map((team) => {
+        const diffClass = num(team.diff) >= 0 ? "diff-pos" : "diff-neg";
+        return `
+          <tr>
+            <td class="team-name"><a href="${normalizeHref(team.rosterUrl)}">${team.team}</a></td>
+            <td>${team.wins}-${team.losses}</td>
+            <td class="${diffClass}">${formatSigned(team.diff)}</td>
+            <td>${team.streak || "-"}</td>
+          </tr>
+        `;
+      }).join("");
+
+    }
+
+    function renderLeaders(leagueToken) {
+      const leadersGrid = document.getElementById("leadersGrid");
+      const leaderSection = findMatchingLeaders(leagueToken);
+      const wanted = ["Points", "Rebounds", "Assists", "Steals", "Blocks", "Minutes"];
+
+      if (!leaderSection) {
+        leadersGrid.innerHTML = `<div class="leader-card">Leaders unavailable</div>`;
+        return;
+      }
+
+      const cards = wanted.map((categoryName) => {
+        const category = (leaderSection.categories || []).find((entry) => String(entry.title || "").toLowerCase() === categoryName.toLowerCase());
+        const leader = category && Array.isArray(category.leaders) ? category.leaders[0] : null;
+        if (!leader) {
+          return `
+            <article class="leader-card">
+              <div class="leader-stat">${categoryName}</div>
+              <div class="leader-value">--</div>
+              <div class="leader-name">No data</div>
+              <div class="leader-team">--</div>
+            </article>
+          `;
+        }
+
+        return `
+          <article class="leader-card">
+            <div class="leader-stat">${categoryName}</div>
+            <div class="leader-value">${leader.valueText || leader.value || "--"}</div>
+            <div class="leader-name"><a href="${normalizeHref(leader.playerUrl)}">${leader.player}</a></div>
+            <div class="leader-team"><a href="${normalizeHref(leader.teamUrl)}">${leader.teamName || "Team"}</a></div>
+          </article>
+        `;
+      });
+
+      leadersGrid.innerHTML = cards.join("");
+    }
+
+    function renderInjuries() {
+      const root = document.getElementById("injuryList");
+      const injuries = [...(state.injuries || [])]
+        .sort((a, b) => num(b.length) - num(a.length))
+        .slice(0, 6);
+
+      if (!injuries.length) {
+        root.innerHTML = `<li class="injury-row">No injury data available</li>`;
+        return;
+      }
+
+      root.innerHTML = injuries.map((item) => `
+        <li class="injury-row">
+          <div class="injury-name">${item.name || "Unknown Player"}</div>
+          <div class="injury-team"><a href="${normalizeHref(item.rosterUrl)}">${item.teamName || "Unknown Team"}</a></div>
+          <div class="injury-meta">
+            <span>${item.injury || "Injury"}</span>
+            <span class="injury-len">${item.length || "--"} days</span>
+          </div>
+        </li>
+      `).join("");
+    }
+
+    function renderTopPlayers(leagueToken) {
+      const root = document.getElementById("topPlayersList");
+      const leaderSection = findMatchingLeaders(leagueToken);
+      const pointsCategory = leaderSection && Array.isArray(leaderSection.categories)
+        ? leaderSection.categories.find((item) => String(item.title || "").toLowerCase() === "points")
+        : null;
+      const leaders = pointsCategory && Array.isArray(pointsCategory.leaders) ? pointsCategory.leaders.slice(0, 8) : [];
+
+      if (!leaders.length) {
+        root.innerHTML = `<li class="top-player-row"><span>No player data</span><span class="top-player-value">--</span></li>`;
+        return;
+      }
+
+      root.innerHTML = leaders.map((entry) => `
+        <li class="top-player-row">
+          <span class="top-player-name"><a href="${normalizeHref(entry.playerUrl)}">${entry.player}</a></span>
+          <span class="top-player-value">${entry.valueText || entry.value || "--"}</span>
+        </li>
+      `).join("");
+    }
+
+    function renderCap(leagueToken) {
+      const root = document.getElementById("capList");
+      const capLabel = document.getElementById("capLabel");
+      const capSection = findMatchingCap(leagueToken);
+
+      if (!capSection || !Array.isArray(capSection.entries) || !capSection.entries.length) {
+        capLabel.textContent = "Cap report unavailable";
+        root.innerHTML = `<li class="top-player-row"><span>No cap data</span><span class="top-player-value">--</span></li>`;
+        return;
+      }
+
+      capLabel.textContent = shortLeagueLabel(`${leagueToken} Standings`);
+      const topCap = [...capSection.entries].sort((a, b) => num(b.capRoom) - num(a.capRoom)).slice(0, 8);
+      root.innerHTML = topCap.map((entry) => `
+        <li class="top-player-row">
+          <span class="top-player-name"><a href="${normalizeHref(entry.rosterUrl)}">${entry.team || "Team"}</a></span>
+          <span class="top-player-value">${entry.capRoomText || "$0"}</span>
+        </li>
+      `).join("");
+    }
+
+    function buildSearchIndex() {
+      const teamEntries = state.standings.flatMap((section) =>
+        (section.teams || []).map((team) => ({
+          type: "Team",
+          name: team.team,
+          meta: shortLeagueLabel(section.title),
+          href: normalizeHref(team.rosterUrl || "")
+        }))
+      );
+
+      const playerEntries = (state.players || [])
+        .filter((player) => player && player.name && player.url)
+        .map((player) => ({
+          type: "Player",
+          name: player.name,
+          meta: `${player.teamLabel || player.team || "Team"}${player.pos ? ` · ${player.pos}` : ""}`,
+          href: normalizeHref(player.url)
+        }));
+
+      const dedup = new Map();
+      [...teamEntries, ...playerEntries].forEach((entry) => {
+        const key = `${entry.type}|${entry.name}|${entry.href}`;
+        if (!dedup.has(key)) dedup.set(key, entry);
+      });
+      return [...dedup.values()];
+    }
+
+    function bindSearch() {
+      const input = document.getElementById("globalSearchInput");
+      const resultsRoot = document.getElementById("searchResults");
+      const wrap = input.closest(".search-wrap");
+      const index = buildSearchIndex();
+
+      function renderResults(query, showHints) {
+        const q = String(query || "").trim().toLowerCase();
+        if (!q) {
+          if (!showHints) {
+            resultsRoot.innerHTML = "";
+            return;
+          }
+          const hints = index.slice(0, 6);
+          resultsRoot.innerHTML = hints.map((entry) => `
+            <a class="search-result" href="${entry.href}">
+              <div class="search-result-name">${entry.name}</div>
+              <div class="search-result-meta">${entry.type} · ${entry.meta}</div>
+            </a>
+          `).join("");
+          return;
+        }
+
+        const hits = index
+          .filter((entry) => entry.name.toLowerCase().includes(q) || entry.meta.toLowerCase().includes(q))
+          .slice(0, 10);
+
+        resultsRoot.innerHTML = hits.length
+          ? hits.map((entry) => `
+              <a class="search-result" href="${entry.href}">
+                <div class="search-result-name">${entry.name}</div>
+                <div class="search-result-meta">${entry.type} · ${entry.meta}</div>
+              </a>
+            `).join("")
+          : `<div class="search-result"><div class="search-result-name">No matches</div><div class="search-result-meta">Try another player or team</div></div>`;
+      }
+
+      function openSearch() {
+        wrap.classList.add("is-open");
+      }
+
+      function closeSearch() {
+        wrap.classList.remove("is-open");
+      }
+
+      input.addEventListener("focus", () => {
+        renderResults(input.value, true);
+        openSearch();
+      });
+
+      input.addEventListener("input", () => {
+        renderResults(input.value, true);
+        openSearch();
+      });
+
+      input.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          closeSearch();
+        }
+      });
+
+      resultsRoot.addEventListener("click", (event) => {
+        if (event.target.closest("a.search-result")) {
+          closeSearch();
+        }
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!wrap.contains(event.target)) {
+          closeSearch();
+        }
+      });
+    }
+
+    function renderDashboard() {
+      const activeSection = state.standings.find((section) => section.slug === state.activeLeagueSlug);
+      if (!activeSection) return;
+
+      const leagueToken = extractLeagueToken(activeSection.title);
+      buildLeagueControls();
+      renderStandings(activeSection);
+      renderLeaders(leagueToken);
+      renderInjuries();
+      renderTopPlayers(leagueToken);
+      renderCap(leagueToken);
+
+      document.getElementById("statusText").textContent = `${shortLeagueLabel(activeSection.title)} loaded`;
+    }
+
+    async function init() {
+      const status = document.getElementById("statusText");
+      try {
+        const [standingsRes, leadersRes, injuriesRes, capRes, playersRes] = await Promise.all([
+          fetch(DATA_URLS.standings),
+          fetch(DATA_URLS.leaders),
+          fetch(DATA_URLS.injuries),
+          fetch(DATA_URLS.capreport),
+          fetch(DATA_URLS.players)
+        ]);
+
+        if (!standingsRes.ok || !leadersRes.ok || !injuriesRes.ok || !capRes.ok || !playersRes.ok) {
+          throw new Error("One or more feeds failed to load");
+        }
+
+        const standingsData = await standingsRes.json();
+        const leadersData = await leadersRes.json();
+        const injuriesData = await injuriesRes.json();
+        const capData = await capRes.json();
+        const playersData = await playersRes.json();
+
+        state.standings = Array.isArray(standingsData.sections) ? standingsData.sections : [];
+        state.leaders = Array.isArray(leadersData.sections) ? leadersData.sections : [];
+        state.injuries = Array.isArray(injuriesData.injuries) ? injuriesData.injuries : [];
+        state.capreport = Array.isArray(capData.sections) ? capData.sections : [];
+        state.players = Array.isArray(playersData) ? playersData : [];
+
+        if (!state.standings.length) throw new Error("Standings feed is empty");
+
+        state.activeLeagueSlug = state.standings[0].slug;
+        renderDashboard();
+        bindSearch();
+      } catch (error) {
+        status.textContent = "Dashboard unavailable";
+        document.getElementById("standingsBody").innerHTML = `<tr><td colspan="4">Could not load dashboard feeds</td></tr>`;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
