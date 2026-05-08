@@ -5,6 +5,7 @@
   var TEAM_SELECT_ID = "team-select";
   var PLAYERS_PATH = "../../00-build/database/players.json";
   var TEAMS_PATH = "../../00-build/database/teams.json";
+  var INJURIES_PATH = "../../00-build/database/injuries.json";
   var STORAGE_PREFIX = "bsl-depth-chart:";
   var LAST_TEAM_KEY = STORAGE_PREFIX + "last-team";
   var TEAM_COLOR_FALLBACK = "#1e293b";
@@ -13,6 +14,7 @@
   var state = {
     teams: [],
     players: [],
+    injuries: [],
     roster: [],
     isRestoring: false
   };
@@ -273,6 +275,25 @@
     }) || null;
   }
 
+  function isPlayerInjured(player) {
+    if (!player) {
+      return false;
+    }
+
+    return state.injuries.some(function (injury) {
+      return normalizeName(injury.name) === normalizeName(player.name) &&
+        (!injury.team || !player.teamName || normalizeName(injury.team) === normalizeName(player.teamName));
+    });
+  }
+
+  function updateRowInjuryState(row, player) {
+    if (!row) {
+      return;
+    }
+
+    row.classList.toggle("depth-row--injured", isPlayerInjured(player));
+  }
+
   function isStarterRole(role) {
     return ["C", "PF", "SF", "SG", "PG"].indexOf(role) !== -1;
   }
@@ -369,6 +390,7 @@
         var row = select.closest("tr");
         var player = getPlayerByKey(select.value);
         row.querySelector(".depth-position-input").value = getManualPositionForRow(row, player);
+        updateRowInjuryState(row, player);
         if (!player) {
           row.querySelector(".depth-minutes").value = "";
         }
@@ -402,6 +424,7 @@
     row.querySelector(".depth-position-input").value = rowState.positions || (player ? player.pos : "Position(s)");
     row.querySelector(".depth-minutes").value = rowState.minutes || "";
     row.querySelector(".depth-bold-input").checked = !!rowState.bold;
+    updateRowInjuryState(row, player);
   }
 
   function clearDragState() {
@@ -601,6 +624,7 @@
       row.querySelector(".depth-position-input").value = savedRow.positions || (player ? player.pos : "Position(s)");
       row.querySelector(".depth-minutes").value = savedRow.minutes || "";
       row.querySelector(".depth-bold-input").checked = !!savedRow.bold;
+      updateRowInjuryState(row, player);
     });
 
     Object.keys(savedState.gameplan || {}).forEach(function (id) {
@@ -718,6 +742,7 @@
       row.querySelector(".depth-position-input").value = parsedRow.positions || (player ? player.pos : "");
       row.querySelector(".depth-minutes").value = parsedRow.minutes || "";
       row.querySelector(".depth-bold-input").checked = parsedRow.bold;
+      updateRowInjuryState(row, player);
     });
 
     lines.forEach(function (line) {
@@ -987,6 +1012,7 @@
       row.querySelector(".depth-position-input").value = "Position(s)";
       row.querySelector(".depth-minutes").value = "";
       row.querySelector(".depth-bold-input").checked = false;
+      updateRowInjuryState(row, null);
     });
 
     refreshPlayerOptions();
@@ -1040,12 +1066,19 @@
   }
 
   function init() {
-    Promise.all([loadJson(TEAMS_PATH), loadJson(PLAYERS_PATH)])
+    Promise.all([
+      loadJson(TEAMS_PATH),
+      loadJson(PLAYERS_PATH),
+      loadJson(INJURIES_PATH).catch(function () {
+        return { injuries: [] };
+      })
+    ])
       .then(function (results) {
         state.teams = results[0].slice().sort(function (a, b) {
           return a.name.localeCompare(b.name);
         });
         state.players = results[1];
+        state.injuries = Array.isArray(results[2].injuries) ? results[2].injuries : [];
 
         var lastTeamId = safeGetStorage(LAST_TEAM_KEY);
         var initialTeam = state.teams.find(function (team) {
