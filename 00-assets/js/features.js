@@ -290,6 +290,21 @@
     frameset.setAttribute("cols", isOpen ? "150,*" : "0,*");
   }
 
+  function syncDataFrameMenuButton() {
+    try {
+      if (
+        window.parent &&
+        window.parent.frames &&
+        window.parent.frames.data &&
+        typeof window.parent.frames.data.__syncLeagueMenuButton === "function"
+      ) {
+        window.parent.frames.data.__syncLeagueMenuButton();
+      }
+    } catch (error) {
+      return;
+    }
+  }
+
   function isParentMenuOpen() {
     var frameset = getParentFrameset();
 
@@ -366,7 +381,13 @@
       button.setAttribute("aria-expanded", String(nextOpen));
     });
 
+    window.__syncLeagueMenuButton = function () {
+      syncResponsiveMenuState(button);
+    };
     syncResponsiveMenuState(button);
+    window.setInterval(function () {
+      syncResponsiveMenuState(button);
+    }, 500);
 
     try {
       window.parent.addEventListener("resize", function () {
@@ -520,20 +541,22 @@
       "body.menu-body { background: #111b36 !important; color: #ffffff; font-family: 'Inter', Tahoma, Arial, sans-serif; font-size: 10.8pt; line-height: 1.16; margin: 0; padding: 0; overflow-x: hidden; }",
       ".league-menu-shell { display: flex; flex-direction: column; gap: 0; }",
       ".league-menu-link, .league-menu-toggle { font-family: 'Inter', Tahoma, Arial, sans-serif; text-decoration: none; }",
-      ".league-menu-link { color: #ffffff; display: block; font-size: 9.8pt; font-weight: 600; line-height: 1.08; padding: 6px 2px; }",
+      ".league-menu-link { color: #ffffff; display: block; font-size: 9.8pt; font-weight: 600; line-height: 1.08; padding: 6px 7px 6px 9px; }",
       ".league-menu-link:hover { background: rgba(255, 255, 255, 0.08); color: #ffffff; text-decoration: none; }",
-      ".league-menu-feature { align-items: center; background: #111b36; border-bottom: 1px solid rgba(148, 163, 184, 0.45); color: #ffffff !important; display: flex; justify-content: center; min-height: 38px; padding: 7px 2px; }",
+      ".league-menu-feature { align-items: center; background: #111b36; color: #ffffff !important; display: flex; justify-content: center; min-height: 42px; padding: 5px 2px; }",
       ".league-menu-feature:hover { background: rgba(255, 255, 255, 0.08); }",
-      ".league-menu-logo { display: block; max-width: 112px; width: 100%; max-height: 23px; object-fit: contain; filter: brightness(0) invert(1); }",
+      ".league-menu-feature-row { align-items: center; border-bottom: 1px solid rgba(148, 163, 184, 0.45); display: flex; justify-content: center; min-height: 50px; padding: 5px 7px; }",
+      ".league-menu-logo { display: block; max-width: 84px; width: 100%; max-height: 38px; object-fit: contain; filter: brightness(0) invert(1); }",
+      ".league-menu-eslm-logo { display: block; max-width: 94px; width: 100%; max-height: 22px; object-fit: contain; object-position: left center; filter: brightness(0) invert(1); }",
       ".league-menu-fallback { color: #ffffff; font: 800 11pt/1 Inter, Tahoma, Arial, sans-serif; letter-spacing: 0.05em; text-transform: uppercase; }",
       ".league-menu-group { border-bottom: 1px solid rgba(148, 163, 184, 0.24); overflow: hidden; }",
-      ".league-menu-toggle { align-items: center; background: #111b36; border: 0; color: #94a3b8; cursor: pointer; display: flex; font-size: 8.7pt; font-weight: 800; justify-content: space-between; letter-spacing: 0.09em; padding: 7px 2px 3px; text-align: left; text-transform: uppercase; width: 100%; }",
+      ".league-menu-toggle { align-items: center; background: #111b36; border: 0; color: #94a3b8; cursor: pointer; display: flex; font-size: 8.7pt; font-weight: 800; justify-content: space-between; letter-spacing: 0.09em; padding: 7px 7px 3px 9px; text-align: left; text-transform: uppercase; width: 100%; }",
       ".league-menu-toggle:hover { background: rgba(255, 255, 255, 0.08); }",
       ".league-menu-toggle::after { content: '-'; font-weight: 800; }",
       ".league-menu-group.is-collapsed .league-menu-toggle::after { content: '+'; }",
       ".league-menu-links { display: flex; flex-direction: column; gap: 0; padding-top: 0; }",
       ".league-menu-group.is-collapsed .league-menu-links { display: none; }",
-      "@media (max-height: 680px) { .league-menu-link { font-size: 9.2pt; padding: 5px 2px; } .league-menu-toggle { font-size: 8.1pt; padding: 6px 2px 2px; } .league-menu-feature { min-height: 32px; } .league-menu-logo { max-height: 20px; } }"
+      "@media (max-height: 680px) { .league-menu-link { font-size: 9.2pt; padding: 5px 6px 5px 8px; } .league-menu-toggle { font-size: 8.1pt; padding: 6px 6px 2px 8px; } .league-menu-feature-row { min-height: 42px; padding-left: 6px; padding-right: 6px; } .league-menu-feature { min-height: 34px; } .league-menu-logo { max-height: 32px; } }"
     ].join("");
     document.head.appendChild(style);
   }
@@ -547,18 +570,40 @@
     return link;
   }
 
-  function makeEslMediaLink() {
-    var link = makeMenuLink("", "00-eslmedia/homepage.html", "league-menu-link league-menu-feature");
+  function makeLeagueLogoLink() {
+    var link = makeMenuLink("", "standings.htm", "league-menu-link league-menu-feature");
+    var logo = document.createElement("img");
+    var fallback = document.createElement("span");
+
+    logo.className = "league-menu-logo";
+    logo.src = "00-assets/images/ESLcropped-removebg-preview.png";
+    logo.alt = "European Super League";
+
+    fallback.className = "league-menu-fallback";
+    fallback.textContent = "ESL";
+
+    logo.addEventListener("error", function () {
+      logo.remove();
+      if (!link.contains(fallback)) {
+        link.appendChild(fallback);
+      }
+    });
+
+    link.appendChild(logo);
+    return link;
+  }
+
+  function makeEslMediaLogoLink() {
+    var link = makeMenuLink("", "00-eslmedia/homepage.html");
     var logo = document.createElement("img");
     var fallback = document.createElement("span");
 
     link.target = "_top";
-    logo.className = "league-menu-logo";
+    logo.className = "league-menu-eslm-logo";
     logo.src = "00-eslmedia/content/article images/ESLM.png";
     logo.alt = "ESL Media";
 
-    fallback.className = "league-menu-fallback";
-    fallback.textContent = "ESLM";
+    fallback.textContent = "ESL Media";
 
     logo.addEventListener("error", function () {
       logo.remove();
@@ -584,7 +629,13 @@
     linkWrap.className = "league-menu-links";
 
     links.forEach(function (link) {
-      linkWrap.appendChild(makeMenuLink(link.label, link.href));
+      var menuLink = link.logo === "eslm" ? makeEslMediaLogoLink() : makeMenuLink(link.label, link.href);
+
+      if (link.target) {
+        menuLink.target = link.target;
+      }
+
+      linkWrap.appendChild(menuLink);
     });
 
     toggle.addEventListener("click", function () {
@@ -649,10 +700,16 @@
       }
     ];
     var shell = document.createElement("nav");
+    var featureRow = document.createElement("div");
 
     shell.className = "league-menu-shell";
     shell.setAttribute("aria-label", "League navigation");
-    shell.appendChild(makeEslMediaLink());
+    featureRow.className = "league-menu-feature-row";
+    featureRow.appendChild(makeLeagueLogoLink());
+    shell.appendChild(featureRow);
+    shell.appendChild(makeMenuGroup("Media", [
+      { label: "ESL Media", href: "00-eslmedia/homepage.html", target: "_top", logo: "eslm" }
+    ]));
     groups.forEach(function (group) {
       shell.appendChild(makeMenuGroup(group.title, group.links));
     });
