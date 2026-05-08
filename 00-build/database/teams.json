@@ -7,10 +7,10 @@
         "starPlayer": {
             "name": "Larry Bird",
             "url": "../players/player697.htm",
-            "pos": "SF",
-            "age": "21",
-            "overall": "161",
-            "potential": "175"
+            "pos": "PF",
+            "age": "22",
+            "overall": "164",
+            "potential": "179"
         }
     },
     {
@@ -21,7 +21,7 @@
         "starPlayer": {
             "name": "Magic Johnson",
             "url": "../players/player698.htm",
-            "pos": "PG",
+            "pos": "SF",
             "age": "20",
             "overall": "164",
             "potential": "173"
@@ -35,7 +35,7 @@
         "starPlayer": {
             "name": "Cliff Robinson",
             "url": "../players/player881.htm",
-            "pos": "SF",
+            "pos": "PF",
             "age": "19",
             "overall": "119",
             "potential": "122"
@@ -51,8 +51,8 @@
             "url": "../players/player874.htm",
             "pos": "C",
             "age": "22",
-            "overall": "121",
-            "potential": "143"
+            "overall": "124",
+            "potential": "146"
         }
     },
     {
@@ -92,7 +92,7 @@
             "name": "Bernard King",
             "url": "../players/player713.htm",
             "pos": "SF",
-            "age": "21",
+            "age": "22",
             "overall": "120",
             "potential": "127"
         }
@@ -134,9 +134,9 @@
             "name": "Jack Sikma",
             "url": "../players/player870.htm",
             "pos": "C",
-            "age": "22",
-            "overall": "137",
-            "potential": "139"
+            "age": "23",
+            "overall": "139",
+            "potential": "141"
         }
     },
     {
@@ -149,8 +149,8 @@
             "url": "../players/player707.htm",
             "pos": "C",
             "age": "30",
-            "overall": "135",
-            "potential": "137"
+            "overall": "137",
+            "potential": "138"
         }
     },
     {
@@ -163,8 +163,8 @@
             "url": "../players/player1050.htm",
             "pos": "C",
             "age": "21",
-            "overall": "115",
-            "potential": "123"
+            "overall": "117",
+            "potential": "125"
         }
     },
     {
@@ -247,8 +247,8 @@
             "url": "../players/player879.htm",
             "pos": "SF",
             "age": "22",
-            "overall": "118",
-            "potential": "130"
+            "overall": "119",
+            "potential": "131"
         }
     },
     {
@@ -275,8 +275,8 @@
             "url": "../players/player699.htm",
             "pos": "PG",
             "age": "22",
-            "overall": "129",
-            "potential": "146"
+            "overall": "133",
+            "potential": "149"
         }
     },
     {
@@ -301,7 +301,7 @@
         "starPlayer": {
             "name": "Buck Williams",
             "url": "../players/player1051.htm",
-            "pos": "PF",
+            "pos": "C",
             "age": "19",
             "overall": "121",
             "potential": "130"
@@ -315,7 +315,7 @@
         "starPlayer": {
             "name": "John Long",
             "url": "../players/player1052.htm",
-            "pos": "SG",
+            "pos": "SF",
             "age": "23",
             "overall": "114",
             "potential": "123"

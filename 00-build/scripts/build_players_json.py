@@ -212,6 +212,8 @@ def load_mdb_ratings():
         return {}
 
     powershell_script = rf"""
+[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+$OutputEncoding = [Console]::OutputEncoding
 $path = '{MDB_PATH.replace("'", "''")}'
 $connStr = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=$path;Persist Security Info=False;"
 $conn = New-Object System.Data.OleDb.OleDbConnection($connStr)
@@ -237,6 +239,7 @@ $rows | ConvertTo-Json -Compress
             ["powershell", "-NoProfile", "-Command", powershell_script],
             capture_output=True,
             text=True,
+            encoding="utf-8",
             check=True,
         )
     except Exception as exc:

@@ -2,34 +2,96 @@
     "source": "freeagents.htm",
     "players": [
         {
-            "number": 23,
-            "name": "Allan Bristow",
-            "url": "./players/player802.htm",
-            "file": "player802.htm",
+            "number": 26,
+            "name": "Rich Yonakor",
+            "url": "./players/player801.htm",
+            "file": "player801.htm",
             "pos": "SF",
-            "age": 28,
-            "ht": "6-7",
-            "wt": 210,
+            "age": 21,
+            "ht": "6-9",
+            "wt": 220,
             "currentRatingColor": "#F2662A",
             "futureRatingColor": "#F2662A",
             "currentRating": "75",
-            "futureRating": "76",
-            "Ins": 39,
-            "Jps": 39,
-            "Fts": 80,
-            "3ps": 17,
-            "Hnd": 70,
-            "Pas": 65,
-            "Orb": 48,
-            "Drb": 51,
+            "futureRating": "75",
+            "Ins": 43,
+            "Jps": 38,
+            "Fts": 55,
+            "3ps": 0,
+            "Hnd": 33,
+            "Pas": 8,
+            "Orb": 60,
+            "Drb": 41,
+            "Psd": 48,
+            "Prd": 33,
+            "Stl": 30,
+            "Blk": 37,
+            "Qkn": 54,
+            "Jmp": 33,
+            "Str": 57,
+            "Sta": 67,
+            "rowClass": "row1"
+        },
+        {
+            "number": 17,
+            "name": "Clarence Kea",
+            "url": "./players/player804.htm",
+            "file": "player804.htm",
+            "pos": "SF",
+            "age": 20,
+            "ht": "6-7",
+            "wt": 220,
+            "currentRatingColor": "#F2662A",
+            "futureRatingColor": "#F2662A",
+            "currentRating": "73",
+            "futureRating": "75",
+            "Ins": 37,
+            "Jps": 44,
+            "Fts": 60,
+            "3ps": 0,
+            "Hnd": 33,
+            "Pas": 8,
+            "Orb": 52,
+            "Drb": 49,
             "Psd": 34,
-            "Prd": 40,
-            "Stl": 43,
-            "Blk": 7,
-            "Qkn": 56,
-            "Jmp": 44,
-            "Str": 40,
-            "Sta": 75,
+            "Prd": 32,
+            "Stl": 33,
+            "Blk": 21,
+            "Qkn": 55,
+            "Jmp": 61,
+            "Str": 52,
+            "Sta": 67,
+            "rowClass": "row2"
+        },
+        {
+            "number": 41,
+            "name": "Kevin Restani",
+            "url": "./players/player805.htm",
+            "file": "player805.htm",
+            "pos": "PF",
+            "age": 26,
+            "ht": "6-9",
+            "wt": 225,
+            "currentRatingColor": "#F2662A",
+            "futureRatingColor": "#F2662A",
+            "currentRating": "72",
+            "futureRating": "74",
+            "Ins": 40,
+            "Jps": 36,
+            "Fts": 72,
+            "3ps": 0,
+            "Hnd": 38,
+            "Pas": 21,
+            "Orb": 60,
+            "Drb": 43,
+            "Psd": 45,
+            "Prd": 23,
+            "Stl": 25,
+            "Blk": 38,
+            "Qkn": 45,
+            "Jmp": 32,
+            "Str": 46,
+            "Sta": 67,
             "rowClass": "row1"
         },
         {
@@ -95,6 +157,37 @@
             "rowClass": "row1"
         },
         {
+            "number": 30,
+            "name": "Trinidad Smith",
+            "url": "./players/player816.htm",
+            "file": "player816.htm",
+            "pos": "SF",
+            "age": 28,
+            "ht": "6-10",
+            "wt": 242,
+            "currentRatingColor": "#B0040C",
+            "futureRatingColor": "#B0040C",
+            "currentRating": "32",
+            "futureRating": "33",
+            "Ins": 7,
+            "Jps": 29,
+            "Fts": 47,
+            "3ps": 3,
+            "Hnd": 2,
+            "Pas": 0,
+            "Orb": 3,
+            "Drb": 6,
+            "Psd": 9,
+            "Prd": 3,
+            "Stl": 3,
+            "Blk": 11,
+            "Qkn": 40,
+            "Jmp": 50,
+            "Str": 66,
+            "Sta": 55,
+            "rowClass": "row2"
+        },
+        {
             "number": 32,
             "name": "Simon Tobin",
             "url": "./players/player817.htm",
@@ -123,7 +216,7 @@
             "Jmp": 36,
             "Str": 33,
             "Sta": 42,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 54,
@@ -154,7 +247,7 @@
             "Jmp": 37,
             "Str": 65,
             "Sta": 44,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 21,
@@ -185,7 +278,7 @@
             "Jmp": 47,
             "Str": 51,
             "Sta": 34,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 9,
@@ -193,7 +286,7 @@
             "url": "./players/player820.htm",
             "file": "player820.htm",
             "pos": "SG",
-            "age": 23,
+            "age": 24,
             "ht": "6-3",
             "wt": 216,
             "currentRatingColor": "#B0040C",
@@ -216,7 +309,7 @@
             "Jmp": 37,
             "Str": 52,
             "Sta": 71,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 20,
@@ -247,7 +340,7 @@
             "Jmp": 32,
             "Str": 2,
             "Sta": 74,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 31,
@@ -278,7 +371,7 @@
             "Jmp": 57,
             "Str": 68,
             "Sta": 33,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 26,
@@ -309,7 +402,7 @@
             "Jmp": 39,
             "Str": 49,
             "Sta": 69,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 54,
@@ -340,7 +433,7 @@
             "Jmp": 31,
             "Str": 65,
             "Sta": 11,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 27,
@@ -371,7 +464,7 @@
             "Jmp": 27,
             "Str": 52,
             "Sta": 64,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 50,
@@ -402,7 +495,7 @@
             "Jmp": 45,
             "Str": 67,
             "Sta": 47,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 53,
@@ -433,7 +526,7 @@
             "Jmp": 28,
             "Str": 53,
             "Sta": 43,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 44,
@@ -464,7 +557,7 @@
             "Jmp": 25,
             "Str": 48,
             "Sta": 32,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 34,
@@ -495,7 +588,7 @@
             "Jmp": 62,
             "Str": 54,
             "Sta": 16,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 3,
@@ -526,7 +619,7 @@
             "Jmp": 36,
             "Str": 55,
             "Sta": 48,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 16,
@@ -557,7 +650,7 @@
             "Jmp": 50,
             "Str": 37,
             "Sta": 42,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 40,
@@ -588,7 +681,7 @@
             "Jmp": 26,
             "Str": 58,
             "Sta": 37,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 43,
@@ -596,7 +689,7 @@
             "url": "./players/player833.htm",
             "file": "player833.htm",
             "pos": "C",
-            "age": 34,
+            "age": 35,
             "ht": "6-10",
             "wt": 227,
             "currentRatingColor": "#B0040C",
@@ -619,7 +712,7 @@
             "Jmp": 34,
             "Str": 57,
             "Sta": 41,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 2,
@@ -650,7 +743,7 @@
             "Jmp": 35,
             "Str": 35,
             "Sta": 34,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 43,
@@ -681,7 +774,7 @@
             "Jmp": 21,
             "Str": 37,
             "Sta": 46,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 42,
@@ -712,7 +805,7 @@
             "Jmp": 61,
             "Str": 73,
             "Sta": 15,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 32,
@@ -743,7 +836,7 @@
             "Jmp": 30,
             "Str": 70,
             "Sta": 44,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 27,
@@ -774,7 +867,7 @@
             "Jmp": 32,
             "Str": 59,
             "Sta": 50,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 45,
@@ -805,7 +898,7 @@
             "Jmp": 39,
             "Str": 58,
             "Sta": 3,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 24,
@@ -836,7 +929,7 @@
             "Jmp": 23,
             "Str": 54,
             "Sta": 41,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 44,
@@ -867,7 +960,7 @@
             "Jmp": 29,
             "Str": 69,
             "Sta": 13,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 31,
@@ -898,7 +991,7 @@
             "Jmp": 21,
             "Str": 72,
             "Sta": 44,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 53,
@@ -929,7 +1022,7 @@
             "Jmp": 31,
             "Str": 69,
             "Sta": 19,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 31,
@@ -960,7 +1053,7 @@
             "Jmp": 41,
             "Str": 67,
             "Sta": 28,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 33,
@@ -991,7 +1084,7 @@
             "Jmp": 22,
             "Str": 56,
             "Sta": 1,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 32,
@@ -1022,7 +1115,7 @@
             "Jmp": 34,
             "Str": 59,
             "Sta": 39,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 50,
@@ -1053,7 +1146,7 @@
             "Jmp": 37,
             "Str": 66,
             "Sta": 26,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 52,
@@ -1061,7 +1154,7 @@
             "url": "./players/player848.htm",
             "file": "player848.htm",
             "pos": "PF",
-            "age": 34,
+            "age": 35,
             "ht": "6-10",
             "wt": 209,
             "currentRatingColor": "#B0040C",
@@ -1084,7 +1177,7 @@
             "Jmp": 13,
             "Str": 57,
             "Sta": 53,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 30,
@@ -1115,7 +1208,7 @@
             "Jmp": 19,
             "Str": 57,
             "Sta": 26,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 11,
@@ -1146,7 +1239,7 @@
             "Jmp": 21,
             "Str": 62,
             "Sta": 70,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 28,
@@ -1177,7 +1270,7 @@
             "Jmp": 33,
             "Str": 59,
             "Sta": 38,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 32,
@@ -1208,7 +1301,7 @@
             "Jmp": 26,
             "Str": 54,
             "Sta": 8,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 34,
@@ -1239,7 +1332,7 @@
             "Jmp": 29,
             "Str": 51,
             "Sta": 17,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 42,
@@ -1270,7 +1363,7 @@
             "Jmp": 28,
             "Str": 55,
             "Sta": 38,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 30,
@@ -1301,7 +1394,7 @@
             "Jmp": 37,
             "Str": 55,
             "Sta": 21,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 34,
@@ -1332,7 +1425,7 @@
             "Jmp": 30,
             "Str": 41,
             "Sta": 50,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 35,
@@ -1363,7 +1456,7 @@
             "Jmp": 26,
             "Str": 43,
             "Sta": 35,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 3,
@@ -1394,7 +1487,7 @@
             "Jmp": 44,
             "Str": 14,
             "Sta": 77,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 10,
@@ -1425,7 +1518,7 @@
             "Jmp": 23,
             "Str": 41,
             "Sta": 54,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 40,
@@ -1456,7 +1549,7 @@
             "Jmp": 15,
             "Str": 67,
             "Sta": 17,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 51,
@@ -1487,7 +1580,7 @@
             "Jmp": 15,
             "Str": 45,
             "Sta": 15,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 2,
@@ -1518,7 +1611,7 @@
             "Jmp": 28,
             "Str": 41,
             "Sta": 20,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 34,
@@ -1549,7 +1642,7 @@
             "Jmp": 29,
             "Str": 51,
             "Sta": 12,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 4,
@@ -1580,7 +1673,7 @@
             "Jmp": 25,
             "Str": 38,
             "Sta": 36,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 15,
@@ -1611,7 +1704,7 @@
             "Jmp": 35,
             "Str": 66,
             "Sta": 32,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 32,
@@ -1642,7 +1735,7 @@
             "Jmp": 18,
             "Str": 52,
             "Sta": 6,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 5,
@@ -1673,7 +1766,7 @@
             "Jmp": 47,
             "Str": 32,
             "Sta": 32,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 50,
@@ -1704,7 +1797,7 @@
             "Jmp": 14,
             "Str": 60,
             "Sta": 38,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 10,
@@ -1712,7 +1805,7 @@
             "url": "./players/player869.htm",
             "file": "player869.htm",
             "pos": "SG",
-            "age": 24,
+            "age": 25,
             "ht": "6-1",
             "wt": 224,
             "currentRatingColor": "#B0040C",
@@ -1735,37 +1828,6 @@
             "Jmp": 25,
             "Str": 69,
             "Sta": 41,
-            "rowClass": "row2"
-        },
-        {
-            "number": 27,
-            "name": "Calvin Garrett",
-            "url": "./players/player951.htm",
-            "file": "player951.htm",
-            "pos": "SG",
-            "age": 23,
-            "ht": "6-7",
-            "wt": 190,
-            "currentRatingColor": "#F2662A",
-            "futureRatingColor": "#F2662A",
-            "currentRating": "78",
-            "futureRating": "79",
-            "Ins": 43,
-            "Jps": 60,
-            "Fts": 72,
-            "3ps": 0,
-            "Hnd": 36,
-            "Pas": 22,
-            "Orb": 28,
-            "Drb": 31,
-            "Psd": 30,
-            "Prd": 51,
-            "Stl": 51,
-            "Blk": 13,
-            "Qkn": 66,
-            "Jmp": 29,
-            "Str": 43,
-            "Sta": 74,
             "rowClass": "row1"
         },
         {
@@ -1800,6 +1862,68 @@
             "rowClass": "row2"
         },
         {
+            "number": 15,
+            "name": "Clay Johnson",
+            "url": "./players/player957.htm",
+            "file": "player957.htm",
+            "pos": "PG",
+            "age": 23,
+            "ht": "6-4",
+            "wt": 175,
+            "currentRatingColor": "#F2662A",
+            "futureRatingColor": "#F2662A",
+            "currentRating": "74",
+            "futureRating": "75",
+            "Ins": 45,
+            "Jps": 35,
+            "Fts": 65,
+            "3ps": 0,
+            "Hnd": 30,
+            "Pas": 15,
+            "Orb": 28,
+            "Drb": 15,
+            "Psd": 21,
+            "Prd": 60,
+            "Stl": 67,
+            "Blk": 22,
+            "Qkn": 87,
+            "Jmp": 48,
+            "Str": 29,
+            "Sta": 72,
+            "rowClass": "row1"
+        },
+        {
+            "number": 40,
+            "name": "Toby Knight",
+            "url": "./players/player959.htm",
+            "file": "player959.htm",
+            "pos": "PF",
+            "age": 24,
+            "ht": "6-9",
+            "wt": 210,
+            "currentRatingColor": "#F2662A",
+            "futureRatingColor": "#F2662A",
+            "currentRating": "75",
+            "futureRating": "75",
+            "Ins": 44,
+            "Jps": 62,
+            "Fts": 76,
+            "3ps": 0,
+            "Hnd": 40,
+            "Pas": 18,
+            "Orb": 53,
+            "Drb": 35,
+            "Psd": 41,
+            "Prd": 29,
+            "Stl": 35,
+            "Blk": 47,
+            "Qkn": 46,
+            "Jmp": 26,
+            "Str": 72,
+            "Sta": 68,
+            "rowClass": "row2"
+        },
+        {
             "number": 1,
             "name": "Howard Wood",
             "url": "./players/player967.htm",
@@ -1831,6 +1955,68 @@
             "rowClass": "row1"
         },
         {
+            "number": 25,
+            "name": "Glenn Hagan",
+            "url": "./players/player970.htm",
+            "file": "player970.htm",
+            "pos": "PG",
+            "age": 24,
+            "ht": "6-0",
+            "wt": 170,
+            "currentRatingColor": "#F2662A",
+            "futureRatingColor": "#F2662A",
+            "currentRating": "62",
+            "futureRating": "62",
+            "Ins": 50,
+            "Jps": 28,
+            "Fts": 55,
+            "3ps": 0,
+            "Hnd": 86,
+            "Pas": 17,
+            "Orb": 11,
+            "Drb": 12,
+            "Psd": 14,
+            "Prd": 60,
+            "Stl": 46,
+            "Blk": 0,
+            "Qkn": 77,
+            "Jmp": 31,
+            "Str": 8,
+            "Sta": 72,
+            "rowClass": "row2"
+        },
+        {
+            "number": 25,
+            "name": "David Burns",
+            "url": "./players/player971.htm",
+            "file": "player971.htm",
+            "pos": "PG",
+            "age": 21,
+            "ht": "6-2",
+            "wt": 180,
+            "currentRatingColor": "#B0040C",
+            "futureRatingColor": "#B0040C",
+            "currentRating": "57",
+            "futureRating": "57",
+            "Ins": 51,
+            "Jps": 36,
+            "Fts": 52,
+            "3ps": 0,
+            "Hnd": 18,
+            "Pas": 26,
+            "Orb": 8,
+            "Drb": 14,
+            "Psd": 16,
+            "Prd": 52,
+            "Stl": 47,
+            "Blk": 0,
+            "Qkn": 79,
+            "Jmp": 37,
+            "Str": 23,
+            "Sta": 72,
+            "rowClass": "row1"
+        },
+        {
             "number": 3,
             "name": "Erwin Brown",
             "url": "./players/player972.htm",
@@ -1859,6 +2045,68 @@
             "Jmp": 30,
             "Str": 32,
             "Sta": 56,
+            "rowClass": "row2"
+        },
+        {
+            "number": 4,
+            "name": "Jamel Tandy",
+            "url": "./players/player973.htm",
+            "file": "player973.htm",
+            "pos": "PG",
+            "age": 27,
+            "ht": "6-3",
+            "wt": 178,
+            "currentRatingColor": "#B0040C",
+            "futureRatingColor": "#B0040C",
+            "currentRating": "37",
+            "futureRating": "38",
+            "Ins": 2,
+            "Jps": 39,
+            "Fts": 58,
+            "3ps": 16,
+            "Hnd": 33,
+            "Pas": 9,
+            "Orb": 1,
+            "Drb": 4,
+            "Psd": 1,
+            "Prd": 15,
+            "Stl": 5,
+            "Blk": 2,
+            "Qkn": 74,
+            "Jmp": 36,
+            "Str": 34,
+            "Sta": 46,
+            "rowClass": "row1"
+        },
+        {
+            "number": 7,
+            "name": "Keneth Williams",
+            "url": "./players/player974.htm",
+            "file": "player974.htm",
+            "pos": "SG",
+            "age": 31,
+            "ht": "6-5",
+            "wt": 191,
+            "currentRatingColor": "#B0040C",
+            "futureRatingColor": "#B0040C",
+            "currentRating": "38",
+            "futureRating": "40",
+            "Ins": 2,
+            "Jps": 34,
+            "Fts": 60,
+            "3ps": 16,
+            "Hnd": 26,
+            "Pas": 2,
+            "Orb": 5,
+            "Drb": 7,
+            "Psd": 13,
+            "Prd": 10,
+            "Stl": 3,
+            "Blk": 5,
+            "Qkn": 63,
+            "Jmp": 30,
+            "Str": 64,
+            "Sta": 68,
             "rowClass": "row2"
         },
         {
@@ -2079,6 +2327,37 @@
             "rowClass": "row1"
         },
         {
+            "number": 50,
+            "name": "Anacleto Lizarraga",
+            "url": "./players/player987.htm",
+            "file": "player987.htm",
+            "pos": "C",
+            "age": 28,
+            "ht": "7-3",
+            "wt": 229,
+            "currentRatingColor": "#B0040C",
+            "futureRatingColor": "#B0040C",
+            "currentRating": "29",
+            "futureRating": "31",
+            "Ins": 9,
+            "Jps": 29,
+            "Fts": 61,
+            "3ps": 0,
+            "Hnd": 24,
+            "Pas": 0,
+            "Orb": 16,
+            "Drb": 7,
+            "Psd": 15,
+            "Prd": 3,
+            "Stl": 1,
+            "Blk": 7,
+            "Qkn": 4,
+            "Jmp": 29,
+            "Str": 60,
+            "Sta": 29,
+            "rowClass": "row2"
+        },
+        {
             "number": 43,
             "name": "Cary Gonzalez",
             "url": "./players/player989.htm",
@@ -2107,6 +2386,37 @@
             "Jmp": 36,
             "Str": 56,
             "Sta": 27,
+            "rowClass": "row1"
+        },
+        {
+            "number": 30,
+            "name": "Conrad Waterman",
+            "url": "./players/player990.htm",
+            "file": "player990.htm",
+            "pos": "PG",
+            "age": 30,
+            "ht": "6-8",
+            "wt": 159,
+            "currentRatingColor": "#B0040C",
+            "futureRatingColor": "#B0040C",
+            "currentRating": "33",
+            "futureRating": "33",
+            "Ins": 4,
+            "Jps": 42,
+            "Fts": 61,
+            "3ps": 1,
+            "Hnd": 9,
+            "Pas": 2,
+            "Orb": 0,
+            "Drb": 4,
+            "Psd": 2,
+            "Prd": 2,
+            "Stl": 3,
+            "Blk": 1,
+            "Qkn": 67,
+            "Jmp": 39,
+            "Str": 14,
+            "Sta": 57,
             "rowClass": "row2"
         },
         {
@@ -2363,7 +2673,7 @@
             "url": "./players/player999.htm",
             "file": "player999.htm",
             "pos": "C",
-            "age": 21,
+            "age": 22,
             "ht": "7-0",
             "wt": 233,
             "currentRatingColor": "#B0040C",
@@ -3200,7 +3510,7 @@
             "url": "./players/player1026.htm",
             "file": "player1026.htm",
             "pos": "PG",
-            "age": 17,
+            "age": 18,
             "ht": "6-2",
             "wt": 192,
             "currentRatingColor": "#B0040C",
@@ -3262,7 +3572,7 @@
             "url": "./players/player1028.htm",
             "file": "player1028.htm",
             "pos": "C",
-            "age": 15,
+            "age": 16,
             "ht": "7-0",
             "wt": 222,
             "currentRatingColor": "#B0040C",
@@ -3386,7 +3696,7 @@
             "url": "./players/player1032.htm",
             "file": "player1032.htm",
             "pos": "PF",
-            "age": 31,
+            "age": 32,
             "ht": "6-10",
             "wt": 232,
             "currentRatingColor": "#B0040C",
@@ -3603,7 +3913,7 @@
             "url": "./players/player1039.htm",
             "file": "player1039.htm",
             "pos": "SF",
-            "age": 23,
+            "age": 24,
             "ht": "6-6",
             "wt": 189,
             "currentRatingColor": "#B0040C",
@@ -3727,7 +4037,7 @@
             "url": "./players/player1043.htm",
             "file": "player1043.htm",
             "pos": "SG",
-            "age": 22,
+            "age": 23,
             "ht": "6-0",
             "wt": 214,
             "currentRatingColor": "#B0040C",
@@ -3758,7 +4068,7 @@
             "url": "./players/player1044.htm",
             "file": "player1044.htm",
             "pos": "PF",
-            "age": 16,
+            "age": 17,
             "ht": "6-9",
             "wt": 221,
             "currentRatingColor": "#B0040C",
@@ -3815,97 +4125,66 @@
             "rowClass": "row1"
         },
         {
-            "number": 35,
-            "name": "Sam Pellom",
-            "url": "./players/player1111.htm",
-            "file": "player1111.htm",
-            "pos": "PF",
-            "age": 28,
-            "ht": "6-9",
-            "wt": 225,
-            "currentRatingColor": "#F2662A",
-            "futureRatingColor": "#F2662A",
-            "currentRating": "79",
-            "futureRating": "79",
-            "Ins": 41,
-            "Jps": 30,
-            "Fts": 65,
-            "3ps": 0,
-            "Hnd": 30,
-            "Pas": 11,
-            "Orb": 58,
-            "Drb": 49,
-            "Psd": 49,
-            "Prd": 31,
-            "Stl": 46,
-            "Blk": 73,
-            "Qkn": 43,
-            "Jmp": 36,
-            "Str": 50,
-            "Sta": 70,
-            "rowClass": "row2"
-        },
-        {
-            "number": 51,
-            "name": "Ray Tolbert",
-            "url": "./players/player1119.htm",
-            "file": "player1119.htm",
-            "pos": "PF",
-            "age": 21,
-            "ht": "6-9",
-            "wt": 225,
-            "currentRatingColor": "#F2662A",
-            "futureRatingColor": "#F2662A",
-            "currentRating": "76",
-            "futureRating": "76",
-            "Ins": 40,
-            "Jps": 28,
-            "Fts": 38,
-            "3ps": 0,
-            "Hnd": 28,
-            "Pas": 18,
-            "Orb": 57,
-            "Drb": 45,
-            "Psd": 47,
-            "Prd": 22,
-            "Stl": 29,
-            "Blk": 58,
-            "Qkn": 44,
-            "Jmp": 49,
-            "Str": 57,
-            "Sta": 67,
-            "rowClass": "row1"
-        },
-        {
-            "number": 7,
-            "name": "James Earl Ray",
-            "url": "./players/player1121.htm",
-            "file": "player1121.htm",
+            "number": 5,
+            "name": "Charles Whitney",
+            "url": "./players/player1132.htm",
+            "file": "player1132.htm",
             "pos": "SF",
             "age": 22,
-            "ht": "6-8",
-            "wt": 215,
+            "ht": "6-5",
+            "wt": 235,
             "currentRatingColor": "#F2662A",
             "futureRatingColor": "#F2662A",
-            "currentRating": "74",
-            "futureRating": "76",
-            "Ins": 35,
-            "Jps": 24,
-            "Fts": 51,
+            "currentRating": "69",
+            "futureRating": "70",
+            "Ins": 42,
+            "Jps": 43,
+            "Fts": 69,
             "3ps": 0,
-            "Hnd": 21,
-            "Pas": 20,
-            "Orb": 40,
-            "Drb": 51,
-            "Psd": 44,
-            "Prd": 44,
-            "Stl": 60,
-            "Blk": 58,
+            "Hnd": 39,
+            "Pas": 24,
+            "Orb": 34,
+            "Drb": 39,
+            "Psd": 31,
+            "Prd": 46,
+            "Stl": 80,
+            "Blk": 15,
             "Qkn": 61,
-            "Jmp": 46,
-            "Str": 43,
-            "Sta": 67,
+            "Jmp": 32,
+            "Str": 38,
+            "Sta": 69,
             "rowClass": "row2"
+        },
+        {
+            "number": 10,
+            "name": "Robert Smith",
+            "url": "./players/player1142.htm",
+            "file": "player1142.htm",
+            "pos": "PG",
+            "age": 24,
+            "ht": "5-11",
+            "wt": 165,
+            "currentRatingColor": "#F2662A",
+            "futureRatingColor": "#F2662A",
+            "currentRating": "60",
+            "futureRating": "61",
+            "Ins": 49,
+            "Jps": 41,
+            "Fts": 87,
+            "3ps": 0,
+            "Hnd": 37,
+            "Pas": 16,
+            "Orb": 6,
+            "Drb": 15,
+            "Psd": 13,
+            "Prd": 57,
+            "Stl": 34,
+            "Blk": 5,
+            "Qkn": 93,
+            "Jmp": 36,
+            "Str": 15,
+            "Sta": 72,
+            "rowClass": "row1"
         },
         {
             "number": 33,
@@ -3936,7 +4215,7 @@
             "Jmp": 37,
             "Str": 55,
             "Sta": 64,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 52,
@@ -3967,6 +4246,99 @@
             "Jmp": 29,
             "Str": 62,
             "Sta": 67,
+            "rowClass": "row1"
+        },
+        {
+            "number": 27,
+            "name": "Colton Higley",
+            "url": "./players/player1148.htm",
+            "file": "player1148.htm",
+            "pos": "SF",
+            "age": 19,
+            "ht": "6-8",
+            "wt": 231,
+            "currentRatingColor": "#B0040C",
+            "futureRatingColor": "#B0040C",
+            "currentRating": "32",
+            "futureRating": "35",
+            "Ins": 12,
+            "Jps": 25,
+            "Fts": 51,
+            "3ps": 8,
+            "Hnd": 26,
+            "Pas": 2,
+            "Orb": 6,
+            "Drb": 8,
+            "Psd": 5,
+            "Prd": 2,
+            "Stl": 7,
+            "Blk": 8,
+            "Qkn": 34,
+            "Jmp": 53,
+            "Str": 58,
+            "Sta": 43,
+            "rowClass": "row2"
+        },
+        {
+            "number": 25,
+            "name": "Orlando Dirks",
+            "url": "./players/player1152.htm",
+            "file": "player1152.htm",
+            "pos": "SG",
+            "age": 23,
+            "ht": "6-6",
+            "wt": 209,
+            "currentRatingColor": "#B0040C",
+            "futureRatingColor": "#B0040C",
+            "currentRating": "29",
+            "futureRating": "35",
+            "Ins": 6,
+            "Jps": 28,
+            "Fts": 63,
+            "3ps": 1,
+            "Hnd": 15,
+            "Pas": 6,
+            "Orb": 7,
+            "Drb": 3,
+            "Psd": 2,
+            "Prd": 4,
+            "Stl": 2,
+            "Blk": 1,
+            "Qkn": 57,
+            "Jmp": 30,
+            "Str": 65,
+            "Sta": 63,
+            "rowClass": "row1"
+        },
+        {
+            "number": 10,
+            "name": "John Tandy",
+            "url": "./players/player1153.htm",
+            "file": "player1153.htm",
+            "pos": "PG",
+            "age": 21,
+            "ht": "5-8",
+            "wt": 215,
+            "currentRatingColor": "#B0040C",
+            "futureRatingColor": "#B0040C",
+            "currentRating": "24",
+            "futureRating": "33",
+            "Ins": 6,
+            "Jps": 20,
+            "Fts": 56,
+            "3ps": 6,
+            "Hnd": 28,
+            "Pas": 4,
+            "Orb": 2,
+            "Drb": 3,
+            "Psd": 0,
+            "Prd": 5,
+            "Stl": 14,
+            "Blk": 1,
+            "Qkn": 73,
+            "Jmp": 40,
+            "Str": 53,
+            "Sta": 33,
             "rowClass": "row2"
         },
         {
@@ -4001,6 +4373,37 @@
             "rowClass": "row1"
         },
         {
+            "number": 22,
+            "name": "Jarod Hazel",
+            "url": "./players/player1160.htm",
+            "file": "player1160.htm",
+            "pos": "SG",
+            "age": 30,
+            "ht": "6-5",
+            "wt": 222,
+            "currentRatingColor": "#B0040C",
+            "futureRatingColor": "#B0040C",
+            "currentRating": "31",
+            "futureRating": "32",
+            "Ins": 3,
+            "Jps": 32,
+            "Fts": 48,
+            "3ps": 8,
+            "Hnd": 13,
+            "Pas": 3,
+            "Orb": 9,
+            "Drb": 1,
+            "Psd": 2,
+            "Prd": 11,
+            "Stl": 3,
+            "Blk": 2,
+            "Qkn": 62,
+            "Jmp": 31,
+            "Str": 38,
+            "Sta": 65,
+            "rowClass": "row2"
+        },
+        {
             "number": 54,
             "name": "Mitchell Johnson",
             "url": "./players/player1161.htm",
@@ -4029,7 +4432,7 @@
             "Jmp": 42,
             "Str": 57,
             "Sta": 12,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 24,
@@ -4060,7 +4463,7 @@
             "Jmp": 29,
             "Str": 68,
             "Sta": 67,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 11,
@@ -4091,6 +4494,37 @@
             "Jmp": 27,
             "Str": 47,
             "Sta": 64,
+            "rowClass": "row1"
+        },
+        {
+            "number": 6,
+            "name": "John Crutcher",
+            "url": "./players/player1164.htm",
+            "file": "player1164.htm",
+            "pos": "SG",
+            "age": 34,
+            "ht": "6-3",
+            "wt": 194,
+            "currentRatingColor": "#B0040C",
+            "futureRatingColor": "#B0040C",
+            "currentRating": "30",
+            "futureRating": "31",
+            "Ins": 12,
+            "Jps": 12,
+            "Fts": 39,
+            "3ps": 10,
+            "Hnd": 37,
+            "Pas": 7,
+            "Orb": 2,
+            "Drb": 0,
+            "Psd": 3,
+            "Prd": 7,
+            "Stl": 10,
+            "Blk": 9,
+            "Qkn": 62,
+            "Jmp": 55,
+            "Str": 46,
+            "Sta": 63,
             "rowClass": "row2"
         },
         {
@@ -4156,12 +4590,43 @@
             "rowClass": "row2"
         },
         {
+            "number": 0,
+            "name": "Conrad Mercurio",
+            "url": "./players/player1168.htm",
+            "file": "player1168.htm",
+            "pos": "C",
+            "age": 31,
+            "ht": "7-0",
+            "wt": 237,
+            "currentRatingColor": "#B0040C",
+            "futureRatingColor": "#B0040C",
+            "currentRating": "28",
+            "futureRating": "30",
+            "Ins": 2,
+            "Jps": 9,
+            "Fts": 35,
+            "3ps": 12,
+            "Hnd": 20,
+            "Pas": 0,
+            "Orb": 10,
+            "Drb": 10,
+            "Psd": 10,
+            "Prd": 2,
+            "Stl": 4,
+            "Blk": 10,
+            "Qkn": 0,
+            "Jmp": 46,
+            "Str": 53,
+            "Sta": 22,
+            "rowClass": "row1"
+        },
+        {
             "number": 13,
             "name": "Brian Trujillo",
             "url": "./players/player1170.htm",
             "file": "player1170.htm",
             "pos": "SF",
-            "age": 16,
+            "age": 17,
             "ht": "6-10",
             "wt": 220,
             "currentRatingColor": "#B0040C",
@@ -4184,7 +4649,7 @@
             "Jmp": 53,
             "Str": 52,
             "Sta": 30,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 50,
@@ -4192,7 +4657,7 @@
             "url": "./players/player1171.htm",
             "file": "player1171.htm",
             "pos": "C",
-            "age": 28,
+            "age": 29,
             "ht": "7-0",
             "wt": 216,
             "currentRatingColor": "#B0040C",
@@ -4215,7 +4680,7 @@
             "Jmp": 27,
             "Str": 67,
             "Sta": 44,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 32,
@@ -4246,7 +4711,7 @@
             "Jmp": 24,
             "Str": 50,
             "Sta": 6,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 28,
@@ -4277,7 +4742,7 @@
             "Jmp": 18,
             "Str": 47,
             "Sta": 54,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 30,
@@ -4308,7 +4773,7 @@
             "Jmp": 37,
             "Str": 63,
             "Sta": 35,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 54,
@@ -4339,7 +4804,7 @@
             "Jmp": 56,
             "Str": 74,
             "Sta": 18,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 51,
@@ -4370,7 +4835,7 @@
             "Jmp": 52,
             "Str": 51,
             "Sta": 16,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 52,
@@ -4401,7 +4866,7 @@
             "Jmp": 33,
             "Str": 59,
             "Sta": 30,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 52,
@@ -4432,7 +4897,7 @@
             "Jmp": 36,
             "Str": 49,
             "Sta": 14,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 51,
@@ -4463,7 +4928,7 @@
             "Jmp": 41,
             "Str": 68,
             "Sta": 48,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 20,
@@ -4494,7 +4959,7 @@
             "Jmp": 27,
             "Str": 49,
             "Sta": 58,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 12,
@@ -4525,7 +4990,7 @@
             "Jmp": 24,
             "Str": 19,
             "Sta": 77,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 40,
@@ -4556,7 +5021,7 @@
             "Jmp": 24,
             "Str": 55,
             "Sta": 46,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 40,
@@ -4587,7 +5052,7 @@
             "Jmp": 33,
             "Str": 73,
             "Sta": 24,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 51,
@@ -4618,7 +5083,7 @@
             "Jmp": 24,
             "Str": 67,
             "Sta": 18,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 34,
@@ -4649,7 +5114,7 @@
             "Jmp": 33,
             "Str": 13,
             "Sta": 60,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 54,
@@ -4680,7 +5145,7 @@
             "Jmp": 20,
             "Str": 57,
             "Sta": 27,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 40,
@@ -4711,7 +5176,7 @@
             "Jmp": 46,
             "Str": 68,
             "Sta": 48,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 3,
@@ -4742,7 +5207,7 @@
             "Jmp": 48,
             "Str": 55,
             "Sta": 34,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 54,
@@ -4773,7 +5238,7 @@
             "Jmp": 25,
             "Str": 57,
             "Sta": 18,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 9,
@@ -4804,7 +5269,7 @@
             "Jmp": 37,
             "Str": 57,
             "Sta": 22,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 42,
@@ -4835,7 +5300,7 @@
             "Jmp": 39,
             "Str": 70,
             "Sta": 3,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 24,
@@ -4866,7 +5331,7 @@
             "Jmp": 33,
             "Str": 70,
             "Sta": 34,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 23,
@@ -4897,7 +5362,7 @@
             "Jmp": 38,
             "Str": 64,
             "Sta": 59,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 33,
@@ -4928,7 +5393,7 @@
             "Jmp": 43,
             "Str": 62,
             "Sta": 46,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 30,
@@ -4959,7 +5424,7 @@
             "Jmp": 29,
             "Str": 55,
             "Sta": 41,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 40,
@@ -4990,7 +5455,7 @@
             "Jmp": 35,
             "Str": 37,
             "Sta": 53,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 34,
@@ -5021,7 +5486,7 @@
             "Jmp": 29,
             "Str": 46,
             "Sta": 38,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 53,
@@ -5052,7 +5517,7 @@
             "Jmp": 39,
             "Str": 63,
             "Sta": 19,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 30,
@@ -5083,7 +5548,7 @@
             "Jmp": 41,
             "Str": 40,
             "Sta": 42,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 55,
@@ -5114,7 +5579,7 @@
             "Jmp": 22,
             "Str": 76,
             "Sta": 42,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 0,
@@ -5145,7 +5610,7 @@
             "Jmp": 29,
             "Str": 57,
             "Sta": 23,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 34,
@@ -5176,7 +5641,7 @@
             "Jmp": 33,
             "Str": 56,
             "Sta": 10,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 54,
@@ -5184,7 +5649,7 @@
             "url": "./players/player1203.htm",
             "file": "player1203.htm",
             "pos": "C",
-            "age": 27,
+            "age": 28,
             "ht": "7-0",
             "wt": 245,
             "currentRatingColor": "#B0040C",
@@ -5207,7 +5672,7 @@
             "Jmp": 40,
             "Str": 37,
             "Sta": 39,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 52,
@@ -5238,7 +5703,7 @@
             "Jmp": 31,
             "Str": 61,
             "Sta": 5,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 31,
@@ -5246,7 +5711,7 @@
             "url": "./players/player1205.htm",
             "file": "player1205.htm",
             "pos": "PF",
-            "age": 18,
+            "age": 19,
             "ht": "6-9",
             "wt": 213,
             "currentRatingColor": "#B0040C",
@@ -5269,7 +5734,7 @@
             "Jmp": 39,
             "Str": 39,
             "Sta": 13,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 31,
@@ -5300,7 +5765,7 @@
             "Jmp": 30,
             "Str": 46,
             "Sta": 45,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 55,
@@ -5331,7 +5796,7 @@
             "Jmp": 10,
             "Str": 59,
             "Sta": 40,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 54,
@@ -5362,7 +5827,7 @@
             "Jmp": 30,
             "Str": 55,
             "Sta": 23,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 23,
@@ -5393,7 +5858,7 @@
             "Jmp": 39,
             "Str": 44,
             "Sta": 31,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 51,
@@ -5424,7 +5889,7 @@
             "Jmp": 15,
             "Str": 62,
             "Sta": 6,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 45,
@@ -5455,7 +5920,7 @@
             "Jmp": 29,
             "Str": 44,
             "Sta": 21,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 35,
@@ -5486,7 +5951,7 @@
             "Jmp": 19,
             "Str": 42,
             "Sta": 31,
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "number": 43,
@@ -5517,7 +5982,7 @@
             "Jmp": 28,
             "Str": 55,
             "Sta": 11,
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "number": 50,
@@ -5548,7 +6013,7 @@
             "Jmp": 32,
             "Str": 37,
             "Sta": 38,
-            "rowClass": "row1"
+            "rowClass": "row2"
         }
     ]
 }
