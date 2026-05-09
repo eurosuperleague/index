@@ -583,11 +583,24 @@
     link.target = "data";
     link.href = href;
     link.textContent = label;
+    link.addEventListener("click", function (event) {
+      if (link.target !== "data") {
+        return;
+      }
+      try {
+        if (window.parent && window.parent.frames && window.parent.frames.data) {
+          event.preventDefault();
+          window.parent.frames.data.location.href = link.getAttribute("href");
+        }
+      } catch (error) {
+        // Let default navigation proceed when frame access is blocked.
+      }
+    });
     return link;
   }
 
   function makeLeagueLogoLink() {
-    var link = makeMenuLink("", "league%20dashboard.htm", "league-menu-link league-menu-feature");
+    var link = makeMenuLink("", "00-assets/html/league%20dashboard.htm", "league-menu-link league-menu-feature");
     var logo = document.createElement("img");
     var fallback = document.createElement("span");
 
@@ -677,6 +690,7 @@
       {
         title: "League",
         links: [
+          { label: "League Dashboard", href: "00-assets/html/league%20dashboard.htm" },
           { label: "Standings", href: "standings.htm" },
           { label: "Schedule", href: "schedule.htm" },
           { label: "League Leaders", href: "leaders.htm" },
