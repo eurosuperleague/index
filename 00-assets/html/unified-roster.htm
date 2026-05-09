@@ -41,19 +41,19 @@
       background: linear-gradient(90deg, var(--team-color), #06080f);
       color: #fff;
       border: 1px solid #000;
-      padding: 0.8rem 0.95rem;
+      padding: 0.5rem 0.75rem;
     }
     .logo {
-      width: 74px;
-      height: 74px;
+      width: 62px;
+      height: 62px;
       border-radius: 50%;
       border: 2px solid rgba(255, 255, 255, 0.45);
       object-fit: cover;
       background: rgba(255, 255, 255, 0.12);
     }
     .logo-fallback {
-      width: 74px;
-      height: 74px;
+      width: 62px;
+      height: 62px;
       border-radius: 50%;
       border: 2px solid rgba(255, 255, 255, 0.45);
       display: grid;
@@ -83,18 +83,18 @@
     }
     .team-name {
       font-family: var(--font-serif);
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      margin: 0 0 0.2rem;
+      font-size: clamp(1.3rem, 2.6vw, 1.8rem);
+      margin: 0 0 0.12rem;
       line-height: 1.1;
     }
     .team-sub {
       margin: 0;
       color: rgba(255, 255, 255, 0.88);
       line-height: 1.35;
-      font-size: 0.92rem;
+      font-size: 0.84rem;
     }
     .hero-pills {
-      margin-top: 0.45rem;
+      margin-top: 0.28rem;
       display: flex;
       flex-wrap: wrap;
       gap: 0.38rem;
@@ -103,7 +103,7 @@
       display: inline-flex;
       gap: 0.4rem;
       align-items: center;
-      padding: 0.26rem 0.44rem;
+      padding: 0.18rem 0.34rem;
       border: 1px solid rgba(255, 255, 255, 0.35);
       background: rgba(255, 255, 255, 0.1);
       color: #fff;
@@ -133,7 +133,7 @@
       border: 1px solid rgba(255, 255, 255, 0.5);
       background: rgba(255, 255, 255, 0.08);
       color: #fff;
-      padding: 0.42rem 0.52rem;
+      padding: 0.3rem 0.45rem;
       min-width: 220px;
       text-decoration: none;
     }
@@ -287,10 +287,12 @@
       flex: 1;
       min-height: 0;
       overflow: auto;
+      display: flex;
     }
     #seasonInfoTable {
       min-width: 0;
       table-layout: fixed;
+      height: 100%;
     }
     #seasonInfoTable th:first-child,
     #seasonInfoTable td:first-child {
@@ -348,7 +350,6 @@
     .day-cell {
       aspect-ratio: 1 / 1;
       min-height: 0;
-      max-height: 58px;
       border: 2px solid #b9b9b9;
       background: #ececec;
       padding: 0.08rem 0.12rem;
@@ -983,10 +984,12 @@
         }
       }
       const first = new Date(state.monthCursor.getFullYear(), state.monthCursor.getMonth(), 1);
-      const startWeekday = first.getDay();
+      const sundayFirst = first.getDay();
+      const startWeekday = sundayFirst === 0 ? 6 : sundayFirst - 1;
+      const totalCells = 42;
       const gridStart = new Date(first);
       gridStart.setDate(first.getDate() - startWeekday);
-      const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      const weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
       document.getElementById("weekdayRow").innerHTML = weekdays.map((d) => `<div class="weekday">${d}</div>`).join("");
       document.getElementById("monthTitle").textContent = first.toLocaleDateString(undefined, { month: "long", year: "numeric" });
       const byDate = new Map();
@@ -996,7 +999,7 @@
         byDate.get(key).push(g);
       });
       const cells = [];
-      for (let i = 0; i < 42; i += 1) {
+      for (let i = 0; i < totalCells; i += 1) {
         const d = new Date(gridStart);
         d.setDate(gridStart.getDate() + i);
         const key = d.toDateString();
