@@ -142,6 +142,9 @@ def validate_homepage_links() -> list[str]:
 
     hrefs = re.findall(r'href="([^"]+)"', text)
     for href in hrefs:
+        if "${" in href:
+            # Ignore JS template-literal placeholders in inline scripts.
+            continue
         if href.startswith(("http://", "https://", "#", "mailto:", "tel:", "data:")):
             continue
         target = (HOMEPAGE_PATH.parent / href).resolve()

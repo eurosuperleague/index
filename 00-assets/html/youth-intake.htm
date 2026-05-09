@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Intake</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    :root { --ink:#0f0f0f; --blue:#111b36; --paper:#f4f2ec; --card:#fff; --line:#ddd5c6; --muted:#6a5f4d; --font-sans:"Graphik","Helvetica Neue",Helvetica,Arial,sans-serif; --font-serif:"Tiempos Headline","Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif; }
+    body { margin:0; padding:1rem; background:var(--paper); color:var(--ink); font-family:var(--font-sans); overflow-x:auto; }
+    .shell { width:min(1280px,100%); margin:0; display:grid; gap:.9rem; }
+    .header { display:grid; grid-template-columns:1fr auto; gap:.7rem; align-items:end; border:1px solid var(--blue); border-top:4px solid var(--blue); background:#fff; padding:.75rem .9rem; }
+    .kicker { margin:0 0 .15rem; font-size:.65rem; letter-spacing:.16em; text-transform:uppercase; color:var(--blue); font-weight:700; }
+    .title { margin:0; font-family:var(--font-serif); font-size:1.55rem; }
+    .sub { margin:.16rem 0 0; color:var(--muted); font-size:.84rem; }
+    .controls { display:flex; gap:.45rem; align-items:center; }
+    .team-picker,.btn { font:inherit; border:1px solid #c4cde3; background:#fff; color:#111; padding:.42rem .52rem; min-width:220px; }
+    .btn { min-width:0; color:var(--blue); text-decoration:none; background:#eef2fb; border-color:#b8c6eb; font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; font-weight:700; }
+    .panel { border:1px solid var(--line); background:var(--card); padding:.8rem; }
+    .table-wrap { max-width:none; overflow:visible; padding-bottom:.2rem; }
+    .panel-head { display:flex; justify-content:space-between; align-items:baseline; border-bottom:2px solid var(--blue); margin-bottom:.6rem; padding-bottom:.4rem; gap:.6rem; }
+    .panel-title { margin:0; font-size:.74rem; letter-spacing:.18em; text-transform:uppercase; color:var(--blue); }
+    .panel-note { margin:0; font-size:.65rem; letter-spacing:.11em; text-transform:uppercase; color:var(--muted); }
+    .tabs { display:flex; gap:.35rem; margin-bottom:.5rem; }
+    .tab { border:1px solid #c4cde3; background:#eef2fb; color:var(--blue); padding:.3rem .5rem; font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; cursor:pointer; font-weight:700; }
+    .tab.active { background:var(--blue); border-color:var(--blue); color:#fff; }
+    .table { width:max-content; min-width:1500px; border-collapse:collapse; font-size:.83rem; }
+    .table th,.table td { border-bottom:1px solid var(--line); padding:.44rem .34rem; white-space:nowrap; text-align:right; }
+    .table th,.table td { min-width:72px; }
+    .table th { font-size:.62rem; letter-spacing:.11em; text-transform:uppercase; color:var(--muted); cursor:pointer; user-select:none; }
+    .table th.sort-asc::after { content:" ▲"; font-size:.58rem; color:var(--blue); }
+    .table th.sort-desc::after { content:" ▼"; font-size:.58rem; color:var(--blue); }
+    .table th:first-child,.table td:first-child { text-align:left; padding-left:0; min-width:280px; width:280px; }
+    .table th:nth-child(2),.table td:nth-child(2) { text-align:left; min-width:190px; width:190px; }
+    .table td:first-child { font-family:var(--font-serif); font-size:.98rem; }
+    .table a { color:inherit; text-decoration:none; }
+    .table a:hover { color:var(--blue); text-decoration:underline; }
+    .status { font-size:.72rem; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="header">
+      <div>
+        <p class="kicker">League Pipeline</p>
+        <h1 class="title" id="teamTitle">Youth Intake</h1>
+        <p class="sub" id="teamSub">Loading intake data</p>
+      </div>
+      <div class="controls">
+        <select id="teamPicker" class="team-picker"></select>
+        <a href="./league%20dashboard.htm" class="btn">Back To Dashboard</a>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2 class="panel-title">Current Intake Class</h2>
+        <p class="panel-note" id="statusText">Loading</p>
+      </div>
+      <div id="tableRoot"></div>
+    </section>
+  </main>
+
+  <script>
+    const URLS = {
+      intake: "../../00-build/database/youth_intake.json",
+      intakePlayers: "../../00-build/database/youth_intake_players.json",
+      players: "../../00-build/database/players.json"
+    };
+
+    const state = {
+      teams: [],
+      intakeLookup: new Map(),
+      playerLinks: new Map(),
+      current: null,
+      mode: "potential",
+      sortKey: "name",
+      sortDir: "asc"
+    };
+
+    function normalizeName(v) {
+      return String(v || "").toLowerCase().replace(/[0-9]+$/g, "").replace(/[^a-z0-9]/g, "");
+    }
+
+    function normalizeHref(url) {
+      const clean = String(url || "").trim().replace(/^(\.\/|\.\.\/)+/, "");
+      return clean ? `../../${clean}` : "";
+    }
+
+    function q(name) {
+      return new URLSearchParams(window.location.search).get(name);
+    }
+
+    function findTeamFromQuery() {
+      const raw = String(q("team") || "").trim();
+      if (!raw) return state.teams[0] || null;
+      const wanted = normalizeName(raw);
+      return state.teams.find((t) => normalizeName(t.team) === wanted) || state.teams[0] || null;
+    }
+
+    function buildTableRows(players, includeTeamColumn) {
+      if (!players.length) return { columns: ["Name"], rows: [] };
+      const keys = [];
+      const hidden = new Set(["city", "state", "college", "dob", "picname", "uniform", "number"]);
+      players.forEach((p) => {
+        Object.keys(p).forEach((k) => {
+          const keyNorm = String(k || "").toLowerCase();
+          if (k !== "name" && !hidden.has(keyNorm) && !keys.includes(k)) keys.push(k);
+        });
+      });
+      const extraPotential = new Set(["3pusage", "fouling", "injuryavoidance", "position", "age"]);
+      const potentialKeys = keys.filter((k) => {
+        const norm = String(k || "").toLowerCase();
+        return /pot/i.test(norm) || extraPotential.has(norm);
+      });
+      const regularKeys = keys.filter((k) => {
+        const norm = String(k || "").toLowerCase();
+        return !/pot/i.test(norm) && !extraPotential.has(norm);
+      });
+      const visibleKeys = state.mode === "potential" ? potentialKeys : regularKeys;
+      const fallbackKeys = visibleKeys.length ? visibleKeys : keys;
+      const columns = includeTeamColumn ? ["name", "team", ...fallbackKeys] : ["name", ...fallbackKeys];
+      const rows = players.map((p) => columns.map((c) => c === "name" ? p.name : (p[c] ?? "")));
+      return { columns, rows };
+    }
+
+    function sortRows(columns, rows) {
+      const idx = columns.findIndex((c) => String(c).toLowerCase() === String(state.sortKey || "").toLowerCase());
+      if (idx < 0) return rows;
+      const dir = state.sortDir === "desc" ? -1 : 1;
+      const sorted = [...rows].sort((a, b) => {
+        const av = a[idx];
+        const bv = b[idx];
+        const an = Number(av);
+        const bn = Number(bv);
+        const aIsNum = Number.isFinite(an) && String(av).trim() !== "";
+        const bIsNum = Number.isFinite(bn) && String(bv).trim() !== "";
+        if (aIsNum && bIsNum) return dir * (an - bn);
+        return dir * String(av ?? "").localeCompare(String(bv ?? ""), undefined, { numeric: true, sensitivity: "base" });
+      });
+      return sorted;
+    }
+
+    function shortHeader(key, index) {
+      if (index === 0) return "Name";
+      if (String(key || "").toLowerCase() === "team") return "Team";
+      const map = {
+        Height: "HT",
+        Weight: "WT",
+        Position: "POS",
+        Age: "AGE",
+        Uniform: "#",
+        InsideScoring: "INS",
+        PotInside: "INS",
+        JumpShot: "JPS",
+        PotJumpShot: "JPS",
+        FtShot: "FTS",
+        PotFtShot: "FTS",
+        "3pShot": "3PS",
+        Pot3pShot: "3PS",
+        "3pUsage": "3P USG",
+        Handling: "HND",
+        PotHandling: "HND",
+        Passing: "PAS",
+        PotPassing: "PAS",
+        PostDefense: "PSD",
+        PotPostDefense: "PSD",
+        PerimeterDefense: "PRD",
+        PotPerimeterDefense: "PRD",
+        Stealing: "STL",
+        PotStealing: "STL",
+        Blocking: "BLK",
+        PotBlocking: "BLK",
+        OReb: "ORB",
+        PotOReb: "ORB",
+        DReb: "DRB",
+        PotDReb: "DRB",
+        Fouling: "FLG",
+        Strength: "STR",
+        Quickness: "QKN",
+        Jumping: "JMP",
+        Stamina: "STA",
+        InjuryAvoidance: "INJ"
+      };
+      return map[key] || key;
+    }
+
+    function renderCurrentTeam() {
+      const team = state.current;
+      if (!team) return;
+      let detailed = [];
+      let includeTeamColumn = false;
+      if (team.team === "__ALL__") {
+        includeTeamColumn = true;
+        detailed = state.teams
+          .filter((t) => t.team !== "__ALL__" && normalizeName(t.team) !== "team")
+          .flatMap((t) => (Array.isArray(t.intakePlayers) ? t.intakePlayers : []).map((entry) => {
+            const name = String((entry && entry.name) || "").trim();
+            const fromDb = state.intakeLookup.get(normalizeName(name));
+            return fromDb ? { ...fromDb, name, team: t.team } : { name, team: t.team };
+          }));
+      } else {
+        const intake = Array.isArray(team.intakePlayers) ? team.intakePlayers : [];
+        detailed = intake.map((entry) => {
+          const name = String((entry && entry.name) || "").trim();
+          const fromDb = state.intakeLookup.get(normalizeName(name));
+          return fromDb ? { ...fromDb, name } : { name };
+        });
+      }
+      const built = buildTableRows(detailed, includeTeamColumn);
+      const columns = built.columns;
+      const rows = sortRows(columns, built.rows);
+
+      document.getElementById("teamTitle").textContent = team.team === "__ALL__" ? "All Teams Youth Intake" : `${team.team} Youth Intake`;
+      document.getElementById("teamSub").textContent = team.team === "__ALL__"
+        ? "League-wide intake class"
+        : `${team.tier || "Unassigned Tier"}${team.positionFocus ? ` · Focus ${team.positionFocus}` : ""}`;
+      document.getElementById("statusText").textContent = `${rows.length} prospects`;
+
+      const tabsHtml = `<div class="tabs">
+        <button type="button" class="tab${state.mode === "regular" ? " active" : ""}" data-mode="regular">Regular</button>
+        <button type="button" class="tab${state.mode === "potential" ? " active" : ""}" data-mode="potential">Potential</button>
+      </div>`;
+      const headerHtml = columns.map((c, i) => {
+        const activeSort = String(c).toLowerCase() === String(state.sortKey || "").toLowerCase();
+        const sortClass = activeSort ? (state.sortDir === "desc" ? "sort-desc" : "sort-asc") : "";
+        return `<th class="${sortClass}" data-col="${c}">${shortHeader(c, i)}</th>`;
+      }).join("");
+      const bodyHtml = rows.length
+        ? rows.map((row) => {
+            const nameIndex = columns.findIndex((c) => c === "name");
+            const name = String((nameIndex >= 0 ? row[nameIndex] : row[0]) || "");
+            const href = state.playerLinks.get(normalizeName(name)) || "";
+            const nameHtml = href ? `<a href="${href}">${name}</a>` : name;
+            const cells = row.map((cell, idx) => `<td>${columns[idx] === "name" ? nameHtml : (cell === "" ? "-" : cell)}</td>`).join("");
+            return `<tr>${cells}</tr>`;
+          }).join("")
+        : `<tr><td colspan="${columns.length}">No intake players for this team</td></tr>`;
+
+      document.getElementById("tableRoot").innerHTML = `${tabsHtml}<div class="table-wrap"><table class="table"><thead><tr>${headerHtml}</tr></thead><tbody>${bodyHtml}</tbody></table></div>`;
+      document.querySelectorAll(".tab").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          state.mode = btn.dataset.mode === "potential" ? "potential" : "regular";
+          renderCurrentTeam();
+        });
+      });
+      document.querySelectorAll(".table th[data-col]").forEach((th) => {
+        th.addEventListener("click", () => {
+          const col = th.getAttribute("data-col") || "";
+          if (!col) return;
+          if (String(state.sortKey).toLowerCase() === String(col).toLowerCase()) {
+            state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
+          } else {
+            state.sortKey = col;
+            state.sortDir = "asc";
+          }
+          renderCurrentTeam();
+        });
+      });
+    }
+
+    function bindPicker() {
+      const picker = document.getElementById("teamPicker");
+      picker.innerHTML = state.teams.map((t) => `<option value="${t.team}" ${t.team === state.current.team ? "selected" : ""}>${t.team === "__ALL__" ? "All Teams" : t.team}</option>`).join("");
+      picker.addEventListener("change", () => {
+        const selected = state.teams.find((t) => t.team === picker.value);
+        if (!selected) return;
+        const params = new URLSearchParams(window.location.search);
+        if (selected.team === "__ALL__") {
+          params.delete("team");
+        } else {
+          params.set("team", selected.team);
+        }
+        window.location.search = params.toString();
+      });
+    }
+
+    async function init() {
+      try {
+        const [intakeData, intakePlayers, players] = await Promise.all([
+          fetch(URLS.intake).then((r) => r.json()),
+          fetch(URLS.intakePlayers).then((r) => r.json()),
+          fetch(URLS.players).then((r) => r.json())
+        ]);
+        state.teams = Array.isArray(intakeData.teams)
+          ? intakeData.teams
+              .filter((t) => normalizeName(t && t.team) !== "team")
+              .slice()
+              .sort((a, b) => a.team.localeCompare(b.team))
+          : [];
+        state.teams.unshift({ team: "__ALL__", intakePlayers: [] });
+        (Array.isArray(intakePlayers) ? intakePlayers : []).forEach((p) => {
+          if (!p || !p.name) return;
+          state.intakeLookup.set(normalizeName(p.name), p);
+        });
+        (Array.isArray(players) ? players : []).forEach((p) => {
+          const href = normalizeHref(p && p.url);
+          if (!href) return;
+          state.playerLinks.set(normalizeName(p.name), href);
+        });
+        state.current = findTeamFromQuery();
+        if (!q("team")) state.current = state.teams[0] || state.current;
+        if (!state.current) throw new Error("No teams in intake file");
+        bindPicker();
+        renderCurrentTeam();
+      } catch (err) {
+        document.getElementById("teamTitle").textContent = "Youth Intake unavailable";
+        document.getElementById("teamSub").textContent = "Could not load youth intake data.";
+        document.getElementById("statusText").textContent = "Error";
+      }
+    }
+    init();
+  </script>
+</body>
+</html>
+

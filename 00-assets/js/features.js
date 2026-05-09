@@ -645,15 +645,20 @@
     return link;
   }
 
-  function makeMenuGroup(title, links) {
+  function makeMenuGroup(title, links, options) {
     var section = document.createElement("section");
     var toggle = document.createElement("button");
     var linkWrap = document.createElement("div");
+    var opts = options || {};
+    var isCollapsed = !!opts.collapsed;
 
     section.className = "league-menu-group";
+    if (isCollapsed) {
+      section.classList.add("is-collapsed");
+    }
     toggle.className = "league-menu-toggle";
     toggle.type = "button";
-    toggle.setAttribute("aria-expanded", "true");
+    toggle.setAttribute("aria-expanded", String(!isCollapsed));
     toggle.textContent = title;
     linkWrap.className = "league-menu-links";
 
@@ -712,7 +717,7 @@
       {
         title: "Season",
         links: [
-          { label: "Draft Preview", href: "draft.htm" },
+          { label: "Youth Intake", href: "00-assets/html/youth-intake.htm" },
           { label: "Awards", href: "awards.htm" },
           { label: "Season Awards", href: "seasonawards.htm" },
           { label: "Playoff Standings", href: "playoffstandings.htm" },
@@ -727,6 +732,13 @@
           { label: "Available Staff", href: "staff.htm" },
           { label: "Human Coaches", href: "humancoaches.htm" }
         ]
+      },
+      {
+        title: "Legacy",
+        links: [
+          { label: "Draft Preview", href: "draft.htm" }
+        ],
+        collapsed: true
       }
     ];
     var shell = document.createElement("nav");
@@ -741,7 +753,7 @@
       { label: "ESL Media", href: "00-eslmedia/homepage.html", target: "_top", logo: "eslm" }
     ]));
     groups.forEach(function (group) {
-      shell.appendChild(makeMenuGroup(group.title, group.links));
+      shell.appendChild(makeMenuGroup(group.title, group.links, { collapsed: !!group.collapsed }));
     });
 
     document.body.innerHTML = "";
