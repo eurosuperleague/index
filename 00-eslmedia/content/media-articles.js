@@ -27,6 +27,24 @@ window.ESL_TEAM_LOGOS = {
 
 window.ESL_MEDIA_ARTICLES = [
   {
+    file: "articles/batsuper_crystal_palace_shot_selection_interview.html",
+    title: "EXCLUSIVE: batsuper Declares Shot-Selection Emergency After Another Alex English Heat Check",
+    category: "Interview",
+    desk: "Interview",
+    sortKey: "2026-05-09-01",
+    tag: "Crystal Palace",
+    author: "Malik Sparks",
+    meta: "Fan Interview",
+    blurb: "An anonymous Palace fan named batsuper unleashes a full shot-selection panic column on Alex English after Crystal Palace's chaotic recent run.",
+    teams: [
+      "AC Milan",
+      "AFC Richmond",
+      "Atletico Madrid",
+      "Brighton",
+      "Crystal Palace"
+    ]
+  },
+  {
     file: "articles/tier_3_star_tier_1_fit.html",
     title: "Tier 3 Star, Tier 1 Fit? Three ECL standouts whose skills translate immediately upward",
     category: "Analysis",
