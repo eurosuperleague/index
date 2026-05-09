@@ -27,7 +27,7 @@
     }
     .shell {
       width: min(1250px, 100%);
-      margin: 0 auto;
+      margin: 0;
       display: grid;
       gap: 0.9rem;
       overflow-x: auto;
@@ -518,16 +518,8 @@
     </section>
   </main>
 
+  <script src="../js/roster-data-service.js"></script>
   <script>
-    const DB = {
-      standings: "../../00-build/database/standings.json",
-      teams: "../../00-build/database/teams.json",
-      players: "../../00-build/database/players.json",
-      playerStats: "../../00-build/database/player_stats.json",
-      schedule: "../../00-build/database/schedule.json",
-      injuries: "../../00-build/database/injuries.json",
-      humanCoaches: "../../humancoaches.htm"
-    };
 
     const state = {
       standings: [],
@@ -615,49 +607,6 @@
       return new Date(Number(m[3]), Number(m[1]) - 1, Number(m[2]));
     }
 
-    function normalizeRosterFile(v) {
-      const s = String(v || "").trim();
-      if (!s) return "";
-      const fromQuery = s.match(/roster(?:s\/)?(roster\d+\.htm)/i);
-      if (fromQuery) return fromQuery[1];
-      return s.replace(/^.*[\\/]/, "");
-    }
-
-    function findTeamFromQuery() {
-      const file = normalizeRosterFile(q("file"));
-      const teamId = q("team");
-      if (file) {
-        return state.teamDirectory.find((t) => t.rosterFile.toLowerCase() === file.toLowerCase()) || null;
-      }
-      if (teamId) {
-        return state.teamDirectory.find((t) => String(t.teamId).toLowerCase() === String(teamId).toLowerCase()) || null;
-      }
-      return state.teamDirectory[0] || null;
-    }
-
-    function buildTeamDirectory() {
-      const standingsFlat = state.standings.flatMap((sec) => (sec.teams || []).map((t) => ({ ...t, league: sec.title })));
-      const seen = new Set();
-      state.teamDirectory = standingsFlat
-        .map((t) => ({
-          teamName: String(t.team || "").trim(),
-          teamId: String(t.rosterFile || "").replace(".htm", ""),
-          rosterFile: normalizeRosterFile(t.rosterFile || t.rosterUrl || ""),
-          record: `${t.wins}-${t.losses}`,
-          league: t.league,
-          diff: t.diff,
-          streak: t.streak
-        }))
-        .filter((t) => t.teamName && t.rosterFile)
-        .filter((t) => {
-          const key = `${t.teamName}|${t.rosterFile}`.toLowerCase();
-          if (seen.has(key)) return false;
-          seen.add(key);
-          return true;
-        })
-        .sort((a, b) => a.teamName.localeCompare(b.teamName, undefined, { sensitivity: "base" }));
-    }
-
     function buildTeamLogo(teamName) {
       const slot = document.getElementById("teamLogoSlot");
       slot.innerHTML = "";
@@ -685,40 +634,6 @@
       }
 
       slot.appendChild(wrap);
-    }
-
-    function extractTeamColors(htmlText) {
-      const styleChunk = (htmlText.match(/<style[^>]*>([\s\S]*?)<\/style>/i) || [])[1] || "";
-      const main = (styleChunk.match(/td\.teamheader\s*\{[^}]*background:\s*([^;]+);/i) || [])[1] || "#111b36";
-      const c2 = (styleChunk.match(/td\.teamheader2\s*\{[^}]*background:\s*([^;]+);/i) || [])[1] || main;
-      document.documentElement.style.setProperty("--team-color", String(main).trim());
-      document.documentElement.style.setProperty("--team-color-2", String(c2).trim());
-    }
-
-    function parseSectionTable(sectionTitle, doc) {
-      const target = Array.from(doc.querySelectorAll("td.tableheader")).find((td) => td.textContent.replace(/\s+/g, " ").trim().toLowerCase().includes(sectionTitle.toLowerCase()));
-      if (!target) return null;
-      const table = target.closest("table");
-      if (!table) return null;
-      const rows = Array.from(table.querySelectorAll("tr"));
-      const matrix = rows.map((tr) => Array.from(tr.children).map((td) => {
-        const nestedColor = td.querySelector("td[bgcolor]");
-        return {
-          text: td.textContent.replace(/\s+/g, " ").trim(),
-          color: nestedColor ? nestedColor.getAttribute("bgcolor") : ""
-        };
-      }));
-      return matrix.filter((r) => r.some((c) => c.text || c.color));
-    }
-
-    function parseRosterSections(htmlText) {
-      const doc = new DOMParser().parseFromString(htmlText, "text/html");
-      const sectionNames = ["Season Info", "Attributes", "Potentials", "Contract", ...STAT_MODES];
-      const parsed = {};
-      sectionNames.forEach((name) => {
-        parsed[name] = parseSectionTable(name, doc);
-      });
-      return parsed;
     }
 
     function headerAndRows(matrix) {
@@ -931,26 +846,6 @@
       }).join("");
     }
 
-    function parseCoachMap(htmlText) {
-      const doc = new DOMParser().parseFromString(htmlText, "text/html");
-      const rows = Array.from(doc.querySelectorAll("tr"));
-      const map = {};
-      rows.forEach((row) => {
-        const coachLink = row.querySelector('a.linkhuman[href*="coaches/coach"]');
-        const rosterLink = row.querySelector('a.linkhuman[href*="rosters/roster"]');
-        if (!coachLink || !rosterLink) return;
-        const rosterFile = normalizeRosterFile(rosterLink.getAttribute("href") || "").toLowerCase();
-        if (!rosterFile) return;
-        const coachHref = String(coachLink.getAttribute("href") || "").replace(/^(\.\/|\.\.\/)+/, "");
-        if (!coachHref) return;
-        map[rosterFile] = {
-          name: coachLink.textContent.replace(/\s+/g, " ").trim(),
-          href: `../../${coachHref}`
-        };
-      });
-      return map;
-    }
-
     function collectTeamGames(teamId) {
       const days = state.scheduleSections.flatMap((sec) => sec.days || []);
       return days.flatMap((d) => (d.games || []).filter((g) => g.homeTeam === teamId || g.awayTeam === teamId).map((g) => ({ ...g, dateObj: parseDateMMDDYYYY(d.date), date: d.date })));
@@ -1061,36 +956,25 @@
     }
 
     async function loadCurrentTeamBundle() {
-      const rosterPath = `../../rosters/${state.current.rosterFile}`;
-      const res = await fetch(rosterPath);
-      if (!res.ok) throw new Error("Could not load roster file");
-      const htmlText = await res.text();
-      extractTeamColors(htmlText);
-      state.parsedSections = parseRosterSections(htmlText);
+      const bundle = await window.UnifiedRosterDataService.loadTeamBundle(state.current.rosterFile, STAT_MODES);
+      document.documentElement.style.setProperty("--team-color", bundle.colors.main);
+      document.documentElement.style.setProperty("--team-color-2", bundle.colors.secondary);
+      state.parsedSections = bundle.parsedSections;
       state.monthCursor = null;
     }
 
     async function init() {
       try {
-        const [standingsRes, teamsRes, playersRes, playerStatsRes, scheduleRes, injuriesRes, coachesRes] = await Promise.all([
-          fetch(DB.standings), fetch(DB.teams), fetch(DB.players), fetch(DB.playerStats), fetch(DB.schedule), fetch(DB.injuries), fetch(DB.humanCoaches)
-        ]);
-        const standingsData = await standingsRes.json();
-        const teamsData = await teamsRes.json();
-        const playersData = await playersRes.json();
-        const playerStatsData = await playerStatsRes.json();
-        const scheduleData = await scheduleRes.json();
-        const injuriesData = await injuriesRes.json();
-        const coachesHtml = await coachesRes.text();
-        state.standings = Array.isArray(standingsData.sections) ? standingsData.sections : [];
-        state.teams = Array.isArray(teamsData.teams) ? teamsData.teams : [];
-        state.players = Array.isArray(playersData) ? playersData : [];
-        state.playerStats = Array.isArray(playerStatsData.players) ? playerStatsData.players : [];
-        state.scheduleSections = Array.isArray(scheduleData.sections) ? scheduleData.sections : [];
-        state.injuries = Array.isArray(injuriesData.injuries) ? injuriesData.injuries : [];
-        state.coachesByRoster = parseCoachMap(coachesHtml);
-        buildTeamDirectory();
-        state.current = findTeamFromQuery();
+        const base = await window.UnifiedRosterDataService.loadBaseData();
+        state.standings = base.standings;
+        state.teams = base.teams;
+        state.players = base.players;
+        state.playerStats = base.playerStats;
+        state.scheduleSections = base.scheduleSections;
+        state.injuries = base.injuries;
+        state.coachesByRoster = base.coachesByRoster;
+        state.teamDirectory = window.UnifiedRosterDataService.buildTeamDirectory(state.standings);
+        state.current = window.UnifiedRosterDataService.findTeamFromQuery(state.teamDirectory, window.location.search);
         if (!state.current) throw new Error("No team found");
         await loadCurrentTeamBundle();
         setPickerAndHeader();
