@@ -695,7 +695,6 @@
       {
         title: "League",
         links: [
-          { label: "League Dashboard", href: "00-assets/html/league%20dashboard.htm" },
           { label: "Standings", href: "standings.htm" },
           { label: "Schedule", href: "schedule.htm" },
           { label: "League Leaders", href: "leaders.htm" },
@@ -721,22 +720,22 @@
           { label: "Awards", href: "awards.htm" },
           { label: "Season Awards", href: "seasonawards.htm" },
           { label: "Playoff Standings", href: "playoffstandings.htm" },
-          { label: "Playoffs", href: "playoffs.htm" },
-          { label: "Playoff Leaders", href: "playoffleaders.htm" },
           { label: "Past Champs", href: "champs.htm" }
         ]
       },
       {
         title: "Admin",
         links: [
-          { label: "Available Staff", href: "staff.htm" },
           { label: "Human Coaches", href: "humancoaches.htm" }
         ]
       },
       {
         title: "Legacy",
         links: [
-          { label: "Draft Preview", href: "draft.htm" }
+          { label: "Draft Preview", href: "draft.htm" },
+          { label: "Available Staff", href: "staff.htm" },
+          { label: "Playoffs", href: "playoffs.htm" },
+          { label: "Playoff Leaders", href: "playoffleaders.htm" }
         ],
         collapsed: true
       }
