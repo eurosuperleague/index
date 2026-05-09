@@ -151,7 +151,11 @@
       const rosterMatch = raw.match(/roster-view\.htm\?file=([^&#]+)/i);
       if (rosterMatch && rosterMatch[1]) {
         const file = decodeURIComponent(rosterMatch[1]).replace(/^(\.\/|\.\.\/)+/, "");
-        return file ? `../../rosters/${file}` : "#";
+        return file ? `./unified-roster.htm?file=${encodeURIComponent(file)}` : "#";
+      }
+      const rosterDirectMatch = raw.match(/(?:^|\/)(roster\d+\.htm)(?:$|[?#])/i);
+      if (rosterDirectMatch && rosterDirectMatch[1]) {
+        return `./unified-roster.htm?file=${encodeURIComponent(rosterDirectMatch[1])}`;
       }
       const clean = raw.replace(/^(\.\/|\.\.\/)+/, "");
       if (!clean) return "#";
