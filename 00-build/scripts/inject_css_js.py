@@ -15,6 +15,7 @@ ROOT_FOLDER  = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(_
 CSS_FILENAME  = "00-assets/css/styles.css"
 JS_FILENAME   = "00-assets/js/sort.js"
 JS2_FILENAME  = "00-assets/js/features.js"
+INDEX_JS_FILENAME = "00-assets/js/index.js"
 FAVICON_FILE  = "00-build/database/favicon.png"   # change to .ico if needed
 # ────────────────────────────────────────────────────────────────────
 
@@ -43,12 +44,15 @@ for dirpath, dirnames, filenames in os.walk(ROOT_FOLDER):
         css_rel     = make_rel(CSS_FILENAME)
         js_rel      = make_rel(JS_FILENAME)
         js2_rel     = make_rel(JS2_FILENAME)
+        index_js_rel = make_rel(INDEX_JS_FILENAME)
         favicon_rel = make_rel(FAVICON_FILE)
+        is_root_index = os.path.abspath(filepath) == os.path.join(ROOT_FOLDER, "index.htm")
 
         # ── Build tags ─────────────────────────────────────────────
         css_tag     = f'<link rel="stylesheet" href="{css_rel}">'
         js_tag      = f'<script src="{js_rel}" defer></script>'
         js2_tag     = f'<script src="{js2_rel}" defer></script>'
+        index_js_tag = f'<script src="{index_js_rel}" defer></script>'
         favicon_tag = f'<link rel="icon" type="image/png" href="{favicon_rel}">'
 
         with open(filepath, "r", encoding="latin-1") as f:
@@ -57,9 +61,10 @@ for dirpath, dirnames, filenames in os.walk(ROOT_FOLDER):
         already_css     = CSS_FILENAME     in html
         already_js      = JS_FILENAME      in html
         already_js2     = JS2_FILENAME     in html
+        already_index_js = INDEX_JS_FILENAME in html
         already_favicon = FAVICON_FILE     in html
 
-        if already_css and already_js and already_js2 and already_favicon:
+        if already_css and already_js and already_js2 and already_favicon and (not is_root_index or already_index_js):
             print(f"SKIPPED (all present): {filepath}")
             files_skipped += 1
             continue
@@ -74,6 +79,8 @@ for dirpath, dirnames, filenames in os.walk(ROOT_FOLDER):
             inject += f"  {js_tag}\n"
         if not already_js2:
             inject += f"  {js2_tag}\n"
+        if is_root_index and not already_index_js:
+            inject += f"  {index_js_tag}\n"
 
         # ── Add <head> block if missing ────────────────────────────
         if "</head>" not in html:

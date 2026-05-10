@@ -259,7 +259,7 @@
   }
 
   function enableMenuFrameScroll() {
-    var menuFrame = document.querySelector('frame[name="Options"]');
+    var menuFrame = document.querySelector('frame[name="Options"], iframe[name="Options"]');
 
     if (!menuFrame) {
       return;
@@ -269,26 +269,26 @@
     menuFrame.style.overflow = "auto";
   }
 
-  function getParentFrameset() {
+  function getParentShellDocument() {
     try {
       if (window.parent === window || !window.parent.document) {
         return null;
       }
 
-      return window.parent.document.querySelector("frameset");
+      return window.parent.document.querySelector(".site-shell") ? window.parent.document : null;
     } catch (error) {
       return null;
     }
   }
 
   function setParentMenuOpen(isOpen) {
-    var frameset = getParentFrameset();
+    var parentDocument = getParentShellDocument();
 
-    if (!frameset) {
+    if (!parentDocument || !parentDocument.body) {
       return;
     }
 
-    frameset.setAttribute("cols", isOpen ? "150,*" : "0,*");
+    parentDocument.body.classList.toggle("league-menu-open", !!isOpen);
   }
 
   function syncDataFrameMenuButton() {
@@ -307,13 +307,13 @@
   }
 
   function isParentMenuOpen() {
-    var frameset = getParentFrameset();
+    var parentDocument = getParentShellDocument();
 
-    if (!frameset) {
+    if (!parentDocument || !parentDocument.body) {
       return false;
     }
 
-    return String(frameset.getAttribute("cols") || "").split(",")[0] !== "0";
+    return parentDocument.body.classList.contains("league-menu-open");
   }
 
   function syncResponsiveMenuState(button) {
@@ -358,10 +358,15 @@
   }
 
   function initResponsiveFrameMenu() {
-    var frameset = getParentFrameset();
+    var parentDocument = getParentShellDocument();
     var button;
 
-    if (!frameset || isMenuPage() || document.querySelector(".league-menu-hamburger")) {
+    if (
+      !parentDocument ||
+      isMenuPage() ||
+      document.querySelector(".league-menu-hamburger") ||
+      parentDocument.querySelector(".site-menu-toggle")
+    ) {
       return;
     }
 
