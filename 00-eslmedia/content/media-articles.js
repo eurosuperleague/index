@@ -27,41 +27,6 @@ window.ESL_TEAM_LOGOS = {
 
 window.ESL_MEDIA_ARTICLES = [
   {
-    file: "articles/youth_intake_class_1982_shape_of_league.html",
-    title: "Youth Intake Class 1982: Shape of the League, Not Just the Draft Board",
-    category: "Analysis",
-    desk: "Analysis",
-    sortKey: "2026-05-10-01",
-    tag: "Youth Intake",
-    author: "Nina Vale",
-    meta: "Youth Academy",
-    blurb: "The 1982 intake class brings uncommon depth and enough archetype overlap to force immediate development and trade strategy choices across all tiers.",
-    teams: [
-      "AFC Richmond",
-      "Ajax",
-      "Arsenal",
-      "Aston Villa",
-      "Atletico Madrid",
-      "Barcelona",
-      "Bayern Munich",
-      "Benfica",
-      "Brighton",
-      "Chelsea",
-      "Crystal Palace",
-      "Inter Milan",
-      "Juventus",
-      "Manchester City",
-      "Manchester United",
-      "Marseille",
-      "Monaco",
-      "Paris Saint-Germain",
-      "Real Madrid",
-      "Sporting CP",
-      "Tottenham Hotspur",
-      "Valencia"
-    ]
-  },
-  {
     file: "articles/batsuper_crystal_palace_shot_selection_interview.html",
     title: "EXCLUSIVE: batsuper Declares Shot-Selection Emergency After Another Alex English Heat Check",
     category: "Interview",
