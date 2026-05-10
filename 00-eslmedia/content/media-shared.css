@@ -78,6 +78,22 @@ body {
   mask: url("article%20images/ESLM.png") left center / contain no-repeat;
 }
 
+.site-topbar-brand > div:last-child,
+.topbar-brand > div:last-child {
+  cursor: pointer;
+}
+
+.site-topbar-brand.is-home-link > div:last-child,
+.topbar-brand.is-home-link > div:last-child {
+  cursor: pointer;
+}
+
+.site-topbar-brand.is-home-link > div:last-child:focus-visible,
+.topbar-brand.is-home-link > div:last-child:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
 .site-edition-pill {
   display: none;
 }

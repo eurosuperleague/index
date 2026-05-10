@@ -469,6 +469,13 @@ window.ESL_MEDIA_ARTICLES = [
     };
   };
 
+  const getMediaHomeHref = () => {
+    const pathname = ((window.location && window.location.pathname) || "").replace(/\\/g, "/");
+    if (pathname.includes("/content/articles/")) return "../../homepage.html";
+    if (pathname.includes("/content/")) return "../homepage.html";
+    return "homepage.html";
+  };
+
   const buildTeamDirectoryFromStandings = (standings) => {
     const logoMap = window.ESL_TEAM_LOGOS || {};
     const sections = Array.isArray(standings?.sections) ? standings.sections : [];
@@ -836,7 +843,32 @@ window.ESL_MEDIA_ARTICLES = [
     });
   };
 
+  const linkTopbarLogoHome = () => {
+    const logoTarget = document.querySelector(".site-topbar-brand > div:last-child, .topbar-brand > div:last-child");
+    if (!logoTarget || logoTarget.dataset.homeLinkBound === "true") return;
+
+    const href = getMediaHomeHref();
+    logoTarget.dataset.homeLinkBound = "true";
+    logoTarget.setAttribute("role", "link");
+    logoTarget.setAttribute("tabindex", "0");
+    logoTarget.setAttribute("aria-label", "ESL Media Home");
+    logoTarget.title = "ESL Media Home";
+    logoTarget.closest(".site-topbar-brand, .topbar-brand")?.classList.add("is-home-link");
+
+    const goHome = () => {
+      window.location.href = href;
+    };
+
+    logoTarget.addEventListener("click", goHome);
+    logoTarget.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      goHome();
+    });
+  };
+
   const init = async () => {
+    linkTopbarLogoHome();
     updateLatestLinks();
     await window.injectEslTeamsNav();
   };

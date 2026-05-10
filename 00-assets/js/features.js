@@ -634,6 +634,8 @@
     var fallback = document.createElement("span");
 
     link.target = "_top";
+
+    link.target = "_top";
     logo.className = "league-menu-eslm-logo";
     logo.src = "00-eslmedia/content/article images/ESLM.png";
     logo.alt = "ESL Media";
