@@ -1607,7 +1607,10 @@
           }
 
           if (index[file][statKey] === undefined) {
-            index[file][statKey] = leader.valueText || leader.value || "--";
+            index[file][statKey] = {
+              value: leader.valueText || leader.value || "--",
+              rank: leader.rank || null
+            };
           }
         });
       });
@@ -1625,10 +1628,22 @@
     var overall = player.overall || player.ovr || "--";
     var meta = [player.teamLabel || player.teamName || player.team, player.pos, player.age ? "Age " + player.age : ""].filter(Boolean).join(" | ");
     var pra = {
-      points: stats && stats.points !== undefined ? stats.points : "--",
-      rebounds: stats && stats.rebounds !== undefined ? stats.rebounds : "--",
-      assists: stats && stats.assists !== undefined ? stats.assists : "--"
+      points: stats && stats.points !== undefined ? stats.points : null,
+      rebounds: stats && stats.rebounds !== undefined ? stats.rebounds : null,
+      assists: stats && stats.assists !== undefined ? stats.assists : null
     };
+
+    function statLabel(label, stat) {
+      if (!stat || !stat.rank) {
+        return label;
+      }
+
+      return label + " #" + stat.rank;
+    }
+
+    function statValue(stat) {
+      return stat && stat.value !== undefined ? stat.value : "--";
+    }
 
     return [
       '<div class="player-preview-pill__head">',
@@ -1651,11 +1666,11 @@
       }).join(""),
       "</div>",
       '<section class="player-preview-pill__pra">',
-      '  <p class="player-preview-pill__pra-title">Major Stats</p>',
+      '  <p class="player-preview-pill__pra-title">Top 25 Ranks</p>',
       '  <div class="player-preview-pill__pra-grid">',
-      '    <div class="player-preview-pill__pra-item"><span>PTS</span><strong>' + escapeHtml(pra.points) + "</strong></div>",
-      '    <div class="player-preview-pill__pra-item"><span>REB</span><strong>' + escapeHtml(pra.rebounds) + "</strong></div>",
-      '    <div class="player-preview-pill__pra-item"><span>AST</span><strong>' + escapeHtml(pra.assists) + "</strong></div>",
+      '    <div class="player-preview-pill__pra-item"><span>' + escapeHtml(statLabel("PTS", pra.points)) + "</span><strong>" + escapeHtml(statValue(pra.points)) + "</strong></div>",
+      '    <div class="player-preview-pill__pra-item"><span>' + escapeHtml(statLabel("REB", pra.rebounds)) + "</span><strong>" + escapeHtml(statValue(pra.rebounds)) + "</strong></div>",
+      '    <div class="player-preview-pill__pra-item"><span>' + escapeHtml(statLabel("AST", pra.assists)) + "</span><strong>" + escapeHtml(statValue(pra.assists)) + "</strong></div>",
       "  </div>",
       "</section>"
     ].join("");
