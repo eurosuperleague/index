@@ -1499,6 +1499,7 @@
       ".player-preview-pill__pra-item { min-width: 0; }",
       ".player-preview-pill__pra-item span { display: block; color: rgba(255,255,255,.7); font-size: 9px; letter-spacing: .09em; text-transform: uppercase; font-weight: 800; }",
       ".player-preview-pill__pra-item strong { display: block; margin-top: 1px; color: #fff; font-size: 16px; line-height: 1; }",
+      'a[href*="player"] { -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }',
       "@media (max-width: 420px) { .player-preview-pill { width: calc(100vw - 12px); max-height: calc(100dvh - 12px); padding: 8px; } .player-preview-pill__head { padding-bottom: 6px; margin-bottom: 7px; } .player-preview-pill__attrs { gap: 4px; } .player-preview-pill__col { padding: 5px 4px; } .player-preview-pill__col-title { font-size: 7.5px; margin-bottom: 3px; } .player-preview-pill__attr { font-size: 9px; padding: 1px 0; } .player-preview-pill__pra { margin-top: 7px; padding: 6px; } .player-preview-pill__pra-item strong { font-size: 14px; } }"
     ].join("");
     document.head.appendChild(style);
@@ -1753,6 +1754,7 @@
       startPoint = { x: event.clientX, y: event.clientY };
       window.clearTimeout(longPressTimer);
       longPressTimer = window.setTimeout(function () {
+        event.preventDefault();
         showPreview(link, startPoint.x, startPoint.y);
       }, 450);
     });
@@ -1791,7 +1793,7 @@
     }, true);
 
     document.addEventListener("contextmenu", function (event) {
-      if (findPlayerLink(event.target) && preview && !preview.hidden) {
+      if (findPlayerLink(event.target)) {
         event.preventDefault();
       }
     });
