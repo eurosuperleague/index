@@ -5,6 +5,7 @@
   var WAIVER_TABLE_STYLE_ID = "waiver-table-styles";
   var PLAYER_RATING_STYLE_ID = "player-rating-pill-styles";
   var ROSTER_RATING_STYLE_ID = "roster-rating-pill-styles";
+  var PLAYER_PREVIEW_STYLE_ID = "player-preview-pill-styles";
   var MENU_STYLE_ID = "league-menu-enhancement-styles";
   var RESPONSIVE_MENU_STYLE_ID = "responsive-menu-toggle-styles";
   var MENU_BREAKPOINT = 760;
@@ -1464,6 +1465,346 @@
       .replace(/'/g, "&#39;");
   }
 
+  function getPlayerFileFromUrl(url) {
+    var match = String(url || "").match(/(?:^|\/)(player\d+\.htm)(?:$|[?#])/i);
+    return match ? match[1].toLowerCase() : "";
+  }
+
+  function ensurePlayerPreviewStyles() {
+    if (document.getElementById(PLAYER_PREVIEW_STYLE_ID)) {
+      return;
+    }
+
+    var style = document.createElement("style");
+    style.id = PLAYER_PREVIEW_STYLE_ID;
+    style.textContent = [
+      ".player-preview-pill { --preview-primary: #111b36; --preview-secondary: #f4d35e; --preview-ink: #10131b; position: fixed; z-index: 5000; width: min(300px, calc(100vw - 16px)); max-height: calc(100dvh - 16px); overflow: auto; -webkit-overflow-scrolling: touch; border: 1px solid color-mix(in srgb, var(--preview-primary) 35%, transparent); border-top: 4px solid var(--preview-primary); border-radius: 12px; background: #fffdf8; color: var(--preview-ink); box-shadow: 0 18px 42px rgba(15,23,42,.24); padding: 9px; font-family: Inter, Tahoma, Arial, sans-serif; overscroll-behavior: contain; }",
+      ".player-preview-pill[hidden] { display: none; }",
+      ".player-preview-pill__head { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; border-bottom: 1px solid #ddd5c6; padding-bottom: 8px; margin-bottom: 9px; }",
+      ".player-preview-pill__name { margin: 0; font: 800 15px/1.1 Inter, Tahoma, Arial, sans-serif; color: var(--preview-primary); }",
+      ".player-preview-pill__meta { margin: 3px 0 0; color: #6a5f4d; font: 700 10px/1.2 Inter, Tahoma, Arial, sans-serif; letter-spacing: .09em; text-transform: uppercase; }",
+      ".player-preview-pill__rating { display: grid; gap: 3px; min-width: 52px; text-align: right; }",
+      ".player-preview-pill__rating strong { color: var(--preview-primary); font-size: 18px; line-height: 1; }",
+      ".player-preview-pill__rating span { color: #6a5f4d; font-size: 9px; letter-spacing: .08em; text-transform: uppercase; font-weight: 800; }",
+      ".player-preview-pill__attrs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; }",
+      ".player-preview-pill__col { min-width: 0; border: 1px solid #ddd5c6; background: #faf8f2; padding: 6px 5px; }",
+      ".player-preview-pill__col-title { margin: 0 0 4px; color: var(--preview-primary); font-size: 8px; letter-spacing: .1em; text-transform: uppercase; font-weight: 900; }",
+      ".player-preview-pill__attr { display: flex; justify-content: space-between; gap: 4px; padding: 1px 0; border-bottom: 1px solid rgba(221,213,198,.7); font-size: 10px; line-height: 1.08; }",
+      ".player-preview-pill__attr:last-child { border-bottom: 0; }",
+      ".player-preview-pill__attr span { color: #6a5f4d; font-weight: 800; }",
+      ".player-preview-pill__attr strong { color: #10131b; font-weight: 900; }",
+      ".player-preview-pill__pra { margin-top: 9px; border: 1px solid var(--preview-primary); background: linear-gradient(135deg, var(--preview-primary), color-mix(in srgb, var(--preview-primary) 78%, #000)); color: #fff; padding: 7px; }",
+      ".player-preview-pill__pra-title { margin: 0 0 6px; color: rgba(255,255,255,.76); font-size: 9px; letter-spacing: .13em; text-transform: uppercase; font-weight: 900; }",
+      ".player-preview-pill__pra-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }",
+      ".player-preview-pill__pra-item { min-width: 0; }",
+      ".player-preview-pill__pra-item span { display: block; color: rgba(255,255,255,.7); font-size: 9px; letter-spacing: .09em; text-transform: uppercase; font-weight: 800; }",
+      ".player-preview-pill__pra-item strong { display: block; margin-top: 1px; color: #fff; font-size: 16px; line-height: 1; }",
+      "@media (max-width: 420px) { .player-preview-pill { width: calc(100vw - 12px); max-height: calc(100dvh - 12px); padding: 8px; } .player-preview-pill__head { padding-bottom: 6px; margin-bottom: 7px; } .player-preview-pill__attrs { gap: 4px; } .player-preview-pill__col { padding: 5px 4px; } .player-preview-pill__col-title { font-size: 7.5px; margin-bottom: 3px; } .player-preview-pill__attr { font-size: 9px; padding: 1px 0; } .player-preview-pill__pra { margin-top: 7px; padding: 6px; } .player-preview-pill__pra-item strong { font-size: 14px; } }"
+    ].join("");
+    document.head.appendChild(style);
+  }
+
+  function getPlayerPreviewAttr(player, key) {
+    var aliases = {
+      Ins: ["Ins", "InsideScoring"],
+      Jps: ["Jps", "JumpShot"],
+      Fts: ["Fts", "FtShot"],
+      "3ps": ["3ps", "3pShot"],
+      Hnd: ["Hnd", "Handling"],
+      Pas: ["Pas", "Passing"],
+      Orb: ["Orb", "OffRebounding"],
+      Drb: ["Drb", "DefRebounding"],
+      Psd: ["Psd", "PostDefense"],
+      Prd: ["Prd", "PerimeterDefense"],
+      Stl: ["Stl", "Stealing"],
+      Blk: ["Blk", "Blocking"],
+      Qkn: ["Qkn", "Quickness"],
+      Jmp: ["Jmp", "Jumping"],
+      Str: ["Str", "Strength"],
+      Sta: ["Sta", "Stamina"]
+    };
+    var keys = aliases[key] || [key];
+    var i;
+
+    for (i = 0; i < keys.length; i += 1) {
+      if (player[keys[i]] !== undefined && player[keys[i]] !== null && player[keys[i]] !== "") {
+        return player[keys[i]];
+      }
+    }
+
+    return "--";
+  }
+
+  function normalizePreviewTeamName(teamName) {
+    return String(teamName || "").toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]/g, "");
+  }
+
+  function getPlayerPreviewTheme(player) {
+    var teamName = player.teamLabel || player.teamName || player.team || "";
+    var teamKey = normalizePreviewTeamName(teamName);
+    var themes = {
+      acmilan: { primary: "#d00027", secondary: "#050505" },
+      afcrichmond: { primary: "#1d2d86", secondary: "#f0c33c" },
+      ajax: { primary: "#d71920", secondary: "#ffffff" },
+      astonvilla: { primary: "#670e36", secondary: "#95bfe5" },
+      atleticomadrid: { primary: "#c8102e", secondary: "#0b2f6b" },
+      barcelona: { primary: "#004d98", secondary: "#a50044" },
+      bayernmunich: { primary: "#dc052d", secondary: "#0066b2" },
+      benfica: { primary: "#e30613", secondary: "#f4c430" },
+      brighton: { primary: "#0057b8", secondary: "#ffffff" },
+      chelsea: { primary: "#034694", secondary: "#dba111" },
+      crystalpalace: { primary: "#1b458f", secondary: "#c4122e" },
+      flfart: { primary: "#e83e5f", secondary: "#ffffff" },
+      intermilan: { primary: "#0057b8", secondary: "#000000" },
+      juventus: { primary: "#111111", secondary: "#ffffff" },
+      manchestercity: { primary: "#6cabdd", secondary: "#1c2c5b" },
+      manchesterunited: { primary: "#da291c", secondary: "#fbe122" },
+      marseille: { primary: "#2faee0", secondary: "#ffffff" },
+      monaco: { primary: "#d91023", secondary: "#ffffff" },
+      parisstgermain: { primary: "#004170", secondary: "#da291c" },
+      parisgermain: { primary: "#004170", secondary: "#da291c" },
+      realmadrid: { primary: "#552583", secondary: "#febe10" },
+      sheffieldunited: { primary: "#ee2737", secondary: "#000000" },
+      sportingcp: { primary: "#00843d", secondary: "#ffffff" },
+      tottenhamhotspur: { primary: "#132257", secondary: "#ffffff" },
+      valencia: { primary: "#f15a24", secondary: "#000000" }
+    };
+
+    return themes[teamKey] || { primary: "#111b36", secondary: "#f4d35e" };
+  }
+
+  function applyPlayerPreviewTheme(preview, player) {
+    var theme = getPlayerPreviewTheme(player);
+
+    preview.style.setProperty("--preview-primary", theme.primary);
+    preview.style.setProperty("--preview-secondary", theme.secondary);
+  }
+
+  function buildPlayerPreviewStatIndex(leadersData) {
+    var index = {};
+    var sections = Array.isArray(leadersData) ? leadersData : leadersData && leadersData.sections ? leadersData.sections : [];
+    var wanted = { points: "points", rebounds: "rebounds", assists: "assists" };
+
+    sections.forEach(function (section) {
+      (section.categories || []).forEach(function (category) {
+        var slug = String(category.slug || category.title || "").toLowerCase().replace(/\s+/g, "-");
+        var statKey = wanted[slug];
+
+        if (!statKey) {
+          return;
+        }
+
+        (category.leaders || []).forEach(function (leader) {
+          var file = getPlayerFileFromUrl(leader.playerUrl || leader.playerFile);
+
+          if (!file) {
+            return;
+          }
+
+          if (!index[file]) {
+            index[file] = {};
+          }
+
+          if (index[file][statKey] === undefined) {
+            index[file][statKey] = leader.valueText || leader.value || "--";
+          }
+        });
+      });
+    });
+
+    return index;
+  }
+
+  function buildPlayerPreviewMarkup(player, stats) {
+    var groups = [
+      { title: "Offense", attrs: [["INS", "Ins"], ["JPS", "Jps"], ["3PS", "3ps"], ["HND", "Hnd"], ["PAS", "Pas"]] },
+      { title: "Defense", attrs: [["ORB", "Orb"], ["DRB", "Drb"], ["PSD", "Psd"], ["PRD", "Prd"], ["STL", "Stl"], ["BLK", "Blk"]] },
+      { title: "Physical", attrs: [["QKN", "Qkn"], ["JMP", "Jmp"], ["STR", "Str"], ["STA", "Sta"]] }
+    ];
+    var overall = player.overall || player.ovr || "--";
+    var meta = [player.teamLabel || player.teamName || player.team, player.pos, player.age ? "Age " + player.age : ""].filter(Boolean).join(" | ");
+    var pra = {
+      points: stats && stats.points !== undefined ? stats.points : "--",
+      rebounds: stats && stats.rebounds !== undefined ? stats.rebounds : "--",
+      assists: stats && stats.assists !== undefined ? stats.assists : "--"
+    };
+
+    return [
+      '<div class="player-preview-pill__head">',
+      '  <div>',
+      '    <h3 class="player-preview-pill__name">' + escapeHtml(player.name || "Unknown Player") + "</h3>",
+      '    <p class="player-preview-pill__meta">' + escapeHtml(meta || "Player profile") + "</p>",
+      "  </div>",
+      '  <div class="player-preview-pill__rating"><strong>' + escapeHtml(overall) + '</strong><span>OVR</span></div>',
+      "</div>",
+      '<div class="player-preview-pill__attrs">',
+      groups.map(function (group) {
+        return [
+          '<section class="player-preview-pill__col">',
+          '  <h4 class="player-preview-pill__col-title">' + group.title + "</h4>",
+          group.attrs.map(function (attr) {
+            return '<div class="player-preview-pill__attr"><span>' + attr[0] + "</span><strong>" + escapeHtml(getPlayerPreviewAttr(player, attr[1])) + "</strong></div>";
+          }).join(""),
+          "</section>"
+        ].join("");
+      }).join(""),
+      "</div>",
+      '<section class="player-preview-pill__pra">',
+      '  <p class="player-preview-pill__pra-title">Major Stats</p>',
+      '  <div class="player-preview-pill__pra-grid">',
+      '    <div class="player-preview-pill__pra-item"><span>PTS</span><strong>' + escapeHtml(pra.points) + "</strong></div>",
+      '    <div class="player-preview-pill__pra-item"><span>REB</span><strong>' + escapeHtml(pra.rebounds) + "</strong></div>",
+      '    <div class="player-preview-pill__pra-item"><span>AST</span><strong>' + escapeHtml(pra.assists) + "</strong></div>",
+      "  </div>",
+      "</section>"
+    ].join("");
+  }
+
+  function positionPlayerPreview(preview, x, y) {
+    var margin = 8;
+    var viewport = window.visualViewport || { width: window.innerWidth, height: window.innerHeight, offsetLeft: 0, offsetTop: 0 };
+    var rect;
+    var left;
+    var top;
+    var minLeft = viewport.offsetLeft + margin;
+    var minTop = viewport.offsetTop + margin;
+    var maxLeft;
+    var maxTop;
+
+    preview.hidden = false;
+    rect = preview.getBoundingClientRect();
+    maxLeft = viewport.offsetLeft + viewport.width - rect.width - margin;
+    maxTop = viewport.offsetTop + viewport.height - rect.height - margin;
+    left = minLeft <= maxLeft ? minLeft : viewport.offsetLeft;
+    top = Math.max(minTop, Math.min(y + 12, maxTop));
+    preview.style.left = left + "px";
+    preview.style.top = top + "px";
+  }
+
+  function initPlayerPreviewPill() {
+    var longPressTimer = null;
+    var suppressNextClick = false;
+    var startPoint = null;
+    var preview;
+    var playerIndex = {};
+    var statIndex = {};
+
+    function hidePreview() {
+      if (preview) {
+        preview.hidden = true;
+      }
+    }
+
+    function findPlayerLink(target) {
+      var link = target && target.closest ? target.closest('a[href*="player"]') : null;
+      return link && getPlayerFileFromUrl(link.getAttribute("href")) ? link : null;
+    }
+
+    function showPreview(link, x, y) {
+      var file = getPlayerFileFromUrl(link.getAttribute("href"));
+      var player = playerIndex[file];
+
+      if (!player) {
+        return;
+      }
+
+      suppressNextClick = true;
+      applyPlayerPreviewTheme(preview, player);
+      preview.innerHTML = buildPlayerPreviewMarkup(player, statIndex[file]);
+      positionPlayerPreview(preview, x, y);
+    }
+
+    ensurePlayerPreviewStyles();
+    preview = document.createElement("aside");
+    preview.className = "player-preview-pill";
+    preview.hidden = true;
+    preview.setAttribute("aria-live", "polite");
+    document.body.appendChild(preview);
+
+    Promise.all([loadJsonData("players.json"), loadJsonData("leaders.json").catch(function () { return { sections: [] }; })])
+      .then(function (results) {
+        (results[0] || []).forEach(function (player) {
+          var file = getPlayerFileFromUrl(player.url);
+
+          if (file) {
+            playerIndex[file] = player;
+          }
+        });
+
+        statIndex = buildPlayerPreviewStatIndex(results[1]);
+      })
+      .catch(function () {
+        playerIndex = {};
+        statIndex = {};
+      });
+
+    document.addEventListener("pointerdown", function (event) {
+      var link = findPlayerLink(event.target);
+
+      if (preview && !preview.hidden && (!link || !preview.contains(event.target))) {
+        hidePreview();
+        return;
+      }
+
+      if (!link || event.button > 0) {
+        return;
+      }
+
+      startPoint = { x: event.clientX, y: event.clientY };
+      window.clearTimeout(longPressTimer);
+      longPressTimer = window.setTimeout(function () {
+        showPreview(link, startPoint.x, startPoint.y);
+      }, 450);
+    });
+
+    document.addEventListener("pointermove", function (event) {
+      if (!startPoint) {
+        return;
+      }
+
+      if (Math.abs(event.clientX - startPoint.x) > 10 || Math.abs(event.clientY - startPoint.y) > 10) {
+        window.clearTimeout(longPressTimer);
+      }
+    });
+
+    document.addEventListener("pointerup", function () {
+      window.clearTimeout(longPressTimer);
+      startPoint = null;
+    });
+
+    document.addEventListener("pointercancel", function () {
+      window.clearTimeout(longPressTimer);
+      startPoint = null;
+    });
+
+    document.addEventListener("click", function (event) {
+      if (suppressNextClick) {
+        event.preventDefault();
+        event.stopPropagation();
+        suppressNextClick = false;
+        return;
+      }
+
+      if (preview && !preview.hidden && !preview.contains(event.target)) {
+        hidePreview();
+      }
+    }, true);
+
+    document.addEventListener("contextmenu", function (event) {
+      if (findPlayerLink(event.target) && preview && !preview.hidden) {
+        event.preventDefault();
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        hidePreview();
+      }
+    });
+
+    window.addEventListener("scroll", hidePreview, true);
+  }
+
   function initPlayerSearch(teamMap) {
     var root = ensureSearchRoot();
     if (!root) {
@@ -1598,6 +1939,7 @@
     enhanceLeagueMenu();
     initPlayerRatings();
     initRosterRatings();
+    initPlayerPreviewPill();
     loadJsonData("teams.json")
       .then(function (teams) {
         var teamMap = buildTeamMap(teams);

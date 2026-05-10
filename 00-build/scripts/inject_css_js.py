@@ -17,7 +17,7 @@ JS_FILENAME   = "00-assets/js/sort.js"
 JS2_FILENAME  = "00-assets/js/features.js"
 INDEX_JS_FILENAME = "00-assets/js/index.js"
 FAVICON_FILE  = "00-build/database/favicon.png"   # change to .ico if needed
-VIEWPORT_TAG  = '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+VIEWPORT_TAG  = '<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.25, maximum-scale=5.0, user-scalable=yes">'
 # ────────────────────────────────────────────────────────────────────
 
 DRY_RUN       = "--dry-run" in sys.argv

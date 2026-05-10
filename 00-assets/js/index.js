@@ -3,6 +3,7 @@
 
   var STYLE_ID = "league-index-shell-styles";
   var BREAKPOINT = 760;
+  var MOBILE_CANVAS_WIDTH = 980;
 
   function ensureStyles() {
     if (document.getElementById(STYLE_ID)) {
@@ -24,7 +25,11 @@
       ".site-menu-toggle:hover { background: #17274b; }",
       ".site-sidebar-backdrop { display: none; }",
       "@media (max-width: 760px) {",
-      "  .site-shell { grid-template-columns: minmax(0, 1fr); }",
+      "  html, body { min-height: 100%; overflow: auto; }",
+      "  body { overflow: auto; }",
+      "  .site-shell { grid-template-columns: minmax(0, 1fr); height: 100vh; min-width: " + MOBILE_CANVAS_WIDTH + "px; position: relative; width: " + MOBILE_CANVAS_WIDTH + "px; }",
+      "  .site-content { min-width: " + MOBILE_CANVAS_WIDTH + "px; overflow: auto; -webkit-overflow-scrolling: touch; }",
+      "  .site-content .site-frame { min-width: " + MOBILE_CANVAS_WIDTH + "px; width: " + MOBILE_CANVAS_WIDTH + "px; }",
       "  .site-sidebar-backdrop { background: rgba(15, 23, 42, 0.36); bottom: 0; display: block; left: min(72vw, 240px); opacity: 0; pointer-events: none; position: fixed; right: 0; top: 0; transition: opacity 0.2s ease; z-index: 15; }",
       "  body.league-menu-open .site-sidebar-backdrop { opacity: 1; pointer-events: auto; }",
       "  .site-sidebar { bottom: 0; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.28); max-width: 240px; position: fixed; top: 0; transform: translateX(-100%); transition: transform 0.24s ease, width 0.24s ease, border-color 0.24s ease; width: min(72vw, 240px); z-index: 20; }",
