@@ -17,9 +17,9 @@ body {
   font-size: 13px;
   line-height: 1.5;
   padding: 12px;
-  overflow-x: hidden;
+  overflow-x: auto;
   animation: fadein 0.3s ease;
-  max-width: 100vw;
+  max-width: none;
 }
 
 @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
@@ -55,13 +55,15 @@ table {
   table-layout: fixed;
 }
 
-/* Tables with explicit width attrs scroll if needed */
+/* Generated tables should move with the page, not become nested scrollers. */
 table[width] {
-  display: block;
-  overflow-x: auto;
+  display: table;
+  overflow: visible;
   -webkit-overflow-scrolling: touch;
   table-layout: auto;
   border-radius: 12px;
+  width: auto !important;
+  max-width: none !important;
 }
 
 /* ── Header cells ─────────────────────────────────────────── */
