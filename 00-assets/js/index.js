@@ -118,6 +118,57 @@
     return !document.body.classList.contains("league-menu-closed");
   }
 
+  function closeAfterSidebarNavigation() {
+    window.setTimeout(function () {
+      var button = document.querySelector(".site-menu-toggle");
+      var backdrop = document.querySelector(".site-sidebar-backdrop");
+
+      document.body.classList.remove("league-menu-open");
+      document.body.classList.remove("league-menu-closed");
+
+      if (button) {
+        button.setAttribute("aria-expanded", "false");
+      }
+
+      if (backdrop) {
+        backdrop.hidden = true;
+      }
+    }, 0);
+  }
+
+  function bindSidebarAutoClose() {
+    var menuFrame = document.querySelector('iframe[name="Options"]');
+
+    if (!menuFrame || menuFrame.dataset.autoCloseBound === "true") {
+      return;
+    }
+
+    function bindMenuDocument() {
+      var menuDocument;
+
+      try {
+        menuDocument = menuFrame.contentDocument || menuFrame.contentWindow.document;
+      } catch (error) {
+        return;
+      }
+
+      if (!menuDocument || menuDocument.documentElement.dataset.autoCloseBound === "true") {
+        return;
+      }
+
+      menuDocument.documentElement.dataset.autoCloseBound = "true";
+      menuDocument.addEventListener("click", function (event) {
+        if (event.target && event.target.closest && event.target.closest("a")) {
+          closeAfterSidebarNavigation();
+        }
+      }, true);
+    }
+
+    menuFrame.dataset.autoCloseBound = "true";
+    menuFrame.addEventListener("load", bindMenuDocument);
+    bindMenuDocument();
+  }
+
   function ensureMenuControls() {
     var body = ensureBody();
     var button = document.querySelector(".site-menu-toggle");
@@ -159,6 +210,7 @@
     ensureStyles();
     ensureShell();
     ensureMenuControls();
+    bindSidebarAutoClose();
   }
 
   if (document.readyState === "loading") {

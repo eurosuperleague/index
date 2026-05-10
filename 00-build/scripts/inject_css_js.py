@@ -17,6 +17,7 @@ JS_FILENAME   = "00-assets/js/sort.js"
 JS2_FILENAME  = "00-assets/js/features.js"
 INDEX_JS_FILENAME = "00-assets/js/index.js"
 FAVICON_FILE  = "00-build/database/favicon.png"   # change to .ico if needed
+VIEWPORT_TAG  = '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
 # ────────────────────────────────────────────────────────────────────
 
 DRY_RUN       = "--dry-run" in sys.argv
@@ -63,14 +64,17 @@ for dirpath, dirnames, filenames in os.walk(ROOT_FOLDER):
         already_js2     = JS2_FILENAME     in html
         already_index_js = INDEX_JS_FILENAME in html
         already_favicon = FAVICON_FILE     in html
+        already_viewport = 'name="viewport"' in html.lower() or "name='viewport'" in html.lower()
 
-        if already_css and already_js and already_js2 and already_favicon and (not is_root_index or already_index_js):
+        if already_css and already_js and already_js2 and already_favicon and already_viewport and (not is_root_index or already_index_js):
             print(f"SKIPPED (all present): {filepath}")
             files_skipped += 1
             continue
 
         # ── Build inject block ─────────────────────────────────────
         inject = ""
+        if not already_viewport:
+            inject += f"  {VIEWPORT_TAG}\n"
         if not already_favicon:
             inject += f"  {favicon_tag}\n"
         if not already_css:
