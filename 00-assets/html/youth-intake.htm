@@ -26,13 +26,21 @@
     .tab.active { background:var(--blue); border-color:var(--blue); color:#fff; }
     .table { width:max-content; min-width:1500px; border-collapse:collapse; font-size:.83rem; }
     .table th,.table td { border-bottom:1px solid var(--line); padding:.44rem .34rem; white-space:nowrap; text-align:right; }
-    .table th,.table td { min-width:72px; }
+    .table th,.table td { min-width:58px; }
     .table th { font-size:.62rem; letter-spacing:.11em; text-transform:uppercase; color:var(--muted); cursor:pointer; user-select:none; }
     .table th.sort-asc::after { content:" ▲"; font-size:.58rem; color:var(--blue); }
     .table th.sort-desc::after { content:" ▼"; font-size:.58rem; color:var(--blue); }
-    .table th:first-child,.table td:first-child { text-align:left; padding-left:0; min-width:280px; width:280px; }
-    .table th:nth-child(2),.table td:nth-child(2) { text-align:left; min-width:190px; width:190px; }
+    .table th:first-child,.table td:first-child { text-align:left; padding-left:0; min-width:150px; width:150px; }
+    .table th:nth-child(2),.table td:nth-child(2) { text-align:left; min-width:96px; width:96px; }
     .table td:first-child { font-family:var(--font-serif); font-size:.98rem; }
+    .table th.col-name,.table td.col-name { min-width:150px; width:150px; }
+    .table th.col-team,.table td.col-team { min-width:96px; width:96px; }
+    .table th.col-pos,.table td.col-pos { min-width:52px; width:52px; }
+    .table th.col-age,.table td.col-age { min-width:44px; width:44px; }
+    .table th.col-height,.table td.col-height { min-width:54px; width:54px; }
+    .table th.col-weight,.table td.col-weight { min-width:56px; width:56px; }
+    .table th.col-uniform,.table td.col-uniform { min-width:42px; width:42px; }
+    .table th.col-stat,.table td.col-stat { min-width:48px; width:48px; }
     .table a { color:inherit; text-decoration:none; }
     .table a:hover { color:var(--blue); text-decoration:underline; }
     .status { font-size:.72rem; color:var(--muted); }
@@ -89,6 +97,10 @@
 
     function q(name) {
       return new URLSearchParams(window.location.search).get(name);
+    }
+
+    function loadJson(url) {
+      return fetch(url, { cache: "no-store" }).then((r) => r.json());
     }
 
     function findTeamFromQuery() {
@@ -185,6 +197,18 @@
       return map[key] || key;
     }
 
+    function columnClass(key, index) {
+      if (index === 0) return "col-name";
+      const lower = String(key || "").toLowerCase();
+      if (lower === "team") return "col-team";
+      if (lower === "position") return "col-pos";
+      if (lower === "age") return "col-age";
+      if (lower === "height") return "col-height";
+      if (lower === "weight") return "col-weight";
+      if (lower === "uniform") return "col-uniform";
+      return "col-stat";
+    }
+
     function renderCurrentTeam() {
       const team = state.current;
       if (!team) return;
@@ -224,7 +248,8 @@
       const headerHtml = columns.map((c, i) => {
         const activeSort = String(c).toLowerCase() === String(state.sortKey || "").toLowerCase();
         const sortClass = activeSort ? (state.sortDir === "desc" ? "sort-desc" : "sort-asc") : "";
-        return `<th class="${sortClass}" data-col="${c}">${shortHeader(c, i)}</th>`;
+        const classes = [columnClass(c, i), sortClass].filter(Boolean).join(" ");
+        return `<th class="${classes}" data-col="${c}">${shortHeader(c, i)}</th>`;
       }).join("");
       const bodyHtml = rows.length
         ? rows.map((row) => {
@@ -232,7 +257,7 @@
             const name = String((nameIndex >= 0 ? row[nameIndex] : row[0]) || "");
             const href = state.playerLinks.get(normalizeName(name)) || "";
             const nameHtml = href ? `<a href="${href}">${name}</a>` : name;
-            const cells = row.map((cell, idx) => `<td>${columns[idx] === "name" ? nameHtml : (cell === "" ? "-" : cell)}</td>`).join("");
+            const cells = row.map((cell, idx) => `<td class="${columnClass(columns[idx], idx)}">${columns[idx] === "name" ? nameHtml : (cell === "" ? "-" : cell)}</td>`).join("");
             return `<tr>${cells}</tr>`;
           }).join("")
         : `<tr><td colspan="${columns.length}">No intake players for this team</td></tr>`;
@@ -278,9 +303,9 @@
     async function init() {
       try {
         const [intakeData, intakePlayers, players] = await Promise.all([
-          fetch(URLS.intake).then((r) => r.json()),
-          fetch(URLS.intakePlayers).then((r) => r.json()),
-          fetch(URLS.players).then((r) => r.json())
+          loadJson(URLS.intake),
+          loadJson(URLS.intakePlayers),
+          loadJson(URLS.players)
         ]);
         state.teams = Array.isArray(intakeData.teams)
           ? intakeData.teams

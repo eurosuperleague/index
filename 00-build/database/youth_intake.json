@@ -12,6 +12,24 @@
   },
   "teams": [
     {
+      "team": "AC Milan",
+      "tierRaw": "",
+      "tier": "",
+      "positionFocus": "",
+      "intakePlayers": [
+        {
+          "name": "Kirk Hinrich",
+          "tierRaw": "",
+          "tier": ""
+        },
+        {
+          "name": "Naz Reid",
+          "tierRaw": "",
+          "tier": ""
+        }
+      ]
+    },
+    {
       "team": "AFC Richmond",
       "tierRaw": "",
       "tier": "",
@@ -489,29 +507,6 @@
         },
         {
           "name": "Jalen Jones",
-          "tierRaw": "",
-          "tier": ""
-        }
-      ]
-    },
-    {
-      "team": "Team",
-      "tierRaw": "",
-      "tier": "",
-      "positionFocus": "",
-      "intakePlayers": [
-        {
-          "name": "AC Milan Dr Tequila",
-          "tierRaw": "",
-          "tier": ""
-        },
-        {
-          "name": "Kirk Hinrich",
-          "tierRaw": "",
-          "tier": ""
-        },
-        {
-          "name": "Naz Reid",
           "tierRaw": "",
           "tier": ""
         }

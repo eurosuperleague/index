@@ -320,39 +320,50 @@ def _build_position_focus_map(rows):
     return focus_map
 
 
-def _build_intake_map(rows):
+def _build_intake_map(rows, known_team_names=None):
     if not rows:
         return {}
 
-    # Intake format expected:
-    # team row: A = team, B = manager/user
-    # next 4 rows: A = first name, B = last name
+    known_team_names = {
+        _normalize_key(name)
+        for name in (known_team_names or [])
+        if str(name or "").strip()
+    }
+
+    def is_header_row(first, second):
+        first_key = _normalize_key(first)
+        second_key = _normalize_key(second)
+        return first_key == "team" and second_key in {"", "manager", "user", "owner", "coach", "gm"}
+
+    def is_team_row(first):
+        return _normalize_key(first) in known_team_names
+
     intake_by_team = {}
-    i = 0
-    while i < len(rows):
-        row = rows[i]
-        team_name = str(row[0] if len(row) > 0 else "").strip()
-        if not team_name:
-            i += 1
+    current_team = ""
+
+    for row in rows:
+        first = str(row[0] if len(row) > 0 else "").strip()
+        second = str(row[1] if len(row) > 1 else "").strip()
+
+        if not first and not second:
             continue
 
-        prospects = []
-        for offset in range(1, 5):
-            if i + offset >= len(rows):
-                break
-            prow = rows[i + offset]
-            first = str(prow[0] if len(prow) > 0 else "").strip()
-            last = str(prow[1] if len(prow) > 1 else "").strip()
-            full = f"{first} {last}".strip()
-            if full:
-                prospects.append(full)
-
-        if prospects:
-            intake_by_team[team_name] = prospects
-            i += 5
+        if is_header_row(first, second):
+            current_team = ""
             continue
 
-        i += 1
+        if is_team_row(first):
+            current_team = first
+            intake_by_team.setdefault(current_team, [])
+            continue
+
+        if not current_team:
+            continue
+
+        full = f"{first} {second}".strip()
+        if full:
+            intake_by_team[current_team].append(full)
+
     return intake_by_team
 
 
@@ -368,7 +379,7 @@ def build_youth_intake_payload(xlsx_path: str):
 
     player_lookup = _build_database_lookup(db_rows)
     focus_map = _build_position_focus_map(focus_rows)
-    intake_map = _build_intake_map(intake_rows)
+    intake_map = _build_intake_map(intake_rows, known_team_names=[info.get("team", "") for info in focus_map.values()])
 
     all_team_names = []
     seen = set()
@@ -456,4 +467,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-
