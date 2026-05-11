@@ -2,14 +2,58 @@
     "source": "injuries.htm",
     "injuries": [
         {
+            "pos": "PF",
+            "name": "John Lambert",
+            "url": "",
+            "team": "roster28",
+            "teamName": "Manchester City",
+            "rosterUrl": "./rosters/roster28.htm",
+            "length": "41",
+            "injury": "Broken Arm",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "C",
+            "name": "Buck Williams",
+            "url": "",
+            "team": "roster23",
+            "teamName": "Sporting CP",
+            "rosterUrl": "./rosters/roster23.htm",
+            "length": "30",
+            "injury": "Dislocated Shoulder",
+            "rowClass": "row2"
+        },
+        {
             "pos": "SG",
             "name": "Paul Westphal",
             "url": "",
             "team": "roster27",
             "teamName": "FL Fart",
             "rosterUrl": "./rosters/roster27.htm",
-            "length": "52",
+            "length": "21",
             "injury": "Plantar Fasciitis",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "SG",
+            "name": "Rolando Blackman",
+            "url": "",
+            "team": "roster14",
+            "teamName": "Juventus",
+            "rosterUrl": "./rosters/roster14.htm",
+            "length": "20",
+            "injury": "Dislocated Knee",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "SF",
+            "name": "Greg Ballard",
+            "url": "",
+            "team": "roster8",
+            "teamName": "Real Madrid",
+            "rosterUrl": "./rosters/roster8.htm",
+            "length": "12",
+            "injury": "Fractured Cheekbone",
             "rowClass": "row1"
         },
         {
@@ -19,64 +63,31 @@
             "team": "roster5",
             "teamName": "Manchester United",
             "rosterUrl": "./rosters/roster5.htm",
-            "length": "42",
+            "length": "11",
             "injury": "Torn Ligament",
             "rowClass": "row2"
         },
         {
             "pos": "PF",
-            "name": "Kurt Nimphius",
-            "url": "",
-            "team": "roster13",
-            "teamName": "Benfica",
-            "rosterUrl": "./rosters/roster13.htm",
-            "length": "30",
-            "injury": "Dislocated Shoulder",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "SF",
-            "name": "Jay Vincent",
+            "name": "Cliff Robinson",
             "url": "",
             "team": "roster18",
             "teamName": "Ajax",
             "rosterUrl": "./rosters/roster18.htm",
-            "length": "21",
-            "injury": "Dislocated Shoulder",
-            "rowClass": "row2"
+            "length": "7",
+            "injury": "Broken Foot",
+            "rowClass": "row1"
         },
         {
             "pos": "C",
-            "name": "Marvin Webster",
+            "name": "Mike Gminski",
             "url": "",
-            "team": "roster12",
-            "teamName": "AFC Richmond",
-            "rosterUrl": "./rosters/roster12.htm",
-            "length": "12",
+            "team": "roster8",
+            "teamName": "Real Madrid",
+            "rosterUrl": "./rosters/roster8.htm",
+            "length": "4",
             "injury": "Broken Finger",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "SG",
-            "name": "Don Collins",
-            "url": "",
-            "team": "roster26",
-            "teamName": "Inter Milan",
-            "rosterUrl": "./rosters/roster26.htm",
-            "length": "10",
-            "injury": "Dislocated Knee",
             "rowClass": "row2"
-        },
-        {
-            "pos": "PF",
-            "name": "Larry Nance",
-            "url": "",
-            "team": "roster19",
-            "teamName": "Aston Villa",
-            "rosterUrl": "./rosters/roster19.htm",
-            "length": "2",
-            "injury": "Inflamed Appendix",
-            "rowClass": "row1"
         }
     ]
 }

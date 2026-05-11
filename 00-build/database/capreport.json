@@ -183,6 +183,23 @@
                 },
                 {
                     "pick": 3,
+                    "team": "Chelsea",
+                    "rosterUrl": "./rosters/roster17.htm",
+                    "rosterFile": "roster17.htm",
+                    "salary": 59284644.0,
+                    "salaryText": "$59,284,644",
+                    "capRoom": 10715356.0,
+                    "capRoomText": "$10,715,356",
+                    "budgetRoom": null,
+                    "budgetRoomText": "-",
+                    "midException": -0.0,
+                    "midExceptionText": "($0)",
+                    "lowException": -0.0,
+                    "lowExceptionText": "($0)",
+                    "rowClass": "row1"
+                },
+                {
+                    "pick": 4,
                     "team": "Ajax",
                     "rosterUrl": "./rosters/roster18.htm",
                     "rosterFile": "roster18.htm",
@@ -196,10 +213,10 @@
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
                     "lowExceptionText": "($0)",
-                    "rowClass": "row1"
+                    "rowClass": "row2"
                 },
                 {
-                    "pick": 4,
+                    "pick": 5,
                     "team": "Sheffield United",
                     "rosterUrl": "./rosters/roster16.htm",
                     "rosterFile": "roster16.htm",
@@ -213,10 +230,10 @@
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
                     "lowExceptionText": "($0)",
-                    "rowClass": "row2"
+                    "rowClass": "row1"
                 },
                 {
-                    "pick": 5,
+                    "pick": 6,
                     "team": "Monaco",
                     "rosterUrl": "./rosters/roster20.htm",
                     "rosterFile": "roster20.htm",
@@ -224,23 +241,6 @@
                     "salaryText": "$60,550,630",
                     "capRoom": 9449370.0,
                     "capRoomText": "$9,449,370",
-                    "budgetRoom": null,
-                    "budgetRoomText": "-",
-                    "midException": -0.0,
-                    "midExceptionText": "($0)",
-                    "lowException": -0.0,
-                    "lowExceptionText": "($0)",
-                    "rowClass": "row1"
-                },
-                {
-                    "pick": 6,
-                    "team": "Chelsea",
-                    "rosterUrl": "./rosters/roster17.htm",
-                    "rosterFile": "roster17.htm",
-                    "salary": 61944644.0,
-                    "salaryText": "$61,944,644",
-                    "capRoom": 8055356.0,
-                    "capRoomText": "$8,055,356",
                     "budgetRoom": null,
                     "budgetRoomText": "-",
                     "midException": -0.0,

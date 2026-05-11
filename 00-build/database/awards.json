@@ -10,6 +10,74 @@
                     "slug": "player-of-the-week",
                     "awards": [
                         {
+                            "date": "12/27/1981",
+                            "pos": "SG",
+                            "player": "George Gervin",
+                            "playerUrl": "./players/player1046.htm",
+                            "playerFile": "player1046.htm",
+                            "team": "roster9",
+                            "teamName": "AC Milan",
+                            "teamUrl": "./rosters/roster9.htm",
+                            "teamFile": "roster9.htm",
+                            "ppg": 37.0,
+                            "rpg": 7.5,
+                            "apg": 3.0,
+                            "spg": 2.0,
+                            "bpg": 0.0,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "date": "12/20/1981",
+                            "pos": "SG",
+                            "player": "Sidney Moncrief",
+                            "playerUrl": "./players/player699.htm",
+                            "playerFile": "player699.htm",
+                            "team": "roster8",
+                            "teamName": "Real Madrid",
+                            "teamUrl": "./rosters/roster8.htm",
+                            "teamFile": "roster8.htm",
+                            "ppg": 31.0,
+                            "rpg": 2.0,
+                            "apg": 3.7,
+                            "spg": 3.7,
+                            "bpg": 0.0,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "date": "12/13/1981",
+                            "pos": "PF",
+                            "player": "Kevin McHale",
+                            "playerUrl": "./players/player717.htm",
+                            "playerFile": "player717.htm",
+                            "team": "roster7",
+                            "teamName": "Bayern Munich",
+                            "teamUrl": "./rosters/roster7.htm",
+                            "teamFile": "roster7.htm",
+                            "ppg": 32.0,
+                            "rpg": 5.0,
+                            "apg": 1.0,
+                            "spg": 0.0,
+                            "bpg": 0.0,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "date": "12/06/1981",
+                            "pos": "SG",
+                            "player": "Dennis Johnson",
+                            "playerUrl": "./players/player715.htm",
+                            "playerFile": "player715.htm",
+                            "team": "roster11",
+                            "teamName": "Atletico Madrid",
+                            "teamUrl": "./rosters/roster11.htm",
+                            "teamFile": "roster11.htm",
+                            "ppg": 27.0,
+                            "rpg": 4.0,
+                            "apg": 5.5,
+                            "spg": 2.0,
+                            "bpg": 0.5,
+                            "rowClass": "row2"
+                        },
+                        {
                             "date": "11/29/1981",
                             "pos": "SF",
                             "player": "Magic Johnson",
@@ -84,28 +152,22 @@
                     "slug": "player-of-the-month",
                     "awards": [
                         {
-                            "date": "November",
+                            "date": "December",
                             "pos": "SF",
-                            "player": "Magic Johnson",
-                            "playerUrl": "./players/player698.htm",
-                            "playerFile": "player698.htm",
-                            "team": "roster12",
-                            "teamName": "AFC Richmond",
-                            "teamUrl": "./rosters/roster12.htm",
-                            "teamFile": "roster12.htm",
-                            "ppg": 25.1,
-                            "rpg": 6.8,
-                            "apg": 5.9,
-                            "spg": 1.8,
+                            "player": "Adrian Dantley",
+                            "playerUrl": "./players/player734.htm",
+                            "playerFile": "player734.htm",
+                            "team": "roster11",
+                            "teamName": "Atletico Madrid",
+                            "teamUrl": "./rosters/roster11.htm",
+                            "teamFile": "roster11.htm",
+                            "ppg": 28.6,
+                            "rpg": 4.9,
+                            "apg": 4.3,
+                            "spg": 1.1,
                             "bpg": 0.1,
                             "rowClass": "row1"
-                        }
-                    ]
-                },
-                {
-                    "title": "Rookie of the Month",
-                    "slug": "rookie-of-the-month",
-                    "awards": [
+                        },
                         {
                             "date": "November",
                             "pos": "SF",
@@ -121,7 +183,47 @@
                             "apg": 5.9,
                             "spg": 1.8,
                             "bpg": 0.1,
+                            "rowClass": "row2"
+                        }
+                    ]
+                },
+                {
+                    "title": "Rookie of the Month",
+                    "slug": "rookie-of-the-month",
+                    "awards": [
+                        {
+                            "date": "December",
+                            "pos": "SF",
+                            "player": "Adrian Dantley",
+                            "playerUrl": "./players/player734.htm",
+                            "playerFile": "player734.htm",
+                            "team": "roster11",
+                            "teamName": "Atletico Madrid",
+                            "teamUrl": "./rosters/roster11.htm",
+                            "teamFile": "roster11.htm",
+                            "ppg": 28.6,
+                            "rpg": 4.9,
+                            "apg": 4.3,
+                            "spg": 1.1,
+                            "bpg": 0.1,
                             "rowClass": "row1"
+                        },
+                        {
+                            "date": "November",
+                            "pos": "SF",
+                            "player": "Magic Johnson",
+                            "playerUrl": "./players/player698.htm",
+                            "playerFile": "player698.htm",
+                            "team": "roster12",
+                            "teamName": "AFC Richmond",
+                            "teamUrl": "./rosters/roster12.htm",
+                            "teamFile": "roster12.htm",
+                            "ppg": 25.1,
+                            "rpg": 6.8,
+                            "apg": 5.9,
+                            "spg": 1.8,
+                            "bpg": 0.1,
+                            "rowClass": "row2"
                         }
                     ]
                 }
@@ -135,6 +237,74 @@
                     "title": "Player of the Week",
                     "slug": "player-of-the-week",
                     "awards": [
+                        {
+                            "date": "12/27/1981",
+                            "pos": "C",
+                            "player": "Moses Malone",
+                            "playerUrl": "./players/player872.htm",
+                            "playerFile": "player872.htm",
+                            "team": "roster13",
+                            "teamName": "Benfica",
+                            "teamUrl": "./rosters/roster13.htm",
+                            "teamFile": "roster13.htm",
+                            "ppg": 30.0,
+                            "rpg": 11.0,
+                            "apg": 3.5,
+                            "spg": 1.0,
+                            "bpg": 2.0,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "date": "12/20/1981",
+                            "pos": "C",
+                            "player": "Moses Malone",
+                            "playerUrl": "./players/player872.htm",
+                            "playerFile": "player872.htm",
+                            "team": "roster13",
+                            "teamName": "Benfica",
+                            "teamUrl": "./rosters/roster13.htm",
+                            "teamFile": "roster13.htm",
+                            "ppg": 49.5,
+                            "rpg": 15.5,
+                            "apg": 2.5,
+                            "spg": 0.0,
+                            "bpg": 1.0,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "date": "12/13/1981",
+                            "pos": "PF",
+                            "player": "Dan Issel",
+                            "playerUrl": "./players/player896.htm",
+                            "playerFile": "player896.htm",
+                            "team": "roster15",
+                            "teamName": "Marseille",
+                            "teamUrl": "./rosters/roster15.htm",
+                            "teamFile": "roster15.htm",
+                            "ppg": 27.0,
+                            "rpg": 9.0,
+                            "apg": 2.0,
+                            "spg": 5.0,
+                            "bpg": 1.0,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "date": "12/06/1981",
+                            "pos": "C",
+                            "player": "Bill Laimbeer",
+                            "playerUrl": "./players/player874.htm",
+                            "playerFile": "player874.htm",
+                            "team": "roster19",
+                            "teamName": "Aston Villa",
+                            "teamUrl": "./rosters/roster19.htm",
+                            "teamFile": "roster19.htm",
+                            "ppg": 30.0,
+                            "rpg": 12.0,
+                            "apg": 3.0,
+                            "spg": 1.0,
+                            "bpg": 5.0,
+                            "rowClass": "row2"
+                        },
                         {
                             "date": "11/29/1981",
                             "pos": "C",
@@ -210,7 +380,7 @@
                     "slug": "player-of-the-month",
                     "awards": [
                         {
-                            "date": "November",
+                            "date": "December",
                             "pos": "C",
                             "player": "Moses Malone",
                             "playerUrl": "./players/player872.htm",
@@ -219,19 +389,13 @@
                             "teamName": "Benfica",
                             "teamUrl": "./rosters/roster13.htm",
                             "teamFile": "roster13.htm",
-                            "ppg": 38.0,
-                            "rpg": 12.9,
-                            "apg": 1.5,
-                            "spg": 0.8,
-                            "bpg": 2.9,
+                            "ppg": 37.0,
+                            "rpg": 12.6,
+                            "apg": 2.8,
+                            "spg": 0.6,
+                            "bpg": 1.4,
                             "rowClass": "row1"
-                        }
-                    ]
-                },
-                {
-                    "title": "Rookie of the Month",
-                    "slug": "rookie-of-the-month",
-                    "awards": [
+                        },
                         {
                             "date": "November",
                             "pos": "C",
@@ -247,7 +411,47 @@
                             "apg": 1.5,
                             "spg": 0.8,
                             "bpg": 2.9,
+                            "rowClass": "row2"
+                        }
+                    ]
+                },
+                {
+                    "title": "Rookie of the Month",
+                    "slug": "rookie-of-the-month",
+                    "awards": [
+                        {
+                            "date": "December",
+                            "pos": "C",
+                            "player": "Moses Malone",
+                            "playerUrl": "./players/player872.htm",
+                            "playerFile": "player872.htm",
+                            "team": "roster13",
+                            "teamName": "Benfica",
+                            "teamUrl": "./rosters/roster13.htm",
+                            "teamFile": "roster13.htm",
+                            "ppg": 37.0,
+                            "rpg": 12.6,
+                            "apg": 2.8,
+                            "spg": 0.6,
+                            "bpg": 1.4,
                             "rowClass": "row1"
+                        },
+                        {
+                            "date": "November",
+                            "pos": "C",
+                            "player": "Moses Malone",
+                            "playerUrl": "./players/player872.htm",
+                            "playerFile": "player872.htm",
+                            "team": "roster13",
+                            "teamName": "Benfica",
+                            "teamUrl": "./rosters/roster13.htm",
+                            "teamFile": "roster13.htm",
+                            "ppg": 38.0,
+                            "rpg": 12.9,
+                            "apg": 1.5,
+                            "spg": 0.8,
+                            "bpg": 2.9,
+                            "rowClass": "row2"
                         }
                     ]
                 }
@@ -261,6 +465,74 @@
                     "title": "Player of the Week",
                     "slug": "player-of-the-week",
                     "awards": [
+                        {
+                            "date": "12/27/1981",
+                            "pos": "PG",
+                            "player": "World B. Free",
+                            "playerUrl": "./players/player1048.htm",
+                            "playerFile": "player1048.htm",
+                            "team": "roster26",
+                            "teamName": "Inter Milan",
+                            "teamUrl": "./rosters/roster26.htm",
+                            "teamFile": "roster26.htm",
+                            "ppg": 27.7,
+                            "rpg": 3.3,
+                            "apg": 3.7,
+                            "spg": 0.3,
+                            "bpg": 0.3,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "date": "12/20/1981",
+                            "pos": "C",
+                            "player": "Joe Barry Carroll",
+                            "playerUrl": "./players/player710.htm",
+                            "playerFile": "player710.htm",
+                            "team": "roster21",
+                            "teamName": "Paris Saint-Germain",
+                            "teamUrl": "./rosters/roster21.htm",
+                            "teamFile": "roster21.htm",
+                            "ppg": 42.5,
+                            "rpg": 8.5,
+                            "apg": 0.0,
+                            "spg": 0.0,
+                            "bpg": 2.5,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "date": "12/13/1981",
+                            "pos": "PG",
+                            "player": "Larry Drew",
+                            "playerUrl": "./players/player1053.htm",
+                            "playerFile": "player1053.htm",
+                            "team": "roster27",
+                            "teamName": "FL Fart",
+                            "teamUrl": "./rosters/roster27.htm",
+                            "teamFile": "roster27.htm",
+                            "ppg": 29.0,
+                            "rpg": 6.0,
+                            "apg": 10.0,
+                            "spg": 5.0,
+                            "bpg": 1.0,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "date": "12/06/1981",
+                            "pos": "C",
+                            "player": "Buck Williams",
+                            "playerUrl": "./players/player1051.htm",
+                            "playerFile": "player1051.htm",
+                            "team": "roster23",
+                            "teamName": "Sporting CP",
+                            "teamUrl": "./rosters/roster23.htm",
+                            "teamFile": "roster23.htm",
+                            "ppg": 27.0,
+                            "rpg": 12.5,
+                            "apg": 2.0,
+                            "spg": 0.5,
+                            "bpg": 0.5,
+                            "rowClass": "row2"
+                        },
                         {
                             "date": "11/29/1981",
                             "pos": "SG",
@@ -336,28 +608,22 @@
                     "slug": "player-of-the-month",
                     "awards": [
                         {
-                            "date": "November",
+                            "date": "December",
                             "pos": "SF",
-                            "player": "Kelly Tripucka",
-                            "playerUrl": "./players/player1049.htm",
-                            "playerFile": "player1049.htm",
-                            "team": "roster24",
-                            "teamName": "Barcelona",
-                            "teamUrl": "./rosters/roster24.htm",
-                            "teamFile": "roster24.htm",
-                            "ppg": 37.1,
-                            "rpg": 5.1,
-                            "apg": 2.1,
-                            "spg": 0.7,
+                            "player": "Calvin Natt",
+                            "playerUrl": "./players/player1055.htm",
+                            "playerFile": "player1055.htm",
+                            "team": "roster28",
+                            "teamName": "Manchester City",
+                            "teamUrl": "./rosters/roster28.htm",
+                            "teamFile": "roster28.htm",
+                            "ppg": 31.0,
+                            "rpg": 9.0,
+                            "apg": 3.3,
+                            "spg": 0.6,
                             "bpg": 0.3,
                             "rowClass": "row1"
-                        }
-                    ]
-                },
-                {
-                    "title": "Rookie of the Month",
-                    "slug": "rookie-of-the-month",
-                    "awards": [
+                        },
                         {
                             "date": "November",
                             "pos": "SF",
@@ -373,7 +639,47 @@
                             "apg": 2.1,
                             "spg": 0.7,
                             "bpg": 0.3,
+                            "rowClass": "row2"
+                        }
+                    ]
+                },
+                {
+                    "title": "Rookie of the Month",
+                    "slug": "rookie-of-the-month",
+                    "awards": [
+                        {
+                            "date": "December",
+                            "pos": "SF",
+                            "player": "Calvin Natt",
+                            "playerUrl": "./players/player1055.htm",
+                            "playerFile": "player1055.htm",
+                            "team": "roster28",
+                            "teamName": "Manchester City",
+                            "teamUrl": "./rosters/roster28.htm",
+                            "teamFile": "roster28.htm",
+                            "ppg": 31.0,
+                            "rpg": 9.0,
+                            "apg": 3.3,
+                            "spg": 0.6,
+                            "bpg": 0.3,
                             "rowClass": "row1"
+                        },
+                        {
+                            "date": "November",
+                            "pos": "SF",
+                            "player": "Kelly Tripucka",
+                            "playerUrl": "./players/player1049.htm",
+                            "playerFile": "player1049.htm",
+                            "team": "roster24",
+                            "teamName": "Barcelona",
+                            "teamUrl": "./rosters/roster24.htm",
+                            "teamFile": "roster24.htm",
+                            "ppg": 37.1,
+                            "rpg": 5.1,
+                            "apg": 2.1,
+                            "spg": 0.7,
+                            "bpg": 0.3,
+                            "rowClass": "row2"
                         }
                     ]
                 }
