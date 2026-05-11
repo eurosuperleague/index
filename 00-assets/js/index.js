@@ -4,6 +4,20 @@
   var STYLE_ID = "league-index-shell-styles";
   var BREAKPOINT = 760;
   var MOBILE_CANVAS_WIDTH = 980;
+  var SETTINGS_KEY = "leagueSiteSettings";
+
+  function getSettings() {
+    try {
+      return JSON.parse(window.localStorage.getItem(SETTINGS_KEY) || "{}") || {};
+    } catch (error) {
+      return {};
+    }
+  }
+
+  function getDefaultPage() {
+    var settings = getSettings();
+    return settings.defaultPage || "standings.htm";
+  }
 
   function isCompactWidth() {
     var screenWidth = window.screen && window.screen.width ? window.screen.width : window.innerWidth;
@@ -102,7 +116,7 @@
     content.className = "site-content";
 
     sidebar.appendChild(makeFrame("site-frame", "Options", "menu.htm", "League navigation"));
-    content.appendChild(makeFrame("site-frame", "data", "standings.htm", "League content"));
+    content.appendChild(makeFrame("site-frame", "data", getDefaultPage(), "League content"));
     shell.appendChild(sidebar);
     shell.appendChild(content);
     body.appendChild(shell);

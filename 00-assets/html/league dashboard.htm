@@ -42,6 +42,10 @@
     .standings-table th:first-child,.standings-table td:first-child { text-align:left; padding-left:0; }
     .standings-table th { font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--mid); }
     .standings-table .team-name { font-family:var(--font-serif); font-size:1.02rem; }
+    .standings-table tr.race-champion { background:#f4d35e; }
+    .standings-table tr.race-promoted { background:#b7e3be; }
+    .standings-table tr.race-relegated { background:#efb6b6; }
+    .race-pill { display:inline-block; margin-left:.35rem; padding:.12rem .28rem; border:1px solid rgba(17,27,54,.24); color:var(--blue); font:.52rem/1 var(--font-sans); font-weight:800; letter-spacing:.12em; text-transform:uppercase; vertical-align:middle; }
     .diff-pos { color:var(--green); font-weight:700; }
     .diff-neg { color:var(--red); font-weight:700; }
     .leaders-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.6rem; margin-top:.8rem; }
@@ -172,12 +176,24 @@
       root.querySelectorAll(".league-btn").forEach((btn) => btn.addEventListener("click", () => { state.activeLeagueSlug = btn.dataset.slug; renderDashboard(); }));
     }
 
+    function getRaceMeta(activeSection, index, total) {
+      const token = extractLeagueToken(activeSection && activeSection.title);
+      if (token === "CLB" && index === 0) return { className: "race-champion", label: "Champ" };
+      if (token === "CLB" && index >= total - 2) return { className: "race-relegated", label: "Rel" };
+      if (token === "ELB" && index <= 1) return { className: "race-promoted", label: "Prom" };
+      if (token === "ELB" && index === total - 1) return { className: "race-relegated", label: "Rel" };
+      if (token === "ECL" && index === 0) return { className: "race-promoted", label: "Prom" };
+      return { className: "", label: "" };
+    }
+
     function renderStandings(activeSection) {
       const standingsBody = document.getElementById("standingsBody");
-      const teams = [...(activeSection.teams || [])].sort((a, b) => num(b.wins) - num(a.wins) || num(a.losses) - num(b.losses)).slice(0, 8);
-      standingsBody.innerHTML = teams.map((team) => {
+      const teams = [...(activeSection.teams || [])].sort((a, b) => num(b.wins) - num(a.wins) || num(a.losses) - num(b.losses));
+      standingsBody.innerHTML = teams.map((team, index) => {
         const diffClass = num(team.diff) >= 0 ? "diff-pos" : "diff-neg";
-        return `<tr><td class="team-name"><a href="${normalizeHref(team.rosterUrl)}">${team.team}</a></td><td>${team.wins}-${team.losses}</td><td class="${diffClass}">${formatSigned(team.diff)}</td><td>${team.streak || "-"}</td></tr>`;
+        const race = getRaceMeta(activeSection, index, teams.length);
+        const raceLabel = race.label ? `<span class="race-pill">${race.label}</span>` : "";
+        return `<tr class="${race.className}"><td class="team-name"><a href="${normalizeHref(team.rosterUrl)}">${team.team}</a>${raceLabel}</td><td>${team.wins}-${team.losses}</td><td class="${diffClass}">${formatSigned(team.diff)}</td><td>${team.streak || "-"}</td></tr>`;
       }).join("");
     }
 
