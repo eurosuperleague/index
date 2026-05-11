@@ -1,94 +1,8 @@
 [
     {
-        "name": "000",
-        "Height": 0,
-        "Weight": 0,
-        "Position": 0,
-        "DOB": 0,
-        "Age": 0,
-        "Uniform": 0,
-        "City": 0,
-        "State": 0,
-        "College": 0,
-        "InsideScoring": 0,
-        "PotInside": 0,
-        "JumpShot": 0,
-        "PotJumpShot": 0,
-        "FtShot": 0,
-        "PotFtShot": 0,
-        "3pShot": 0,
-        "Pot3pShot": 0,
-        "3pUsage": 0,
-        "Handling": 0,
-        "PotHandling": 0,
-        "Passing": 0,
-        "PotPassing": 0,
-        "PostDefense": 0,
-        "PotPostDefense": 0,
-        "PerimeterDefense": 0,
-        "PotPerimeterDefense": 0,
-        "Stealing": 0,
-        "PotStealing": 0,
-        "Blocking": 0,
-        "PotBlocking": 0,
-        "OReb": 0,
-        "PotOReb": 0,
-        "DReb": 0,
-        "PotDReb": 0,
-        "Fouling": 0,
-        "Strength": 0,
-        "Quickness": 0,
-        "Jumping": 0,
-        "Stamina": 0,
-        "Picname": 0,
-        "InjuryAvoidance": 0
-    },
-    {
-        "name": "000",
-        "Height": 0,
-        "Weight": 0,
-        "Position": 0,
-        "DOB": 0,
-        "Age": 0,
-        "Uniform": 0,
-        "City": 0,
-        "State": 0,
-        "College": 0,
-        "InsideScoring": 0,
-        "PotInside": 0,
-        "JumpShot": 0,
-        "PotJumpShot": 0,
-        "FtShot": 0,
-        "PotFtShot": 0,
-        "3pShot": 0,
-        "Pot3pShot": 0,
-        "3pUsage": 0,
-        "Handling": 0,
-        "PotHandling": 0,
-        "Passing": 0,
-        "PotPassing": 0,
-        "PostDefense": 0,
-        "PotPostDefense": 0,
-        "PerimeterDefense": 0,
-        "PotPerimeterDefense": 0,
-        "Stealing": 0,
-        "PotStealing": 0,
-        "Blocking": 0,
-        "PotBlocking": 0,
-        "OReb": 0,
-        "PotOReb": 0,
-        "DReb": 0,
-        "PotDReb": 0,
-        "Fouling": 0,
-        "Strength": 0,
-        "Quickness": 0,
-        "Jumping": 0,
-        "Stamina": 0,
-        "Picname": 0,
-        "InjuryAvoidance": 0
-    },
-    {
-        "name": "A.C.Green81",
+        "name": "A.C. Green",
+        "FirstName": "A.C.",
+        "LastName": "Green",
         "Height": 81,
         "Weight": 230,
         "Position": "PF",
@@ -132,7 +46,9 @@
         "InjuryAvoidance": 92
     },
     {
-        "name": "AlexLen85",
+        "name": "Alex Len",
+        "FirstName": "Alex",
+        "LastName": "Len",
         "Height": 85,
         "Weight": 255,
         "Position": "C",
@@ -176,7 +92,9 @@
         "InjuryAvoidance": 84
     },
     {
-        "name": "AndreDrummond82",
+        "name": "Andre Drummond",
+        "FirstName": "Andre",
+        "LastName": "Drummond",
         "Height": 82,
         "Weight": 270,
         "Position": "C",
@@ -220,7 +138,9 @@
         "InjuryAvoidance": 60
     },
     {
-        "name": "BonziWells77",
+        "name": "Bonzi Wells",
+        "FirstName": "Bonzi",
+        "LastName": "Wells",
         "Height": 77,
         "Weight": 210,
         "Position": "SG",
@@ -264,7 +184,9 @@
         "InjuryAvoidance": 4
     },
     {
-        "name": "CameronThomas76",
+        "name": "Cameron Thomas",
+        "FirstName": "Cameron",
+        "LastName": "Thomas",
         "Height": 76,
         "Weight": 210,
         "Position": "SG",
@@ -308,7 +230,9 @@
         "InjuryAvoidance": 48
     },
     {
-        "name": "ChetHolmgren84",
+        "name": "Chet Holmgren",
+        "FirstName": "Chet",
+        "LastName": "Holmgren",
         "Height": 84,
         "Weight": 195,
         "Position": "C",
@@ -352,7 +276,9 @@
         "InjuryAvoidance": 31
     },
     {
-        "name": "ChrisBosh82",
+        "name": "Chris Bosh",
+        "FirstName": "Chris",
+        "LastName": "Bosh",
         "Height": 82,
         "Weight": 228,
         "Position": "PF",
@@ -396,7 +322,9 @@
         "InjuryAvoidance": 88
     },
     {
-        "name": "ChrisJohnson83",
+        "name": "Chris Johnson",
+        "FirstName": "Chris",
+        "LastName": "Johnson",
         "Height": 83,
         "Weight": 210,
         "Position": "PF",
@@ -440,7 +368,9 @@
         "InjuryAvoidance": 33
     },
     {
-        "name": "CobyWhite77",
+        "name": "Coby White",
+        "FirstName": "Coby",
+        "LastName": "White",
         "Height": 77,
         "Weight": 195,
         "Position": "PG",
@@ -484,7 +414,9 @@
         "InjuryAvoidance": 52
     },
     {
-        "name": "CodyMartin77",
+        "name": "Cody Martin",
+        "FirstName": "Cody",
+        "LastName": "Martin",
         "Height": 77,
         "Weight": 205,
         "Position": "SF",
@@ -528,7 +460,9 @@
         "InjuryAvoidance": 99
     },
     {
-        "name": "DamianJones83",
+        "name": "Damian Jones",
+        "FirstName": "Damian",
+        "LastName": "Jones",
         "Height": 83,
         "Weight": 245,
         "Position": "C",
@@ -572,7 +506,9 @@
         "InjuryAvoidance": 32
     },
     {
-        "name": "DanMcClintock84",
+        "name": "Dan McClintock",
+        "FirstName": "Dan",
+        "LastName": "McClintock",
         "Height": 84,
         "Weight": 260,
         "Position": "C",
@@ -616,7 +552,9 @@
         "InjuryAvoidance": 70
     },
     {
-        "name": "DavidWest81",
+        "name": "David West",
+        "FirstName": "David",
+        "LastName": "West",
         "Height": 81,
         "Weight": 240,
         "Position": "PF",
@@ -660,7 +598,9 @@
         "InjuryAvoidance": 74
     },
     {
-        "name": "DavisBertans82",
+        "name": "Davis Bertans",
+        "FirstName": "Davis",
+        "LastName": "Bertans",
         "Height": 82,
         "Weight": 225,
         "Position": "PF",
@@ -704,7 +644,9 @@
         "InjuryAvoidance": 61
     },
     {
-        "name": "DeMarreCarroll80",
+        "name": "DeMarre Carroll",
+        "FirstName": "DeMarre",
+        "LastName": "Carroll",
         "Height": 80,
         "Weight": 225,
         "Position": "SF",
@@ -748,7 +690,9 @@
         "InjuryAvoidance": 38
     },
     {
-        "name": "DerrickFavors82",
+        "name": "Derrick Favors",
+        "FirstName": "Derrick",
+        "LastName": "Favors",
         "Height": 82,
         "Weight": 246,
         "Position": "PF",
@@ -792,7 +736,9 @@
         "InjuryAvoidance": 5
     },
     {
-        "name": "DirkMinniefield75",
+        "name": "Dirk Minniefield",
+        "FirstName": "Dirk",
+        "LastName": "Minniefield",
         "Height": 75,
         "Weight": 180,
         "Position": "PG",
@@ -836,7 +782,9 @@
         "InjuryAvoidance": 89
     },
     {
-        "name": "DougChristie78",
+        "name": "Doug Christie",
+        "FirstName": "Doug",
+        "LastName": "Christie",
         "Height": 78,
         "Weight": 205,
         "Position": "SG",
@@ -880,7 +828,9 @@
         "InjuryAvoidance": 79
     },
     {
-        "name": "EddyCurry83",
+        "name": "Eddy Curry",
+        "FirstName": "Eddy",
+        "LastName": "Curry",
         "Height": 83,
         "Weight": 285,
         "Position": "C",
@@ -924,7 +874,9 @@
         "InjuryAvoidance": 50
     },
     {
-        "name": "EricWhite80",
+        "name": "Eric White",
+        "FirstName": "Eric",
+        "LastName": "White",
         "Height": 80,
         "Weight": 200,
         "Position": "SG",
@@ -968,7 +920,9 @@
         "InjuryAvoidance": 57
     },
     {
-        "name": "FestusEzeli83",
+        "name": "Festus Ezeli",
+        "FirstName": "Festus",
+        "LastName": "Ezeli",
         "Height": 83,
         "Weight": 255,
         "Position": "C",
@@ -1012,7 +966,9 @@
         "InjuryAvoidance": 77
     },
     {
-        "name": "FredRoberts82",
+        "name": "Fred Roberts",
+        "FirstName": "Fred",
+        "LastName": "Roberts",
         "Height": 82,
         "Weight": 220,
         "Position": "PF",
@@ -1056,7 +1012,9 @@
         "InjuryAvoidance": 88
     },
     {
-        "name": "FredRoberts82",
+        "name": "Fred Roberts",
+        "FirstName": "Fred",
+        "LastName": "Roberts",
         "Height": 82,
         "Weight": 220,
         "Position": "PF",
@@ -1100,7 +1058,9 @@
         "InjuryAvoidance": 88
     },
     {
-        "name": "FurkanKorkmaz79",
+        "name": "Furkan Korkmaz",
+        "FirstName": "Furkan",
+        "LastName": "Korkmaz",
         "Height": 79,
         "Weight": 202,
         "Position": "SG",
@@ -1144,7 +1104,9 @@
         "InjuryAvoidance": 57
     },
     {
-        "name": "GeorgeMcCloud80",
+        "name": "George McCloud",
+        "FirstName": "George",
+        "LastName": "McCloud",
         "Height": 80,
         "Weight": 215,
         "Position": "SF",
@@ -1188,7 +1150,9 @@
         "InjuryAvoidance": 69
     },
     {
-        "name": "GregAnthony74",
+        "name": "Greg Anthony",
+        "FirstName": "Greg",
+        "LastName": "Anthony",
         "Height": 74,
         "Weight": 185,
         "Position": "PG",
@@ -1232,7 +1196,9 @@
         "InjuryAvoidance": 93
     },
     {
-        "name": "GregGrant67",
+        "name": "Greg Grant",
+        "FirstName": "Greg",
+        "LastName": "Grant",
         "Height": 67,
         "Weight": 140,
         "Position": "PG",
@@ -1276,7 +1242,9 @@
         "InjuryAvoidance": 29
     },
     {
-        "name": "HaroldKeeling76",
+        "name": "Harold Keeling",
+        "FirstName": "Harold",
+        "LastName": "Keeling",
         "Height": 76,
         "Weight": 185,
         "Position": "PG",
@@ -1320,7 +1288,9 @@
         "InjuryAvoidance": 22
     },
     {
-        "name": "J.J.Redick76",
+        "name": "J.J. Redick",
+        "FirstName": "J.J.",
+        "LastName": "Redick",
         "Height": 76,
         "Weight": 190,
         "Position": "SG",
@@ -1364,7 +1334,9 @@
         "InjuryAvoidance": 18
     },
     {
-        "name": "JalenDuren83",
+        "name": "Jalen Duren",
+        "FirstName": "Jalen",
+        "LastName": "Duren",
         "Height": 83,
         "Weight": 250,
         "Position": "C",
@@ -1408,7 +1380,9 @@
         "InjuryAvoidance": 55
     },
     {
-        "name": "JalenJones79",
+        "name": "Jalen Jones",
+        "FirstName": "Jalen",
+        "LastName": "Jones",
         "Height": 79,
         "Weight": 220,
         "Position": "SF",
@@ -1452,7 +1426,9 @@
         "InjuryAvoidance": 88
     },
     {
-        "name": "JamaalTinsley75",
+        "name": "Jamaal Tinsley",
+        "FirstName": "Jamaal",
+        "LastName": "Tinsley",
         "Height": 75,
         "Weight": 195,
         "Position": "PG",
@@ -1496,7 +1472,9 @@
         "InjuryAvoidance": 6
     },
     {
-        "name": "JaylinWilliams82",
+        "name": "Jaylin Williams",
+        "FirstName": "Jaylin",
+        "LastName": "Williams",
         "Height": 82,
         "Weight": 237,
         "Position": "C",
@@ -1540,7 +1518,9 @@
         "InjuryAvoidance": 20
     },
     {
-        "name": "JeffGrayer77",
+        "name": "Jeff Grayer",
+        "FirstName": "Jeff",
+        "LastName": "Grayer",
         "Height": 77,
         "Weight": 210,
         "Position": "SG",
@@ -1584,7 +1564,9 @@
         "InjuryAvoidance": 27
     },
     {
-        "name": "JohnBattle74",
+        "name": "John Battle",
+        "FirstName": "John",
+        "LastName": "Battle",
         "Height": 74,
         "Weight": 190,
         "Position": "PG",
@@ -1628,7 +1610,9 @@
         "InjuryAvoidance": 66
     },
     {
-        "name": "JohnPaxson74",
+        "name": "John Paxson",
+        "FirstName": "John",
+        "LastName": "Paxson",
         "Height": 74,
         "Weight": 185,
         "Position": "PG",
@@ -1672,7 +1656,9 @@
         "InjuryAvoidance": 26
     },
     {
-        "name": "JohnStroeder82",
+        "name": "John Stroeder",
+        "FirstName": "John",
+        "LastName": "Stroeder",
         "Height": 82,
         "Weight": 260,
         "Position": "C",
@@ -1716,7 +1702,9 @@
         "InjuryAvoidance": 97
     },
     {
-        "name": "JoshRichardson78",
+        "name": "Josh Richardson",
+        "FirstName": "Josh",
+        "LastName": "Richardson",
         "Height": 78,
         "Weight": 200,
         "Position": "SG",
@@ -1760,7 +1748,9 @@
         "InjuryAvoidance": 52
     },
     {
-        "name": "JrueHoliday76",
+        "name": "Jrue Holiday",
+        "FirstName": "Jrue",
+        "LastName": "Holiday",
         "Height": 76,
         "Weight": 180,
         "Position": "PG",
@@ -1804,7 +1794,9 @@
         "InjuryAvoidance": 18
     },
     {
-        "name": "KennyBattle78",
+        "name": "Kenny Battle",
+        "FirstName": "Kenny",
+        "LastName": "Battle",
         "Height": 78,
         "Weight": 210,
         "Position": "SG",
@@ -1848,7 +1840,9 @@
         "InjuryAvoidance": 93
     },
     {
-        "name": "KillianHayes77",
+        "name": "Killian Hayes",
+        "FirstName": "Killian",
+        "LastName": "Hayes",
         "Height": 77,
         "Weight": 195,
         "Position": "PG",
@@ -1892,7 +1886,9 @@
         "InjuryAvoidance": 49
     },
     {
-        "name": "KirkHinrich75",
+        "name": "Kirk Hinrich",
+        "FirstName": "Kirk",
+        "LastName": "Hinrich",
         "Height": 75,
         "Weight": 190,
         "Position": "SG",
@@ -1936,7 +1932,9 @@
         "InjuryAvoidance": 74
     },
     {
-        "name": "KobeBrown82",
+        "name": "Kobe Brown",
+        "FirstName": "Kobe",
+        "LastName": "Brown",
         "Height": 82,
         "Weight": 252,
         "Position": "PF",
@@ -1980,7 +1978,9 @@
         "InjuryAvoidance": 36
     },
     {
-        "name": "KurtThomas81",
+        "name": "Kurt Thomas",
+        "FirstName": "Kurt",
+        "LastName": "Thomas",
         "Height": 81,
         "Weight": 230,
         "Position": "PF",
@@ -2024,7 +2024,9 @@
         "InjuryAvoidance": 75
     },
     {
-        "name": "KyleO'Quinn82",
+        "name": "Kyle O'Quinn",
+        "FirstName": "Kyle",
+        "LastName": "O'Quinn",
         "Height": 82,
         "Weight": 240,
         "Position": "PF",
@@ -2068,7 +2070,9 @@
         "InjuryAvoidance": 58
     },
     {
-        "name": "LarryRobinson77",
+        "name": "Larry Robinson",
+        "FirstName": "Larry",
+        "LastName": "Robinson",
         "Height": 77,
         "Weight": 180,
         "Position": "PG",
@@ -2112,7 +2116,9 @@
         "InjuryAvoidance": 86
     },
     {
-        "name": "MattBarnes79",
+        "name": "Matt Barnes",
+        "FirstName": "Matt",
+        "LastName": "Barnes",
         "Height": 79,
         "Weight": 235,
         "Position": "SF",
@@ -2156,7 +2162,9 @@
         "InjuryAvoidance": 17
     },
     {
-        "name": "MaxiKleber82",
+        "name": "Maxi Kleber",
+        "FirstName": "Maxi",
+        "LastName": "Kleber",
         "Height": 82,
         "Weight": 240,
         "Position": "PF",
@@ -2200,7 +2208,9 @@
         "InjuryAvoidance": 97
     },
     {
-        "name": "MichaelAnsley79",
+        "name": "Michael Ansley",
+        "FirstName": "Michael",
+        "LastName": "Ansley",
         "Height": 79,
         "Weight": 225,
         "Position": "SF",
@@ -2244,7 +2254,9 @@
         "InjuryAvoidance": 59
     },
     {
-        "name": "MylesTurner83",
+        "name": "Myles Turner",
+        "FirstName": "Myles",
+        "LastName": "Turner",
         "Height": 83,
         "Weight": 250,
         "Position": "C",
@@ -2288,7 +2300,9 @@
         "InjuryAvoidance": 65
     },
     {
-        "name": "NajiMarshall79",
+        "name": "Naji Marshall",
+        "FirstName": "Naji",
+        "LastName": "Marshall",
         "Height": 79,
         "Weight": 220,
         "Position": "SF",
@@ -2332,7 +2346,9 @@
         "InjuryAvoidance": 92
     },
     {
-        "name": "NazReid81",
+        "name": "Naz Reid",
+        "FirstName": "Naz",
+        "LastName": "Reid",
         "Height": 81,
         "Weight": 264,
         "Position": "C",
@@ -2376,7 +2392,9 @@
         "InjuryAvoidance": 61
     },
     {
-        "name": "OliverMiller81",
+        "name": "Oliver Miller",
+        "FirstName": "Oliver",
+        "LastName": "Miller",
         "Height": 81,
         "Weight": 280,
         "Position": "C",
@@ -2420,7 +2438,9 @@
         "InjuryAvoidance": 64
     },
     {
-        "name": "OusmaneDieng81",
+        "name": "Ousmane Dieng",
+        "FirstName": "Ousmane",
+        "LastName": "Dieng",
         "Height": 81,
         "Weight": 200,
         "Position": "SF",
@@ -2464,7 +2484,9 @@
         "InjuryAvoidance": 53
     },
     {
-        "name": "OzellJones83",
+        "name": "Ozell Jones",
+        "FirstName": "Ozell",
+        "LastName": "Jones",
         "Height": 83,
         "Weight": 235,
         "Position": "PF",
@@ -2508,7 +2530,9 @@
         "InjuryAvoidance": 81
     },
     {
-        "name": "RexWalters76",
+        "name": "Rex Walters",
+        "FirstName": "Rex",
+        "LastName": "Walters",
         "Height": 76,
         "Weight": 190,
         "Position": "PG",
@@ -2552,7 +2576,9 @@
         "InjuryAvoidance": 68
     },
     {
-        "name": "RichardAnderson82",
+        "name": "Richard Anderson",
+        "FirstName": "Richard",
+        "LastName": "Anderson",
         "Height": 82,
         "Weight": 240,
         "Position": "PF",
@@ -2596,7 +2622,9 @@
         "InjuryAvoidance": 97
     },
     {
-        "name": "RickyDavis77",
+        "name": "Ricky Davis",
+        "FirstName": "Ricky",
+        "LastName": "Davis",
         "Height": 77,
         "Weight": 195,
         "Position": "SG",
@@ -2640,7 +2668,9 @@
         "InjuryAvoidance": 61
     },
     {
-        "name": "RonAnderson79",
+        "name": "Ron Anderson",
+        "FirstName": "Ron",
+        "LastName": "Anderson",
         "Height": 79,
         "Weight": 215,
         "Position": "SF",
@@ -2684,7 +2714,9 @@
         "InjuryAvoidance": 42
     },
     {
-        "name": "ScottSkiles73",
+        "name": "Scott Skiles",
+        "FirstName": "Scott",
+        "LastName": "Skiles",
         "Height": 73,
         "Weight": 185,
         "Position": "PG",
@@ -2728,7 +2760,9 @@
         "InjuryAvoidance": 23
     },
     {
-        "name": "SebastianTelfair72",
+        "name": "Sebastian Telfair",
+        "FirstName": "Sebastian",
+        "LastName": "Telfair",
         "Height": 72,
         "Weight": 165,
         "Position": "PG",
@@ -2772,7 +2806,9 @@
         "InjuryAvoidance": 61
     },
     {
-        "name": "SemihErden83",
+        "name": "Semih Erden",
+        "FirstName": "Semih",
+        "LastName": "Erden",
         "Height": 83,
         "Weight": 240,
         "Position": "C",
@@ -2816,7 +2852,9 @@
         "InjuryAvoidance": 20
     },
     {
-        "name": "SteveKerr75",
+        "name": "Steve Kerr",
+        "FirstName": "Steve",
+        "LastName": "Kerr",
         "Height": 75,
         "Weight": 180,
         "Position": "SG",
@@ -2860,7 +2898,9 @@
         "InjuryAvoidance": 35
     },
     {
-        "name": "SteveNash75",
+        "name": "Steve Nash",
+        "FirstName": "Steve",
+        "LastName": "Nash",
         "Height": 75,
         "Weight": 195,
         "Position": "PG",
@@ -2904,7 +2944,9 @@
         "InjuryAvoidance": 52
     },
     {
-        "name": "TheoRatliff82",
+        "name": "Theo Ratliff",
+        "FirstName": "Theo",
+        "LastName": "Ratliff",
         "Height": 82,
         "Weight": 225,
         "Position": "C",
@@ -2948,7 +2990,9 @@
         "InjuryAvoidance": 48
     },
     {
-        "name": "TimofeyMozgov85",
+        "name": "Timofey Mozgov",
+        "FirstName": "Timofey",
+        "LastName": "Mozgov",
         "Height": 85,
         "Weight": 250,
         "Position": "C",
@@ -2992,7 +3036,9 @@
         "InjuryAvoidance": 56
     },
     {
-        "name": "TrayceJackson-Davis81",
+        "name": "Trayce Jackson-Davis",
+        "FirstName": "Trayce",
+        "LastName": "Jackson-Davis",
         "Height": 81,
         "Weight": 240,
         "Position": "PF",
@@ -3036,7 +3082,9 @@
         "InjuryAvoidance": 37
     },
     {
-        "name": "Tre Mann75",
+        "name": "Tre Mann",
+        "FirstName": "Tre",
+        "LastName": "Mann",
         "Height": 75,
         "Weight": 190,
         "Position": "PG",
@@ -3080,7 +3128,9 @@
         "InjuryAvoidance": 85
     },
     {
-        "name": "VincentAskew78",
+        "name": "Vincent Askew",
+        "FirstName": "Vincent",
+        "LastName": "Askew",
         "Height": 78,
         "Weight": 235,
         "Position": "SF",
@@ -3124,7 +3174,9 @@
         "InjuryAvoidance": 36
     },
     {
-        "name": "VincentAskew78",
+        "name": "Vincent Askew",
+        "FirstName": "Vincent",
+        "LastName": "Askew",
         "Height": 78,
         "Weight": 235,
         "Position": "SF",
@@ -3168,7 +3220,9 @@
         "InjuryAvoidance": 36
     },
     {
-        "name": "WalkerKessler85",
+        "name": "Walker Kessler",
+        "FirstName": "Walker",
+        "LastName": "Kessler",
         "Height": 85,
         "Weight": 256,
         "Position": "C",
@@ -3212,7 +3266,9 @@
         "InjuryAvoidance": 74
     },
     {
-        "name": "WayneEllington76",
+        "name": "Wayne Ellington",
+        "FirstName": "Wayne",
+        "LastName": "Ellington",
         "Height": 76,
         "Weight": 200,
         "Position": "SG",
@@ -3256,7 +3312,9 @@
         "InjuryAvoidance": 76
     },
     {
-        "name": "XavierMcDaniel79",
+        "name": "Xavier McDaniel",
+        "FirstName": "Xavier",
+        "LastName": "McDaniel",
         "Height": 79,
         "Weight": 205,
         "Position": "SF",

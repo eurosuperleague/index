@@ -15,6 +15,10 @@ XLSX_PATH = os.path.join(PROJECT_ROOT, "00-assets", "spreadsheet", "Youth Intake
 OUTPUT_PATH = os.path.join(BUILD_DIR, "database", "youth_intake.json")
 OUTPUT_PLAYERS_PATH = os.path.join(BUILD_DIR, "database", "youth_intake_players.json")
 
+TEAM_ALIASES = {
+    "arsenal": "Sheffield United",
+}
+
 
 def _col_letters_to_index(letters: str) -> int:
     index = 0
@@ -36,6 +40,11 @@ def _normalize_key(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", str(value or "").strip().lower())
 
 
+def _canonical_team_name(value: str) -> str:
+    text = str(value or "").strip()
+    return TEAM_ALIASES.get(_normalize_key(text), text)
+
+
 def _first_non_empty(items):
     for item in items:
         if str(item or "").strip():
@@ -53,10 +62,14 @@ def _map_tier_label(raw_tier: str) -> str:
         "clb": "CLB",
         "tier2": "ELB",
         "tier2europa": "ELB",
+        "tier2development": "ELB",
+        "development": "ELB",
         "europaleague": "ELB",
         "elb": "ELB",
         "tier3": "ECL",
         "tier3conference": "ECL",
+        "tier3prospect": "ECL",
+        "prospect": "ECL",
         "conferenceleague": "ECL",
         "ecl": "ECL",
     }
@@ -169,9 +182,6 @@ def _build_database_lookup(rows):
     if not rows:
         return {}
 
-    # "Current Intake" source format:
-    # - Name in column A (index 0)
-    # - Export all data columns D..AB (index 3..27)
     header_row_index = 0
     header = rows[0]
     if len(rows) > 1:
@@ -182,11 +192,16 @@ def _build_database_lookup(rows):
                 header = row
                 break
 
-    name_col = 0
-    start_col = 3   # D
-    end_col = 27    # AB (inclusive)
+    header_norm = [_normalize_key(value) for value in header]
+    first_name_col = header_norm.index("firstname") if "firstname" in header_norm else -1
+    last_name_col = header_norm.index("lastname") if "lastname" in header_norm else -1
 
-    if len(header) <= name_col:
+    modern_layout = first_name_col >= 0 and last_name_col >= 0
+    name_col = 0
+    start_col = first_name_col if modern_layout else 3
+    end_col = len(header) - 1 if modern_layout else min(27, len(header) - 1)
+
+    if not modern_layout and len(header) <= name_col:
         return {}
 
     range_headers = []
@@ -197,10 +212,16 @@ def _build_database_lookup(rows):
 
     lookup = {}
     for row in rows[header_row_index + 1:]:
-        if len(row) <= name_col:
-            continue
-        name = str(row[name_col] or "").strip()
-        if not name:
+        if modern_layout:
+            first = str(row[first_name_col] if len(row) > first_name_col else "").strip()
+            last = str(row[last_name_col] if len(row) > last_name_col else "").strip()
+            name = f"{first} {last}".strip()
+        else:
+            if len(row) <= name_col:
+                continue
+            name = str(row[name_col] or "").strip()
+
+        if not name or re.fullmatch(r"0+(?:\s+0+)?", name):
             continue
 
         player = {"name": name}
@@ -235,8 +256,12 @@ def _build_current_intake_players(rows):
         return []
 
     header = rows[0]
+    header_norm = [_normalize_key(value) for value in header]
+    first_name_col = header_norm.index("firstname") if "firstname" in header_norm else -1
+    last_name_col = header_norm.index("lastname") if "lastname" in header_norm else -1
+    modern_layout = first_name_col >= 0 and last_name_col >= 0
     name_col = 0
-    start_col = 3  # D onwards
+    start_col = first_name_col if modern_layout else 3
 
     keys = []
     for col in range(start_col, len(header)):
@@ -245,8 +270,14 @@ def _build_current_intake_players(rows):
 
     players = []
     for row in rows[1:]:
-        name = str(row[name_col] if len(row) > name_col else "").strip()
-        if not name:
+        if modern_layout:
+            first = str(row[first_name_col] if len(row) > first_name_col else "").strip()
+            last = str(row[last_name_col] if len(row) > last_name_col else "").strip()
+            name = f"{first} {last}".strip()
+        else:
+            name = str(row[name_col] if len(row) > name_col else "").strip()
+
+        if not name or re.fullmatch(r"0+(?:\s+0+)?", name):
             continue
 
         player = {"name": name}
@@ -299,6 +330,7 @@ def _build_position_focus_map(rows):
     team_col = find_col("team")
     focus_col = find_col("positionfocus", "academyfocus", "focus")
     tier_col = find_col("tier")
+    gm_col = find_col("gm", "manager", "owner", "coach")
     if team_col < 0:
         return {}
 
@@ -306,13 +338,14 @@ def _build_position_focus_map(rows):
     for row in rows[header_row_index + 1:]:
         if len(row) <= team_col:
             continue
-        team = str(row[team_col] or "").strip()
+        team = _canonical_team_name(row[team_col] if len(row) > team_col else "")
         if not team:
             continue
         focus_raw = row[focus_col] if focus_col >= 0 and len(row) > focus_col else ""
         tier_raw = row[tier_col] if tier_col >= 0 and len(row) > tier_col else ""
         focus_map[_normalize_key(team)] = {
             "team": team,
+            "gm": str(row[gm_col] if gm_col >= 0 and len(row) > gm_col else "" or "").strip(),
             "positionFocus": str(focus_raw or "").strip(),
             "tierRaw": str(tier_raw or "").strip(),
             "tier": _map_tier_label(tier_raw),
@@ -336,7 +369,7 @@ def _build_intake_map(rows, known_team_names=None):
         return first_key == "team" and second_key in {"", "manager", "user", "owner", "coach", "gm"}
 
     def is_team_row(first):
-        return _normalize_key(first) in known_team_names
+        return _normalize_key(_canonical_team_name(first)) in known_team_names
 
     intake_by_team = {}
     current_team = ""
@@ -353,7 +386,7 @@ def _build_intake_map(rows, known_team_names=None):
             continue
 
         if is_team_row(first):
-            current_team = first
+            current_team = _canonical_team_name(first)
             intake_by_team.setdefault(current_team, [])
             continue
 
@@ -376,6 +409,8 @@ def build_youth_intake_payload(xlsx_path: str):
         db_sheet_name, db_rows = _find_sheet(sheets, "DATABASE")
     intake_sheet_name, intake_rows = _find_sheet(sheets, "INTAKE list")
     focus_sheet_name, focus_rows = _find_sheet(sheets, "Position focus")
+    if not focus_sheet_name:
+        focus_sheet_name, focus_rows = _find_sheet(sheets, "TeamList")
 
     player_lookup = _build_database_lookup(db_rows)
     focus_map = _build_position_focus_map(focus_rows)
@@ -413,6 +448,7 @@ def build_youth_intake_payload(xlsx_path: str):
 
         teams.append({
             "team": team_name,
+            "gm": focus_info.get("gm", ""),
             "tierRaw": focus_info.get("tierRaw", ""),
             "tier": focus_info.get("tier", ""),
             "positionFocus": focus_info.get("positionFocus", ""),
