@@ -27,6 +27,142 @@ window.ESL_TEAM_LOGOS = {
 
 window.ESL_MEDIA_ARTICLES = [
   {
+    file: "articles/december_1981_month_in_review.html",
+    title: "December 1981 Month in Review: Marseille Roars, United Folds",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-11-06",
+    tag: "Month In Review",
+    author: "Damon Cross",
+    meta: "Monthly Review",
+    blurb: "Marseille went perfect, Manchester United collapsed, AC Milan landed the month's biggest blowout, and Tier 3's promotion race stayed strange.",
+    teams: [
+      "AC Milan",
+      "Barcelona",
+      "Bayern Munich",
+      "Crystal Palace",
+      "FL Fart",
+      "Inter Milan",
+      "Manchester United",
+      "Marseille",
+      "Sporting CP",
+      "Tottenham Hotspur",
+      "Valencia"
+    ]
+  },
+  {
+    file: "articles/december_1981_stock_up_stock_down.html",
+    title: "Stock Up, Stock Down: Marseille Is Screaming, United Is Sinking",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-11-05",
+    tag: "Stock Report",
+    author: "Damon Cross",
+    meta: "Monthly Stock Report",
+    blurb: "Marseille, Atletico Madrid, and Bayern Munich rise while Manchester United, Aston Villa, and Chelsea take the month's loudest hits.",
+    teams: [
+      "AFC Richmond",
+      "Aston Villa",
+      "Atletico Madrid",
+      "Bayern Munich",
+      "Chelsea",
+      "Manchester United",
+      "Marseille"
+    ]
+  },
+  {
+    file: "articles/december_1981_promotion_relegation_watch.html",
+    title: "Promotion and Relegation Watch: December Tightens the Trapdoors",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-11-04",
+    tag: "Race Watch",
+    author: "Graham Trent",
+    meta: "December Race Watch",
+    blurb: "Manchester United and Real Madrid sit in danger, Marseille controls Tier 2, and Sporting CP holds the crowded Tier 3 promotion line.",
+    teams: [
+      "Ajax",
+      "Aston Villa",
+      "Barcelona",
+      "Benfica",
+      "Brighton",
+      "Chelsea",
+      "Crystal Palace",
+      "FL Fart",
+      "Inter Milan",
+      "Juventus",
+      "Manchester United",
+      "Marseille",
+      "Monaco",
+      "Real Madrid",
+      "Sporting CP",
+      "Valencia"
+    ]
+  },
+  {
+    file: "articles/december_1981_tier_3_power_rankings.html",
+    title: "Conference League Power Rankings: FL Fart Holds, Inter Pushes",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-11-03",
+    tag: "Conference League",
+    author: "Nina Vale",
+    meta: "December Edition",
+    blurb: "FL Fart takes the top line, Inter Milan has the margin case, and Barcelona tumbles after a rough December.",
+    teams: [
+      "Barcelona",
+      "FL Fart",
+      "Inter Milan",
+      "Manchester City",
+      "Paris Saint-Germain",
+      "Sporting CP",
+      "Tottenham Hotspur",
+      "Valencia"
+    ]
+  },
+  {
+    file: "articles/december_1981_tier_2_power_rankings.html",
+    title: "Europa League Power Rankings: Marseille Separates",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-11-02",
+    tag: "Europa League",
+    author: "Nina Vale",
+    meta: "December Edition",
+    blurb: "Marseille's 7-0 month jumps Sheffield United and turns the Tier 2 promotion chase into a pursuit.",
+    teams: [
+      "Ajax",
+      "Aston Villa",
+      "Benfica",
+      "Chelsea",
+      "Juventus",
+      "Marseille",
+      "Monaco",
+      "Sheffield United"
+    ]
+  },
+  {
+    file: "articles/december_1981_tier_1_power_rankings.html",
+    title: "Champions League Power Rankings: Bayern Takes the Top Line",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-11-01",
+    tag: "Champions League",
+    author: "Nina Vale",
+    meta: "December Edition",
+    blurb: "Bayern Munich passes AFC Richmond on margin, AC Milan rises behind Larry Bird, and Manchester United remains stuck at the bottom.",
+    teams: [
+      "AC Milan",
+      "AFC Richmond",
+      "Atletico Madrid",
+      "Bayern Munich",
+      "Brighton",
+      "Crystal Palace",
+      "Manchester United",
+      "Real Madrid"
+    ]
+  },
+  {
     file: "articles/batsuper_crystal_palace_shot_selection_interview.html",
     title: "EXCLUSIVE: batsuper Declares Shot-Selection Emergency After Another Alex English Heat Check",
     category: "Interview",
