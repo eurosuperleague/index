@@ -9,6 +9,19 @@
   var MENU_STYLE_ID = "league-menu-enhancement-styles";
   var RESPONSIVE_MENU_STYLE_ID = "responsive-menu-toggle-styles";
   var MENU_BREAKPOINT = 760;
+  var ZOOMABLE_VIEWPORT = "width=1100, initial-scale=0.35, minimum-scale=0.1, maximum-scale=10.0, user-scalable=yes";
+
+  function ensureZoomableViewport() {
+    var viewport = document.querySelector('meta[name="viewport"]');
+
+    if (!viewport) {
+      viewport = document.createElement("meta");
+      viewport.name = "viewport";
+      document.head.appendChild(viewport);
+    }
+
+    viewport.setAttribute("content", ZOOMABLE_VIEWPORT);
+  }
 
   function isNestedPage() {
     return /\/(players|rosters|boxes)\//i.test(window.location.pathname);
@@ -317,13 +330,19 @@
     return parentDocument.body.classList.contains("league-menu-open");
   }
 
+  function isParentCompactWidth(parentWindow) {
+    var screenWidth = parentWindow.screen && parentWindow.screen.width ? parentWindow.screen.width : parentWindow.innerWidth;
+
+    return Math.min(parentWindow.innerWidth, screenWidth) <= MENU_BREAKPOINT;
+  }
+
   function syncResponsiveMenuState(button) {
     var parentWindow;
     var isNarrow;
 
     try {
       parentWindow = window.parent;
-      isNarrow = parentWindow.innerWidth <= MENU_BREAKPOINT;
+      isNarrow = isParentCompactWidth(parentWindow);
     } catch (error) {
       return;
     }
@@ -560,10 +579,10 @@
     var style = document.createElement("style");
     style.id = MENU_STYLE_ID;
     style.textContent = [
-      "body.menu-body { background: #111b36 !important; color: #ffffff; font-family: 'Inter', Tahoma, Arial, sans-serif; font-size: 10.8pt; line-height: 1.16; margin: 0; padding: 0; overflow-x: hidden; }",
+      "body.menu-body { background: #111b36 !important; color: #ffffff; font-family: 'Inter', Tahoma, Arial, sans-serif; font-size: 11.4pt; line-height: 1.18; margin: 0; padding: 0; overflow-x: hidden; }",
       ".league-menu-shell { display: flex; flex-direction: column; gap: 0; }",
       ".league-menu-link, .league-menu-toggle { font-family: 'Inter', Tahoma, Arial, sans-serif; text-decoration: none; }",
-      ".league-menu-link { color: #ffffff; display: block; font-size: 9.8pt; font-weight: 600; line-height: 1.08; padding: 6px 7px 6px 9px; }",
+      ".league-menu-link { color: #ffffff; display: block; font-size: 10.8pt; font-weight: 600; line-height: 1.1; padding: 7px 8px 7px 10px; }",
       ".league-menu-link:hover { background: rgba(255, 255, 255, 0.08); color: #ffffff; text-decoration: none; }",
       ".league-menu-feature { align-items: center; background: #111b36; color: #ffffff !important; display: flex; justify-content: center; min-height: 42px; padding: 5px 2px; }",
       ".league-menu-feature:hover { background: rgba(255, 255, 255, 0.08); }",
@@ -572,13 +591,13 @@
       ".league-menu-eslm-logo { display: block; max-width: 94px; width: 100%; max-height: 22px; object-fit: contain; object-position: left center; filter: brightness(0) invert(1); }",
       ".league-menu-fallback { color: #ffffff; font: 800 11pt/1 Inter, Tahoma, Arial, sans-serif; letter-spacing: 0.05em; text-transform: uppercase; }",
       ".league-menu-group { border-bottom: 1px solid rgba(148, 163, 184, 0.24); overflow: hidden; }",
-      ".league-menu-toggle { align-items: center; background: #111b36; border: 0; color: #94a3b8; cursor: pointer; display: flex; font-size: 8.7pt; font-weight: 800; justify-content: space-between; letter-spacing: 0.09em; padding: 7px 7px 3px 9px; text-align: left; text-transform: uppercase; width: 100%; }",
+      ".league-menu-toggle { align-items: center; background: #111b36; border: 0; color: #94a3b8; cursor: pointer; display: flex; font-size: 9.4pt; font-weight: 800; justify-content: space-between; letter-spacing: 0.09em; padding: 8px 8px 4px 10px; text-align: left; text-transform: uppercase; width: 100%; }",
       ".league-menu-toggle:hover { background: rgba(255, 255, 255, 0.08); }",
       ".league-menu-toggle::after { content: '-'; font-weight: 800; }",
       ".league-menu-group.is-collapsed .league-menu-toggle::after { content: '+'; }",
       ".league-menu-links { display: flex; flex-direction: column; gap: 0; padding-top: 0; }",
       ".league-menu-group.is-collapsed .league-menu-links { display: none; }",
-      "@media (max-height: 680px) { .league-menu-link { font-size: 9.2pt; padding: 5px 6px 5px 8px; } .league-menu-toggle { font-size: 8.1pt; padding: 6px 6px 2px 8px; } .league-menu-feature-row { min-height: 42px; padding-left: 6px; padding-right: 6px; } .league-menu-feature { min-height: 34px; } .league-menu-logo { max-height: 32px; } }"
+      "@media (max-height: 680px) { .league-menu-link { font-size: 10.1pt; padding: 6px 7px 6px 9px; } .league-menu-toggle { font-size: 8.6pt; padding: 7px 7px 3px 9px; } .league-menu-feature-row { min-height: 42px; padding-left: 6px; padding-right: 6px; } .league-menu-feature { min-height: 34px; } .league-menu-logo { max-height: 32px; } }"
     ].join("");
     document.head.appendChild(style);
   }
@@ -1949,6 +1968,10 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    if (!isMenuPage()) {
+      ensureZoomableViewport();
+    }
+
     enableMenuFrameScroll();
     initResponsiveFrameMenu();
     markStandingsPage();

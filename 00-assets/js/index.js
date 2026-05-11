@@ -5,6 +5,11 @@
   var BREAKPOINT = 760;
   var MOBILE_CANVAS_WIDTH = 980;
 
+  function isCompactWidth() {
+    var screenWidth = window.screen && window.screen.width ? window.screen.width : window.innerWidth;
+    return Math.min(window.innerWidth, screenWidth) <= BREAKPOINT;
+  }
+
   function ensureStyles() {
     if (document.getElementById(STYLE_ID)) {
       return;
@@ -24,6 +29,12 @@
       ".site-menu-toggle { align-items: center; background: #111b36; border: 1px solid rgba(255, 255, 255, 0.24); border-radius: 8px; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.22); color: #ffffff; cursor: pointer; display: flex; font: 800 18px/1 Inter, Tahoma, Arial, sans-serif; height: 34px; justify-content: center; left: 8px; position: fixed; top: 8px; width: 36px; z-index: 30; }",
       ".site-menu-toggle:hover { background: #17274b; }",
       ".site-sidebar-backdrop { display: none; }",
+      "body.league-menu-compact .site-shell { grid-template-columns: minmax(0, 1fr); }",
+      "body.league-menu-compact .site-sidebar-backdrop { background: rgba(15, 23, 42, 0.36); bottom: 0; display: block; left: min(72vw, 240px); opacity: 0; pointer-events: none; position: fixed; right: 0; top: 0; transition: opacity 0.2s ease; z-index: 15; }",
+      "body.league-menu-compact.league-menu-open .site-sidebar-backdrop { opacity: 1; pointer-events: auto; }",
+      "body.league-menu-compact .site-sidebar { bottom: 0; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.28); max-width: 240px; position: fixed; top: 0; transform: translateX(-100%); transition: transform 0.24s ease, width 0.24s ease, border-color 0.24s ease; width: min(72vw, 240px); z-index: 20; }",
+      "body.league-menu-compact.league-menu-closed .site-sidebar { width: min(72vw, 240px); }",
+      "body.league-menu-compact.league-menu-open .site-sidebar { transform: translateX(0); }",
       "@media (max-width: 760px) {",
       "  html, body { min-height: 100%; overflow: auto; }",
       "  body { overflow: auto; }",
@@ -101,10 +112,11 @@
   function setOpen(isOpen) {
     var button = document.querySelector(".site-menu-toggle");
     var backdrop = document.querySelector(".site-sidebar-backdrop");
-    var isNarrow = window.innerWidth <= BREAKPOINT;
+    var isNarrow = isCompactWidth();
 
+    document.body.classList.toggle("league-menu-compact", isNarrow);
     document.body.classList.toggle("league-menu-open", isNarrow && isOpen);
-    document.body.classList.toggle("league-menu-closed", !isNarrow && !isOpen);
+    document.body.classList.toggle("league-menu-closed", !isOpen);
 
     if (button) {
       button.setAttribute("aria-expanded", String(isOpen));
@@ -116,7 +128,7 @@
   }
 
   function isOpen() {
-    if (window.innerWidth <= BREAKPOINT) {
+    if (isCompactWidth()) {
       return document.body.classList.contains("league-menu-open");
     }
 
@@ -125,19 +137,7 @@
 
   function closeAfterSidebarNavigation() {
     window.setTimeout(function () {
-      var button = document.querySelector(".site-menu-toggle");
-      var backdrop = document.querySelector(".site-sidebar-backdrop");
-
-      document.body.classList.remove("league-menu-open");
-      document.body.classList.remove("league-menu-closed");
-
-      if (button) {
-        button.setAttribute("aria-expanded", "false");
-      }
-
-      if (backdrop) {
-        backdrop.hidden = true;
-      }
+      setOpen(!isCompactWidth());
     }, 0);
   }
 
@@ -208,7 +208,7 @@
       setOpen(isOpen());
     });
 
-    setOpen(window.innerWidth > BREAKPOINT);
+    setOpen(!isCompactWidth());
   }
 
   function init() {
