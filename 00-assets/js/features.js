@@ -9,7 +9,8 @@
   var MENU_STYLE_ID = "league-menu-enhancement-styles";
   var RESPONSIVE_MENU_STYLE_ID = "responsive-menu-toggle-styles";
   var MENU_BREAKPOINT = 760;
-  var ZOOMABLE_VIEWPORT = "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes";
+  var DEFAULT_VIEWPORT = "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes";
+  var ROSTER_VIEWPORT = "width=460, initial-scale=1.0, minimum-scale=0.85, maximum-scale=5.0, user-scalable=yes";
   var SETTINGS_KEY = "leagueSiteSettings";
   var SETTINGS_STYLE_ID = "league-settings-styles";
   var PREFERENCE_STYLE_ID = "league-preference-styles";
@@ -26,7 +27,7 @@
     window.localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings || {}));
   }
 
-  function ensureZoomableViewport() {
+  function ensureViewport(content) {
     var viewport = document.querySelector('meta[name="viewport"]');
 
     if (!viewport) {
@@ -35,7 +36,7 @@
       document.head.appendChild(viewport);
     }
 
-    viewport.setAttribute("content", ZOOMABLE_VIEWPORT);
+    viewport.setAttribute("content", content);
   }
 
   function isNestedPage() {
@@ -2322,8 +2323,10 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    if (shouldUseLegacyViewport()) {
-      ensureZoomableViewport();
+    if (isRosterPage()) {
+      ensureViewport(ROSTER_VIEWPORT);
+    } else if (shouldUseLegacyViewport()) {
+      ensureViewport(DEFAULT_VIEWPORT);
     }
 
     applySavedPreferences();
@@ -2352,6 +2355,8 @@
       });
   });
 })();
+
+
 
 
 
