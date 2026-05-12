@@ -10,7 +10,7 @@
   var RESPONSIVE_MENU_STYLE_ID = "responsive-menu-toggle-styles";
   var MENU_BREAKPOINT = 760;
   var DEFAULT_VIEWPORT = "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes";
-  var ROSTER_VIEWPORT = "width=460, initial-scale=1.0, minimum-scale=0.85, maximum-scale=5.0, user-scalable=yes";
+  var ROSTER_VIEWPORT = "width=500, initial-scale=1.0, minimum-scale=0.85, maximum-scale=5.0, user-scalable=yes";
   var SETTINGS_KEY = "leagueSiteSettings";
   var SETTINGS_STYLE_ID = "league-settings-styles";
   var PREFERENCE_STYLE_ID = "league-preference-styles";
@@ -885,6 +885,17 @@
       options: [
         { value: "colors", label: "Color Boxes" },
         { value: "numbers", label: "Number Pills" }
+      ]
+    });
+    addSettingsSelect(form, {
+      id: "setting-roster-sticky-tables",
+      name: "rosterStickyTables",
+      label: "Frozen Roster Columns",
+      value: settings.rosterStickyTables || "on",
+      help: "Keeps key roster table columns frozen on mobile while scrolling sideways.",
+      options: [
+        { value: "on", label: "On" },
+        { value: "off", label: "Off" }
       ]
     });
     document.getElementById("league-settings-save").addEventListener("click", function () {
@@ -2321,6 +2332,109 @@
         enhanceRosterRatingTables([]);
       });
   }
+  function enhanceRosterStickyTables() {
+    var settings = getSettings();
+
+    if (!isRosterPage() || settings.rosterStickyTables === "off") {
+      return;
+    }
+
+    function syncStickyTable(table) {
+      var headerRow = table.rows && table.rows.length > 1 ? table.rows[1] : null;
+      var firstHeaderCell = headerRow && headerRow.cells.length > 1 ? headerRow.cells[0] : null;
+      var secondHeaderCell = headerRow && headerRow.cells.length > 1 ? headerRow.cells[1] : null;
+
+      if (!firstHeaderCell || !secondHeaderCell) {
+        return;
+      }
+
+      var stickyCol1Width = Math.ceil(firstHeaderCell.getBoundingClientRect().width);
+      var stickyCol2Width = Math.ceil(secondHeaderCell.getBoundingClientRect().width);
+
+      if (table.classList.contains('roster-sticky-table--dual')) {
+        stickyCol1Width = Math.max(stickyCol1Width, 34);
+        stickyCol2Width = Math.min(stickyCol2Width, 100);
+        [3, 4, 5].forEach(function (cellIndex) {
+          if (headerRow.cells[cellIndex]) {
+            headerRow.cells[cellIndex].style.width = '42px';
+            headerRow.cells[cellIndex].style.minWidth = '42px';
+            headerRow.cells[cellIndex].style.maxWidth = '42px';
+          }
+        });
+      }
+
+      table.style.setProperty('--sticky-col-1-width', stickyCol1Width + 'px');
+      table.style.setProperty('--sticky-col-2-width', stickyCol2Width + 'px');
+
+      Array.prototype.slice.call(table.rows).forEach(function (row, rowIndex) {
+        if (rowIndex === 0) {
+          return;
+        }
+
+        [0, 1].forEach(function (cellIndex) {
+          var cell = row.cells[cellIndex];
+          if (!cell) {
+            return;
+          }
+
+          if (table.classList.contains('roster-sticky-table--name-only') && cellIndex === 1) {
+            cell.style.backgroundColor = '';
+            return;
+          }
+
+          var backgroundColor = rowIndex === 1
+            ? window.getComputedStyle(cell).backgroundColor
+            : window.getComputedStyle(row).backgroundColor;
+
+          cell.style.backgroundColor = backgroundColor && backgroundColor !== 'rgba(0, 0, 0, 0)'
+            ? backgroundColor
+            : '';
+        });
+      });
+    }
+
+    Array.prototype.slice.call(document.querySelectorAll('table[width="800"]')).forEach(function (table) {
+      var titleCell = table.querySelector('tr:first-child td.tableheader');
+      var title = titleCell ? titleCell.textContent.replace(/\u00a0/g, ' ').trim() : '';
+      var headerRow = table.rows && table.rows.length > 1 ? table.rows[1] : null;
+      var firstHeaderCell = headerRow && headerRow.cells.length > 1 ? headerRow.cells[0] : null;
+      var secondHeaderCell = headerRow && headerRow.cells.length > 1 ? headerRow.cells[1] : null;
+
+      var isDualStickyTable = /^(Attributes|Potentials)$/i.test(title);
+      var isNameStickyTable = /^(Season Stats|Season Shooting|Season Efficiency|Career Stats|Career Shooting|Career Efficiency)$/i.test(title);
+
+      if ((!isDualStickyTable && !isNameStickyTable) || !firstHeaderCell || !secondHeaderCell) {
+        return;
+      }
+
+      if (!table.classList.contains('roster-sticky-table')) {
+        table.classList.add('roster-sticky-table');
+      }
+
+      table.classList.toggle('roster-sticky-table--dual', isDualStickyTable);
+      table.classList.toggle('roster-sticky-table--name-only', isNameStickyTable);
+
+      if (!table.parentElement || !table.parentElement.classList.contains('roster-sticky-table-wrap')) {
+        var wrapper = document.createElement('div');
+        wrapper.className = 'roster-sticky-table-wrap';
+        table.parentNode.insertBefore(wrapper, table);
+        wrapper.appendChild(table);
+      }
+
+      if (table.dataset.stickySortBound !== 'true') {
+        table.dataset.stickySortBound = 'true';
+        Array.prototype.slice.call(table.querySelectorAll('td.header')).forEach(function (header) {
+          header.addEventListener('click', function () {
+            window.setTimeout(function () {
+              syncStickyTable(table);
+            }, 0);
+          });
+        });
+      }
+
+      syncStickyTable(table);
+    });
+  }
 
   document.addEventListener("DOMContentLoaded", function () {
     if (isRosterPage()) {
@@ -2333,12 +2447,16 @@
     enableMenuFrameScroll();
     initResponsiveFrameMenu();
     markStandingsPage();
+    if (isRosterPage()) {
+      document.body.classList.add("page-roster");
+    }
     applyRosterHeaderPhoto();
     ensureCapReportMenuLink();
     ensureDepthChartsMenuLink();
     enhanceLeagueMenu();
     initPlayerRatings();
     initRosterRatings();
+    enhanceRosterStickyTables();
     initPlayerPreviewPill();
     loadJsonData("teams.json")
       .then(function (teams) {
@@ -2355,6 +2473,16 @@
       });
   });
 })();
+
+
+
+
+
+
+
+
+
+
 
 
 

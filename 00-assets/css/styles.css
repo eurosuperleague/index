@@ -1,10 +1,10 @@
-/* ============================================================
-   BSL Index — Global Stylesheet
+﻿/* ============================================================
+   BSL Index â€” Global Stylesheet
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* ── Reset & Base ─────────────────────────────────────────── */
+/* â”€â”€ Reset & Base â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { -webkit-text-size-adjust: 100%; }
@@ -24,7 +24,7 @@ body {
 
 @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
 
-/* ── Links ────────────────────────────────────────────────── */
+/* â”€â”€ Links â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 a { text-decoration: none; transition: color 0.15s; }
 a:hover { text-decoration: underline; }
 
@@ -42,7 +42,7 @@ a.linkhuman {
 }
 a.linkhuman:hover { color: #1d4ed8; }
 
-/* ── Tables — fit to screen ───────────────────────────────── */
+/* â”€â”€ Tables â€” fit to screen â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -66,7 +66,7 @@ table[width] {
   max-width: none !important;
 }
 
-/* ── Header cells ─────────────────────────────────────────── */
+/* â”€â”€ Header cells â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 td.header {
   font-size: 7.5pt;
   font-weight: 600;
@@ -98,7 +98,7 @@ td.headerbg {
   padding: 5px 8px;
 }
 
-/* ── Page title header ────────────────────────────────────── */
+/* â”€â”€ Page title header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 td.newheader {
   font-family: 'Inter', Tahoma, sans-serif;
   font-size: 17pt;
@@ -108,7 +108,7 @@ td.newheader {
   letter-spacing: -0.02em;
 }
 
-/* ── Section / table title ────────────────────────────────── */
+/* â”€â”€ Section / table title â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 td.tableheader {
   font-size: 11pt;
   font-weight: 700;
@@ -116,7 +116,7 @@ td.tableheader {
   padding: 10px 8px 5px;
 }
 
-/* ── Team header ──────────────────────────────────────────── */
+/* â”€â”€ Team header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 td.teamheader {
   font-family: 'Inter', Tahoma, sans-serif;
   font-size: 16pt;
@@ -150,7 +150,7 @@ body > table:first-of-type:has(td.teamheader) td.teamheader2 {
   min-width: 0;
 }
 
-/* ── Data cells ───────────────────────────────────────────── */
+/* â”€â”€ Data cells â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 td.main {
   font-size: 9pt;
   font-weight: 400;
@@ -162,12 +162,12 @@ td.main {
   max-width: 120px;
 }
 
-/* Name columns — allow more space */
+/* Name columns â€” allow more space */
 td.main:nth-child(2) {
   max-width: 160px;
 }
 
-/* ── Alternating rows ─────────────────────────────────────── */
+/* â”€â”€ Alternating rows â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 tr.row1 { background: #f1f5f9; }
 tr.row1:hover { background: #e8f0fe; }
 
@@ -196,23 +196,23 @@ body.page-standings > table:nth-of-type(5):has(td.newheader) + table[width="800"
   background: #b7e3be !important;
 }
 
-/* ── Team colour row ──────────────────────────────────────── */
+/* â”€â”€ Team colour row â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 tr.teamcolor { color: #ffffff; }
 
-/* ── HR divider ───────────────────────────────────────────── */
+/* â”€â”€ HR divider â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 hr {
   border: none;
   border-top: 1px solid #cbd5e1;
   margin: 10px 0;
 }
 
-/* ── Footer font ──────────────────────────────────────────── */
+/* â”€â”€ Footer font â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 font[size="2"] {
   font-size: 8.5pt;
   color: #64748b;
 }
 
-/* ── Menu sidebar ─────────────────────────────────────────── */
+/* â”€â”€ Menu sidebar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 body[bgcolor="#990000"],
 body[style*="990000"] {
   background: #0f172a !important;
@@ -240,7 +240,7 @@ a.menulink:hover {
   text-decoration: none;
 }
 
-/* ── Utility ──────────────────────────────────────────────── */
+/* â”€â”€ Utility â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 br { display: block; margin: 4px 0; content: ""; }
 
 /* Colour rating boxes */
@@ -257,11 +257,11 @@ table[width="800"]:has(table[width="320"]) {
   display: none !important;
 }
 
-/* ── Scrollbar styling ────────────────────────────────────── */
+/* â”€â”€ Scrollbar styling â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 table[width]::-webkit-scrollbar { height: 8px; }
 table[width]::-webkit-scrollbar-track { background: #e2e8f0; border-radius: 2px; }
 table[width]::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 2px; }
-/* Colour rating box — fixed width */
+/* Colour rating box â€” fixed width */
 td > table[border="1"][cellpadding="0"][cellspacing="0"] {
   width: 24px !important;
   min-width: 24px !important;
@@ -280,4 +280,155 @@ td:has(> table[border="1"][cellpadding="0"][cellspacing="0"]) {
   width: 30px !important;
   padding: 0 4px !important;
   white-space: nowrap !important;
+}
+
+@media (max-width: 760px) {
+  body.page-roster {
+    font-size: 11px;
+    line-height: 1.35;
+    padding: 8px;
+  }
+
+  body.page-roster table {
+    border-radius: 8px;
+    margin-bottom: 4px;
+  }
+
+  body.page-roster a.linkmain,
+  body.page-roster a.linkhuman,
+  body.page-roster td.main {
+    font-size: 0.75rem;
+    line-height: 1.28;
+  }
+
+  body.page-roster td.header,
+  body.page-roster td.headerbg {
+    font-size: 0.61rem;
+    line-height: 1.15;
+    padding: 4px 4px;
+    letter-spacing: 0.01em;
+  }
+
+  body.page-roster td.main {
+    padding: 3px 4px;
+    max-width: none;
+  }
+
+  body.page-roster td.tableheader {
+    font-size: 0.95rem;
+    line-height: 1.2;
+    padding: 6px 5px 3px;
+  }
+
+  body.page-roster td.plainheader,
+  body.page-roster td.teamheader {
+    font-size: 1.6rem;
+    line-height: 1.08;
+    padding: 7px 10px 2px;
+  }
+
+  body.page-roster td.teamheader2,
+  body.page-roster font[size="2"] {
+    font-size: 0.72rem;
+    line-height: 1.22;
+    padding: 1px 10px 5px;
+  }
+
+  body.page-roster body > table:first-of-type td.header {
+    padding: 3px;
+  }
+
+  body.page-roster body > table:first-of-type img {
+    width: 58px;
+    height: 58px;
+  }
+
+  body.page-roster body > table:first-of-type td[rowspan="3"] {
+    width: 60px !important;
+    min-width: 60px;
+  }
+
+  body.page-roster body > table:first-of-type td.teamheader,
+  body.page-roster body > table:first-of-type td.teamheader2 {
+    white-space: normal;
+  }
+
+  body.page-roster hr {
+    margin: 7px 0;
+  }
+}
+
+
+
+@media (max-width: 760px) {
+  body.page-roster .roster-sticky-table-wrap {
+    margin-bottom: 6px;
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body.page-roster .roster-sticky-table {
+    min-width: max-content;
+    width: max-content !important;
+  }  body.page-roster .roster-sticky-table tr:first-child > td.tableheader {
+    left: 0;
+    position: sticky;
+    z-index: 4;
+    background: #f0f2f5;
+  }
+
+  body.page-roster .roster-sticky-table--dual tr:nth-child(n+2) > td:nth-child(1),
+  body.page-roster .roster-sticky-table--dual tr:nth-child(n+2) > td:nth-child(2),
+  body.page-roster .roster-sticky-table--name-only tr:nth-child(n+2) > td:nth-child(1) {
+    position: sticky;
+    z-index: 2;
+  }
+
+  body.page-roster .roster-sticky-table--dual tr:nth-child(n+2) > td:nth-child(1),
+  body.page-roster .roster-sticky-table--name-only tr:nth-child(n+2) > td:nth-child(1) {
+    left: 0;
+    min-width: var(--sticky-col-1-width);
+    max-width: var(--sticky-col-1-width);
+    width: var(--sticky-col-1-width);
+  }
+
+  body.page-roster .roster-sticky-table--dual tr:nth-child(n+2) > td:nth-child(2) {
+    left: var(--sticky-col-1-width);
+    min-width: var(--sticky-col-2-width);
+    max-width: var(--sticky-col-2-width);
+    width: var(--sticky-col-2-width);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 2px 0 0 rgba(15, 23, 42, 0.08);
+  }
+
+  body.page-roster .roster-sticky-table--name-only tr:nth-child(n+2) > td:nth-child(1) {
+    box-shadow: 2px 0 0 rgba(15, 23, 42, 0.08);
+  }
+
+  body.page-roster .roster-sticky-table--dual tr:nth-child(2) > td:nth-child(1),
+  body.page-roster .roster-sticky-table--dual tr:nth-child(2) > td:nth-child(2),
+  body.page-roster .roster-sticky-table--name-only tr:nth-child(2) > td:nth-child(1) {
+    z-index: 3;
+  }
+}
+
+
+
+
+
+@media (max-width: 760px) {
+  body.page-roster .roster-sticky-table--dual tr:nth-child(n+2) > td:nth-child(4),
+  body.page-roster .roster-sticky-table--dual tr:nth-child(n+2) > td:nth-child(5),
+  body.page-roster .roster-sticky-table--dual tr:nth-child(n+2) > td:nth-child(6),
+  body.page-roster .roster-sticky-table--dual tr:nth-child(2) > td:nth-child(4),
+  body.page-roster .roster-sticky-table--dual tr:nth-child(2) > td:nth-child(5),
+  body.page-roster .roster-sticky-table--dual tr:nth-child(2) > td:nth-child(6) {
+    width: 42px !important;
+    min-width: 42px !important;
+    max-width: 42px !important;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
 }

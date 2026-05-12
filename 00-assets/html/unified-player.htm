@@ -45,6 +45,14 @@
       min-width: 0;
       overflow: hidden;
     }
+    .layout {
+      display: grid;
+      grid-template-columns: 340px minmax(0, 1fr);
+      gap: 0.75rem;
+      align-items: start;
+      min-width: 0;
+      width: 100%;
+    }
     .topbar {
       display: flex;
       align-items: center;
@@ -258,11 +266,27 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
-    .layout {
-      display: grid;
-      grid-template-columns: 340px minmax(0, 1fr);
+    .layout-ratings {
+      grid-column: 1 / -1;
+      width: 100%;
+      min-width: 0;
+    }
+    .layout-left {
+      align-self: start;
+      display: flex;
+      flex-direction: column;
       gap: 0.75rem;
-      align-items: start;
+      grid-column: 1;
+      grid-row: 2;
+      min-width: 0;
+    }
+    .layout-sidebar {
+      min-width: 0;
+    }
+    .layout-stats {
+      grid-column: 2;
+      grid-row: 2;
+      align-self: start;
       min-width: 0;
     }
     .panel {
@@ -319,6 +343,7 @@
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 0;
+      width: 100%;
     }
     .rating-category {
       border-right: 1px solid var(--line);
@@ -338,7 +363,7 @@
     }
     .rating-row {
       display: grid;
-      grid-template-columns: 42px minmax(68px, 1fr) 34px 34px;
+      grid-template-columns: 40px minmax(0, 1fr) minmax(2rem, auto) minmax(2rem, auto);
       gap: 0.4rem;
       align-items: center;
       border-bottom: 1px solid var(--line);
@@ -391,6 +416,17 @@
       min-width: 0;
       overflow: hidden;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .stats-panel .gamelog-panel {
+      border: 0;
+      background: transparent;
+      margin: 0;
+      min-width: 0;
+    }
+    .stats-panel .gamelog-panel .panel-head {
+      border-top: 1px solid var(--line);
     }
     .stats-panel .panel-head {
       min-width: 0;
@@ -509,9 +545,132 @@
       padding: 0.75rem;
       color: var(--muted);
     }
+    .media-mentions-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      max-height: min(48vh, 420px);
+      overflow-y: auto;
+      padding: 0.55rem 0.6rem 0.65rem;
+    }
+    .media-mention-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: inherit;
+      display: block;
+      padding: 0.45rem 0.5rem;
+      text-decoration: none;
+    }
+    .media-mention-card:hover {
+      border-color: var(--team-color);
+    }
+    .media-mention-title {
+      font-size: 0.78rem;
+      font-weight: 850;
+      line-height: 1.25;
+      margin: 0 0 0.2rem;
+    }
+    .media-mention-meta {
+      color: var(--muted);
+      font-size: 0.64rem;
+      margin-bottom: 0.25rem;
+    }
+    .media-mention-blurb {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      color: var(--ink);
+      display: -webkit-box;
+      font-size: 0.72rem;
+      line-height: 1.35;
+      overflow: hidden;
+    }
+    .media-mentions-all {
+      color: var(--team-color);
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      margin-top: 0.1rem;
+      text-decoration: none;
+    }
+    .media-mentions-all:hover {
+      text-decoration: underline;
+    }
+    .gamelog-wrap {
+      max-height: min(52vh, 380px);
+      overflow: auto;
+      border-bottom: 1px solid var(--line);
+      scrollbar-gutter: stable;
+    }
+    .gamelog-wrap .gamelog-table {
+      min-width: 760px;
+      width: max-content !important;
+      max-width: none !important;
+    }
+    .gamelog-wrap .gamelog-table th,
+    .gamelog-wrap .gamelog-table td {
+      font-size: 0.72rem;
+      padding: 0.28rem 0.36rem;
+    }
+    .gamelog-wrap .gamelog-table th:first-child,
+    .gamelog-wrap .gamelog-table td:first-child {
+      left: 0;
+      min-width: 68px;
+      position: sticky;
+      width: 68px;
+      z-index: 6;
+    }
+    .gamelog-wrap .gamelog-table th:nth-child(2),
+    .gamelog-wrap .gamelog-table td:nth-child(2) {
+      left: 68px;
+      min-width: 60px;
+      position: sticky;
+      width: 60px;
+      z-index: 6;
+    }
+    .gamelog-wrap .gamelog-table th:first-child,
+    .gamelog-wrap .gamelog-table th:nth-child(2) {
+      z-index: 8;
+    }
     @media (max-width: 1050px) {
-      .player-header,
-      .layout { grid-template-columns: 1fr; }
+      .player-header {
+        grid-template-columns: 1fr;
+      }
+      .shell {
+        max-width: 100%;
+      }
+      .topbar,
+      .player-header {
+        max-width: 100%;
+        min-width: 0;
+        width: 100%;
+      }
+      .layout {
+        align-items: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+      }
+      .layout-left {
+        display: contents;
+      }
+      .layout-ratings,
+      .layout-sidebar,
+      .layout-stats,
+      .layout-player-articles {
+        align-self: stretch;
+        max-width: 100%;
+        min-width: 0;
+        width: 100%;
+      }
+      .layout-sidebar {
+        display: block;
+      }
+      .layout-ratings { order: 1; }
+      .layout-sidebar { order: 2; }
+      .layout-stats { order: 3; }
+      .layout-player-articles { order: 4; }
       .ratings-board { grid-template-columns: 1fr; }
       .rating-category { border-right: 0; border-bottom: 1px solid var(--line); }
       .rating-category:last-child { border-bottom: 0; }
@@ -526,13 +685,52 @@
         text-align: left;
       }
     }
+    @media (max-width: 1050px) and (min-width: 640px) {
+      .ratings-board {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .rating-category {
+        border-bottom: 0;
+        border-right: 1px solid var(--line);
+      }
+      .rating-category:last-child {
+        border-right: 0;
+      }
+    }
     @media (max-width: 620px) {
-      body { padding: 0.6rem; }
-      .topbar { align-items: stretch; }
-      .player-search,
-      .player-search-input,
-      .nav-actions,
-      .btn-link { width: 100%; }
+      body { padding: 0.5rem 0.55rem; }
+      .shell { gap: 0.55rem; }
+      .topbar {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0.38rem;
+        padding: 0.36rem 0.45rem;
+      }
+      .player-search {
+        flex: 1 1 auto;
+        max-width: none;
+        min-width: 0;
+        width: 100%;
+      }
+      .player-search-input {
+        font-size: 0.82rem;
+        min-width: 0;
+        padding: 0.26rem 0.4rem;
+        width: 100%;
+      }
+      .nav-actions {
+        display: grid;
+        gap: 0.28rem;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        width: 100%;
+      }
+      .btn-link {
+        font-size: 0.68rem;
+        font-weight: 700;
+        min-height: 0;
+        padding: 0.24rem 0.28rem;
+        width: 100%;
+      }
       .header-statline { grid-template-columns: repeat(3, 1fr); }
     }
   </style>
@@ -565,7 +763,7 @@
     </header>
 
     <main class="layout">
-      <section class="panel" style="grid-column:1 / -1;">
+      <section class="panel layout-ratings">
         <div class="panel-head">
           <h2 class="panel-title">Ratings</h2>
           <div class="note">Current rating / potential grade</div>
@@ -573,16 +771,25 @@
         <div class="ratings-board" id="ratingsBoard"></div>
       </section>
 
-      <aside>
-        <section class="panel">
+      <div class="layout-left">
+        <aside class="layout-sidebar">
+          <section class="panel">
+            <div class="panel-head">
+              <h2 class="panel-title">Contract</h2>
+            </div>
+            <table class="contract-table" id="contractTable"></table>
+          </section>
+        </aside>
+        <section class="panel layout-player-articles" id="playerArticlesPanel">
           <div class="panel-head">
-            <h2 class="panel-title">Contract</h2>
+            <h2 class="panel-title">ESL Media</h2>
+            <div class="note" id="playerArticlesNote">Mentions</div>
           </div>
-          <table class="contract-table" id="contractTable"></table>
+          <div class="media-mentions-body" id="playerArticlesList"></div>
         </section>
-      </aside>
+      </div>
 
-      <section class="panel stats-panel">
+      <section class="panel stats-panel layout-stats">
         <div class="panel-head">
           <h2 class="panel-title">Stats</h2>
           <div class="note" id="snapshotNote">Best available season row</div>
@@ -593,6 +800,15 @@
         <div class="table-wrap">
           <table class="data-table" id="statsTable"></table>
         </div>
+        <div class="gamelog-panel" id="gamelogPanel">
+          <div class="panel-head">
+            <h2 class="panel-title">Game Logs</h2>
+            <div class="note" id="gamelogNote">Recent games</div>
+          </div>
+          <div class="table-wrap gamelog-wrap">
+            <table class="data-table gamelog-table" id="gamelogTable"></table>
+          </div>
+        </div>
       </section>
     </main>
   </div>
@@ -602,6 +818,7 @@
     const DATA_URLS = {
       players: "../../00-build/database/players.json",
       playerStats: "../../00-build/database/player_stats.json",
+      playerGamelogs: "../../00-build/database/player_gamelogs.json",
       injuries: "../../00-build/database/injuries.json",
       standings: "../../00-build/database/standings.json"
     };
@@ -664,6 +881,7 @@
     const state = {
       players: [],
       playerStats: [],
+      playerGamelogs: [],
       injuries: [],
       standings: [],
       teamDirectory: [],
@@ -671,6 +889,8 @@
       currentStats: null,
       activeTab: "season_averages"
     };
+
+    let eslMediaArticlesLoad = null;
 
     function params() {
       return new URLSearchParams(window.location.search);
@@ -762,6 +982,14 @@
       const key = normalizeName(player && player.name);
       return state.playerStats.find((p) => playerIdFromUrl(p.url) === id) ||
         state.playerStats.find((p) => normalizeName(p.name) === key) ||
+        null;
+    }
+
+    function findGamelogsFor(player) {
+      const id = playerIdFromUrl(player && player.url);
+      const key = normalizeName(player && player.name);
+      return state.playerGamelogs.find((p) => playerIdFromUrl(p.url) === id) ||
+        state.playerGamelogs.find((p) => normalizeName(p.name) === key) ||
         null;
     }
 
@@ -1020,6 +1248,107 @@
       makeTableSortable(table);
     }
 
+    function renderGameLogs() {
+      const table = document.getElementById("gamelogTable");
+      const note = document.getElementById("gamelogNote");
+      const record = findGamelogsFor(state.current);
+      const section = record && record.gameLogs;
+      if (!section || !Array.isArray(section.headers) || !section.headers.length) {
+        table.innerHTML = `<tbody><tr><td><div class="empty">No game log data</div></td></tr></tbody>`;
+        if (note) note.textContent = "No games logged";
+        return;
+      }
+      const rawRows = Array.isArray(section.rows) ? section.rows : [];
+      const rows = [...rawRows].reverse();
+      if (note) {
+        note.textContent = rows.length ? `${rows.length} game${rows.length === 1 ? "" : "s"} (newest first)` : "No games yet";
+      }
+      const used = {};
+      const keys = section.headers.map((h) => keyFromHeader(h, used));
+      const head = `<thead><tr>${section.headers.map((h) => `<th>${escapeHtml(h || "-")}</th>`).join("")}</tr></thead>`;
+      const body = rows.length
+        ? rows.map((row) => {
+            const trClass = row && row.rowClass ? ` class="${escapeHtml(row.rowClass)}"` : "";
+            return `<tr${trClass}>${keys.map((key) => `<td>${fmt(row[key])}</td>`).join("")}</tr>`;
+          }).join("")
+        : `<tr><td colspan="${section.headers.length}">No rows</td></tr>`;
+      table.innerHTML = `${head}<tbody>${body}</tbody>`;
+      makeTableSortable(table);
+    }
+
+    function loadEslMediaArticles() {
+      if (Array.isArray(window.ESL_MEDIA_ARTICLES)) {
+        return Promise.resolve(window.ESL_MEDIA_ARTICLES);
+      }
+      if (eslMediaArticlesLoad) return eslMediaArticlesLoad;
+      eslMediaArticlesLoad = new Promise((resolve) => {
+        const s = document.createElement("script");
+        s.src = "../../00-eslmedia/content/media-articles.js";
+        s.async = true;
+        s.onload = () => resolve(Array.isArray(window.ESL_MEDIA_ARTICLES) ? window.ESL_MEDIA_ARTICLES : []);
+        s.onerror = () => resolve([]);
+        document.head.appendChild(s);
+      });
+      return eslMediaArticlesLoad;
+    }
+
+    function articleHaystack(article) {
+      return [article.title, article.blurb, article.tag, article.meta, article.desk, article.category, article.author]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+    }
+
+    function articleMentionsPlayer(article, playerName) {
+      const needle = String(playerName || "").trim().toLowerCase();
+      if (needle.length < 3) return false;
+      return articleHaystack(article).includes(needle);
+    }
+
+    function mediaArticleHref(file) {
+      const path = String(file || "").replace(/^\.\//, "");
+      return `../../00-eslmedia/content/${path}`;
+    }
+
+    async function renderPlayerArticles() {
+      const root = document.getElementById("playerArticlesList");
+      const note = document.getElementById("playerArticlesNote");
+      if (!root) return;
+      root.innerHTML = `<div class="empty">Loading ESL Media…</div>`;
+      if (note) note.textContent = "Loading catalog";
+      const articles = await loadEslMediaArticles();
+      const name = state.current && state.current.name ? state.current.name : "";
+      const matches = articles
+        .filter((a) => articleMentionsPlayer(a, name))
+        .sort((a, b) => String(b.sortKey || "").localeCompare(String(a.sortKey || ""), undefined, { numeric: true }))
+        .slice(0, 8);
+      const browse = `<a class="media-mentions-all" href="../../00-eslmedia/content/all-articles.html">Browse all articles</a>`;
+      if (note) {
+        note.textContent = matches.length
+          ? `${matches.length} recent mention${matches.length === 1 ? "" : "s"}`
+          : "No mentions in catalog";
+      }
+      if (!matches.length) {
+        root.innerHTML =
+          `<div class="empty">No ESL Media pieces in this catalog mention ${escapeHtml(name || "this player")} yet.</div>${browse}`;
+        return;
+      }
+      root.innerHTML =
+        matches.map((article) => {
+          const href = mediaArticleHref(article.file);
+          const metaBits = [article.category, article.meta].filter(Boolean).join(" · ");
+          const deskOrMeta = metaBits || article.desk || "";
+          const blurb = article.blurb ? escapeHtml(article.blurb) : "";
+          return (
+            `<a class="media-mention-card" href="${escapeHtml(href)}">` +
+            `<div class="media-mention-title">${escapeHtml(article.title || article.file)}</div>` +
+            (deskOrMeta ? `<div class="media-mention-meta">${escapeHtml(deskOrMeta)}</div>` : "") +
+            (blurb ? `<div class="media-mention-blurb">${blurb}</div>` : "") +
+            `</a>`
+          );
+        }).join("") + browse;
+    }
+
     function renderTabs() {
       const root = document.getElementById("statsTabs");
       const stats = state.currentStats && state.currentStats.stats ? state.currentStats.stats : {};
@@ -1131,8 +1460,18 @@
           injuriesRes.json(),
           standingsRes.json()
         ]);
+        let playerGamelogsData = { players: [] };
+        try {
+          const playerGamelogsRes = await fetch(DATA_URLS.playerGamelogs);
+          if (playerGamelogsRes.ok) {
+            playerGamelogsData = await playerGamelogsRes.json();
+          }
+        } catch (error) {
+          playerGamelogsData = { players: [] };
+        }
         state.players = Array.isArray(playersData) ? playersData : [];
         state.playerStats = Array.isArray(playerStatsData.players) ? playerStatsData.players : [];
+        state.playerGamelogs = Array.isArray(playerGamelogsData.players) ? playerGamelogsData.players : [];
         state.injuries = Array.isArray(injuriesData.injuries) ? injuriesData.injuries : [];
         state.standings = Array.isArray(standingsData.sections) ? standingsData.sections : [];
         state.teamDirectory = window.UnifiedRosterDataService.buildTeamDirectory(state.standings);
@@ -1144,6 +1483,8 @@
         renderPlayerDetails();
         renderTabs();
         renderTable();
+        renderGameLogs();
+        await renderPlayerArticles();
       } catch (error) {
         document.getElementById("playerName").textContent = "Unified player unavailable";
         document.getElementById("playerMeta").textContent = "Could not load required player data.";

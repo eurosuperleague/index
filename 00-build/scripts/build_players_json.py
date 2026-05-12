@@ -14,6 +14,7 @@ ROSTERS_DIR = os.path.normpath(os.path.join(PROJECT_ROOT, "rosters"))
 PLAYERS_DIR = os.path.normpath(os.path.join(PROJECT_ROOT, "players"))
 PLAYERS_OUT = os.path.join(DATABASE_DIR, "players.json")
 PLAYER_STATS_OUT = os.path.join(DATABASE_DIR, "player_stats.json")
+PLAYER_GAMELOGS_OUT = os.path.join(DATABASE_DIR, "player_gamelogs.json")
 TEAM_STATS_OUT = os.path.join(DATABASE_DIR, "team_stats.json")
 TEAMS_OUT = os.path.join(DATABASE_DIR, "teams.json")
 STANDINGS_OUT = os.path.join(DATABASE_DIR, "standings.json")
@@ -50,6 +51,8 @@ PLAYER_STAT_TABLES = {
     "Playoff Shooting",
     "Career Highs",
 }
+
+PLAYER_GAMELOG_TITLE = "Game Logs"
 
 def clean(txt):
     return re.sub(r"\s+", " ", unescape(txt).replace("\xa0", " ")).strip()
@@ -568,6 +571,45 @@ def parse_player_stats_page(html, filename, player):
         "teamLabel": player.get("teamLabel", ""),
         "pos": player.get("pos", ""),
         "stats": tables,
+    }
+
+
+def parse_player_gamelogs_page(html, filename, player):
+    table_matches = re.finditer(
+        r"<table[^>]*>(?P<table>.*?)</table>",
+        html,
+        re.IGNORECASE | re.DOTALL,
+    )
+
+    logs = {"title": PLAYER_GAMELOG_TITLE, "headers": [], "rows": []}
+
+    for table_match in table_matches:
+        table_html = table_match.group("table")
+        title_match = re.search(
+            r"<td[^>]*class=tableheader[^>]*>(.*?)</td>",
+            table_html,
+            re.IGNORECASE | re.DOTALL,
+        )
+        if not title_match:
+            continue
+
+        title = strip_tags(title_match.group(1))
+        if title != PLAYER_GAMELOG_TITLE:
+            continue
+
+        logs = {
+            "title": title,
+            **parse_stat_table(table_html[title_match.end():]),
+        }
+        break
+
+    return {
+        "name": player.get("name", ""),
+        "url": player.get("url", f"../players/{filename}"),
+        "team": player.get("team", ""),
+        "teamLabel": player.get("teamLabel", ""),
+        "pos": player.get("pos", ""),
+        "gameLogs": logs,
     }
 
 
@@ -1548,6 +1590,7 @@ def main():
     team_lookup = build_team_lookup(all_teams)
     all_players = []
     all_player_stats = []
+    all_player_gamelogs = []
     player_files = sorted(
         f for f in os.listdir(PLAYERS_DIR)
         if f.lower().endswith((".htm", ".html"))
@@ -1562,6 +1605,7 @@ def main():
         if player:
             all_players.append(player)
             all_player_stats.append(parse_player_stats_page(html, file, player))
+            all_player_gamelogs.append(parse_player_gamelogs_page(html, file, player))
 
     with open(FREE_AGENTS_PATH, "r", encoding="latin-1") as f:
         free_agents_html = f.read()
@@ -1579,6 +1623,7 @@ def main():
     attached_contract_count = attach_contracts(all_players, contract_entries, contract_years)
     all_players.sort(key=lambda player: player["name"])
     all_player_stats.sort(key=lambda player: player["name"])
+    all_player_gamelogs.sort(key=lambda player: player["name"])
 
     with open(PLAYERS_OUT, "w", encoding="utf-8") as f:
         json.dump(all_players, f, indent=4)
@@ -1590,6 +1635,14 @@ def main():
 
     with open(PLAYER_STATS_OUT, "w", encoding="utf-8") as f:
         json.dump(player_stats_data, f, indent=4)
+
+    player_gamelogs_data = {
+        "source": "players/*.htm",
+        "players": all_player_gamelogs,
+    }
+
+    with open(PLAYER_GAMELOGS_OUT, "w", encoding="utf-8") as f:
+        json.dump(player_gamelogs_data, f, indent=4)
 
     team_stats_data = {
         "source": "rosters/*.htm",
@@ -1702,6 +1755,7 @@ def main():
     print(f"Final count: {attached_potential_count} players enriched with potential letter grades")
     print(f"Final count: {attached_contract_count} players enriched with roster contract tables")
     print(f"Final count: {len(all_player_stats)} player stat records saved to {PLAYER_STATS_OUT}")
+    print(f"Final count: {len(all_player_gamelogs)} player game log records saved to {PLAYER_GAMELOGS_OUT}")
     print(f"Final count: {len(team_stats_data['teams'])} team stat records saved to {TEAM_STATS_OUT}")
     print(f"Final count: {len(all_teams)} teams saved to {TEAMS_OUT}")
     print(f"Final count: {len(standings_data['sections'])} standings sections saved to {STANDINGS_OUT}")
