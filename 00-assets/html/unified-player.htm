@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.25, maximum-scale=5.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unified Player</title>
   <link rel="stylesheet" href="../css/styles.css">
   <style>
@@ -55,13 +55,70 @@
       background: var(--card);
       padding: 0.5rem 0.6rem;
     }
-    .player-picker {
+    .player-search {
+      flex: 1 1 360px;
+      max-width: 520px;
+      min-width: min(360px, 100%);
+      position: relative;
+    }
+    .player-search-input {
+      width: 100%;
       min-width: min(380px, 100%);
       border: 1px solid var(--line);
       background: #fff;
       color: var(--ink);
       font: inherit;
       padding: 0.38rem 0.45rem;
+    }
+    .player-search-input:focus {
+      border-color: var(--team-color);
+      outline: 2px solid color-mix(in srgb, var(--team-color) 22%, transparent);
+      outline-offset: 1px;
+    }
+    .player-search-results {
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
+      left: 0;
+      max-height: min(320px, 62vh);
+      overflow: auto;
+      position: absolute;
+      right: 0;
+      top: calc(100% + 4px);
+      z-index: 20;
+    }
+    .player-search-results[hidden] { display: none; }
+    .player-search-option {
+      align-items: center;
+      background: #fff;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink);
+      cursor: pointer;
+      display: flex;
+      gap: 0.5rem;
+      justify-content: space-between;
+      min-height: 34px;
+      padding: 0.42rem 0.5rem;
+      text-align: left;
+      width: 100%;
+    }
+    .player-search-option:last-child { border-bottom: 0; }
+    .player-search-option:hover,
+    .player-search-option.active {
+      background: #f1f5f9;
+    }
+    .player-search-option strong {
+      font-size: 0.82rem;
+      font-weight: 850;
+    }
+    .player-search-option span {
+      color: var(--muted);
+      flex: 0 0 auto;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
     .nav-actions {
       display: flex;
@@ -472,7 +529,8 @@
     @media (max-width: 620px) {
       body { padding: 0.6rem; }
       .topbar { align-items: stretch; }
-      .player-picker,
+      .player-search,
+      .player-search-input,
       .nav-actions,
       .btn-link { width: 100%; }
       .header-statline { grid-template-columns: repeat(3, 1fr); }
@@ -482,7 +540,10 @@
 <body>
   <div class="shell">
     <div class="topbar">
-      <select class="player-picker" id="playerPicker" aria-label="Choose player"></select>
+      <div class="player-search" id="playerSearchWrap">
+        <input class="player-search-input" id="playerSearchInput" type="search" autocomplete="off" spellcheck="false" aria-label="Search players" aria-controls="playerSearchResults" aria-expanded="false">
+        <div class="player-search-results" id="playerSearchResults" role="listbox" hidden></div>
+      </div>
       <nav class="nav-actions" aria-label="Player navigation">
         <a class="btn-link" id="teamLink" href="./league%20dashboard.htm">Team Page</a>
         <a class="btn-link" id="classicLink" href="#">Classic Page</a>
@@ -544,6 +605,9 @@
       injuries: "../../00-build/database/injuries.json",
       standings: "../../00-build/database/standings.json"
     };
+    const PLAYER_VIEWPORT = "width=device-width, initial-scale=1.0";
+    let parentViewportMeta = null;
+    let parentViewportPrevious = null;
 
     const TEAM_LOGOS = {
       "AC Milan": "acmilan.jpg",
@@ -614,6 +678,16 @@
 
     function clean(v) {
       return String(v || "").replace(/\s+/g, " ").trim();
+    }
+
+    function escapeHtml(v) {
+      return String(v || "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[char]));
     }
 
     function normalizeName(v) {
@@ -761,14 +835,97 @@
     }
 
     function renderPicker() {
-      const picker = document.getElementById("playerPicker");
-      const sorted = [...state.players].filter((p) => p.name && p.url).sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
-      picker.innerHTML = sorted.map((player) => {
-        const selected = playerIdFromUrl(player.url) === playerIdFromUrl(state.current.url) ? "selected" : "";
-        return `<option value="${playerIdFromUrl(player.url)}" ${selected}>${player.name} - ${player.teamLabel || player.team || "Team"}</option>`;
-      }).join("");
-      picker.addEventListener("change", () => {
-        window.location.href = `./unified-player.htm?id=${encodeURIComponent(picker.value)}`;
+      const wrap = document.getElementById("playerSearchWrap");
+      const input = document.getElementById("playerSearchInput");
+      const results = document.getElementById("playerSearchResults");
+      const sorted = [...state.players]
+        .filter((p) => p.name && p.url && playerIdFromUrl(p.url))
+        .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }))
+        .map((player) => {
+          const team = player.teamLabel || player.team || "Team";
+          return {
+            id: playerIdFromUrl(player.url),
+            name: player.name,
+            team,
+            label: `${player.name} - ${team}`,
+            search: normalizeName(`${player.name} ${team} ${player.pos || ""}`)
+          };
+        });
+      let activeIndex = -1;
+      let visible = [];
+
+      function closeResults() {
+        results.hidden = true;
+        input.setAttribute("aria-expanded", "false");
+        activeIndex = -1;
+      }
+
+      function goToPlayer(item) {
+        if (!item || !item.id) return;
+        window.location.href = `./unified-player.htm?id=${encodeURIComponent(item.id)}`;
+      }
+
+      function renderResults(query) {
+        const key = normalizeName(query);
+        visible = sorted
+          .filter((item) => !key || item.search.includes(key))
+          .slice(0, 12);
+        activeIndex = visible.length ? 0 : -1;
+        results.innerHTML = visible.length
+          ? visible.map((item, index) => (
+              `<button class="player-search-option ${index === activeIndex ? "active" : ""}" type="button" role="option" data-id="${escapeHtml(item.id)}" aria-selected="${index === activeIndex ? "true" : "false"}">` +
+                `<strong>${escapeHtml(item.name)}</strong><span>${escapeHtml(item.team)}</span>` +
+              `</button>`
+            )).join("")
+          : `<button class="player-search-option" type="button" disabled><strong>No players found</strong><span>Search</span></button>`;
+        results.hidden = false;
+        input.setAttribute("aria-expanded", "true");
+      }
+
+      function syncActiveOption() {
+        Array.from(results.querySelectorAll(".player-search-option")).forEach((button, index) => {
+          const active = index === activeIndex;
+          button.classList.toggle("active", active);
+          button.setAttribute("aria-selected", String(active));
+        });
+      }
+
+      input.value = "";
+      input.placeholder = "Search players";
+      input.addEventListener("focus", () => {
+        input.select();
+        renderResults("");
+      });
+      input.addEventListener("click", () => renderResults(""));
+      input.addEventListener("input", () => renderResults(input.value));
+      input.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowDown") {
+          event.preventDefault();
+          if (results.hidden) renderResults(input.value);
+          activeIndex = Math.min(visible.length - 1, activeIndex + 1);
+          syncActiveOption();
+        } else if (event.key === "ArrowUp") {
+          event.preventDefault();
+          if (results.hidden) renderResults(input.value);
+          activeIndex = Math.max(0, activeIndex - 1);
+          syncActiveOption();
+        } else if (event.key === "Enter") {
+          event.preventDefault();
+          if (results.hidden) renderResults(input.value);
+          goToPlayer(visible[activeIndex] || visible[0]);
+        } else if (event.key === "Escape") {
+          closeResults();
+          input.blur();
+        }
+      });
+      results.addEventListener("mousedown", (event) => event.preventDefault());
+      results.addEventListener("click", (event) => {
+        const option = event.target.closest(".player-search-option[data-id]");
+        if (!option) return;
+        goToPlayer(sorted.find((item) => item.id === option.dataset.id));
+      });
+      document.addEventListener("click", (event) => {
+        if (!wrap.contains(event.target)) closeResults();
       });
     }
 
@@ -920,6 +1077,23 @@
         const shell = frame?.closest?.(".site-shell");
 
         parentDocument.body.classList.toggle("league-fluid-content", Boolean(enabled));
+
+        if (enabled) {
+          parentViewportMeta = parentDocument.querySelector('meta[name="viewport"]');
+          if (!parentViewportMeta) {
+            parentViewportMeta = parentDocument.createElement("meta");
+            parentViewportMeta.name = "viewport";
+            parentDocument.head.appendChild(parentViewportMeta);
+          }
+          if (parentViewportPrevious === null) {
+            parentViewportPrevious = parentViewportMeta.getAttribute("content") || "";
+          }
+          parentViewportMeta.setAttribute("content", PLAYER_VIEWPORT);
+        } else if (parentViewportMeta && parentViewportPrevious !== null) {
+          parentViewportMeta.setAttribute("content", parentViewportPrevious);
+          parentViewportPrevious = null;
+          parentViewportMeta = null;
+        }
 
         if (frame) {
           frame.style.minWidth = enabled ? "0" : "";
