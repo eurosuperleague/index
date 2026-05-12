@@ -21,6 +21,10 @@
       --font-sans: "Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     * { box-sizing: border-box; }
+    html {
+      max-width: 100vw;
+      overflow-x: hidden;
+    }
     body {
       margin: 0;
       padding: 0.85rem;
@@ -28,13 +32,18 @@
       color: var(--ink);
       font-family: var(--font-sans);
       font-size: 14px;
+      max-width: 100vw;
+      overflow-x: hidden;
     }
     a { color: #1d4ed8; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .shell {
-      width: min(1280px, 100%);
+      width: 100%;
+      max-width: min(1280px, calc(100vw - 1.7rem));
       display: grid;
       gap: 0.75rem;
+      min-width: 0;
+      overflow: hidden;
     }
     .topbar {
       display: flex;
@@ -197,10 +206,12 @@
       grid-template-columns: 340px minmax(0, 1fr);
       gap: 0.75rem;
       align-items: start;
+      min-width: 0;
     }
     .panel {
       border: 1px solid var(--line);
       background: var(--card);
+      min-width: 0;
     }
     .panel + .panel { margin-top: 0.75rem; }
     .panel-head {
@@ -318,17 +329,32 @@
       width: 0;
       background: var(--team-color);
     }
-    .stats-panel { min-width: 0; }
+    .stats-panel {
+      max-width: 100%;
+      min-width: 0;
+      overflow: hidden;
+      width: 100%;
+    }
+    .stats-panel .panel-head {
+      min-width: 0;
+      overflow: hidden;
+    }
     .tabs {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
+      flex: 1 1 auto;
       gap: 0.3rem;
+      max-width: 100%;
+      min-width: 0;
+      overflow-x: auto;
+      padding-bottom: 0.05rem;
     }
     .tab-btn {
       border: 1px solid var(--line);
       background: #fff;
       color: var(--muted);
       cursor: pointer;
+      flex: 0 0 auto;
       font: inherit;
       font-size: 0.7rem;
       font-weight: 800;
@@ -340,11 +366,23 @@
       color: #fff;
     }
     .table-wrap {
+      display: block;
       overflow: auto;
+      width: 100%;
       max-width: 100%;
+      max-height: min(62vh, 620px);
+      position: relative;
+      border-bottom: 1px solid var(--line);
+      scrollbar-gutter: stable;
     }
     .data-table {
-      min-width: 790px;
+      border-collapse: separate;
+      border-spacing: 0;
+      min-width: 980px;
+      overflow: visible;
+      table-layout: auto;
+      width: max-content !important;
+      max-width: none !important;
     }
     .data-table th,
     .data-table td {
@@ -363,6 +401,44 @@
       font-size: 0.64rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
+    }
+    .data-table tbody tr:nth-child(odd) td { background: #fff; }
+    .data-table tbody tr:nth-child(even) td { background: #f8fafc; }
+    .data-table th:first-child,
+    .data-table td:first-child {
+      left: 0;
+      min-width: 92px;
+      position: sticky;
+      width: 92px;
+      z-index: 6;
+    }
+    .data-table th:nth-child(2),
+    .data-table td:nth-child(2) {
+      left: 92px;
+      min-width: 68px;
+      position: sticky;
+      width: 68px;
+      z-index: 6;
+    }
+    .data-table th:first-child,
+    .data-table th:nth-child(2) {
+      z-index: 8;
+    }
+    .data-table.is-highs {
+      min-width: 760px;
+    }
+    .data-table.is-highs th:first-child,
+    .data-table.is-highs td:first-child {
+      min-width: 138px;
+      width: 138px;
+    }
+    .data-table.is-highs th:nth-child(2),
+    .data-table.is-highs td:nth-child(2) {
+      left: auto;
+      min-width: 0;
+      position: static;
+      width: auto;
+      z-index: auto;
     }
     .data-table td:first-child,
     .data-table th:first-child,
@@ -772,6 +848,7 @@
       const table = document.getElementById("statsTable");
       const stats = state.currentStats && state.currentStats.stats;
       const section = stats && stats[state.activeTab];
+      table.classList.toggle("is-highs", state.activeTab === "career_highs");
       if (!section || !Array.isArray(section.headers) || !Array.isArray(section.rows) || !section.headers.length) {
         table.innerHTML = `<tbody><tr><td><div class="empty">No table data for this section</div></td></tr></tbody>`;
         return;
@@ -834,8 +911,37 @@
       });
     }
 
+    function setParentFluidContent(enabled) {
+      try {
+        if (!window.parent || window.parent === window || !window.parent.document?.body) return;
+        const parentDocument = window.parent.document;
+        const frame = window.frameElement;
+        const content = frame?.closest?.(".site-content");
+        const shell = frame?.closest?.(".site-shell");
+
+        parentDocument.body.classList.toggle("league-fluid-content", Boolean(enabled));
+
+        if (frame) {
+          frame.style.minWidth = enabled ? "0" : "";
+          frame.style.width = enabled ? "100%" : "";
+          frame.style.maxWidth = enabled ? "100%" : "";
+        }
+        if (content) {
+          content.style.minWidth = enabled ? "0" : "";
+          content.style.overflowX = enabled ? "hidden" : "";
+        }
+        if (shell) {
+          shell.style.minWidth = enabled ? "0" : "";
+          shell.style.width = enabled ? "100vw" : "";
+        }
+      } catch (error) {
+        // Ignore cross-frame access failures; direct page loads do not need parent sizing.
+      }
+    }
+
     async function init() {
       try {
+        setParentFluidContent(true);
         const [playersRes, playerStatsRes, injuriesRes, standingsRes] = await Promise.all([
           fetch(DATA_URLS.players),
           fetch(DATA_URLS.playerStats),
@@ -870,6 +976,8 @@
       }
     }
 
+    window.addEventListener("pagehide", () => setParentFluidContent(false));
+    window.addEventListener("beforeunload", () => setParentFluidContent(false));
     init();
   </script>
 </body>

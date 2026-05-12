@@ -1816,6 +1816,25 @@
     return match ? match[1].toLowerCase() : "";
   }
 
+  function getUnifiedPlayerUrl(url) {
+    var file = getPlayerFileFromUrl(url);
+    var id = file ? file.replace(/\.htm$/i, "") : "";
+
+    if (!id) {
+      return normalizePlayerUrl(url);
+    }
+
+    if (isAssetHtmlPage()) {
+      return "./unified-player.htm?id=" + encodeURIComponent(id);
+    }
+
+    if (isNestedPage()) {
+      return "../00-assets/html/unified-player.htm?id=" + encodeURIComponent(id);
+    }
+
+    return "./00-assets/html/unified-player.htm?id=" + encodeURIComponent(id);
+  }
+
   function ensurePlayerPreviewStyles() {
     if (document.getElementById(PLAYER_PREVIEW_STYLE_ID)) {
       return;
@@ -2197,7 +2216,7 @@
         });
 
         function navigateToPlayer(player) {
-          window.location.href = player.url;
+          window.location.href = getUnifiedPlayerUrl(player.url);
         }
 
         input.addEventListener("input", function () {

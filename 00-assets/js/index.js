@@ -60,7 +60,10 @@
       "  .site-sidebar { bottom: 0; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.28); max-width: 240px; position: fixed; top: 0; transform: translateX(-100%); transition: transform 0.24s ease, width 0.24s ease, border-color 0.24s ease; width: min(72vw, 240px); z-index: 20; }",
       "  body.league-menu-closed .site-sidebar { width: min(72vw, 240px); }",
       "  body.league-menu-open .site-sidebar { transform: translateX(0); }",
-      "}"
+      "}",
+      "body.league-fluid-content .site-shell { min-width: 0 !important; width: 100vw !important; }",
+      "body.league-fluid-content .site-content { min-width: 0 !important; overflow: hidden !important; }",
+      "body.league-fluid-content .site-content .site-frame { min-width: 0 !important; width: 100% !important; }"
     ].join("");
     document.head.appendChild(style);
   }
