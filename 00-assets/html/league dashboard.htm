@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.25, maximum-scale=5.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>League Dashboard</title>
   <link rel="stylesheet" href="../css/styles.css">
   <style>
@@ -45,6 +45,18 @@
     .standings-table tr.race-champion { background:#f4d35e; }
     .standings-table tr.race-promoted { background:#b7e3be; }
     .standings-table tr.race-relegated { background:#efb6b6; }
+    .standings-cards { display:none; }
+    .standing-card { border:1px solid var(--line); background:#faf8f2; color:inherit; display:grid; gap:.5rem; padding:.65rem; text-decoration:none; }
+    .standing-card.race-champion { background:#f4d35e; }
+    .standing-card.race-promoted { background:#b7e3be; }
+    .standing-card.race-relegated { background:#efb6b6; }
+    .standing-card-head { align-items:center; display:flex; justify-content:space-between; gap:.55rem; }
+    .standing-card-team { font-family:var(--font-serif); font-size:1.05rem; line-height:1.15; }
+    .standing-card-rank { color:var(--mid); font-size:.64rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .standing-card-stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.42rem; }
+    .standing-card-stat { border-top:1px solid rgba(17,27,54,.16); padding-top:.35rem; }
+    .standing-card-stat span { color:var(--mid); display:block; font-size:.58rem; font-weight:800; letter-spacing:.13em; margin-bottom:.12rem; text-transform:uppercase; }
+    .standing-card-stat strong { font-size:.88rem; }
     .race-pill { display:inline-block; margin-left:.35rem; padding:.12rem .28rem; border:1px solid rgba(17,27,54,.24); color:var(--blue); font:.52rem/1 var(--font-sans); font-weight:800; letter-spacing:.12em; text-transform:uppercase; vertical-align:middle; }
     .diff-pos { color:var(--green); font-weight:700; }
     .diff-neg { color:var(--red); font-weight:700; }
@@ -57,6 +69,7 @@
     .leader-name a:hover,.injury-team a:hover,.cap-team a:hover { text-decoration:underline; color:var(--blue); }
     .leader-team { font-size:.66rem; color:var(--mid); letter-spacing:.1em; text-transform:uppercase; }
     .injury-list,.top-players-list { list-style:none; margin:0; padding:0; display:grid; gap:.55rem; }
+    .collapse-toggle { display:none; }
     .injury-row { border-bottom:1px solid var(--line); padding-bottom:.55rem; }
     .injury-row:last-child,.top-player-row:last-child { border-bottom:none; padding-bottom:0; }
     .injury-name { font-family:var(--font-serif); font-size:1rem; margin-bottom:.12rem; }
@@ -67,7 +80,25 @@
     .top-player-name { font-family:var(--font-serif); font-size:1rem; }
     .top-player-value { font-weight:700; color:var(--blue); white-space:nowrap; }
     @media (max-width:1020px){ .utility-grid{grid-template-columns:1fr} .leaders-grid{grid-template-columns:repeat(2,minmax(0,1fr))} .dash-main{grid-template-columns:1fr} }
-    @media (max-width:650px){ body.dashboard-page{padding:.75rem} .leaders-grid{grid-template-columns:1fr} }
+    @media (max-width:650px){
+      body.dashboard-page{padding:.65rem}
+      .dash-shell{gap:.75rem}
+      .dash-header{padding:.7rem}
+      .quick-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+      .quick-link{text-align:center}
+      .search-wrap{order:-1}
+      .standings-head-actions{align-items:stretch;width:100%}
+      .league-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));position:sticky;top:0;z-index:12;background:var(--paper);padding:.35rem 0}
+      .league-btn{font-size:.62rem;padding:.5rem .35rem}
+      .standings-table{display:none}
+      .standings-cards{display:grid;gap:.55rem}
+      .leaders-grid{grid-template-columns:1fr}
+      .panel{padding:.75rem}
+      .panel-head{align-items:center;margin-bottom:.6rem}
+      .mobile-collapsible .panel-head{cursor:pointer}
+      .collapse-toggle{background:#faf8f2;border:1px solid var(--line);color:var(--blue);display:inline-flex;font:inherit;font-size:.62rem;font-weight:800;letter-spacing:.14em;padding:.32rem .42rem;text-transform:uppercase}
+      .mobile-collapsible:not(.is-open) .collapse-body{display:none}
+    }
   </style>
 </head>
 <body class="dashboard-page">
@@ -103,6 +134,7 @@
           <thead><tr><th>Team</th><th>W-L</th><th>Diff</th><th>Streak</th></tr></thead>
           <tbody id="standingsBody"><tr><td colspan="4">Loading standings</td></tr></tbody>
         </table>
+        <div class="standings-cards" id="standingsCards"></div>
 
         <div class="panel-head" style="margin-top:.9rem;">
           <h2 class="panel-title">Category Leaders</h2>
@@ -112,17 +144,17 @@
       </div>
 
       <div style="display:grid;gap:.9rem;">
-        <section class="panel">
-          <div class="panel-head"><h2 class="panel-title">Injury Watch</h2><div class="panel-note">Longest current injuries</div></div>
-          <ul class="injury-list" id="injuryList"><li class="injury-row">Loading injuries</li></ul>
+        <section class="panel mobile-collapsible is-open">
+          <div class="panel-head"><h2 class="panel-title">Injury Watch</h2><button class="collapse-toggle" type="button">Hide</button><div class="panel-note">Longest current injuries</div></div>
+          <ul class="injury-list collapse-body" id="injuryList"><li class="injury-row">Loading injuries</li></ul>
         </section>
-        <section class="panel">
-          <div class="panel-head"><h2 class="panel-title">Top Players</h2><div class="panel-note">Points leaderboard</div></div>
-          <ul class="top-players-list" id="topPlayersList"><li class="top-player-row"><span>Loading top players</span><span class="top-player-value">--</span></li></ul>
+        <section class="panel mobile-collapsible">
+          <div class="panel-head"><h2 class="panel-title">Top Players</h2><button class="collapse-toggle" type="button">Show</button><div class="panel-note">Points leaderboard</div></div>
+          <ul class="top-players-list collapse-body" id="topPlayersList"><li class="top-player-row"><span>Loading top players</span><span class="top-player-value">--</span></li></ul>
         </section>
-        <section class="panel">
-          <div class="panel-head"><h2 class="panel-title">Cap Room Leaders</h2><div class="panel-note" id="capLabel">League cap view</div></div>
-          <ul class="top-players-list" id="capList"><li class="top-player-row"><span>Loading cap report</span><span class="top-player-value">--</span></li></ul>
+        <section class="panel mobile-collapsible">
+          <div class="panel-head"><h2 class="panel-title">Cap Room Leaders</h2><button class="collapse-toggle" type="button">Show</button><div class="panel-note" id="capLabel">League cap view</div></div>
+          <ul class="top-players-list collapse-body" id="capList"><li class="top-player-row"><span>Loading cap report</span><span class="top-player-value">--</span></li></ul>
         </section>
       </div>
     </section>
@@ -136,6 +168,55 @@
       capreport: "../../00-build/database/capreport.json",
       players: "../../00-build/database/players.json"
     };
+
+    const PAGE_VIEWPORT = "width=device-width, initial-scale=1.0";
+    let parentViewportMeta = null;
+    let parentViewportPrevious = null;
+
+    function setParentFluidContent(enabled) {
+      try {
+        if (!window.parent || window.parent === window || !window.parent.document?.body) return;
+        const parentDocument = window.parent.document;
+        const frame = window.frameElement;
+        const content = frame?.closest?.(".site-content");
+        const shell = frame?.closest?.(".site-shell");
+
+        parentDocument.body.classList.toggle("league-fluid-content", Boolean(enabled));
+
+        if (enabled) {
+          parentViewportMeta = parentDocument.querySelector('meta[name="viewport"]');
+          if (!parentViewportMeta) {
+            parentViewportMeta = parentDocument.createElement("meta");
+            parentViewportMeta.name = "viewport";
+            parentDocument.head.appendChild(parentViewportMeta);
+          }
+          if (parentViewportPrevious === null) {
+            parentViewportPrevious = parentViewportMeta.getAttribute("content") || "";
+          }
+          parentViewportMeta.setAttribute("content", PAGE_VIEWPORT);
+        } else if (parentViewportMeta && parentViewportPrevious !== null) {
+          parentViewportMeta.setAttribute("content", parentViewportPrevious);
+          parentViewportPrevious = null;
+          parentViewportMeta = null;
+        }
+
+        if (frame) {
+          frame.style.minWidth = enabled ? "0" : "";
+          frame.style.width = enabled ? "100%" : "";
+          frame.style.maxWidth = enabled ? "100%" : "";
+        }
+        if (content) {
+          content.style.minWidth = enabled ? "0" : "";
+          content.style.overflowX = enabled ? "hidden" : "";
+        }
+        if (shell) {
+          shell.style.minWidth = enabled ? "0" : "";
+          shell.style.width = enabled ? "100vw" : "";
+        }
+      } catch (error) {
+        // Direct page loads and cross-frame failures do not need parent sizing.
+      }
+    }
 
     const state = { standings: [], leaders: [], injuries: [], capreport: [], players: [], activeLeagueSlug: null };
     const shortLeagueLabel = (title) => String(title || "").replace(/\s+Standings$/i, "").trim();
@@ -206,12 +287,26 @@
 
     function renderStandings(activeSection) {
       const standingsBody = document.getElementById("standingsBody");
+      const standingsCards = document.getElementById("standingsCards");
       const teams = [...(activeSection.teams || [])].sort((a, b) => num(b.wins) - num(a.wins) || num(a.losses) - num(b.losses));
       standingsBody.innerHTML = teams.map((team, index) => {
         const diffClass = num(team.diff) >= 0 ? "diff-pos" : "diff-neg";
         const race = getRaceMeta(activeSection, index, teams.length);
         const raceLabel = race.label ? `<span class="race-pill">${race.label}</span>` : "";
         return `<tr class="${race.className}"><td class="team-name"><a href="${normalizeHref(team.rosterUrl)}">${team.team}</a>${raceLabel}</td><td>${team.wins}-${team.losses}</td><td class="${diffClass}">${formatSigned(team.diff)}</td><td>${team.streak || "-"}</td></tr>`;
+      }).join("");
+      standingsCards.innerHTML = teams.map((team, index) => {
+        const diffClass = num(team.diff) >= 0 ? "diff-pos" : "diff-neg";
+        const race = getRaceMeta(activeSection, index, teams.length);
+        const raceLabel = race.label ? `<span class="race-pill">${race.label}</span>` : "";
+        return `<a class="standing-card ${race.className}" href="${normalizeHref(team.rosterUrl)}">
+          <div class="standing-card-head"><div class="standing-card-team">${team.team}${raceLabel}</div><div class="standing-card-rank">#${index + 1}</div></div>
+          <div class="standing-card-stats">
+            <div class="standing-card-stat"><span>Record</span><strong>${team.wins}-${team.losses}</strong></div>
+            <div class="standing-card-stat"><span>Diff</span><strong class="${diffClass}">${formatSigned(team.diff)}</strong></div>
+            <div class="standing-card-stat"><span>Streak</span><strong>${team.streak || "-"}</strong></div>
+          </div>
+        </a>`;
       }).join("");
     }
 
@@ -294,6 +389,17 @@
       document.addEventListener("click", (event) => { if (!wrap.contains(event.target)) closeSearch(); });
     }
 
+    function bindMobileCollapses() {
+      document.querySelectorAll(".mobile-collapsible").forEach((panel) => {
+        const button = panel.querySelector(".collapse-toggle");
+        if (!button) return;
+        button.addEventListener("click", () => {
+          panel.classList.toggle("is-open");
+          button.textContent = panel.classList.contains("is-open") ? "Hide" : "Show";
+        });
+      });
+    }
+
     function renderDashboard() {
       const activeSection = state.standings.find((section) => section.slug === state.activeLeagueSlug);
       if (!activeSection) return;
@@ -310,6 +416,7 @@
     async function init() {
       const status = document.getElementById("statusText");
       try {
+        setParentFluidContent(true);
         const [standingsRes, leadersRes, injuriesRes, capRes, playersRes] = await Promise.all([fetch(DATA_URLS.standings), fetch(DATA_URLS.leaders), fetch(DATA_URLS.injuries), fetch(DATA_URLS.capreport), fetch(DATA_URLS.players)]);
         if (!standingsRes.ok || !leadersRes.ok || !injuriesRes.ok || !capRes.ok || !playersRes.ok) throw new Error("One or more feeds failed to load");
         const standingsData = await standingsRes.json();
@@ -326,11 +433,14 @@
         state.activeLeagueSlug = state.standings[0].slug;
         renderDashboard();
         bindSearch();
+        bindMobileCollapses();
       } catch (error) {
         status.textContent = "Dashboard unavailable";
         document.getElementById("standingsBody").innerHTML = `<tr><td colspan="4">Could not load dashboard feeds</td></tr>`;
       }
     }
+    window.addEventListener("pagehide", () => setParentFluidContent(false));
+    window.addEventListener("beforeunload", () => setParentFluidContent(false));
     init();
   </script>
 </body>

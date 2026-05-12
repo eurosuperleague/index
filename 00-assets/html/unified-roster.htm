@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.25, maximum-scale=5.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unified Roster</title>
   <link rel="stylesheet" href="../css/styles.css">
   <style>
@@ -536,6 +536,54 @@
       statsMode: "Season Stats",
       monthCursor: null
     };
+    const PAGE_VIEWPORT = "width=device-width, initial-scale=1.0";
+    let parentViewportMeta = null;
+    let parentViewportPrevious = null;
+
+    function setParentFluidContent(enabled) {
+      try {
+        if (!window.parent || window.parent === window || !window.parent.document?.body) return;
+        const parentDocument = window.parent.document;
+        const frame = window.frameElement;
+        const content = frame?.closest?.(".site-content");
+        const shell = frame?.closest?.(".site-shell");
+
+        parentDocument.body.classList.toggle("league-fluid-content", Boolean(enabled));
+
+        if (enabled) {
+          parentViewportMeta = parentDocument.querySelector('meta[name="viewport"]');
+          if (!parentViewportMeta) {
+            parentViewportMeta = parentDocument.createElement("meta");
+            parentViewportMeta.name = "viewport";
+            parentDocument.head.appendChild(parentViewportMeta);
+          }
+          if (parentViewportPrevious === null) {
+            parentViewportPrevious = parentViewportMeta.getAttribute("content") || "";
+          }
+          parentViewportMeta.setAttribute("content", PAGE_VIEWPORT);
+        } else if (parentViewportMeta && parentViewportPrevious !== null) {
+          parentViewportMeta.setAttribute("content", parentViewportPrevious);
+          parentViewportPrevious = null;
+          parentViewportMeta = null;
+        }
+
+        if (frame) {
+          frame.style.minWidth = enabled ? "0" : "";
+          frame.style.width = enabled ? "100%" : "";
+          frame.style.maxWidth = enabled ? "100%" : "";
+        }
+        if (content) {
+          content.style.minWidth = enabled ? "0" : "";
+          content.style.overflowX = enabled ? "hidden" : "";
+        }
+        if (shell) {
+          shell.style.minWidth = enabled ? "0" : "";
+          shell.style.width = enabled ? "100vw" : "";
+        }
+      } catch (error) {
+        // Direct page loads and cross-frame failures do not need parent sizing.
+      }
+    }
 
     const TEAM_LOGOS = {
       "AC Milan": "acmilan.jpg",
@@ -688,7 +736,7 @@
             }
             const text = cell.text || "-";
             if (options.nameColumnIndex === i && text !== "-") {
-              const href = resolvePlayerHref(text);
+              const href = toPlayerHref(cell.href) || resolvePlayerHref(text);
               if (href) {
                 return `<td><a class="player-name-link" href="${href}">${text}</a></td>`;
               }
@@ -966,6 +1014,7 @@
 
     async function init() {
       try {
+        setParentFluidContent(true);
         const base = await window.UnifiedRosterDataService.loadBaseData();
         state.standings = base.standings;
         state.teams = base.teams;
@@ -1011,6 +1060,8 @@
         document.getElementById("teamSubtitle").textContent = "Could not load required data.";
       }
     }
+    window.addEventListener("pagehide", () => setParentFluidContent(false));
+    window.addEventListener("beforeunload", () => setParentFluidContent(false));
     init();
   </script>
 </body>
