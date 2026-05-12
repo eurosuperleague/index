@@ -27,6 +27,37 @@ window.ESL_TEAM_LOGOS = {
 
 window.ESL_MEDIA_ARTICLES = [
   {
+    file: "articles/december_1981_mvp_race.html",
+    title: "December MVP Race: Magic Holds, Moses Owns, Tier 3 Starts a Fight",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-11-07",
+    tag: "MVP Race",
+    author: "Damon Cross",
+    meta: "Awards Desk",
+    blurb: "Magic Johnson keeps the Tier 1 lead, Moses Malone still owns Tier 2, and Calvin Natt's December surge turns the Tier 3 ballot into a harder argument.",
+    teams: [
+      "AC Milan",
+      "AFC Richmond",
+      "Atletico Madrid",
+      "Barcelona",
+      "Bayern Munich",
+      "Benfica",
+      "Chelsea",
+      "Crystal Palace",
+      "FL Fart",
+      "Inter Milan",
+      "Juventus",
+      "Manchester City",
+      "Marseille",
+      "Paris Saint-Germain",
+      "Real Madrid",
+      "Sheffield United",
+      "Sporting CP",
+      "Valencia"
+    ]
+  },
+  {
     file: "articles/december_1981_month_in_review.html",
     title: "December 1981 Month in Review: Marseille Roars, United Folds",
     category: "Analysis",
