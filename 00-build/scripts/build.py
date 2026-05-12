@@ -7,7 +7,7 @@ Usage:
   python 00-build/scripts/build.py --dry-run # preview only, no files written
 """
 
-import subprocess, sys, os
+import subprocess, sys, os, time
 
 BUILD_DIR = os.path.dirname(os.path.abspath(__file__))
 DRY_RUN = "--dry-run" in sys.argv
@@ -22,24 +22,34 @@ SCRIPTS = [
     (os.path.join(BUILD_DIR, "validate_media_site.py"), "Validating ESL Media publish surfaces"),
 ]
 
-def run(path, label):
+def progress_bar(index, total, width=24):
+    filled = int(width * index / total) if total else width
+    return "[" + "#" * filled + "-" * (width - filled) + f"] {index}/{total}"
+
+
+def run(path, label, index, total):
     if not os.path.exists(path):
-        print(f"  [SKIP] {os.path.basename(path)} not found")
+        print(f"{progress_bar(index, total)} SKIP {os.path.basename(path)} not found", flush=True)
         return
-    print(f"\n-- {label}")
+    print(f"\n{progress_bar(index, total)} {label}", flush=True)
+    started = time.perf_counter()
     args = [sys.executable, path]
     if DRY_RUN:
         args.append("--dry-run")
     result = subprocess.run(args, cwd=BUILD_DIR)
+    elapsed = time.perf_counter() - started
     if result.returncode != 0:
-        print(f"  [ERROR] {os.path.basename(path)} exited with code {result.returncode}")
+        print(f"  [ERROR] {os.path.basename(path)} exited with code {result.returncode}", flush=True)
         sys.exit(result.returncode)
+    print(f"  done in {elapsed:.2f}s", flush=True)
 
-print("=" * 50)
-print("BSL Build" + (" [DRY RUN]" if DRY_RUN else ""))
-print("=" * 50)
+print("=" * 50, flush=True)
+print("BSL Build" + (" [DRY RUN]" if DRY_RUN else ""), flush=True)
+print("=" * 50, flush=True)
 
-for path, label in SCRIPTS:
-    run(path, label)
+build_started = time.perf_counter()
 
-print("\nBuild complete")
+for index, (path, label) in enumerate(SCRIPTS, start=1):
+    run(path, label, index, len(SCRIPTS))
+
+print(f"\n{progress_bar(len(SCRIPTS), len(SCRIPTS))} Build complete in {time.perf_counter() - build_started:.2f}s", flush=True)
