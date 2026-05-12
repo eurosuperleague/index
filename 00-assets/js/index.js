@@ -1,9 +1,8 @@
-(function () {
+﻿(function () {
   "use strict";
 
   var STYLE_ID = "league-index-shell-styles";
   var BREAKPOINT = 760;
-  var MOBILE_CANVAS_WIDTH = 980;
   var SETTINGS_KEY = "leagueSiteSettings";
 
   function getSettings() {
@@ -33,8 +32,8 @@
     style.id = STYLE_ID;
     style.textContent = [
       "html, body { height: 100%; margin: 0; }",
-      "body { background: #f4f2ec; overflow: hidden; padding: 0; }",
-      ".site-shell { display: grid; grid-template-columns: 150px minmax(0, 1fr); height: 100vh; inset: 0; position: fixed; transition: grid-template-columns 0.24s ease; width: 100vw; }",
+      "body { background: #f4f2ec; overflow: hidden; overflow-x: hidden; padding: 0; }",
+      ".site-shell { display: grid; grid-template-columns: 150px minmax(0, 1fr); height: 100vh; left: 0; position: fixed; right: 0; top: 0; transition: grid-template-columns 0.24s ease; width: 100%; }",
       "body.league-menu-closed .site-shell { grid-template-columns: 0 minmax(0, 1fr); }",
       ".site-sidebar { background: #111b36; border-right: 1px solid rgba(15, 23, 42, 0.22); height: 100vh; max-width: 150px; min-width: 0; overflow: auto; position: sticky; top: 0; transform: translateX(0); transition: transform 0.24s ease, width 0.24s ease, border-color 0.24s ease; width: 150px; z-index: 10; }",
       "body.league-menu-closed .site-sidebar { border-right-color: transparent; overflow: hidden; transform: translateX(-100%); width: 0; }",
@@ -50,11 +49,11 @@
       "body.league-menu-compact.league-menu-closed .site-sidebar { width: min(72vw, 240px); }",
       "body.league-menu-compact.league-menu-open .site-sidebar { transform: translateX(0); }",
       "@media (max-width: 760px) {",
-      "  html, body { min-height: 100%; overflow: auto; }",
-      "  body { overflow: auto; }",
-      "  .site-shell { grid-template-columns: minmax(0, 1fr); height: 100vh; min-width: " + MOBILE_CANVAS_WIDTH + "px; position: relative; width: " + MOBILE_CANVAS_WIDTH + "px; }",
-      "  .site-content { min-width: " + MOBILE_CANVAS_WIDTH + "px; overflow: auto; -webkit-overflow-scrolling: touch; }",
-      "  .site-content .site-frame { min-width: " + MOBILE_CANVAS_WIDTH + "px; width: " + MOBILE_CANVAS_WIDTH + "px; }",
+      "  html, body { height: 100%; min-height: 100%; overflow: hidden; overflow-x: hidden; }",
+      "  body { overflow: hidden; overflow-x: hidden; }",
+      "  .site-shell { grid-template-columns: minmax(0, 1fr); height: 100dvh; left: 0; min-width: 0; position: fixed; right: 0; top: 0; width: 100%; }",
+      "  .site-content { min-width: 0; overflow: hidden; }",
+      "  .site-content .site-frame { min-width: 0; width: 100%; }",
       "  .site-sidebar-backdrop { background: rgba(15, 23, 42, 0.36); bottom: 0; display: block; left: min(72vw, 240px); opacity: 0; pointer-events: none; position: fixed; right: 0; top: 0; transition: opacity 0.2s ease; z-index: 15; }",
       "  body.league-menu-open .site-sidebar-backdrop { opacity: 1; pointer-events: auto; }",
       "  .site-sidebar { bottom: 0; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.28); max-width: 240px; position: fixed; top: 0; transform: translateX(-100%); transition: transform 0.24s ease, width 0.24s ease, border-color 0.24s ease; width: min(72vw, 240px); z-index: 20; }",
@@ -241,3 +240,5 @@
     init();
   }
 })();
+
+

@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   "use strict";
 
   var SEARCH_STYLE_ID = "player-search-styles";
@@ -9,7 +9,7 @@
   var MENU_STYLE_ID = "league-menu-enhancement-styles";
   var RESPONSIVE_MENU_STYLE_ID = "responsive-menu-toggle-styles";
   var MENU_BREAKPOINT = 760;
-  var ZOOMABLE_VIEWPORT = "width=1100, initial-scale=0.35, minimum-scale=0.1, maximum-scale=10.0, user-scalable=yes";
+  var ZOOMABLE_VIEWPORT = "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes";
   var SETTINGS_KEY = "leagueSiteSettings";
   var SETTINGS_STYLE_ID = "league-settings-styles";
   var PREFERENCE_STYLE_ID = "league-preference-styles";
@@ -241,6 +241,16 @@
 
   function isRosterPage() {
     return /\/rosters\/roster\d+\.htm$/i.test(window.location.pathname) || /\\rosters\\roster\d+\.htm$/i.test(window.location.pathname);
+  }
+
+  function shouldUseLegacyViewport() {
+    var path = window.location.pathname;
+    var rootLegacyPagePattern = /\/(schedule|leaders|playoffleaders|teamleaders|transactions|injuries|freeagents|potentialfreeagents|capreport|draft|staff|awards|seasonawards|champs|humancoaches)\.htm$/i;
+    var nestedLegacyPagePattern = /\/(players|boxes|coaches)\/.+\.htm$/i;
+    var windowsRootLegacyPagePattern = /\\(schedule|leaders|playoffleaders|teamleaders|transactions|injuries|freeagents|potentialfreeagents|capreport|draft|staff|awards|seasonawards|champs|humancoaches)\.htm$/i;
+    var windowsNestedLegacyPagePattern = /\\(players|boxes|coaches)\\.+\.htm$/i;
+
+    return rootLegacyPagePattern.test(path) || nestedLegacyPagePattern.test(path) || windowsRootLegacyPagePattern.test(path) || windowsNestedLegacyPagePattern.test(path);
   }
 
   function getRosterPhotoPath(filename) {
@@ -2312,7 +2322,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    if (!isMenuPage() && !isSettingsPage()) {
+    if (shouldUseLegacyViewport()) {
       ensureZoomableViewport();
     }
 
@@ -2342,3 +2352,6 @@
       });
   });
 })();
+
+
+
