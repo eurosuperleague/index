@@ -29,6 +29,7 @@ CAPREPORT_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "capreport.htm"))
 INJURIES_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "injuries.htm"))
 SCHEDULE_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "schedule.htm"))
 FREE_AGENTS_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "freeagents.htm"))
+DRAFT_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "draft.htm"))
 LEADERS_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "leaders.htm"))
 AWARDS_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "awards.htm"))
 MDB_PATH = os.path.normpath(os.path.join(PROJECT_ROOT, "LeagueOutput.mdb"))
@@ -38,6 +39,7 @@ ATTR_KEYS = [
     "Ins", "Jps", "Fts", "3ps", "Hnd", "Pas", "Orb", "Drb", 
     "Psd", "Prd", "Stl", "Blk", "Qkn", "Jmp", "Str", "Sta"
 ]
+POTENTIAL_KEYS = ["Ins", "Jps", "Fts", "3ps", "Hnd", "Pas", "Orb", "Drb", "Psd", "Prd", "Stl", "Blk"]
 
 PLAYER_STAT_TABLES = {
     "Season Averages",
@@ -781,6 +783,243 @@ def extract_rating_color(cell_html):
     return color_match.group(1) if color_match else ""
 
 
+def normalize_player_file(url):
+    url_text = normalize_schedule_url(url)
+    match = re.search(r"player\d+\.htm", url_text, re.IGNORECASE)
+    return match.group(0).lower() if match else ""
+
+
+def normalize_color_tables(html):
+    return re.sub(
+        r"<table border=1 cellpadding=0 cellspacing=0><td bgcolor=([#A-Za-z0-9]+) width=10 height=10></td></tr></table>",
+        lambda match: f"__COLOR__{match.group(1)}__",
+        html,
+        flags=re.IGNORECASE,
+    )
+
+
+def parse_potential_grade_tables(html, team=None, team_label=None):
+    normalized_html = normalize_color_tables(html)
+    section_matches = re.finditer(
+        r"<tr><td class=tableheader[^>]*>\s*&nbsp;Potentials</td></tr>(.*?)(?=<tr><td class=tableheader|\Z)",
+        normalized_html,
+        re.IGNORECASE | re.DOTALL,
+    )
+    potentials = []
+
+    for section_match in section_matches:
+        section_html = section_match.group(1)
+        header_match = re.search(r"<tr[^>]*align=center[^>]*>(.*?)</tr>", section_html, re.IGNORECASE | re.DOTALL)
+        if not header_match:
+            continue
+
+        headers = [
+            strip_tags(cell)
+            for cell in re.findall(r"<td[^>]*class=header[^>]*>(.*?)</td>", header_match.group(1), re.IGNORECASE | re.DOTALL)
+        ]
+        headers = [header.lstrip("#").strip() or "#" for header in headers]
+        row_matches = re.findall(
+            r"<tr[^>]*align=center[^>]*class=(row1|row2)[^>]*>(.*?)</tr>",
+            section_html,
+            re.IGNORECASE | re.DOTALL,
+        )
+
+        for row_class, row_html in row_matches:
+            cells = re.findall(r"<td[^>]*class=main[^>]*>(.*?)</td>", row_html, re.IGNORECASE | re.DOTALL)
+            if len(cells) < 8:
+                continue
+
+            values = [strip_tags(cell) for cell in cells]
+            row = {}
+            for index, header in enumerate(headers):
+                if index < len(values):
+                    row[header] = values[index]
+
+            player_link = re.search(
+                r'<a[^>]+href=(["\']?)([^"\'\s>]+)\1[^>]*>(.*?)</a>',
+                row_html,
+                re.IGNORECASE | re.DOTALL,
+            )
+            name = strip_tags(player_link.group(3)) if player_link else row.get("Name", "")
+            player_url = normalize_schedule_url(player_link.group(2)) if player_link else ""
+            if not name:
+                continue
+
+            grades = {}
+            for key in POTENTIAL_KEYS:
+                value = clean(row.get(key, ""))
+                if value:
+                    grades[key] = value
+
+            if not grades:
+                continue
+
+            cur_color_match = re.search(r"__COLOR__([#A-Za-z0-9]+)__", cells[headers.index("Cur")] if "Cur" in headers and headers.index("Cur") < len(cells) else "", re.IGNORECASE)
+            fut_color_match = re.search(r"__COLOR__([#A-Za-z0-9]+)__", cells[headers.index("Fut")] if "Fut" in headers and headers.index("Fut") < len(cells) else "", re.IGNORECASE)
+            potentials.append(
+                {
+                    "name": name,
+                    "url": player_url,
+                    "file": normalize_player_file(player_url),
+                    "team": team or "",
+                    "teamLabel": team_label or "",
+                    "potentials": grades,
+                    "potentialCurrentColor": cur_color_match.group(1) if cur_color_match else "",
+                    "potentialFutureColor": fut_color_match.group(1) if fut_color_match else "",
+                    "rowClass": row_class.lower(),
+                }
+            )
+
+    return potentials
+
+
+def build_potential_grade_lookup(entries):
+    by_file = {}
+    by_name = {}
+
+    for entry in entries:
+        file_key = entry.get("file", "")
+        name_key = normalize_name(entry.get("name", ""))
+        if file_key:
+            by_file[file_key] = entry
+        if name_key:
+            by_name.setdefault(name_key, entry)
+
+    return by_file, by_name
+
+
+def attach_potential_grades(players, potential_entries):
+    by_file, by_name = build_potential_grade_lookup(potential_entries)
+    attached = 0
+
+    for player in players:
+        file_key = normalize_player_file(player.get("url", ""))
+        name_key = normalize_name(player.get("name", ""))
+        entry = by_file.get(file_key) or by_name.get(name_key)
+        if not entry:
+            continue
+
+        player["potentials"] = entry.get("potentials", {})
+        if entry.get("potentialCurrentColor"):
+            player["potentialCurrentColor"] = entry["potentialCurrentColor"]
+        if entry.get("potentialFutureColor"):
+            player["potentialFutureColor"] = entry["potentialFutureColor"]
+        attached += 1
+
+    return attached
+
+
+def zero_contracts(years):
+    return [
+        {
+            "year": year,
+            "salary": 0.0,
+            "salaryText": "$0",
+        }
+        for year in years
+    ]
+
+
+def parse_contract_table(html, team=None, team_label=None):
+    table_match = re.search(
+        r"<tr><td class=tableheader[^>]*>\s*&nbsp;Contract</td></tr>(.*?)</table>",
+        html,
+        re.IGNORECASE | re.DOTALL,
+    )
+    if not table_match:
+        return [], []
+
+    table_html = table_match.group(1)
+    header_match = re.search(r"<tr[^>]*align=center[^>]*>(.*?)</tr>", table_html, re.IGNORECASE | re.DOTALL)
+    if not header_match:
+        return [], []
+
+    headers = [
+        strip_tags(cell)
+        for cell in re.findall(r"<td[^>]*class=header[^>]*>(.*?)</td>", header_match.group(1), re.IGNORECASE | re.DOTALL)
+    ]
+    years = [header for header in headers if re.fullmatch(r"\d{4}", header)]
+    if not years:
+        return [], []
+
+    row_matches = re.findall(
+        r"<tr[^>]*class=(row1|row2)[^>]*align=center[^>]*>(.*?)</tr>",
+        table_html,
+        re.IGNORECASE | re.DOTALL,
+    )
+    contracts = []
+
+    for row_class, row_html in row_matches:
+        cells = re.findall(r"<td[^>]*class=main[^>]*>(.*?)</td>", row_html, re.IGNORECASE | re.DOTALL)
+        if len(cells) < len(years) + 1:
+            continue
+
+        player_link = re.search(
+            r'<a[^>]+href=(["\']?)([^"\'\s>]+)\1[^>]*>(.*?)</a>',
+            cells[0],
+            re.IGNORECASE | re.DOTALL,
+        )
+        name = strip_tags(player_link.group(3)) if player_link else strip_tags(cells[0])
+        player_url = normalize_schedule_url(player_link.group(2)) if player_link else ""
+        if not name:
+            continue
+
+        year_entries = []
+        for index, year in enumerate(years, start=1):
+            salary_text = strip_tags(cells[index]) if index < len(cells) else "$0"
+            if not salary_text:
+                salary_text = "$0"
+            year_entries.append(
+                {
+                    "year": year,
+                    "salary": parse_money_value(salary_text) or 0.0,
+                    "salaryText": salary_text,
+                }
+            )
+
+        contracts.append(
+            {
+                "name": name,
+                "url": player_url,
+                "file": normalize_player_file(player_url),
+                "team": team or "",
+                "teamLabel": team_label or "",
+                "contracts": year_entries,
+                "rowClass": row_class.lower(),
+            }
+        )
+
+    return contracts, years
+
+
+def attach_contracts(players, contract_entries, contract_years):
+    by_file = {}
+    by_name = {}
+
+    for entry in contract_entries:
+        file_key = entry.get("file", "")
+        name_key = normalize_name(entry.get("name", ""))
+        if file_key:
+            by_file[file_key] = entry
+        if name_key:
+            by_name.setdefault(name_key, entry)
+
+    attached = 0
+    default_contracts = zero_contracts(contract_years)
+
+    for player in players:
+        file_key = normalize_player_file(player.get("url", ""))
+        name_key = normalize_name(player.get("name", ""))
+        entry = by_file.get(file_key) or by_name.get(name_key)
+        if entry:
+            player["contracts"] = entry.get("contracts", zero_contracts(contract_years))
+            attached += 1
+        else:
+            player["contracts"] = [contract.copy() for contract in default_contracts]
+
+    return attached
+
+
 def parse_free_agents(html, ratings_by_name):
     normalized_html = re.sub(
         r"<table border=1 cellpadding=0 cellspacing=0><td bgcolor=([#A-Za-z0-9]+) width=10 height=10></td></tr></table>",
@@ -1286,6 +1525,9 @@ def main():
     ratings_by_name = load_mdb_ratings()
     all_teams = []
     all_team_stats = []
+    potential_grade_entries = []
+    contract_entries = []
+    contract_years = []
     roster_files = [f for f in os.listdir(ROSTERS_DIR) if f.lower().endswith((".htm", ".html"))]
 
     for file in roster_files:
@@ -1296,6 +1538,12 @@ def main():
         team = extract_team_metadata(html, file)
         all_teams.append(team)
         all_team_stats.append(parse_team_season_info(html, team))
+        potential_grade_entries.extend(parse_potential_grade_tables(html, team=team["id"], team_label=team["name"]))
+        roster_contracts, roster_contract_years = parse_contract_table(html, team=team["id"], team_label=team["name"])
+        contract_entries.extend(roster_contracts)
+        for year in roster_contract_years:
+            if year not in contract_years:
+                contract_years.append(year)
 
     team_lookup = build_team_lookup(all_teams)
     all_players = []
@@ -1315,6 +1563,20 @@ def main():
             all_players.append(player)
             all_player_stats.append(parse_player_stats_page(html, file, player))
 
+    with open(FREE_AGENTS_PATH, "r", encoding="latin-1") as f:
+        free_agents_html = f.read()
+
+    potential_grade_entries.extend(parse_potential_grade_tables(free_agents_html, team="FA", team_label="FA"))
+
+    if os.path.exists(DRAFT_PATH):
+        with open(DRAFT_PATH, "r", encoding="latin-1") as f:
+            draft_html = f.read()
+        potential_grade_entries.extend(parse_potential_grade_tables(draft_html, team="Draft", team_label="Draft"))
+    else:
+        print(f"Warning: {DRAFT_PATH} not found. Skipping draft potential grades.")
+
+    attached_potential_count = attach_potential_grades(all_players, potential_grade_entries)
+    attached_contract_count = attach_contracts(all_players, contract_entries, contract_years)
     all_players.sort(key=lambda player: player["name"])
     all_player_stats.sort(key=lambda player: player["name"])
 
@@ -1395,9 +1657,6 @@ def main():
     with open(GAME_RESULTS_OUT, "w", encoding="utf-8") as f:
         json.dump(game_results_data, f, indent=4)
 
-    with open(FREE_AGENTS_PATH, "r", encoding="latin-1") as f:
-        free_agents_html = f.read()
-
     free_agents_data = {
         "source": os.path.basename(FREE_AGENTS_PATH),
         "players": parse_free_agents(free_agents_html, ratings_by_name),
@@ -1440,6 +1699,8 @@ def main():
         print(f"Warning: {AWARDS_PATH} not found. Skipping awards JSON.")
         
     print(f"\nFinal count: {len(all_players)} players saved to {PLAYERS_OUT}")
+    print(f"Final count: {attached_potential_count} players enriched with potential letter grades")
+    print(f"Final count: {attached_contract_count} players enriched with roster contract tables")
     print(f"Final count: {len(all_player_stats)} player stat records saved to {PLAYER_STATS_OUT}")
     print(f"Final count: {len(team_stats_data['teams'])} team stat records saved to {TEAM_STATS_OUT}")
     print(f"Final count: {len(all_teams)} teams saved to {TEAMS_OUT}")

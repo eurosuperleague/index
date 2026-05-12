@@ -167,6 +167,24 @@
       return `../../${clean}`;
     }
 
+    function normalizePlayerHref(url, name) {
+      const raw = String(url || "").trim();
+      const idMatch = raw.match(/player(\d+)\.htm/i);
+      if (idMatch) return `./unified-player.htm?id=${encodeURIComponent(`player${idMatch[1]}`)}`;
+      return `./unified-player.htm?name=${encodeURIComponent(name || "")}`;
+    }
+
+    function findPlayerByName(name, teamName) {
+      const target = String(name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      const team = String(teamName || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      return (state.players || []).find((player) =>
+        String(player.name || "").toLowerCase().replace(/[^a-z0-9]/g, "") === target &&
+        (!team || String(player.teamLabel || player.team || "").toLowerCase().replace(/[^a-z0-9]/g, "") === team)
+      ) || (state.players || []).find((player) =>
+        String(player.name || "").toLowerCase().replace(/[^a-z0-9]/g, "") === target
+      ) || null;
+    }
+
     function buildLeagueControls() {
       const root = document.getElementById("leagueControls");
       root.innerHTML = state.standings.map((section) => {
@@ -206,7 +224,7 @@
         const category = (leaderSection.categories || []).find((entry) => String(entry.title || "").toLowerCase() === categoryName.toLowerCase());
         const leader = category && Array.isArray(category.leaders) ? category.leaders[0] : null;
         if (!leader) return `<article class="leader-card"><div class="leader-stat">${categoryName}</div><div class="leader-value">--</div><div class="leader-name">No data</div><div class="leader-team">--</div></article>`;
-        return `<article class="leader-card"><div class="leader-stat">${categoryName}</div><div class="leader-value">${leader.valueText || leader.value || "--"}</div><div class="leader-name"><a href="${normalizeHref(leader.playerUrl)}">${leader.player}</a></div><div class="leader-team"><a href="${normalizeHref(leader.teamUrl)}">${leader.teamName || "Team"}</a></div></article>`;
+        return `<article class="leader-card"><div class="leader-stat">${categoryName}</div><div class="leader-value">${leader.valueText || leader.value || "--"}</div><div class="leader-name"><a href="${normalizePlayerHref(leader.playerUrl, leader.player)}">${leader.player}</a></div><div class="leader-team"><a href="${normalizeHref(leader.teamUrl)}">${leader.teamName || "Team"}</a></div></article>`;
       }).join("");
     }
 
@@ -214,7 +232,11 @@
       const root = document.getElementById("injuryList");
       const injuries = [...(state.injuries || [])].sort((a, b) => num(b.length) - num(a.length)).slice(0, 6);
       if (!injuries.length) { root.innerHTML = `<li class="injury-row">No injury data available</li>`; return; }
-      root.innerHTML = injuries.map((item) => `<li class="injury-row"><div class="injury-name">${item.name || "Unknown Player"}</div><div class="injury-team"><a href="${normalizeHref(item.rosterUrl)}">${item.teamName || "Unknown Team"}</a></div><div class="injury-meta"><span>${item.injury || "Injury"}</span><span class="injury-len">${item.length || "--"} days</span></div></li>`).join("");
+      root.innerHTML = injuries.map((item) => {
+        const player = findPlayerByName(item.name, item.teamName);
+        const nameHref = player ? normalizePlayerHref(player.url, player.name) : normalizePlayerHref("", item.name);
+        return `<li class="injury-row"><div class="injury-name"><a href="${nameHref}">${item.name || "Unknown Player"}</a></div><div class="injury-team"><a href="${normalizeHref(item.rosterUrl)}">${item.teamName || "Unknown Team"}</a></div><div class="injury-meta"><span>${item.injury || "Injury"}</span><span class="injury-len">${item.length || "--"} days</span></div></li>`;
+      }).join("");
     }
 
     function renderTopPlayers(leagueToken) {
@@ -223,7 +245,7 @@
       const pointsCategory = leaderSection && Array.isArray(leaderSection.categories) ? leaderSection.categories.find((item) => String(item.title || "").toLowerCase() === "points") : null;
       const leaders = pointsCategory && Array.isArray(pointsCategory.leaders) ? pointsCategory.leaders.slice(0, 8) : [];
       if (!leaders.length) { root.innerHTML = `<li class="top-player-row"><span>No player data</span><span class="top-player-value">--</span></li>`; return; }
-      root.innerHTML = leaders.map((entry) => `<li class="top-player-row"><span class="top-player-name"><a href="${normalizeHref(entry.playerUrl)}">${entry.player}</a></span><span class="top-player-value">${entry.valueText || entry.value || "--"}</span></li>`).join("");
+      root.innerHTML = leaders.map((entry) => `<li class="top-player-row"><span class="top-player-name"><a href="${normalizePlayerHref(entry.playerUrl, entry.player)}">${entry.player}</a></span><span class="top-player-value">${entry.valueText || entry.value || "--"}</span></li>`).join("");
     }
 
     function renderCap(leagueToken) {
@@ -242,7 +264,7 @@
 
     function buildSearchIndex() {
       const teamEntries = state.standings.flatMap((section) => (section.teams || []).map((team) => ({ type: "Team", name: team.team, meta: shortLeagueLabel(section.title), href: normalizeHref(team.rosterUrl || "") })));
-      const playerEntries = (state.players || []).filter((player) => player && player.name && player.url).map((player) => ({ type: "Player", name: player.name, meta: `${player.teamLabel || player.team || "Team"}${player.pos ? ` · ${player.pos}` : ""}`, href: normalizeHref(player.url) }));
+      const playerEntries = (state.players || []).filter((player) => player && player.name && player.url).map((player) => ({ type: "Player", name: player.name, meta: `${player.teamLabel || player.team || "Team"}${player.pos ? ` · ${player.pos}` : ""}`, href: normalizePlayerHref(player.url, player.name) }));
       const dedup = new Map();
       [...teamEntries, ...playerEntries].forEach((entry) => { const key = `${entry.type}|${entry.name}|${entry.href}`; if (!dedup.has(key)) dedup.set(key, entry); });
       return [...dedup.values()];

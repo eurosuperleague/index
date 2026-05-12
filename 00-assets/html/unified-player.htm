@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.25, maximum-scale=5.0, user-scalable=yes">
+  <title>Unified Player</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    :root {
+      --team-color: #111b36;
+      --team-color-2: #1d3666;
+      --ink: #202124;
+      --muted: #5f6368;
+      --paper: #f6f7f9;
+      --card: #ffffff;
+      --line: #d8dee7;
+      --soft: #eef2f6;
+      --good: #198754;
+      --warn: #b7791f;
+      --bad: #b42318;
+      --font-sans: "Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0.85rem;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 14px;
+    }
+    a { color: #1d4ed8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .shell {
+      width: min(1280px, 100%);
+      display: grid;
+      gap: 0.75rem;
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+      border: 1px solid var(--line);
+      background: var(--card);
+      padding: 0.5rem 0.6rem;
+    }
+    .player-picker {
+      min-width: min(380px, 100%);
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      padding: 0.38rem 0.45rem;
+    }
+    .nav-actions {
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+    }
+    .btn-link {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 30px;
+      padding: 0.32rem 0.48rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .btn-link:hover { border-color: var(--team-color); text-decoration: none; }
+    .player-header {
+      display: grid;
+      grid-template-columns: 78px minmax(0, 1fr) auto;
+      gap: 0.8rem;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--team-color);
+      background: var(--card);
+      padding: 0.7rem;
+    }
+    .logo,
+    .logo-fallback {
+      width: 64px;
+      height: 64px;
+      border-radius: 4px;
+      border: 1px solid var(--line);
+      background: var(--soft);
+    }
+    .logo { object-fit: cover; }
+    .logo-fallback {
+      display: grid;
+      place-items: center;
+      color: var(--team-color);
+      font-weight: 900;
+      font-size: 1rem;
+    }
+    .player-title {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .player-name {
+      margin: 0;
+      font-size: clamp(1.5rem, 3vw, 2.15rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+    .meta-line {
+      margin-top: 0.3rem;
+      color: var(--muted);
+      display: flex;
+      gap: 0.45rem;
+      flex-wrap: wrap;
+      line-height: 1.35;
+    }
+    .tag-row,
+    .skill-row {
+      display: flex;
+      gap: 0.28rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .tag-row { margin-top: 0.42rem; }
+    .rating-chip,
+    .skill-chip,
+    .info-chip {
+      border-radius: 4px;
+      border: 1px solid var(--line);
+      background: var(--soft);
+      color: var(--ink);
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0.18rem 0.38rem;
+      font-size: 0.72rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .rating-chip.primary {
+      background: var(--team-color);
+      border-color: var(--team-color);
+      color: #fff;
+      font-size: 0.82rem;
+    }
+    .rating-chip.rating-purple { background: #7e22ce; border-color: #7e22ce; color: #fff; }
+    .rating-chip.rating-blue { background: #1d4ed8; border-color: #1d4ed8; color: #fff; }
+    .rating-chip.rating-green { background: #15803d; border-color: #15803d; color: #fff; }
+    .rating-chip.rating-yellow { background: #facc15; border-color: #eab308; color: #1f2937; }
+    .rating-chip.rating-orange { background: #f97316; border-color: #ea580c; color: #fff; }
+    .rating-chip.good { color: var(--good); }
+    .rating-chip.warn { color: var(--warn); }
+    .injury-chip {
+      background: #fff1f0;
+      border-color: #ffc9c4;
+      color: var(--bad);
+    }
+    .skill-chip {
+      min-width: 26px;
+      justify-content: center;
+      background: #fff;
+      color: var(--team-color);
+    }
+    .header-statline {
+      display: grid;
+      grid-template-columns: repeat(6, 54px);
+      gap: 0.35rem;
+    }
+    .head-stat {
+      border-left: 1px solid var(--line);
+      padding-left: 0.45rem;
+      text-align: right;
+    }
+    .head-stat-value {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--team-color);
+    }
+    .head-stat-label {
+      display: block;
+      margin-top: 0.12rem;
+      color: var(--muted);
+      font-size: 0.58rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 340px minmax(0, 1fr);
+      gap: 0.75rem;
+      align-items: start;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      background: var(--card);
+    }
+    .panel + .panel { margin-top: 0.75rem; }
+    .panel-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--line);
+      background: #f8fafc;
+      padding: 0.48rem 0.6rem;
+    }
+    .panel-title {
+      margin: 0;
+      color: var(--ink);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .note {
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+    .contract-table,
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .contract-table th,
+    .contract-table td {
+      border-bottom: 1px solid var(--line);
+      padding: 0.4rem 0.55rem;
+      font-size: 0.84rem;
+      vertical-align: middle;
+    }
+    .contract-table th {
+      color: var(--muted);
+      font-size: 0.64rem;
+      letter-spacing: 0.12em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    .contract-table td {
+      text-align: right;
+      font-weight: 800;
+    }
+    .ratings-board {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0;
+    }
+    .rating-category {
+      border-right: 1px solid var(--line);
+      min-width: 0;
+    }
+    .rating-category:last-child { border-right: 0; }
+    .rating-category-title {
+      margin: 0;
+      border-bottom: 1px solid var(--line);
+      background: #f8fafc;
+      color: var(--muted);
+      padding: 0.42rem 0.55rem;
+      font-size: 0.64rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .rating-row {
+      display: grid;
+      grid-template-columns: 42px minmax(68px, 1fr) 34px 34px;
+      gap: 0.4rem;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      padding: 0.36rem 0.55rem;
+      font-size: 0.8rem;
+    }
+    .rating-row:last-child { border-bottom: 0; }
+    .rating-key {
+      color: var(--muted);
+      font-size: 0.64rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .rating-value {
+      text-align: right;
+      font-weight: 900;
+    }
+    .potential-grade {
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: #fff;
+      color: var(--team-color);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 22px;
+      padding: 0 0.2rem;
+      font-size: 0.72rem;
+      font-weight: 900;
+    }
+    .potential-grade.no-grade {
+      color: var(--muted);
+      background: #f8fafc;
+    }
+    .rating-bar {
+      height: 8px;
+      background: #e5e7eb;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .rating-fill {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: var(--team-color);
+    }
+    .stats-panel { min-width: 0; }
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+    .tab-btn {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 0.32rem 0.45rem;
+    }
+    .tab-btn.active {
+      background: var(--team-color);
+      border-color: var(--team-color);
+      color: #fff;
+    }
+    .table-wrap {
+      overflow: auto;
+      max-width: 100%;
+    }
+    .data-table {
+      min-width: 790px;
+    }
+    .data-table th,
+    .data-table td {
+      border-bottom: 1px solid var(--line);
+      padding: 0.38rem 0.44rem;
+      text-align: right;
+      white-space: nowrap;
+      font-size: 0.82rem;
+    }
+    .data-table th {
+      position: sticky;
+      top: 0;
+      background: #f1f5f9;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 0.64rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .data-table td:first-child,
+    .data-table th:first-child,
+    .data-table td:nth-child(2),
+    .data-table th:nth-child(2),
+    .data-table td:nth-child(3),
+    .data-table th:nth-child(3) {
+      text-align: left;
+    }
+    .empty {
+      padding: 0.75rem;
+      color: var(--muted);
+    }
+    @media (max-width: 1050px) {
+      .player-header,
+      .layout { grid-template-columns: 1fr; }
+      .ratings-board { grid-template-columns: 1fr; }
+      .rating-category { border-right: 0; border-bottom: 1px solid var(--line); }
+      .rating-category:last-child { border-bottom: 0; }
+      .header-statline {
+        grid-template-columns: repeat(6, minmax(48px, 1fr));
+        width: 100%;
+      }
+      .head-stat {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+        padding: 0.45rem 0 0;
+        text-align: left;
+      }
+    }
+    @media (max-width: 620px) {
+      body { padding: 0.6rem; }
+      .topbar { align-items: stretch; }
+      .player-picker,
+      .nav-actions,
+      .btn-link { width: 100%; }
+      .header-statline { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="topbar">
+      <select class="player-picker" id="playerPicker" aria-label="Choose player"></select>
+      <nav class="nav-actions" aria-label="Player navigation">
+        <a class="btn-link" id="teamLink" href="./league%20dashboard.htm">Team Page</a>
+        <a class="btn-link" id="classicLink" href="#">Classic Page</a>
+        <a class="btn-link" href="./league%20dashboard.htm">Dashboard</a>
+      </nav>
+    </div>
+
+    <header class="player-header">
+      <div id="teamLogoSlot"></div>
+      <div>
+        <div class="player-title">
+          <h1 class="player-name" id="playerName">Loading player</h1>
+          <div class="skill-row" id="skillRow"></div>
+        </div>
+        <div class="meta-line" id="playerMeta">Loading player data</div>
+        <div class="tag-row" id="heroPills"></div>
+      </div>
+      <div class="header-statline" id="headerStatline"></div>
+    </header>
+
+    <main class="layout">
+      <section class="panel" style="grid-column:1 / -1;">
+        <div class="panel-head">
+          <h2 class="panel-title">Ratings</h2>
+          <div class="note">Current rating / potential grade</div>
+        </div>
+        <div class="ratings-board" id="ratingsBoard"></div>
+      </section>
+
+      <aside>
+        <section class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">Contract</h2>
+          </div>
+          <table class="contract-table" id="contractTable"></table>
+        </section>
+      </aside>
+
+      <section class="panel stats-panel">
+        <div class="panel-head">
+          <h2 class="panel-title">Stats</h2>
+          <div class="note" id="snapshotNote">Best available season row</div>
+        </div>
+        <div class="panel-head">
+          <div class="tabs" id="statsTabs"></div>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table" id="statsTable"></table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/roster-data-service.js"></script>
+  <script>
+    const DATA_URLS = {
+      players: "../../00-build/database/players.json",
+      playerStats: "../../00-build/database/player_stats.json",
+      injuries: "../../00-build/database/injuries.json",
+      standings: "../../00-build/database/standings.json"
+    };
+
+    const TEAM_LOGOS = {
+      "AC Milan": "acmilan.jpg",
+      "AFC Richmond": "richmond.jpg",
+      "Ajax": "ajax.jpg",
+      "Aston Villa": "astonvilla.jpg",
+      "Atletico Madrid": "atletico.jpg",
+      "Barcelona": "barcelona.jpg",
+      "Bayern Munich": "bayern.jpg",
+      "Benfica": "benfica.jpg",
+      "Brighton": "brighton.jpg",
+      "Chelsea": "chelsea.jpg",
+      "Crystal Palace": "crystalpalace.jpg",
+      "FL Fart": "flfart.jpg",
+      "Inter Milan": "intermilan.jpg",
+      "Juventus": "juventus.jpg",
+      "Manchester City": "manchestercity.jpg",
+      "Manchester United": "manutd.jpg",
+      "Marseille": "marseille.jpg",
+      "Monaco": "monaco.jpg",
+      "Paris Saint-Germain": "psg.jpg",
+      "Real Madrid": "realmadrid.jpg",
+      "Sheffield United": "sheffield.jpg",
+      "Sporting CP": "sportingcp.jpg",
+      "Tottenham Hotspur": "tottenham.jpg",
+      "Valencia": "valencia.jpg"
+    };
+
+    const RATING_GROUPS = [
+      {
+        title: "Offense",
+        ratings: [["Ins", "Inside"], ["Jps", "Jump Shot"], ["Fts", "Free Throw"], ["3ps", "Three"], ["Hnd", "Handle"], ["Pas", "Pass"], ["Orb", "Off Reb"]]
+      },
+      {
+        title: "Defense",
+        ratings: [["Drb", "Def Reb"], ["Psd", "Post Def"], ["Prd", "Per Def"], ["Stl", "Steal"], ["Blk", "Block"]]
+      },
+      {
+        title: "Physicals",
+        ratings: [["Qkn", "Quick"], ["Jmp", "Jump"], ["Str", "Strength"], ["Sta", "Stamina"]]
+      }
+    ];
+
+    const STAT_TABS = [
+      { id: "season_averages", label: "Averages" },
+      { id: "shooting_averages", label: "Shooting" },
+      { id: "season_totals", label: "Totals" },
+      { id: "efficiency", label: "Efficiency" },
+      { id: "playoff_averages", label: "Playoffs" },
+      { id: "playoff_shooting", label: "Playoff Shooting" },
+      { id: "career_highs", label: "Highs" }
+    ];
+
+    const state = {
+      players: [],
+      playerStats: [],
+      injuries: [],
+      standings: [],
+      teamDirectory: [],
+      current: null,
+      currentStats: null,
+      activeTab: "season_averages"
+    };
+
+    function params() {
+      return new URLSearchParams(window.location.search);
+    }
+
+    function clean(v) {
+      return String(v || "").replace(/\s+/g, " ").trim();
+    }
+
+    function normalizeName(v) {
+      return clean(v).toLowerCase().replace(/[^a-z0-9]/g, "");
+    }
+
+    function slugify(v) {
+      return clean(v).toLowerCase().replace(/[^a-z0-9]+/g, "");
+    }
+
+    function playerIdFromUrl(url) {
+      const match = String(url || "").match(/player(\d+)\.htm/i);
+      return match ? `player${match[1]}` : "";
+    }
+
+    function classicHref(url) {
+      const cleanUrl = String(url || "").replace(/^(\.\/|\.\.\/)+/, "");
+      return cleanUrl ? `../../${cleanUrl}` : "#";
+    }
+
+    function initials(name) {
+      return clean(name).split(/\s+/).filter(Boolean).slice(0, 2).map((part) => part[0].toUpperCase()).join("") || "ESL";
+    }
+
+    function num(v) {
+      const n = Number(String(v || "").replace(/[$,%]/g, "").replace(/,/g, ""));
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function ratingWidth(v) {
+      const n = num(v);
+      if (n === null) return 0;
+      return Math.max(0, Math.min(100, n));
+    }
+
+    function fmt(value) {
+      return value === undefined || value === null || value === "" ? "--" : value;
+    }
+
+    function ratingTierClass(value) {
+      const n = num(value) || 0;
+      if (n >= 151) return "rating-purple";
+      if (n >= 115) return "rating-blue";
+      if (n >= 100) return "rating-green";
+      if (n >= 81) return "rating-yellow";
+      return "rating-orange";
+    }
+
+    function findCurrentPlayer() {
+      const id = clean(params().get("id"));
+      const name = clean(params().get("name"));
+      const sourceUrl = clean(params().get("url"));
+      if (id) {
+        const byId = state.players.find((p) => playerIdFromUrl(p.url).toLowerCase() === id.toLowerCase());
+        if (byId) return byId;
+      }
+      if (sourceUrl) {
+        const sourceId = playerIdFromUrl(sourceUrl);
+        const byUrl = state.players.find((p) => playerIdFromUrl(p.url) === sourceId);
+        if (byUrl) return byUrl;
+      }
+      if (name) {
+        const key = normalizeName(name);
+        const byName = state.players.find((p) => normalizeName(p.name) === key);
+        if (byName) return byName;
+      }
+      return state.players[0] || null;
+    }
+
+    function findStatsFor(player) {
+      const id = playerIdFromUrl(player && player.url);
+      const key = normalizeName(player && player.name);
+      return state.playerStats.find((p) => playerIdFromUrl(p.url) === id) ||
+        state.playerStats.find((p) => normalizeName(p.name) === key) ||
+        null;
+    }
+
+    function findTeam(player) {
+      const teamKey = clean(player && player.team);
+      const teamLabel = clean(player && player.teamLabel);
+      return state.teamDirectory.find((t) => t.teamId === teamKey || t.teamName === teamLabel) || null;
+    }
+
+    function findInjury(player) {
+      const nameKey = normalizeName(player && player.name);
+      const teamKey = normalizeName(player && player.teamLabel);
+      return state.injuries.find((item) => normalizeName(item.name) === nameKey && (!teamKey || normalizeName(item.teamName) === teamKey)) ||
+        state.injuries.find((item) => normalizeName(item.name) === nameKey) ||
+        null;
+    }
+
+    function bestCurrentRow() {
+      const stats = state.currentStats && state.currentStats.stats;
+      const rows = stats && stats.season_averages && Array.isArray(stats.season_averages.rows) ? stats.season_averages.rows : [];
+      const realRows = rows.filter((r) => String(r.season || "").toLowerCase() !== "career");
+      return realRows[realRows.length - 1] || rows[0] || {};
+    }
+
+    function setTeamColors(team) {
+      if (!team || !team.rosterFile || !window.UnifiedRosterDataService) return;
+      window.UnifiedRosterDataService.loadTeamBundle(team.rosterFile, [])
+        .then((bundle) => {
+          document.documentElement.style.setProperty("--team-color", bundle.colors.main);
+          document.documentElement.style.setProperty("--team-color-2", bundle.colors.secondary);
+        })
+        .catch(() => {});
+    }
+
+    function renderLogo(teamName) {
+      const slot = document.getElementById("teamLogoSlot");
+      slot.innerHTML = "";
+      if (!teamName || ["FA", "Draft"].includes(teamName)) {
+        const fallback = document.createElement("div");
+        fallback.className = "logo-fallback";
+        fallback.textContent = initials(teamName || "ESL");
+        slot.appendChild(fallback);
+        return;
+      }
+      const img = document.createElement("img");
+      img.className = "logo";
+      img.alt = `${teamName} logo`;
+      img.src = `../../00-assets/photos/${TEAM_LOGOS[teamName] || (slugify(teamName) + ".jpg")}`;
+      img.addEventListener("error", () => {
+        const fallback = document.createElement("div");
+        fallback.className = "logo-fallback";
+        fallback.textContent = initials(teamName);
+        slot.replaceChildren(fallback);
+      });
+      slot.appendChild(img);
+    }
+
+    function skillTags(player) {
+      const tags = [];
+      const get = (key) => num(player[key]) || 0;
+      if (get("3ps") >= 70) tags.push(["3", "Three Point Shooter"]);
+      if ((get("Qkn") + get("Jmp") + get("Str")) / 3 >= 70) tags.push(["A", "Athlete"]);
+      if ((get("Hnd") + get("Pas")) / 2 >= 70) tags.push(["B", "Ball Handler"]);
+      if ((get("Psd") + get("Blk") + get("Str")) / 3 >= 70) tags.push(["Di", "Interior Defender"]);
+      if ((get("Prd") + get("Stl") + get("Qkn")) / 3 >= 70) tags.push(["Dp", "Perimeter Defender"]);
+      if (get("Ins") >= 70) tags.push(["Po", "Post Scorer"]);
+      if (get("Pas") >= 70) tags.push(["Ps", "Passer"]);
+      if ((get("Orb") + get("Drb")) / 2 >= 70) tags.push(["R", "Rebounder"]);
+      if ((get("Ins") + get("Jps") + get("3ps")) / 3 >= 70) tags.push(["V", "Volume Scorer"]);
+      return tags;
+    }
+
+    function renderPicker() {
+      const picker = document.getElementById("playerPicker");
+      const sorted = [...state.players].filter((p) => p.name && p.url).sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
+      picker.innerHTML = sorted.map((player) => {
+        const selected = playerIdFromUrl(player.url) === playerIdFromUrl(state.current.url) ? "selected" : "";
+        return `<option value="${playerIdFromUrl(player.url)}" ${selected}>${player.name} - ${player.teamLabel || player.team || "Team"}</option>`;
+      }).join("");
+      picker.addEventListener("change", () => {
+        window.location.href = `./unified-player.htm?id=${encodeURIComponent(picker.value)}`;
+      });
+    }
+
+    function renderHero() {
+      const p = state.current;
+      const team = findTeam(p);
+      const injury = findInjury(p);
+      const row = bestCurrentRow();
+      const teamName = p.teamLabel || p.team || "Unknown Team";
+      const meta = [
+        teamName,
+        p.pos,
+        p.age ? `${p.age} years old` : "",
+        p.ht,
+        p.wt ? `${p.wt} lbs` : "",
+        p.experience
+      ].filter(Boolean);
+      document.getElementById("playerName").textContent = p.name || "Unknown Player";
+      document.getElementById("playerMeta").innerHTML = meta.map((item) => `<span>${item}</span>`).join("");
+      document.title = `${p.name || "Unified Player"} - Unified Player`;
+      document.getElementById("heroPills").innerHTML = [
+        p.overall ? `<span class="rating-chip primary ${ratingTierClass(p.overall)}">OVR ${p.overall}</span>` : "",
+        p.potential ? `<span class="rating-chip primary ${ratingTierClass(p.potential)}">POT ${p.potential}</span>` : "",
+        p.currentSalaryText ? `<span class="info-chip">${p.currentSalaryText}</span>` : "",
+        injury ? `<span class="info-chip injury-chip">${injury.injury} | ${injury.length}d</span>` : ""
+      ].filter(Boolean).join("");
+      document.getElementById("skillRow").innerHTML = skillTags(p).map(([label, title]) =>
+        `<span class="skill-chip" title="${title}">${label}</span>`
+      ).join("");
+      document.getElementById("headerStatline").innerHTML = [
+        ["PTS", row.pts], ["REB", row.reb !== undefined ? row.reb : row.drb], ["AST", row.ast],
+        ["STL", row.stl], ["BLK", row.blk], ["MIN", row.min]
+      ].map(([label, value]) => `<div class="head-stat"><span class="head-stat-value">${fmt(value)}</span><span class="head-stat-label">${label}</span></div>`).join("");
+      document.getElementById("snapshotNote").textContent = row.season ? `${row.season} season row` : "No season averages found";
+      document.getElementById("classicLink").href = classicHref(p.url);
+      const teamLink = document.getElementById("teamLink");
+      teamLink.href = team ? `./unified-roster.htm?file=${encodeURIComponent(team.rosterFile)}` : "./league%20dashboard.htm";
+      teamLink.textContent = team ? "Team Page" : "Dashboard";
+      renderLogo(teamName);
+      setTeamColors(team);
+    }
+
+    function renderPlayerDetails() {
+      const p = state.current;
+      const contracts = Array.isArray(p.contracts) ? p.contracts : [];
+      document.getElementById("contractTable").innerHTML = contracts.length
+        ? `<tbody>${contracts.map((contract) => `<tr><th>${fmt(contract.year)}</th><td>${fmt(contract.salaryText)}</td></tr>`).join("")}</tbody>`
+        : `<tbody><tr><th>Contract</th><td>$0</td></tr></tbody>`;
+
+      const potentials = p.potentials || {};
+      document.getElementById("ratingsBoard").innerHTML = RATING_GROUPS.map((group) => {
+        const rows = group.ratings.map(([key, label]) => {
+          const value = fmt(p[key]);
+          const potential = fmt(potentials[key]);
+          const potentialClass = potential === "--" ? "potential-grade no-grade" : "potential-grade";
+          return `<div class="rating-row" title="${label}"><span class="rating-key">${key}</span><span class="rating-bar"><span class="rating-fill" style="width:${ratingWidth(value)}%"></span></span><span class="rating-value">${value}</span><span class="${potentialClass}">${potential}</span></div>`;
+        }).join("");
+        return `<section class="rating-category"><h3 class="rating-category-title">${group.title}</h3>${rows}</section>`;
+      }).join("");
+    }
+
+    function keyFromHeader(header, used) {
+      const base = String(header || "")
+        .toLowerCase()
+        .replace("%", "_pct")
+        .replace("+/-", "plus_minus")
+        .replace("a/t", "a_t")
+        .replace("3p", "3p")
+        .replace(/[^a-z0-9]+/g, "_")
+        .replace(/^_+|_+$/g, "");
+      const count = used[base] || 0;
+      used[base] = count + 1;
+      return count ? `${base}_${count + 1}` : base;
+    }
+
+    function renderTable() {
+      const table = document.getElementById("statsTable");
+      const stats = state.currentStats && state.currentStats.stats;
+      const section = stats && stats[state.activeTab];
+      if (!section || !Array.isArray(section.headers) || !Array.isArray(section.rows) || !section.headers.length) {
+        table.innerHTML = `<tbody><tr><td><div class="empty">No table data for this section</div></td></tr></tbody>`;
+        return;
+      }
+      const used = {};
+      const keys = section.headers.map((h) => keyFromHeader(h, used));
+      const head = `<thead><tr>${section.headers.map((h) => `<th>${h || "-"}</th>`).join("")}</tr></thead>`;
+      const rows = section.rows.length ? section.rows.map((row) =>
+        `<tr>${keys.map((key) => `<td>${fmt(row[key])}</td>`).join("")}</tr>`
+      ).join("") : `<tr><td colspan="${section.headers.length}">No rows</td></tr>`;
+      table.innerHTML = `${head}<tbody>${rows}</tbody>`;
+      makeTableSortable(table);
+    }
+
+    function renderTabs() {
+      const root = document.getElementById("statsTabs");
+      const stats = state.currentStats && state.currentStats.stats ? state.currentStats.stats : {};
+      const tabs = STAT_TABS.filter((tab) => stats[tab.id]);
+      if (!tabs.some((tab) => tab.id === state.activeTab)) {
+        state.activeTab = tabs[0] ? tabs[0].id : "season_averages";
+      }
+      root.innerHTML = tabs.map((tab) =>
+        `<button type="button" class="tab-btn${tab.id === state.activeTab ? " active" : ""}" data-tab="${tab.id}">${tab.label}</button>`
+      ).join("");
+      root.querySelectorAll(".tab-btn").forEach((btn) => btn.addEventListener("click", () => {
+        state.activeTab = btn.dataset.tab;
+        renderTabs();
+        renderTable();
+      }));
+    }
+
+    function parseSortableValue(text) {
+      const raw = String(text || "").trim();
+      if (!raw || raw === "--") return { type: "empty", value: Number.NEGATIVE_INFINITY };
+      const cleaned = raw.replace(/[$,%]/g, "").replace(/,/g, "").replace(/[^\d.+-]/g, "");
+      const n = Number(cleaned);
+      if (Number.isFinite(n) && cleaned !== "") return { type: "number", value: n };
+      return { type: "text", value: raw.toLowerCase() };
+    }
+
+    function makeTableSortable(table) {
+      table.querySelectorAll("th").forEach((th, index) => {
+        th.addEventListener("click", () => {
+          const tbody = table.querySelector("tbody");
+          const rows = Array.from(tbody.querySelectorAll("tr"));
+          const dir = th.dataset.sortDir === "asc" ? "desc" : "asc";
+          table.querySelectorAll("th").forEach((h) => h.removeAttribute("data-sort-dir"));
+          th.dataset.sortDir = dir;
+          rows.sort((a, b) => {
+            const av = parseSortableValue((a.children[index] || {}).textContent);
+            const bv = parseSortableValue((b.children[index] || {}).textContent);
+            if (av.type === "number" && bv.type === "number") {
+              return dir === "asc" ? av.value - bv.value : bv.value - av.value;
+            }
+            const cmp = String(av.value).localeCompare(String(bv.value), undefined, { numeric: true, sensitivity: "base" });
+            return dir === "asc" ? cmp : -cmp;
+          });
+          rows.forEach((row) => tbody.appendChild(row));
+        });
+      });
+    }
+
+    async function init() {
+      try {
+        const [playersRes, playerStatsRes, injuriesRes, standingsRes] = await Promise.all([
+          fetch(DATA_URLS.players),
+          fetch(DATA_URLS.playerStats),
+          fetch(DATA_URLS.injuries),
+          fetch(DATA_URLS.standings)
+        ]);
+        if (!playersRes.ok || !playerStatsRes.ok || !injuriesRes.ok || !standingsRes.ok) {
+          throw new Error("Could not load player feeds");
+        }
+        const [playersData, playerStatsData, injuriesData, standingsData] = await Promise.all([
+          playersRes.json(),
+          playerStatsRes.json(),
+          injuriesRes.json(),
+          standingsRes.json()
+        ]);
+        state.players = Array.isArray(playersData) ? playersData : [];
+        state.playerStats = Array.isArray(playerStatsData.players) ? playerStatsData.players : [];
+        state.injuries = Array.isArray(injuriesData.injuries) ? injuriesData.injuries : [];
+        state.standings = Array.isArray(standingsData.sections) ? standingsData.sections : [];
+        state.teamDirectory = window.UnifiedRosterDataService.buildTeamDirectory(state.standings);
+        state.current = findCurrentPlayer();
+        if (!state.current) throw new Error("No player found");
+        state.currentStats = findStatsFor(state.current);
+        renderPicker();
+        renderHero();
+        renderPlayerDetails();
+        renderTabs();
+        renderTable();
+      } catch (error) {
+        document.getElementById("playerName").textContent = "Unified player unavailable";
+        document.getElementById("playerMeta").textContent = "Could not load required player data.";
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

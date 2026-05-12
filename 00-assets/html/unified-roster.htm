@@ -588,6 +588,8 @@
     function toPlayerHref(url) {
       const raw = String(url || "").trim();
       if (!raw) return "";
+      const idMatch = raw.match(/player(\d+)\.htm/i);
+      if (idMatch) return `./unified-player.htm?id=${encodeURIComponent(`player${idMatch[1]}`)}`;
       const clean = raw.replace(/^(\.\/|\.\.\/)+/, "");
       return clean ? `../../${clean}` : "";
     }
@@ -706,8 +708,7 @@
       const fallback = teamMatch || (state.players || []).find((p) => normalizeName(p.name) === key);
       const rawUrl = String((fallback && fallback.url) || "").trim();
       if (!rawUrl) return "";
-      const clean = rawUrl.replace(/^(\.\/|\.\.\/)+/, "");
-      return clean ? `../../${clean}` : "";
+      return toPlayerHref(rawUrl);
     }
 
     function findNameColumnIndex(headers) {
