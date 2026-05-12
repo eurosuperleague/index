@@ -518,6 +518,7 @@
     </section>
   </main>
 
+  <script src="../js/player-page-destination.js"></script>
   <script src="../js/roster-data-service.js"></script>
   <script>
 
@@ -636,6 +637,14 @@
     function toPlayerHref(url) {
       const raw = String(url || "").trim();
       if (!raw) return "";
+      const links = window.leaguePlayerPageLinks;
+      if (links) {
+        if (links.isClassic()) {
+          return links.hrefFromAssetsHtml(raw);
+        }
+        const unified = links.hrefFromAssetsHtml(raw);
+        if (unified !== "#") return unified;
+      }
       const idMatch = raw.match(/player(\d+)\.htm/i);
       if (idMatch) return `./unified-player.htm?id=${encodeURIComponent(`player${idMatch[1]}`)}`;
       const clean = raw.replace(/^(\.\/|\.\.\/)+/, "");

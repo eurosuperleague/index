@@ -55,6 +55,30 @@ window.ESL_MEDIA_ARTICLES = [
       "Sheffield United",
       "Sporting CP",
       "Valencia"
+    ],
+    playerTags: [
+      "Adrian Dantley",
+      "Artis Gilmore",
+      "Buck Williams",
+      "Calvin Natt",
+      "Dan Issel",
+      "David Thompson",
+      "George Gervin",
+      "Isiah Thomas",
+      "Jim Paxson",
+      "Joe Barry Carroll",
+      "Kareem Abdul-Jabbar",
+      "Kelly Tripucka",
+      "Kevin McHale",
+      "Larry Bird",
+      "Larry Drew",
+      "Magic Johnson",
+      "Mike Mitchell",
+      "Moses Malone",
+      "Robert Parish",
+      "Sidney Moncrief",
+      "Steve Johnson",
+      "World B. Free"
     ]
   },
   {
@@ -79,6 +103,13 @@ window.ESL_MEDIA_ARTICLES = [
       "Sporting CP",
       "Tottenham Hotspur",
       "Valencia"
+    ],
+    playerTags: [
+      "Artis Gilmore",
+      "Kelly Tripucka",
+      "Larry Bird",
+      "Robert Parish",
+      "Walter Davis"
     ]
   },
   {
@@ -99,6 +130,13 @@ window.ESL_MEDIA_ARTICLES = [
       "Chelsea",
       "Manchester United",
       "Marseille"
+    ],
+    playerTags: [
+      "Bernard King",
+      "Bill Laimbeer",
+      "Jack Sikma",
+      "Robert Parish",
+      "Walter Davis"
     ]
   },
   {
@@ -128,6 +166,13 @@ window.ESL_MEDIA_ARTICLES = [
       "Real Madrid",
       "Sporting CP",
       "Valencia"
+    ],
+    playerTags: [
+      "Bill Laimbeer",
+      "Jack Sikma",
+      "Robert Parish",
+      "Sidney Moncrief",
+      "Walter Davis"
     ]
   },
   {
@@ -149,6 +194,16 @@ window.ESL_MEDIA_ARTICLES = [
       "Sporting CP",
       "Tottenham Hotspur",
       "Valencia"
+    ],
+    playerTags: [
+      "Allen Leavell",
+      "Alton Lister",
+      "Buck Williams",
+      "Isiah Thomas",
+      "Joe Barry Carroll",
+      "John Long",
+      "Kelly Tripucka",
+      "World B. Free"
     ]
   },
   {
@@ -170,6 +225,16 @@ window.ESL_MEDIA_ARTICLES = [
       "Marseille",
       "Monaco",
       "Sheffield United"
+    ],
+    playerTags: [
+      "Bill Laimbeer",
+      "Cliff Robinson",
+      "Jack Sikma",
+      "Kareem Abdul-Jabbar",
+      "Moses Malone",
+      "Purvis Short",
+      "Rickey Green",
+      "Robert Parish"
     ]
   },
   {
@@ -191,6 +256,16 @@ window.ESL_MEDIA_ARTICLES = [
       "Crystal Palace",
       "Manchester United",
       "Real Madrid"
+    ],
+    playerTags: [
+      "Artis Gilmore",
+      "Bernard King",
+      "James Donaldson",
+      "Kiki Vandeweghe",
+      "Larry Bird",
+      "Magic Johnson",
+      "Sidney Moncrief",
+      "Walter Davis"
     ]
   },
   {
@@ -209,7 +284,8 @@ window.ESL_MEDIA_ARTICLES = [
       "Atletico Madrid",
       "Brighton",
       "Crystal Palace"
-    ]
+    ],
+    playerTags: ["Alex English"]
   },
   {
     file: "articles/tier_3_star_tier_1_fit.html",
@@ -225,7 +301,8 @@ window.ESL_MEDIA_ARTICLES = [
       "Barcelona",
       "FL Fart",
       "Inter Milan"
-    ]
+    ],
+    playerTags: ["Kelly Tripucka", "David Thompson", "World B. Free"]
   },
   {
     file: "articles/november_1981_mvp_race.html",
@@ -255,6 +332,30 @@ window.ESL_MEDIA_ARTICLES = [
       "Paris Saint-Germain",
       "Real Madrid",
       "Sheffield United"
+    ],
+    playerTags: [
+      "Adrian Dantley",
+      "Artis Gilmore",
+      "Buck Williams",
+      "Calvin Natt",
+      "David Thompson",
+      "Gus Williams",
+      "Jim Paxson",
+      "Joe Barry Carroll",
+      "Kareem Abdul-Jabbar",
+      "Kelly Tripucka",
+      "Kevin McHale",
+      "Larry Bird",
+      "Magic Johnson",
+      "Mark Aguirre",
+      "Mike Mitchell",
+      "Mike Newlin",
+      "Moses Malone",
+      "Otis Birdsong",
+      "Robert Parish",
+      "Sidney Moncrief",
+      "Steve Johnson",
+      "World B. Free"
     ]
   },
   {
@@ -277,7 +378,8 @@ window.ESL_MEDIA_ARTICLES = [
       "Monaco",
       "Sheffield United",
       "Tottenham Hotspur"
-    ]
+    ],
+    playerTags: ["Rickey Green"]
   },
   {
     file: "articles/november_1981_stock_up_stock_down.html",
@@ -297,7 +399,8 @@ window.ESL_MEDIA_ARTICLES = [
       "Marseille",
       "Monaco",
       "Sheffield United"
-    ]
+    ],
+    playerTags: ["Robert Parish"]
   },
   {
     file: "articles/november_1981_promotion_relegation_watch.html",
@@ -324,7 +427,8 @@ window.ESL_MEDIA_ARTICLES = [
       "Marseille",
       "Monaco",
       "Sheffield United"
-    ]
+    ],
+    playerTags: []
   },
   {
     file: "articles/november_1981_tier_3_power_rankings.html",
@@ -345,6 +449,16 @@ window.ESL_MEDIA_ARTICLES = [
       "Sporting CP",
       "Tottenham Hotspur",
       "Valencia"
+    ],
+    playerTags: [
+      "Allen Leavell",
+      "Alton Lister",
+      "Buck Williams",
+      "Isiah Thomas",
+      "Joe Barry Carroll",
+      "John Long",
+      "Kelly Tripucka",
+      "World B. Free"
     ]
   },
   {
@@ -366,6 +480,16 @@ window.ESL_MEDIA_ARTICLES = [
       "Marseille",
       "Monaco",
       "Sheffield United"
+    ],
+    playerTags: [
+      "Bill Laimbeer",
+      "Cliff Robinson",
+      "Jack Sikma",
+      "Kareem Abdul-Jabbar",
+      "Moses Malone",
+      "Purvis Short",
+      "Rickey Green",
+      "Robert Parish"
     ]
   },
   {
@@ -387,6 +511,16 @@ window.ESL_MEDIA_ARTICLES = [
       "Crystal Palace",
       "Manchester United",
       "Real Madrid"
+    ],
+    playerTags: [
+      "Artis Gilmore",
+      "Bernard King",
+      "James Donaldson",
+      "Kiki Vandeweghe",
+      "Larry Bird",
+      "Magic Johnson",
+      "Sidney Moncrief",
+      "Walter Davis"
     ]
   },
   {
@@ -418,7 +552,8 @@ window.ESL_MEDIA_ARTICLES = [
       "Sporting CP",
       "Tottenham Hotspur",
       "Valencia"
-    ]
+    ],
+    playerTags: []
   },
   {
     file: "articles/promotion_relegation_watch_1_0.html",
@@ -443,7 +578,8 @@ window.ESL_MEDIA_ARTICLES = [
       "Monaco",
       "Real Madrid",
       "Sheffield United"
-    ]
+    ],
+    playerTags: []
   },
   {
     file: "articles/ecl_power_rankings_1_0.html",
@@ -464,7 +600,8 @@ window.ESL_MEDIA_ARTICLES = [
       "Sporting CP",
       "Tottenham Hotspur",
       "Valencia"
-    ]
+    ],
+    playerTags: ["Isiah Thomas"]
   },
   {
     file: "articles/elb_power_rankings_1_0.html",
@@ -485,7 +622,8 @@ window.ESL_MEDIA_ARTICLES = [
       "Marseille",
       "Monaco",
       "Sheffield United"
-    ]
+    ],
+    playerTags: ["Kareem Abdul-Jabbar"]
   },
   {
     file: "articles/clb_power_rankings_1_0.html",
@@ -506,7 +644,8 @@ window.ESL_MEDIA_ARTICLES = [
       "Crystal Palace",
       "Manchester United",
       "Real Madrid"
-    ]
+    ],
+    playerTags: []
   },
   {
     file: "articles/larry_bird_ac_milan_interview.html",
@@ -518,7 +657,8 @@ window.ESL_MEDIA_ARTICLES = [
     author: "Malik Sparks",
     meta: "One-On-One",
     blurb: "Larry Bird is already scoring like AC Milan's centerpiece, but a 2-4 preseason has him asking sharper questions of the room around him.",
-    teams: ["AC Milan", "Atletico Madrid", "Bayern Munich", "Brighton", "Crystal Palace"]
+    teams: ["AC Milan", "Atletico Madrid", "Bayern Munich", "Brighton", "Crystal Palace"],
+    playerTags: ["Larry Bird"]
   },
   {
     file: "articles/ecl_awards_predictions.html",
@@ -530,7 +670,17 @@ window.ESL_MEDIA_ARTICLES = [
     author: "Damon Cross",
     meta: "Awards Preview",
     blurb: "Isiah Thomas headlines the Conference League awards board, with Alton Lister and a chaotic first team close behind.",
-    teams: ["FL Fart", "Inter Milan", "Manchester City", "Paris Saint-Germain", "Sporting CP", "Valencia"]
+    teams: ["FL Fart", "Inter Milan", "Manchester City", "Paris Saint-Germain", "Sporting CP", "Valencia"],
+    playerTags: [
+      "Allen Leavell",
+      "Alton Lister",
+      "Buck Williams",
+      "Isiah Thomas",
+      "Joe Barry Carroll",
+      "Kelly Tripucka",
+      "Larry Smith",
+      "World B. Free"
+    ]
   },
   {
     file: "articles/elb_awards_predictions.html",
@@ -542,7 +692,18 @@ window.ESL_MEDIA_ARTICLES = [
     author: "Damon Cross",
     meta: "Awards Preview",
     blurb: "Moses Malone leads the Europa MVP board while Robert Parish gets the first defensive nod in a brutal frontcourt tier.",
-    teams: ["Ajax", "Benfica", "Chelsea", "Juventus", "Marseille"]
+    teams: ["Ajax", "Benfica", "Chelsea", "Juventus", "Marseille"],
+    playerTags: [
+      "Cliff Robinson",
+      "Jack Sikma",
+      "Jim Paxson",
+      "Kareem Abdul-Jabbar",
+      "Maurice Cheeks",
+      "Moses Malone",
+      "Rickey Green",
+      "Robert Parish",
+      "Robert Reid"
+    ]
   },
   {
     file: "articles/clb_awards_predictions.html",
@@ -554,7 +715,18 @@ window.ESL_MEDIA_ARTICLES = [
     author: "Damon Cross",
     meta: "Awards Preview",
     blurb: "Magic Johnson, Artis Gilmore, and a star-heavy first team open Damon Cross' preseason CLB ballot.",
-    teams: ["AC Milan", "AFC Richmond", "Bayern Munich", "Crystal Palace", "Real Madrid"]
+    teams: ["AC Milan", "AFC Richmond", "Bayern Munich", "Crystal Palace", "Real Madrid"],
+    playerTags: [
+      "Artis Gilmore",
+      "Bernard King",
+      "Dan Roundfield",
+      "Darrell Griffith",
+      "Julius Erving",
+      "Larry Bird",
+      "Magic Johnson",
+      "Michael Cooper",
+      "Sidney Moncrief"
+    ]
   },
   {
     file: "articles/teams_with_a_foundation.html",
@@ -566,7 +738,26 @@ window.ESL_MEDIA_ARTICLES = [
     author: "Nina Vale",
     meta: "Scouting Desk",
     blurb: "AFC Richmond, Chelsea, and Manchester City look like real long-view builders, while several big names still feel more fragile than stable.",
-    teams: ["AFC Richmond", "Chelsea", "Manchester City"]
+    teams: ["AFC Richmond", "Chelsea", "Manchester City"],
+    playerTags: [
+      "Allen Leavell",
+      "Brad Davis",
+      "Calvin Natt",
+      "Carl Nicks",
+      "David Greenwood",
+      "Elston Turner",
+      "Gene Banks",
+      "Jack Sikma",
+      "Jeff Lamp",
+      "Jim Paxson",
+      "Jim Smith",
+      "Kurt Rambis",
+      "Magic Johnson",
+      "Michael Cooper",
+      "Tom Chambers",
+      "Valerio Sagredo",
+      "Vinnie Johnson"
+    ]
   },
   {
     file: "articles/young_players_each_tier.html",
@@ -578,7 +769,8 @@ window.ESL_MEDIA_ARTICLES = [
     author: "Graham Trent",
     meta: "Scouting Desk",
     blurb: "Three young names, three different timelines, and the kind of skill flashes that make scouts keep the second notebook open.",
-    teams: ["AFC Richmond", "Chelsea", "Manchester City"]
+    teams: ["AFC Richmond", "Chelsea", "Manchester City"],
+    playerTags: ["Jeff Lamp", "Magic Johnson", "Tom Chambers", "Valerio Sagredo"]
   }
 ];
 

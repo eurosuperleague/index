@@ -309,6 +309,7 @@ When a new article is added, add its metadata object there:
 - `meta`
 - `blurb`
 - `teams`
+- `playerTags` (optional on the object, but **required whenever the article names players**; see **Player tags** below)
 
 The `teams` array is required.
 
@@ -321,6 +322,41 @@ teams: ["Chelsea", "Benfica", "Marseille"]
 ```
 
 The team directory and team-specific article pages are powered from that field. If you skip a mentioned team, that club's coverage page will be incomplete.
+
+## Player tags (`playerTags`)
+
+The league **Unified Player** page loads this manifest and matches **ESL Media** pieces to players using an optional **`playerTags`** array on each article object (in addition to `teams`, `blurb`, etc.).
+
+### When to add `playerTags`
+
+Add **`playerTags`** whenever the article names specific **players** (not just clubs). Each entry must use the **exact `name` string** from `00-build/database/players.json`, because matching normalizes names the same way as the roster (letters and digits only, case-insensitive).
+
+### Rule: tag every mentioned player
+
+Before publishing, scan the **entire HTML**: headline, dek, ticker, body paragraphs, pull quotes, ballot rows, ballot notes, stat callouts, and captions. For **every distinct player** who appears in any of those places:
+
+1. Look up their canonical **`name`** in `players.json`.
+2. Add that string to **`playerTags`** once.
+
+Do not skip honourable mentions, “next two names” paragraphs, or anyone named only in a ballot note. If they are not in **`playerTags`**, their unified player profile will not pick up this article when tag matching is in effect for that entry.
+
+### Ballots, ladders, and ranked lists
+
+For MVP races, award ballots, power-rank rows, or any ordered list of players:
+
+- Include **every player named in the ranked list**, not only the winner or the lead.
+
+Example: **December 1981 MVP Race** lists fifteen ballot players across three tiers (five per tier). The manifest **`playerTags`** for that article must list **all fifteen** roster names.
+
+### Optional `mediaTags` on a player
+
+You may add **`mediaTags`** on a player object in `players.json`. Those strings are shown as chips on the unified player page and participate in the same slug matching as article **`playerTags`**. Use them for recurring labels (for example a desk-wide “MVP ballot” tag) that should match multiple articles without repeating a player’s full name in every manifest row.
+
+### If you omit `playerTags`
+
+When **`playerTags` is missing or empty**, the unified player page falls back to searching for the player’s **full real name** inside manifest text (`title`, `blurb`, and related fields). That is forgiving but easy to miss nicknames or partial references.
+
+Prefer explicit **`playerTags`** whenever profiles should reliably surface the piece.
 
 For interview articles, always set:
 - `category: "Interview"`

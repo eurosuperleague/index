@@ -898,6 +898,17 @@
         { value: "off", label: "Off" }
       ]
     });
+    addSettingsSelect(form, {
+      id: "setting-player-page-destination",
+      name: "playerPageDestination",
+      label: "Player Page Links",
+      value: settings.playerPageDestination === "classic" ? "classic" : "unified",
+      help: "Choose whether roster-style player links and the floating player search open the classic player.htm pages or the unified player view.",
+      options: [
+        { value: "unified", label: "Unified player page" },
+        { value: "classic", label: "Classic player pages" }
+      ]
+    });
     document.getElementById("league-settings-save").addEventListener("click", function () {
       var nextSettings = {};
 
@@ -911,7 +922,7 @@
       nextSettings.spoilerMode = "show";
       saveSettings(nextSettings);
       applySavedPreferences();
-      status.textContent = "Saved. Reload the main page to apply default page/menu startup changes.";
+      status.textContent = "Saved. Reload the main page to apply default page, menu startup, and player link destination changes.";
     });
 
     document.getElementById("league-settings-reset").addEventListener("click", function () {
@@ -1608,7 +1619,7 @@
           if (column.key === "name") {
             var link = document.createElement("a");
             link.className = "waiver-database__player-link";
-            link.href = normalizePlayerUrl(player.url);
+            link.href = getPlayerPageUrl(player.url);
             link.textContent = player.name || "";
             cell.classList.add("main--left");
             cell.appendChild(link);
@@ -1834,11 +1845,37 @@
   }
 
   function getPlayerFileFromUrl(url) {
-    var match = String(url || "").match(/(?:^|\/)(player\d+\.htm)(?:$|[?#])/i);
-    return match ? match[1].toLowerCase() : "";
+    var str = String(url || "");
+    var match = str.match(/(?:^|\/)(player\d+\.htm)(?:$|[?#])/i);
+    if (match) {
+      return match[1].toLowerCase();
+    }
+    var idMatch = str.match(/[?&]id=(player\d+)(?:&|#|$)/i);
+    if (idMatch) {
+      return idMatch[1].toLowerCase() + ".htm";
+    }
+    return "";
   }
 
-  function getUnifiedPlayerUrl(url) {
+  function prefersClassicPlayerPages() {
+    return getSettings().playerPageDestination === "classic";
+  }
+
+  function isRewriteEligiblePlayerHref(href) {
+    var h = String(href || "").toLowerCase();
+    return Boolean(getPlayerFileFromUrl(href)) && h.indexOf("unified-player") === -1 && h.indexOf("id=player") === -1;
+  }
+
+  function getPlayerPageUrl(url) {
+    var raw = String(url || "");
+    if (prefersClassicPlayerPages()) {
+      var idFromUnified = raw.match(/[?&]id=(player\d+)(?:&|#|$)/i);
+      if (idFromUnified) {
+        return normalizePlayerUrl("../players/" + idFromUnified[1].toLowerCase() + ".htm");
+      }
+      return normalizePlayerUrl(raw);
+    }
+
     var file = getPlayerFileFromUrl(url);
     var id = file ? file.replace(/\.htm$/i, "") : "";
 
@@ -1855,6 +1892,33 @@
     }
 
     return "./00-assets/html/unified-player.htm?id=" + encodeURIComponent(id);
+  }
+
+  function enhancePlayerAnchorHref(link) {
+    if (!link || !link.getAttribute) {
+      return;
+    }
+
+    var href = link.getAttribute("href") || "";
+
+    if (link.dataset.leaguePlayerDestBound === "true") {
+      if (link.dataset.leagueLegacyPlayerHref) {
+        link.setAttribute("href", getPlayerPageUrl(link.dataset.leagueLegacyPlayerHref));
+      }
+      return;
+    }
+
+    if (!isRewriteEligiblePlayerHref(href)) {
+      return;
+    }
+
+    link.dataset.leagueLegacyPlayerHref = href;
+    link.dataset.leaguePlayerDestBound = "true";
+    link.setAttribute("href", getPlayerPageUrl(href));
+  }
+
+  function applyPlayerPageLinksToAnchors() {
+    Array.prototype.slice.call(document.querySelectorAll('a[href*="player"]')).forEach(enhancePlayerAnchorHref);
   }
 
   function ensurePlayerPreviewStyles() {
@@ -2238,7 +2302,7 @@
         });
 
         function navigateToPlayer(player) {
-          window.location.href = getUnifiedPlayerUrl(player.url);
+          window.location.href = getPlayerPageUrl(player.url);
         }
 
         input.addEventListener("input", function () {
@@ -2299,6 +2363,7 @@
 
         root.innerHTML = "";
         root.appendChild(buildWaiverTable(enrichedPlayers));
+        applyPlayerPageLinksToAnchors();
       })
       .catch(function () {
         root.innerHTML = "";
@@ -2465,11 +2530,13 @@
         highlightFavoriteTeam(teams);
         initPlayerSearch(teamMap);
         initWaiverDatabaseTable(teamMap);
+        applyPlayerPageLinksToAnchors();
       })
       .catch(function () {
         initSettingsPage([]);
         initPlayerSearch({});
         initWaiverDatabaseTable({});
+        applyPlayerPageLinksToAnchors();
       });
   });
 })();

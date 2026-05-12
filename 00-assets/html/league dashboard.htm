@@ -160,6 +160,7 @@
     </section>
   </div>
 
+  <script src="../js/player-page-destination.js"></script>
   <script>
     const DATA_URLS = {
       standings: "../../00-build/database/standings.json",
@@ -248,8 +249,23 @@
       return `../../${clean}`;
     }
 
-    function normalizePlayerHref(url, name) {
+    function normalizePlayerHref(url, name, teamName) {
       const raw = String(url || "").trim();
+      const links = window.leaguePlayerPageLinks;
+      if (links && links.isClassic()) {
+        if (raw) {
+          return links.hrefFromAssetsHtml(raw);
+        }
+        const p = findPlayerByName(name || "", teamName || "");
+        return p && p.url ? links.hrefFromAssetsHtml(p.url) : "#";
+      }
+      if (links) {
+        if (raw) {
+          const h = links.hrefFromAssetsHtml(raw);
+          if (h !== "#") return h;
+        }
+        return links.unifiedHrefByNameFromAssetsHtml(name || "");
+      }
       const idMatch = raw.match(/player(\d+)\.htm/i);
       if (idMatch) return `./unified-player.htm?id=${encodeURIComponent(`player${idMatch[1]}`)}`;
       return `./unified-player.htm?name=${encodeURIComponent(name || "")}`;
@@ -329,7 +345,7 @@
       if (!injuries.length) { root.innerHTML = `<li class="injury-row">No injury data available</li>`; return; }
       root.innerHTML = injuries.map((item) => {
         const player = findPlayerByName(item.name, item.teamName);
-        const nameHref = player ? normalizePlayerHref(player.url, player.name) : normalizePlayerHref("", item.name);
+        const nameHref = player ? normalizePlayerHref(player.url, player.name, item.teamName) : normalizePlayerHref("", item.name, item.teamName);
         return `<li class="injury-row"><div class="injury-name"><a href="${nameHref}">${item.name || "Unknown Player"}</a></div><div class="injury-team"><a href="${normalizeHref(item.rosterUrl)}">${item.teamName || "Unknown Team"}</a></div><div class="injury-meta"><span>${item.injury || "Injury"}</span><span class="injury-len">${item.length || "--"} days</span></div></li>`;
       }).join("");
     }

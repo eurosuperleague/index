@@ -596,6 +596,32 @@
     .media-mentions-all:hover {
       text-decoration: underline;
     }
+    .player-media-tags {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.28rem;
+      margin-top: 0.38rem;
+    }
+    .player-media-tags:empty {
+      display: none;
+    }
+    .media-tag-chip {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.62rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      padding: 0.12rem 0.38rem;
+      text-transform: uppercase;
+    }
+    .media-tag-chip--auto {
+      background: var(--soft);
+      color: var(--ink);
+      font-weight: 750;
+    }
     .gamelog-wrap {
       max-height: min(52vh, 380px);
       overflow: auto;
@@ -758,6 +784,7 @@
         </div>
         <div class="meta-line" id="playerMeta">Loading player data</div>
         <div class="tag-row" id="heroPills"></div>
+        <div class="player-media-tags" id="heroMediaTags"></div>
       </div>
       <div class="header-statline" id="headerStatline"></div>
     </header>
@@ -783,7 +810,7 @@
         <section class="panel layout-player-articles" id="playerArticlesPanel">
           <div class="panel-head">
             <h2 class="panel-title">ESL Media</h2>
-            <div class="note" id="playerArticlesNote">Mentions</div>
+            <div class="note" id="playerArticlesNote">Tags &amp; mentions</div>
           </div>
           <div class="media-mentions-body" id="playerArticlesList"></div>
         </section>
@@ -813,7 +840,9 @@
     </main>
   </div>
 
+  <script src="../js/player-page-destination.js"></script>
   <script src="../js/roster-data-service.js"></script>
+  <script src="../../00-eslmedia/content/media-articles.js"></script>
   <script>
     const DATA_URLS = {
       players: "../../00-build/database/players.json",
@@ -911,7 +940,9 @@
     }
 
     function normalizeName(v) {
-      return clean(v).toLowerCase().replace(/[^a-z0-9]/g, "");
+      const base = clean(String(v || "")).toLowerCase();
+      const folded = base.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      return folded.replace(/[^a-z0-9]/g, "");
     }
 
     function slugify(v) {
@@ -1075,6 +1106,7 @@
             id: playerIdFromUrl(player.url),
             name: player.name,
             team,
+            url: player.url,
             label: `${player.name} - ${team}`,
             search: normalizeName(`${player.name} ${team} ${player.pos || ""}`)
           };
@@ -1090,6 +1122,11 @@
 
       function goToPlayer(item) {
         if (!item || !item.id) return;
+        const links = window.leaguePlayerPageLinks;
+        if (links && links.isClassic() && item.url) {
+          window.location.href = links.hrefFromAssetsHtml(item.url);
+          return;
+        }
         window.location.href = `./unified-player.htm?id=${encodeURIComponent(item.id)}`;
       }
 
@@ -1180,6 +1217,14 @@
         p.currentSalaryText ? `<span class="info-chip">${p.currentSalaryText}</span>` : "",
         injury ? `<span class="info-chip injury-chip">${injury.injury} | ${injury.length}d</span>` : ""
       ].filter(Boolean).join("");
+      const curatedTags = Array.isArray(p.mediaTags) ? p.mediaTags.map((t) => clean(t)).filter(Boolean) : [];
+      const slug = normalizeName(p.name || "");
+      const mediaChips = curatedTags.length
+        ? curatedTags.map((t) => `<span class="media-tag-chip" title="ESL Media match tag">${escapeHtml(t)}</span>`).join("")
+        : slug
+          ? `<span class="media-tag-chip media-tag-chip--auto" title="Default catalog tag for ESL Media playerTags">${escapeHtml(slug)}</span>`
+          : "";
+      document.getElementById("heroMediaTags").innerHTML = mediaChips;
       document.getElementById("skillRow").innerHTML = skillTags(p).map(([label, title]) =>
         `<span class="skill-chip" title="${title}">${label}</span>`
       ).join("");
@@ -1276,24 +1321,62 @@
       makeTableSortable(table);
     }
 
+    function getPlayerMediaMatchSlugs(player) {
+      const set = new Set();
+      if (!player) return set;
+      const nameSlug = normalizeName(player.name || "");
+      if (nameSlug) set.add(nameSlug);
+      (Array.isArray(player.mediaTags) ? player.mediaTags : []).forEach((tag) => {
+        const s = normalizeName(tag);
+        if (s) set.add(s);
+      });
+      return set;
+    }
+
+    function articleMatchesPlayerMedia(article, player) {
+      if (!player) return false;
+      const slugs = getPlayerMediaMatchSlugs(player);
+      const playerNameKey = clean(String(player.name || "")).toLowerCase();
+      const tagList = article.playerTags;
+      if (Array.isArray(tagList) && tagList.length) {
+        for (let i = 0; i < tagList.length; i += 1) {
+          const raw = String(tagList[i] || "");
+          if (slugs.has(normalizeName(raw))) return true;
+          if (playerNameKey && clean(raw).toLowerCase() === playerNameKey) return true;
+        }
+      }
+      const name = player.name ? player.name : "";
+      return articleMentionsPlayer(article, name);
+    }
+
     function loadEslMediaArticles() {
-      if (Array.isArray(window.ESL_MEDIA_ARTICLES)) {
-        return Promise.resolve(window.ESL_MEDIA_ARTICLES);
+      const cached = window.ESL_MEDIA_ARTICLES;
+      if (Array.isArray(cached) && cached.length) {
+        return Promise.resolve(cached);
       }
       if (eslMediaArticlesLoad) return eslMediaArticlesLoad;
       eslMediaArticlesLoad = new Promise((resolve) => {
         const s = document.createElement("script");
         s.src = "../../00-eslmedia/content/media-articles.js";
         s.async = true;
-        s.onload = () => resolve(Array.isArray(window.ESL_MEDIA_ARTICLES) ? window.ESL_MEDIA_ARTICLES : []);
-        s.onerror = () => resolve([]);
+        s.onload = () => {
+          const list = Array.isArray(window.ESL_MEDIA_ARTICLES) ? window.ESL_MEDIA_ARTICLES : [];
+          resolve(list);
+        };
+        s.onerror = () => {
+          eslMediaArticlesLoad = null;
+          resolve([]);
+        };
         document.head.appendChild(s);
       });
       return eslMediaArticlesLoad;
     }
 
     function articleHaystack(article) {
-      return [article.title, article.blurb, article.tag, article.meta, article.desk, article.category, article.author]
+      const tagBits = Array.isArray(article.playerTags) && article.playerTags.length
+        ? article.playerTags.map((t) => String(t || "")).join(" ")
+        : "";
+      return [article.title, article.blurb, article.tag, article.meta, article.desk, article.category, article.author, tagBits]
         .filter(Boolean)
         .join(" ")
         .toLowerCase();
@@ -1317,20 +1400,21 @@
       root.innerHTML = `<div class="empty">Loading ESL Media…</div>`;
       if (note) note.textContent = "Loading catalog";
       const articles = await loadEslMediaArticles();
-      const name = state.current && state.current.name ? state.current.name : "";
+      const player = state.current;
+      const name = player && player.name ? player.name : "";
       const matches = articles
-        .filter((a) => articleMentionsPlayer(a, name))
+        .filter((a) => articleMatchesPlayerMedia(a, player))
         .sort((a, b) => String(b.sortKey || "").localeCompare(String(a.sortKey || ""), undefined, { numeric: true }))
-        .slice(0, 8);
+        .slice(0, 3);
       const browse = `<a class="media-mentions-all" href="../../00-eslmedia/content/all-articles.html">Browse all articles</a>`;
       if (note) {
         note.textContent = matches.length
-          ? `${matches.length} recent mention${matches.length === 1 ? "" : "s"}`
-          : "No mentions in catalog";
+          ? `${matches.length} most recent piece${matches.length === 1 ? "" : "s"}`
+          : "No catalog matches";
       }
       if (!matches.length) {
         root.innerHTML =
-          `<div class="empty">No ESL Media pieces in this catalog mention ${escapeHtml(name || "this player")} yet.</div>${browse}`;
+          `<div class="empty">No ESL Media pieces match this player’s media tags or name in this catalog yet.</div>${browse}`;
         return;
       }
       root.innerHTML =
