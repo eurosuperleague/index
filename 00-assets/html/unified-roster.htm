@@ -24,6 +24,7 @@
       background: var(--paper);
       color: var(--ink);
       font-family: var(--font-sans);
+      overflow-x: visible;
     }
     .shell {
       width: min(1250px, 100%);
@@ -193,15 +194,29 @@
     }
     .table-wrap {
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-x: contain;
       border: 1px solid var(--line);
+      box-shadow: inset -14px 0 14px -14px rgba(17, 27, 54, 0.1);
     }
     table.data-table {
       width: 100%;
       border-collapse: collapse;
       min-width: 900px;
     }
-    #seasonInfoTable {
-      min-width: 0;
+    /*
+      styles.css sets `table { overflow: hidden }` which breaks position:sticky on cells
+      (sticky cannot escape the table's scrollport). Classic roster uses a wrapper + visible overflow.
+    */
+    table.data-table#playerTable,
+    table.data-table#statsTable {
+      overflow: visible;
+      border-radius: 0;
+      box-shadow: none;
+      width: max-content !important;
+      max-width: none !important;
+      min-width: 900px;
+      table-layout: auto !important;
     }
     .data-table th,
     .data-table td {
@@ -248,16 +263,23 @@
       font-weight: 800;
       color: var(--team-color);
     }
+    #playerTable.data-table th:first-child,
+    #playerTable.data-table td:first-child,
+    #statsTable.data-table th:first-child,
+    #statsTable.data-table td:first-child {
+      min-width: 216px;
+      width: 216px;
+    }
+    #playerTable.has-number-first th:nth-child(2),
+    #playerTable.has-number-first td:nth-child(2) {
+      min-width: 172px;
+      width: 172px;
+      text-align: left;
+    }
     #playerTable.has-number-first th:first-child,
     #playerTable.has-number-first td:first-child {
       min-width: 52px;
       width: 52px;
-    }
-    #playerTable.has-number-first th:nth-child(2),
-    #playerTable.has-number-first td:nth-child(2) {
-      min-width: 190px;
-      width: 190px;
-      text-align: left;
     }
     .dot {
       width: 11px;
@@ -283,24 +305,34 @@
       min-height: 0;
       height: 100%;
     }
-    .top-modules .table-wrap {
+    .top-modules .table-wrap.season-info-scroll {
       flex: 1;
       min-height: 0;
-      overflow: auto;
+      min-width: 0;
       display: flex;
+      align-items: flex-start;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
     }
     #seasonInfoTable {
       min-width: 0;
+      width: 100%;
       table-layout: fixed;
-      height: 100%;
     }
     #seasonInfoTable th:first-child,
     #seasonInfoTable td:first-child {
-      min-width: 130px;
-      width: 130px;
+      min-width: 0;
+      width: 96px;
+      max-width: 104px;
       position: static;
       left: auto;
       z-index: auto;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      text-align: left;
+      hyphens: auto;
     }
     #seasonInfoTable th,
     #seasonInfoTable td {
@@ -448,6 +480,225 @@
       .hero-actions { grid-column: 1 / -1; justify-items: stretch; }
       .team-picker, .btn-link { min-width: 0; width: 100%; }
       .top-modules { grid-template-columns: 1fr; }
+      .top-modules .table-wrap.season-info-scroll {
+        max-height: min(56vh, 520px);
+      }
+    }
+    .panel-head-end {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.45rem;
+      justify-content: flex-end;
+      max-width: 100%;
+    }
+    .column-preset-wrap {
+      display: none;
+      align-items: center;
+      gap: 0.28rem;
+      flex-shrink: 0;
+    }
+    .preset-label {
+      font-size: 0.58rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .preset-btn {
+      border: 1px solid var(--line);
+      background: #faf8f2;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.58rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.28rem 0.38rem;
+      cursor: pointer;
+    }
+    .preset-btn.active {
+      background: var(--team-color);
+      border-color: var(--team-color);
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      body { padding: 0.55rem; }
+      .shell {
+        gap: 0.65rem;
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+      .hero { padding: 0.45rem 0.55rem; gap: 0.55rem; }
+      .logo, .logo-fallback { width: 54px; height: 54px; }
+      .panel { padding: 0.62rem; }
+      .panel-head { align-items: stretch; }
+      .panel-head-end {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .column-preset-wrap { display: flex; }
+      .tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 0.28rem;
+        flex: 1;
+        min-width: 0;
+        padding-bottom: 0.15rem;
+      }
+      .tab-btn { flex: 0 0 auto; font-size: 0.62rem; padding: 0.32rem 0.42rem; }
+      table.data-table#playerTable,
+      table.data-table#statsTable {
+        min-width: 720px;
+        border-collapse: separate;
+        border-spacing: 0;
+      }
+      #playerTable.data-table th,
+      #playerTable.data-table td,
+      #statsTable.data-table th,
+      #statsTable.data-table td {
+        padding: 0.32rem 0.34rem;
+        font-size: 0.8rem;
+      }
+      #playerTable.data-table th,
+      #statsTable.data-table th {
+        font-size: 0.58rem;
+      }
+      #playerTable.data-table th:first-child,
+      #playerTable.data-table td:first-child,
+      #statsTable.data-table th:first-child,
+      #statsTable.data-table td:first-child {
+        position: sticky;
+        left: 0;
+        min-width: 148px;
+        width: 148px;
+        box-shadow: 1px 0 0 0 var(--line);
+        z-index: 2;
+      }
+      #playerTable.data-table td:first-child,
+      #statsTable.data-table td:first-child {
+        z-index: 1;
+        background: #f5f2eb;
+      }
+      #playerTable.data-table th:first-child,
+      #statsTable.data-table th:first-child {
+        z-index: 4;
+        background: var(--team-color);
+      }
+      #seasonInfoTable th,
+      #seasonInfoTable td {
+        padding: 0.3rem 0.24rem;
+        font-size: 0.76rem;
+      }
+      .calendar { padding: 0.42rem; }
+      .weekday-grid,
+      .day-grid { gap: 0.2rem; }
+      .weekday { font-size: 0.58rem; padding: 0.2rem 0; }
+      .day-num { font-size: 0.88rem; }
+      .day-num-score { font-size: 0.58rem; }
+      .mini-logo,
+      .mini-logo-fallback {
+        width: 20px;
+        height: 20px;
+        font-size: 0.58rem;
+      }
+      .mini-logo-row { min-height: 20px; gap: 0.08rem; }
+      .top-modules {
+        min-width: 0;
+      }
+      .top-modules > .panel {
+        min-width: 0;
+      }
+      .shell > .panel {
+        min-height: 0;
+        min-width: 0;
+      }
+      .panel.roster-data-panel {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        min-width: 0;
+      }
+      .panel.roster-data-panel .panel-head {
+        flex-shrink: 0;
+      }
+      .roster-table-scroll {
+        position: relative;
+        flex: 1 1 auto;
+        min-height: 0;
+        min-width: 0;
+        width: 100%;
+        height: min(58vh, 520px);
+        max-height: min(58vh, 520px);
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+        touch-action: pan-x pan-y;
+        isolation: isolate;
+      }
+      #playerTable.data-table td:not(:first-child),
+      #statsTable.data-table td:not(:first-child) {
+        position: static;
+        left: auto;
+        z-index: auto;
+      }
+      #playerTable.data-table th:not(:first-child),
+      #statsTable.data-table th:not(:first-child) {
+        position: sticky;
+        top: 0;
+        left: auto;
+        z-index: 2;
+      }
+      .schedule-panel {
+        align-self: start;
+      }
+      .schedule-panel .calendar {
+        width: 100%;
+        max-width: min(280px, 92vw);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.28rem;
+      }
+      .schedule-panel .schedule-head {
+        margin-bottom: 0.38rem;
+      }
+      .schedule-panel .month-title {
+        font-size: 0.72rem;
+      }
+      .schedule-panel .month-nav {
+        padding: 0.22rem 0.32rem;
+      }
+      .schedule-panel .weekday-grid,
+      .schedule-panel .day-grid {
+        gap: 0.12rem;
+      }
+      .schedule-panel .weekday {
+        font-size: 0.52rem;
+        padding: 0.14rem 0;
+      }
+      .schedule-panel .day-num {
+        font-size: 0.68rem;
+      }
+      .schedule-panel .day-num-score {
+        font-size: 0.5rem;
+      }
+      .schedule-panel .mini-logo,
+      .schedule-panel .mini-logo-fallback {
+        width: 16px;
+        height: 16px;
+        font-size: 0.48rem;
+      }
+      .schedule-panel .mini-logo-row {
+        min-height: 16px;
+        gap: 0.05rem;
+      }
+      .schedule-panel .legend {
+        font-size: 0.58rem;
+        gap: 0.45rem;
+        margin-top: 0.35rem;
+      }
     }
   </style>
 </head>
@@ -467,7 +718,7 @@
     </section>
 
     <section class="top-modules">
-      <section class="panel">
+      <section class="panel schedule-panel">
         <div class="panel-head">
           <h2 class="panel-title">Season Schedule</h2>
           <div class="status" id="scheduleStatus"></div>
@@ -491,28 +742,42 @@
         <div class="panel-head">
           <h2 class="panel-title">Season Info</h2>
         </div>
-        <div class="table-wrap">
+        <div class="table-wrap season-info-scroll">
           <table class="data-table" id="seasonInfoTable"></table>
         </div>
       </section>
     </section>
 
-    <section class="panel">
+    <section class="panel roster-data-panel">
       <div class="panel-head">
         <h2 class="panel-title">Player Table</h2>
-        <div class="tabs" id="playerTabs"></div>
+        <div class="panel-head-end">
+          <div class="column-preset-wrap" aria-label="Column layout">
+            <span class="preset-label">Cols</span>
+            <button type="button" class="preset-btn" data-preset="full">Full</button>
+            <button type="button" class="preset-btn" data-preset="essential">Ess.</button>
+          </div>
+          <div class="tabs" id="playerTabs"></div>
+        </div>
       </div>
-      <div class="table-wrap">
+      <div class="table-wrap roster-table-scroll">
         <table class="data-table" id="playerTable"></table>
       </div>
     </section>
 
-    <section class="panel">
+    <section class="panel roster-data-panel">
       <div class="panel-head">
         <h2 class="panel-title">Stats Table</h2>
-        <div class="tabs" id="statsTabs"></div>
+        <div class="panel-head-end">
+          <div class="column-preset-wrap" aria-label="Column layout">
+            <span class="preset-label">Cols</span>
+            <button type="button" class="preset-btn" data-preset="full">Full</button>
+            <button type="button" class="preset-btn" data-preset="essential">Ess.</button>
+          </div>
+          <div class="tabs" id="statsTabs"></div>
+        </div>
       </div>
-      <div class="table-wrap">
+      <div class="table-wrap roster-table-scroll">
         <table class="data-table" id="statsTable"></table>
       </div>
     </section>
@@ -521,6 +786,35 @@
   <script src="../js/player-page-destination.js"></script>
   <script src="../js/roster-data-service.js"></script>
   <script>
+
+    const COLUMN_PRESET_KEY = "unifiedRosterColumnPreset";
+    const COLUMN_PRESET_MQ = "(max-width: 600px)";
+
+    function readColumnPreset() {
+      try {
+        const v = localStorage.getItem(COLUMN_PRESET_KEY);
+        return v === "essential" ? "essential" : "full";
+      } catch {
+        return "full";
+      }
+    }
+
+    function isNarrowForColumnPreset() {
+      return typeof window !== "undefined" && window.matchMedia && window.matchMedia(COLUMN_PRESET_MQ).matches;
+    }
+
+    function essentialColumnIndices(headers, nameColumnIndex) {
+      const maxCols = 10;
+      const picked = [];
+      const add = (i) => {
+        if (!Number.isInteger(i) || i < 0 || i >= headers.length) return;
+        if (!picked.includes(i)) picked.push(i);
+      };
+      add(0);
+      if (Number.isInteger(nameColumnIndex) && nameColumnIndex >= 0) add(nameColumnIndex);
+      for (let i = 0; i < headers.length && picked.length < maxCols; i += 1) add(i);
+      return picked.sort((a, b) => a - b);
+    }
 
     const state = {
       standings: [],
@@ -535,7 +829,8 @@
       parsedSections: {},
       playerMode: "attributes",
       statsMode: "Season Stats",
-      monthCursor: null
+      monthCursor: null,
+      columnPreset: readColumnPreset()
     };
     const PAGE_VIEWPORT = "width=device-width, initial-scale=1.0";
     let parentViewportMeta = null;
@@ -736,6 +1031,49 @@
         headers = headers.slice(0, -1);
         normalizedRows.forEach((r) => r.pop());
       }
+      el.removeAttribute("data-striped-number-col");
+      if (isNarrowForColumnPreset()) {
+        if (el.id === "playerTable" && el.classList.contains("has-number-first") && headers.length > 2) {
+          headers = headers.slice(1);
+          for (let r = 0; r < normalizedRows.length; r += 1) {
+            normalizedRows[r] = normalizedRows[r].slice(1);
+          }
+          el.classList.remove("has-number-first");
+        } else if (el.id === "statsTable" && headers.length > 2 && findNameColumnIndex(headers) === 1) {
+          headers = headers.slice(1);
+          for (let r = 0; r < normalizedRows.length; r += 1) {
+            normalizedRows[r] = normalizedRows[r].slice(1);
+          }
+          el.dataset.stripedNumberCol = "1";
+        }
+      }
+      const narrowEssential =
+        isNarrowForColumnPreset() &&
+        state.columnPreset === "essential" &&
+        (el.id === "playerTable" || el.id === "statsTable") &&
+        headers.length > 2;
+      if (narrowEssential) {
+        const ni =
+          Number.isInteger(options.nameColumnIndex) && options.nameColumnIndex >= 0
+            ? options.nameColumnIndex
+            : findNameColumnIndex(headers);
+        const idx = essentialColumnIndices(headers, ni);
+        if (idx.length < headers.length) {
+          headers = idx.map((i) => headers[i]);
+          for (let r = 0; r < normalizedRows.length; r += 1) {
+            normalizedRows[r] = idx.map((i) => normalizedRows[r][i]);
+          }
+        }
+      }
+      const resolvedNameCol = findNameColumnIndex(headers);
+      const nameColIdx =
+        resolvedNameCol >= 0
+          ? resolvedNameCol
+          : Number.isInteger(options.nameColumnIndex) &&
+              options.nameColumnIndex >= 0 &&
+              options.nameColumnIndex < headers.length
+            ? options.nameColumnIndex
+            : -1;
       const head = `<thead><tr>${headers.map((h) => `<th>${h || "-"}</th>`).join("")}</tr></thead>`;
       const bodyRows = normalizedRows.length
         ? normalizedRows.map((r) => `<tr>${headers.map((_, i) => {
@@ -744,7 +1082,7 @@
               return `<td><span class="dot" style="background:${cell.color}"></span></td>`;
             }
             const text = cell.text || "-";
-            if (options.nameColumnIndex === i && text !== "-") {
+            if (nameColIdx === i && text !== "-") {
               const href = toPlayerHref(cell.href) || resolvePlayerHref(text);
               if (href) {
                 return `<td><a class="player-name-link" href="${href}">${text}</a></td>`;
@@ -869,7 +1207,48 @@
       const table = document.getElementById("statsTable");
       const { headers, rows } = headerAndRows(state.parsedSections[state.statsMode]);
       renderTable(table, headers, rows, { nameColumnIndex: findNameColumnIndex(headers) });
-      highlightStatLeaders(table, 2);
+      const leaderFix = table.dataset.stripedNumberCol === "1" ? 1 : 2;
+      highlightStatLeaders(table, leaderFix);
+    }
+
+    let columnPresetShellBound = false;
+    let columnPresetResizeTimer = null;
+
+    function syncColumnPresetButtons() {
+      document.querySelectorAll(".preset-btn").forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.preset === state.columnPreset);
+      });
+    }
+
+    function onColumnPresetBarClick(e) {
+      const btn = e.target.closest(".preset-btn");
+      if (!btn) return;
+      const preset = btn.dataset.preset;
+      if (preset !== "essential" && preset !== "full") return;
+      if (state.columnPreset === preset) return;
+      state.columnPreset = preset;
+      try {
+        localStorage.setItem(COLUMN_PRESET_KEY, preset);
+      } catch {
+        /* ignore */
+      }
+      syncColumnPresetButtons();
+      renderPlayerTable();
+      renderStatsTable();
+    }
+
+    function bindColumnPresetControls() {
+      const shell = document.querySelector(".shell");
+      if (!shell || columnPresetShellBound) return;
+      columnPresetShellBound = true;
+      shell.addEventListener("click", onColumnPresetBarClick);
+      window.addEventListener("resize", () => {
+        clearTimeout(columnPresetResizeTimer);
+        columnPresetResizeTimer = setTimeout(() => {
+          renderPlayerTable();
+          renderStatsTable();
+        }, 180);
+      });
     }
 
     function renderSeasonInfoTable() {
@@ -1054,6 +1433,8 @@
         renderPlayerTable();
         renderStatsTable();
         renderCalendar();
+        syncColumnPresetButtons();
+        bindColumnPresetControls();
         document.getElementById("prevMonth").addEventListener("click", () => {
           if (!state.monthCursor) return;
           state.monthCursor = new Date(state.monthCursor.getFullYear(), state.monthCursor.getMonth() - 1, 1);
