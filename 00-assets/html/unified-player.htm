@@ -978,6 +978,20 @@
       return value === undefined || value === null || value === "" ? "--" : value;
     }
 
+    function statNumber(value) {
+      const n = Number(value);
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function totalRebounds(row) {
+      if (!row) return undefined;
+      if (row.reb !== undefined && row.reb !== null && row.reb !== "") return row.reb;
+      const orb = statNumber(row.orb);
+      const drb = statNumber(row.drb);
+      if (orb === null && drb === null) return undefined;
+      return Math.round(((orb || 0) + (drb || 0)) * 10) / 10;
+    }
+
     function ratingTierClass(value) {
       const n = num(value) || 0;
       if (n >= 151) return "rating-purple";
@@ -1229,7 +1243,7 @@
         `<span class="skill-chip" title="${title}">${label}</span>`
       ).join("");
       document.getElementById("headerStatline").innerHTML = [
-        ["PTS", row.pts], ["REB", row.reb !== undefined ? row.reb : row.drb], ["AST", row.ast],
+        ["PTS", row.pts], ["REB", totalRebounds(row)], ["AST", row.ast],
         ["STL", row.stl], ["BLK", row.blk], ["MIN", row.min]
       ].map(([label, value]) => `<div class="head-stat"><span class="head-stat-value">${fmt(value)}</span><span class="head-stat-label">${label}</span></div>`).join("");
       document.getElementById("snapshotNote").textContent = row.season ? `${row.season} season row` : "No season averages found";
