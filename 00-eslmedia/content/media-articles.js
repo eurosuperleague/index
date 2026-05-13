@@ -27,6 +27,19 @@ window.ESL_TEAM_LOGOS = {
 
 window.ESL_MEDIA_ARTICLES = [
   {
+    file: "articles/phil_smith_chelsea_interview.html",
+    title: "EXCLUSIVE: Chelsea Source Reaches Phil Smith Breaking Point",
+    category: "Interview",
+    desk: "Interview",
+    sortKey: "2026-05-13-08",
+    tag: "Chelsea",
+    author: "Malik Sparks",
+    meta: "Fan Interview",
+    blurb: "A fed-up Chelsea voice sits down with Malik Sparks to explain why Phil Smith's reserve point-guard minutes have become a full-team complaint.",
+    teams: ["Chelsea"],
+    playerTags: ["Phil Smith"]
+  },
+  {
     file: "articles/january_1982_mvp_race.html",
     title: "These Ballots Are Clearer, Not Settled",
     category: "Analysis",
