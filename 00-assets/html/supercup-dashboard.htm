@@ -44,14 +44,10 @@
     .standings-table th:first-child,.standings-table td:first-child { text-align:left; padding-left:0; }
     .standings-table th { font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--mid); }
     .standings-table .team-name { font-family:var(--font-serif); font-size:1.02rem; }
-    .standings-table tr.race-champion { background:#f4d35e; }
-    .standings-table tr.race-promoted { background:#b7e3be; }
-    .standings-table tr.race-relegated { background:#efb6b6; }
     .standings-cards { display:none; }
+    .standings-table tr.cutoff-row td { border-bottom:3px solid var(--blue); }
     .standing-card { border:1px solid var(--line); background:#faf8f2; color:inherit; display:grid; gap:.5rem; padding:.65rem; text-decoration:none; }
-    .standing-card.race-champion { background:#f4d35e; }
-    .standing-card.race-promoted { background:#b7e3be; }
-    .standing-card.race-relegated { background:#efb6b6; }
+    .standing-card.cutoff-card { border-bottom:3px solid var(--blue); }
     .standing-card-head { align-items:center; display:flex; justify-content:space-between; gap:.55rem; }
     .standing-card-team { font-family:var(--font-serif); font-size:1.05rem; line-height:1.15; }
     .standing-card-rank { color:var(--mid); font-size:.64rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
@@ -144,8 +140,8 @@
           </div>
         </div>
         <table class="standings-table">
-          <thead><tr><th>Team</th><th>W-L</th><th>GB</th><th>Diff</th><th>Streak</th></tr></thead>
-          <tbody id="standingsBody"><tr><td colspan="5">Loading standings</td></tr></tbody>
+          <thead><tr><th>Seed</th><th>Team</th><th>W-L</th><th>GB</th><th>Diff</th><th>Streak</th></tr></thead>
+          <tbody id="standingsBody"><tr><td colspan="6">Loading standings</td></tr></tbody>
         </table>
         <div class="standings-cards" id="standingsCards"></div>
 
@@ -313,8 +309,11 @@
     }
 
     function getRaceMeta(activeSection, index, total) {
-      if (index === 0) return { className: "race-champion", label: "Lead" };
-      return { className: "", label: "" };
+      return {
+        className: index === 15 ? "cutoff-row" : "",
+        cardClassName: index === 15 ? "cutoff-card" : "",
+        label: index < 16 ? "In" : "Out"
+      };
     }
 
     function renderStandings(activeSection) {
@@ -325,13 +324,14 @@
         const diffClass = num(team.diff) >= 0 ? "diff-pos" : "diff-neg";
         const race = getRaceMeta(activeSection, index, teams.length);
         const raceLabel = race.label ? `<span class="race-pill">${race.label}</span>` : "";
-        return `<tr class="${race.className}"><td class="team-name"><a href="${normalizeHref(team.rosterUrl)}">${team.team}</a>${raceLabel}</td><td>${team.wins}-${team.losses}</td><td>${formatGb(team.gb)}</td><td class="${diffClass}">${formatSigned(team.diff)}</td><td>${team.streak || "-"}</td></tr>`;
+        const rowClass = [race.className].filter(Boolean).join(" ");
+        return `<tr class="${rowClass}"><td>${index + 1}</td><td class="team-name"><a href="${normalizeHref(team.rosterUrl)}">${team.team}</a>${raceLabel}</td><td>${team.wins}-${team.losses}</td><td>${formatGb(team.gb)}</td><td class="${diffClass}">${formatSigned(team.diff)}</td><td>${team.streak || "-"}</td></tr>`;
       }).join("");
       standingsCards.innerHTML = teams.map((team, index) => {
         const diffClass = num(team.diff) >= 0 ? "diff-pos" : "diff-neg";
         const race = getRaceMeta(activeSection, index, teams.length);
         const raceLabel = race.label ? `<span class="race-pill">${race.label}</span>` : "";
-        return `<a class="standing-card ${race.className}" href="${normalizeHref(team.rosterUrl)}">
+        return `<a class="standing-card ${race.cardClassName || ""}" href="${normalizeHref(team.rosterUrl)}">
           <div class="standing-card-head"><div class="standing-card-team">${team.team}${raceLabel}</div><div class="standing-card-rank">#${index + 1}</div></div>
           <div class="standing-card-stats">
             <div class="standing-card-stat"><span>Record</span><strong>${team.wins}-${team.losses}</strong></div>
@@ -524,7 +524,7 @@
         bindMobileCollapses();
       } catch (error) {
         status.textContent = "Dashboard unavailable";
-        document.getElementById("standingsBody").innerHTML = `<tr><td colspan="5">Could not load dashboard feeds</td></tr>`;
+        document.getElementById("standingsBody").innerHTML = `<tr><td colspan="6">Could not load dashboard feeds</td></tr>`;
       }
     }
     window.addEventListener("pagehide", () => setParentFluidContent(false));

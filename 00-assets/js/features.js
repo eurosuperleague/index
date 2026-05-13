@@ -19,8 +19,10 @@
   var ABSOLUTE_DEPTH_CHARTS_PATH = "/00-assets/html/depthcharts.htm";
   var ABSOLUTE_YOUTH_INTAKE_PATH = "/00-assets/html/youth-intake.htm";
   var ABSOLUTE_SETTINGS_PATH = "/00-assets/html/settings.htm";
+  var ABSOLUTE_MAIN_INDEX_PATH = "/index.htm";
   var ABSOLUTE_LEAGUE_DASHBOARD_PATH = "/00-assets/html/league%20dashboard.htm";
   var ABSOLUTE_LEAGUE_LOGO_PATH = "/00-assets/images/ESLcropped-removebg-preview.png";
+  var ABSOLUTE_SUPERCUP_INDEX_PATH = "/00-SuperCup/index.htm";
   var ABSOLUTE_SUPERCUP_DASHBOARD_PATH = "/00-assets/html/supercup-dashboard.htm";
   var ABSOLUTE_SUPERCUP_LOGO_PATH = "/00-assets/images/eslsupercup.png";
 
@@ -717,6 +719,8 @@
       ".league-menu-link, .league-menu-toggle { font-family: 'Inter', Tahoma, Arial, sans-serif; text-decoration: none; }",
       ".league-menu-link { color: #ffffff; display: block; font-size: 9.8pt; font-weight: 600; line-height: 1.08; padding: 6px 7px 6px 9px; }",
       ".league-menu-link:hover { background: rgba(255, 255, 255, 0.08); color: #ffffff; text-decoration: none; }",
+      ".league-menu-link--accent { color: #d4af5a; }",
+      ".league-menu-link--accent:hover { color: #e3c777; }",
       ".league-menu-feature { align-items: center; background: #111b36; color: #ffffff !important; display: flex; justify-content: center; min-height: 42px; padding: 5px 2px; }",
       ".league-menu-feature:hover { background: rgba(255, 255, 255, 0.08); }",
       ".league-menu-feature-row { align-items: center; border-bottom: 1px solid rgba(148, 163, 184, 0.45); display: flex; justify-content: center; min-height: 50px; padding: 5px 7px; }",
@@ -724,10 +728,13 @@
         ".league-menu-logo--supercup { filter: none; }",
         ".league-menu-eslm-logo { display: block; max-width: 94px; width: 100%; max-height: 22px; object-fit: contain; object-position: left center; filter: brightness(0) invert(1); }",
         ".league-menu-eslm-logo--supercup { filter: brightness(0) saturate(100%) invert(76%) sepia(39%) saturate(744%) hue-rotate(356deg) brightness(95%) contrast(94%); }",
+      ".league-menu-back-link { align-items: center; border: 1px solid rgba(212, 175, 90, 0.45); border-radius: 999px; color: #d4af5a; display: inline-flex; flex: 0 0 auto; font-size: 6.8pt; font-weight: 800; letter-spacing: 0.08em; line-height: 1; margin-left: 6px; padding: 5px 8px; text-decoration: none; text-transform: uppercase; white-space: nowrap; }",
+      ".league-menu-back-link:hover { background: rgba(212, 175, 90, 0.12); color: #e3c777; text-decoration: none; }",
       ".league-menu-fallback { color: #ffffff; font: 800 11pt/1 Inter, Tahoma, Arial, sans-serif; letter-spacing: 0.05em; text-transform: uppercase; }",
       ".league-menu-group { border-bottom: 1px solid rgba(148, 163, 184, 0.24); overflow: hidden; }",
       ".league-menu-toggle { align-items: center; background: #111b36; border: 0; color: #94a3b8; cursor: pointer; display: flex; font-size: 8.7pt; font-weight: 800; justify-content: space-between; letter-spacing: 0.09em; padding: 7px 7px 3px 9px; text-align: left; text-transform: uppercase; width: 100%; }",
       ".league-menu-toggle:hover { background: rgba(255, 255, 255, 0.08); }",
+      ".league-menu-shell--supercup .league-menu-toggle { color: #d4af5a; }",
       ".league-menu-toggle::after { content: '-'; font-weight: 800; }",
       ".league-menu-group.is-collapsed .league-menu-toggle::after { content: '+'; }",
       ".league-menu-links { display: flex; flex-direction: column; gap: 0; padding-top: 0; }",
@@ -1021,6 +1028,12 @@
     return link;
   }
 
+  function makeBackToIndexLink(label, className) {
+    var link = makeMenuLink(label || "Back to Index", ABSOLUTE_MAIN_INDEX_PATH, className || "league-menu-link");
+    link.target = "_top";
+    return link;
+  }
+
   function makeEslMediaLogoLink() {
     var isSuperCup = isSuperCupPage();
     var link = makeMenuLink("", ABSOLUTE_ESL_MEDIA_PATH);
@@ -1071,6 +1084,15 @@
         menuLink.target = link.target;
       }
 
+      if (link.className) {
+        String(link.className)
+          .split(/\s+/)
+          .filter(Boolean)
+          .forEach(function (className) {
+            menuLink.classList.add(className);
+          });
+      }
+
       linkWrap.appendChild(menuLink);
     });
 
@@ -1101,6 +1123,8 @@
           { label: "Schedule", href: "schedule.htm" },
           { label: "League Leaders", href: "leaders.htm" },
           { label: "Team Leaders", href: "teamleaders.htm" },
+          { label: "Supercup Index", href: ABSOLUTE_SUPERCUP_INDEX_PATH, className: "league-menu-link--accent", target: "_top" },
+          { label: "Supercup KO", href: "/00-assets/html/supercup-knockout.htm", className: "league-menu-link--accent" },
           { label: "Transactions", href: "transactions.htm" }
         ]
       },
@@ -1141,12 +1165,60 @@
           { label: "Playoff Leaders", href: "playoffleaders.htm" }
         ],
         collapsed: true
+        }
+      ];
+      if (isSuperCupPage()) {
+        groups = groups.map(function (group) {
+          if (group.title === "League") {
+            var nextLinks = [];
+            (group.links || []).forEach(function (link) {
+              if (link.label === "Supercup Index" || link.label === "Supercup KO") {
+                return;
+              }
+              nextLinks.push(link);
+              if (link.label === "Team Leaders") {
+                nextLinks.push({ label: "Knockout", href: "/00-assets/html/supercup-knockout.htm", className: "league-menu-link--accent" });
+              }
+            });
+            return {
+              title: group.title,
+              links: nextLinks,
+              collapsed: !!group.collapsed
+            };
+          }
+          if (group.title === "Legacy") {
+            return {
+              title: group.title,
+              links: (group.links || []).map(function (link) {
+                if (link.label === "Playoffs") {
+                  return { label: "Playoffs", href: "/00-assets/html/supercup-knockout.htm" };
+                }
+                return link;
+              }),
+              collapsed: !!group.collapsed
+            };
+          }
+          if (group.title !== "Admin") {
+            return group;
+          }
+          return {
+            title: group.title,
+            links: (group.links || []).filter(function (link) {
+              return link.label !== "Settings";
+            }),
+            collapsed: !!group.collapsed
+          };
+        }).filter(function (group) {
+          return Array.isArray(group.links) && group.links.length > 0;
+        });
       }
-    ];
     var shell = document.createElement("nav");
     var featureRow = document.createElement("div");
 
     shell.className = "league-menu-shell";
+    if (isSuperCupPage()) {
+      shell.className += " league-menu-shell--supercup";
+    }
     shell.setAttribute("aria-label", "League navigation");
     featureRow.className = "league-menu-feature-row";
     featureRow.appendChild(makeLeagueLogoLink());
@@ -1157,6 +1229,9 @@
     groups.forEach(function (group) {
       shell.appendChild(makeMenuGroup(group.title, group.links, { collapsed: !!group.collapsed }));
     });
+    if (isSuperCupPage()) {
+      shell.appendChild(makeBackToIndexLink("Back to Index"));
+    }
 
     document.body.innerHTML = "";
     document.body.appendChild(shell);

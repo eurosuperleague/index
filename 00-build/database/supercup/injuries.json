@@ -8,9 +8,20 @@
             "team": "roster7",
             "teamName": "Ajax",
             "rosterUrl": "./rosters/roster7.htm",
-            "length": "67",
+            "length": "29",
             "injury": "Ruptured Achilles",
             "rowClass": "row1"
+        },
+        {
+            "pos": "SG",
+            "name": "Ricky Sobers",
+            "url": "",
+            "team": "roster8",
+            "teamName": "Aston Villa",
+            "rosterUrl": "./rosters/roster8.htm",
+            "length": "15",
+            "injury": "Stress Fracture",
+            "rowClass": "row2"
         },
         {
             "pos": "C",
@@ -19,31 +30,9 @@
             "team": "roster26",
             "teamName": "Sporting CP",
             "rosterUrl": "./rosters/roster26.htm",
-            "length": "45",
+            "length": "7",
             "injury": "Concussion",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "C",
-            "name": "Rick Robey",
-            "url": "",
-            "team": "roster28",
-            "teamName": "Valencia",
-            "rosterUrl": "./rosters/roster28.htm",
-            "length": "23",
-            "injury": "Patellar Tendanitis",
             "rowClass": "row1"
-        },
-        {
-            "pos": "PF",
-            "name": "John Lambert",
-            "url": "",
-            "team": "roster16",
-            "teamName": "Manchester City",
-            "rosterUrl": "./rosters/roster16.htm",
-            "length": "1",
-            "injury": "Sprained Ankle",
-            "rowClass": "row2"
         }
     ]
 }

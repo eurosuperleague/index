@@ -15,6 +15,12 @@
 
   function getDefaultPage() {
     var settings = getSettings();
+    var isSuperCupIndex = /(?:\/|\\)00-supercup(?:\/|\\)index\.htm$/i.test(window.location.pathname);
+
+    if (isSuperCupIndex) {
+      return "/00-assets/html/supercup-dashboard.htm";
+    }
+
     if (settings.defaultPage === "__unified_team_page__" && settings.defaultTeamPage) {
       return "00-assets/html/unified-roster.htm?file=" + encodeURIComponent(settings.defaultTeamPage);
     }
