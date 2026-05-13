@@ -14,6 +14,15 @@
   var SETTINGS_KEY = "leagueSiteSettings";
   var SETTINGS_STYLE_ID = "league-settings-styles";
   var PREFERENCE_STYLE_ID = "league-preference-styles";
+  var ABSOLUTE_ESL_MEDIA_PATH = "/00-eslmedia/homepage.html";
+  var ABSOLUTE_ESL_MEDIA_LOGO_PATH = "/00-eslmedia/content/article images/ESLM.png";
+  var ABSOLUTE_DEPTH_CHARTS_PATH = "/00-assets/html/depthcharts.htm";
+  var ABSOLUTE_YOUTH_INTAKE_PATH = "/00-assets/html/youth-intake.htm";
+  var ABSOLUTE_SETTINGS_PATH = "/00-assets/html/settings.htm";
+  var ABSOLUTE_LEAGUE_DASHBOARD_PATH = "/00-assets/html/league%20dashboard.htm";
+  var ABSOLUTE_LEAGUE_LOGO_PATH = "/00-assets/images/ESLcropped-removebg-preview.png";
+  var ABSOLUTE_SUPERCUP_DASHBOARD_PATH = "/00-assets/html/supercup-dashboard.htm";
+  var ABSOLUTE_SUPERCUP_LOGO_PATH = "/00-assets/images/eslsupercup.png";
 
   function getSettings() {
     try {
@@ -234,6 +243,10 @@
 
   function isSettingsPage() {
     return /\/settings\.htm$/i.test(window.location.pathname) || /\\settings\.htm$/i.test(window.location.pathname);
+  }
+
+  function isSuperCupPage() {
+    return /(?:\/|\\)00-supercup(?:\/|\\)/i.test(window.location.pathname);
   }
 
   function isPlayerPage() {
@@ -666,7 +679,7 @@
     }
 
     var menuTable = document.querySelector("body > table");
-    if (!menuTable || menuTable.querySelector('a[href="00-assets/html/depthcharts.htm"]')) {
+    if (!menuTable || menuTable.querySelector('a[href="00-assets/html/depthcharts.htm"], a[href="/00-assets/html/depthcharts.htm"]')) {
       return;
     }
 
@@ -678,7 +691,7 @@
     row.setAttribute("valign", "top");
     link.className = "menulink";
     link.target = "data";
-    link.href = "00-assets/html/depthcharts.htm";
+    link.href = ABSOLUTE_DEPTH_CHARTS_PATH;
     link.textContent = "Depth Charts";
     cell.appendChild(link);
     row.appendChild(cell);
@@ -707,8 +720,10 @@
       ".league-menu-feature { align-items: center; background: #111b36; color: #ffffff !important; display: flex; justify-content: center; min-height: 42px; padding: 5px 2px; }",
       ".league-menu-feature:hover { background: rgba(255, 255, 255, 0.08); }",
       ".league-menu-feature-row { align-items: center; border-bottom: 1px solid rgba(148, 163, 184, 0.45); display: flex; justify-content: center; min-height: 50px; padding: 5px 7px; }",
-      ".league-menu-logo { display: block; max-width: 84px; width: 100%; max-height: 38px; object-fit: contain; filter: brightness(0) invert(1); }",
-      ".league-menu-eslm-logo { display: block; max-width: 94px; width: 100%; max-height: 22px; object-fit: contain; object-position: left center; filter: brightness(0) invert(1); }",
+        ".league-menu-logo { display: block; max-width: 84px; width: 100%; max-height: 38px; object-fit: contain; filter: brightness(0) invert(1); }",
+        ".league-menu-logo--supercup { filter: none; }",
+        ".league-menu-eslm-logo { display: block; max-width: 94px; width: 100%; max-height: 22px; object-fit: contain; object-position: left center; filter: brightness(0) invert(1); }",
+        ".league-menu-eslm-logo--supercup { filter: brightness(0) saturate(100%) invert(76%) sepia(39%) saturate(744%) hue-rotate(356deg) brightness(95%) contrast(94%); }",
       ".league-menu-fallback { color: #ffffff; font: 800 11pt/1 Inter, Tahoma, Arial, sans-serif; letter-spacing: 0.05em; text-transform: uppercase; }",
       ".league-menu-group { border-bottom: 1px solid rgba(148, 163, 184, 0.24); overflow: hidden; }",
       ".league-menu-toggle { align-items: center; background: #111b36; border: 0; color: #94a3b8; cursor: pointer; display: flex; font-size: 8.7pt; font-weight: 800; justify-content: space-between; letter-spacing: 0.09em; padding: 7px 7px 3px 9px; text-align: left; text-transform: uppercase; width: 100%; }",
@@ -983,16 +998,17 @@
   }
 
   function makeLeagueLogoLink() {
-    var link = makeMenuLink("", "00-assets/html/league%20dashboard.htm", "league-menu-link league-menu-feature");
+    var isSuperCup = isSuperCupPage();
+    var link = makeMenuLink("", isSuperCup ? ABSOLUTE_SUPERCUP_DASHBOARD_PATH : ABSOLUTE_LEAGUE_DASHBOARD_PATH, "league-menu-link league-menu-feature");
     var logo = document.createElement("img");
     var fallback = document.createElement("span");
 
-    logo.className = "league-menu-logo";
-    logo.src = "00-assets/images/ESLcropped-removebg-preview.png";
-    logo.alt = "European Super League";
+    logo.className = isSuperCup ? "league-menu-logo league-menu-logo--supercup" : "league-menu-logo";
+    logo.src = isSuperCup ? ABSOLUTE_SUPERCUP_LOGO_PATH : ABSOLUTE_LEAGUE_LOGO_PATH;
+    logo.alt = isSuperCup ? "ESL Super Cup" : "European Super League";
 
     fallback.className = "league-menu-fallback";
-    fallback.textContent = "ESL";
+    fallback.textContent = isSuperCup ? "SC" : "ESL";
 
     logo.addEventListener("error", function () {
       logo.remove();
@@ -1006,15 +1022,16 @@
   }
 
   function makeEslMediaLogoLink() {
-    var link = makeMenuLink("", "00-eslmedia/homepage.html");
+    var isSuperCup = isSuperCupPage();
+    var link = makeMenuLink("", ABSOLUTE_ESL_MEDIA_PATH);
     var logo = document.createElement("img");
     var fallback = document.createElement("span");
 
     link.target = "_top";
 
     link.target = "_top";
-    logo.className = "league-menu-eslm-logo";
-    logo.src = "00-eslmedia/content/article images/ESLM.png";
+    logo.className = isSuperCup ? "league-menu-eslm-logo league-menu-eslm-logo--supercup" : "league-menu-eslm-logo";
+    logo.src = ABSOLUTE_ESL_MEDIA_LOGO_PATH;
     logo.alt = "ESL Media";
 
     fallback.textContent = "ESL Media";
@@ -1092,7 +1109,7 @@
         links: [
           { label: "Injuries", href: "injuries.htm" },
           { label: "Cap Report", href: "capreport.htm" },
-          { label: "Depth Charts", href: "00-assets/html/depthcharts.htm" },
+          { label: "Depth Charts", href: ABSOLUTE_DEPTH_CHARTS_PATH },
           { label: "Free Agents", href: "freeagents.htm" },
           { label: "Waiver Wire", href: "waiverwire.htm" },
           { label: "Potential FAs", href: "potentialfreeagents.htm" }
@@ -1101,7 +1118,7 @@
       {
         title: "Season",
         links: [
-          { label: "Youth Intake", href: "00-assets/html/youth-intake.htm" },
+          { label: "Youth Intake", href: ABSOLUTE_YOUTH_INTAKE_PATH },
           { label: "Awards", href: "awards.htm" },
           { label: "Season Awards", href: "seasonawards.htm" },
           { label: "Playoff Standings", href: "playoffstandings.htm" },
@@ -1111,7 +1128,7 @@
       {
         title: "Admin",
         links: [
-          { label: "Settings", href: "00-assets/html/settings.htm" },
+          { label: "Settings", href: ABSOLUTE_SETTINGS_PATH },
           { label: "Human Coaches", href: "humancoaches.htm" }
         ]
       },
@@ -1135,7 +1152,7 @@
     featureRow.appendChild(makeLeagueLogoLink());
     shell.appendChild(featureRow);
     shell.appendChild(makeMenuGroup("Media", [
-      { label: "ESL Media", href: "00-eslmedia/homepage.html", target: "_top", logo: "eslm" }
+      { label: "ESL Media", href: ABSOLUTE_ESL_MEDIA_PATH, target: "_top", logo: "eslm" }
     ]));
     groups.forEach(function (group) {
       shell.appendChild(makeMenuGroup(group.title, group.links, { collapsed: !!group.collapsed }));

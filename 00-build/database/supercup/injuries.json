@@ -1,0 +1,49 @@
+{
+    "source": "injuries.htm",
+    "injuries": [
+        {
+            "pos": "SG",
+            "name": "Butch Carter",
+            "url": "",
+            "team": "roster7",
+            "teamName": "Ajax",
+            "rosterUrl": "./rosters/roster7.htm",
+            "length": "67",
+            "injury": "Ruptured Achilles",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "C",
+            "name": "Tree Rollins",
+            "url": "",
+            "team": "roster26",
+            "teamName": "Sporting CP",
+            "rosterUrl": "./rosters/roster26.htm",
+            "length": "45",
+            "injury": "Concussion",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "C",
+            "name": "Rick Robey",
+            "url": "",
+            "team": "roster28",
+            "teamName": "Valencia",
+            "rosterUrl": "./rosters/roster28.htm",
+            "length": "23",
+            "injury": "Patellar Tendanitis",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PF",
+            "name": "John Lambert",
+            "url": "",
+            "team": "roster16",
+            "teamName": "Manchester City",
+            "rosterUrl": "./rosters/roster16.htm",
+            "length": "1",
+            "injury": "Sprained Ankle",
+            "rowClass": "row2"
+        }
+    ]
+}

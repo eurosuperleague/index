@@ -1,112 +1,158 @@
 """
 inject_css_js.py
-Walks every .htm/.html file in the repo and injects styles.css, sort.js,
-features.js, and a favicon if not already present.
+Walk every .htm/.html file in a target tree and inject shared league CSS/JS.
 
 Usage:
     python inject_css_js.py
     python inject_css_js.py --dry-run
+    python inject_css_js.py --target-root 00-SuperCup
 """
 
-import os, sys
+import os
+import sys
 
-# ── CONFIGURE ───────────────────────────────────────────────────────
-ROOT_FOLDER  = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CSS_FILENAME  = "00-assets/css/styles.css"
-JS_FILENAME   = "00-assets/js/sort.js"
-JS2_FILENAME  = "00-assets/js/features.js"
+
+SCRIPT_ROOT = os.path.dirname(os.path.abspath(__file__))
+BUILD_DIR = os.path.dirname(SCRIPT_ROOT)
+PROJECT_ROOT = os.path.dirname(BUILD_DIR)
+
+CSS_FILENAME = "00-assets/css/styles.css"
+JS_FILENAME = "00-assets/js/sort.js"
+JS2_FILENAME = "00-assets/js/features.js"
 INDEX_JS_FILENAME = "00-assets/js/index.js"
-FAVICON_FILE  = "00-build/database/favicon.png"   # change to .ico if needed
-VIEWPORT_TAG  = '<meta name="viewport" content="width=1100, initial-scale=0.35, minimum-scale=0.1, maximum-scale=10.0, user-scalable=yes">'
-# ────────────────────────────────────────────────────────────────────
+FAVICON_FILE = "00-build/database/favicon.png"
+VIEWPORT_TAG = '<meta name="viewport" content="width=1100, initial-scale=0.35, minimum-scale=0.1, maximum-scale=10.0, user-scalable=yes">'
+MOBILE_INDEX_VIEWPORT_TAG = '<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">'
+SKIP_DIRS = {"00-build", "00-assets", "00-eslmedia"}
 
-DRY_RUN       = "--dry-run" in sys.argv
-files_updated = 0
-files_skipped = 0
 
-for dirpath, dirnames, filenames in os.walk(ROOT_FOLDER):
+def parse_args(argv):
+    dry_run = "--dry-run" in argv
+    target_root = PROJECT_ROOT
 
-    # Skip build, asset, and custom media folders; generated league HTML lives outside them.
-    dirnames[:] = [d for d in dirnames if d not in {"00-build", "00-assets", "00-eslmedia"}]
+    if "--target-root" in argv:
+        index = argv.index("--target-root")
+        if index + 1 >= len(argv):
+            raise SystemExit("Error: --target-root requires a path.")
+        raw_target = argv[index + 1]
+        target_root = raw_target if os.path.isabs(raw_target) else os.path.join(PROJECT_ROOT, raw_target)
 
-    for filename in filenames:
-        if not filename.lower().endswith((".html", ".htm")):
-            continue
+    return {
+        "dry_run": dry_run,
+        "target_root": os.path.normpath(os.path.abspath(target_root)),
+    }
 
-        filepath = os.path.join(dirpath, filename)
 
-        # ── Calculate relative paths back to root ──────────────────
-        rel_path = os.path.relpath(ROOT_FOLDER, dirpath)
+def make_rel(from_dir, project_relative_path):
+    absolute_target = os.path.join(PROJECT_ROOT, project_relative_path)
+    rel = os.path.relpath(absolute_target, from_dir).replace("\\", "/")
+    return rel[2:] if rel.startswith("./") else rel
 
-        def make_rel(fname):
-            p = os.path.join(rel_path, fname).replace("\\", "/")
-            return p[2:] if p.startswith("./") else p
 
-        css_rel     = make_rel(CSS_FILENAME)
-        js_rel      = make_rel(JS_FILENAME)
-        js2_rel     = make_rel(JS2_FILENAME)
-        index_js_rel = make_rel(INDEX_JS_FILENAME)
-        favicon_rel = make_rel(FAVICON_FILE)
-        is_root_index = os.path.abspath(filepath) == os.path.join(ROOT_FOLDER, "index.htm")
+def inject_file(filepath, dry_run, target_root):
+    dirpath = os.path.dirname(filepath)
+    css_rel = make_rel(dirpath, CSS_FILENAME)
+    js_rel = make_rel(dirpath, JS_FILENAME)
+    js2_rel = make_rel(dirpath, JS2_FILENAME)
+    index_js_rel = make_rel(dirpath, INDEX_JS_FILENAME)
+    favicon_rel = make_rel(dirpath, FAVICON_FILE)
+    is_target_root_index = os.path.abspath(filepath) == os.path.join(target_root, "index.htm")
 
-        # ── Build tags ─────────────────────────────────────────────
-        css_tag     = f'<link rel="stylesheet" href="{css_rel}">'
-        js_tag      = f'<script src="{js_rel}" defer></script>'
-        js2_tag     = f'<script src="{js2_rel}" defer></script>'
-        index_js_tag = f'<script src="{index_js_rel}" defer></script>'
-        favicon_tag = f'<link rel="icon" type="image/png" href="{favicon_rel}">'
+    css_tag = f'<link rel="stylesheet" href="{css_rel}">'
+    js_tag = f'<script src="{js_rel}" defer></script>'
+    js2_tag = f'<script src="{js2_rel}" defer></script>'
+    index_js_tag = f'<script src="{index_js_rel}" defer></script>'
+    favicon_tag = f'<link rel="icon" type="image/png" href="{favicon_rel}">'
 
-        with open(filepath, "r", encoding="latin-1") as f:
-            html = f.read()
+    with open(filepath, "r", encoding="latin-1") as f:
+        html = f.read()
 
-        already_css     = CSS_FILENAME     in html
-        already_js      = JS_FILENAME      in html
-        already_js2     = JS2_FILENAME     in html
-        already_index_js = INDEX_JS_FILENAME in html
-        already_favicon = FAVICON_FILE     in html
-        already_viewport = 'name="viewport"' in html.lower() or "name='viewport'" in html.lower()
+    already_css = CSS_FILENAME in html or css_rel in html
+    already_js = JS_FILENAME in html or js_rel in html
+    already_js2 = JS2_FILENAME in html or js2_rel in html
+    already_index_js = INDEX_JS_FILENAME in html or index_js_rel in html
+    already_favicon = FAVICON_FILE in html or favicon_rel in html
+    lower_html = html.lower()
+    already_viewport = 'name="viewport"' in lower_html or "name='viewport'" in lower_html
+    viewport_tag = VIEWPORT_TAG if target_root == PROJECT_ROOT else MOBILE_INDEX_VIEWPORT_TAG
 
-        if already_css and already_js and already_js2 and already_favicon and already_viewport and (not is_root_index or already_index_js):
-            print(f"SKIPPED (all present): {filepath}")
-            files_skipped += 1
-            continue
+    needs_index_js = is_target_root_index
+    if already_css and already_js and already_js2 and already_favicon and already_viewport and (not needs_index_js or already_index_js):
+        return "skipped"
 
-        # ── Build inject block ─────────────────────────────────────
-        inject = ""
-        if not already_viewport:
-            inject += f"  {VIEWPORT_TAG}\n"
-        if not already_favicon:
-            inject += f"  {favicon_tag}\n"
-        if not already_css:
-            inject += f"  {css_tag}\n"
-        if not already_js:
-            inject += f"  {js_tag}\n"
-        if not already_js2:
-            inject += f"  {js2_tag}\n"
-        if is_root_index and not already_index_js:
-            inject += f"  {index_js_tag}\n"
+    inject = ""
+    if not already_viewport:
+        inject += f"  {viewport_tag}\n"
+    if not already_favicon:
+        inject += f"  {favicon_tag}\n"
+    if not already_css:
+        inject += f"  {css_tag}\n"
+    if not already_js:
+        inject += f"  {js_tag}\n"
+    if not already_js2:
+        inject += f"  {js2_tag}\n"
+    if needs_index_js and not already_index_js:
+        inject += f"  {index_js_tag}\n"
 
-        # ── Add <head> block if missing ────────────────────────────
-        if "</head>" not in html:
-            if "<body" in html:
-                html = html.replace("<body", "<head>\n</head>\n<body", 1)
+    if "</head>" not in html:
+        if "<body" in html:
+            html = html.replace("<body", "<head>\n</head>\n<body", 1)
+        else:
+            html = "<head>\n</head>\n" + html
+
+    if "</head>" in html:
+        html = html.replace("</head>", f"{inject}</head>", 1)
+    elif "</body>" in html:
+        html = html.replace("</body>", f"{inject}</body>", 1)
+    else:
+        html += "\n" + inject
+
+    if dry_run:
+        print(f"DRY RUN: would update {filepath}")
+    else:
+        with open(filepath, "w", encoding="latin-1") as f:
+            f.write(html)
+        print(f"UPDATED: {filepath}")
+
+    return "updated"
+
+
+def should_skip_dir(target_root, dirpath):
+    if os.path.abspath(target_root) != PROJECT_ROOT:
+        return False
+    return os.path.basename(dirpath) in SKIP_DIRS
+
+
+def main():
+    options = parse_args(sys.argv[1:])
+    dry_run = options["dry_run"]
+    target_root = options["target_root"]
+
+    if not os.path.isdir(target_root):
+        raise SystemExit(f"Error: target root not found: {target_root}")
+
+    files_updated = 0
+    files_skipped = 0
+
+    for dirpath, dirnames, filenames in os.walk(target_root):
+        if os.path.abspath(target_root) == PROJECT_ROOT:
+            dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
+
+        for filename in filenames:
+            if not filename.lower().endswith((".html", ".htm")):
+                continue
+
+            filepath = os.path.join(dirpath, filename)
+            result = inject_file(filepath, dry_run, target_root)
+            if result == "updated":
+                files_updated += 1
             else:
-                html = "<head>\n</head>\n" + html
+                print(f"SKIPPED (all present): {filepath}")
+                files_skipped += 1
 
-        # ── Insert before </head> ──────────────────────────────────
-        if "</head>" in html:
-            html = html.replace("</head>", f"{inject}</head>", 1)
-        elif "</body>" in html:
-            html = html.replace("</body>", f"{inject}</body>", 1)
-        else:
-            html += "\n" + inject
-        if DRY_RUN:
-            print(f"DRY RUN: would update {filepath}")
-        else:
-            with open(filepath, "w", encoding="latin-1") as f:
-                f.write(html)
-            print(f"UPDATED: {filepath}")
+    prefix = "[DRY RUN] " if dry_run else ""
+    print(f"\n{prefix}Done - {files_updated} updated, {files_skipped} skipped.")
 
-        files_updated += 1
 
-print(f"\n{'[DRY RUN] ' if DRY_RUN else ''}Done — {files_updated} updated, {files_skipped} skipped.")
+if __name__ == "__main__":
+    main()
