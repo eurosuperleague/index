@@ -798,6 +798,26 @@
     });
   }
 
+  function buildTeamLandingOptions(teams, selectedValue) {
+    var options = [{ value: "", label: "Choose team" }];
+
+    (teams || []).slice().sort(function (a, b) {
+      return String(a.name || "").localeCompare(String(b.name || ""));
+    }).forEach(function (team) {
+      if (team && team.name && team.file) {
+        options.push({ value: team.file, label: team.name });
+      }
+    });
+
+    return options.map(function (option) {
+      return {
+        value: option.value,
+        label: option.label,
+        selected: option.value === selectedValue
+      };
+    });
+  }
+
   function initSettingsPage(teams) {
     var root = document.getElementById("league-settings-root");
     var settings = getSettings();
@@ -837,12 +857,21 @@
         { value: "standings.htm", label: "Standings" },
         { value: "schedule.htm", label: "Schedule" },
         { value: "00-assets/html/league%20dashboard.htm", label: "League Dashboard" },
+        { value: "__unified_team_page__", label: "Unified Team Page" },
         { value: "leaders.htm", label: "League Leaders" },
         { value: "teamleaders.htm", label: "Team Leaders" },
         { value: "transactions.htm", label: "Transactions" },
         { value: "freeagents.htm", label: "Free Agents" },
         { value: "awards.htm", label: "Awards" }
       ]
+    });
+    addSettingsSelect(form, {
+      id: "setting-default-team-page",
+      name: "defaultTeamPage",
+      label: "Unified Team Landing",
+      value: settings.defaultTeamPage || "",
+      help: "Used only when Default Landing Page is set to Unified Team Page.",
+      options: buildTeamLandingOptions(teams, settings.defaultTeamPage || "")
     });
     addSettingsSelect(form, {
       id: "setting-favorite-team",

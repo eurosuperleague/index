@@ -15,6 +15,9 @@
 
   function getDefaultPage() {
     var settings = getSettings();
+    if (settings.defaultPage === "__unified_team_page__" && settings.defaultTeamPage) {
+      return "00-assets/html/unified-roster.htm?file=" + encodeURIComponent(settings.defaultTeamPage);
+    }
     return settings.defaultPage || "standings.htm";
   }
 
