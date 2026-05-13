@@ -27,6 +27,21 @@ window.ESL_TEAM_LOGOS = {
 
 window.ESL_MEDIA_ARTICLES = [
   {
+    file: "articles/batsuper_alex_english_apology.html",
+    title: "I Would Like To Apologize To Alex English. Unfortunately I Still Have Eyes",
+    category: "Interview",
+    desk: "Interview",
+    sortKey: "2026-05-13-09",
+    tag: "Crystal Palace",
+    author: "batsuper",
+    meta: "Apology Column",
+    blurb: "batsuper finally admits Palace's heater and Alex English's latest bucket parade have made the original rant look way too loud and a little foolish.",
+    teams: [
+      "Crystal Palace"
+    ],
+    playerTags: ["Alex English"]
+  },
+  {
     file: "articles/phil_smith_chelsea_interview.html",
     title: "EXCLUSIVE: Chelsea Source Reaches Phil Smith Breaking Point",
     category: "Interview",
