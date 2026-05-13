@@ -5,7 +5,15 @@
   var BREAKPOINT = 760;
   var SETTINGS_KEY = "leagueSiteSettings";
 
+  function isSuperCupIndexPage() {
+    return /(?:\/|\\)00-supercup(?:\/|\\)index\.htm$/i.test(window.location.pathname);
+  }
+
   function getSettings() {
+    if (isSuperCupIndexPage()) {
+      return {};
+    }
+
     try {
       return JSON.parse(window.localStorage.getItem(SETTINGS_KEY) || "{}") || {};
     } catch (error) {
@@ -15,9 +23,8 @@
 
   function getDefaultPage() {
     var settings = getSettings();
-    var isSuperCupIndex = /(?:\/|\\)00-supercup(?:\/|\\)index\.htm$/i.test(window.location.pathname);
 
-    if (isSuperCupIndex) {
+    if (isSuperCupIndexPage()) {
       return getRepoScopedPath("00-assets/html/supercup-dashboard.htm");
     }
 
