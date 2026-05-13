@@ -33,6 +33,8 @@
     .standings-head-actions .league-controls { margin-top:0; justify-content:flex-end; }
     .standings-head-actions .status-text { font-size:.62rem; letter-spacing:.12em; }
     .dash-main { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(300px,.95fr); gap:.9rem; align-items:start; }
+    .dash-primary { display:grid; gap:.9rem; min-width:0; }
+    .dash-side { display:grid; gap:.9rem; }
     .panel { background:var(--card); border:1px solid var(--line); padding:.95rem; }
     .panel-head { display:flex; justify-content:space-between; align-items:baseline; gap:.7rem; border-bottom:2px solid var(--blue); padding-bottom:.5rem; margin-bottom:.8rem; }
     .panel-title { margin:0; font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; color:var(--blue); }
@@ -79,6 +81,13 @@
     .top-player-row { display:flex; justify-content:space-between; gap:.6rem; align-items:baseline; border-bottom:1px solid var(--line); padding-bottom:.55rem; font-size:.84rem; }
     .top-player-name { font-family:var(--font-serif); font-size:1rem; }
     .top-player-value { font-weight:700; color:var(--blue); white-space:nowrap; }
+    .media-list { display:grid; gap:.65rem; }
+    .media-card { border:1px solid var(--line); background:#faf8f2; color:inherit; display:grid; gap:.38rem; padding:.72rem; text-decoration:none; }
+    .media-card:hover { border-color:var(--blue); background:#f5f1e8; }
+    .media-kicker { color:var(--mid); display:flex; flex-wrap:wrap; gap:.5rem; font-size:.61rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+    .media-title { color:var(--blue); font-family:var(--font-serif); font-size:1.1rem; line-height:1.14; }
+    .media-blurb { color:var(--ink); font-size:.84rem; line-height:1.35; }
+    .media-meta { color:var(--mid); font-size:.64rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
     @media (max-width:1020px){ .utility-grid{grid-template-columns:1fr} .leaders-grid{grid-template-columns:repeat(2,minmax(0,1fr))} .dash-main{grid-template-columns:1fr} }
     @media (max-width:650px){
       body.dashboard-page{padding:.65rem}
@@ -98,6 +107,9 @@
       .mobile-collapsible .panel-head{cursor:pointer}
       .collapse-toggle{background:#faf8f2;border:1px solid var(--line);color:var(--blue);display:inline-flex;font:inherit;font-size:.62rem;font-weight:800;letter-spacing:.14em;padding:.32rem .42rem;text-transform:uppercase}
       .mobile-collapsible:not(.is-open) .collapse-body{display:none}
+      .dash-primary{order:1}
+      .dash-side{order:2}
+      .dash-media{order:3}
     }
   </style>
 </head>
@@ -122,6 +134,7 @@
     </header>
 
     <section class="dash-main">
+      <div class="dash-primary">
       <div class="panel">
         <div class="panel-head">
           <h2 class="panel-title">Standings Pulse</h2>
@@ -142,8 +155,13 @@
         </div>
         <div class="leaders-grid" id="leadersGrid"></div>
       </div>
+      <section class="panel dash-media">
+        <div class="panel-head"><h2 class="panel-title">From ESL Media</h2><div class="panel-note">Latest dispatches</div></div>
+        <div class="media-list" id="mediaList"><div class="media-card">Loading media</div></div>
+      </section>
+      </div>
 
-      <div style="display:grid;gap:.9rem;">
+      <div class="dash-side">
         <section class="panel mobile-collapsible is-open">
           <div class="panel-head"><h2 class="panel-title">Injury Watch</h2><button class="collapse-toggle" type="button">Hide</button><div class="panel-note">Longest current injuries</div></div>
           <ul class="injury-list collapse-body" id="injuryList"><li class="injury-row">Loading injuries</li></ul>
@@ -161,6 +179,7 @@
   </div>
 
   <script src="../js/player-page-destination.js"></script>
+  <script src="../../00-eslmedia/content/media-articles.js"></script>
   <script>
     const DATA_URLS = {
       standings: "../../00-build/database/standings.json",
@@ -375,6 +394,62 @@
       root.innerHTML = topCap.map((entry) => `<li class="top-player-row"><span class="top-player-name"><a href="${normalizeHref(entry.rosterUrl)}">${entry.team || "Team"}</a></span><span class="top-player-value">${entry.capRoomText || "$0"}</span></li>`).join("");
     }
 
+    function escapeHtml(value) {
+      return String(value || "").replace(/[&<>"']/g, function (char) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char];
+      });
+    }
+
+    function mediaUrl(file) {
+      try {
+        return new URL(String(file || ""), "../../00-eslmedia/").toString();
+      } catch (error) {
+        return "#";
+      }
+    }
+
+    function mediaRelevance(article, leagueToken, activeSection) {
+      const teams = Array.isArray(article && article.teams) ? article.teams : [];
+      const activeTeams = new Set(((activeSection && activeSection.teams) || []).map((team) => String(team.team || "")));
+      const joined = [article.tag, article.meta, article.title].filter(Boolean).join(" ").toLowerCase();
+      let score = 0;
+      for (let i = 0; i < teams.length; i += 1) {
+        if (activeTeams.has(String(teams[i] || ""))) {
+          score += 5;
+        }
+      }
+      if (leagueToken === "CLB" && /champions league|tier 1|\bclb\b/.test(joined)) score += 12;
+      if (leagueToken === "ELB" && /europa league|tier 2|\belb\b/.test(joined)) score += 12;
+      if (leagueToken === "ECL" && /conference league|tier 3|\becl\b/.test(joined)) score += 12;
+      if (/race watch|month in review|stock report|mvp race/.test(joined)) score += 3;
+      return score;
+    }
+
+    function renderMedia(leagueToken, activeSection) {
+      const root = document.getElementById("mediaList");
+      const articles = Array.isArray(window.ESL_MEDIA_ARTICLES) ? window.ESL_MEDIA_ARTICLES.slice() : [];
+      if (!root) return;
+      if (!articles.length) {
+        root.innerHTML = '<div class="media-card">No media loaded</div>';
+        return;
+      }
+      articles.sort((a, b) => {
+        const scoreDiff = mediaRelevance(b, leagueToken, activeSection) - mediaRelevance(a, leagueToken, activeSection);
+        if (scoreDiff) return scoreDiff;
+        return String(b.sortKey || "").localeCompare(String(a.sortKey || ""));
+      });
+      root.innerHTML = articles.slice(0, 3).map((article) => {
+        const kicker = [article.desk || article.category || "Media", article.tag || article.meta || ""].filter(Boolean).join(" / ");
+        const meta = [article.author || "ESL Media", article.meta || ""].filter(Boolean).join(" / ");
+        return `<a class="media-card" href="${mediaUrl(article.file)}">` +
+          `<div class="media-kicker">${escapeHtml(kicker)}</div>` +
+          `<div class="media-title">${escapeHtml(article.title || article.file)}</div>` +
+          `<div class="media-blurb">${escapeHtml(article.blurb || "")}</div>` +
+          `<div class="media-meta">${escapeHtml(meta)}</div>` +
+        `</a>`;
+      }).join("");
+    }
+
     function buildSearchIndex() {
       const teamEntries = state.standings.flatMap((section) => (section.teams || []).map((team) => ({ type: "Team", name: team.team, meta: shortLeagueLabel(section.title), href: normalizeHref(team.rosterUrl || "") })));
       const playerEntries = (state.players || []).filter((player) => player && player.name && player.url).map((player) => ({ type: "Player", name: player.name, meta: `${player.teamLabel || player.team || "Team"}${player.pos ? ` · ${player.pos}` : ""}`, href: normalizePlayerHref(player.url, player.name) }));
@@ -428,6 +503,7 @@
       renderInjuries();
       renderTopPlayers(leagueToken);
       renderCap(leagueToken);
+      renderMedia(leagueToken, activeSection);
       document.getElementById("statusText").textContent = `${shortLeagueLabel(activeSection.title)} loaded`;
     }
 
