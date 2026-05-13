@@ -27,6 +27,108 @@ window.ESL_TEAM_LOGOS = {
 
 window.ESL_MEDIA_ARTICLES = [
   {
+    file: "articles/january_1982_mvp_race.html",
+    title: "These Ballots Are Clearer, Not Settled",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-13-07",
+    tag: "MVP Race",
+    author: "Damon Cross",
+    meta: "Awards Desk",
+    blurb: "Magic Johnson, Moses Malone, and Joe Barry Carroll lead the January ladders, but every tier still has real movement left in the ballot.",
+    teams: [
+      "AC Milan", "AFC Richmond", "Atletico Madrid", "Barcelona", "Benfica", "Chelsea",
+      "FL Fart", "Inter Milan", "Juventus", "Manchester City", "Paris Saint-Germain",
+      "Real Madrid", "Sheffield United"
+    ],
+    playerTags: [
+      "Adrian Dantley", "David Thompson", "Jack Sikma", "Joe Barry Carroll", "Kelly Tripucka",
+      "Kareem Abdul-Jabbar", "Larry Bird", "Larry Nance", "Magic Johnson", "Moses Malone",
+      "Sidney Moncrief", "Steve Johnson", "World B. Free"
+    ]
+  },
+  {
+    file: "articles/january_1982_stock_up_stock_down.html",
+    title: "Some Teams Improved Their Season. Others Merely Confirmed It",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-13-06",
+    tag: "Stock Report",
+    author: "Graham Trent",
+    meta: "Monthly Stock Report",
+    blurb: "Inter Milan, Real Madrid, and Sheffield United rose in January, while Tottenham Hotspur, Manchester United, and Valencia watched the month harden against them.",
+    teams: ["Inter Milan", "Real Madrid", "Sheffield United", "Tottenham Hotspur", "Manchester United", "Valencia"],
+    playerTags: ["Sidney Moncrief", "Steve Johnson", "World B. Free"]
+  },
+  {
+    file: "articles/january_1982_promotion_relegation_watch.html",
+    title: "The Race Lines Finally Look Real",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-13-05",
+    tag: "Race Watch",
+    author: "Nina Vale",
+    meta: "January Race Watch",
+    blurb: "Brighton hold the Tier 1 line, Chelsea cling to promotion, Marseille are somehow sweating the wrong race, and Inter Milan now lead the Tier 3 climb.",
+    teams: [
+      "AC Milan", "AFC Richmond", "Ajax", "Aston Villa", "Barcelona", "Benfica", "Brighton",
+      "Chelsea", "FL Fart", "Inter Milan", "Manchester United", "Marseille", "Monaco", "Sheffield United"
+    ],
+    playerTags: []
+  },
+  {
+    file: "articles/january_1982_tier_3_power_rankings.html",
+    title: "Inter Milan Own The Best Month, But Tier 3 Still Has A Real Chase",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-13-04",
+    tag: "Conference League",
+    author: "Nina Vale",
+    meta: "January Edition",
+    blurb: "Inter Milan took the clearest hold of Tier 3's promotion line, but FL Fart and Barcelona remain close enough to keep the race alive.",
+    teams: ["Barcelona", "FL Fart", "Inter Milan", "Manchester City", "Paris Saint-Germain", "Sporting CP", "Tottenham Hotspur", "Valencia"],
+    playerTags: ["Buck Williams", "Calvin Natt", "Joe Barry Carroll", "Kelly Tripucka", "World B. Free"]
+  },
+  {
+    file: "articles/january_1982_tier_2_power_rankings.html",
+    title: "Tier 2 Has The Best Record, The Best Month, And Not Always The Same Team",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-13-03",
+    tag: "Europa League",
+    author: "Nina Vale",
+    meta: "January Edition",
+    blurb: "Marseille still own the best overall record, but Sheffield United, Benfica, and Chelsea made January feel far less orderly than the table suggested.",
+    teams: ["Ajax", "Aston Villa", "Benfica", "Chelsea", "Juventus", "Marseille", "Monaco", "Sheffield United"],
+    playerTags: ["Jack Sikma", "Kareem Abdul-Jabbar", "Moses Malone", "Robert Parish", "Steve Johnson"]
+  },
+  {
+    file: "articles/january_1982_tier_1_power_rankings.html",
+    title: "Tier 1 Still Runs Through The Top, But The Middle Finally Has Teeth",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-13-02",
+    tag: "Champions League",
+    author: "Nina Vale",
+    meta: "January Edition",
+    blurb: "Bayern Munich stay narrowly on top of Tier 1, but January lifted Real Madrid and Crystal Palace while keeping Richmond dangerous and Brighton under pressure.",
+    teams: ["AC Milan", "AFC Richmond", "Atletico Madrid", "Bayern Munich", "Brighton", "Crystal Palace", "Manchester United", "Real Madrid"],
+    playerTags: ["Artis Gilmore", "Bernard King", "Larry Bird", "Magic Johnson", "Sidney Moncrief"]
+  },
+  {
+    file: "articles/january_1982_month_in_review.html",
+    title: "January Changed The Tone More Than The Table",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-13-01",
+    tag: "Month In Review",
+    author: "Graham Trent",
+    meta: "Monthly Review",
+    blurb: "AFC Richmond supplied the loudest scoreline, Inter Milan owned the best month, Crystal Palace changed the Tier 1 middle, and the race lines finally started to feel real.",
+    teams: ["AFC Richmond", "Brighton", "Real Madrid", "Crystal Palace", "AC Milan", "Inter Milan", "Tottenham Hotspur", "Marseille", "Sheffield United", "Chelsea", "Benfica", "Monaco"],
+    playerTags: ["Artis Gilmore", "Larry Bird", "Magic Johnson", "Sidney Moncrief", "World B. Free"]
+  },
+  {
     file: "articles/december_1981_mvp_race.html",
     title: "December MVP Race: Magic Holds, Moses Owns, Tier 3 Starts a Fight",
     category: "Analysis",
