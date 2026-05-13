@@ -14,17 +14,48 @@
   var SETTINGS_KEY = "leagueSiteSettings";
   var SETTINGS_STYLE_ID = "league-settings-styles";
   var PREFERENCE_STYLE_ID = "league-preference-styles";
-  var ABSOLUTE_ESL_MEDIA_PATH = "/00-eslmedia/homepage.html";
-  var ABSOLUTE_ESL_MEDIA_LOGO_PATH = "/00-eslmedia/content/article images/ESLM.png";
-  var ABSOLUTE_DEPTH_CHARTS_PATH = "/00-assets/html/depthcharts.htm";
-  var ABSOLUTE_YOUTH_INTAKE_PATH = "/00-assets/html/youth-intake.htm";
-  var ABSOLUTE_SETTINGS_PATH = "/00-assets/html/settings.htm";
-  var ABSOLUTE_MAIN_INDEX_PATH = "/index.htm";
-  var ABSOLUTE_LEAGUE_DASHBOARD_PATH = "/00-assets/html/league%20dashboard.htm";
-  var ABSOLUTE_LEAGUE_LOGO_PATH = "/00-assets/images/ESLcropped-removebg-preview.png";
-  var ABSOLUTE_SUPERCUP_INDEX_PATH = "/00-SuperCup/index.htm";
-  var ABSOLUTE_SUPERCUP_DASHBOARD_PATH = "/00-assets/html/supercup-dashboard.htm";
-  var ABSOLUTE_SUPERCUP_LOGO_PATH = "/00-assets/images/eslsupercup.png";
+  var SITE_ROOT_PATH = getSiteRootPath();
+  var ABSOLUTE_ESL_MEDIA_PATH = toSitePath("00-eslmedia/homepage.html");
+  var ABSOLUTE_ESL_MEDIA_LOGO_PATH = toSitePath("00-eslmedia/content/article images/ESLM.png");
+  var ABSOLUTE_DEPTH_CHARTS_PATH = toSitePath("00-assets/html/depthcharts.htm");
+  var ABSOLUTE_YOUTH_INTAKE_PATH = toSitePath("00-assets/html/youth-intake.htm");
+  var ABSOLUTE_SETTINGS_PATH = toSitePath("00-assets/html/settings.htm");
+  var ABSOLUTE_MAIN_INDEX_PATH = toSitePath("index.htm");
+  var ABSOLUTE_LEAGUE_DASHBOARD_PATH = toSitePath("00-assets/html/league%20dashboard.htm");
+  var ABSOLUTE_LEAGUE_LOGO_PATH = toSitePath("00-assets/images/ESLcropped-removebg-preview.png");
+  var ABSOLUTE_SUPERCUP_INDEX_PATH = toSitePath("00-SuperCup/index.htm");
+  var ABSOLUTE_SUPERCUP_DASHBOARD_PATH = toSitePath("00-assets/html/supercup-dashboard.htm");
+  var ABSOLUTE_SUPERCUP_KNOCKOUT_PATH = toSitePath("00-assets/html/supercup-knockout.htm");
+  var ABSOLUTE_SUPERCUP_LOGO_PATH = toSitePath("00-assets/images/eslsupercup.png");
+
+  function getSiteRootPath() {
+    var path = String(window.location.pathname || "").replace(/\\/g, "/");
+    var markers = [
+      "/00-assets/",
+      "/00-SuperCup/",
+      "/00-eslmedia/",
+      "/players/",
+      "/rosters/",
+      "/boxes/"
+    ];
+    var index = -1;
+    var i;
+
+    for (i = 0; i < markers.length; i += 1) {
+      index = path.toLowerCase().indexOf(markers[i].toLowerCase());
+      if (index >= 0) {
+        return index > 0 ? path.slice(0, index) : "";
+      }
+    }
+
+    index = path.lastIndexOf("/");
+    return index > 0 ? path.slice(0, index) : "";
+  }
+
+  function toSitePath(relativePath) {
+    var cleanPath = String(relativePath || "").replace(/^\/+/, "");
+    return (SITE_ROOT_PATH ? SITE_ROOT_PATH + "/" : "/") + cleanPath;
+  }
 
   function getSettings() {
     try {
@@ -1124,7 +1155,7 @@
           { label: "League Leaders", href: "leaders.htm" },
           { label: "Team Leaders", href: "teamleaders.htm" },
           { label: "Supercup Index", href: ABSOLUTE_SUPERCUP_INDEX_PATH, className: "league-menu-link--accent", target: "_top" },
-          { label: "Supercup KO", href: "/00-assets/html/supercup-knockout.htm", className: "league-menu-link--accent" },
+          { label: "Supercup KO", href: ABSOLUTE_SUPERCUP_KNOCKOUT_PATH, className: "league-menu-link--accent" },
           { label: "Transactions", href: "transactions.htm" }
         ]
       },
@@ -1177,7 +1208,7 @@
               }
               nextLinks.push(link);
               if (link.label === "Team Leaders") {
-                nextLinks.push({ label: "Knockout", href: "/00-assets/html/supercup-knockout.htm", className: "league-menu-link--accent" });
+                nextLinks.push({ label: "Knockout", href: ABSOLUTE_SUPERCUP_KNOCKOUT_PATH, className: "league-menu-link--accent" });
               }
             });
             return {
@@ -1191,7 +1222,7 @@
               title: group.title,
               links: (group.links || []).map(function (link) {
                 if (link.label === "Playoffs") {
-                  return { label: "Playoffs", href: "/00-assets/html/supercup-knockout.htm" };
+                  return { label: "Playoffs", href: ABSOLUTE_SUPERCUP_KNOCKOUT_PATH };
                 }
                 return link;
               }),

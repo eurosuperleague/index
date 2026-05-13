@@ -18,7 +18,7 @@
     var isSuperCupIndex = /(?:\/|\\)00-supercup(?:\/|\\)index\.htm$/i.test(window.location.pathname);
 
     if (isSuperCupIndex) {
-      return "/00-assets/html/supercup-dashboard.htm";
+      return getRepoScopedPath("00-assets/html/supercup-dashboard.htm");
     }
 
     if (settings.defaultPage === "__unified_team_page__" && settings.defaultTeamPage) {
@@ -30,6 +30,14 @@
   function isCompactWidth() {
     var screenWidth = window.screen && window.screen.width ? window.screen.width : window.innerWidth;
     return Math.min(window.innerWidth, screenWidth) <= BREAKPOINT;
+  }
+
+  function getRepoScopedPath(relativePath) {
+    var path = String(window.location.pathname || "").replace(/\\/g, "/");
+    var rootPath = path.replace(/\/00-SuperCup\/index\.htm$/i, "");
+    var cleanPath = String(relativePath || "").replace(/^\/+/, "");
+
+    return (rootPath ? rootPath + "/" : "/") + cleanPath;
   }
 
   function ensureStyles() {
