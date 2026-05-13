@@ -53,7 +53,7 @@
     .standing-card-head { align-items:center; display:flex; justify-content:space-between; gap:.55rem; }
     .standing-card-team { font-family:var(--font-serif); font-size:1.05rem; line-height:1.15; }
     .standing-card-rank { color:var(--mid); font-size:.64rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
-    .standing-card-stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.42rem; }
+    .standing-card-stats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.42rem; }
     .standing-card-stat { border-top:1px solid rgba(17,27,54,.16); padding-top:.35rem; }
     .standing-card-stat span { color:var(--mid); display:block; font-size:.58rem; font-weight:800; letter-spacing:.13em; margin-bottom:.12rem; text-transform:uppercase; }
     .standing-card-stat strong { font-size:.88rem; }
@@ -131,8 +131,8 @@
           </div>
         </div>
         <table class="standings-table">
-          <thead><tr><th>Team</th><th>W-L</th><th>Diff</th><th>Streak</th></tr></thead>
-          <tbody id="standingsBody"><tr><td colspan="4">Loading standings</td></tr></tbody>
+          <thead><tr><th>Team</th><th>W-L</th><th>GB</th><th>Diff</th><th>Streak</th></tr></thead>
+          <tbody id="standingsBody"><tr><td colspan="5">Loading standings</td></tr></tbody>
         </table>
         <div class="standings-cards" id="standingsCards"></div>
 
@@ -223,6 +223,7 @@
     const shortLeagueLabel = (title) => String(title || "").replace(/\s+Standings$/i, "").trim();
     const num = (value) => Number.isFinite(Number(value)) ? Number(value) : 0;
     const formatSigned = (value) => { const n = num(value); return `${n > 0 ? "+" : ""}${n.toFixed(1)}`; };
+    const formatGb = (value) => value === "-" || value === undefined || value === null || value === "" ? "-" : num(value).toFixed(1);
     const extractLeagueToken = (title) => String(title || "").split(" ")[0].toUpperCase();
     const findMatchingLeaders = (leagueToken) => state.leaders.find((section) => extractLeagueToken(section.title) === leagueToken) || null;
     const findMatchingCap = (leagueToken) => {
@@ -309,7 +310,7 @@
         const diffClass = num(team.diff) >= 0 ? "diff-pos" : "diff-neg";
         const race = getRaceMeta(activeSection, index, teams.length);
         const raceLabel = race.label ? `<span class="race-pill">${race.label}</span>` : "";
-        return `<tr class="${race.className}"><td class="team-name"><a href="${normalizeHref(team.rosterUrl)}">${team.team}</a>${raceLabel}</td><td>${team.wins}-${team.losses}</td><td class="${diffClass}">${formatSigned(team.diff)}</td><td>${team.streak || "-"}</td></tr>`;
+        return `<tr class="${race.className}"><td class="team-name"><a href="${normalizeHref(team.rosterUrl)}">${team.team}</a>${raceLabel}</td><td>${team.wins}-${team.losses}</td><td>${formatGb(team.gb)}</td><td class="${diffClass}">${formatSigned(team.diff)}</td><td>${team.streak || "-"}</td></tr>`;
       }).join("");
       standingsCards.innerHTML = teams.map((team, index) => {
         const diffClass = num(team.diff) >= 0 ? "diff-pos" : "diff-neg";
@@ -319,6 +320,7 @@
           <div class="standing-card-head"><div class="standing-card-team">${team.team}${raceLabel}</div><div class="standing-card-rank">#${index + 1}</div></div>
           <div class="standing-card-stats">
             <div class="standing-card-stat"><span>Record</span><strong>${team.wins}-${team.losses}</strong></div>
+            <div class="standing-card-stat"><span>GB</span><strong>${formatGb(team.gb)}</strong></div>
             <div class="standing-card-stat"><span>Diff</span><strong class="${diffClass}">${formatSigned(team.diff)}</strong></div>
             <div class="standing-card-stat"><span>Streak</span><strong>${team.streak || "-"}</strong></div>
           </div>
@@ -452,7 +454,7 @@
         bindMobileCollapses();
       } catch (error) {
         status.textContent = "Dashboard unavailable";
-        document.getElementById("standingsBody").innerHTML = `<tr><td colspan="4">Could not load dashboard feeds</td></tr>`;
+        document.getElementById("standingsBody").innerHTML = `<tr><td colspan="5">Could not load dashboard feeds</td></tr>`;
       }
     }
     window.addEventListener("pagehide", () => setParentFluidContent(false));
