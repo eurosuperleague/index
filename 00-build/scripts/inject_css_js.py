@@ -18,7 +18,14 @@ PROJECT_ROOT = os.path.dirname(BUILD_DIR)
 
 CSS_FILENAME = "00-assets/css/styles.css"
 JS_FILENAME = "00-assets/js/sort.js"
-JS2_FILENAME = "00-assets/js/features.js"
+FEATURE_JS_FILENAMES = [
+    "00-assets/js/core.js",
+    "00-assets/js/settings.js",
+    "00-assets/js/menu.js",
+    "00-assets/js/legacy-page-enhancements.js",
+    "00-assets/js/search.js",
+    "00-assets/js/roster-enhancements.js",
+]
 INDEX_JS_FILENAME = "00-assets/js/index.js"
 FAVICON_FILE = "00-build/database/favicon.png"
 VIEWPORT_TAG = '<meta name="viewport" content="width=1100, initial-scale=0.35, minimum-scale=0.1, maximum-scale=10.0, user-scalable=yes">'
@@ -53,14 +60,14 @@ def inject_file(filepath, dry_run, target_root):
     dirpath = os.path.dirname(filepath)
     css_rel = make_rel(dirpath, CSS_FILENAME)
     js_rel = make_rel(dirpath, JS_FILENAME)
-    js2_rel = make_rel(dirpath, JS2_FILENAME)
     index_js_rel = make_rel(dirpath, INDEX_JS_FILENAME)
     favicon_rel = make_rel(dirpath, FAVICON_FILE)
+    feature_js_rels = [make_rel(dirpath, filename) for filename in FEATURE_JS_FILENAMES]
     is_target_root_index = os.path.abspath(filepath) == os.path.join(target_root, "index.htm")
 
     css_tag = f'<link rel="stylesheet" href="{css_rel}">'
     js_tag = f'<script src="{js_rel}" defer></script>'
-    js2_tag = f'<script src="{js2_rel}" defer></script>'
+    feature_js_tags = [f'<script src="{feature_rel}" defer></script>' for feature_rel in feature_js_rels]
     index_js_tag = f'<script src="{index_js_rel}" defer></script>'
     favicon_tag = f'<link rel="icon" type="image/png" href="{favicon_rel}">'
 
@@ -69,7 +76,10 @@ def inject_file(filepath, dry_run, target_root):
 
     already_css = CSS_FILENAME in html or css_rel in html
     already_js = JS_FILENAME in html or js_rel in html
-    already_js2 = JS2_FILENAME in html or js2_rel in html
+    already_feature_js = all(
+        filename in html or rel in html
+        for filename, rel in zip(FEATURE_JS_FILENAMES, feature_js_rels)
+    )
     already_index_js = INDEX_JS_FILENAME in html or index_js_rel in html
     already_favicon = FAVICON_FILE in html or favicon_rel in html
     lower_html = html.lower()
@@ -77,7 +87,7 @@ def inject_file(filepath, dry_run, target_root):
     viewport_tag = VIEWPORT_TAG if target_root == PROJECT_ROOT else MOBILE_INDEX_VIEWPORT_TAG
 
     needs_index_js = is_target_root_index
-    if already_css and already_js and already_js2 and already_favicon and already_viewport and (not needs_index_js or already_index_js):
+    if already_css and already_js and already_feature_js and already_favicon and already_viewport and (not needs_index_js or already_index_js):
         return "skipped"
 
     inject = ""
@@ -89,8 +99,8 @@ def inject_file(filepath, dry_run, target_root):
         inject += f"  {css_tag}\n"
     if not already_js:
         inject += f"  {js_tag}\n"
-    if not already_js2:
-        inject += f"  {js2_tag}\n"
+    if not already_feature_js:
+        inject += "".join(f"  {tag}\n" for tag in feature_js_tags)
     if needs_index_js and not already_index_js:
         inject += f"  {index_js_tag}\n"
 

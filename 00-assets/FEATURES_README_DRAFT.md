@@ -1,17 +1,18 @@
 # Site Features Guide Draft
 
-This is a draft guide for running the extra site features. Read and edit this before posting it anywhere.
+This is the working guide for the custom league-site features and build pipeline. It is meant to describe how the repo behaves now, not how the first version worked.
 
 ## Quick Start
 
-1. Put the latest sim export files in the project like normal.
-2. Run `00-build/run_build.bat`.
-3. Run `00-build/scripts/server.bat`.
-4. Open `http://localhost:8000/index.htm` in your browser.
+1. Put the latest sim export files in the project root like normal.
+2. Make sure `LeagueOutput.mdb` is present if you want ratings enrichment.
+3. Run `00-build/run_build.bat`.
+4. Run `00-build/scripts/server.bat`.
+5. Open `http://localhost:8000/index.htm`.
 
-If you are only viewing the site locally from files, most pages still work by opening `index.htm`, but the local server is safer because browsers can block some JSON loading from `file://`.
+Using the local server is still the safest option because many features read JSON files and browsers can block that from `file://`.
 
-## What The Build Does
+## What The Main Build Does
 
 Run:
 
@@ -19,29 +20,77 @@ Run:
 00-build/run_build.bat
 ```
 
-This runs `00-build/scripts/build.py`, which currently does two main jobs:
+That script resolves Python, then runs:
 
-1. Builds the shared JSON databases from the generated league HTML files.
-2. Injects the shared CSS and JavaScript links into the generated HTML pages.
+```text
+00-build/scripts/build.py
+```
 
-The build creates or updates files in:
+`build.py` currently runs these steps in order:
+
+1. `build_players_json.py`
+2. `build_youth_intake_json.py`
+3. `build_monthly_jsons.py`
+4. `build_media_package_prompts.py`
+5. `ensure_settings_page.py`
+6. `inject_css_js.py`
+7. `validate_media_site.py`
+
+So the build now does more than just JSON generation and CSS injection. It also:
+
+- builds youth-intake data
+- builds monthly editorial context JSON
+- builds the monthly media prompt package
+- ensures the browser-only settings page exists
+- validates ESL Media publish surfaces
+
+## Main Generated Output
+
+The main generated data lives in:
 
 ```text
 00-build/database/
 ```
 
-Important JSON files:
+Important files there include:
 
 ```text
 players.json
 player_stats.json
+player_gamelogs.json
 teams.json
+team_stats.json
 standings.json
+schedule.json
+game_results.json
 capreport.json
 injuries.json
+freeagents.json
+leaders.json
+awards.json
 ```
 
-These JSONs are what the newer JavaScript features read from. The features do not need to scrape the HTML every time someone opens the site.
+Monthly editorial/supporting output lives in:
+
+```text
+00-build/database/monthly/
+```
+
+Important monthly files:
+
+```text
+latest_sim_results.json
+monthly_team_form.json
+overall_team_form.json
+tier_race_snapshot.json
+monthly_storylines.json
+```
+
+The generated monthly editorial package lives in:
+
+```text
+00-eslmedia/content/prompts/monthly_editorial_package.json
+```
 
 ## Running The Local Server
 
@@ -51,94 +100,136 @@ Run:
 00-build/scripts/server.bat
 ```
 
+That starts a simple HTTP server from the repo root on port `8000`.
+
 Then open:
 
 ```text
 http://localhost:8000/index.htm
 ```
 
-The server starts from the main repo folder, so links like `players/`, `rosters/`, `00-assets/`, and `00-build/database/` should all resolve correctly.
+Because the server starts from the repo root, paths like these resolve correctly:
 
-## Main Feature Files
+- `players/`
+- `rosters/`
+- `00-assets/`
+- `00-build/database/`
+- `00-eslmedia/`
+- `00-SuperCup/`
 
-Shared styling:
+## Main Source Files
 
-```text
-00-assets/css/styles.css
-```
-
-General site features:
-
-```text
-00-assets/js/features.js
-```
-
-Table sorting:
-
-```text
-00-assets/js/sort.js
-```
-
-Depth chart builder:
-
-```text
-00-assets/html/depthcharts.htm
-00-assets/js/depthcharts.js
-```
-
-Build scripts:
+### Build entrypoints
 
 ```text
 00-build/scripts/build.py
+00-build/scripts/build_supercup.py
 00-build/scripts/build_players_json.py
+```
+
+### Shared asset injection
+
+```text
 00-build/scripts/inject_css_js.py
 ```
 
-## Current Features
+When run against the main repo, the injector adds:
 
-### Shared Site Styling
+- `00-assets/css/styles.css`
+- `00-assets/js/sort.js`
+- `00-assets/js/core.js`
+- `00-assets/js/settings.js`
+- `00-assets/js/menu.js`
+- `00-assets/js/legacy-page-enhancements.js`
+- `00-assets/js/search.js`
+- `00-assets/js/roster-enhancements.js`
+- `00-assets/js/index.js` on the main `index.htm`
 
-`00-assets/css/styles.css` controls the newer look across the generated HTML pages. The build injects this into the HTML pages so the league output keeps the custom design after every sim update.
+`features.js` still exists, but it is now a deprecated compatibility wrapper rather than the main feature file.
 
-### Player Search
-
-The player search uses `players.json`. It lets you search players quickly instead of manually opening team pages.
-
-If search is not updating after a new sim, run the build again so `players.json` is refreshed.
-
-### Ratings Pills
-
-OVR and POT are pulled into `players.json` from `LeagueOutput.mdb` when available. The frontend can then show rating-style labels without manually editing player pages.
-
-If ratings are missing, check that `LeagueOutput.mdb` exists in the project root before running the build.
-
-### Cap Report
-
-The cap report data is generated into:
+### Shared frontend files
 
 ```text
-00-build/database/capreport.json
+00-assets/css/styles.css
+00-assets/js/core.js
+00-assets/js/settings.js
+00-assets/js/menu.js
+00-assets/js/search.js
+00-assets/js/roster-enhancements.js
+00-assets/js/index.js
+00-assets/js/depthcharts.js
 ```
 
-The menu link is injected through JavaScript instead of manually editing `menu.htm`.
-
-### Injuries
-
-The injury data is generated into:
+### Shared HTML shells
 
 ```text
-00-build/database/injuries.json
+00-assets/html/depthcharts.htm
+00-assets/html/league dashboard.htm
+00-assets/html/settings.htm
+00-assets/html/unified-roster.htm
+00-assets/html/unified-player.htm
+00-assets/html/youth-intake.htm
 ```
 
-If the file is empty, the site will not have injury data to display yet. Once injuries are present, frontend features can use it for red injury tags, injury reports, or depth chart IR helpers.
+## Current Feature Model
 
-### Waiver Wire Table
+### League pages are enhanced output
 
-The waiver wire feature uses the shared player database to create a cleaner searchable/filterable table.
+Root pages like `standings.htm`, `schedule.htm`, and `leaders.htm`, plus the `players/` and `rosters/` folders, should be treated as league-export surfaces that the build enhances.
 
-If players are missing here, rebuild `players.json`.
+If you want a change to survive the next sim export, prefer editing:
 
-### Depth Chart Builder
+- shared assets in `00-assets/`
+- build scripts in `00-build/scripts/`
+- HTML shells in `00-assets/html/`
+
+Avoid relying on direct hand edits to generated pages unless it is a one-off patch.
+
+### JSON-backed site features
+
+The newer site features read from generated JSON in `00-build/database/` rather than scraping the HTML at page load.
+
+That means when something looks stale, the likely issue is one of:
+
+1. the build did not run
+2. the source export files changed shape
+3. the wrong producer script needs updating
+4. the browser is still serving cached JS
+
+### Ratings enrichment
+
+OVR and POT data can be enriched from:
+
+```text
+LeagueOutput.mdb
+```
+
+If ratings are missing, check that the MDB file exists before running the build.
+
+### Browser-only settings page
+
+The build now ensures this page exists:
+
+```text
+00-assets/html/settings.htm
+```
+
+That file is recreated if missing by:
+
+```text
+00-build/scripts/ensure_settings_page.py
+```
+
+### Index shell behavior
+
+The main `index.htm` now behaves like a shell that loads:
+
+- the menu in one frame
+- the selected league page in another frame
+
+`00-assets/js/index.js` handles the mobile-friendly shell behavior, default page routing, and menu open/close behavior.
+
+### Depth chart builder
 
 Open:
 
@@ -146,87 +237,121 @@ Open:
 00-assets/html/depthcharts.htm
 ```
 
-The depth chart builder lets you:
+The depth chart builder still lives outside the generated pages and is backed by `00-assets/js/depthcharts.js`.
 
-1. Pick a team.
-2. Select players from that team roster.
-3. Type in any player name if someone is traded or missing from the roster list.
-4. Set positions and minutes.
-5. Bold specific changed lines.
-6. Set offense and defense gameplan values.
-7. Auto-fill top 13.
-8. Auto-distribute minutes to exactly 240.
-9. Copy the formatted depth chart template.
-10. Load a pasted depth chart text back into the builder.
+### Unified custom pages
 
-Depth charts are saved in browser local storage by team, so refreshing the page should keep the current chart on the same computer/browser.
+Several custom pages now exist as maintained HTML shells rather than generated league pages, including:
+
+- unified roster pages
+- unified player pages
+- league dashboard pages
+- youth-intake pages
+
+When one of those pages is wrong, start by checking `00-assets/html/` before inspecting root exported pages.
+
+### ESL Media integration
+
+The main build now feeds the media side too.
+
+Important media-related files:
+
+```text
+00-build/scripts/build_monthly_jsons.py
+00-build/scripts/build_media_package_prompts.py
+00-build/scripts/validate_media_site.py
+00-eslmedia/content/media-articles.js
+00-eslmedia/content/prompts/monthly_editorial_package.json
+00-eslmedia/content/articles/README.md
+```
+
+The media validation step checks that:
+
+- the article manifest exists
+- manifest entries point at real article files
+- sort keys are valid
+- teams arrays exist
+- homepage hooks and links resolve
 
 ## After Uploading A New Sim
 
-Do this each time the league HTML output changes:
+Do this each time the league export changes:
 
-1. Replace or update the generated league files.
-2. Make sure `LeagueOutput.mdb` is present if you want OVR/POT ratings.
+1. Replace or update the generated league files in the repo root plus `players/` and `rosters/`.
+2. Make sure `LeagueOutput.mdb` is present if you want OVR/POT.
 3. Run `00-build/run_build.bat`.
 4. Run or restart `00-build/scripts/server.bat`.
 5. Refresh the browser.
 
-If a feature still looks old, do a hard refresh. Some browsers cache JavaScript aggressively.
+If something still looks old, do a hard refresh because browser caching can hide new JS or JSON.
 
-## Things You Should Not Need To Edit Manually
+## Things You Usually Should Not Edit Manually
 
-Do not manually edit generated pages unless it is temporary. They can be overwritten by the next sim export.
-
-Usually avoid manually editing:
+These are typically generated or refreshed from league output:
 
 ```text
 players/
 rosters/
 standings.htm
 leaders.htm
+schedule.htm
 transactions.htm
 menu.htm
 ```
 
-Prefer editing:
+Usually prefer editing:
 
 ```text
 00-assets/css/styles.css
-00-assets/js/features.js
-00-assets/js/depthcharts.js
-00-assets/html/depthcharts.htm
+00-assets/js/
+00-assets/html/
 00-build/scripts/
+00-eslmedia/content/
 ```
-
-This keeps custom features separate from generated league output.
 
 ## Troubleshooting
 
-If a feature is missing:
+### If a league feature is missing
 
 1. Run `00-build/run_build.bat`.
-2. Check that the page has links to `00-assets/css/styles.css`, `00-assets/js/sort.js`, and `00-assets/js/features.js`.
+2. Check that the page has the injected shared assets, especially `styles.css`, `sort.js`, and the split feature modules.
 3. Use the local server instead of opening files directly.
 4. Hard refresh the browser.
 
-If JSON is missing or outdated:
+### If data is missing or outdated
 
 1. Check `00-build/database/`.
-2. Run the build again.
-3. Make sure the source HTML files exist, especially `players/`, `rosters/`, `standings.htm`, `capreport.htm`, and `injuries.htm`.
+2. Re-run the build.
+3. Confirm the relevant source files exist:
+   - `players/`
+   - `rosters/`
+   - `standings.htm`
+   - `capreport.htm`
+   - `injuries.htm`
+   - `schedule.htm`
+   - `leaders.htm`
+   - `awards.htm`
+4. If ratings are the issue, confirm `LeagueOutput.mdb` exists.
 
-If depth charts do not save:
+### If an ESL Media surface is wrong
 
-1. Make sure browser local storage is enabled.
-2. Use the same browser and same URL.
-3. Avoid clearing browser site data unless you want to reset saved charts.
+1. Re-run the build so validation runs again.
+2. Check `00-eslmedia/content/media-articles.js`.
+3. Check `00-eslmedia/content/prompts/monthly_editorial_package.json`.
+4. Check `00-eslmedia/content/articles/README.md` if the issue is article structure or shared scripts.
+
+### If a feature survives locally but disappears after a new sim
+
+The change was probably made in generated output instead of:
+
+- a build script
+- a shared asset file
+- a maintained custom HTML shell
 
 ## Simple Mental Model
 
-The generated sim HTML is the raw league output.
+The sim export gives you raw league HTML and related source files.
 
-The build scripts turn that output into JSON databases.
+The build scripts turn those sources into generated JSON, maintained helper pages, injected shared assets, and media-side support files.
 
-The JavaScript features read those JSON databases and upgrade the site in the browser.
-
-The custom feature code lives in `00-assets/`, so it survives new sim uploads better than direct edits to generated HTML.
+The site frontend reads those generated files and shared modules to upgrade the exported league site without needing to hand-edit every generated page after each sim.

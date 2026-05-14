@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>League Dashboard Mockup</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    :root {
+      --team-color: #111b36;
+      --team-color-2: #1d3666;
+      --ink: #202124;
+      --muted: #5f6368;
+      --paper: #f6f7f9;
+      --card: #ffffff;
+      --line: #d8dee7;
+      --soft: #eef2f6;
+      --good: #198754;
+      --warn: #b7791f;
+      --bad: #b42318;
+      --font-sans: "Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      --font-serif: "Tiempos Headline", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    }
+    * { box-sizing: border-box; }
+    html { max-width: 100vw; overflow-x: hidden; }
+    body.mockup-page {
+      margin: 0;
+      padding: 0.85rem;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 14px;
+      max-width: 100vw;
+      overflow-x: hidden;
+    }
+    a { color: #1d4ed8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .shell {
+      width: 100%;
+      max-width: min(1320px, calc(100vw - 1.7rem));
+      display: grid;
+      gap: 0.75rem;
+      min-width: 0;
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+      border: 1px solid #0b1227;
+      background: linear-gradient(135deg, var(--team-color), #182c56 72%, #223a6c);
+      color: #fff;
+      padding: 0.5rem 0.6rem;
+      box-shadow: 0 10px 26px rgba(17, 27, 54, 0.16);
+    }
+    .topbar-brand {
+      display: grid;
+      gap: 0.16rem;
+      min-width: 0;
+    }
+    .eyebrow,
+    .search-label,
+    .panel-note,
+    .summary-label,
+    .table-note,
+    .rank-label,
+    .card-stat-label {
+      color: var(--muted);
+      font-size: 0.64rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .topbar .eyebrow,
+    .topbar .search-label {
+      color: rgba(255, 255, 255, 0.72);
+    }
+    .topbar-title {
+      font-size: 1.2rem;
+      font-weight: 900;
+      line-height: 1;
+      color: #fff;
+    }
+    .topbar-links {
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+    }
+    .btn-link {
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 30px;
+      padding: 0.32rem 0.48rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .btn-link:hover {
+      border-color: rgba(255, 255, 255, 0.45);
+      background: rgba(255, 255, 255, 0.18);
+      text-decoration: none;
+    }
+    .search-wrap {
+      flex: 1 1 340px;
+      max-width: 460px;
+      min-width: min(340px, 100%);
+      position: relative;
+      display: grid;
+      gap: 0.3rem;
+    }
+    .search-input {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      font: inherit;
+      padding: 0.42rem 0.5rem;
+    }
+    .search-input:focus {
+      border-color: rgba(255, 255, 255, 0.62);
+      outline: 2px solid rgba(255, 255, 255, 0.22);
+      outline-offset: 1px;
+    }
+    .search-input::placeholder { color: rgba(255, 255, 255, 0.72); }
+    .search-results {
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
+      left: 0;
+      max-height: min(320px, 62vh);
+      overflow: auto;
+      position: absolute;
+      right: 0;
+      top: calc(100% + 4px);
+      z-index: 20;
+      display: none;
+    }
+    .search-wrap.is-open .search-results { display: block; }
+    .search-result {
+      align-items: center;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink);
+      display: grid;
+      gap: 0.15rem;
+      min-height: 34px;
+      padding: 0.42rem 0.5rem;
+      text-align: left;
+      width: 100%;
+    }
+    .search-result:last-child { border-bottom: 0; }
+    .search-result:hover { background: #f1f5f9; color: var(--team-color); text-decoration: none; }
+    .search-result-name {
+      font-family: var(--font-serif);
+      font-size: 0.96rem;
+      line-height: 1.12;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+    .hero-main,
+    .panel {
+      border: 1px solid var(--line);
+      background: var(--card);
+      min-width: 0;
+    }
+    .hero-main {
+      border: 1px solid #0d1730;
+      background: linear-gradient(135deg, #111b36, #182b54 72%, #1d3666);
+      color: #fff;
+      padding: 0.46rem 0.58rem 0.5rem;
+      display: grid;
+      gap: 0.42rem;
+      box-shadow: 0 14px 30px rgba(17, 27, 54, 0.18);
+    }
+    .hero-top {
+      display: grid;
+      grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+      gap: 0.45rem;
+      align-items: center;
+    }
+    .hero-title-block {
+      min-width: 0;
+    }
+    .hero-title {
+      margin: 0;
+      font-size: clamp(1.02rem, 2vw, 1.4rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+    .hero-subline {
+      margin-top: 0.12rem;
+      color: rgba(255, 255, 255, 0.78);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.28rem;
+      line-height: 1.2;
+      font-size: 0.78rem;
+    }
+    .tag-row,
+    .league-controls,
+    .summary-strip {
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .info-chip,
+    .league-btn {
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0.18rem 0.38rem;
+      font-size: 0.72rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .league-btn {
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.08);
+      font: inherit;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .league-btn.active {
+      background: #fff;
+      border-color: #fff;
+      color: var(--team-color);
+    }
+    .summary-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.28rem;
+    }
+    .summary-card {
+      border-left: 1px solid rgba(255, 255, 255, 0.18);
+      padding-left: 0.34rem;
+      min-width: 0;
+    }
+    .summary-card:first-child {
+      border-left: 0;
+      padding-left: 0;
+    }
+    .summary-value {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 900;
+      line-height: 1.02;
+      color: #fff;
+    }
+    .summary-detail {
+      margin-top: 0.04rem;
+      font-size: 0.62rem;
+      color: rgba(255, 255, 255, 0.74);
+      line-height: 1.1;
+    }
+    .main-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) minmax(310px, 0.95fr);
+      gap: 0.75rem;
+      align-items: start;
+      min-width: 0;
+    }
+    .primary-stack,
+    .side-stack {
+      display: grid;
+      gap: 0.75rem;
+      min-width: 0;
+    }
+    .panel { padding: 0; overflow: hidden; }
+    .panel-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #152447, #111b36);
+      padding: 0.48rem 0.6rem;
+    }
+    .panel-title {
+      margin: 0;
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .panel-head .panel-note,
+    .panel-head .table-note { color: rgba(255, 255, 255, 0.72); }
+    .panel-head-main,
+    .panel-head-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .panel-head-actions {
+      justify-content: flex-end;
+      margin-left: auto;
+    }
+    .panel-status {
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .panel-body { padding: 0.6rem; }
+    .standings-table-wrap {
+      display: block;
+      overflow: auto;
+      width: 100%;
+      max-width: 100%;
+      max-height: min(62vh, 620px);
+      scrollbar-gutter: stable;
+      border-bottom: 1px solid var(--line);
+    }
+    .standings-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      min-width: 760px;
+    }
+    .standings-table th,
+    .standings-table td {
+      border-bottom: 1px solid var(--line);
+      padding: 0.45rem 0.5rem;
+      font-size: 0.84rem;
+      white-space: nowrap;
+      text-align: right;
+    }
+    .standings-table th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: #eff3f9;
+      color: var(--team-color);
+      font-size: 0.64rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .standings-table th:first-child,
+    .standings-table td:first-child {
+      text-align: left;
+      position: sticky;
+      left: 0;
+      background: #fff;
+      z-index: 1;
+      min-width: 220px;
+      width: 220px;
+    }
+    .standings-table th:first-child { background: #f8fafc; z-index: 3; }
+    .team-cell {
+      display: flex;
+      align-items: center;
+      gap: 0.48rem;
+      min-width: 0;
+    }
+    .team-logo,
+    .team-logo-fallback {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      flex: 0 0 24px;
+      border: 1px solid rgba(17, 27, 54, 0.14);
+      background: #eef2f6;
+    }
+    .team-logo { object-fit: cover; }
+    .team-logo-fallback {
+      display: grid;
+      place-items: center;
+      color: var(--team-color);
+      font-size: 0.6rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+    }
+    .team-link {
+      color: inherit;
+      text-decoration: none;
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      min-width: 0;
+    }
+    .team-link:hover { color: var(--team-color); text-decoration: underline; }
+    .race-row-champion { background: #fff5ce; }
+    .race-row-promoted { background: #edf8ee; }
+    .race-row-relegated { background: #fff0ef; }
+    .race-pill {
+      margin-left: 0.35rem;
+      border: 1px solid rgba(17, 27, 54, 0.22);
+      background: rgba(17, 27, 54, 0.04);
+      color: var(--team-color);
+      display: inline-flex;
+      align-items: center;
+      min-height: 18px;
+      padding: 0 0.25rem;
+      font-size: 0.58rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+    .diff-pos { color: var(--good); font-weight: 800; }
+    .diff-neg { color: var(--bad); font-weight: 800; }
+    .standings-cards {
+      display: none;
+      padding: 0.6rem;
+      gap: 0.55rem;
+    }
+    .standing-card {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, #fff, #f9fbff);
+      color: inherit;
+      display: grid;
+      gap: 0.5rem;
+      padding: 0.65rem;
+      text-decoration: none;
+    }
+    .standing-card-head {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.55rem;
+    }
+    .standing-card-team {
+      display: flex;
+      align-items: center;
+      gap: 0.48rem;
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      line-height: 1.15;
+    }
+    .standing-card-logo,
+    .standing-card-logo-fallback {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      flex: 0 0 26px;
+      border: 1px solid rgba(17, 27, 54, 0.14);
+      background: #eef2f6;
+    }
+    .standing-card-logo { object-fit: cover; }
+    .standing-card-logo-fallback {
+      display: grid;
+      place-items: center;
+      color: var(--team-color);
+      font-size: 0.62rem;
+      font-weight: 900;
+    }
+    .standing-card-stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.42rem;
+    }
+    .card-stat {
+      border-top: 1px solid var(--line);
+      padding-top: 0.35rem;
+    }
+    .card-stat-value { font-size: 0.88rem; font-weight: 800; }
+    .leaders-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.6rem;
+    }
+    .leader-card,
+    .mini-card,
+    .media-card {
+      border: 1px solid var(--line);
+      background: #fff;
+      min-width: 0;
+    }
+    .leader-card {
+      padding: 0.6rem;
+      display: grid;
+      gap: 0.16rem;
+    }
+    .leader-value {
+      font-family: var(--font-serif);
+      font-size: 1.26rem;
+      line-height: 1;
+      color: var(--team-color);
+    }
+    .leader-name {
+      font-size: 0.86rem;
+      line-height: 1.28;
+    }
+    .leader-name a,
+    .mini-name a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .leader-name a:hover,
+    .mini-name a:hover { color: var(--team-color); text-decoration: underline; }
+    .mini-stack,
+    .media-list { display: grid; gap: 0.55rem; }
+    .mini-card {
+      padding: 0.58rem 0.6rem;
+      display: grid;
+      gap: 0.22rem;
+    }
+    .mini-name {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      line-height: 1.15;
+    }
+    .mini-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+    }
+    .mini-value {
+      font-weight: 900;
+      color: var(--team-color);
+      white-space: nowrap;
+    }
+    .mini-value.bad { color: var(--bad); }
+    .media-card {
+      padding: 0.7rem;
+      display: grid;
+      gap: 0.32rem;
+      text-decoration: none;
+      color: inherit;
+    }
+    .media-card:hover {
+      border-color: var(--team-color);
+      background: #fafcff;
+      text-decoration: none;
+    }
+    .media-title {
+      color: var(--team-color);
+      font-family: var(--font-serif);
+      font-size: 1.08rem;
+      line-height: 1.14;
+    }
+    .media-blurb {
+      color: var(--ink);
+      font-size: 0.84rem;
+      line-height: 1.35;
+    }
+    .status-text { color: var(--muted); font-size: 0.72rem; }
+    .collapse-toggle { display: none; }
+    @media (max-width: 1100px) {
+      .hero,
+      .main-layout,
+      .leaders-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 760px) {
+      body.mockup-page { padding: 0.65rem; }
+      .topbar,
+      .hero-main { padding: 0.6rem; }
+      .topbar-title { font-size: 1rem; }
+      .search-wrap { max-width: none; min-width: 0; width: 100%; }
+      .hero-top,
+      .summary-strip,
+      .standing-card-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero-title { font-size: 1rem; }
+      .hero-subline { font-size: 0.72rem; }
+      .summary-value { font-size: 0.88rem; }
+      .standings-table-wrap { display: none; }
+      .standings-cards { display: grid; }
+      .league-controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .league-btn { justify-content: center; }
+      .panel-body { padding: 0.55rem; }
+      .panel-head-actions {
+        width: 100%;
+        justify-content: stretch;
+      }
+      .panel-status {
+        width: 100%;
+      }
+      .mobile-collapsible .panel-head { cursor: pointer; }
+      .collapse-toggle {
+        background: #fff;
+        border: 1px solid var(--line);
+        color: var(--team-color);
+        display: inline-flex;
+        font: inherit;
+        font-size: 0.62rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        padding: 0.32rem 0.42rem;
+        text-transform: uppercase;
+      }
+      .mobile-collapsible:not(.is-open) .collapse-body { display: none; }
+    }
+  </style>
+</head>
+<body class="mockup-page">
+  <div class="shell">
+    <div class="topbar">
+      <div class="topbar-brand">
+        <div class="eyebrow">Unified Design Mockup</div>
+        <div class="topbar-title">League Dashboard</div>
+      </div>
+      <div class="topbar-links">
+        <a class="btn-link" href="../../standings.htm">Standings</a>
+        <a class="btn-link" href="../../leaders.htm">Leaders</a>
+        <a class="btn-link" href="../../injuries.htm">Injuries</a>
+        <a class="btn-link" href="../../capreport.htm">Cap Report</a>
+        <a class="btn-link" href="../../transactions.htm">Transactions</a>
+      </div>
+      <div class="search-wrap">
+        <label class="search-label" for="globalSearchInput">Player / Team Search</label>
+        <input id="globalSearchInput" class="search-input" type="search" placeholder="Search players or teams">
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-main">
+        <div class="hero-top">
+          <div class="hero-title-block">
+            <h1 class="hero-title" id="heroTitle">Loading league pulse</h1>
+            <div class="hero-subline" id="heroSubline">Preparing live dashboard data</div>
+          </div>
+          <div class="summary-strip" id="summaryStrip">
+            <div class="summary-card"><span class="summary-label">Leader</span><span class="summary-value">--</span><div class="summary-detail">Loading</div></div>
+            <div class="summary-card"><span class="summary-label">Chase Pack</span><span class="summary-value">--</span><div class="summary-detail">Loading</div></div>
+            <div class="summary-card"><span class="summary-label">Best Diff</span><span class="summary-value">--</span><div class="summary-detail">Loading</div></div>
+            <div class="summary-card"><span class="summary-label">Tightest Gap</span><span class="summary-value">--</span><div class="summary-detail">Loading</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-layout">
+      <div class="primary-stack">
+        <section class="panel">
+          <div class="panel-head">
+            <div class="panel-head-main">
+              <h2 class="panel-title">Standings Pulse</h2>
+              <div class="table-note">Live table view with promotion/relegation context</div>
+            </div>
+            <div class="panel-head-actions">
+              <div class="league-controls" id="leagueControls"></div>
+              <div class="panel-status" id="statusText">Loading dashboard data</div>
+            </div>
+          </div>
+          <div class="standings-table-wrap">
+            <table class="standings-table">
+              <thead>
+                <tr>
+                  <th>Team</th>
+                  <th>W-L</th>
+                  <th>GB</th>
+                  <th>Diff</th>
+                  <th>Last 10</th>
+                  <th>Streak</th>
+                </tr>
+              </thead>
+              <tbody id="standingsBody">
+                <tr><td colspan="6">Loading standings</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="standings-cards" id="standingsCards"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">Category Leaders</h2>
+            <div class="panel-note">Top performer per category</div>
+          </div>
+          <div class="panel-body">
+            <div class="leaders-grid" id="leadersGrid"></div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">From ESL Media</h2>
+            <div class="panel-note">Most relevant dispatches</div>
+          </div>
+          <div class="panel-body">
+            <div class="media-list" id="mediaList"><div class="media-card">Loading media</div></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="side-stack">
+        <section class="panel mobile-collapsible is-open">
+          <div class="panel-head">
+            <h2 class="panel-title">Injury Watch</h2>
+            <button class="collapse-toggle" type="button">Hide</button>
+            <div class="panel-note">Longest current injuries</div>
+          </div>
+          <div class="panel-body collapse-body">
+            <div class="mini-stack" id="injuryList"><div class="mini-card">Loading injuries</div></div>
+          </div>
+        </section>
+
+        <section class="panel mobile-collapsible is-open">
+          <div class="panel-head">
+            <h2 class="panel-title">Top Scorers</h2>
+            <button class="collapse-toggle" type="button">Hide</button>
+            <div class="panel-note">Points leaderboard</div>
+          </div>
+          <div class="panel-body collapse-body">
+            <div class="mini-stack" id="topPlayersList"><div class="mini-card">Loading player leaders</div></div>
+          </div>
+        </section>
+
+        <section class="panel mobile-collapsible">
+          <div class="panel-head">
+            <h2 class="panel-title">Cap Room Leaders</h2>
+            <button class="collapse-toggle" type="button">Show</button>
+            <div class="panel-note" id="capLabel">League cap view</div>
+          </div>
+          <div class="panel-body collapse-body">
+            <div class="mini-stack" id="capList"><div class="mini-card">Loading cap report</div></div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+
+  <script src="../js/player-page-destination.js"></script>
+  <script src="../../00-eslmedia/content/media-articles.js"></script>
+  <script>
+    const DATA_URLS = {
+      standings: "../../00-build/database/standings.json",
+      leaders: "../../00-build/database/leaders.json",
+      injuries: "../../00-build/database/injuries.json",
+      capreport: "../../00-build/database/capreport.json",
+      players: "../../00-build/database/players.json"
+    };
+
+    const PAGE_VIEWPORT = "width=device-width, initial-scale=1.0";
+    let parentViewportMeta = null;
+    let parentViewportPrevious = null;
+
+    function setParentFluidContent(enabled) {
+      try {
+        if (!window.parent || window.parent === window || !window.parent.document || !window.parent.document.body) return;
+        const parentDocument = window.parent.document;
+        const frame = window.frameElement;
+        const content = frame && frame.closest ? frame.closest(".site-content") : null;
+        const shell = frame && frame.closest ? frame.closest(".site-shell") : null;
+
+        parentDocument.body.classList.toggle("league-fluid-content", Boolean(enabled));
+
+        if (enabled) {
+          parentViewportMeta = parentDocument.querySelector('meta[name="viewport"]');
+          if (!parentViewportMeta) {
+            parentViewportMeta = parentDocument.createElement("meta");
+            parentViewportMeta.name = "viewport";
+            parentDocument.head.appendChild(parentViewportMeta);
+          }
+          if (parentViewportPrevious === null) {
+            parentViewportPrevious = parentViewportMeta.getAttribute("content") || "";
+          }
+          parentViewportMeta.setAttribute("content", PAGE_VIEWPORT);
+        } else if (parentViewportMeta && parentViewportPrevious !== null) {
+          parentViewportMeta.setAttribute("content", parentViewportPrevious);
+          parentViewportPrevious = null;
+          parentViewportMeta = null;
+        }
+
+        if (frame) {
+          frame.style.minWidth = enabled ? "0" : "";
+          frame.style.width = enabled ? "100%" : "";
+          frame.style.maxWidth = enabled ? "100%" : "";
+        }
+        if (content) {
+          content.style.minWidth = enabled ? "0" : "";
+          content.style.overflowX = enabled ? "hidden" : "";
+        }
+        if (shell) {
+          shell.style.minWidth = enabled ? "0" : "";
+          shell.style.width = enabled ? "100vw" : "";
+        }
+      } catch (error) {
+        // Direct loads do not need parent adjustments.
+      }
+    }
+
+    const TEAM_LOGOS = {
+      "AC Milan": "acmilan.jpg",
+      "AFC Richmond": "richmond.jpg",
+      "Ajax": "ajax.jpg",
+      "Aston Villa": "astonvilla.jpg",
+      "Atletico Madrid": "atletico.jpg",
+      "Barcelona": "barcelona.jpg",
+      "Bayern Munich": "bayern.jpg",
+      "Benfica": "benfica.jpg",
+      "Brighton": "brighton.jpg",
+      "Chelsea": "chelsea.jpg",
+      "Crystal Palace": "crystalpalace.jpg",
+      "FL Fart": "flfart.jpg",
+      "Inter Milan": "intermilan.jpg",
+      "Juventus": "juventus.jpg",
+      "Manchester City": "manchestercity.jpg",
+      "Manchester United": "manutd.jpg",
+      "Marseille": "marseille.jpg",
+      "Monaco": "monaco.jpg",
+      "Paris Saint-Germain": "psg.jpg",
+      "Real Madrid": "realmadrid.jpg",
+      "Sheffield United": "sheffield.jpg",
+      "Sporting CP": "sportingcp.jpg",
+      "Tottenham Hotspur": "tottenham.jpg",
+      "Valencia": "valencia.jpg"
+    };
+
+    const state = { standings: [], leaders: [], injuries: [], capreport: [], players: [], activeLeagueSlug: null };
+
+    function shortLeagueLabel(title) {
+      return String(title || "").replace(/\s+Standings$/i, "").trim();
+    }
+
+    function num(value) {
+      return Number.isFinite(Number(value)) ? Number(value) : 0;
+    }
+
+    function formatSigned(value) {
+      const n = num(value);
+      return (n > 0 ? "+" : "") + n.toFixed(1);
+    }
+
+    function formatGb(value) {
+      if (value === "-" || value === undefined || value === null || value === "") return "-";
+      return num(value).toFixed(1);
+    }
+
+    function extractLeagueToken(title) {
+      return String(title || "").split(" ")[0].toUpperCase();
+    }
+
+    function slugify(value) {
+      return String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, "");
+    }
+
+    function initials(name) {
+      return String(name || "").trim().split(/\s+/).filter(Boolean).slice(0, 2).map(function (part) {
+        return part.charAt(0).toUpperCase();
+      }).join("") || "ESL";
+    }
+
+    function teamLogoHtml(teamName, cardVariant) {
+      const safeName = escapeHtml(teamName || "");
+      const logoFile = TEAM_LOGOS[teamName] || (slugify(teamName) + ".jpg");
+      const fallback = initials(teamName);
+      const className = cardVariant ? "standing-card-logo" : "team-logo";
+      const fallbackClassName = cardVariant ? "standing-card-logo-fallback" : "team-logo-fallback";
+      return '<img class="' + className + '" src="../../00-assets/photos/' + logoFile + '" alt="' + safeName + ' logo" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'' + fallbackClassName + '\',textContent:\'' + fallback + '\'}))">';
+    }
+
+    function findMatchingLeaders(leagueToken) {
+      return state.leaders.find(function (section) {
+        return extractLeagueToken(section.title) === leagueToken;
+      }) || null;
+    }
+
+    function findMatchingCap(leagueToken) {
+      const tokenMap = { CLB: "champions", ELB: "europa", ECL: "conference" };
+      const expected = tokenMap[leagueToken];
+      if (!expected) return null;
+      return state.capreport.find(function (section) {
+        return String(section.title || "").toLowerCase().indexOf(expected) >= 0;
+      }) || null;
+    }
+
+    function normalizeHref(url) {
+      const raw = String(url || "").trim();
+      const rosterMatch = raw.match(/roster-view\.htm\?file=([^&#]+)/i);
+      if (rosterMatch && rosterMatch[1]) {
+        const file = decodeURIComponent(rosterMatch[1]).replace(/^(\.\/|\.\.\/)+/, "");
+        return file ? "./unified-roster.htm?file=" + encodeURIComponent(file) : "#";
+      }
+      const rosterDirectMatch = raw.match(/(?:^|\/)(roster\d+\.htm)(?:$|[?#])/i);
+      if (rosterDirectMatch && rosterDirectMatch[1]) {
+        return "./unified-roster.htm?file=" + encodeURIComponent(rosterDirectMatch[1]);
+      }
+      const clean = raw.replace(/^(\.\/|\.\.\/)+/, "");
+      if (!clean) return "#";
+      if (/^(https?:|mailto:|#)/i.test(clean)) return clean;
+      return "../../" + clean;
+    }
+
+    function normalizePlayerHref(url, name, teamName) {
+      const raw = String(url || "").trim();
+      const links = window.leaguePlayerPageLinks;
+      if (links && links.isClassic()) {
+        if (raw) {
+          return links.hrefFromAssetsHtml(raw);
+        }
+        const p = findPlayerByName(name || "", teamName || "");
+        return p && p.url ? links.hrefFromAssetsHtml(p.url) : "#";
+      }
+      if (links) {
+        if (raw) {
+          const h = links.hrefFromAssetsHtml(raw);
+          if (h !== "#") return h;
+        }
+        return links.unifiedHrefByNameFromAssetsHtml(name || "");
+      }
+      const idMatch = raw.match(/player(\d+)\.htm/i);
+      if (idMatch) return "./unified-player.htm?id=" + encodeURIComponent("player" + idMatch[1]);
+      return "./unified-player.htm?name=" + encodeURIComponent(name || "");
+    }
+
+    function findPlayerByName(name, teamName) {
+      const target = String(name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      const team = String(teamName || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      return (state.players || []).find(function (player) {
+        return String(player.name || "").toLowerCase().replace(/[^a-z0-9]/g, "") === target &&
+          (!team || String(player.teamLabel || player.team || "").toLowerCase().replace(/[^a-z0-9]/g, "") === team);
+      }) || (state.players || []).find(function (player) {
+        return String(player.name || "").toLowerCase().replace(/[^a-z0-9]/g, "") === target;
+      }) || null;
+    }
+
+    function getRaceMeta(activeSection, index, total) {
+      const token = extractLeagueToken(activeSection && activeSection.title);
+      if (token === "CLB" && index === 0) return { className: "race-row-champion", label: "Champ" };
+      if (token === "CLB" && index >= total - 2) return { className: "race-row-relegated", label: "Rel" };
+      if (token === "ELB" && index <= 1) return { className: "race-row-promoted", label: "Prom" };
+      if (token === "ELB" && index === total - 1) return { className: "race-row-relegated", label: "Rel" };
+      if (token === "ECL" && index === 0) return { className: "race-row-promoted", label: "Prom" };
+      return { className: "", label: "" };
+    }
+
+    function buildLeagueControls() {
+      const root = document.getElementById("leagueControls");
+      root.innerHTML = state.standings.map(function (section) {
+        const activeClass = section.slug === state.activeLeagueSlug ? " active" : "";
+        return '<button type="button" class="league-btn' + activeClass + '" data-slug="' + section.slug + '">' + shortLeagueLabel(section.title) + '</button>';
+      }).join("");
+      root.querySelectorAll(".league-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          state.activeLeagueSlug = btn.dataset.slug;
+          renderDashboard();
+        });
+      });
+    }
+
+    function renderHero(activeSection) {
+      const teams = Array.isArray(activeSection.teams) ? activeSection.teams.slice() : [];
+      const leader = teams[0] || null;
+      const sortedByDiff = teams.slice().sort(function (a, b) { return num(b.diff) - num(a.diff); });
+      const bestDiff = sortedByDiff[0] || null;
+      const second = teams[1] || null;
+      const gaps = teams.slice(1).map(function (team) { return num(team.gb); }).filter(function (value) { return value > 0; });
+      const tightestGap = gaps.length ? Math.min.apply(null, gaps) : 0;
+      const chasePack = teams.slice(1, 4).map(function (team) { return team.team; }).filter(Boolean).join(", ");
+
+      document.getElementById("heroTitle").textContent = shortLeagueLabel(activeSection.title) + " race at a glance";
+      document.getElementById("heroSubline").innerHTML = [
+        leader ? '<span><strong>' + leader.team + '</strong> sets the pace</span>' : '<span>Awaiting leader</span>',
+        second ? '<span>' + second.team + ' sits closest</span>' : "",
+        '<span>' + teams.length + ' teams in this table</span>'
+      ].filter(Boolean).join("");
+
+      document.getElementById("summaryStrip").innerHTML =
+        '<div class="summary-card"><span class="summary-label">Leader</span><span class="summary-value">' + (leader ? (leader.wins + "-" + leader.losses) : "--") + '</span><div class="summary-detail">' + (leader ? leader.team : "Waiting for standings") + '</div></div>' +
+        '<div class="summary-card"><span class="summary-label">Chase Pack</span><span class="summary-value">' + Math.max(teams.length - 1, 0) + '</span><div class="summary-detail">' + (chasePack || "No close challengers yet") + '</div></div>' +
+        '<div class="summary-card"><span class="summary-label">Best Diff</span><span class="summary-value">' + (bestDiff ? formatSigned(bestDiff.diff) : "--") + '</span><div class="summary-detail">' + (bestDiff ? bestDiff.team : "No diff data") + '</div></div>' +
+        '<div class="summary-card"><span class="summary-label">Tightest Gap</span><span class="summary-value">' + (tightestGap ? tightestGap.toFixed(1) + " GB" : "Level") + '</span><div class="summary-detail">' + (second ? second.team + " within reach" : "Single-team lead") + '</div></div>';
+    }
+
+    function renderStandings(activeSection) {
+      const standingsBody = document.getElementById("standingsBody");
+      const standingsCards = document.getElementById("standingsCards");
+      const teams = Array.isArray(activeSection.teams) ? activeSection.teams.slice() : [];
+
+      standingsBody.innerHTML = teams.map(function (team, index) {
+        const diffClass = num(team.diff) >= 0 ? "diff-pos" : "diff-neg";
+        const race = getRaceMeta(activeSection, index, teams.length);
+        const raceLabel = race.label ? '<span class="race-pill">' + race.label + '</span>' : "";
+        return '<tr class="' + race.className + '">' +
+          '<td><div class="team-cell">' + teamLogoHtml(team.team, false) + '<a class="team-link" href="' + normalizeHref(team.rosterUrl) + '">' + team.team + '</a>' + raceLabel + '</div></td>' +
+          '<td>' + team.wins + '-' + team.losses + '</td>' +
+          '<td>' + formatGb(team.gb) + '</td>' +
+          '<td class="' + diffClass + '">' + formatSigned(team.diff) + '</td>' +
+          '<td>' + (team.last10 || "-") + '</td>' +
+          '<td>' + (team.streak || "-") + '</td>' +
+        '</tr>';
+      }).join("");
+
+      standingsCards.innerHTML = teams.map(function (team, index) {
+        const diffClass = num(team.diff) >= 0 ? "diff-pos" : "diff-neg";
+        const race = getRaceMeta(activeSection, index, teams.length);
+        const raceLabel = race.label ? '<span class="race-pill">' + race.label + '</span>' : "";
+        return '<a class="standing-card ' + race.className + '" href="' + normalizeHref(team.rosterUrl) + '">' +
+          '<div class="standing-card-head"><div class="standing-card-team">' + teamLogoHtml(team.team, true) + '<span>' + team.team + raceLabel + '</span></div><div class="rank-label">#' + (index + 1) + '</div></div>' +
+          '<div class="standing-card-stats">' +
+            '<div class="card-stat"><div class="card-stat-label">Record</div><div class="card-stat-value">' + team.wins + '-' + team.losses + '</div></div>' +
+            '<div class="card-stat"><div class="card-stat-label">GB</div><div class="card-stat-value">' + formatGb(team.gb) + '</div></div>' +
+            '<div class="card-stat"><div class="card-stat-label">Diff</div><div class="card-stat-value ' + diffClass + '">' + formatSigned(team.diff) + '</div></div>' +
+            '<div class="card-stat"><div class="card-stat-label">Streak</div><div class="card-stat-value">' + (team.streak || "-") + '</div></div>' +
+          '</div>' +
+        '</a>';
+      }).join("");
+    }
+
+    function renderLeaders(leagueToken) {
+      const leadersGrid = document.getElementById("leadersGrid");
+      const leaderSection = findMatchingLeaders(leagueToken);
+      const wanted = ["Points", "Rebounds", "Assists", "Steals", "Blocks", "Minutes"];
+      if (!leaderSection) {
+        leadersGrid.innerHTML = '<div class="leader-card">Leaders unavailable</div>';
+        return;
+      }
+      leadersGrid.innerHTML = wanted.map(function (categoryName) {
+        const category = (leaderSection.categories || []).find(function (entry) {
+          return String(entry.title || "").toLowerCase() === categoryName.toLowerCase();
+        });
+        const leader = category && Array.isArray(category.leaders) ? category.leaders[0] : null;
+        if (!leader) {
+          return '<article class="leader-card"><div class="summary-label">' + categoryName + '</div><div class="leader-value">--</div><div class="leader-name">No data</div><div class="panel-note">--</div></article>';
+        }
+        return '<article class="leader-card">' +
+          '<div class="summary-label">' + categoryName + '</div>' +
+          '<div class="leader-value">' + (leader.valueText || leader.value || "--") + '</div>' +
+          '<div class="leader-name"><a href="' + normalizePlayerHref(leader.playerUrl, leader.player) + '">' + leader.player + '</a></div>' +
+          '<div class="panel-note"><a href="' + normalizeHref(leader.teamUrl) + '">' + (leader.teamName || "Team") + '</a></div>' +
+        '</article>';
+      }).join("");
+    }
+
+    function renderInjuries() {
+      const root = document.getElementById("injuryList");
+      const injuries = (state.injuries || []).slice().sort(function (a, b) { return num(b.length) - num(a.length); }).slice(0, 6);
+      if (!injuries.length) {
+        root.innerHTML = '<div class="mini-card">No injury data available</div>';
+        return;
+      }
+      root.innerHTML = injuries.map(function (item) {
+        const player = findPlayerByName(item.name, item.teamName);
+        const nameHref = player ? normalizePlayerHref(player.url, player.name, item.teamName) : normalizePlayerHref("", item.name, item.teamName);
+        return '<article class="mini-card">' +
+          '<div class="summary-label">Injury</div>' +
+          '<div class="mini-name"><a href="' + nameHref + '">' + (item.name || "Unknown Player") + '</a></div>' +
+          '<div class="panel-note"><a href="' + normalizeHref(item.rosterUrl) + '">' + (item.teamName || "Unknown Team") + '</a></div>' +
+          '<div class="mini-meta"><span>' + (item.injury || "Injury") + '</span><span class="mini-value bad">' + (item.length || "--") + ' days</span></div>' +
+        '</article>';
+      }).join("");
+    }
+
+    function renderTopPlayers(leagueToken) {
+      const root = document.getElementById("topPlayersList");
+      const leaderSection = findMatchingLeaders(leagueToken);
+      const pointsCategory = leaderSection && Array.isArray(leaderSection.categories) ? leaderSection.categories.find(function (item) {
+        return String(item.title || "").toLowerCase() === "points";
+      }) : null;
+      const leaders = pointsCategory && Array.isArray(pointsCategory.leaders) ? pointsCategory.leaders.slice(0, 6) : [];
+      if (!leaders.length) {
+        root.innerHTML = '<div class="mini-card">No player data</div>';
+        return;
+      }
+      root.innerHTML = leaders.map(function (entry) {
+        return '<article class="mini-card">' +
+          '<div class="summary-label">Scoring</div>' +
+          '<div class="mini-name"><a href="' + normalizePlayerHref(entry.playerUrl, entry.player) + '">' + entry.player + '</a></div>' +
+          '<div class="mini-meta"><span>' + (entry.teamName || "Team") + '</span><span class="mini-value">' + (entry.valueText || entry.value || "--") + '</span></div>' +
+        '</article>';
+      }).join("");
+    }
+
+    function renderCap(leagueToken) {
+      const root = document.getElementById("capList");
+      const capLabel = document.getElementById("capLabel");
+      const capSection = findMatchingCap(leagueToken);
+      if (!capSection || !Array.isArray(capSection.entries) || !capSection.entries.length) {
+        capLabel.textContent = "Cap report unavailable";
+        root.innerHTML = '<div class="mini-card">No cap data</div>';
+        return;
+      }
+      capLabel.textContent = shortLeagueLabel(leagueToken + " Standings");
+      const topCap = capSection.entries.slice().sort(function (a, b) { return num(b.capRoom) - num(a.capRoom); }).slice(0, 6);
+      root.innerHTML = topCap.map(function (entry) {
+        return '<article class="mini-card">' +
+          '<div class="summary-label">Cap Room</div>' +
+          '<div class="mini-name"><a href="' + normalizeHref(entry.rosterUrl) + '">' + (entry.team || "Team") + '</a></div>' +
+          '<div class="mini-meta"><span>Available room</span><span class="mini-value">' + (entry.capRoomText || "$0") + '</span></div>' +
+        '</article>';
+      }).join("");
+    }
+
+    function escapeHtml(value) {
+      return String(value || "").replace(/[&<>"']/g, function (char) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char];
+      });
+    }
+
+    function mediaUrl(file) {
+      try {
+        return new URL(String(file || ""), "../../00-eslmedia/").toString();
+      } catch (error) {
+        return "#";
+      }
+    }
+
+    function mediaRelevance(article, leagueToken, activeSection) {
+      const teams = Array.isArray(article && article.teams) ? article.teams : [];
+      const activeTeams = new Set(((activeSection && activeSection.teams) || []).map(function (team) { return String(team.team || ""); }));
+      const joined = [article.tag, article.meta, article.title].filter(Boolean).join(" ").toLowerCase();
+      let score = 0;
+      for (let i = 0; i < teams.length; i += 1) {
+        if (activeTeams.has(String(teams[i] || ""))) {
+          score += 5;
+        }
+      }
+      if (leagueToken === "CLB" && /champions league|tier 1|\bclb\b/.test(joined)) score += 12;
+      if (leagueToken === "ELB" && /europa league|tier 2|\belb\b/.test(joined)) score += 12;
+      if (leagueToken === "ECL" && /conference league|tier 3|\becl\b/.test(joined)) score += 12;
+      if (/race watch|month in review|stock report|mvp race/.test(joined)) score += 3;
+      return score;
+    }
+
+    function renderMedia(leagueToken, activeSection) {
+      const root = document.getElementById("mediaList");
+      const articles = Array.isArray(window.ESL_MEDIA_ARTICLES) ? window.ESL_MEDIA_ARTICLES.slice() : [];
+      if (!articles.length) {
+        root.innerHTML = '<div class="media-card">No media loaded</div>';
+        return;
+      }
+      articles.sort(function (a, b) {
+        const scoreDiff = mediaRelevance(b, leagueToken, activeSection) - mediaRelevance(a, leagueToken, activeSection);
+        if (scoreDiff) return scoreDiff;
+        return String(b.sortKey || "").localeCompare(String(a.sortKey || ""));
+      });
+      root.innerHTML = articles.slice(0, 3).map(function (article) {
+        const kicker = [article.desk || article.category || "Media", article.tag || article.meta || ""].filter(Boolean).join(" / ");
+        const meta = [article.author || "ESL Media", article.meta || ""].filter(Boolean).join(" / ");
+        return '<a class="media-card" href="' + mediaUrl(article.file) + '">' +
+          '<div class="summary-label">' + escapeHtml(kicker) + '</div>' +
+          '<div class="media-title">' + escapeHtml(article.title || article.file) + '</div>' +
+          '<div class="media-blurb">' + escapeHtml(article.blurb || "") + '</div>' +
+          '<div class="panel-note">' + escapeHtml(meta) + '</div>' +
+        '</a>';
+      }).join("");
+    }
+
+    function buildSearchIndex() {
+      const teamEntries = state.standings.flatMap(function (section) {
+        return (section.teams || []).map(function (team) {
+          return { type: "Team", name: team.team, meta: shortLeagueLabel(section.title), href: normalizeHref(team.rosterUrl || "") };
+        });
+      });
+      const playerEntries = (state.players || []).filter(function (player) {
+        return player && player.name && player.url;
+      }).map(function (player) {
+        return { type: "Player", name: player.name, meta: (player.teamLabel || player.team || "Team") + (player.pos ? " · " + player.pos : ""), href: normalizePlayerHref(player.url, player.name) };
+      });
+      const dedup = new Map();
+      teamEntries.concat(playerEntries).forEach(function (entry) {
+        const key = entry.type + "|" + entry.name + "|" + entry.href;
+        if (!dedup.has(key)) dedup.set(key, entry);
+      });
+      return Array.from(dedup.values());
+    }
+
+    function bindSearch() {
+      const input = document.getElementById("globalSearchInput");
+      const resultsRoot = document.getElementById("searchResults");
+      const wrap = input.closest(".search-wrap");
+      const index = buildSearchIndex();
+
+      function renderResults(query, showHints) {
+        const q = String(query || "").trim().toLowerCase();
+        if (!q) {
+          if (!showHints) {
+            resultsRoot.innerHTML = "";
+            return;
+          }
+          resultsRoot.innerHTML = index.slice(0, 6).map(function (entry) {
+            return '<a class="search-result" href="' + entry.href + '"><div class="search-result-name">' + entry.name + '</div><div class="search-label">' + entry.type + ' · ' + entry.meta + '</div></a>';
+          }).join("");
+          return;
+        }
+        const hits = index.filter(function (entry) {
+          return entry.name.toLowerCase().indexOf(q) >= 0 || entry.meta.toLowerCase().indexOf(q) >= 0;
+        }).slice(0, 10);
+        resultsRoot.innerHTML = hits.length ? hits.map(function (entry) {
+          return '<a class="search-result" href="' + entry.href + '"><div class="search-result-name">' + entry.name + '</div><div class="search-label">' + entry.type + ' · ' + entry.meta + '</div></a>';
+        }).join("") : '<div class="search-result"><div class="search-result-name">No matches</div><div class="search-label">Try another player or team</div></div>';
+      }
+
+      function openSearch() { wrap.classList.add("is-open"); }
+      function closeSearch() { wrap.classList.remove("is-open"); }
+
+      input.addEventListener("focus", function () { renderResults(input.value, true); openSearch(); });
+      input.addEventListener("input", function () { renderResults(input.value, true); openSearch(); });
+      input.addEventListener("keydown", function (event) { if (event.key === "Escape") closeSearch(); });
+      resultsRoot.addEventListener("click", function (event) { if (event.target.closest("a.search-result")) closeSearch(); });
+      document.addEventListener("click", function (event) { if (!wrap.contains(event.target)) closeSearch(); });
+    }
+
+    function bindMobileCollapses() {
+      document.querySelectorAll(".mobile-collapsible").forEach(function (panel) {
+        const button = panel.querySelector(".collapse-toggle");
+        if (!button) return;
+        button.addEventListener("click", function () {
+          panel.classList.toggle("is-open");
+          button.textContent = panel.classList.contains("is-open") ? "Hide" : "Show";
+        });
+      });
+    }
+
+    function renderDashboard() {
+      const activeSection = state.standings.find(function (section) { return section.slug === state.activeLeagueSlug; });
+      if (!activeSection) return;
+      const leagueToken = extractLeagueToken(activeSection.title);
+      buildLeagueControls();
+      renderHero(activeSection);
+      renderStandings(activeSection);
+      renderLeaders(leagueToken);
+      renderInjuries();
+      renderTopPlayers(leagueToken);
+      renderCap(leagueToken);
+      renderMedia(leagueToken, activeSection);
+      document.getElementById("statusText").textContent = shortLeagueLabel(activeSection.title) + " loaded";
+    }
+
+    async function init() {
+      const status = document.getElementById("statusText");
+      try {
+        setParentFluidContent(true);
+        const responses = await Promise.all([
+          fetch(DATA_URLS.standings),
+          fetch(DATA_URLS.leaders),
+          fetch(DATA_URLS.injuries),
+          fetch(DATA_URLS.capreport),
+          fetch(DATA_URLS.players)
+        ]);
+        if (responses.some(function (response) { return !response.ok; })) {
+          throw new Error("One or more feeds failed to load");
+        }
+        const standingsData = await responses[0].json();
+        const leadersData = await responses[1].json();
+        const injuriesData = await responses[2].json();
+        const capData = await responses[3].json();
+        const playersData = await responses[4].json();
+        state.standings = Array.isArray(standingsData.sections) ? standingsData.sections : [];
+        state.leaders = Array.isArray(leadersData.sections) ? leadersData.sections : [];
+        state.injuries = Array.isArray(injuriesData.injuries) ? injuriesData.injuries : [];
+        state.capreport = Array.isArray(capData.sections) ? capData.sections : [];
+        state.players = Array.isArray(playersData) ? playersData : [];
+        if (!state.standings.length) throw new Error("Standings feed is empty");
+        state.activeLeagueSlug = state.standings[0].slug;
+        renderDashboard();
+        bindSearch();
+        bindMobileCollapses();
+      } catch (error) {
+        status.textContent = "Dashboard unavailable";
+        document.getElementById("heroTitle").textContent = "League dashboard unavailable";
+        document.getElementById("heroSubline").textContent = "Could not load the required feeds for this mockup.";
+        document.getElementById("standingsBody").innerHTML = '<tr><td colspan="6">Could not load dashboard feeds</td></tr>';
+      }
+    }
+
+    window.addEventListener("pagehide", function () { setParentFluidContent(false); });
+    window.addEventListener("beforeunload", function () { setParentFluidContent(false); });
+    init();
+  </script>
+</body>
+</html>
