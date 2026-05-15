@@ -388,8 +388,9 @@ def build_power_rankings(overall_team_form, monthly_team_form, period_label, tea
                     f"Write a {tier_name} power rankings article for {period_label}. Rank the teams yourself "
                     "using the context below. Use overall season-to-date performance as the base ranking logic, "
                     "and use the latest sim performance to explain changes, jumps, or drops from the previous board. "
-                    "Explicitly note changes from the last published power rankings article if those changes feel "
-                    "meaningful, but do not force movement notes for every team. You are allowed to pull extra "
+                    "Explicitly note each team's movement from the last published power rankings article, including "
+                    "how many spots they moved up or down or if they stayed level. Make the movement visible in each "
+                    "team capsule, not just the intro. You are allowed to pull extra "
                     "context from any of the linked JSON sources if it strengthens the board. When it fits the "
                     "article, mention the listed star players as roster context; starPlayer is the highest OVR "
                     "player on that team's current roster. Use the style references to add substance: open with "
@@ -402,6 +403,7 @@ def build_power_rankings(overall_team_form, monthly_team_form, period_label, tea
                     "Use the team pool as context, not as a locked final order.",
                     "Base the ranking on overall form, not just one sim.",
                     "Use the latest sim to justify movement, momentum, and skepticism.",
+                    "Reference rank movement from the previous published board for every team, with an explicit up/down/no-change note and the number of places moved.",
                     "Work in star-player mentions for the biggest teams, risers, fallers, or arguments where roster quality matters.",
                     "Add player context only when it sharpens the team argument: who drives the offense, who covers a weakness, who is missing, or whose form changes the outlook.",
                     "Call out at least one riser, one faller, and one team you are still unsure about.",
@@ -466,13 +468,17 @@ def build_race_watch(tier_race_snapshot, period_label, include_preseason):
             "Tier 2 promotion and relegation, and Tier 3 promotion. Focus on the live line, the closest "
             "chasers, and who has momentum. You can use any of the linked JSON context if it helps explain "
             "why a race is tightening or loosening. Use the style references to make the race easy to follow: "
-            "state the rules, define the line, identify who controls their fate, and explain what changes next."
+            "state the rules, define the line, identify who controls their fate, and explain what changes next. "
+            "Treat seeding as secondary to games-behind pressure: do not frame teams as truly in danger or truly "
+            "live for promotion/relegation if they are only technically adjacent in seed but materially far from the line."
         ),
         "writerNotes": [
             "Tier 1 has 2 relegation spots.",
             "Tier 2 has 2 promotion spots and 1 relegation spot.",
             "Tier 3 has 1 promotion spot.",
             "Explain the pressure line clearly before making bigger editorial claims.",
+            "Use games-behind logic, not seed alone, to decide whether a team is truly live, merely sweating, or only technical fringe.",
+            "If a team is close in seed but materially far from the line, label it as fringe or outside the real pressure group rather than forcing it into the danger tier.",
             "Group teams by race status where useful: safe, sweating, chasing, in trouble, or no longer in control.",
             "Each race section should include the current line team, nearest chasers, momentum, and one concrete next pressure point.",
         ],

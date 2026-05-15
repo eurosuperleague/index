@@ -27,6 +27,108 @@ window.ESL_TEAM_LOGOS = {
 
 window.ESL_MEDIA_ARTICLES = [
   {
+    file: "articles/february_1982_mvp_race.html",
+    title: "Tier 3 Has The Best MVP Fight, But Magic And Moses Still Own Their Ladders",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-15-07",
+    tag: "MVP Race",
+    author: "Damon Cross",
+    meta: "Awards Desk",
+    blurb: "Magic Johnson still has the cleanest Tier 1 value case, Moses Malone remains untouchable in Tier 2, and Kelly Tripucka now owns the strongest Tier 3 blend of stats and stakes.",
+    teams: [
+      "AC Milan", "AFC Richmond", "Atletico Madrid", "Barcelona", "Benfica", "Bayern Munich",
+      "Chelsea", "FL Fart", "Inter Milan", "Juventus", "Manchester City", "Paris Saint-Germain",
+      "Real Madrid", "Sheffield United", "Aston Villa"
+    ],
+    playerTags: [
+      "Adrian Dantley", "Calvin Natt", "David Thompson", "Jack Sikma", "Joe Barry Carroll",
+      "Kelly Tripucka", "Kevin McHale", "Kareem Abdul-Jabbar", "Larry Bird", "Larry Nance",
+      "Magic Johnson", "Moses Malone", "Sidney Moncrief", "Steve Johnson", "World B. Free"
+    ]
+  },
+  {
+    file: "articles/february_1982_stock_up_stock_down.html",
+    title: "The Market Turned Hard On Marseille And Even Harder On Villa",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-15-06",
+    tag: "Stock Report",
+    author: "Graham Trent",
+    meta: "Monthly Stock Report",
+    blurb: "Benfica, Inter Milan, and FL Fart are February's three buys, while Aston Villa, Sporting CP, and Marseille spent the month proving how fast a table can turn.",
+    teams: ["Aston Villa", "Benfica", "FL Fart", "Inter Milan", "Marseille", "Sporting CP"],
+    playerTags: ["Moses Malone", "World B. Free", "David Thompson"]
+  },
+  {
+    file: "articles/february_1982_promotion_relegation_watch.html",
+    title: "Every Important Line In The League Just Got Easier To See",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-15-05",
+    tag: "Race Watch",
+    author: "Nina Vale",
+    meta: "February Race Watch",
+    blurb: "Real Madrid sit on the Tier 1 line, Benfica and Sheffield United now control Tier 2 promotion pace, Marseille made the wrong race strange, and Tier 3 is still a three-team dead heat.",
+    teams: [
+      "AC Milan", "Ajax", "Aston Villa", "Barcelona", "Benfica", "Brighton", "Chelsea",
+      "FL Fart", "Inter Milan", "Juventus", "Manchester United", "Marseille", "Real Madrid", "Sheffield United"
+    ],
+    playerTags: ["Sidney Moncrief", "Moses Malone", "Kelly Tripucka", "World B. Free"]
+  },
+  {
+    file: "articles/february_1982_tier_3_power_rankings.html",
+    title: "Inter Owns The Best Tier 3 Case, But The Race Still Refuses To Break",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-15-04",
+    tag: "Conference League",
+    author: "Nina Vale",
+    meta: "February Edition",
+    blurb: "Inter Milan edge to the top of the Tier 3 board, but FL Fart and Barcelona remain fully live in the promotion race and Manchester City still hover as the dangerous maybe-team.",
+    teams: ["Barcelona", "FL Fart", "Inter Milan", "Manchester City", "Paris Saint-Germain", "Sporting CP", "Tottenham Hotspur", "Valencia"],
+    playerTags: ["Calvin Natt", "David Thompson", "Joe Barry Carroll", "Kelly Tripucka", "World B. Free"]
+  },
+  {
+    file: "articles/february_1982_tier_2_power_rankings.html",
+    title: "Benfica And Sheffield Now Feel Like The Tier's Two Real Centers Of Gravity",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-15-03",
+    tag: "Europa League",
+    author: "Nina Vale",
+    meta: "February Edition",
+    blurb: "Benfica's 7-1 heater and Sheffield United's perfect 5-0 month separate them at the top, while Juventus rise and Marseille tumble into the board's biggest trust problem.",
+    teams: ["Ajax", "Aston Villa", "Benfica", "Chelsea", "Juventus", "Marseille", "Monaco", "Sheffield United"],
+    playerTags: ["Bill Laimbeer", "Jack Sikma", "Kareem Abdul-Jabbar", "Moses Malone", "Robert Parish", "Steve Johnson"]
+  },
+  {
+    file: "articles/february_1982_tier_1_power_rankings.html",
+    title: "Bayern Stay First, But Palace Did The Most To Change The Tier",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-15-02",
+    tag: "Champions League",
+    author: "Nina Vale",
+    meta: "February Edition",
+    blurb: "Bayern Munich still have the strongest total case in Tier 1, AFC Richmond still own the loudest ceiling, and Crystal Palace are February's clearest climber while Milan and Madrid remain uneasy holds.",
+    teams: ["AC Milan", "AFC Richmond", "Atletico Madrid", "Bayern Munich", "Brighton", "Crystal Palace", "Manchester United", "Real Madrid"],
+    playerTags: ["Adrian Dantley", "Artis Gilmore", "Kevin McHale", "Larry Bird", "Magic Johnson", "Sidney Moncrief"]
+  },
+  {
+    file: "articles/february_1982_month_in_review.html",
+    title: "February Did Not Settle The League, But It Redistributed Belief",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-15-01",
+    tag: "Month In Review",
+    author: "Graham Trent",
+    meta: "Monthly Review",
+    blurb: "Benfica owned the month's strongest file, Barcelona supplied both the loudest blowout and narrowest finish, and Marseille's collapse changed the way the whole middle tier now feels.",
+    teams: ["Ajax", "Aston Villa", "Barcelona", "Benfica", "FL Fart", "Inter Milan", "Manchester City", "Marseille", "Valencia"],
+    playerTags: ["Kelly Tripucka", "Moses Malone", "World B. Free", "Cliff Robinson"]
+  },
+  {
     file: "articles/batsuper_alex_english_apology.html",
     title: "I Would Like To Apologize To Alex English. Unfortunately I Still Have Eyes",
     category: "Interview",
