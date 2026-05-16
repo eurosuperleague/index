@@ -95,6 +95,16 @@
       return clean ? `../../${clean}` : "";
     }
 
+    function buildUnifiedPlayerHref(url, name) {
+      const clean = String(url || "").trim();
+      const idMatch = clean.match(/player(\d+)\.htm/i);
+      if (idMatch) {
+        return `./unified-player.htm?id=${encodeURIComponent(`player${idMatch[1]}`)}`;
+      }
+      const trimmedName = String(name || "").trim();
+      return trimmedName ? `./unified-player.htm?name=${encodeURIComponent(trimmedName)}` : "";
+    }
+
     function q(name) {
       return new URLSearchParams(window.location.search).get(name);
     }
@@ -319,7 +329,7 @@
           state.intakeLookup.set(normalizeName(p.name), p);
         });
         (Array.isArray(players) ? players : []).forEach((p) => {
-          const href = normalizeHref(p && p.url);
+          const href = buildUnifiedPlayerHref(p && p.url, p && p.name);
           if (!href) return;
           state.playerLinks.set(normalizeName(p.name), href);
         });

@@ -146,6 +146,11 @@ Use this structure in order:
 
 Use these conventions:
 - headline in title case
+- headline should sound like a sports headline, not an internal summary label
+- prefer one strong central claim over a list of three mini-claims
+- power rankings headlines should always include the month or period in the title, for example `February Tier 1 Power Rankings: Bayern Still Own The Room`
+- for power rankings, the month/period should appear in both the `<title>` and the visible `<h1>`
+- let the dek carry some explanatory detail so the headline can stay sharper
 - dek is 1 sentence, 20 to 35 words
 - byline line is short and uppercase-friendly
 - first paragraph should use `class="drop-cap"`
@@ -155,6 +160,15 @@ Use these conventions:
 - published article copy must read like a real sports article, not an AI note or production memo
 - do not mention JSON files, templates, prompts, databases, repo structure, source extraction, or any behind-the-scenes workflow in the visible article
 - writer persona guidance is internal only and should shape the prose without being named inside the article body
+
+## Headline guidance
+
+Use these rules when naming articles:
+- avoid flat `X holds, Y climbs, Z slips` constructions unless the piece is intentionally recap-heavy
+- lead with the strongest story or consequence, not the article category
+- use sharper verbs like `owns`, `breaks`, `opens`, `tightens`, `steals`, `survives`, `collapses`, or `changes`
+- a good title should usually feel like one clean editorial idea, not a changelog
+- if the headline feels too summary-like, tighten it and move the extra explanation into the dek
 
 ## Approval rule
 
@@ -400,5 +414,4 @@ When adding future articles:
 3. check that the article appears on the relevant team pages after updating the manifest
 
 Do not hardcode which tier a team belongs to in the media site. The Teams dropdown, Teams directory, and individual team pages should read the current standings JSON so promotion/relegation changes automatically move teams into the correct column after a build.
-
 

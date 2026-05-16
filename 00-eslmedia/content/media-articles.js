@@ -28,7 +28,7 @@ window.ESL_TEAM_LOGOS = {
 window.ESL_MEDIA_ARTICLES = [
   {
     file: "articles/february_1982_mvp_race.html",
-    title: "Tier 3 Has The Best MVP Fight, But Magic And Moses Still Own Their Ladders",
+    title: "Magic Still Leads, But Tier 3 Owns The Best Fight",
     category: "Analysis",
     desk: "Analysis",
     sortKey: "2026-05-15-07",
@@ -49,7 +49,7 @@ window.ESL_MEDIA_ARTICLES = [
   },
   {
     file: "articles/february_1982_stock_up_stock_down.html",
-    title: "The Market Turned Hard On Marseille And Even Harder On Villa",
+    title: "Benfica Bought Control",
     category: "Analysis",
     desk: "Analysis",
     sortKey: "2026-05-15-06",
@@ -62,7 +62,7 @@ window.ESL_MEDIA_ARTICLES = [
   },
   {
     file: "articles/february_1982_promotion_relegation_watch.html",
-    title: "Every Important Line In The League Just Got Easier To See",
+    title: "The Real Pressure Starts Here",
     category: "Analysis",
     desk: "Analysis",
     sortKey: "2026-05-15-05",
@@ -78,7 +78,7 @@ window.ESL_MEDIA_ARTICLES = [
   },
   {
     file: "articles/february_1982_tier_3_power_rankings.html",
-    title: "Inter Owns The Best Tier 3 Case, But The Race Still Refuses To Break",
+    title: "February Tier 3 Power Rankings: Inter Still Own The Best Case",
     category: "Analysis",
     desk: "Analysis",
     sortKey: "2026-05-15-04",
@@ -91,7 +91,7 @@ window.ESL_MEDIA_ARTICLES = [
   },
   {
     file: "articles/february_1982_tier_2_power_rankings.html",
-    title: "Benfica And Sheffield Now Feel Like The Tier's Two Real Centers Of Gravity",
+    title: "February Tier 2 Power Rankings: Benfica Changed The Race",
     category: "Analysis",
     desk: "Analysis",
     sortKey: "2026-05-15-03",
@@ -104,7 +104,7 @@ window.ESL_MEDIA_ARTICLES = [
   },
   {
     file: "articles/february_1982_tier_1_power_rankings.html",
-    title: "Bayern Stay First, But Palace Did The Most To Change The Tier",
+    title: "February Tier 1 Power Rankings: Bayern Still Own The Room",
     category: "Analysis",
     desk: "Analysis",
     sortKey: "2026-05-15-02",
@@ -117,7 +117,7 @@ window.ESL_MEDIA_ARTICLES = [
   },
   {
     file: "articles/february_1982_month_in_review.html",
-    title: "February Did Not Settle The League, But It Redistributed Belief",
+    title: "February 1982 Month in Review: Benfica Changed Who Felt Real",
     category: "Analysis",
     desk: "Analysis",
     sortKey: "2026-05-15-01",

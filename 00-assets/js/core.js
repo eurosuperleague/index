@@ -195,6 +195,13 @@
     return /(?:\/|\\)00-supercup(?:\/|\\)/i.test(window.location.pathname);
   }
 
+  function usesSuperCupPlayerPages() {
+    var path = String(window.location.pathname || "").replace(/\\/g, "/").toLowerCase();
+
+    return path.indexOf("/00-supercup/") !== -1 ||
+      /\/00-assets\/html\/(?:supercup-[^/]+|unified-(?:player|roster)-supercup)\.htm$/.test(path);
+  }
+
   function isPlayerPage() {
     return /\/players\/player\d+\.htm$/i.test(window.location.pathname) || /\\players\\player\d+\.htm$/i.test(window.location.pathname);
   }
@@ -301,6 +308,28 @@
     return getSettings().playerPageDestination === "classic";
   }
 
+  function getUnifiedPlayerPageHref(id) {
+    var isSuperCupPlayerContext = usesSuperCupPlayerPages();
+    var pageName = isSuperCupPlayerContext ? "unified-player-supercup.htm" : "unified-player.htm";
+
+    if (isAssetHtmlPage()) {
+      return "./" + pageName + "?id=" + encodeURIComponent(id);
+    }
+
+    if (isNestedPage()) {
+      if (isSuperCupPlayerContext) {
+        return "../../00-assets/html/" + pageName + "?id=" + encodeURIComponent(id);
+      }
+      return "../00-assets/html/" + pageName + "?id=" + encodeURIComponent(id);
+    }
+
+    if (isSuperCupPlayerContext) {
+      return "../00-assets/html/" + pageName + "?id=" + encodeURIComponent(id);
+    }
+
+    return "./00-assets/html/" + pageName + "?id=" + encodeURIComponent(id);
+  }
+
   function getPlayerPageUrl(url) {
     var raw = String(url || "");
     if (prefersClassicPlayerPages()) {
@@ -318,15 +347,7 @@
       return normalizePlayerUrl(url);
     }
 
-    if (isAssetHtmlPage()) {
-      return "./unified-player.htm?id=" + encodeURIComponent(id);
-    }
-
-    if (isNestedPage()) {
-      return "../00-assets/html/unified-player.htm?id=" + encodeURIComponent(id);
-    }
-
-    return "./00-assets/html/unified-player.htm?id=" + encodeURIComponent(id);
+    return getUnifiedPlayerPageHref(id);
   }
 
   function buildTeamMap(teams) {
@@ -407,6 +428,7 @@
     isMenuPage: isMenuPage,
     isSettingsPage: isSettingsPage,
     isSuperCupPage: isSuperCupPage,
+    usesSuperCupPlayerPages: usesSuperCupPlayerPages,
     isPlayerPage: isPlayerPage,
     isRosterPage: isRosterPage,
     shouldUseLegacyViewport: shouldUseLegacyViewport,

@@ -28,7 +28,6 @@ FEATURE_JS_FILENAMES = [
 ]
 INDEX_JS_FILENAME = "00-assets/js/index.js"
 FAVICON_FILE = "00-build/database/favicon.png"
-VIEWPORT_TAG = '<meta name="viewport" content="width=1100, initial-scale=0.35, minimum-scale=0.1, maximum-scale=10.0, user-scalable=yes">'
 MOBILE_INDEX_VIEWPORT_TAG = '<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">'
 SKIP_DIRS = {"00-build", "00-assets", "00-eslmedia"}
 
@@ -84,10 +83,11 @@ def inject_file(filepath, dry_run, target_root):
     already_favicon = FAVICON_FILE in html or favicon_rel in html
     lower_html = html.lower()
     already_viewport = 'name="viewport"' in lower_html or "name='viewport'" in lower_html
-    viewport_tag = VIEWPORT_TAG if target_root == PROJECT_ROOT else MOBILE_INDEX_VIEWPORT_TAG
+    viewport_tag = MOBILE_INDEX_VIEWPORT_TAG if is_target_root_index else MOBILE_INDEX_VIEWPORT_TAG
+    should_replace_viewport = is_target_root_index and viewport_tag not in html and already_viewport
 
     needs_index_js = is_target_root_index
-    if already_css and already_js and already_feature_js and already_favicon and already_viewport and (not needs_index_js or already_index_js):
+    if already_css and already_js and already_feature_js and already_favicon and already_viewport and not should_replace_viewport and (not needs_index_js or already_index_js):
         return "skipped"
 
     inject = ""
@@ -109,6 +109,18 @@ def inject_file(filepath, dry_run, target_root):
             html = html.replace("<body", "<head>\n</head>\n<body", 1)
         else:
             html = "<head>\n</head>\n" + html
+
+    if should_replace_viewport:
+        html = html.replace(
+            '<meta name="viewport" content="width=1100, initial-scale=0.35, minimum-scale=0.1, maximum-scale=10.0, user-scalable=yes">',
+            viewport_tag,
+            1,
+        )
+        html = html.replace(
+            "<meta name='viewport' content='width=1100, initial-scale=0.35, minimum-scale=0.1, maximum-scale=10.0, user-scalable=yes'>",
+            viewport_tag,
+            1,
+        )
 
     if "</head>" in html:
         html = html.replace("</head>", f"{inject}</head>", 1)
