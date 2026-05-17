@@ -10,6 +10,7 @@
     eslMedia: toSitePath("00-eslmedia/homepage.html"),
     eslMediaLogo: toSitePath("00-eslmedia/content/article images/ESLM.png"),
     depthCharts: toSitePath("00-assets/html/depthcharts.htm"),
+    tradeTool: toSitePath("00-assets/html/trade-tool.htm"),
     youthIntake: toSitePath("00-assets/html/youth-intake.htm"),
     settings: toSitePath("00-assets/html/settings.htm"),
     mainIndex: toSitePath("index.htm"),

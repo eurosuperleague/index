@@ -168,6 +168,39 @@
     menuTable.appendChild(row);
   }
 
+  function ensureTradeToolMenuLink() {
+    if (!core.isMenuPage()) {
+      return;
+    }
+
+    var menuTable = document.querySelector("body > table");
+    if (!menuTable || menuTable.querySelector('a[href$="trade-tool.htm"]')) {
+      return;
+    }
+
+    var anchor = menuTable.querySelector('a[href$="depthcharts.htm"]') ||
+      menuTable.querySelector('a[href="capreport.htm"]') ||
+      menuTable.querySelector('a[href="injuries.htm"]');
+    var row = document.createElement("tr");
+    var cell = document.createElement("td");
+    var link = document.createElement("a");
+
+    row.setAttribute("valign", "top");
+    link.className = "menulink";
+    link.target = "data";
+    link.href = core.paths.tradeTool;
+    link.textContent = "Trade Tool";
+    cell.appendChild(link);
+    row.appendChild(cell);
+
+    if (anchor && anchor.parentNode && anchor.parentNode.parentNode && anchor.parentNode.parentNode.parentNode === menuTable) {
+      anchor.parentNode.parentNode.insertAdjacentElement("afterend", row);
+      return;
+    }
+
+    menuTable.appendChild(row);
+  }
+
   function ensureLeagueMenuStyles() {
     if (document.getElementById(MENU_STYLE_ID)) {
       return;
@@ -356,6 +389,7 @@
           { label: "Injuries", href: "injuries.htm" },
           { label: "Cap Report", href: "capreport.htm" },
           { label: "Depth Charts", href: core.paths.depthCharts },
+          { label: "Trade Tool", href: core.paths.tradeTool },
           { label: "Free Agents", href: "freeagents.htm" },
           { label: "Waiver Wire", href: "waiverwire.htm" },
           { label: "Potential FAs", href: "potentialfreeagents.htm" }
@@ -477,6 +511,7 @@
     initResponsiveFrameMenu();
     ensureCapReportMenuLink();
     ensureDepthChartsMenuLink();
+    ensureTradeToolMenuLink();
     enhanceLeagueMenu();
     if (LeagueSettings.applySavedPreferences) {
       LeagueSettings.applySavedPreferences();
