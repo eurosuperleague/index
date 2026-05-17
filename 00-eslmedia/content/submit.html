@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Article - ESL Media</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
+  <style>
+    @import url("media-shared.css");
+
+    :root {
+      --blue: #111b36;
+      --off-white: #f5f0e8;
+      --rule: rgba(15, 15, 15, 0.16);
+    }
+
+    body {
+      background: var(--off-white);
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .submission-shell {
+      width: min(1480px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 1.25rem 0 2.5rem;
+    }
+
+    .submission-grid {
+      display: grid;
+      grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+      gap: 1.25rem;
+      align-items: start;
+    }
+
+    .submission-grid.preview-focus {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .submission-grid.preview-focus .submission-panel {
+      display: none;
+    }
+
+    .submission-grid.editor-focus {
+      grid-template-columns: minmax(0, 760px);
+      justify-content: center;
+    }
+
+    .submission-grid.editor-focus .preview-wrap {
+      display: none;
+    }
+
+    .submission-panel {
+      background: #fffdfa;
+      border: 1px solid var(--rule);
+      border-top: 5px solid var(--blue);
+      padding: 1rem;
+      position: sticky;
+      top: 72px;
+      box-shadow: 5px 5px 0 rgba(17, 27, 54, 0.09);
+      min-width: 0;
+      overflow: visible;
+    }
+
+    .panel-kicker,
+    label,
+    .copy-status {
+      color: var(--blue);
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .panel-title {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      line-height: 0.96;
+      margin: 0.35rem 0 0.5rem;
+      letter-spacing: -0.035em;
+    }
+
+    .panel-dek {
+      color: var(--mid);
+      font-size: 0.88rem;
+      line-height: 1.5;
+      margin-bottom: 0.9rem;
+    }
+
+    .field-grid {
+      display: grid;
+      gap: 0.7rem;
+    }
+
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+    }
+
+    label {
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid rgba(15, 15, 15, 0.22);
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.86rem;
+      padding: 0.58rem 0.62rem;
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+
+    #body {
+      min-height: 210px;
+    }
+
+    .body-editor {
+      border: 1px solid rgba(15, 15, 15, 0.22);
+      background: #fff;
+      min-width: 0;
+      overflow: visible;
+    }
+
+    .editor-format-row {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      flex-wrap: wrap;
+      background: #f6f7fa;
+      border-bottom: 1px solid rgba(15, 15, 15, 0.12);
+      padding: 0.55rem;
+    }
+
+    .editor-format-row span {
+      color: #596171;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .format-button {
+      border: 1px solid rgba(17, 27, 54, 0.18);
+      background: #fff;
+      color: #111b36;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.48rem;
+    }
+
+    .format-button:hover {
+      background: #eef3fb;
+    }
+
+    .format-button:focus,
+    .format-button:focus-visible {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .editor-toolbar {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      background: #dedfe5;
+      border-bottom: 1px solid rgba(15, 15, 15, 0.16);
+      padding: 0.55rem;
+    }
+
+    .tool-button {
+      width: 34px;
+      height: 34px;
+      border: 0;
+      background: transparent;
+      color: #737b8a;
+      display: inline-grid;
+      place-items: center;
+      padding: 0;
+      font-size: 1rem;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .tool-button:hover,
+    .tool-button:focus-visible {
+      background: rgba(17, 27, 54, 0.08);
+      color: #111b36;
+      outline: none;
+    }
+
+    .tool-button strong,
+    .tool-button em,
+    .tool-button s {
+      font-size: 1rem;
+    }
+
+    .tool-spacer {
+      flex: 1 1 auto;
+    }
+
+    .mode-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      color: #737b8a;
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .mode-toggle span:first-child {
+      color: #2858c8;
+    }
+
+    .switch {
+      width: 42px;
+      height: 24px;
+      border-radius: 999px;
+      border: 0;
+      background: #2858c8;
+      position: relative;
+      padding: 0;
+    }
+
+    .switch::before {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      left: 1px;
+      top: 1px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+      transition: transform 0.16s ease;
+    }
+
+    .is-markdown .switch::before {
+      transform: translateX(18px);
+    }
+
+    .is-markdown .mode-toggle span:first-child {
+      color: #737b8a;
+    }
+
+    .is-markdown .mode-toggle span:last-child {
+      color: #2858c8;
+    }
+
+    .rich-body,
+    .markdown-body {
+      width: 100%;
+      min-height: 250px;
+      border: 0;
+      padding: 1rem;
+      background: #fff;
+      color: #28313a;
+      font: inherit;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      outline: none;
+      overflow: auto;
+    }
+
+    .rich-body p,
+    .rich-body blockquote,
+    .rich-body ul,
+    .rich-body ol {
+      margin: 0 0 0.85rem;
+    }
+
+    .rich-body blockquote {
+      border-left: 4px solid #111b36;
+      padding-left: 0.8rem;
+      color: #454b55;
+    }
+
+    .markdown-body {
+      display: none;
+      resize: vertical;
+    }
+
+    .body-editor .EasyMDEContainer {
+      font-family: var(--font-sans);
+    }
+
+    .body-editor .editor-toolbar {
+      border: 0;
+      border-bottom: 1px solid rgba(15, 15, 15, 0.12);
+      background: #f6f7fa;
+      opacity: 1;
+    }
+
+    .body-editor .editor-toolbar button {
+      color: #596171 !important;
+    }
+
+    .body-editor .CodeMirror {
+      border: 0;
+      min-height: 260px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    .body-editor .editor-preview,
+    .body-editor .editor-preview-side {
+      background: #fffdfa;
+      font-family: var(--font-sans);
+      padding: 1rem;
+    }
+
+    .is-markdown .rich-body {
+      display: none;
+    }
+
+    .is-markdown .markdown-body {
+      display: block;
+    }
+
+    .submission-actions {
+      display: flex;
+      gap: 0.55rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 0.9rem;
+    }
+
+    .tag-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      flex-wrap: wrap;
+      margin-top: 0.35rem;
+    }
+
+    .tag-note {
+      color: var(--mid);
+      font-size: 0.72rem;
+      line-height: 1.35;
+    }
+
+    .view-actions {
+      display: flex;
+      gap: 0.55rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      margin-bottom: 0.8rem;
+    }
+
+    button {
+      border: 1px solid #111b36;
+      background: #111b36;
+      color: #fff;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.65rem 0.75rem;
+    }
+
+    button.secondary {
+      background: #fff;
+      color: #111b36;
+    }
+
+    .copy-status {
+      color: var(--mid);
+      letter-spacing: 0.1em;
+    }
+
+    .preview-wrap {
+      min-width: 0;
+    }
+
+    .paper {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #FEFCF7;
+      border-top: 6px solid var(--ink);
+      box-shadow: 4px 4px 0 var(--gold), 8px 8px 0 var(--ink);
+      padding: 3rem 3.5rem 3.5rem;
+    }
+
+    .masthead {
+      text-align: center;
+      border-bottom: 3px double var(--ink);
+      padding-bottom: 1rem;
+      margin-bottom: .5rem;
+    }
+
+    .league-name {
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+
+    .section-label {
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-top: .4rem;
+    }
+
+    .headline {
+      font-family: var(--font-serif);
+      font-size: 2.7rem;
+      font-weight: 900;
+      line-height: 1.05;
+      margin: 1rem 0 .4rem;
+      letter-spacing: -0.5px;
+    }
+
+    .dek {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--mid);
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .byline-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding: .35rem 0;
+      margin-bottom: 1.8rem;
+    }
+
+    .byline,
+    .dateline {
+      font-size: .72rem;
+    }
+
+    .byline {
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .dateline {
+      color: var(--mid);
+      font-style: italic;
+    }
+
+    .body-text p {
+      font-size: .98rem;
+      line-height: 1.75;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+
+    .body-text ul,
+    .body-text ol {
+      margin: 0 0 1.1rem 1.35rem;
+      color: #1a1a1a;
+      font-size: .98rem;
+      line-height: 1.75;
+    }
+
+    .body-text li {
+      margin-bottom: 0.35rem;
+    }
+
+    .body-text p:first-of-type::first-letter {
+      font-family: var(--font-serif);
+      font-size: 3.8rem;
+      font-weight: 900;
+      float: left;
+      line-height: .8;
+      margin: .1em .08em 0 0;
+      color: var(--blue);
+    }
+
+    .section-header {
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--blue);
+      border-bottom: 2px solid var(--blue);
+      padding-bottom: .25rem;
+      margin: 1.8rem 0 .9rem;
+    }
+
+    .pull-quote {
+      border-left: 5px solid var(--blue);
+      padding: 1rem 1.2rem;
+      margin: 1.5rem 0;
+      background: #f7f9fd;
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 900;
+      line-height: 1.25;
+    }
+
+    .footer-rule {
+      border: none;
+      border-top: 2px solid var(--ink);
+      margin-top: 2.5rem;
+      margin-bottom: .75rem;
+    }
+
+    .footer-text {
+      font-size: .65rem;
+      color: var(--mid);
+      text-align: center;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 980px) {
+      .submission-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .submission-panel {
+        position: static;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .field-row {
+        grid-template-columns: 1fr;
+      }
+
+      .paper {
+        padding: 2rem 1.25rem 2.5rem;
+        box-shadow: none;
+      }
+
+      .headline {
+        font-size: 2.15rem;
+      }
+
+      .byline-bar {
+        align-items: flex-start;
+        gap: .5rem;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-topbar">
+    <div class="site-topbar-inner">
+      <div class="site-topbar-brand">
+        <div class="site-edition-pill">Front Page</div>
+        <div>European Super League Sports Desk</div>
+      </div>
+      <ul class="site-topbar-nav">
+        <li><a href="../homepage.html">Home</a></li>
+        <li><a href="all-articles.html">All Articles</a></li>
+        <li><a href="analysis.html">Analysis</a></li>
+        <li><a href="scouting.html">Scouting</a></li>
+        <li><a href="interviews.html">Interviews</a></li>
+        <li><a href="../../index.htm">League Site</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="submission-shell">
+    <div class="submission-grid">
+      <section class="submission-panel">
+        <div class="panel-kicker">Community Submission</div>
+        <h1 class="panel-title">Article Preview</h1>
+        <p class="panel-dek">Write a draft, check how it reads in the ESL Media shell, then copy the finished submission for Discord, GitHub Issues, or an editor.</p>
+
+        <form class="field-grid" id="submissionForm">
+          <label>Title
+            <input id="title" value="Chelsea Panic Meter Finally Hits Red">
+          </label>
+          <label>Summary / Dek
+            <textarea id="summary">Chelsea have enough talent to steady the season, but the margin is shrinking and every missed chance now feels louder than the last.</textarea>
+          </label>
+          <div class="field-row">
+            <label>Author
+              <input id="author" value="Community Writer">
+            </label>
+            <label>Category
+              <select id="category">
+                <option>Analysis</option>
+                <option>Scouting</option>
+                <option>Interview</option>
+                <option>Preview</option>
+                <option>Recap</option>
+                <option>Rankings</option>
+                <option>Feature</option>
+                <option>Announcement</option>
+              </select>
+            </label>
+          </div>
+          <div class="field-row">
+            <label>Desk
+              <input id="desk" value="Analysis">
+            </label>
+            <label>Season
+              <input id="season" value="Season 8">
+            </label>
+          </div>
+          <label>Teams Mentioned
+            <input id="teams" value="Chelsea">
+          </label>
+          <label>Players Mentioned
+            <input id="players" placeholder="Jack Sikma, Larry Bird">
+          </label>
+          <div class="tag-actions">
+            <button type="button" class="secondary" id="autoFillTags">Auto Fill Tags</button>
+            <span class="tag-note" id="tagStatus">Scans title, summary, and body.</span>
+          </div>
+          <label>Body
+            <div class="body-editor" id="bodyEditor">
+              <textarea id="body">Chelsea do not need a speech. They need a clean month, a calmer half-court offense, and one stretch where the rotation looks like it trusts itself again.
+
+## The problem
+
+The strange part is not that Chelsea have flaws. Everyone outside the top line has flaws. The issue is that Chelsea's mistakes keep arriving in the exact moments where a promotion team usually starts to look grown up.
+
+> The talent is still there. The patience is what keeps getting tested.</textarea>
+            </div>
+          </label>
+        </form>
+
+        <div class="submission-actions">
+          <button type="button" id="copySubmission">Copy Submission</button>
+          <button type="button" class="secondary" id="copyCmsJson">Copy CMS JSON</button>
+          <button type="button" class="secondary" id="downloadCmsJson">Download JSON</button>
+          <button type="button" class="secondary" id="resetExample">Reset Example</button>
+          <button type="button" class="secondary" id="focusPreview">Focus Preview</button>
+          <button type="button" class="secondary" id="hidePreview">Hide Preview</button>
+          <button type="button" class="secondary" id="showBoth">Show Both</button>
+          <span class="copy-status" id="copyStatus">Ready</span>
+        </div>
+      </section>
+
+      <section class="preview-wrap" aria-label="Article preview">
+        <div class="view-actions">
+          <button type="button" class="secondary" id="showEditor">Show Editor</button>
+        </div>
+        <div class="site-ticker">
+          <div class="site-ticker-inner">
+            <span class="site-ticker-label" id="previewTickerLabel">Analysis</span>
+            <div class="site-ticker-track">
+              <div class="site-ticker-item" id="previewTickerTitle">Chelsea Panic Meter Finally Hits Red</div>
+              <div class="site-ticker-item" id="previewTickerSummary">Chelsea have enough talent to steady the season...</div>
+              <div class="site-ticker-item" id="previewTickerDesk">Analysis from Community Writer</div>
+            </div>
+          </div>
+        </div>
+
+        <article class="paper">
+          <div class="masthead">
+            <div class="league-name" id="previewLeague">European Super League - Analysis</div>
+            <div class="section-label" id="previewSection">Analysis - Season 8</div>
+          </div>
+          <h1 class="headline" id="previewTitle">Chelsea Panic Meter Finally Hits Red</h1>
+          <p class="dek" id="previewSummary">Chelsea have enough talent to steady the season, but the margin is shrinking and every missed chance now feels louder than the last.</p>
+          <div class="byline-bar">
+            <span class="byline" id="previewAuthor">Community Writer</span>
+            <span class="dateline" id="previewSeason">Season 8</span>
+          </div>
+          <div class="body-text" id="previewBody"></div>
+          <hr class="footer-rule">
+          <div class="footer-text" id="previewFooter">European Super League - Analysis - Season 8</div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+  <script>
+    (() => {
+      const fields = {
+        title: document.getElementById("title"),
+        summary: document.getElementById("summary"),
+        author: document.getElementById("author"),
+        category: document.getElementById("category"),
+        desk: document.getElementById("desk"),
+        season: document.getElementById("season"),
+        teams: document.getElementById("teams"),
+        players: document.getElementById("players"),
+        body: document.getElementById("body")
+      };
+      const submissionGrid = document.querySelector(".submission-grid");
+      const tagStatus = document.getElementById("tagStatus");
+      let knownTeams = [];
+      let knownPlayers = [];
+      let autoTagTimer = null;
+
+      const defaults = Object.fromEntries(Object.entries(fields).map(([key, field]) => [key, field.value]));
+      let editor = null;
+      const escapeHtml = (value = "") => String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+
+      const inlineMarkdown = (value) => escapeHtml(value)
+        .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+        .replace(/\*([^*]+)\*/g, "<em>$1</em>")
+        .replace(/~~([^~]+)~~/g, "<s>$1</s>")
+        .replace(/`([^`]+)`/g, "<code>$1</code>")
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+
+      const markdownToHtml = (text) => {
+        const blocks = String(text || "").split(/\n\s*\n/).map((block) => block.trim()).filter(Boolean);
+        return blocks.map((block, index) => {
+          if (block.startsWith("# ")) return `<div class="section-header">${inlineMarkdown(block.slice(2))}</div>`;
+          if (block.startsWith("## ")) return `<div class="section-header">${inlineMarkdown(block.slice(3))}</div>`;
+          if (block.startsWith("### ")) return `<div class="section-header">${inlineMarkdown(block.slice(4))}</div>`;
+          if (block.startsWith("> ")) return `<div class="pull-quote">${inlineMarkdown(block.replace(/^>\s?/gm, ""))}</div>`;
+          if (/^[-*]\s+/m.test(block)) {
+            const items = block.split("\n").map((line) => line.replace(/^[-*]\s+/, "").trim()).filter(Boolean);
+            return `<ul>${items.map((item) => `<li>${inlineMarkdown(item)}</li>`).join("")}</ul>`;
+          }
+          if (/^\d+\.\s+/m.test(block)) {
+            const items = block.split("\n").map((line) => line.replace(/^\d+\.\s+/, "").trim()).filter(Boolean);
+            return `<ol>${items.map((item) => `<li>${inlineMarkdown(item)}</li>`).join("")}</ol>`;
+          }
+          return `<p${index === 0 ? ' class="drop-cap"' : ""}>${inlineMarkdown(block).replace(/\n/g, "<br>")}</p>`;
+        }).join("");
+      };
+
+      const values = () => Object.fromEntries(Object.entries(fields).map(([key, field]) => [key, field.value.trim()]));
+
+      const normalizeSearchText = (value = "") => String(value)
+        .toLowerCase()
+        .replace(/&amp;/g, "&")
+        .replace(/[^a-z0-9]+/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      const includesName = (haystack, name) => {
+        const normalizedName = normalizeSearchText(name);
+        if (!normalizedName) return false;
+        return ` ${haystack} `.includes(` ${normalizedName} `);
+      };
+
+      const getArticleSearchText = () => normalizeSearchText([
+        fields.title.value,
+        fields.summary.value,
+        fields.body.value
+      ].join(" "));
+
+      const detectTags = () => {
+        const text = getArticleSearchText();
+        const teams = knownTeams.filter((team) => includesName(text, team));
+        const players = knownPlayers.filter((player) => includesName(text, player));
+        return { teams, players };
+      };
+
+      const applyDetectedTags = () => {
+        const { teams, players } = detectTags();
+        fields.teams.value = teams.join(", ");
+        fields.players.value = players.join(", ");
+        tagStatus.textContent = `Found ${teams.length} team${teams.length === 1 ? "" : "s"} and ${players.length} player${players.length === 1 ? "" : "s"}.`;
+        render();
+      };
+
+      const scheduleAutoTags = () => {
+        window.clearTimeout(autoTagTimer);
+        autoTagTimer = window.setTimeout(applyDetectedTags, 300);
+      };
+
+      const render = () => {
+        const data = values();
+        const title = data.title || "Article headline here";
+        const summary = data.summary || "One-sentence deck here.";
+        const author = data.author || "Community Writer";
+        const category = data.category || "Analysis";
+        const desk = data.desk || category;
+        const season = data.season || "Season 8";
+
+        document.getElementById("previewTickerLabel").textContent = category;
+        document.getElementById("previewTickerTitle").textContent = title;
+        document.getElementById("previewTickerSummary").textContent = summary;
+        document.getElementById("previewTickerDesk").textContent = `${desk} from ${author}`;
+        document.getElementById("previewLeague").textContent = `European Super League - ${desk}`;
+        document.getElementById("previewSection").textContent = `${category} - ${season}`;
+        document.getElementById("previewTitle").textContent = title;
+        document.getElementById("previewSummary").textContent = summary;
+        document.getElementById("previewAuthor").textContent = author;
+        document.getElementById("previewSeason").textContent = season;
+        document.getElementById("previewBody").innerHTML = markdownToHtml(data.body);
+        document.getElementById("previewFooter").textContent = `European Super League - ${desk} - ${season}`;
+      };
+
+      const buildSubmission = () => {
+        const data = values();
+        return [
+          "ESL MEDIA ARTICLE SUBMISSION",
+          "",
+          `Title: ${data.title}`,
+          `Author: ${data.author}`,
+          `Category: ${data.category}`,
+          `Desk: ${data.desk}`,
+          `Season: ${data.season}`,
+          `Teams Mentioned: ${data.teams}`,
+          `Players Mentioned: ${data.players || "None"}`,
+          "",
+          "Summary:",
+          data.summary,
+          "",
+          "Body:",
+          data.body
+        ].join("\n");
+      };
+
+      const slugify = (value = "") => String(value)
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "_")
+        .replace(/^_+|_+$/g, "");
+
+      const splitList = (value = "") => String(value)
+        .split(",")
+        .map((item) => item.trim())
+        .filter(Boolean);
+
+      const buildCmsJson = () => {
+        const data = values();
+        const today = new Date().toISOString().slice(0, 10);
+        return JSON.stringify({
+          title: data.title,
+          slug: slugify(data.title),
+          author: data.author,
+          publish_date: today,
+          status: "draft",
+          category: data.category,
+          desk: data.desk,
+          season: data.season,
+          sort_order: 1,
+          summary: data.summary,
+          body: data.body,
+          tags: data.category ? [data.category] : [],
+          related_teams: splitList(data.teams),
+          related_players: splitList(data.players),
+          related_competitions: [],
+          hero_image: "../article%20images/ESLM.png",
+          thumbnail: "../article%20images/ESLM.png",
+          image_alt: "ESL Media",
+          image_credit: "ESL Media"
+        }, null, 2);
+      };
+
+      const setStatus = (message) => {
+        const status = document.getElementById("copyStatus");
+        status.textContent = message;
+        window.clearTimeout(setStatus.timer);
+        setStatus.timer = window.setTimeout(() => {
+          status.textContent = "Ready";
+        }, 1600);
+      };
+
+      document.getElementById("copySubmission").addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(buildSubmission());
+          setStatus("Copied");
+        } catch {
+          setStatus("Copy failed");
+        }
+      });
+
+      document.getElementById("copyCmsJson").addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(buildCmsJson());
+          setStatus("CMS JSON copied");
+        } catch {
+          setStatus("Copy failed");
+        }
+      });
+
+      document.getElementById("downloadCmsJson").addEventListener("click", () => {
+        const data = JSON.parse(buildCmsJson());
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `${data.slug || "esl_media_submission"}.json`;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(url);
+        setStatus("JSON downloaded");
+      });
+
+      document.getElementById("resetExample").addEventListener("click", () => {
+        Object.entries(fields).forEach(([key, field]) => {
+          field.value = defaults[key];
+        });
+        if (editor) {
+          editor.value(fields.body.value);
+        }
+        render();
+        scheduleAutoTags();
+        setStatus("Reset");
+      });
+
+      document.getElementById("autoFillTags").addEventListener("click", applyDetectedTags);
+
+      document.getElementById("focusPreview").addEventListener("click", () => {
+        submissionGrid.classList.remove("editor-focus");
+        submissionGrid.classList.add("preview-focus");
+      });
+
+      document.getElementById("hidePreview").addEventListener("click", () => {
+        submissionGrid.classList.remove("preview-focus");
+        submissionGrid.classList.add("editor-focus");
+      });
+
+      document.getElementById("showBoth").addEventListener("click", () => {
+        submissionGrid.classList.remove("preview-focus", "editor-focus");
+      });
+
+      document.getElementById("showEditor").addEventListener("click", () => {
+        submissionGrid.classList.remove("preview-focus", "editor-focus");
+      });
+
+      Object.values(fields).forEach((field) => {
+        field.addEventListener("input", render);
+        field.addEventListener("change", render);
+      });
+
+      if (window.EasyMDE) {
+        editor = new EasyMDE({
+          element: fields.body,
+          autofocus: false,
+          spellChecker: false,
+          status: false,
+          minHeight: "300px",
+          renderingConfig: {
+            singleLineBreaks: false
+          },
+          toolbar: [
+            "heading", "bold", "italic", "strikethrough", "|",
+            "quote", "unordered-list", "ordered-list", "|",
+            "link", "code", "|",
+            "preview", "side-by-side", "fullscreen"
+          ]
+        });
+        editor.codemirror.on("change", () => {
+          fields.body.value = editor.value();
+          render();
+          scheduleAutoTags();
+        });
+      } else {
+        fields.body.hidden = false;
+      }
+
+      Promise.all([
+        fetch("media-articles.js")
+          .then((response) => response.text())
+          .then((text) => {
+            const match = text.match(/window\.ESL_TEAM_LOGOS\s*=\s*\{([\s\S]*?)\};/);
+            knownTeams = match ? Array.from(match[1].matchAll(/"([^"]+)"\s*:/g)).map((item) => item[1]) : [];
+          })
+          .catch(() => {
+            knownTeams = [];
+          }),
+        fetch("../../00-build/database/players.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const players = Array.isArray(data) ? data : data.players || [];
+            knownPlayers = players
+              .map((player) => player && player.name)
+              .filter(Boolean)
+              .sort((a, b) => b.length - a.length);
+          })
+          .catch(() => {
+            knownPlayers = [];
+          })
+      ]).then(() => {
+        tagStatus.textContent = `Auto tagger ready: ${knownTeams.length} teams, ${knownPlayers.length} players.`;
+        applyDetectedTags();
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

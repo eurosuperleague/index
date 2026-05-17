@@ -26,6 +26,8 @@ window.ESL_TEAM_LOGOS = {
 };
 
 window.ESL_MEDIA_ARTICLES = [
+  // ESL_MEDIA_CMS_START
+  // ESL_MEDIA_CMS_END
   {
     file: "articles/february_1982_mvp_race.html",
     title: "Magic Still Leads, But Tier 3 Owns The Best Fight",

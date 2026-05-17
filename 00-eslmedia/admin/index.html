@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ESL Media CMS</title>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    const ArticlePreview = createClass({
+      render() {
+        const entry = this.props.entry;
+        const widgetFor = this.props.widgetFor;
+        const title = entry.getIn(["data", "title"]) || "Article headline here";
+        const summary = entry.getIn(["data", "summary"]) || "One-sentence deck here.";
+        const author = entry.getIn(["data", "author"]) || "ESL Media Desk";
+        const category = entry.getIn(["data", "category"]) || "Analysis";
+        const desk = entry.getIn(["data", "desk"]) || category;
+        const season = entry.getIn(["data", "season"]) || "Season 8";
+
+        return h("div", { className: "preview-page" },
+          h("header", { className: "site-topbar" },
+            h("div", { className: "site-topbar-inner" },
+              h("div", { className: "site-topbar-brand" },
+                h("div", { className: "site-edition-pill" }, "Front Page"),
+                h("div", null, "European Super League Sports Desk")
+              ),
+              h("ul", { className: "site-topbar-nav" },
+                h("li", null, h("a", null, "Home")),
+                h("li", null, h("a", null, "All Articles")),
+                h("li", null, h("a", null, "Analysis")),
+                h("li", null, h("a", null, "League Site"))
+              )
+            )
+          ),
+          h("div", { className: "site-ticker" },
+            h("div", { className: "site-ticker-inner" },
+              h("span", { className: "site-ticker-label" }, category),
+              h("div", { className: "site-ticker-track" },
+                h("div", { className: "site-ticker-item" }, title),
+                h("div", { className: "site-ticker-item" }, summary),
+                h("div", { className: "site-ticker-item" }, `${desk} from ${author}`)
+              )
+            )
+          ),
+          h("article", { className: "paper" },
+            h("div", { className: "masthead" },
+              h("div", { className: "league-name" }, `European Super League - ${desk}`),
+              h("div", { className: "section-label" }, `${category} - ${season}`)
+            ),
+            h("h1", { className: "headline" }, title),
+            h("p", { className: "dek" }, summary),
+            h("div", { className: "byline-bar" },
+              h("span", { className: "byline" }, author),
+              h("span", { className: "dateline" }, season)
+            ),
+            h("div", { className: "body-text" }, widgetFor("body")),
+            h("hr", { className: "footer-rule" }),
+            h("div", { className: "footer-text" }, `European Super League - ${desk} - ${season}`)
+          )
+        );
+      }
+    });
+
+    CMS.registerPreviewStyle("preview.css");
+    CMS.registerPreviewTemplate("esl_media_articles", ArticlePreview);
+  </script>
+</body>
+</html>

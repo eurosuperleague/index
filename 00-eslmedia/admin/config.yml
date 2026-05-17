@@ -1,0 +1,46 @@
+backend:
+  name: github
+  repo: eurosuperleague/index
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: "00-eslmedia/content/article images"
+public_folder: "../article%20images"
+
+collections:
+  - name: "esl_media_articles"
+    label: "ESL Media Articles"
+    folder: "00-eslmedia/content/cms/articles"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{slug}}"
+    summary: "{{title}} - {{status}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string", hint: "Lowercase words separated by underscores, for example february_1982_mvp_race." }
+      - { label: "Author", name: "author", widget: "string", default: "ESL Media Desk" }
+      - { label: "Publish Date", name: "publish_date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        default: "draft"
+        options: ["draft", "ready", "scheduled", "published", "archived"]
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        default: "Analysis"
+        options: ["Analysis", "Scouting", "Interview", "Announcement", "Preview", "Recap", "Rankings", "Feature"]
+      - { label: "Desk", name: "desk", widget: "string", default: "Analysis" }
+      - { label: "Season", name: "season", widget: "string", default: "Season 8" }
+      - { label: "Sort Order", name: "sort_order", widget: "number", default: 1, min: 1, max: 99, value_type: "int" }
+      - { label: "Summary", name: "summary", widget: "text", hint: "One sentence, roughly 20 to 35 words." }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", required: false, hint: "First tag becomes the manifest tag." }
+      - { label: "Related Teams", name: "related_teams", widget: "list", hint: "Use exact team names from the site." }
+      - { label: "Related Players", name: "related_players", widget: "list", required: false, hint: "Use exact player names from players.json." }
+      - { label: "Related Competitions", name: "related_competitions", widget: "list", required: false }
+      - { label: "Hero Image", name: "hero_image", widget: "image", default: "../article%20images/ESLM.png" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image", default: "../article%20images/ESLM.png" }
+      - { label: "Image Alt Text", name: "image_alt", widget: "string", default: "ESL Media" }
+      - { label: "Image Credit", name: "image_credit", widget: "string", default: "ESL Media" }

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Import ESL Media Submission</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f4f2ec;
+      color: #0f0f0f;
+      font-family: "Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .shell {
+      width: min(980px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2rem 0 3rem;
+    }
+
+    .panel {
+      background: #fffdfa;
+      border: 1px solid rgba(15, 15, 15, 0.14);
+      border-top: 5px solid #111b36;
+      box-shadow: 5px 5px 0 rgba(17, 27, 54, 0.1);
+      padding: 1.2rem;
+    }
+
+    .kicker,
+    label,
+    .status {
+      color: #111b36;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 0.95;
+      margin: 0.45rem 0 0.8rem;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      color: #524633;
+      line-height: 1.55;
+      max-width: 760px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid rgba(15, 15, 15, 0.2);
+      background: #fff;
+      color: #0f0f0f;
+      font: inherit;
+      padding: 0.7rem;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      min-height: 360px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 0.85rem;
+      line-height: 1.45;
+    }
+
+    .actions {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    button,
+    a.button {
+      border: 1px solid #111b36;
+      background: #111b36;
+      color: #fff;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font: inherit;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0.7rem 0.8rem;
+    }
+
+    button.secondary,
+    a.button.secondary {
+      background: #fff;
+      color: #111b36;
+    }
+
+    .path-box {
+      background: #111b36;
+      color: #fff;
+      padding: 0.8rem;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="panel">
+      <div class="kicker">ESL Media Admin</div>
+      <h1>Import Submission JSON</h1>
+      <p>Load a JSON file downloaded from the public submission preview page. This helper validates the shape, shows the repo path, and lets you copy the final JSON for the Decap/static CMS article folder.</p>
+
+      <div class="grid">
+        <label>Submission JSON File
+          <input id="fileInput" type="file" accept="application/json,.json">
+        </label>
+
+        <div>
+          <div class="kicker">Target Path</div>
+          <div class="path-box" id="targetPath">Choose a JSON file.</div>
+        </div>
+
+        <label>CMS JSON
+          <textarea id="jsonText" spellcheck="false"></textarea>
+        </label>
+
+        <div class="actions">
+          <button type="button" id="copyJson">Copy JSON</button>
+          <button type="button" class="secondary" id="downloadCleanJson">Download Clean JSON</button>
+          <a class="button secondary" href="./#/collections/esl_media_articles">Open Decap Articles</a>
+          <span class="status" id="status">Waiting</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      const fileInput = document.getElementById("fileInput");
+      const targetPath = document.getElementById("targetPath");
+      const jsonText = document.getElementById("jsonText");
+      const status = document.getElementById("status");
+
+      const slugify = (value = "") => String(value)
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "_")
+        .replace(/^_+|_+$/g, "");
+
+      const setStatus = (message) => {
+        status.textContent = message;
+      };
+
+      const normalize = (data) => {
+        const slug = slugify(data.slug || data.title || "esl_media_submission");
+        return {
+          title: data.title || "",
+          slug,
+          author: data.author || "Community Writer",
+          publish_date: data.publish_date || new Date().toISOString().slice(0, 10),
+          status: data.status || "draft",
+          category: data.category || "Analysis",
+          desk: data.desk || data.category || "Analysis",
+          season: data.season || "Season 8",
+          sort_order: Number(data.sort_order || 1),
+          summary: data.summary || "",
+          body: data.body || "",
+          tags: Array.isArray(data.tags) ? data.tags : [],
+          related_teams: Array.isArray(data.related_teams) ? data.related_teams : [],
+          related_players: Array.isArray(data.related_players) ? data.related_players : [],
+          related_competitions: Array.isArray(data.related_competitions) ? data.related_competitions : [],
+          hero_image: data.hero_image || "../article%20images/ESLM.png",
+          thumbnail: data.thumbnail || data.hero_image || "../article%20images/ESLM.png",
+          image_alt: data.image_alt || "ESL Media",
+          image_credit: data.image_credit || "ESL Media"
+        };
+      };
+
+      const loadJson = (data) => {
+        const normalized = normalize(data);
+        jsonText.value = JSON.stringify(normalized, null, 2);
+        targetPath.textContent = `00-eslmedia/content/cms/articles/${normalized.slug}.json`;
+        setStatus("Loaded");
+      };
+
+      fileInput.addEventListener("change", async () => {
+        const file = fileInput.files && fileInput.files[0];
+        if (!file) return;
+        try {
+          loadJson(JSON.parse(await file.text()));
+        } catch {
+          setStatus("Invalid JSON");
+        }
+      });
+
+      document.getElementById("copyJson").addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(jsonText.value);
+          setStatus("Copied");
+        } catch {
+          setStatus("Copy failed");
+        }
+      });
+
+      document.getElementById("downloadCleanJson").addEventListener("click", () => {
+        try {
+          const data = JSON.parse(jsonText.value);
+          const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement("a");
+          link.href = url;
+          link.download = `${data.slug || "esl_media_submission"}.json`;
+          document.body.appendChild(link);
+          link.click();
+          link.remove();
+          URL.revokeObjectURL(url);
+          setStatus("Downloaded");
+        } catch {
+          setStatus("Invalid JSON");
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
