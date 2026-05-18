@@ -29,6 +29,110 @@ window.ESL_MEDIA_ARTICLES = [
   // ESL_MEDIA_CMS_START
   // ESL_MEDIA_CMS_END
   {
+    file: "articles/march_1982_mvp_race.html",
+    title: "March MVP Race: Carroll Crashes The Top Line",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-18-07",
+    tag: "MVP Race",
+    author: "Damon Cross",
+    meta: "Awards Desk",
+    blurb: "Magic Johnson and Moses Malone still lead their tiers, while Joe Barry Carroll jumps to the top of a crowded Tier 3 MVP race.",
+    teams: [
+      "AC Milan", "AFC Richmond", "Atletico Madrid", "Barcelona", "Benfica", "Chelsea",
+      "FL Fart", "Inter Milan", "Juventus", "Manchester City", "Marseille",
+      "Paris Saint-Germain", "Real Madrid", "Sheffield United"
+    ],
+    playerTags: [
+      "Adrian Dantley", "Calvin Natt", "David Thompson", "George Gervin", "Jack Sikma",
+      "Joe Barry Carroll", "Kareem Abdul-Jabbar", "Kelly Tripucka", "Larry Bird",
+      "Magic Johnson", "Moses Malone", "Robert Parish", "Sidney Moncrief",
+      "Steve Johnson", "World B. Free"
+    ]
+  },
+  {
+    file: "articles/march_1982_stock_up_stock_down.html",
+    title: "March Stock Up, Stock Down: Milan And FL Fart Bought The Month",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-18-06",
+    tag: "Stock Report",
+    author: "Graham Trent",
+    meta: "Monthly Stock Report",
+    blurb: "AC Milan, FL Fart, and PSG rise after strong March sims, while Sporting CP, Atletico Madrid, and Valencia lose ground.",
+    teams: ["AC Milan", "Atletico Madrid", "FL Fart", "Paris Saint-Germain", "Sporting CP", "Valencia"],
+    playerTags: ["David Thompson", "George Gervin", "Joe Barry Carroll", "Larry Bird"]
+  },
+  {
+    file: "articles/march_1982_promotion_relegation_watch.html",
+    title: "March Promotion and Relegation Watch: The Lines Got Messy",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-18-05",
+    tag: "Race Watch",
+    author: "Nina Vale",
+    meta: "March Race Watch",
+    blurb: "March tightened Tier 1 survival, crowded Tier 2 promotion, and gave FL Fart the clearest Tier 3 promotion grip.",
+    teams: [
+      "Ajax", "Aston Villa", "Atletico Madrid", "Benfica", "Brighton", "Chelsea",
+      "Crystal Palace", "FL Fart", "Juventus", "Manchester City", "Manchester United",
+      "Marseille", "Monaco", "Paris Saint-Germain"
+    ],
+    playerTags: ["Joe Barry Carroll", "Moses Malone"]
+  },
+  {
+    file: "articles/march_1982_tier_3_power_rankings.html",
+    title: "March Tier 3 Power Rankings: FL Fart Took The Line Back",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-18-04",
+    tag: "Conference League",
+    author: "Nina Vale",
+    meta: "March Edition",
+    blurb: "FL Fart jump Inter, PSG and Manchester City rise, and Barcelona's uneven March reshapes the Tier 3 promotion board.",
+    teams: ["Barcelona", "FL Fart", "Inter Milan", "Manchester City", "Paris Saint-Germain", "Sporting CP", "Tottenham Hotspur", "Valencia"],
+    playerTags: ["Allen Leavell", "Buck Williams", "Calvin Natt", "David Thompson", "Joe Barry Carroll", "Kelly Tripucka", "World B. Free"]
+  },
+  {
+    file: "articles/march_1982_tier_2_power_rankings.html",
+    title: "March Tier 2 Power Rankings: Benfica Holds, The Pack Closes",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-18-03",
+    tag: "Europa League",
+    author: "Nina Vale",
+    meta: "March Edition",
+    blurb: "Benfica stay first, Juventus and Marseille rise, and Sheffield's uneven March turns the Tier 2 promotion race tighter.",
+    teams: ["Ajax", "Aston Villa", "Benfica", "Chelsea", "Juventus", "Marseille", "Monaco", "Sheffield United"],
+    playerTags: ["Bill Laimbeer", "Cliff Robinson", "Jack Sikma", "Kareem Abdul-Jabbar", "Moses Malone", "Robert Parish", "Steve Johnson"]
+  },
+  {
+    file: "articles/march_1982_tier_1_power_rankings.html",
+    title: "March Tier 1 Power Rankings: Milan Made The Jump",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-18-02",
+    tag: "Champions League",
+    author: "Nina Vale",
+    meta: "March Edition",
+    blurb: "AC Milan surge, AFC Richmond take the top line, and Atletico Madrid collapse into the loudest Tier 1 fall of March.",
+    teams: ["AC Milan", "AFC Richmond", "Atletico Madrid", "Bayern Munich", "Brighton", "Crystal Palace", "Manchester United", "Real Madrid"],
+    playerTags: ["Bernard King", "George Gervin", "Kiki Vandeweghe", "Larry Bird", "Magic Johnson", "Sidney Moncrief", "Walter Davis"]
+  },
+  {
+    file: "articles/march_1982_month_in_review.html",
+    title: "March 1982 Month in Review: Milan Changed The Trust Test",
+    category: "Analysis",
+    desk: "Analysis",
+    sortKey: "2026-05-18-01",
+    tag: "Month In Review",
+    author: "Graham Trent",
+    meta: "Monthly Review",
+    blurb: "AC Milan surged, Chelsea delivered the month's biggest blowout, Aston Villa made noise, and FL Fart reclaimed the Tier 3 line.",
+    teams: ["AC Milan", "Aston Villa", "Atletico Madrid", "Barcelona", "Benfica", "Chelsea", "FL Fart", "Inter Milan", "Sheffield United", "Sporting CP"],
+    playerTags: ["George Gervin", "Larry Bird", "Moses Malone"]
+  },
+  {
     file: "articles/february_1982_mvp_race.html",
     title: "Magic Still Leads, But Tier 3 Owns The Best Fight",
     category: "Analysis",
