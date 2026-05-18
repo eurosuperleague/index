@@ -8,7 +8,7 @@
             "name": "Larry Bird",
             "url": "../players/player221.htm",
             "pos": "PF",
-            "age": "22",
+            "age": "21",
             "overall": "165",
             "potential": "180"
         }
@@ -36,7 +36,7 @@
             "name": "Cliff Robinson",
             "url": "../players/player405.htm",
             "pos": "PF",
-            "age": "20",
+            "age": "19",
             "overall": "119",
             "potential": "123"
         }
@@ -50,7 +50,7 @@
             "name": "Bill Laimbeer",
             "url": "../players/player398.htm",
             "pos": "C",
-            "age": "23",
+            "age": "22",
             "overall": "125",
             "potential": "147"
         }
@@ -78,7 +78,7 @@
             "name": "Kelly Tripucka",
             "url": "../players/player573.htm",
             "pos": "SF",
-            "age": "21",
+            "age": "20",
             "overall": "123",
             "potential": "136"
         }
@@ -92,7 +92,7 @@
             "name": "Bernard King",
             "url": "../players/player237.htm",
             "pos": "SF",
-            "age": "22",
+            "age": "21",
             "overall": "121",
             "potential": "128"
         }
@@ -106,7 +106,7 @@
             "name": "Moses Malone",
             "url": "../players/player396.htm",
             "pos": "C",
-            "age": "25",
+            "age": "24",
             "overall": "149",
             "potential": "152"
         }
@@ -119,7 +119,7 @@
         "starPlayer": {
             "name": "Kiki Vandeweghe",
             "url": "../players/player225.htm",
-            "pos": "PF",
+            "pos": "SF",
             "age": "21",
             "overall": "138",
             "potential": "152"
@@ -134,7 +134,7 @@
             "name": "Jack Sikma",
             "url": "../players/player394.htm",
             "pos": "C",
-            "age": "23",
+            "age": "22",
             "overall": "140",
             "potential": "142"
         }
@@ -175,8 +175,8 @@
         "starPlayer": {
             "name": "World B. Free",
             "url": "../players/player572.htm",
-            "pos": "SG",
-            "age": "25",
+            "pos": "PG",
+            "age": "24",
             "overall": "129",
             "potential": "135"
         }
@@ -190,7 +190,7 @@
             "name": "Kareem Abdul-Jabbar",
             "url": "../players/player401.htm",
             "pos": "C",
-            "age": "33",
+            "age": "32",
             "overall": "132",
             "potential": "133"
         }
@@ -201,12 +201,12 @@
         "file": "roster16.htm",
         "url": "../rosters/roster16.htm",
         "starPlayer": {
-            "name": "Calvin Natt",
-            "url": "../players/player579.htm",
-            "pos": "SF",
-            "age": "23",
-            "overall": "109",
-            "potential": "115"
+            "name": "Allen Leavell",
+            "url": "../players/player578.htm",
+            "pos": "PG",
+            "age": "22",
+            "overall": "118",
+            "potential": "119"
         }
     },
     {
@@ -273,7 +273,7 @@
         "starPlayer": {
             "name": "Sidney Moncrief",
             "url": "../players/player223.htm",
-            "pos": "SF",
+            "pos": "SG",
             "age": "22",
             "overall": "134",
             "potential": "150"
@@ -299,12 +299,12 @@
         "file": "roster26.htm",
         "url": "../rosters/roster26.htm",
         "starPlayer": {
-            "name": "Tree Rollins",
-            "url": "../players/player261.htm",
+            "name": "Buck Williams",
+            "url": "../players/player575.htm",
             "pos": "C",
-            "age": "24",
-            "overall": "117",
-            "potential": "118"
+            "age": "19",
+            "overall": "116",
+            "potential": "117"
         }
     },
     {
@@ -329,8 +329,8 @@
         "starPlayer": {
             "name": "Isiah Thomas",
             "url": "../players/player571.htm",
-            "pos": "PG",
-            "age": "19",
+            "pos": "SG",
+            "age": "18",
             "overall": "124",
             "potential": "142"
         }
