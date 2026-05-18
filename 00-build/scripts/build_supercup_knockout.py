@@ -27,6 +27,13 @@ STANDINGS_JSON = os.path.join(BUILD_ROOT, "database", "supercup", "standings.jso
 GAME_RESULTS_JSON = os.path.join(BUILD_ROOT, "database", "supercup", "game_results.json")
 PLAYOFFS_HTML = os.path.join(PROJECT_ROOT, "00-SuperCup", "playoffs.htm")
 OUTPUT_HTML = os.path.join(PROJECT_ROOT, "00-assets", "html", "supercup-knockout.htm")
+DEFAULT_PLAYOFFS_HTML = """<title>Super Cup Knockout</title>
+<h3>Super Cup</h3>
+<td bgcolor="#f2f2f2">First Round</td>
+<td bgcolor="#f2f2f2">Second Round</td>
+<td bgcolor="#f2f2f2">Semifinals</td>
+<td bgcolor="#f2f2f2">Final</td>
+"""
 
 FIRST_ROUND_SLOT_ORDER: List[Tuple[int, int]] = [
     (2, 15),
@@ -45,9 +52,11 @@ def load_json(path: str):
         return json.load(handle)
 
 
-def load_playoffs_html_text() -> str:
+def load_playoffs_html_text() -> Tuple[str, bool]:
+    if not os.path.exists(PLAYOFFS_HTML):
+        return DEFAULT_PLAYOFFS_HTML, False
     with open(PLAYOFFS_HTML, "r", encoding="utf-8", errors="ignore") as handle:
-        return handle.read()
+        return handle.read(), True
 
 
 def parse_date(value: str) -> datetime:
@@ -397,10 +406,15 @@ def render_round_column(title: str, matches: List[dict], round_index: int) -> st
     )
 
 
-def render_html(page_title: str, comp_title: str, round_titles: List[str], rounds: List[List[dict]]) -> str:
+def render_html(page_title: str, comp_title: str, round_titles: List[str], rounds: List[List[dict]], has_classic_bracket: bool) -> str:
     round_columns = "".join(
         render_round_column(title, matches, index)
         for index, (title, matches) in enumerate(zip(round_titles, rounds))
+    )
+    classic_bracket_link = (
+        '<a class="quick-link" href="../../00-SuperCup/playoffs.htm">Classic Bracket</a>'
+        if has_classic_bracket
+        else '<span class="quick-link quick-link--disabled">Classic Bracket Pending</span>'
     )
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -421,6 +435,7 @@ def render_html(page_title: str, comp_title: str, round_titles: List[str], round
     .quick-links {{ display:flex; flex-wrap:wrap; gap:.45rem; margin-top:.8rem; }}
     .quick-link {{ border:1px solid var(--line); background:#faf8f2; padding:.42rem .5rem; font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--blue); text-decoration:none; }}
     .quick-link:hover {{ border-color:var(--blue); background:#f2efe7; }}
+    .quick-link--disabled {{ color:var(--mid); opacity:.7; }}
     .knockout-grid {{ display:grid; gap:1rem; grid-template-columns:repeat(4,minmax(220px,1fr)); align-items:start; }}
     .knockout-round {{ background:var(--card); border:1px solid var(--line); min-width:0; }}
     .knockout-round-head {{ border-bottom:2px solid var(--blue); color:var(--blue); font-size:.7rem; font-weight:800; letter-spacing:.16em; padding:.72rem .8rem; text-transform:uppercase; }}
@@ -498,7 +513,7 @@ def render_html(page_title: str, comp_title: str, round_titles: List[str], round
       <nav class="quick-links" aria-label="Super Cup quick links">
         <a class="quick-link" href="./supercup-dashboard.htm">Dashboard</a>
         <a class="quick-link" href="../../00-SuperCup/standings.htm">Classic Standings</a>
-        <a class="quick-link" href="../../00-SuperCup/playoffs.htm">Classic Bracket</a>
+        {classic_bracket_link}
       </nav>
     </header>
     <section class="knockout-grid">
@@ -513,15 +528,18 @@ def render_html(page_title: str, comp_title: str, round_titles: List[str], round
 def main():
     standings_data = load_json(STANDINGS_JSON)
     game_results_data = load_json(GAME_RESULTS_JSON)
-    playoffs_html = load_playoffs_html_text()
+    playoffs_html, has_classic_bracket = load_playoffs_html_text()
     page_title, comp_title, round_titles = extract_title_bits(playoffs_html)
     seed_by_team, team_meta = build_seed_maps(standings_data)
     rounds = build_bracket(playoff_results_by_round(game_results_data), seed_by_team, team_meta)
-    output = render_html(page_title, comp_title, round_titles, rounds)
+    output = render_html(page_title, comp_title, round_titles, rounds, has_classic_bracket)
 
     if DRY_RUN:
         print("Super Cup knockout build [DRY RUN]")
-        print(f"  source playoffs: {PLAYOFFS_HTML}")
+        if has_classic_bracket:
+            print(f"  source playoffs: {PLAYOFFS_HTML}")
+        else:
+            print(f"  source playoffs: missing; using fallback labels")
         print(f"  source standings: {STANDINGS_JSON}")
         print(f"  source game results: {GAME_RESULTS_JSON}")
         print(f"  output: {OUTPUT_HTML}")
