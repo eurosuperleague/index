@@ -359,6 +359,28 @@
       text-transform: uppercase;
       font-size: 0.95rem;
     }
+    .schedule-view-toggle {
+      display: flex;
+      gap: 0.25rem;
+      justify-content: center;
+      margin: 0 0 0.55rem;
+    }
+    .schedule-view-btn {
+      border: 1px solid var(--line);
+      background: #f6f4ee;
+      color: var(--ink);
+      cursor: pointer;
+      font-size: 0.62rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      padding: 0.28rem 0.48rem;
+      text-transform: uppercase;
+    }
+    .schedule-view-btn.active {
+      background: var(--team-color);
+      border-color: var(--team-color);
+      color: #fff;
+    }
     .calendar {
       border: 1px solid #7c7c7c;
       background: #d7d7d7;
@@ -468,6 +490,57 @@
       margin: 0 0.2rem;
       border: 1px solid #7a7a7a;
     }
+    .schedule-list {
+      border: 1px solid #7c7c7c;
+      background: #f6f4ee;
+      max-height: 360px;
+      overflow: auto;
+      width: min(560px, 100%);
+    }
+    .schedule-list[hidden] { display: none; }
+    .schedule-list-row {
+      display: grid;
+      grid-template-columns: minmax(86px, 0.85fr) 44px minmax(0, 1.35fr) minmax(70px, 0.75fr);
+      gap: 0.55rem;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      padding: 0.55rem 0.6rem;
+    }
+    .schedule-list-row:last-child { border-bottom: 0; }
+    .schedule-list-row.home { background: #eaf5ff; }
+    .schedule-list-row.away { background: #fff0f0; }
+    .schedule-list-date {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .schedule-list-ha,
+    .schedule-list-result {
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .schedule-list-opponent {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      min-width: 0;
+      font-family: var(--font-serif);
+      font-weight: 900;
+      line-height: 1.15;
+    }
+    .schedule-list-opponent span:last-child {
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+    .schedule-list-result a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .schedule-list-result a:hover { text-decoration: underline; }
     .status {
       font-size: 0.68rem;
       letter-spacing: 0.12em;
@@ -699,6 +772,21 @@
         gap: 0.45rem;
         margin-top: 0.35rem;
       }
+      .schedule-panel .schedule-list {
+        width: 100%;
+        max-width: min(320px, 92vw);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .schedule-panel .schedule-list-row {
+        grid-template-columns: 1fr 42px;
+        gap: 0.32rem 0.45rem;
+        padding: 0.48rem 0.5rem;
+      }
+      .schedule-panel .schedule-list-opponent {
+        grid-column: 1 / -1;
+        grid-row: 2;
+      }
     }
   </style>
 </head>
@@ -728,7 +816,11 @@
           <div class="month-title" id="monthTitle">Month</div>
           <button class="month-nav" id="nextMonth" type="button">▶</button>
         </div>
-        <div class="calendar">
+        <div class="schedule-view-toggle" aria-label="Schedule view">
+          <button class="schedule-view-btn active" type="button" data-schedule-view="calendar">Calendar</button>
+          <button class="schedule-view-btn" type="button" data-schedule-view="list">List</button>
+        </div>
+        <div class="calendar" id="scheduleCalendar">
           <div class="weekday-grid" id="weekdayRow"></div>
           <div class="day-grid" id="dayGrid"></div>
           <div class="legend">
@@ -736,6 +828,7 @@
             <span><span class="swatch" style="background:#ffdede"></span>Away Game</span>
           </div>
         </div>
+        <div class="schedule-list" id="scheduleList" hidden></div>
       </section>
 
       <section class="panel">
@@ -830,6 +923,7 @@
       playerMode: "attributes",
       statsMode: "Season Stats",
       monthCursor: null,
+      scheduleView: "calendar",
       columnPreset: readColumnPreset()
     };
     const PAGE_VIEWPORT = "width=device-width, initial-scale=1.0";
@@ -955,10 +1049,15 @@
         .join("") || "TM";
     }
 
-    function parseDateMMDDYYYY(v) {
+    function parseScheduleDate(v) {
       const m = String(v || "").match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
       if (!m) return null;
-      return new Date(Number(m[3]), Number(m[1]) - 1, Number(m[2]));
+      const first = Number(m[1]);
+      const second = Number(m[2]);
+      const year = Number(m[3]);
+      if (first > 12) return new Date(year, second - 1, first);
+      if (second > 12) return new Date(year, first - 1, second);
+      return new Date(year, second - 1, first);
     }
 
     function buildTeamLogo(teamName) {
@@ -1285,11 +1384,57 @@
 
     function collectTeamGames(teamId) {
       const days = state.scheduleSections.flatMap((sec) => sec.days || []);
-      return days.flatMap((d) => (d.games || []).filter((g) => g.homeTeam === teamId || g.awayTeam === teamId).map((g) => ({ ...g, dateObj: parseDateMMDDYYYY(d.date), date: d.date })));
+      return days.flatMap((d) => (d.games || []).filter((g) => g.homeTeam === teamId || g.awayTeam === teamId).map((g) => ({ ...g, dateObj: parseScheduleDate(d.date), date: d.date })));
     }
 
     function monthKey(dateObj) {
       return `${dateObj.getFullYear()}-${dateObj.getMonth()}`;
+    }
+
+    function scheduleBoxHref(game) {
+      const boxHref = String(game.boxscoreUrl || "").replace(/^\.\/+/, "");
+      return boxHref ? `../../00-SuperCup/${boxHref}` : "";
+    }
+
+    function scheduleOpponentLogo(oppName) {
+      const logoFile = TEAM_LOGOS[oppName];
+      if (logoFile) {
+        return `<img class="mini-logo" src="../../00-assets/photos/${logoFile}" alt="${oppName}">`;
+      }
+      return `<span class="mini-logo-fallback">${initials(oppName)}</span>`;
+    }
+
+    function syncScheduleViewControls() {
+      const isList = state.scheduleView === "list";
+      document.getElementById("scheduleCalendar").hidden = isList;
+      document.getElementById("scheduleList").hidden = !isList;
+      document.querySelectorAll("[data-schedule-view]").forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.scheduleView === state.scheduleView);
+      });
+      document.getElementById("prevMonth").disabled = isList;
+      document.getElementById("nextMonth").disabled = isList;
+    }
+
+    function renderScheduleList(games) {
+      const teamId = state.current.teamId;
+      const rows = games.map((g) => {
+        const isHome = g.homeTeam === teamId;
+        const isCompleted = Number.isFinite(Number(g.homeScore)) && Number.isFinite(Number(g.awayScore));
+        const oppName = isHome ? g.awayTeamName : g.homeTeamName;
+        const myScore = isHome ? g.homeScore : g.awayScore;
+        const oppScore = isHome ? g.awayScore : g.homeScore;
+        const boxHref = scheduleBoxHref(g);
+        const dateText = g.dateObj.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+        const resultText = isCompleted ? `${g.winner === teamId ? "W" : "L"} ${myScore}-${oppScore}` : "TBD";
+        const resultHtml = boxHref && isCompleted ? `<a href="${boxHref}">${resultText}</a>` : resultText;
+        return `<div class="schedule-list-row ${isHome ? "home" : "away"}"><div class="schedule-list-date">${dateText}</div><div class="schedule-list-ha">${isHome ? "Home" : "Away"}</div><div class="schedule-list-opponent">${scheduleOpponentLogo(oppName)}<span>${oppName}</span></div><div class="schedule-list-result">${resultHtml}</div></div>`;
+      });
+      document.getElementById("scheduleList").innerHTML = rows.join("");
+    }
+
+    function renderSchedule() {
+      renderCalendar();
+      syncScheduleViewControls();
     }
 
     function renderCalendar() {
@@ -1299,9 +1444,11 @@
       if (!games.length) {
         status.textContent = "No schedule data";
         document.getElementById("dayGrid").innerHTML = "";
+        document.getElementById("scheduleList").innerHTML = "";
         return;
       }
       games.sort((a, b) => a.dateObj - b.dateObj);
+      renderScheduleList(games);
       if (!state.monthCursor) {
         const completedGames = games.filter((g) =>
           Number.isFinite(Number(g.homeScore)) && Number.isFinite(Number(g.awayScore))
@@ -1348,10 +1495,10 @@
             const myScore = firstGame.homeTeam === teamId ? firstGame.homeScore : firstGame.awayScore;
             const oppScore = firstGame.homeTeam === teamId ? firstGame.awayScore : firstGame.homeScore;
             numClass = isHomeGame ? "home" : "away";
-            const boxHref = String(firstGame.boxscoreUrl || "").replace(/^\.\/+/, "");
+            const boxHref = scheduleBoxHref(firstGame);
             const scoreLabel = `${myScore}-${oppScore}`;
             const scoreHtml = boxHref
-              ? `<a class="day-num-score-link" href="../../00-SuperCup/${boxHref}">${scoreLabel}</a>`
+              ? `<a class="day-num-score-link" href="${boxHref}">${scoreLabel}</a>`
               : scoreLabel;
             numText = `<span class="day-num-result">${isWin ? "W" : "L"}</span><span class="day-num-score">${scoreHtml}</span>`;
           } else {
@@ -1361,11 +1508,7 @@
         const logosHtml = dayGames.slice(0, 2).map((g) => {
           const isHome = g.homeTeam === teamId;
           const oppName = isHome ? g.awayTeamName : g.homeTeamName;
-          const logoFile = TEAM_LOGOS[oppName];
-          if (logoFile) {
-            return `<img class="mini-logo" src="../../00-assets/photos/${logoFile}" alt="${oppName}">`;
-          }
-          return `<span class="mini-logo-fallback">${initials(oppName)}</span>`;
+          return scheduleOpponentLogo(oppName);
         }).join("");
         cells.push(`<div class="day-cell ${inMonth ? "" : "out"}"><div class="day-num ${numClass}">${numText}</div><div class="mini-logo-row">${logosHtml}</div></div>`);
       }
@@ -1432,18 +1575,24 @@
         renderSeasonInfoTable();
         renderPlayerTable();
         renderStatsTable();
-        renderCalendar();
+        renderSchedule();
         syncColumnPresetButtons();
         bindColumnPresetControls();
+        document.querySelectorAll("[data-schedule-view]").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            state.scheduleView = btn.dataset.scheduleView === "list" ? "list" : "calendar";
+            renderSchedule();
+          });
+        });
         document.getElementById("prevMonth").addEventListener("click", () => {
           if (!state.monthCursor) return;
           state.monthCursor = new Date(state.monthCursor.getFullYear(), state.monthCursor.getMonth() - 1, 1);
-          renderCalendar();
+          renderSchedule();
         });
         document.getElementById("nextMonth").addEventListener("click", () => {
           if (!state.monthCursor) return;
           state.monthCursor = new Date(state.monthCursor.getFullYear(), state.monthCursor.getMonth() + 1, 1);
-          renderCalendar();
+          renderSchedule();
         });
       } catch (err) {
         document.getElementById("teamName").textContent = "Super Cup roster unavailable";

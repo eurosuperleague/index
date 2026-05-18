@@ -60,7 +60,13 @@ def load_playoffs_html_text() -> Tuple[str, bool]:
 
 
 def parse_date(value: str) -> datetime:
-    return datetime.strptime(str(value), "%m/%d/%Y")
+    raw = str(value or "").strip()
+    for fmt in ("%m/%d/%Y", "%d/%m/%Y", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(raw, fmt)
+        except ValueError:
+            continue
+    return datetime.strptime(raw, "%m/%d/%Y")
 
 
 def slugify(value: str) -> str:
@@ -79,6 +85,7 @@ def team_mark(value: str) -> str:
 TEAM_LOGO_FILES = {
     "AC Milan": "acmilan.jpg",
     "AFC Richmond": "richmond.jpg",
+    "Ajax": "ajax.jpg",
     "Aston Villa": "astonvilla.jpg",
     "Atletico Madrid": "atletico.jpg",
     "Barcelona": "barcelona.jpg",
@@ -87,12 +94,19 @@ TEAM_LOGO_FILES = {
     "Brighton": "brighton.jpg",
     "Chelsea": "chelsea.jpg",
     "Crystal Palace": "crystalpalace.jpg",
+    "FL Fart": "flfart.jpg",
     "Inter Milan": "intermilan.jpg",
+    "Juventus": "juventus.jpg",
+    "Manchester City": "manchestercity.jpg",
     "Manchester United": "manutd.jpg",
     "Marseille": "marseille.jpg",
+    "Monaco": "monaco.jpg",
+    "Paris Saint-Germain": "psg.jpg",
     "Real Madrid": "realmadrid.jpg",
     "Sheffield United": "sheffield.jpg",
     "Sporting CP": "sportingcp.jpg",
+    "Tottenham Hotspur": "tottenham.jpg",
+    "Valencia": "valencia.jpg",
 }
 
 
