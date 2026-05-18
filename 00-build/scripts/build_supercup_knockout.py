@@ -253,7 +253,7 @@ def build_bracket(round_groups, seed_by_team, team_meta):
         4: slot_participants[7] | slot_participants[8],
     }
     quarter_games = build_empty_round(4)
-    quarter_participants = {}
+    quarter_participants = dict(quarter_slot_groups)
     if len(round_groups) > 1:
         played_quarters = []
         for game in round_groups[1]:
