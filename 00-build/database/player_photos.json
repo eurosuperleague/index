@@ -5,11 +5,11 @@
     "playerNames": "https://zengm.com/files/player-photos.json"
   },
   "counts": {
-    "players": 1329,
-    "matched": 667,
+    "players": 1328,
+    "matched": 666,
     "unmatched": 662,
     "ambiguous": 0,
-    "name": 630,
+    "name": 629,
     "nameAndAge": 8,
     "overrides": 29,
     "belowMinimumOverall": 567
@@ -883,12 +883,6 @@
       "url": "https://www.basketball-reference.com/req/202005142/images/players/thomptr01.jpg",
       "sourceId": "thomptr01",
       "sourceName": "Tristan Thompson",
-      "match": "name"
-    },
-    "player136": {
-      "url": "https://www.basketball-reference.com/req/202005142/images/players/patteru01.jpg",
-      "sourceId": "patteru01",
-      "sourceName": "Ruben Patterson",
       "match": "name"
     },
     "player1369": {

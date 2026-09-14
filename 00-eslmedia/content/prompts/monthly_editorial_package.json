@@ -7,7 +7,11 @@
         "../../00-build/database/monthly/monthly_storylines.json",
         "../../00-build/database/teams.json"
     ],
-    "period": {},
+    "period": {
+        "year": 1986,
+        "month": 11,
+        "label": "November 1986"
+    },
     "package": {
         "powerRankings": [
             {
@@ -15,9 +19,9 @@
                 "type": "power_rankings",
                 "tier": "Tier 1",
                 "title": "Tier 1 Power Rankings",
-                "period": "Latest Sim",
+                "period": "November 1986",
                 "previousArticle": "../articles/clb_power_rankings_1_0.html",
-                "prompt": "Write a Tier 1 power rankings article for Latest Sim. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note each team's movement from the last published power rankings article, including how many spots they moved up or down or if they stayed level. Make the movement visible in each team capsule, not just the intro. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board. When it fits the article, mention the listed star players as roster context; starPlayer is the highest OVR player on that team's current roster. Use the style references to add substance: open with a clear ranking thesis, then make each team earn its spot with current form, evidence, belief, doubt, and what could change next. Give a little player reference where necessary, especially when a star, scorer, defender, or depth piece explains why the team's results are sustainable, misleading, or changing.",
+                "prompt": "Write a Tier 1 power rankings article for November 1986. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note each team's movement from the last published power rankings article, including how many spots they moved up or down or if they stayed level. Make the movement visible in each team capsule, not just the intro. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board. When it fits the article, mention the listed star players as roster context; starPlayer is the highest OVR player on that team's current roster. Use the style references to add substance: open with a clear ranking thesis, then make each team earn its spot with current form, evidence, belief, doubt, and what could change next. Give a little player reference where necessary, especially when a star, scorer, defender, or depth piece explains why the team's results are sustainable, misleading, or changing.",
                 "writerNotes": [
                     "Treat power rankings as a trust board, not a standings table: who would you trust most if the league kept playing like this right now?",
                     "Open the article with the ranking lens: full-season profile first, latest sim/month form second, and tier stakes third.",
@@ -61,64 +65,105 @@
                     "../../00-build/database/monthly/tier_race_snapshot.json",
                     "../../00-build/database/monthly/monthly_storylines.json",
                     "../../00-build/database/standings.json",
+                    "../../00-build/database/game_results.json",
                     "../../00-build/database/teams.json",
                     "../../00-build/database/players.json",
                     "../../00-build/database/player_stats.json"
                 ],
                 "teamPool": [
                     {
-                        "team": "Crystal Palace",
+                        "team": "AFC Richmond",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
+                            "record": "6-0",
+                            "streak": "W6",
+                            "last3": "WWW",
+                            "avgMargin": 12.5,
+                            "pointDiff": 75,
+                            "bestWin": {
+                                "date": "30/10/1986",
+                                "opponent": "Paris Saint-Germain",
+                                "result": "W",
+                                "margin": 24,
+                                "score": "@AFC Richmond 129, Paris Saint-Germain 105",
+                                "boxscoreUrl": "./boxes/box10-2.htm",
+                                "section": "Preseason"
+                            },
                             "worstLoss": null,
-                            "closeGameCount": 0
+                            "closeGameCount": 1
                         },
                         "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 3.0,
+                            "pointDiff": 3,
+                            "bestWin": {
+                                "date": "1/11/1986",
+                                "opponent": "Real Madrid",
+                                "result": "W",
+                                "margin": 3,
+                                "score": "AFC Richmond 114, @Real Madrid 111",
+                                "boxscoreUrl": "./boxes/box12-2.htm",
+                                "section": "Preseason"
+                            },
                             "worstLoss": null,
-                            "closeGameCount": 0
+                            "closeGameCount": 1
                         },
-                        "rosterUrl": "./rosters/roster6.htm",
+                        "rosterUrl": "./rosters/roster12.htm",
                         "starPlayer": {
-                            "name": "Rolando Blackman",
-                            "url": "../players/player871.htm",
+                            "name": "Larry Bird",
+                            "url": "../players/player697.htm",
                             "pos": "SF",
-                            "age": "25",
+                            "age": "27",
                             "overall": "151",
-                            "potential": "156"
+                            "potential": "157"
                         }
                     },
                     {
                         "team": "Real Madrid",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "record": "4-2",
+                            "streak": "L1",
+                            "last3": "WWL",
+                            "avgMargin": 13.5,
+                            "pointDiff": 81,
+                            "bestWin": {
+                                "date": "27/10/1986",
+                                "opponent": "FL Fart",
+                                "result": "W",
+                                "margin": 40,
+                                "score": "@Real Madrid 127, FL Fart 87",
+                                "boxscoreUrl": "./boxes/box7-1.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "23/10/1986",
+                                "opponent": "Paris Saint-Germain",
+                                "result": "L",
+                                "margin": 11,
+                                "score": "@Paris Saint-Germain 113, Real Madrid 102",
+                                "boxscoreUrl": "./boxes/box3-2.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
                         },
                         "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "record": "0-1",
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -3.0,
+                            "pointDiff": -3,
                             "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "worstLoss": {
+                                "date": "1/11/1986",
+                                "opponent": "AFC Richmond",
+                                "result": "L",
+                                "margin": 3,
+                                "score": "AFC Richmond 114, @Real Madrid 111",
+                                "boxscoreUrl": "./boxes/box12-2.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
                         },
                         "rosterUrl": "./rosters/roster8.htm",
                         "starPlayer": {
@@ -131,16 +176,88 @@
                         }
                     },
                     {
+                        "team": "Benfica",
+                        "overall": {
+                            "record": "4-2",
+                            "streak": "L1",
+                            "last3": "LWL",
+                            "avgMargin": 4.67,
+                            "pointDiff": 28,
+                            "bestWin": {
+                                "date": "28/10/1986",
+                                "opponent": "Ajax",
+                                "result": "W",
+                                "margin": 24,
+                                "score": "@Benfica 121, Ajax 97",
+                                "boxscoreUrl": "./boxes/box8-1.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "26/10/1986",
+                                "opponent": "Brighton",
+                                "result": "L",
+                                "margin": 18,
+                                "score": "@Brighton 119, Benfica 101",
+                                "boxscoreUrl": "./boxes/box6-2.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "latestSim": {
+                            "record": "0-1",
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -3.0,
+                            "pointDiff": -3,
+                            "bestWin": null,
+                            "worstLoss": {
+                                "date": "2/11/1986",
+                                "opponent": "FL Fart",
+                                "result": "L",
+                                "margin": 3,
+                                "score": "FL Fart 114, @Benfica 111",
+                                "boxscoreUrl": "./boxes/box13-1.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "rosterUrl": "./rosters/roster13.htm",
+                        "starPlayer": {
+                            "name": "Moses Malone",
+                            "url": "../players/player872.htm",
+                            "pos": "C",
+                            "age": "29",
+                            "overall": "157",
+                            "potential": "157"
+                        }
+                    },
+                    {
                         "team": "Brighton",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "record": "3-3",
+                            "streak": "L1",
+                            "last3": "WWL",
+                            "avgMargin": 3.33,
+                            "pointDiff": 20,
+                            "bestWin": {
+                                "date": "23/10/1986",
+                                "opponent": "Ajax",
+                                "result": "W",
+                                "margin": 23,
+                                "score": "Brighton 130, @Ajax 107",
+                                "boxscoreUrl": "./boxes/box3-1.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "21/10/1986",
+                                "opponent": "AFC Richmond",
+                                "result": "L",
+                                "margin": 13,
+                                "score": "@AFC Richmond 123, Brighton 110",
+                                "boxscoreUrl": "./boxes/box1-4.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 2
                         },
                         "latestSim": {
                             "record": "0-0",
@@ -163,79 +280,199 @@
                         }
                     },
                     {
-                        "team": "AFC Richmond",
+                        "team": "Paris Saint-Germain",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "record": "2-4",
+                            "streak": "W1",
+                            "last3": "LLW",
+                            "avgMargin": -0.67,
+                            "pointDiff": -4,
+                            "bestWin": {
+                                "date": "1/11/1986",
+                                "opponent": "Crystal Palace",
+                                "result": "W",
+                                "margin": 42,
+                                "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                                "boxscoreUrl": "./boxes/box12-1.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "30/10/1986",
+                                "opponent": "AFC Richmond",
+                                "result": "L",
+                                "margin": 24,
+                                "score": "@AFC Richmond 129, Paris Saint-Germain 105",
+                                "boxscoreUrl": "./boxes/box10-2.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
                         },
                         "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 42.0,
+                            "pointDiff": 42,
+                            "bestWin": {
+                                "date": "1/11/1986",
+                                "opponent": "Crystal Palace",
+                                "result": "W",
+                                "margin": 42,
+                                "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                                "boxscoreUrl": "./boxes/box12-1.htm",
+                                "section": "Preseason"
+                            },
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster12.htm",
+                        "rosterUrl": "./rosters/roster21.htm",
                         "starPlayer": {
-                            "name": "Larry Bird",
-                            "url": "../players/player697.htm",
-                            "pos": "SF",
-                            "age": "26",
-                            "overall": "151",
-                            "potential": "157"
+                            "name": "Brad Davis",
+                            "url": "../players/player714.htm",
+                            "pos": "PG",
+                            "age": "27",
+                            "overall": "145",
+                            "potential": "147"
                         }
                     },
                     {
-                        "team": "Benfica",
+                        "team": "FL Fart",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
+                            "record": "2-4",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": -10.0,
+                            "pointDiff": -60,
+                            "bestWin": {
+                                "date": "30/10/1986",
+                                "opponent": "Brighton",
+                                "result": "W",
+                                "margin": 5,
+                                "score": "@FL Fart 108, Brighton 103",
+                                "boxscoreUrl": "./boxes/box10-3.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "27/10/1986",
+                                "opponent": "Real Madrid",
+                                "result": "L",
+                                "margin": 40,
+                                "score": "@Real Madrid 127, FL Fart 87",
+                                "boxscoreUrl": "./boxes/box7-1.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 3
+                        },
+                        "latestSim": {
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 3.0,
+                            "pointDiff": 3,
+                            "bestWin": {
+                                "date": "2/11/1986",
+                                "opponent": "Benfica",
+                                "result": "W",
+                                "margin": 3,
+                                "score": "FL Fart 114, @Benfica 111",
+                                "boxscoreUrl": "./boxes/box13-1.htm",
+                                "section": "Preseason"
+                            },
                             "worstLoss": null,
+                            "closeGameCount": 1
+                        },
+                        "rosterUrl": "./rosters/roster27.htm",
+                        "starPlayer": {
+                            "name": "Larry Drew",
+                            "url": "../players/player1053.htm",
+                            "pos": "PG",
+                            "age": "26",
+                            "overall": "141",
+                            "potential": "141"
+                        }
+                    },
+                    {
+                        "team": "Crystal Palace",
+                        "overall": {
+                            "record": "2-4",
+                            "streak": "L1",
+                            "last3": "WWL",
+                            "avgMargin": -11.0,
+                            "pointDiff": -66,
+                            "bestWin": {
+                                "date": "27/10/1986",
+                                "opponent": "Ajax",
+                                "result": "W",
+                                "margin": 11,
+                                "score": "@Crystal Palace 115, Ajax 104",
+                                "boxscoreUrl": "./boxes/box7-2.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "1/11/1986",
+                                "opponent": "Paris Saint-Germain",
+                                "result": "L",
+                                "margin": 42,
+                                "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                                "boxscoreUrl": "./boxes/box12-1.htm",
+                                "section": "Preseason"
+                            },
                             "closeGameCount": 0
                         },
                         "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "record": "0-1",
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -42.0,
+                            "pointDiff": -42,
                             "bestWin": null,
-                            "worstLoss": null,
+                            "worstLoss": {
+                                "date": "1/11/1986",
+                                "opponent": "Paris Saint-Germain",
+                                "result": "L",
+                                "margin": 42,
+                                "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                                "boxscoreUrl": "./boxes/box12-1.htm",
+                                "section": "Preseason"
+                            },
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster13.htm",
+                        "rosterUrl": "./rosters/roster6.htm",
                         "starPlayer": {
-                            "name": "Moses Malone",
-                            "url": "../players/player872.htm",
-                            "pos": "C",
-                            "age": "29",
-                            "overall": "157",
-                            "potential": "157"
+                            "name": "Rolando Blackman",
+                            "url": "../players/player871.htm",
+                            "pos": "SF",
+                            "age": "25",
+                            "overall": "151",
+                            "potential": "156"
                         }
                     },
                     {
                         "team": "Ajax",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
+                            "record": "1-5",
+                            "streak": "L5",
+                            "last3": "LLL",
+                            "avgMargin": -12.33,
+                            "pointDiff": -74,
+                            "bestWin": {
+                                "date": "21/10/1986",
+                                "opponent": "Paris Saint-Germain",
+                                "result": "W",
+                                "margin": 23,
+                                "score": "@Ajax 103, Paris Saint-Germain 80",
+                                "boxscoreUrl": "./boxes/box1-1.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "30/10/1986",
+                                "opponent": "Real Madrid",
+                                "result": "L",
+                                "margin": 27,
+                                "score": "@Real Madrid 110, Ajax 83",
+                                "boxscoreUrl": "./boxes/box10-1.htm",
+                                "section": "Preseason"
+                            },
                             "closeGameCount": 0
                         },
                         "latestSim": {
@@ -257,70 +494,6 @@
                             "overall": "152",
                             "potential": "153"
                         }
-                    },
-                    {
-                        "team": "Paris Saint-Germain",
-                        "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
-                        },
-                        "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
-                        },
-                        "rosterUrl": "./rosters/roster21.htm",
-                        "starPlayer": {
-                            "name": "Brad Davis",
-                            "url": "../players/player714.htm",
-                            "pos": "PG",
-                            "age": "27",
-                            "overall": "145",
-                            "potential": "147"
-                        }
-                    },
-                    {
-                        "team": "FL Fart",
-                        "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
-                        },
-                        "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
-                        },
-                        "rosterUrl": "./rosters/roster27.htm",
-                        "starPlayer": {
-                            "name": "Larry Drew",
-                            "url": "../players/player1053.htm",
-                            "pos": "PG",
-                            "age": "26",
-                            "overall": "141",
-                            "potential": "141"
-                        }
                     }
                 ]
             },
@@ -329,9 +502,9 @@
                 "type": "power_rankings",
                 "tier": "Tier 2",
                 "title": "Tier 2 Power Rankings",
-                "period": "Latest Sim",
+                "period": "November 1986",
                 "previousArticle": "../articles/elb_power_rankings_1_0.html",
-                "prompt": "Write a Tier 2 power rankings article for Latest Sim. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note each team's movement from the last published power rankings article, including how many spots they moved up or down or if they stayed level. Make the movement visible in each team capsule, not just the intro. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board. When it fits the article, mention the listed star players as roster context; starPlayer is the highest OVR player on that team's current roster. Use the style references to add substance: open with a clear ranking thesis, then make each team earn its spot with current form, evidence, belief, doubt, and what could change next. Give a little player reference where necessary, especially when a star, scorer, defender, or depth piece explains why the team's results are sustainable, misleading, or changing.",
+                "prompt": "Write a Tier 2 power rankings article for November 1986. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note each team's movement from the last published power rankings article, including how many spots they moved up or down or if they stayed level. Make the movement visible in each team capsule, not just the intro. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board. When it fits the article, mention the listed star players as roster context; starPlayer is the highest OVR player on that team's current roster. Use the style references to add substance: open with a clear ranking thesis, then make each team earn its spot with current form, evidence, belief, doubt, and what could change next. Give a little player reference where necessary, especially when a star, scorer, defender, or depth piece explains why the team's results are sustainable, misleading, or changing.",
                 "writerNotes": [
                     "Treat power rankings as a trust board, not a standings table: who would you trust most if the league kept playing like this right now?",
                     "Open the article with the ranking lens: full-season profile first, latest sim/month form second, and tier stakes third.",
@@ -375,62 +548,55 @@
                     "../../00-build/database/monthly/tier_race_snapshot.json",
                     "../../00-build/database/monthly/monthly_storylines.json",
                     "../../00-build/database/standings.json",
+                    "../../00-build/database/game_results.json",
                     "../../00-build/database/teams.json",
                     "../../00-build/database/players.json",
                     "../../00-build/database/player_stats.json"
                 ],
                 "teamPool": [
                     {
-                        "team": "Bayern Munich",
-                        "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
-                        },
-                        "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
-                        },
-                        "rosterUrl": "./rosters/roster7.htm",
-                        "starPlayer": {
-                            "name": "Kevin McHale",
-                            "url": "../players/player717.htm",
-                            "pos": "PF",
-                            "age": "25",
-                            "overall": "120",
-                            "potential": "120"
-                        }
-                    },
-                    {
                         "team": "AC Milan",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "record": "5-1",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": 12.33,
+                            "pointDiff": 74,
+                            "bestWin": {
+                                "date": "22/10/1986",
+                                "opponent": "Aston Villa",
+                                "result": "W",
+                                "margin": 30,
+                                "score": "AC Milan 127, @Aston Villa 97",
+                                "boxscoreUrl": "./boxes/box2-4.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "25/10/1986",
+                                "opponent": "Arsenal",
+                                "result": "L",
+                                "margin": 10,
+                                "score": "@Arsenal 115, AC Milan 105",
+                                "boxscoreUrl": "./boxes/box5-4.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
                         },
                         "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 11.0,
+                            "pointDiff": 11,
+                            "bestWin": {
+                                "date": "1/11/1986",
+                                "opponent": "Inter Milan",
+                                "result": "W",
+                                "margin": 11,
+                                "score": "@AC Milan 104, Inter Milan 93",
+                                "boxscoreUrl": "./boxes/box12-3.htm",
+                                "section": "Preseason"
+                            },
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
@@ -445,48 +611,200 @@
                         }
                     },
                     {
-                        "team": "Marseille",
+                        "team": "Arsenal",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
+                            "record": "4-2",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": 6.83,
+                            "pointDiff": 41,
+                            "bestWin": {
+                                "date": "2/11/1986",
+                                "opponent": "Inter Milan",
+                                "result": "W",
+                                "margin": 29,
+                                "score": "@Arsenal 134, Inter Milan 105",
+                                "boxscoreUrl": "./boxes/box13-3.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "29/10/1986",
+                                "opponent": "Chelsea",
+                                "result": "L",
+                                "margin": 7,
+                                "score": "@Chelsea 152, Arsenal 145",
+                                "boxscoreUrl": "./boxes/box9-4.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "2-0",
+                            "streak": "W2",
+                            "last3": "WW",
+                            "avgMargin": 16.0,
+                            "pointDiff": 32,
+                            "bestWin": {
+                                "date": "2/11/1986",
+                                "opponent": "Inter Milan",
+                                "result": "W",
+                                "margin": 29,
+                                "score": "@Arsenal 134, Inter Milan 105",
+                                "boxscoreUrl": "./boxes/box13-3.htm",
+                                "section": "Preseason"
+                            },
                             "worstLoss": null,
+                            "closeGameCount": 1
+                        },
+                        "rosterUrl": "./rosters/roster23.htm",
+                        "starPlayer": {
+                            "name": "Chris Bosh",
+                            "url": "../players/player622.htm",
+                            "pos": "C",
+                            "age": "22",
+                            "overall": "137",
+                            "potential": "143"
+                        }
+                    },
+                    {
+                        "team": "Bayern Munich",
+                        "overall": {
+                            "record": "4-2",
+                            "streak": "L1",
+                            "last3": "WWL",
+                            "avgMargin": 2.5,
+                            "pointDiff": 15,
+                            "bestWin": {
+                                "date": "31/10/1986",
+                                "opponent": "Marseille",
+                                "result": "W",
+                                "margin": 15,
+                                "score": "@Bayern Munich 122, Marseille 107",
+                                "boxscoreUrl": "./boxes/box11-1.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "2/11/1986",
+                                "opponent": "Chelsea",
+                                "result": "L",
+                                "margin": 19,
+                                "score": "@Chelsea 130, Bayern Munich 111",
+                                "boxscoreUrl": "./boxes/box13-2.htm",
+                                "section": "Preseason"
+                            },
                             "closeGameCount": 0
                         },
                         "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "record": "0-1",
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -19.0,
+                            "pointDiff": -19,
                             "bestWin": null,
+                            "worstLoss": {
+                                "date": "2/11/1986",
+                                "opponent": "Chelsea",
+                                "result": "L",
+                                "margin": 19,
+                                "score": "@Chelsea 130, Bayern Munich 111",
+                                "boxscoreUrl": "./boxes/box13-2.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 0
+                        },
+                        "rosterUrl": "./rosters/roster7.htm",
+                        "starPlayer": {
+                            "name": "Kevin McHale",
+                            "url": "../players/player717.htm",
+                            "pos": "PF",
+                            "age": "25",
+                            "overall": "120",
+                            "potential": "120"
+                        }
+                    },
+                    {
+                        "team": "Chelsea",
+                        "overall": {
+                            "record": "3-3",
+                            "streak": "W3",
+                            "last3": "WWW",
+                            "avgMargin": 3.83,
+                            "pointDiff": 23,
+                            "bestWin": {
+                                "date": "2/11/1986",
+                                "opponent": "Bayern Munich",
+                                "result": "W",
+                                "margin": 19,
+                                "score": "@Chelsea 130, Bayern Munich 111",
+                                "boxscoreUrl": "./boxes/box13-2.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "25/10/1986",
+                                "opponent": "Bayern Munich",
+                                "result": "L",
+                                "margin": 14,
+                                "score": "@Bayern Munich 121, Chelsea 107",
+                                "boxscoreUrl": "./boxes/box5-5.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 2
+                        },
+                        "latestSim": {
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 19.0,
+                            "pointDiff": 19,
+                            "bestWin": {
+                                "date": "2/11/1986",
+                                "opponent": "Bayern Munich",
+                                "result": "W",
+                                "margin": 19,
+                                "score": "@Chelsea 130, Bayern Munich 111",
+                                "boxscoreUrl": "./boxes/box13-2.htm",
+                                "section": "Preseason"
+                            },
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster15.htm",
+                        "rosterUrl": "./rosters/roster17.htm",
                         "starPlayer": {
-                            "name": "Robert Parish",
-                            "url": "../players/player873.htm",
-                            "pos": "C",
-                            "age": "31",
-                            "overall": "129",
-                            "potential": "129"
+                            "name": "Jim Paxson",
+                            "url": "../players/player875.htm",
+                            "pos": "SG",
+                            "age": "27",
+                            "overall": "142",
+                            "potential": "142"
                         }
                     },
                     {
                         "team": "AC Sparta Praha",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "record": "3-4",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": -0.71,
+                            "pointDiff": -5,
+                            "bestWin": {
+                                "date": "30/10/1986",
+                                "opponent": "Inter Milan",
+                                "result": "W",
+                                "margin": 14,
+                                "score": "@AC Sparta Praha 110, Inter Milan 96",
+                                "boxscoreUrl": "./boxes/box10-4.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "24/10/1986",
+                                "opponent": "AC Milan",
+                                "result": "L",
+                                "margin": 19,
+                                "score": "@AC Milan 99, AC Sparta Praha 80",
+                                "boxscoreUrl": "./boxes/box4-2.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
                         },
                         "latestSim": {
                             "record": "0-0",
@@ -503,53 +821,37 @@
                             "name": "Steve Johnson",
                             "url": "../players/player897.htm",
                             "pos": "C",
-                            "age": "25",
+                            "age": "26",
                             "overall": "132",
                             "potential": "141"
                         }
                     },
                     {
-                        "team": "Chelsea",
-                        "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
-                        },
-                        "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
-                        },
-                        "rosterUrl": "./rosters/roster17.htm",
-                        "starPlayer": {
-                            "name": "Jim Paxson",
-                            "url": "../players/player875.htm",
-                            "pos": "SG",
-                            "age": "27",
-                            "overall": "142",
-                            "potential": "142"
-                        }
-                    },
-                    {
                         "team": "Aston Villa",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
+                            "record": "2-3",
+                            "streak": "L1",
+                            "last3": "LWL",
+                            "avgMargin": -3.8,
+                            "pointDiff": -19,
+                            "bestWin": {
+                                "date": "21/10/1986",
+                                "opponent": "Inter Milan",
+                                "result": "W",
+                                "margin": 22,
+                                "score": "Aston Villa 117, @Inter Milan 95",
+                                "boxscoreUrl": "./boxes/box1-8.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "22/10/1986",
+                                "opponent": "AC Milan",
+                                "result": "L",
+                                "margin": 30,
+                                "score": "AC Milan 127, @Aston Villa 97",
+                                "boxscoreUrl": "./boxes/box2-4.htm",
+                                "section": "Preseason"
+                            },
                             "closeGameCount": 0
                         },
                         "latestSim": {
@@ -573,57 +875,105 @@
                         }
                     },
                     {
-                        "team": "Arsenal",
+                        "team": "Marseille",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "record": "2-4",
+                            "streak": "L3",
+                            "last3": "LLL",
+                            "avgMargin": -7.33,
+                            "pointDiff": -44,
+                            "bestWin": {
+                                "date": "22/10/1986",
+                                "opponent": "AC Sparta Praha",
+                                "result": "W",
+                                "margin": 5,
+                                "score": "@Marseille 117, AC Sparta Praha 112",
+                                "boxscoreUrl": "./boxes/box2-5.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "29/10/1986",
+                                "opponent": "AC Milan",
+                                "result": "L",
+                                "margin": 21,
+                                "score": "@AC Milan 123, Marseille 102",
+                                "boxscoreUrl": "./boxes/box9-3.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 3
                         },
                         "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "record": "0-1",
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -3.0,
+                            "pointDiff": -3,
                             "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "worstLoss": {
+                                "date": "1/11/1986",
+                                "opponent": "Arsenal",
+                                "result": "L",
+                                "margin": 3,
+                                "score": "Arsenal 132, @Marseille 129",
+                                "boxscoreUrl": "./boxes/box12-4.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
                         },
-                        "rosterUrl": "./rosters/roster23.htm",
+                        "rosterUrl": "./rosters/roster15.htm",
                         "starPlayer": {
-                            "name": "Chris Bosh",
-                            "url": "../players/player622.htm",
+                            "name": "Robert Parish",
+                            "url": "../players/player873.htm",
                             "pos": "C",
-                            "age": "22",
-                            "overall": "137",
-                            "potential": "143"
+                            "age": "31",
+                            "overall": "129",
+                            "potential": "129"
                         }
                     },
                     {
                         "team": "Inter Milan",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
+                            "record": "1-5",
+                            "streak": "L4",
+                            "last3": "LLL",
+                            "avgMargin": -14.17,
+                            "pointDiff": -85,
+                            "bestWin": {
+                                "date": "27/10/1986",
+                                "opponent": "AC Sparta Praha",
+                                "result": "W",
+                                "margin": 8,
+                                "score": "@Inter Milan 106, AC Sparta Praha 98",
+                                "boxscoreUrl": "./boxes/box7-3.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "2/11/1986",
+                                "opponent": "Arsenal",
+                                "result": "L",
+                                "margin": 29,
+                                "score": "@Arsenal 134, Inter Milan 105",
+                                "boxscoreUrl": "./boxes/box13-3.htm",
+                                "section": "Preseason"
+                            },
                             "closeGameCount": 0
                         },
                         "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "record": "0-2",
+                            "streak": "L2",
+                            "last3": "LL",
+                            "avgMargin": -20.0,
+                            "pointDiff": -40,
                             "bestWin": null,
-                            "worstLoss": null,
+                            "worstLoss": {
+                                "date": "2/11/1986",
+                                "opponent": "Arsenal",
+                                "result": "L",
+                                "margin": 29,
+                                "score": "@Arsenal 134, Inter Milan 105",
+                                "boxscoreUrl": "./boxes/box13-3.htm",
+                                "section": "Preseason"
+                            },
                             "closeGameCount": 0
                         },
                         "rosterUrl": "./rosters/roster26.htm",
@@ -643,9 +993,9 @@
                 "type": "power_rankings",
                 "tier": "Tier 3",
                 "title": "Tier 3 Power Rankings",
-                "period": "Latest Sim",
+                "period": "November 1986",
                 "previousArticle": "../articles/ecl_power_rankings_1_0.html",
-                "prompt": "Write a Tier 3 power rankings article for Latest Sim. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note each team's movement from the last published power rankings article, including how many spots they moved up or down or if they stayed level. Make the movement visible in each team capsule, not just the intro. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board. When it fits the article, mention the listed star players as roster context; starPlayer is the highest OVR player on that team's current roster. Use the style references to add substance: open with a clear ranking thesis, then make each team earn its spot with current form, evidence, belief, doubt, and what could change next. Give a little player reference where necessary, especially when a star, scorer, defender, or depth piece explains why the team's results are sustainable, misleading, or changing.",
+                "prompt": "Write a Tier 3 power rankings article for November 1986. Rank the teams yourself using the context below. Use overall season-to-date performance as the base ranking logic, and use the latest sim performance to explain changes, jumps, or drops from the previous board. Explicitly note each team's movement from the last published power rankings article, including how many spots they moved up or down or if they stayed level. Make the movement visible in each team capsule, not just the intro. You are allowed to pull extra context from any of the linked JSON sources if it strengthens the board. When it fits the article, mention the listed star players as roster context; starPlayer is the highest OVR player on that team's current roster. Use the style references to add substance: open with a clear ranking thesis, then make each team earn its spot with current form, evidence, belief, doubt, and what could change next. Give a little player reference where necessary, especially when a star, scorer, defender, or depth piece explains why the team's results are sustainable, misleading, or changing.",
                 "writerNotes": [
                     "Treat power rankings as a trust board, not a standings table: who would you trust most if the league kept playing like this right now?",
                     "Open the article with the ranking lens: full-season profile first, latest sim/month form second, and tier stakes third.",
@@ -689,126 +1039,111 @@
                     "../../00-build/database/monthly/tier_race_snapshot.json",
                     "../../00-build/database/monthly/monthly_storylines.json",
                     "../../00-build/database/standings.json",
+                    "../../00-build/database/game_results.json",
                     "../../00-build/database/teams.json",
                     "../../00-build/database/players.json",
                     "../../00-build/database/player_stats.json"
                 ],
                 "teamPool": [
                     {
-                        "team": "Manchester United",
+                        "team": "Valencia",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "record": "4-2",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": 11.17,
+                            "pointDiff": 67,
+                            "bestWin": {
+                                "date": "30/10/1986",
+                                "opponent": "Tottenham Hotspur",
+                                "result": "W",
+                                "margin": 33,
+                                "score": "@Valencia 139, Tottenham Hotspur 106",
+                                "boxscoreUrl": "./boxes/box10-7.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "25/10/1986",
+                                "opponent": "Tottenham Hotspur",
+                                "result": "L",
+                                "margin": 8,
+                                "score": "@Tottenham Hotspur 127, Valencia 119",
+                                "boxscoreUrl": "./boxes/box5-6.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
                         },
                         "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 20.0,
+                            "pointDiff": 20,
+                            "bestWin": {
+                                "date": "2/11/1986",
+                                "opponent": "Manchester City",
+                                "result": "W",
+                                "margin": 20,
+                                "score": "@Valencia 134, Manchester City 114",
+                                "boxscoreUrl": "./boxes/box13-5.htm",
+                                "section": "Preseason"
+                            },
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster5.htm",
+                        "rosterUrl": "./rosters/roster25.htm",
                         "starPlayer": {
-                            "name": "Mike McGee",
-                            "url": "../players/player736.htm",
-                            "pos": "SG",
-                            "age": "25",
-                            "overall": "125",
-                            "potential": "130"
-                        }
-                    },
-                    {
-                        "team": "Atletico Madrid",
-                        "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
-                        },
-                        "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
-                        },
-                        "rosterUrl": "./rosters/roster11.htm",
-                        "starPlayer": {
-                            "name": "Reggie Miller",
-                            "url": "../players/player55.htm",
-                            "pos": "SG",
-                            "age": "22",
-                            "overall": "141",
-                            "potential": "171"
-                        }
-                    },
-                    {
-                        "team": "Juventus",
-                        "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
-                        },
-                        "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
-                        },
-                        "rosterUrl": "./rosters/roster14.htm",
-                        "starPlayer": {
-                            "name": "Larry Smith",
-                            "url": "../players/player1061.htm",
-                            "pos": "PF",
-                            "age": "26",
-                            "overall": "120",
-                            "potential": "120"
+                            "name": "Brian Shaw",
+                            "url": "../players/player180.htm",
+                            "pos": "SF",
+                            "age": "23",
+                            "overall": "129",
+                            "potential": "134"
                         }
                     },
                     {
                         "team": "Monaco",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
+                            "record": "4-2",
+                            "streak": "W3",
+                            "last3": "WWW",
+                            "avgMargin": 5.17,
+                            "pointDiff": 31,
+                            "bestWin": {
+                                "date": "29/10/1986",
+                                "opponent": "Barcelona",
+                                "result": "W",
+                                "margin": 24,
+                                "score": "@Monaco 123, Barcelona 99",
+                                "boxscoreUrl": "./boxes/box9-6.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "21/10/1986",
+                                "opponent": "Barcelona",
+                                "result": "L",
+                                "margin": 26,
+                                "score": "@Barcelona 126, Monaco 100",
+                                "boxscoreUrl": "./boxes/box1-9.htm",
+                                "section": "Preseason"
+                            },
                             "closeGameCount": 0
                         },
                         "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 23.0,
+                            "pointDiff": 23,
+                            "bestWin": {
+                                "date": "2/11/1986",
+                                "opponent": "Manchester United",
+                                "result": "W",
+                                "margin": 23,
+                                "score": "@Monaco 107, Manchester United 84",
+                                "boxscoreUrl": "./boxes/box13-4.htm",
+                                "section": "Preseason"
+                            },
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
@@ -823,48 +1158,152 @@
                         }
                     },
                     {
-                        "team": "Tottenham Hotspur",
+                        "team": "Atletico Madrid",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "record": "4-3",
+                            "streak": "L1",
+                            "last3": "WWL",
+                            "avgMargin": -4.29,
+                            "pointDiff": -30,
+                            "bestWin": {
+                                "date": "21/10/1986",
+                                "opponent": "Manchester City",
+                                "result": "W",
+                                "margin": 10,
+                                "score": "@Atletico Madrid 112, Manchester City 102",
+                                "boxscoreUrl": "./boxes/box1-10.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "24/10/1986",
+                                "opponent": "Manchester City",
+                                "result": "L",
+                                "margin": 43,
+                                "score": "@Manchester City 127, Atletico Madrid 84",
+                                "boxscoreUrl": "./boxes/box4-7.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 3
                         },
                         "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "record": "1-1",
+                            "streak": "L1",
+                            "last3": "WL",
+                            "avgMargin": 2.0,
+                            "pointDiff": 4,
+                            "bestWin": {
+                                "date": "1/11/1986",
+                                "opponent": "Manchester United",
+                                "result": "W",
+                                "margin": 5,
+                                "score": "@Atletico Madrid 123, Manchester United 118",
+                                "boxscoreUrl": "./boxes/box12-5.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "2/11/1986",
+                                "opponent": "Juventus",
+                                "result": "L",
+                                "margin": 1,
+                                "score": "Juventus 120, @Atletico Madrid 119",
+                                "boxscoreUrl": "./boxes/box13-6.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 2
                         },
-                        "rosterUrl": "./rosters/roster22.htm",
+                        "rosterUrl": "./rosters/roster11.htm",
                         "starPlayer": {
-                            "name": "Hubert Davis",
-                            "url": "../players/player440.htm",
+                            "name": "Reggie Miller",
+                            "url": "../players/player55.htm",
                             "pos": "SG",
-                            "age": "25",
-                            "overall": "133",
-                            "potential": "143"
+                            "age": "22",
+                            "overall": "141",
+                            "potential": "171"
+                        }
+                    },
+                    {
+                        "team": "Juventus",
+                        "overall": {
+                            "record": "3-3",
+                            "streak": "W2",
+                            "last3": "LWW",
+                            "avgMargin": 0.67,
+                            "pointDiff": 4,
+                            "bestWin": {
+                                "date": "21/10/1986",
+                                "opponent": "Tottenham Hotspur",
+                                "result": "W",
+                                "margin": 23,
+                                "score": "@Juventus 115, Tottenham Hotspur 92",
+                                "boxscoreUrl": "./boxes/box1-12.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "26/10/1986",
+                                "opponent": "Manchester United",
+                                "result": "L",
+                                "margin": 16,
+                                "score": "@Manchester United 105, Juventus 89",
+                                "boxscoreUrl": "./boxes/box6-3.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "1-0",
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 1.0,
+                            "pointDiff": 1,
+                            "bestWin": {
+                                "date": "2/11/1986",
+                                "opponent": "Atletico Madrid",
+                                "result": "W",
+                                "margin": 1,
+                                "score": "Juventus 120, @Atletico Madrid 119",
+                                "boxscoreUrl": "./boxes/box13-6.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": null,
+                            "closeGameCount": 1
+                        },
+                        "rosterUrl": "./rosters/roster14.htm",
+                        "starPlayer": {
+                            "name": "Larry Smith",
+                            "url": "../players/player1061.htm",
+                            "pos": "PF",
+                            "age": "26",
+                            "overall": "120",
+                            "potential": "120"
                         }
                     },
                     {
                         "team": "Barcelona",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
+                            "record": "3-3",
+                            "streak": "L2",
+                            "last3": "WLL",
                             "avgMargin": 0.0,
                             "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "bestWin": {
+                                "date": "21/10/1986",
+                                "opponent": "Monaco",
+                                "result": "W",
+                                "margin": 26,
+                                "score": "@Barcelona 126, Monaco 100",
+                                "boxscoreUrl": "./boxes/box1-9.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "29/10/1986",
+                                "opponent": "Monaco",
+                                "result": "L",
+                                "margin": 24,
+                                "score": "@Monaco 123, Barcelona 99",
+                                "boxscoreUrl": "./boxes/box9-6.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 2
                         },
                         "latestSim": {
                             "record": "0-0",
@@ -887,16 +1326,32 @@
                         }
                     },
                     {
-                        "team": "Valencia",
+                        "team": "Tottenham Hotspur",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
-                            "closeGameCount": 0
+                            "record": "3-3",
+                            "streak": "L1",
+                            "last3": "LWL",
+                            "avgMargin": -6.33,
+                            "pointDiff": -38,
+                            "bestWin": {
+                                "date": "24/10/1986",
+                                "opponent": "Monaco",
+                                "result": "W",
+                                "margin": 8,
+                                "score": "Tottenham Hotspur 102, @Monaco 94",
+                                "boxscoreUrl": "./boxes/box4-5.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "30/10/1986",
+                                "opponent": "Valencia",
+                                "result": "L",
+                                "margin": 33,
+                                "score": "@Valencia 139, Tottenham Hotspur 106",
+                                "boxscoreUrl": "./boxes/box10-7.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 2
                         },
                         "latestSim": {
                             "record": "0-0",
@@ -908,36 +1363,60 @@
                             "worstLoss": null,
                             "closeGameCount": 0
                         },
-                        "rosterUrl": "./rosters/roster25.htm",
+                        "rosterUrl": "./rosters/roster22.htm",
                         "starPlayer": {
-                            "name": "Brian Shaw",
-                            "url": "../players/player180.htm",
-                            "pos": "SF",
-                            "age": "23",
-                            "overall": "129",
-                            "potential": "134"
+                            "name": "Hubert Davis",
+                            "url": "../players/player440.htm",
+                            "pos": "SG",
+                            "age": "25",
+                            "overall": "133",
+                            "potential": "143"
                         }
                     },
                     {
                         "team": "Manchester City",
                         "overall": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "bestWin": null,
-                            "worstLoss": null,
+                            "record": "2-3",
+                            "streak": "L2",
+                            "last3": "WLL",
+                            "avgMargin": 5.8,
+                            "pointDiff": 29,
+                            "bestWin": {
+                                "date": "24/10/1986",
+                                "opponent": "Atletico Madrid",
+                                "result": "W",
+                                "margin": 43,
+                                "score": "@Manchester City 127, Atletico Madrid 84",
+                                "boxscoreUrl": "./boxes/box4-7.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "2/11/1986",
+                                "opponent": "Valencia",
+                                "result": "L",
+                                "margin": 20,
+                                "score": "@Valencia 134, Manchester City 114",
+                                "boxscoreUrl": "./boxes/box13-5.htm",
+                                "section": "Preseason"
+                            },
                             "closeGameCount": 0
                         },
                         "latestSim": {
-                            "record": "0-0",
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "record": "0-1",
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -20.0,
+                            "pointDiff": -20,
                             "bestWin": null,
-                            "worstLoss": null,
+                            "worstLoss": {
+                                "date": "2/11/1986",
+                                "opponent": "Valencia",
+                                "result": "L",
+                                "margin": 20,
+                                "score": "@Valencia 134, Manchester City 114",
+                                "boxscoreUrl": "./boxes/box13-5.htm",
+                                "section": "Preseason"
+                            },
                             "closeGameCount": 0
                         },
                         "rosterUrl": "./rosters/roster28.htm",
@@ -949,6 +1428,62 @@
                             "overall": "129",
                             "potential": "133"
                         }
+                    },
+                    {
+                        "team": "Manchester United",
+                        "overall": {
+                            "record": "1-5",
+                            "streak": "L3",
+                            "last3": "LLL",
+                            "avgMargin": -10.5,
+                            "pointDiff": -63,
+                            "bestWin": {
+                                "date": "26/10/1986",
+                                "opponent": "Juventus",
+                                "result": "W",
+                                "margin": 16,
+                                "score": "@Manchester United 105, Juventus 89",
+                                "boxscoreUrl": "./boxes/box6-3.htm",
+                                "section": "Preseason"
+                            },
+                            "worstLoss": {
+                                "date": "23/10/1986",
+                                "opponent": "Manchester City",
+                                "result": "L",
+                                "margin": 28,
+                                "score": "@Manchester City 112, Manchester United 84",
+                                "boxscoreUrl": "./boxes/box3-3.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "latestSim": {
+                            "record": "0-2",
+                            "streak": "L2",
+                            "last3": "LL",
+                            "avgMargin": -14.0,
+                            "pointDiff": -28,
+                            "bestWin": null,
+                            "worstLoss": {
+                                "date": "2/11/1986",
+                                "opponent": "Monaco",
+                                "result": "L",
+                                "margin": 23,
+                                "score": "@Monaco 107, Manchester United 84",
+                                "boxscoreUrl": "./boxes/box13-4.htm",
+                                "section": "Preseason"
+                            },
+                            "closeGameCount": 1
+                        },
+                        "rosterUrl": "./rosters/roster5.htm",
+                        "starPlayer": {
+                            "name": "Mike McGee",
+                            "url": "../players/player736.htm",
+                            "pos": "SG",
+                            "age": "25",
+                            "overall": "125",
+                            "potential": "130"
+                        }
                     }
                 ]
             }
@@ -957,8 +1492,8 @@
             "id": "promotion-relegation-watch",
             "type": "race_watch",
             "title": "Promotion / Relegation Watch",
-            "period": "Latest Sim",
-            "prompt": "Write a promotion/relegation watch article for Latest Sim. Cover Tier 1 relegation, Tier 2 promotion and relegation, and Tier 3 promotion. Use standings.json as the source of truth for the actual promotion/relegation line, team rank, record, games back, and whether a team is materially close enough to be in the race. Use the monthly race snapshot and monthly form only as momentum context after the real standings line is established. Use the style references to make the race easy to follow: state the rules, define the line, identify who controls their fate, and explain what changes next. Treat seeding as secondary to games-behind pressure: do not frame teams as truly in danger or truly live for promotion/relegation if they are only technically adjacent in seed but materially far from the line.",
+            "period": "November 1986",
+            "prompt": "Write a promotion/relegation watch article for November 1986. Cover Tier 1 relegation, Tier 2 promotion and relegation, and Tier 3 promotion. Use standings.json as the source of truth for the actual promotion/relegation line, team rank, record, games back, and whether a team is materially close enough to be in the race. Use the monthly race snapshot and monthly form only as momentum context after the real standings line is established. Use the style references to make the race easy to follow: state the rules, define the line, identify who controls their fate, and explain what changes next. Treat seeding as secondary to games-behind pressure: do not frame teams as truly in danger or truly live for promotion/relegation if they are only technically adjacent in seed but materially far from the line.",
             "writerNotes": [
                 "Tier 1 has 2 relegation spots.",
                 "Tier 2 has 2 promotion spots and 1 relegation spot.",
@@ -995,7 +1530,8 @@
                 "../../00-build/database/monthly/monthly_team_form.json",
                 "../../00-build/database/monthly/overall_team_form.json",
                 "../../00-build/database/monthly/latest_sim_results.json",
-                "../../00-build/database/standings.json"
+                "../../00-build/database/standings.json",
+                "../../00-build/database/game_results.json"
             ],
             "standingsSourceOfTruth": "../../00-build/database/standings.json",
             "monthlyFormRaceContext": [
@@ -1004,32 +1540,44 @@
                     "tier": "Tier 1",
                     "type": "relegation",
                     "slots": 2,
-                    "lineTeam": "Paris Saint-Germain",
-                    "lineRecord": "0-0",
+                    "lineTeam": "Benfica",
+                    "lineRecord": "0-1",
                     "entries": [
                         {
-                            "team": "FL Fart",
-                            "record": "0-0",
-                            "standingRank": 8,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "team": "Crystal Palace",
+                            "record": "0-1",
+                            "standingRank": 1,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -42.0,
+                            "pointDiff": -42,
                             "gapToLine": 0,
                             "status": "on_or_below_line",
-                            "rosterUrl": "./rosters/roster27.htm"
+                            "rosterUrl": "./rosters/roster6.htm"
                         },
                         {
-                            "team": "Paris Saint-Germain",
-                            "record": "0-0",
-                            "standingRank": 7,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "team": "Benfica",
+                            "record": "0-1",
+                            "standingRank": 5,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -3.0,
+                            "pointDiff": -3,
                             "gapToLine": 0,
                             "status": "on_or_below_line",
-                            "rosterUrl": "./rosters/roster21.htm"
+                            "rosterUrl": "./rosters/roster13.htm"
+                        },
+                        {
+                            "team": "Real Madrid",
+                            "record": "0-1",
+                            "standingRank": 2,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -3.0,
+                            "pointDiff": -3,
+                            "gapToLine": 0,
+                            "status": "on_or_below_line",
+                            "rosterUrl": "./rosters/roster8.htm"
                         },
                         {
                             "team": "Ajax",
@@ -1042,18 +1590,6 @@
                             "gapToLine": 0,
                             "status": "on_or_below_line",
                             "rosterUrl": "./rosters/roster18.htm"
-                        },
-                        {
-                            "team": "Benfica",
-                            "record": "0-0",
-                            "standingRank": 5,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "gapToLine": 0,
-                            "status": "on_or_below_line",
-                            "rosterUrl": "./rosters/roster13.htm"
                         }
                     ]
                 },
@@ -1062,44 +1598,44 @@
                     "tier": "Tier 2",
                     "type": "promotion",
                     "slots": 2,
-                    "lineTeam": "AC Milan",
-                    "lineRecord": "0-0",
+                    "lineTeam": "Chelsea",
+                    "lineRecord": "1-0",
                     "entries": [
                         {
-                            "team": "Bayern Munich",
-                            "record": "0-0",
-                            "standingRank": 1,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "team": "Arsenal",
+                            "record": "2-0",
+                            "standingRank": 7,
+                            "streak": "W2",
+                            "last3": "WW",
+                            "avgMargin": 16.0,
+                            "pointDiff": 32,
+                            "gapToLine": -1,
+                            "status": "on_or_above_line",
+                            "rosterUrl": "./rosters/roster23.htm"
+                        },
+                        {
+                            "team": "Chelsea",
+                            "record": "1-0",
+                            "standingRank": 5,
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 19.0,
+                            "pointDiff": 19,
                             "gapToLine": 0,
                             "status": "on_or_above_line",
-                            "rosterUrl": "./rosters/roster7.htm"
+                            "rosterUrl": "./rosters/roster17.htm"
                         },
                         {
                             "team": "AC Milan",
-                            "record": "0-0",
+                            "record": "1-0",
                             "standingRank": 2,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 11.0,
+                            "pointDiff": 11,
                             "gapToLine": 0,
                             "status": "on_or_above_line",
                             "rosterUrl": "./rosters/roster9.htm"
-                        },
-                        {
-                            "team": "Marseille",
-                            "record": "0-0",
-                            "standingRank": 3,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "gapToLine": 0,
-                            "status": "on_or_above_line",
-                            "rosterUrl": "./rosters/roster15.htm"
                         },
                         {
                             "team": "AC Sparta Praha",
@@ -1109,8 +1645,8 @@
                             "last3": "-",
                             "avgMargin": 0.0,
                             "pointDiff": 0,
-                            "gapToLine": 0,
-                            "status": "on_or_above_line",
+                            "gapToLine": 1,
+                            "status": "chasing",
                             "rosterUrl": "./rosters/roster16.htm"
                         }
                     ]
@@ -1121,43 +1657,43 @@
                     "type": "relegation",
                     "slots": 1,
                     "lineTeam": "Inter Milan",
-                    "lineRecord": "0-0",
+                    "lineRecord": "0-2",
                     "entries": [
                         {
                             "team": "Inter Milan",
-                            "record": "0-0",
+                            "record": "0-2",
                             "standingRank": 8,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "streak": "L2",
+                            "last3": "LL",
+                            "avgMargin": -20.0,
+                            "pointDiff": -40,
                             "gapToLine": 0,
                             "status": "on_or_below_line",
                             "rosterUrl": "./rosters/roster26.htm"
                         },
                         {
-                            "team": "Arsenal",
-                            "record": "0-0",
-                            "standingRank": 7,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "team": "Bayern Munich",
+                            "record": "0-1",
+                            "standingRank": 1,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -19.0,
+                            "pointDiff": -19,
                             "gapToLine": 0,
                             "status": "on_or_below_line",
-                            "rosterUrl": "./rosters/roster23.htm"
+                            "rosterUrl": "./rosters/roster7.htm"
                         },
                         {
-                            "team": "Aston Villa",
-                            "record": "0-0",
-                            "standingRank": 6,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "team": "Marseille",
+                            "record": "0-1",
+                            "standingRank": 3,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -3.0,
+                            "pointDiff": -3,
                             "gapToLine": 0,
                             "status": "on_or_below_line",
-                            "rosterUrl": "./rosters/roster19.htm"
+                            "rosterUrl": "./rosters/roster15.htm"
                         }
                     ]
                 },
@@ -1166,44 +1702,44 @@
                     "tier": "Tier 3",
                     "type": "promotion",
                     "slots": 1,
-                    "lineTeam": "Manchester United",
-                    "lineRecord": "0-0",
+                    "lineTeam": "Monaco",
+                    "lineRecord": "1-0",
                     "entries": [
                         {
-                            "team": "Manchester United",
-                            "record": "0-0",
-                            "standingRank": 1,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "team": "Monaco",
+                            "record": "1-0",
+                            "standingRank": 4,
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 23.0,
+                            "pointDiff": 23,
                             "gapToLine": 0,
                             "status": "on_or_above_line",
-                            "rosterUrl": "./rosters/roster5.htm"
+                            "rosterUrl": "./rosters/roster20.htm"
+                        },
+                        {
+                            "team": "Valencia",
+                            "record": "1-0",
+                            "standingRank": 7,
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 20.0,
+                            "pointDiff": 20,
+                            "gapToLine": 0,
+                            "status": "on_or_above_line",
+                            "rosterUrl": "./rosters/roster25.htm"
                         },
                         {
                             "team": "Atletico Madrid",
-                            "record": "0-0",
+                            "record": "1-1",
                             "standingRank": 2,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "streak": "L1",
+                            "last3": "WL",
+                            "avgMargin": 2.0,
+                            "pointDiff": 4,
                             "gapToLine": 0,
                             "status": "on_or_above_line",
                             "rosterUrl": "./rosters/roster11.htm"
-                        },
-                        {
-                            "team": "Juventus",
-                            "record": "0-0",
-                            "standingRank": 3,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "gapToLine": 0,
-                            "status": "on_or_above_line",
-                            "rosterUrl": "./rosters/roster14.htm"
                         }
                     ]
                 }
@@ -1214,32 +1750,44 @@
                     "tier": "Tier 1",
                     "type": "relegation",
                     "slots": 2,
-                    "lineTeam": "Paris Saint-Germain",
-                    "lineRecord": "0-0",
+                    "lineTeam": "Benfica",
+                    "lineRecord": "0-1",
                     "entries": [
                         {
-                            "team": "FL Fart",
-                            "record": "0-0",
-                            "standingRank": 8,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "team": "Crystal Palace",
+                            "record": "0-1",
+                            "standingRank": 1,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -42.0,
+                            "pointDiff": -42,
                             "gapToLine": 0,
                             "status": "on_or_below_line",
-                            "rosterUrl": "./rosters/roster27.htm"
+                            "rosterUrl": "./rosters/roster6.htm"
                         },
                         {
-                            "team": "Paris Saint-Germain",
-                            "record": "0-0",
-                            "standingRank": 7,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "team": "Benfica",
+                            "record": "0-1",
+                            "standingRank": 5,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -3.0,
+                            "pointDiff": -3,
                             "gapToLine": 0,
                             "status": "on_or_below_line",
-                            "rosterUrl": "./rosters/roster21.htm"
+                            "rosterUrl": "./rosters/roster13.htm"
+                        },
+                        {
+                            "team": "Real Madrid",
+                            "record": "0-1",
+                            "standingRank": 2,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -3.0,
+                            "pointDiff": -3,
+                            "gapToLine": 0,
+                            "status": "on_or_below_line",
+                            "rosterUrl": "./rosters/roster8.htm"
                         },
                         {
                             "team": "Ajax",
@@ -1252,18 +1800,6 @@
                             "gapToLine": 0,
                             "status": "on_or_below_line",
                             "rosterUrl": "./rosters/roster18.htm"
-                        },
-                        {
-                            "team": "Benfica",
-                            "record": "0-0",
-                            "standingRank": 5,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "gapToLine": 0,
-                            "status": "on_or_below_line",
-                            "rosterUrl": "./rosters/roster13.htm"
                         }
                     ]
                 },
@@ -1272,44 +1808,44 @@
                     "tier": "Tier 2",
                     "type": "promotion",
                     "slots": 2,
-                    "lineTeam": "AC Milan",
-                    "lineRecord": "0-0",
+                    "lineTeam": "Chelsea",
+                    "lineRecord": "1-0",
                     "entries": [
                         {
-                            "team": "Bayern Munich",
-                            "record": "0-0",
-                            "standingRank": 1,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "team": "Arsenal",
+                            "record": "2-0",
+                            "standingRank": 7,
+                            "streak": "W2",
+                            "last3": "WW",
+                            "avgMargin": 16.0,
+                            "pointDiff": 32,
+                            "gapToLine": -1,
+                            "status": "on_or_above_line",
+                            "rosterUrl": "./rosters/roster23.htm"
+                        },
+                        {
+                            "team": "Chelsea",
+                            "record": "1-0",
+                            "standingRank": 5,
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 19.0,
+                            "pointDiff": 19,
                             "gapToLine": 0,
                             "status": "on_or_above_line",
-                            "rosterUrl": "./rosters/roster7.htm"
+                            "rosterUrl": "./rosters/roster17.htm"
                         },
                         {
                             "team": "AC Milan",
-                            "record": "0-0",
+                            "record": "1-0",
                             "standingRank": 2,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 11.0,
+                            "pointDiff": 11,
                             "gapToLine": 0,
                             "status": "on_or_above_line",
                             "rosterUrl": "./rosters/roster9.htm"
-                        },
-                        {
-                            "team": "Marseille",
-                            "record": "0-0",
-                            "standingRank": 3,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "gapToLine": 0,
-                            "status": "on_or_above_line",
-                            "rosterUrl": "./rosters/roster15.htm"
                         },
                         {
                             "team": "AC Sparta Praha",
@@ -1319,8 +1855,8 @@
                             "last3": "-",
                             "avgMargin": 0.0,
                             "pointDiff": 0,
-                            "gapToLine": 0,
-                            "status": "on_or_above_line",
+                            "gapToLine": 1,
+                            "status": "chasing",
                             "rosterUrl": "./rosters/roster16.htm"
                         }
                     ]
@@ -1331,43 +1867,43 @@
                     "type": "relegation",
                     "slots": 1,
                     "lineTeam": "Inter Milan",
-                    "lineRecord": "0-0",
+                    "lineRecord": "0-2",
                     "entries": [
                         {
                             "team": "Inter Milan",
-                            "record": "0-0",
+                            "record": "0-2",
                             "standingRank": 8,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "streak": "L2",
+                            "last3": "LL",
+                            "avgMargin": -20.0,
+                            "pointDiff": -40,
                             "gapToLine": 0,
                             "status": "on_or_below_line",
                             "rosterUrl": "./rosters/roster26.htm"
                         },
                         {
-                            "team": "Arsenal",
-                            "record": "0-0",
-                            "standingRank": 7,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "team": "Bayern Munich",
+                            "record": "0-1",
+                            "standingRank": 1,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -19.0,
+                            "pointDiff": -19,
                             "gapToLine": 0,
                             "status": "on_or_below_line",
-                            "rosterUrl": "./rosters/roster23.htm"
+                            "rosterUrl": "./rosters/roster7.htm"
                         },
                         {
-                            "team": "Aston Villa",
-                            "record": "0-0",
-                            "standingRank": 6,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "team": "Marseille",
+                            "record": "0-1",
+                            "standingRank": 3,
+                            "streak": "L1",
+                            "last3": "L",
+                            "avgMargin": -3.0,
+                            "pointDiff": -3,
                             "gapToLine": 0,
                             "status": "on_or_below_line",
-                            "rosterUrl": "./rosters/roster19.htm"
+                            "rosterUrl": "./rosters/roster15.htm"
                         }
                     ]
                 },
@@ -1376,44 +1912,44 @@
                     "tier": "Tier 3",
                     "type": "promotion",
                     "slots": 1,
-                    "lineTeam": "Manchester United",
-                    "lineRecord": "0-0",
+                    "lineTeam": "Monaco",
+                    "lineRecord": "1-0",
                     "entries": [
                         {
-                            "team": "Manchester United",
-                            "record": "0-0",
-                            "standingRank": 1,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "team": "Monaco",
+                            "record": "1-0",
+                            "standingRank": 4,
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 23.0,
+                            "pointDiff": 23,
                             "gapToLine": 0,
                             "status": "on_or_above_line",
-                            "rosterUrl": "./rosters/roster5.htm"
+                            "rosterUrl": "./rosters/roster20.htm"
+                        },
+                        {
+                            "team": "Valencia",
+                            "record": "1-0",
+                            "standingRank": 7,
+                            "streak": "W1",
+                            "last3": "W",
+                            "avgMargin": 20.0,
+                            "pointDiff": 20,
+                            "gapToLine": 0,
+                            "status": "on_or_above_line",
+                            "rosterUrl": "./rosters/roster25.htm"
                         },
                         {
                             "team": "Atletico Madrid",
-                            "record": "0-0",
+                            "record": "1-1",
                             "standingRank": 2,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
+                            "streak": "L1",
+                            "last3": "WL",
+                            "avgMargin": 2.0,
+                            "pointDiff": 4,
                             "gapToLine": 0,
                             "status": "on_or_above_line",
                             "rosterUrl": "./rosters/roster11.htm"
-                        },
-                        {
-                            "team": "Juventus",
-                            "record": "0-0",
-                            "standingRank": 3,
-                            "streak": "-",
-                            "last3": "-",
-                            "avgMargin": 0.0,
-                            "pointDiff": 0,
-                            "gapToLine": 0,
-                            "status": "on_or_above_line",
-                            "rosterUrl": "./rosters/roster14.htm"
                         }
                     ]
                 }
@@ -1423,8 +1959,8 @@
             "id": "stock-up-stock-down",
             "type": "stock_report",
             "title": "Stock Up / Stock Down",
-            "period": "Latest Sim",
-            "prompt": "Write a Stock Up / Stock Down piece for Latest Sim. Pick exactly three teams up and three teams down from the latest sim and explain the change in plain language. You can pull supporting detail from any linked JSON source if a team's monthly record alone is too thin. Use the style references for verdict-first sections: what changed, why it matters, and what happens if it continues.",
+            "period": "November 1986",
+            "prompt": "Write a Stock Up / Stock Down piece for November 1986. Pick exactly three teams up and three teams down from the latest sim and explain the change in plain language. You can pull supporting detail from any linked JSON source if a team's monthly record alone is too thin. Use the style references for verdict-first sections: what changed, why it matters, and what happens if it continues.",
             "writerNotes": [
                 "Do not just sort by record; explain why the shape of the month matters.",
                 "A close 1-0 month can be less convincing than a dominant 1-0 month.",
@@ -1449,86 +1985,190 @@
                 "../../00-build/database/monthly/overall_team_form.json",
                 "../../00-build/database/monthly/monthly_storylines.json",
                 "../../00-build/database/monthly/latest_sim_results.json",
-                "../../00-build/database/standings.json"
+                "../../00-build/database/standings.json",
+                "../../00-build/database/game_results.json"
             ],
             "stockUpPool": [
                 {
-                    "team": "Crystal Palace",
-                    "tier": "Tier 1",
-                    "tierShort": "T1",
-                    "standingRank": 1,
-                    "rosterUrl": "./rosters/roster6.htm",
-                    "rosterFile": "roster6.htm",
-                    "standingsLast10": "0-0",
-                    "wins": 0,
+                    "team": "Arsenal",
+                    "tier": "Tier 2",
+                    "tierShort": "T2",
+                    "standingRank": 7,
+                    "rosterUrl": "./rosters/roster23.htm",
+                    "rosterFile": "roster23.htm",
+                    "standingsLast10": "4-2",
+                    "wins": 2,
                     "losses": 0,
-                    "games": 0,
-                    "pointsFor": 0,
-                    "pointsAgainst": 0,
-                    "pointDiff": 0,
-                    "avgMargin": 0.0,
-                    "streak": "-",
-                    "recentResults": [],
-                    "bestWin": null,
+                    "games": 2,
+                    "pointsFor": 266,
+                    "pointsAgainst": 234,
+                    "pointDiff": 32,
+                    "avgMargin": 16.0,
+                    "streak": "W2",
+                    "recentResults": [
+                        {
+                            "date": "1/11/1986",
+                            "opponent": "Marseille",
+                            "result": "W",
+                            "margin": 3,
+                            "score": "Arsenal 132, @Marseille 129",
+                            "boxscoreUrl": "./boxes/box12-4.htm",
+                            "section": "Preseason"
+                        },
+                        {
+                            "date": "2/11/1986",
+                            "opponent": "Inter Milan",
+                            "result": "W",
+                            "margin": 29,
+                            "score": "@Arsenal 134, Inter Milan 105",
+                            "boxscoreUrl": "./boxes/box13-3.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "bestWin": {
+                        "date": "2/11/1986",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 29,
+                        "score": "@Arsenal 134, Inter Milan 105",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
+                    },
                     "worstLoss": null,
-                    "closeGames": [],
-                    "blowoutWins": [],
+                    "closeGames": [
+                        {
+                            "date": "1/11/1986",
+                            "opponent": "Marseille",
+                            "result": "W",
+                            "margin": 3,
+                            "score": "Arsenal 132, @Marseille 129",
+                            "boxscoreUrl": "./boxes/box12-4.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "blowoutWins": [
+                        {
+                            "date": "2/11/1986",
+                            "opponent": "Inter Milan",
+                            "result": "W",
+                            "margin": 29,
+                            "score": "@Arsenal 134, Inter Milan 105",
+                            "boxscoreUrl": "./boxes/box13-3.htm",
+                            "section": "Preseason"
+                        }
+                    ],
                     "blowoutLosses": [],
-                    "record": "0-0",
-                    "closeGameCount": 0,
-                    "last3": "-"
+                    "record": "2-0",
+                    "closeGameCount": 1,
+                    "last3": "WW"
                 },
                 {
-                    "team": "Real Madrid",
+                    "team": "Paris Saint-Germain",
                     "tier": "Tier 1",
                     "tierShort": "T1",
-                    "standingRank": 2,
-                    "rosterUrl": "./rosters/roster8.htm",
-                    "rosterFile": "roster8.htm",
-                    "standingsLast10": "0-0",
-                    "wins": 0,
+                    "standingRank": 7,
+                    "rosterUrl": "./rosters/roster21.htm",
+                    "rosterFile": "roster21.htm",
+                    "standingsLast10": "2-4",
+                    "wins": 1,
                     "losses": 0,
-                    "games": 0,
-                    "pointsFor": 0,
-                    "pointsAgainst": 0,
-                    "pointDiff": 0,
-                    "avgMargin": 0.0,
-                    "streak": "-",
-                    "recentResults": [],
-                    "bestWin": null,
+                    "games": 1,
+                    "pointsFor": 116,
+                    "pointsAgainst": 74,
+                    "pointDiff": 42,
+                    "avgMargin": 42.0,
+                    "streak": "W1",
+                    "recentResults": [
+                        {
+                            "date": "1/11/1986",
+                            "opponent": "Crystal Palace",
+                            "result": "W",
+                            "margin": 42,
+                            "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                            "boxscoreUrl": "./boxes/box12-1.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "bestWin": {
+                        "date": "1/11/1986",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 42,
+                        "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                        "boxscoreUrl": "./boxes/box12-1.htm",
+                        "section": "Preseason"
+                    },
                     "worstLoss": null,
                     "closeGames": [],
-                    "blowoutWins": [],
+                    "blowoutWins": [
+                        {
+                            "date": "1/11/1986",
+                            "opponent": "Crystal Palace",
+                            "result": "W",
+                            "margin": 42,
+                            "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                            "boxscoreUrl": "./boxes/box12-1.htm",
+                            "section": "Preseason"
+                        }
+                    ],
                     "blowoutLosses": [],
-                    "record": "0-0",
+                    "record": "1-0",
                     "closeGameCount": 0,
-                    "last3": "-"
+                    "last3": "W"
                 },
                 {
-                    "team": "Brighton",
-                    "tier": "Tier 1",
-                    "tierShort": "T1",
-                    "standingRank": 3,
-                    "rosterUrl": "./rosters/roster10.htm",
-                    "rosterFile": "roster10.htm",
-                    "standingsLast10": "0-0",
-                    "wins": 0,
+                    "team": "Monaco",
+                    "tier": "Tier 3",
+                    "tierShort": "T3",
+                    "standingRank": 4,
+                    "rosterUrl": "./rosters/roster20.htm",
+                    "rosterFile": "roster20.htm",
+                    "standingsLast10": "4-2",
+                    "wins": 1,
                     "losses": 0,
-                    "games": 0,
-                    "pointsFor": 0,
-                    "pointsAgainst": 0,
-                    "pointDiff": 0,
-                    "avgMargin": 0.0,
-                    "streak": "-",
-                    "recentResults": [],
-                    "bestWin": null,
+                    "games": 1,
+                    "pointsFor": 107,
+                    "pointsAgainst": 84,
+                    "pointDiff": 23,
+                    "avgMargin": 23.0,
+                    "streak": "W1",
+                    "recentResults": [
+                        {
+                            "date": "2/11/1986",
+                            "opponent": "Manchester United",
+                            "result": "W",
+                            "margin": 23,
+                            "score": "@Monaco 107, Manchester United 84",
+                            "boxscoreUrl": "./boxes/box13-4.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "bestWin": {
+                        "date": "2/11/1986",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Monaco 107, Manchester United 84",
+                        "boxscoreUrl": "./boxes/box13-4.htm",
+                        "section": "Preseason"
+                    },
                     "worstLoss": null,
                     "closeGames": [],
-                    "blowoutWins": [],
+                    "blowoutWins": [
+                        {
+                            "date": "2/11/1986",
+                            "opponent": "Manchester United",
+                            "result": "W",
+                            "margin": 23,
+                            "score": "@Monaco 107, Manchester United 84",
+                            "boxscoreUrl": "./boxes/box13-4.htm",
+                            "section": "Preseason"
+                        }
+                    ],
                     "blowoutLosses": [],
-                    "record": "0-0",
+                    "record": "1-0",
                     "closeGameCount": 0,
-                    "last3": "-"
+                    "last3": "W"
                 }
             ],
             "stockDownPool": [
@@ -1539,76 +2179,188 @@
                     "standingRank": 1,
                     "rosterUrl": "./rosters/roster6.htm",
                     "rosterFile": "roster6.htm",
-                    "standingsLast10": "0-0",
+                    "standingsLast10": "2-4",
                     "wins": 0,
-                    "losses": 0,
-                    "games": 0,
-                    "pointsFor": 0,
-                    "pointsAgainst": 0,
-                    "pointDiff": 0,
-                    "avgMargin": 0.0,
-                    "streak": "-",
-                    "recentResults": [],
+                    "losses": 1,
+                    "games": 1,
+                    "pointsFor": 74,
+                    "pointsAgainst": 116,
+                    "pointDiff": -42,
+                    "avgMargin": -42.0,
+                    "streak": "L1",
+                    "recentResults": [
+                        {
+                            "date": "1/11/1986",
+                            "opponent": "Paris Saint-Germain",
+                            "result": "L",
+                            "margin": 42,
+                            "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                            "boxscoreUrl": "./boxes/box12-1.htm",
+                            "section": "Preseason"
+                        }
+                    ],
                     "bestWin": null,
-                    "worstLoss": null,
+                    "worstLoss": {
+                        "date": "1/11/1986",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 42,
+                        "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                        "boxscoreUrl": "./boxes/box12-1.htm",
+                        "section": "Preseason"
+                    },
                     "closeGames": [],
                     "blowoutWins": [],
-                    "blowoutLosses": [],
-                    "record": "0-0",
+                    "blowoutLosses": [
+                        {
+                            "date": "1/11/1986",
+                            "opponent": "Paris Saint-Germain",
+                            "result": "L",
+                            "margin": 42,
+                            "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                            "boxscoreUrl": "./boxes/box12-1.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "record": "0-1",
                     "closeGameCount": 0,
-                    "last3": "-"
+                    "last3": "L"
                 },
                 {
-                    "team": "Real Madrid",
-                    "tier": "Tier 1",
-                    "tierShort": "T1",
-                    "standingRank": 2,
-                    "rosterUrl": "./rosters/roster8.htm",
-                    "rosterFile": "roster8.htm",
-                    "standingsLast10": "0-0",
+                    "team": "Inter Milan",
+                    "tier": "Tier 2",
+                    "tierShort": "T2",
+                    "standingRank": 8,
+                    "rosterUrl": "./rosters/roster26.htm",
+                    "rosterFile": "roster26.htm",
+                    "standingsLast10": "1-5",
                     "wins": 0,
-                    "losses": 0,
-                    "games": 0,
-                    "pointsFor": 0,
-                    "pointsAgainst": 0,
-                    "pointDiff": 0,
-                    "avgMargin": 0.0,
-                    "streak": "-",
-                    "recentResults": [],
+                    "losses": 2,
+                    "games": 2,
+                    "pointsFor": 198,
+                    "pointsAgainst": 238,
+                    "pointDiff": -40,
+                    "avgMargin": -20.0,
+                    "streak": "L2",
+                    "recentResults": [
+                        {
+                            "date": "1/11/1986",
+                            "opponent": "AC Milan",
+                            "result": "L",
+                            "margin": 11,
+                            "score": "@AC Milan 104, Inter Milan 93",
+                            "boxscoreUrl": "./boxes/box12-3.htm",
+                            "section": "Preseason"
+                        },
+                        {
+                            "date": "2/11/1986",
+                            "opponent": "Arsenal",
+                            "result": "L",
+                            "margin": 29,
+                            "score": "@Arsenal 134, Inter Milan 105",
+                            "boxscoreUrl": "./boxes/box13-3.htm",
+                            "section": "Preseason"
+                        }
+                    ],
                     "bestWin": null,
-                    "worstLoss": null,
+                    "worstLoss": {
+                        "date": "2/11/1986",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 29,
+                        "score": "@Arsenal 134, Inter Milan 105",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
+                    },
                     "closeGames": [],
                     "blowoutWins": [],
-                    "blowoutLosses": [],
-                    "record": "0-0",
+                    "blowoutLosses": [
+                        {
+                            "date": "2/11/1986",
+                            "opponent": "Arsenal",
+                            "result": "L",
+                            "margin": 29,
+                            "score": "@Arsenal 134, Inter Milan 105",
+                            "boxscoreUrl": "./boxes/box13-3.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "record": "0-2",
                     "closeGameCount": 0,
-                    "last3": "-"
+                    "last3": "LL"
                 },
                 {
-                    "team": "Brighton",
-                    "tier": "Tier 1",
-                    "tierShort": "T1",
-                    "standingRank": 3,
-                    "rosterUrl": "./rosters/roster10.htm",
-                    "rosterFile": "roster10.htm",
-                    "standingsLast10": "0-0",
+                    "team": "Manchester United",
+                    "tier": "Tier 3",
+                    "tierShort": "T3",
+                    "standingRank": 1,
+                    "rosterUrl": "./rosters/roster5.htm",
+                    "rosterFile": "roster5.htm",
+                    "standingsLast10": "1-5",
                     "wins": 0,
-                    "losses": 0,
-                    "games": 0,
-                    "pointsFor": 0,
-                    "pointsAgainst": 0,
-                    "pointDiff": 0,
-                    "avgMargin": 0.0,
-                    "streak": "-",
-                    "recentResults": [],
+                    "losses": 2,
+                    "games": 2,
+                    "pointsFor": 202,
+                    "pointsAgainst": 230,
+                    "pointDiff": -28,
+                    "avgMargin": -14.0,
+                    "streak": "L2",
+                    "recentResults": [
+                        {
+                            "date": "1/11/1986",
+                            "opponent": "Atletico Madrid",
+                            "result": "L",
+                            "margin": 5,
+                            "score": "@Atletico Madrid 123, Manchester United 118",
+                            "boxscoreUrl": "./boxes/box12-5.htm",
+                            "section": "Preseason"
+                        },
+                        {
+                            "date": "2/11/1986",
+                            "opponent": "Monaco",
+                            "result": "L",
+                            "margin": 23,
+                            "score": "@Monaco 107, Manchester United 84",
+                            "boxscoreUrl": "./boxes/box13-4.htm",
+                            "section": "Preseason"
+                        }
+                    ],
                     "bestWin": null,
-                    "worstLoss": null,
-                    "closeGames": [],
+                    "worstLoss": {
+                        "date": "2/11/1986",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Monaco 107, Manchester United 84",
+                        "boxscoreUrl": "./boxes/box13-4.htm",
+                        "section": "Preseason"
+                    },
+                    "closeGames": [
+                        {
+                            "date": "1/11/1986",
+                            "opponent": "Atletico Madrid",
+                            "result": "L",
+                            "margin": 5,
+                            "score": "@Atletico Madrid 123, Manchester United 118",
+                            "boxscoreUrl": "./boxes/box12-5.htm",
+                            "section": "Preseason"
+                        }
+                    ],
                     "blowoutWins": [],
-                    "blowoutLosses": [],
-                    "record": "0-0",
-                    "closeGameCount": 0,
-                    "last3": "-"
+                    "blowoutLosses": [
+                        {
+                            "date": "2/11/1986",
+                            "opponent": "Monaco",
+                            "result": "L",
+                            "margin": 23,
+                            "score": "@Monaco 107, Manchester United 84",
+                            "boxscoreUrl": "./boxes/box13-4.htm",
+                            "section": "Preseason"
+                        }
+                    ],
+                    "record": "0-2",
+                    "closeGameCount": 1,
+                    "last3": "LL"
                 }
             ]
         },
@@ -1616,8 +2368,8 @@
             "id": "month-in-review",
             "type": "month_in_review",
             "title": "Month in Review",
-            "period": "Latest Sim",
-            "prompt": "Write a Month in Review feature for Latest Sim. Use the featured storylines below to build a coherent recap of the sim: best performances, biggest swings, weirdest result, and what matters next. You can pull from any linked JSON source if the strongest story sits outside the featured shortlist. Use star-player context when it helps explain a result, a hot team, or why a matchup mattered. If you discuss promotion, relegation, race lines, or who is truly live in a race, use standings.json as the source of truth and use monthly form only as context. Use the style references to write takeaways, not a logbook: focus on what the month changed.",
+            "period": "November 1986",
+            "prompt": "Write a Month in Review feature for November 1986. Use the featured storylines below to build a coherent recap of the sim: best performances, biggest swings, weirdest result, and what matters next. You can pull from any linked JSON source if the strongest story sits outside the featured shortlist. Use star-player context when it helps explain a result, a hot team, or why a matchup mattered. If you discuss promotion, relegation, race lines, or who is truly live in a race, use standings.json as the source of truth and use monthly form only as context. Use the style references to write takeaways, not a logbook: focus on what the month changed.",
             "writerNotes": [
                 "Lead with the strongest monthly theme, not just the biggest scoreline.",
                 "Work across tiers if the month demands it.",
@@ -1652,227 +2404,139 @@
                 "../../00-build/database/monthly/tier_race_snapshot.json",
                 "../../00-build/database/monthly/latest_sim_results.json",
                 "../../00-build/database/standings.json",
+                "../../00-build/database/game_results.json",
                 "../../00-build/database/teams.json",
                 "../../00-build/database/players.json",
                 "../../00-build/database/freeagents.json"
             ],
             "featuredStorylines": [
                 {
+                    "id": "biggest-blowout",
+                    "type": "game",
+                    "title": "Biggest Blowout of the Month",
+                    "summary": "Paris Saint-Germain beat Crystal Palace by 42, the biggest margin of the sim.",
+                    "tier": "Tier 1",
+                    "importance": 112,
+                    "data": {
+                        "section": "Preseason",
+                        "sectionSlug": "preseason",
+                        "date": "1/11/1986",
+                        "matchupText": "@Paris Saint-Germain 116, Crystal Palace 74",
+                        "boxscoreUrl": "./boxes/box12-1.htm",
+                        "boxscoreFile": "box12-1.htm",
+                        "homeTeam": "roster21",
+                        "homeTeamName": "Paris Saint-Germain",
+                        "homeScore": 116,
+                        "awayTeam": "roster6",
+                        "awayTeamName": "Crystal Palace",
+                        "awayScore": 74,
+                        "winner": "roster21",
+                        "winnerName": "Paris Saint-Germain",
+                        "loser": "roster6",
+                        "loserName": "Crystal Palace",
+                        "margin": 42
+                    }
+                },
+                {
                     "id": "hottest-team",
                     "type": "team_trend",
                     "title": "Hottest Team of the Month",
-                    "summary": "Crystal Palace posted the strongest month at 0-0 and closed on a - run.",
-                    "tier": "Tier 1",
+                    "summary": "Arsenal posted the strongest month at 2-0 and closed on a W2 run.",
+                    "tier": "Tier 2",
                     "importance": 88,
                     "data": {
-                        "team": "Crystal Palace",
-                        "record": "0-0",
-                        "streak": "-",
-                        "avgMargin": 0.0,
-                        "bestWin": null,
-                        "rosterUrl": "./rosters/roster6.htm"
+                        "team": "Arsenal",
+                        "record": "2-0",
+                        "streak": "W2",
+                        "avgMargin": 16.0,
+                        "bestWin": {
+                            "date": "2/11/1986",
+                            "opponent": "Inter Milan",
+                            "result": "W",
+                            "margin": 29,
+                            "score": "@Arsenal 134, Inter Milan 105",
+                            "boxscoreUrl": "./boxes/box13-3.htm",
+                            "section": "Preseason"
+                        },
+                        "rosterUrl": "./rosters/roster23.htm"
+                    }
+                },
+                {
+                    "id": "closest-game",
+                    "type": "game",
+                    "title": "Closest Game of the Month",
+                    "summary": "Juventus edged Atletico Madrid by 1 in the tightest finish of the sim.",
+                    "tier": "Tier 3",
+                    "importance": 84,
+                    "data": {
+                        "section": "Preseason",
+                        "sectionSlug": "preseason",
+                        "date": "2/11/1986",
+                        "matchupText": "Juventus 120, @Atletico Madrid 119",
+                        "boxscoreUrl": "./boxes/box13-6.htm",
+                        "boxscoreFile": "box13-6.htm",
+                        "homeTeam": "roster11",
+                        "homeTeamName": "Atletico Madrid",
+                        "homeScore": 119,
+                        "awayTeam": "roster14",
+                        "awayTeamName": "Juventus",
+                        "awayScore": 120,
+                        "winner": "roster14",
+                        "winnerName": "Juventus",
+                        "loser": "roster11",
+                        "loserName": "Atletico Madrid",
+                        "margin": 1
                     }
                 },
                 {
                     "id": "coldest-team",
                     "type": "team_trend",
                     "title": "Coldest Team of the Month",
-                    "summary": "Crystal Palace had the roughest month at 0-0 and now carries a - slide.",
+                    "summary": "Crystal Palace had the roughest month at 0-1 and now carries a L1 slide.",
                     "tier": "Tier 1",
                     "importance": 84,
                     "data": {
                         "team": "Crystal Palace",
-                        "record": "0-0",
-                        "streak": "-",
-                        "avgMargin": 0.0,
-                        "worstLoss": null,
+                        "record": "0-1",
+                        "streak": "L1",
+                        "avgMargin": -42.0,
+                        "worstLoss": {
+                            "date": "1/11/1986",
+                            "opponent": "Paris Saint-Germain",
+                            "result": "L",
+                            "margin": 42,
+                            "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                            "boxscoreUrl": "./boxes/box12-1.htm",
+                            "section": "Preseason"
+                        },
                         "rosterUrl": "./rosters/roster6.htm"
                     }
                 },
                 {
-                    "id": "tier-1-relegation-watch",
-                    "type": "race",
-                    "title": "Tier 1 Relegation Watch",
-                    "summary": "Paris Saint-Germain sits on the current relegation line, with FL Fart close enough to keep the race live.",
+                    "id": "upset-of-the-month",
+                    "type": "game",
+                    "title": "Upset of the Month",
+                    "summary": "Paris Saint-Germain landed the sharpest upset of the sim by beating Crystal Palace.",
                     "tier": "Tier 1",
-                    "importance": 78,
+                    "importance": 82,
                     "data": {
-                        "id": "tier-1-relegation",
-                        "tier": "Tier 1",
-                        "type": "relegation",
-                        "slots": 2,
-                        "lineTeam": "Paris Saint-Germain",
-                        "lineRecord": "0-0",
-                        "entries": [
-                            {
-                                "team": "FL Fart",
-                                "record": "0-0",
-                                "standingRank": 8,
-                                "streak": "-",
-                                "last3": "-",
-                                "avgMargin": 0.0,
-                                "pointDiff": 0,
-                                "gapToLine": 0,
-                                "status": "on_or_below_line",
-                                "rosterUrl": "./rosters/roster27.htm"
-                            },
-                            {
-                                "team": "Paris Saint-Germain",
-                                "record": "0-0",
-                                "standingRank": 7,
-                                "streak": "-",
-                                "last3": "-",
-                                "avgMargin": 0.0,
-                                "pointDiff": 0,
-                                "gapToLine": 0,
-                                "status": "on_or_below_line",
-                                "rosterUrl": "./rosters/roster21.htm"
-                            },
-                            {
-                                "team": "Ajax",
-                                "record": "0-0",
-                                "standingRank": 6,
-                                "streak": "-",
-                                "last3": "-",
-                                "avgMargin": 0.0,
-                                "pointDiff": 0,
-                                "gapToLine": 0,
-                                "status": "on_or_below_line",
-                                "rosterUrl": "./rosters/roster18.htm"
-                            },
-                            {
-                                "team": "Benfica",
-                                "record": "0-0",
-                                "standingRank": 5,
-                                "streak": "-",
-                                "last3": "-",
-                                "avgMargin": 0.0,
-                                "pointDiff": 0,
-                                "gapToLine": 0,
-                                "status": "on_or_below_line",
-                                "rosterUrl": "./rosters/roster13.htm"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "id": "tier-2-promotion-watch",
-                    "type": "race",
-                    "title": "Tier 2 Promotion Watch",
-                    "summary": "AC Milan sits on the current promotion line, with Bayern Munich close enough to keep the race live.",
-                    "tier": "Tier 2",
-                    "importance": 78,
-                    "data": {
-                        "id": "tier-2-promotion",
-                        "tier": "Tier 2",
-                        "type": "promotion",
-                        "slots": 2,
-                        "lineTeam": "AC Milan",
-                        "lineRecord": "0-0",
-                        "entries": [
-                            {
-                                "team": "Bayern Munich",
-                                "record": "0-0",
-                                "standingRank": 1,
-                                "streak": "-",
-                                "last3": "-",
-                                "avgMargin": 0.0,
-                                "pointDiff": 0,
-                                "gapToLine": 0,
-                                "status": "on_or_above_line",
-                                "rosterUrl": "./rosters/roster7.htm"
-                            },
-                            {
-                                "team": "AC Milan",
-                                "record": "0-0",
-                                "standingRank": 2,
-                                "streak": "-",
-                                "last3": "-",
-                                "avgMargin": 0.0,
-                                "pointDiff": 0,
-                                "gapToLine": 0,
-                                "status": "on_or_above_line",
-                                "rosterUrl": "./rosters/roster9.htm"
-                            },
-                            {
-                                "team": "Marseille",
-                                "record": "0-0",
-                                "standingRank": 3,
-                                "streak": "-",
-                                "last3": "-",
-                                "avgMargin": 0.0,
-                                "pointDiff": 0,
-                                "gapToLine": 0,
-                                "status": "on_or_above_line",
-                                "rosterUrl": "./rosters/roster15.htm"
-                            },
-                            {
-                                "team": "AC Sparta Praha",
-                                "record": "0-0",
-                                "standingRank": 4,
-                                "streak": "-",
-                                "last3": "-",
-                                "avgMargin": 0.0,
-                                "pointDiff": 0,
-                                "gapToLine": 0,
-                                "status": "on_or_above_line",
-                                "rosterUrl": "./rosters/roster16.htm"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "id": "tier-2-relegation-watch",
-                    "type": "race",
-                    "title": "Tier 2 Relegation Watch",
-                    "summary": "Inter Milan sits on the current relegation line, with Arsenal close enough to keep the race live.",
-                    "tier": "Tier 2",
-                    "importance": 78,
-                    "data": {
-                        "id": "tier-2-relegation",
-                        "tier": "Tier 2",
-                        "type": "relegation",
-                        "slots": 1,
-                        "lineTeam": "Inter Milan",
-                        "lineRecord": "0-0",
-                        "entries": [
-                            {
-                                "team": "Inter Milan",
-                                "record": "0-0",
-                                "standingRank": 8,
-                                "streak": "-",
-                                "last3": "-",
-                                "avgMargin": 0.0,
-                                "pointDiff": 0,
-                                "gapToLine": 0,
-                                "status": "on_or_below_line",
-                                "rosterUrl": "./rosters/roster26.htm"
-                            },
-                            {
-                                "team": "Arsenal",
-                                "record": "0-0",
-                                "standingRank": 7,
-                                "streak": "-",
-                                "last3": "-",
-                                "avgMargin": 0.0,
-                                "pointDiff": 0,
-                                "gapToLine": 0,
-                                "status": "on_or_below_line",
-                                "rosterUrl": "./rosters/roster23.htm"
-                            },
-                            {
-                                "team": "Aston Villa",
-                                "record": "0-0",
-                                "standingRank": 6,
-                                "streak": "-",
-                                "last3": "-",
-                                "avgMargin": 0.0,
-                                "pointDiff": 0,
-                                "gapToLine": 0,
-                                "status": "on_or_below_line",
-                                "rosterUrl": "./rosters/roster19.htm"
-                            }
-                        ]
+                        "section": "Preseason",
+                        "sectionSlug": "preseason",
+                        "date": "1/11/1986",
+                        "matchupText": "@Paris Saint-Germain 116, Crystal Palace 74",
+                        "boxscoreUrl": "./boxes/box12-1.htm",
+                        "boxscoreFile": "box12-1.htm",
+                        "homeTeam": "roster21",
+                        "homeTeamName": "Paris Saint-Germain",
+                        "homeScore": 116,
+                        "awayTeam": "roster6",
+                        "awayTeamName": "Crystal Palace",
+                        "awayScore": 74,
+                        "winner": "roster21",
+                        "winnerName": "Paris Saint-Germain",
+                        "loser": "roster6",
+                        "loserName": "Crystal Palace",
+                        "margin": 42
                     }
                 }
             ],
@@ -1894,7 +2558,7 @@
                         "name": "Steve Johnson",
                         "url": "../players/player897.htm",
                         "pos": "C",
-                        "age": "25",
+                        "age": "26",
                         "overall": "132",
                         "potential": "141"
                     }
@@ -1905,7 +2569,7 @@
                         "name": "Larry Bird",
                         "url": "../players/player697.htm",
                         "pos": "SF",
-                        "age": "26",
+                        "age": "27",
                         "overall": "151",
                         "potential": "157"
                     }
@@ -2142,14 +2806,14 @@
                     }
                 }
             ],
-            "latestSimGameCount": 0
+            "latestSimGameCount": 11
         },
         "mvpRace": {
             "id": "mvp-race",
             "type": "mvp_race",
             "title": "MVP Race",
-            "period": "Latest Sim",
-            "prompt": "Write an MVP race article for Latest Sim. Build separate ranked MVP ballots for Tier 1, Tier 2, and Tier 3. Include at least five candidates in each tier. Use the tier candidate pools as a starting point, but do not treat the generated order as final if the stats, awards, and leaderboard context point to a better argument. Use player stats as the base, awards as evidence of recent peaks, and leaders as supporting context for category dominance. Balance raw production, efficiency, team context, availability, and recent award momentum. Use the style references to build a more layered race: lead with the state of the ballot, include a stat-to-know or deciding factor, then give every candidate a case, caveat, and path to move up.",
+            "period": "November 1986",
+            "prompt": "Write an MVP race article for November 1986. Build separate ranked MVP ballots for Tier 1, Tier 2, and Tier 3. Include at least five candidates in each tier. Use the tier candidate pools as a starting point, but do not treat the generated order as final if the stats, awards, and leaderboard context point to a better argument. Use player stats as the base, awards as evidence of recent peaks, and leaders as supporting context for category dominance. Balance raw production, efficiency, team context, availability, and recent award momentum. Use the style references to build a more layered race: lead with the state of the ballot, include a stat-to-know or deciding factor, then give every candidate a case, caveat, and path to move up.",
             "writerNotes": [
                 "Rank at least five MVP candidates for each tier: Tier 1, Tier 2, and Tier 3.",
                 "Use player_stats.json for the main statistical case.",
@@ -2916,9 +3580,9 @@
                 ]
             },
             "minimumGamesPlayedByTier": {
-                "Tier 1": 1,
-                "Tier 2": 1,
-                "Tier 3": 1
+                "Tier 1": 4,
+                "Tier 2": 5,
+                "Tier 3": 5
             },
             "awardsSource": "awards.htm",
             "leadersSource": "leaders.htm"

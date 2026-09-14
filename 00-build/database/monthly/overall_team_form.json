@@ -6,30 +6,122 @@
     "tiers": {
         "Tier 1": [
             {
-                "team": "Crystal Palace",
+                "team": "AFC Richmond",
                 "tier": "Tier 1",
                 "tierShort": "T1",
-                "standingRank": 1,
-                "rosterUrl": "./rosters/roster6.htm",
-                "rosterFile": "roster6.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
+                "standingRank": 4,
+                "rosterUrl": "./rosters/roster12.htm",
+                "rosterFile": "roster12.htm",
+                "standingsLast10": "6-0",
+                "wins": 6,
                 "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
+                "games": 6,
+                "pointsFor": 724,
+                "pointsAgainst": 649,
+                "pointDiff": 75,
+                "avgMargin": 12.5,
+                "streak": "W6",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 13,
+                        "score": "@AFC Richmond 123, Brighton 110",
+                        "boxscoreUrl": "./boxes/box1-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 12,
+                        "score": "AFC Richmond 117, @Ajax 105",
+                        "boxscoreUrl": "./boxes/box5-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "@AFC Richmond 126, Crystal Palace 118",
+                        "boxscoreUrl": "./boxes/box6-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "AFC Richmond 115, @FL Fart 100",
+                        "boxscoreUrl": "./boxes/box9-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 24,
+                        "score": "@AFC Richmond 129, Paris Saint-Germain 105",
+                        "boxscoreUrl": "./boxes/box10-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "AFC Richmond 114, @Real Madrid 111",
+                        "boxscoreUrl": "./boxes/box12-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "30/10/1986",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "W",
+                    "margin": 24,
+                    "score": "@AFC Richmond 129, Paris Saint-Germain 105",
+                    "boxscoreUrl": "./boxes/box10-2.htm",
+                    "section": "Preseason"
+                },
                 "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
+                "closeGames": [
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "AFC Richmond 114, @Real Madrid 111",
+                        "boxscoreUrl": "./boxes/box12-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "AFC Richmond 115, @FL Fart 100",
+                        "boxscoreUrl": "./boxes/box9-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 24,
+                        "score": "@AFC Richmond 129, Paris Saint-Germain 105",
+                        "boxscoreUrl": "./boxes/box10-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
                 "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
+                "record": "6-0",
+                "closeGameCount": 1,
+                "last3": "WWW"
             },
             {
                 "team": "Real Madrid",
@@ -38,76 +130,133 @@
                 "standingRank": 2,
                 "rosterUrl": "./rosters/roster8.htm",
                 "rosterFile": "roster8.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 661,
+                "pointsAgainst": 580,
+                "pointDiff": 81,
+                "avgMargin": 13.5,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "Real Madrid 116, @Crystal Palace 96",
+                        "boxscoreUrl": "./boxes/box1-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "Real Madrid 95, @Brighton 87",
+                        "boxscoreUrl": "./boxes/box2-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "23/10/1986",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Paris Saint-Germain 113, Real Madrid 102",
+                        "boxscoreUrl": "./boxes/box3-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "27/10/1986",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 40,
+                        "score": "@Real Madrid 127, FL Fart 87",
+                        "boxscoreUrl": "./boxes/box7-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 27,
+                        "score": "@Real Madrid 110, Ajax 83",
+                        "boxscoreUrl": "./boxes/box10-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "AFC Richmond 114, @Real Madrid 111",
+                        "boxscoreUrl": "./boxes/box12-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "27/10/1986",
+                    "opponent": "FL Fart",
+                    "result": "W",
+                    "margin": 40,
+                    "score": "@Real Madrid 127, FL Fart 87",
+                    "boxscoreUrl": "./boxes/box7-1.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "23/10/1986",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "L",
+                    "margin": 11,
+                    "score": "@Paris Saint-Germain 113, Real Madrid 102",
+                    "boxscoreUrl": "./boxes/box3-2.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "AFC Richmond 114, @Real Madrid 111",
+                        "boxscoreUrl": "./boxes/box12-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "Real Madrid 116, @Crystal Palace 96",
+                        "boxscoreUrl": "./boxes/box1-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "27/10/1986",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 40,
+                        "score": "@Real Madrid 127, FL Fart 87",
+                        "boxscoreUrl": "./boxes/box7-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 27,
+                        "score": "@Real Madrid 110, Ajax 83",
+                        "boxscoreUrl": "./boxes/box10-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
                 "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
-            },
-            {
-                "team": "Brighton",
-                "tier": "Tier 1",
-                "tierShort": "T1",
-                "standingRank": 3,
-                "rosterUrl": "./rosters/roster10.htm",
-                "rosterFile": "roster10.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
-            },
-            {
-                "team": "AFC Richmond",
-                "tier": "Tier 1",
-                "tierShort": "T1",
-                "standingRank": 4,
-                "rosterUrl": "./rosters/roster12.htm",
-                "rosterFile": "roster12.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
+                "record": "4-2",
+                "closeGameCount": 1,
+                "last3": "WWL"
             },
             {
                 "team": "Benfica",
@@ -116,50 +265,278 @@
                 "standingRank": 5,
                 "rosterUrl": "./rosters/roster13.htm",
                 "rosterFile": "roster13.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 683,
+                "pointsAgainst": 655,
+                "pointDiff": 28,
+                "avgMargin": 4.67,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "Benfica 109, @FL Fart 101",
+                        "boxscoreUrl": "./boxes/box1-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "Benfica 109, @Paris Saint-Germain 107",
+                        "boxscoreUrl": "./boxes/box2-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Benfica 132, Crystal Palace 117",
+                        "boxscoreUrl": "./boxes/box4-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "@Brighton 119, Benfica 101",
+                        "boxscoreUrl": "./boxes/box6-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 24,
+                        "score": "@Benfica 121, Ajax 97",
+                        "boxscoreUrl": "./boxes/box8-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "FL Fart 114, @Benfica 111",
+                        "boxscoreUrl": "./boxes/box13-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "28/10/1986",
+                    "opponent": "Ajax",
+                    "result": "W",
+                    "margin": 24,
+                    "score": "@Benfica 121, Ajax 97",
+                    "boxscoreUrl": "./boxes/box8-1.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "26/10/1986",
+                    "opponent": "Brighton",
+                    "result": "L",
+                    "margin": 18,
+                    "score": "@Brighton 119, Benfica 101",
+                    "boxscoreUrl": "./boxes/box6-2.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "Benfica 109, @Paris Saint-Germain 107",
+                        "boxscoreUrl": "./boxes/box2-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "FL Fart 114, @Benfica 111",
+                        "boxscoreUrl": "./boxes/box13-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Benfica 132, Crystal Palace 117",
+                        "boxscoreUrl": "./boxes/box4-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 24,
+                        "score": "@Benfica 121, Ajax 97",
+                        "boxscoreUrl": "./boxes/box8-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "@Brighton 119, Benfica 101",
+                        "boxscoreUrl": "./boxes/box6-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "4-2",
+                "closeGameCount": 2,
+                "last3": "LWL"
             },
             {
-                "team": "Ajax",
+                "team": "Brighton",
                 "tier": "Tier 1",
                 "tierShort": "T1",
-                "standingRank": 6,
-                "rosterUrl": "./rosters/roster18.htm",
-                "rosterFile": "roster18.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster10.htm",
+                "rosterFile": "roster10.htm",
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 670,
+                "pointsAgainst": 650,
+                "pointDiff": 20,
+                "avgMargin": 3.33,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 13,
+                        "score": "@AFC Richmond 123, Brighton 110",
+                        "boxscoreUrl": "./boxes/box1-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "Real Madrid 95, @Brighton 87",
+                        "boxscoreUrl": "./boxes/box2-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "23/10/1986",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "Brighton 130, @Ajax 107",
+                        "boxscoreUrl": "./boxes/box3-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Brighton 121, FL Fart 116",
+                        "boxscoreUrl": "./boxes/box5-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "@Brighton 119, Benfica 101",
+                        "boxscoreUrl": "./boxes/box6-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@FL Fart 108, Brighton 103",
+                        "boxscoreUrl": "./boxes/box10-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "23/10/1986",
+                    "opponent": "Ajax",
+                    "result": "W",
+                    "margin": 23,
+                    "score": "Brighton 130, @Ajax 107",
+                    "boxscoreUrl": "./boxes/box3-1.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "21/10/1986",
+                    "opponent": "AFC Richmond",
+                    "result": "L",
+                    "margin": 13,
+                    "score": "@AFC Richmond 123, Brighton 110",
+                    "boxscoreUrl": "./boxes/box1-4.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Brighton 121, FL Fart 116",
+                        "boxscoreUrl": "./boxes/box5-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@FL Fart 108, Brighton 103",
+                        "boxscoreUrl": "./boxes/box10-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "23/10/1986",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "Brighton 130, @Ajax 107",
+                        "boxscoreUrl": "./boxes/box3-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "@Brighton 119, Benfica 101",
+                        "boxscoreUrl": "./boxes/box6-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
                 "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
+                "record": "3-3",
+                "closeGameCount": 2,
+                "last3": "WWL"
             },
             {
                 "team": "Paris Saint-Germain",
@@ -168,24 +545,134 @@
                 "standingRank": 7,
                 "rosterUrl": "./rosters/roster21.htm",
                 "rosterFile": "roster21.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
+                "standingsLast10": "2-4",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 620,
+                "pointsAgainst": 624,
+                "pointDiff": -4,
+                "avgMargin": -0.67,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Ajax 103, Paris Saint-Germain 80",
+                        "boxscoreUrl": "./boxes/box1-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "Benfica 109, @Paris Saint-Germain 107",
+                        "boxscoreUrl": "./boxes/box2-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "23/10/1986",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Paris Saint-Germain 113, Real Madrid 102",
+                        "boxscoreUrl": "./boxes/box3-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "@Crystal Palace 107, Paris Saint-Germain 99",
+                        "boxscoreUrl": "./boxes/box9-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 24,
+                        "score": "@AFC Richmond 129, Paris Saint-Germain 105",
+                        "boxscoreUrl": "./boxes/box10-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 42,
+                        "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                        "boxscoreUrl": "./boxes/box12-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "1/11/1986",
+                    "opponent": "Crystal Palace",
+                    "result": "W",
+                    "margin": 42,
+                    "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                    "boxscoreUrl": "./boxes/box12-1.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "30/10/1986",
+                    "opponent": "AFC Richmond",
+                    "result": "L",
+                    "margin": 24,
+                    "score": "@AFC Richmond 129, Paris Saint-Germain 105",
+                    "boxscoreUrl": "./boxes/box10-2.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "Benfica 109, @Paris Saint-Germain 107",
+                        "boxscoreUrl": "./boxes/box2-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 42,
+                        "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                        "boxscoreUrl": "./boxes/box12-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Ajax 103, Paris Saint-Germain 80",
+                        "boxscoreUrl": "./boxes/box1-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 24,
+                        "score": "@AFC Richmond 129, Paris Saint-Germain 105",
+                        "boxscoreUrl": "./boxes/box10-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "2-4",
+                "closeGameCount": 1,
+                "last3": "LLW"
             },
             {
                 "team": "FL Fart",
@@ -194,53 +681,405 @@
                 "standingRank": 8,
                 "rosterUrl": "./rosters/roster27.htm",
                 "rosterFile": "roster27.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
+                "standingsLast10": "2-4",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 626,
+                "pointsAgainst": 686,
+                "pointDiff": -60,
+                "avgMargin": -10.0,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "Benfica 109, @FL Fart 101",
+                        "boxscoreUrl": "./boxes/box1-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Brighton 121, FL Fart 116",
+                        "boxscoreUrl": "./boxes/box5-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "27/10/1986",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 40,
+                        "score": "@Real Madrid 127, FL Fart 87",
+                        "boxscoreUrl": "./boxes/box7-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "AFC Richmond 115, @FL Fart 100",
+                        "boxscoreUrl": "./boxes/box9-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@FL Fart 108, Brighton 103",
+                        "boxscoreUrl": "./boxes/box10-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "FL Fart 114, @Benfica 111",
+                        "boxscoreUrl": "./boxes/box13-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "30/10/1986",
+                    "opponent": "Brighton",
+                    "result": "W",
+                    "margin": 5,
+                    "score": "@FL Fart 108, Brighton 103",
+                    "boxscoreUrl": "./boxes/box10-3.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "27/10/1986",
+                    "opponent": "Real Madrid",
+                    "result": "L",
+                    "margin": 40,
+                    "score": "@Real Madrid 127, FL Fart 87",
+                    "boxscoreUrl": "./boxes/box7-1.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Brighton 121, FL Fart 116",
+                        "boxscoreUrl": "./boxes/box5-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@FL Fart 108, Brighton 103",
+                        "boxscoreUrl": "./boxes/box10-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "FL Fart 114, @Benfica 111",
+                        "boxscoreUrl": "./boxes/box13-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "27/10/1986",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 40,
+                        "score": "@Real Madrid 127, FL Fart 87",
+                        "boxscoreUrl": "./boxes/box7-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "AFC Richmond 115, @FL Fart 100",
+                        "boxscoreUrl": "./boxes/box9-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "2-4",
+                "closeGameCount": 3,
+                "last3": "LWW"
+            },
+            {
+                "team": "Crystal Palace",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 1,
+                "rosterUrl": "./rosters/roster6.htm",
+                "rosterFile": "roster6.htm",
+                "standingsLast10": "2-4",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 627,
+                "pointsAgainst": 693,
+                "pointDiff": -66,
+                "avgMargin": -11.0,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "Real Madrid 116, @Crystal Palace 96",
+                        "boxscoreUrl": "./boxes/box1-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Benfica 132, Crystal Palace 117",
+                        "boxscoreUrl": "./boxes/box4-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "@AFC Richmond 126, Crystal Palace 118",
+                        "boxscoreUrl": "./boxes/box6-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "27/10/1986",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Crystal Palace 115, Ajax 104",
+                        "boxscoreUrl": "./boxes/box7-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "@Crystal Palace 107, Paris Saint-Germain 99",
+                        "boxscoreUrl": "./boxes/box9-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 42,
+                        "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                        "boxscoreUrl": "./boxes/box12-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "27/10/1986",
+                    "opponent": "Ajax",
+                    "result": "W",
+                    "margin": 11,
+                    "score": "@Crystal Palace 115, Ajax 104",
+                    "boxscoreUrl": "./boxes/box7-2.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "1/11/1986",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "L",
+                    "margin": 42,
+                    "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                    "boxscoreUrl": "./boxes/box12-1.htm",
+                    "section": "Preseason"
+                },
                 "closeGames": [],
                 "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
+                "blowoutLosses": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "Real Madrid 116, @Crystal Palace 96",
+                        "boxscoreUrl": "./boxes/box1-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Benfica 132, Crystal Palace 117",
+                        "boxscoreUrl": "./boxes/box4-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 42,
+                        "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                        "boxscoreUrl": "./boxes/box12-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "2-4",
                 "closeGameCount": 0,
-                "last3": "-"
+                "last3": "WWL"
+            },
+            {
+                "team": "Ajax",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 6,
+                "rosterUrl": "./rosters/roster18.htm",
+                "rosterFile": "roster18.htm",
+                "standingsLast10": "1-5",
+                "wins": 1,
+                "losses": 5,
+                "games": 6,
+                "pointsFor": 599,
+                "pointsAgainst": 673,
+                "pointDiff": -74,
+                "avgMargin": -12.33,
+                "streak": "L5",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Ajax 103, Paris Saint-Germain 80",
+                        "boxscoreUrl": "./boxes/box1-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "23/10/1986",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "Brighton 130, @Ajax 107",
+                        "boxscoreUrl": "./boxes/box3-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 12,
+                        "score": "AFC Richmond 117, @Ajax 105",
+                        "boxscoreUrl": "./boxes/box5-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "27/10/1986",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Crystal Palace 115, Ajax 104",
+                        "boxscoreUrl": "./boxes/box7-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 24,
+                        "score": "@Benfica 121, Ajax 97",
+                        "boxscoreUrl": "./boxes/box8-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 27,
+                        "score": "@Real Madrid 110, Ajax 83",
+                        "boxscoreUrl": "./boxes/box10-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/10/1986",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "W",
+                    "margin": 23,
+                    "score": "@Ajax 103, Paris Saint-Germain 80",
+                    "boxscoreUrl": "./boxes/box1-1.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "30/10/1986",
+                    "opponent": "Real Madrid",
+                    "result": "L",
+                    "margin": 27,
+                    "score": "@Real Madrid 110, Ajax 83",
+                    "boxscoreUrl": "./boxes/box10-1.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Ajax 103, Paris Saint-Germain 80",
+                        "boxscoreUrl": "./boxes/box1-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "23/10/1986",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "Brighton 130, @Ajax 107",
+                        "boxscoreUrl": "./boxes/box3-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 24,
+                        "score": "@Benfica 121, Ajax 97",
+                        "boxscoreUrl": "./boxes/box8-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 27,
+                        "score": "@Real Madrid 110, Ajax 83",
+                        "boxscoreUrl": "./boxes/box10-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "1-5",
+                "closeGameCount": 0,
+                "last3": "LLL"
             }
         ],
         "Tier 2": [
-            {
-                "team": "Bayern Munich",
-                "tier": "Tier 2",
-                "tierShort": "T2",
-                "standingRank": 1,
-                "rosterUrl": "./rosters/roster7.htm",
-                "rosterFile": "roster7.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
-            },
             {
                 "team": "AC Milan",
                 "tier": "Tier 2",
@@ -248,128 +1087,133 @@
                 "standingRank": 2,
                 "rosterUrl": "./rosters/roster9.htm",
                 "rosterFile": "roster9.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
+                "standingsLast10": "5-1",
+                "wins": 5,
+                "losses": 1,
+                "games": 6,
+                "pointsFor": 685,
+                "pointsAgainst": 611,
+                "pointDiff": 74,
+                "avgMargin": 12.33,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "AC Milan 127, @Chelsea 124",
+                        "boxscoreUrl": "./boxes/box1-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 30,
+                        "score": "AC Milan 127, @Aston Villa 97",
+                        "boxscoreUrl": "./boxes/box2-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "@AC Milan 99, AC Sparta Praha 80",
+                        "boxscoreUrl": "./boxes/box4-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "@Arsenal 115, AC Milan 105",
+                        "boxscoreUrl": "./boxes/box5-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 21,
+                        "score": "@AC Milan 123, Marseille 102",
+                        "boxscoreUrl": "./boxes/box9-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@AC Milan 104, Inter Milan 93",
+                        "boxscoreUrl": "./boxes/box12-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "22/10/1986",
+                    "opponent": "Aston Villa",
+                    "result": "W",
+                    "margin": 30,
+                    "score": "AC Milan 127, @Aston Villa 97",
+                    "boxscoreUrl": "./boxes/box2-4.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "25/10/1986",
+                    "opponent": "Arsenal",
+                    "result": "L",
+                    "margin": 10,
+                    "score": "@Arsenal 115, AC Milan 105",
+                    "boxscoreUrl": "./boxes/box5-4.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "AC Milan 127, @Chelsea 124",
+                        "boxscoreUrl": "./boxes/box1-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 30,
+                        "score": "AC Milan 127, @Aston Villa 97",
+                        "boxscoreUrl": "./boxes/box2-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "@AC Milan 99, AC Sparta Praha 80",
+                        "boxscoreUrl": "./boxes/box4-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 21,
+                        "score": "@AC Milan 123, Marseille 102",
+                        "boxscoreUrl": "./boxes/box9-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
                 "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
-            },
-            {
-                "team": "Marseille",
-                "tier": "Tier 2",
-                "tierShort": "T2",
-                "standingRank": 3,
-                "rosterUrl": "./rosters/roster15.htm",
-                "rosterFile": "roster15.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
-            },
-            {
-                "team": "AC Sparta Praha",
-                "tier": "Tier 2",
-                "tierShort": "T2",
-                "standingRank": 4,
-                "rosterUrl": "./rosters/roster16.htm",
-                "rosterFile": "roster16.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
-            },
-            {
-                "team": "Chelsea",
-                "tier": "Tier 2",
-                "tierShort": "T2",
-                "standingRank": 5,
-                "rosterUrl": "./rosters/roster17.htm",
-                "rosterFile": "roster17.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
-            },
-            {
-                "team": "Aston Villa",
-                "tier": "Tier 2",
-                "tierShort": "T2",
-                "standingRank": 6,
-                "rosterUrl": "./rosters/roster19.htm",
-                "rosterFile": "roster19.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
+                "record": "5-1",
+                "closeGameCount": 1,
+                "last3": "LWW"
             },
             {
                 "team": "Arsenal",
@@ -378,24 +1222,745 @@
                 "standingRank": 7,
                 "rosterUrl": "./rosters/roster23.htm",
                 "rosterFile": "roster23.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 782,
+                "pointsAgainst": 741,
+                "pointDiff": 41,
+                "avgMargin": 6.83,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Bayern Munich",
+                        "result": "W",
+                        "margin": 12,
+                        "score": "Arsenal 132, @Bayern Munich 120",
+                        "boxscoreUrl": "./boxes/box1-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 6,
+                        "score": "Bayern Munich 130, @Arsenal 124",
+                        "boxscoreUrl": "./boxes/box2-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "@Arsenal 115, AC Milan 105",
+                        "boxscoreUrl": "./boxes/box5-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 7,
+                        "score": "@Chelsea 152, Arsenal 145",
+                        "boxscoreUrl": "./boxes/box9-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Arsenal 132, @Marseille 129",
+                        "boxscoreUrl": "./boxes/box12-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 29,
+                        "score": "@Arsenal 134, Inter Milan 105",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "2/11/1986",
+                    "opponent": "Inter Milan",
+                    "result": "W",
+                    "margin": 29,
+                    "score": "@Arsenal 134, Inter Milan 105",
+                    "boxscoreUrl": "./boxes/box13-3.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "29/10/1986",
+                    "opponent": "Chelsea",
+                    "result": "L",
+                    "margin": 7,
+                    "score": "@Chelsea 152, Arsenal 145",
+                    "boxscoreUrl": "./boxes/box9-4.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Arsenal 132, @Marseille 129",
+                        "boxscoreUrl": "./boxes/box12-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 29,
+                        "score": "@Arsenal 134, Inter Milan 105",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
                 "blowoutLosses": [],
-                "record": "0-0",
+                "record": "4-2",
+                "closeGameCount": 1,
+                "last3": "LWW"
+            },
+            {
+                "team": "Bayern Munich",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 1,
+                "rosterUrl": "./rosters/roster7.htm",
+                "rosterFile": "roster7.htm",
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 716,
+                "pointsAgainst": 701,
+                "pointDiff": 15,
+                "avgMargin": 2.5,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 12,
+                        "score": "Arsenal 132, @Bayern Munich 120",
+                        "boxscoreUrl": "./boxes/box1-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Arsenal",
+                        "result": "W",
+                        "margin": 6,
+                        "score": "Bayern Munich 130, @Arsenal 124",
+                        "boxscoreUrl": "./boxes/box2-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "Bayern Munich 112, @Aston Villa 101",
+                        "boxscoreUrl": "./boxes/box4-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "@Bayern Munich 121, Chelsea 107",
+                        "boxscoreUrl": "./boxes/box5-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "31/10/1986",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Bayern Munich 122, Marseille 107",
+                        "boxscoreUrl": "./boxes/box11-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "@Chelsea 130, Bayern Munich 111",
+                        "boxscoreUrl": "./boxes/box13-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "31/10/1986",
+                    "opponent": "Marseille",
+                    "result": "W",
+                    "margin": 15,
+                    "score": "@Bayern Munich 122, Marseille 107",
+                    "boxscoreUrl": "./boxes/box11-1.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "2/11/1986",
+                    "opponent": "Chelsea",
+                    "result": "L",
+                    "margin": 19,
+                    "score": "@Chelsea 130, Bayern Munich 111",
+                    "boxscoreUrl": "./boxes/box13-2.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "31/10/1986",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Bayern Munich 122, Marseille 107",
+                        "boxscoreUrl": "./boxes/box11-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "@Chelsea 130, Bayern Munich 111",
+                        "boxscoreUrl": "./boxes/box13-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "4-2",
                 "closeGameCount": 0,
-                "last3": "-"
+                "last3": "WWL"
+            },
+            {
+                "team": "Chelsea",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster17.htm",
+                "rosterFile": "roster17.htm",
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 767,
+                "pointsAgainst": 744,
+                "pointDiff": 23,
+                "avgMargin": 3.83,
+                "streak": "W3",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "AC Milan 127, @Chelsea 124",
+                        "boxscoreUrl": "./boxes/box1-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Marseille",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Marseille 124, Chelsea 121",
+                        "boxscoreUrl": "./boxes/box4-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "@Bayern Munich 121, Chelsea 107",
+                        "boxscoreUrl": "./boxes/box5-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "Chelsea 133, @Inter Milan 116",
+                        "boxscoreUrl": "./boxes/box8-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "Arsenal",
+                        "result": "W",
+                        "margin": 7,
+                        "score": "@Chelsea 152, Arsenal 145",
+                        "boxscoreUrl": "./boxes/box9-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Bayern Munich",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "@Chelsea 130, Bayern Munich 111",
+                        "boxscoreUrl": "./boxes/box13-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "2/11/1986",
+                    "opponent": "Bayern Munich",
+                    "result": "W",
+                    "margin": 19,
+                    "score": "@Chelsea 130, Bayern Munich 111",
+                    "boxscoreUrl": "./boxes/box13-2.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "25/10/1986",
+                    "opponent": "Bayern Munich",
+                    "result": "L",
+                    "margin": 14,
+                    "score": "@Bayern Munich 121, Chelsea 107",
+                    "boxscoreUrl": "./boxes/box5-5.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "AC Milan 127, @Chelsea 124",
+                        "boxscoreUrl": "./boxes/box1-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Marseille",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Marseille 124, Chelsea 121",
+                        "boxscoreUrl": "./boxes/box4-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "Chelsea 133, @Inter Milan 116",
+                        "boxscoreUrl": "./boxes/box8-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Bayern Munich",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "@Chelsea 130, Bayern Munich 111",
+                        "boxscoreUrl": "./boxes/box13-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "3-3",
+                "closeGameCount": 2,
+                "last3": "WWW"
+            },
+            {
+                "team": "AC Sparta Praha",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 4,
+                "rosterUrl": "./rosters/roster16.htm",
+                "rosterFile": "roster16.htm",
+                "standingsLast10": "3-4",
+                "wins": 3,
+                "losses": 4,
+                "games": 7,
+                "pointsFor": 750,
+                "pointsAgainst": 755,
+                "pointDiff": -5,
+                "avgMargin": -0.71,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 13,
+                        "score": "@AC Sparta Praha 115, Marseille 102",
+                        "boxscoreUrl": "./boxes/box1-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Marseille",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Marseille 117, AC Sparta Praha 112",
+                        "boxscoreUrl": "./boxes/box2-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "@AC Milan 99, AC Sparta Praha 80",
+                        "boxscoreUrl": "./boxes/box4-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "Aston Villa",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "@Aston Villa 110, AC Sparta Praha 101",
+                        "boxscoreUrl": "./boxes/box5-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "27/10/1986",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "@Inter Milan 106, AC Sparta Praha 98",
+                        "boxscoreUrl": "./boxes/box7-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 9,
+                        "score": "@AC Sparta Praha 134, Aston Villa 125",
+                        "boxscoreUrl": "./boxes/box8-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "@AC Sparta Praha 110, Inter Milan 96",
+                        "boxscoreUrl": "./boxes/box10-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "30/10/1986",
+                    "opponent": "Inter Milan",
+                    "result": "W",
+                    "margin": 14,
+                    "score": "@AC Sparta Praha 110, Inter Milan 96",
+                    "boxscoreUrl": "./boxes/box10-4.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "24/10/1986",
+                    "opponent": "AC Milan",
+                    "result": "L",
+                    "margin": 19,
+                    "score": "@AC Milan 99, AC Sparta Praha 80",
+                    "boxscoreUrl": "./boxes/box4-2.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Marseille",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Marseille 117, AC Sparta Praha 112",
+                        "boxscoreUrl": "./boxes/box2-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "@AC Milan 99, AC Sparta Praha 80",
+                        "boxscoreUrl": "./boxes/box4-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "3-4",
+                "closeGameCount": 1,
+                "last3": "LWW"
+            },
+            {
+                "team": "Aston Villa",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 6,
+                "rosterUrl": "./rosters/roster19.htm",
+                "rosterFile": "roster19.htm",
+                "standingsLast10": "2-3",
+                "wins": 2,
+                "losses": 3,
+                "games": 5,
+                "pointsFor": 550,
+                "pointsAgainst": 569,
+                "pointDiff": -19,
+                "avgMargin": -3.8,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 22,
+                        "score": "Aston Villa 117, @Inter Milan 95",
+                        "boxscoreUrl": "./boxes/box1-8.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 30,
+                        "score": "AC Milan 127, @Aston Villa 97",
+                        "boxscoreUrl": "./boxes/box2-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "Bayern Munich 112, @Aston Villa 101",
+                        "boxscoreUrl": "./boxes/box4-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 9,
+                        "score": "@Aston Villa 110, AC Sparta Praha 101",
+                        "boxscoreUrl": "./boxes/box5-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "AC Sparta Praha",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "@AC Sparta Praha 134, Aston Villa 125",
+                        "boxscoreUrl": "./boxes/box8-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/10/1986",
+                    "opponent": "Inter Milan",
+                    "result": "W",
+                    "margin": 22,
+                    "score": "Aston Villa 117, @Inter Milan 95",
+                    "boxscoreUrl": "./boxes/box1-8.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "22/10/1986",
+                    "opponent": "AC Milan",
+                    "result": "L",
+                    "margin": 30,
+                    "score": "AC Milan 127, @Aston Villa 97",
+                    "boxscoreUrl": "./boxes/box2-4.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 22,
+                        "score": "Aston Villa 117, @Inter Milan 95",
+                        "boxscoreUrl": "./boxes/box1-8.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 30,
+                        "score": "AC Milan 127, @Aston Villa 97",
+                        "boxscoreUrl": "./boxes/box2-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "2-3",
+                "closeGameCount": 0,
+                "last3": "LWL"
+            },
+            {
+                "team": "Marseille",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster15.htm",
+                "rosterFile": "roster15.htm",
+                "standingsLast10": "2-4",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 681,
+                "pointsAgainst": 725,
+                "pointDiff": -44,
+                "avgMargin": -7.33,
+                "streak": "L3",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "AC Sparta Praha",
+                        "result": "L",
+                        "margin": 13,
+                        "score": "@AC Sparta Praha 115, Marseille 102",
+                        "boxscoreUrl": "./boxes/box1-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Marseille 117, AC Sparta Praha 112",
+                        "boxscoreUrl": "./boxes/box2-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Marseille 124, Chelsea 121",
+                        "boxscoreUrl": "./boxes/box4-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 21,
+                        "score": "@AC Milan 123, Marseille 102",
+                        "boxscoreUrl": "./boxes/box9-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "31/10/1986",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Bayern Munich 122, Marseille 107",
+                        "boxscoreUrl": "./boxes/box11-1.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Arsenal 132, @Marseille 129",
+                        "boxscoreUrl": "./boxes/box12-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "22/10/1986",
+                    "opponent": "AC Sparta Praha",
+                    "result": "W",
+                    "margin": 5,
+                    "score": "@Marseille 117, AC Sparta Praha 112",
+                    "boxscoreUrl": "./boxes/box2-5.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "29/10/1986",
+                    "opponent": "AC Milan",
+                    "result": "L",
+                    "margin": 21,
+                    "score": "@AC Milan 123, Marseille 102",
+                    "boxscoreUrl": "./boxes/box9-3.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Marseille 117, AC Sparta Praha 112",
+                        "boxscoreUrl": "./boxes/box2-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Marseille 124, Chelsea 121",
+                        "boxscoreUrl": "./boxes/box4-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Arsenal 132, @Marseille 129",
+                        "boxscoreUrl": "./boxes/box12-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 21,
+                        "score": "@AC Milan 123, Marseille 102",
+                        "boxscoreUrl": "./boxes/box9-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "31/10/1986",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Bayern Munich 122, Marseille 107",
+                        "boxscoreUrl": "./boxes/box11-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "2-4",
+                "closeGameCount": 3,
+                "last3": "LLL"
             },
             {
                 "team": "Inter Milan",
@@ -404,104 +1969,260 @@
                 "standingRank": 8,
                 "rosterUrl": "./rosters/roster26.htm",
                 "rosterFile": "roster26.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
+                "standingsLast10": "1-5",
+                "wins": 1,
+                "losses": 5,
+                "games": 6,
+                "pointsFor": 611,
+                "pointsAgainst": 696,
+                "pointDiff": -85,
+                "avgMargin": -14.17,
+                "streak": "L4",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Aston Villa",
+                        "result": "L",
+                        "margin": 22,
+                        "score": "Aston Villa 117, @Inter Milan 95",
+                        "boxscoreUrl": "./boxes/box1-8.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "27/10/1986",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "@Inter Milan 106, AC Sparta Praha 98",
+                        "boxscoreUrl": "./boxes/box7-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "Chelsea 133, @Inter Milan 116",
+                        "boxscoreUrl": "./boxes/box8-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "AC Sparta Praha",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "@AC Sparta Praha 110, Inter Milan 96",
+                        "boxscoreUrl": "./boxes/box10-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@AC Milan 104, Inter Milan 93",
+                        "boxscoreUrl": "./boxes/box12-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 29,
+                        "score": "@Arsenal 134, Inter Milan 105",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "27/10/1986",
+                    "opponent": "AC Sparta Praha",
+                    "result": "W",
+                    "margin": 8,
+                    "score": "@Inter Milan 106, AC Sparta Praha 98",
+                    "boxscoreUrl": "./boxes/box7-3.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "2/11/1986",
+                    "opponent": "Arsenal",
+                    "result": "L",
+                    "margin": 29,
+                    "score": "@Arsenal 134, Inter Milan 105",
+                    "boxscoreUrl": "./boxes/box13-3.htm",
+                    "section": "Preseason"
+                },
                 "closeGames": [],
                 "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
+                "blowoutLosses": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Aston Villa",
+                        "result": "L",
+                        "margin": 22,
+                        "score": "Aston Villa 117, @Inter Milan 95",
+                        "boxscoreUrl": "./boxes/box1-8.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "Chelsea 133, @Inter Milan 116",
+                        "boxscoreUrl": "./boxes/box8-2.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 29,
+                        "score": "@Arsenal 134, Inter Milan 105",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "1-5",
                 "closeGameCount": 0,
-                "last3": "-"
+                "last3": "LLL"
             }
         ],
         "Tier 3": [
             {
-                "team": "Manchester United",
+                "team": "Valencia",
                 "tier": "Tier 3",
                 "tierShort": "T3",
-                "standingRank": 1,
-                "rosterUrl": "./rosters/roster5.htm",
-                "rosterFile": "roster5.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
+                "standingRank": 7,
+                "rosterUrl": "./rosters/roster25.htm",
+                "rosterFile": "roster25.htm",
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 755,
+                "pointsAgainst": 688,
+                "pointDiff": 67,
+                "avgMargin": 11.17,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "Valencia 107, @Manchester United 92",
+                        "boxscoreUrl": "./boxes/box1-11.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 12,
+                        "score": "@Valencia 129, Barcelona 117",
+                        "boxscoreUrl": "./boxes/box2-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "@Tottenham Hotspur 127, Valencia 119",
+                        "boxscoreUrl": "./boxes/box5-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Barcelona 132, Valencia 127",
+                        "boxscoreUrl": "./boxes/box6-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 33,
+                        "score": "@Valencia 139, Tottenham Hotspur 106",
+                        "boxscoreUrl": "./boxes/box10-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "@Valencia 134, Manchester City 114",
+                        "boxscoreUrl": "./boxes/box13-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "30/10/1986",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "W",
+                    "margin": 33,
+                    "score": "@Valencia 139, Tottenham Hotspur 106",
+                    "boxscoreUrl": "./boxes/box10-7.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "25/10/1986",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "L",
+                    "margin": 8,
+                    "score": "@Tottenham Hotspur 127, Valencia 119",
+                    "boxscoreUrl": "./boxes/box5-6.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Barcelona 132, Valencia 127",
+                        "boxscoreUrl": "./boxes/box6-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "Valencia 107, @Manchester United 92",
+                        "boxscoreUrl": "./boxes/box1-11.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 33,
+                        "score": "@Valencia 139, Tottenham Hotspur 106",
+                        "boxscoreUrl": "./boxes/box10-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "@Valencia 134, Manchester City 114",
+                        "boxscoreUrl": "./boxes/box13-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
                 "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
-            },
-            {
-                "team": "Atletico Madrid",
-                "tier": "Tier 3",
-                "tierShort": "T3",
-                "standingRank": 2,
-                "rosterUrl": "./rosters/roster11.htm",
-                "rosterFile": "roster11.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
-            },
-            {
-                "team": "Juventus",
-                "tier": "Tier 3",
-                "tierShort": "T3",
-                "standingRank": 3,
-                "rosterUrl": "./rosters/roster14.htm",
-                "rosterFile": "roster14.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
+                "record": "4-2",
+                "closeGameCount": 1,
+                "last3": "LWW"
             },
             {
                 "team": "Monaco",
@@ -510,50 +2231,395 @@
                 "standingRank": 4,
                 "rosterUrl": "./rosters/roster20.htm",
                 "rosterFile": "roster20.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
+                "standingsLast10": "4-2",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 653,
+                "pointsAgainst": 622,
+                "pointDiff": 31,
+                "avgMargin": 5.17,
+                "streak": "W3",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 26,
+                        "score": "@Barcelona 126, Monaco 100",
+                        "boxscoreUrl": "./boxes/box1-9.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 6,
+                        "score": "Monaco 118, @Juventus 112",
+                        "boxscoreUrl": "./boxes/box2-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "Tottenham Hotspur 102, @Monaco 94",
+                        "boxscoreUrl": "./boxes/box4-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 24,
+                        "score": "@Monaco 123, Barcelona 99",
+                        "boxscoreUrl": "./boxes/box9-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 12,
+                        "score": "Monaco 111, @Manchester City 99",
+                        "boxscoreUrl": "./boxes/box10-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Monaco 107, Manchester United 84",
+                        "boxscoreUrl": "./boxes/box13-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "29/10/1986",
+                    "opponent": "Barcelona",
+                    "result": "W",
+                    "margin": 24,
+                    "score": "@Monaco 123, Barcelona 99",
+                    "boxscoreUrl": "./boxes/box9-6.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "21/10/1986",
+                    "opponent": "Barcelona",
+                    "result": "L",
+                    "margin": 26,
+                    "score": "@Barcelona 126, Monaco 100",
+                    "boxscoreUrl": "./boxes/box1-9.htm",
+                    "section": "Preseason"
+                },
                 "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
+                "blowoutWins": [
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 24,
+                        "score": "@Monaco 123, Barcelona 99",
+                        "boxscoreUrl": "./boxes/box9-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Monaco 107, Manchester United 84",
+                        "boxscoreUrl": "./boxes/box13-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 26,
+                        "score": "@Barcelona 126, Monaco 100",
+                        "boxscoreUrl": "./boxes/box1-9.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "4-2",
                 "closeGameCount": 0,
-                "last3": "-"
+                "last3": "WWW"
             },
             {
-                "team": "Tottenham Hotspur",
+                "team": "Atletico Madrid",
                 "tier": "Tier 3",
                 "tierShort": "T3",
-                "standingRank": 5,
-                "rosterUrl": "./rosters/roster22.htm",
-                "rosterFile": "roster22.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster11.htm",
+                "rosterFile": "roster11.htm",
+                "standingsLast10": "4-3",
+                "wins": 4,
+                "losses": 3,
+                "games": 7,
+                "pointsFor": 754,
+                "pointsAgainst": 784,
+                "pointDiff": -30,
+                "avgMargin": -4.29,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "@Atletico Madrid 112, Manchester City 102",
+                        "boxscoreUrl": "./boxes/box1-10.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 43,
+                        "score": "@Manchester City 127, Atletico Madrid 84",
+                        "boxscoreUrl": "./boxes/box4-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "27/10/1986",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "Atletico Madrid 115, @Tottenham Hotspur 113",
+                        "boxscoreUrl": "./boxes/box7-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Juventus 117, Atletico Madrid 106",
+                        "boxscoreUrl": "./boxes/box9-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "Atletico Madrid 95, @Manchester United 87",
+                        "boxscoreUrl": "./boxes/box10-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Atletico Madrid 123, Manchester United 118",
+                        "boxscoreUrl": "./boxes/box12-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "Juventus 120, @Atletico Madrid 119",
+                        "boxscoreUrl": "./boxes/box13-6.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/10/1986",
+                    "opponent": "Manchester City",
+                    "result": "W",
+                    "margin": 10,
+                    "score": "@Atletico Madrid 112, Manchester City 102",
+                    "boxscoreUrl": "./boxes/box1-10.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "24/10/1986",
+                    "opponent": "Manchester City",
+                    "result": "L",
+                    "margin": 43,
+                    "score": "@Manchester City 127, Atletico Madrid 84",
+                    "boxscoreUrl": "./boxes/box4-7.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "27/10/1986",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "Atletico Madrid 115, @Tottenham Hotspur 113",
+                        "boxscoreUrl": "./boxes/box7-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Atletico Madrid 123, Manchester United 118",
+                        "boxscoreUrl": "./boxes/box12-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "Juventus 120, @Atletico Madrid 119",
+                        "boxscoreUrl": "./boxes/box13-6.htm",
+                        "section": "Preseason"
+                    }
+                ],
                 "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
+                "blowoutLosses": [
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 43,
+                        "score": "@Manchester City 127, Atletico Madrid 84",
+                        "boxscoreUrl": "./boxes/box4-7.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "4-3",
+                "closeGameCount": 3,
+                "last3": "WWL"
+            },
+            {
+                "team": "Juventus",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster14.htm",
+                "rosterFile": "roster14.htm",
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 658,
+                "pointsAgainst": 654,
+                "pointDiff": 4,
+                "avgMargin": 0.67,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Juventus 115, Tottenham Hotspur 92",
+                        "boxscoreUrl": "./boxes/box1-12.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 6,
+                        "score": "Monaco 118, @Juventus 112",
+                        "boxscoreUrl": "./boxes/box2-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "@Barcelona 114, Juventus 105",
+                        "boxscoreUrl": "./boxes/box4-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Manchester United",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@Manchester United 105, Juventus 89",
+                        "boxscoreUrl": "./boxes/box6-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Juventus 117, Atletico Madrid 106",
+                        "boxscoreUrl": "./boxes/box9-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "Juventus 120, @Atletico Madrid 119",
+                        "boxscoreUrl": "./boxes/box13-6.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/10/1986",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "W",
+                    "margin": 23,
+                    "score": "@Juventus 115, Tottenham Hotspur 92",
+                    "boxscoreUrl": "./boxes/box1-12.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "26/10/1986",
+                    "opponent": "Manchester United",
+                    "result": "L",
+                    "margin": 16,
+                    "score": "@Manchester United 105, Juventus 89",
+                    "boxscoreUrl": "./boxes/box6-3.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "Juventus 120, @Atletico Madrid 119",
+                        "boxscoreUrl": "./boxes/box13-6.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Juventus 115, Tottenham Hotspur 92",
+                        "boxscoreUrl": "./boxes/box1-12.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Manchester United",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@Manchester United 105, Juventus 89",
+                        "boxscoreUrl": "./boxes/box6-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 1,
+                "last3": "LWW"
             },
             {
                 "team": "Barcelona",
@@ -562,50 +2628,269 @@
                 "standingRank": 6,
                 "rosterUrl": "./rosters/roster24.htm",
                 "rosterFile": "roster24.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 707,
+                "pointsAgainst": 707,
                 "pointDiff": 0,
                 "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
+                "streak": "L2",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 26,
+                        "score": "@Barcelona 126, Monaco 100",
+                        "boxscoreUrl": "./boxes/box1-9.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "22/10/1986",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 12,
+                        "score": "@Valencia 129, Barcelona 117",
+                        "boxscoreUrl": "./boxes/box2-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 9,
+                        "score": "@Barcelona 114, Juventus 105",
+                        "boxscoreUrl": "./boxes/box4-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Barcelona 132, Valencia 127",
+                        "boxscoreUrl": "./boxes/box6-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@Tottenham Hotspur 123, Barcelona 119",
+                        "boxscoreUrl": "./boxes/box8-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 24,
+                        "score": "@Monaco 123, Barcelona 99",
+                        "boxscoreUrl": "./boxes/box9-6.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/10/1986",
+                    "opponent": "Monaco",
+                    "result": "W",
+                    "margin": 26,
+                    "score": "@Barcelona 126, Monaco 100",
+                    "boxscoreUrl": "./boxes/box1-9.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "29/10/1986",
+                    "opponent": "Monaco",
+                    "result": "L",
+                    "margin": 24,
+                    "score": "@Monaco 123, Barcelona 99",
+                    "boxscoreUrl": "./boxes/box9-6.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Barcelona 132, Valencia 127",
+                        "boxscoreUrl": "./boxes/box6-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@Tottenham Hotspur 123, Barcelona 119",
+                        "boxscoreUrl": "./boxes/box8-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 26,
+                        "score": "@Barcelona 126, Monaco 100",
+                        "boxscoreUrl": "./boxes/box1-9.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "29/10/1986",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 24,
+                        "score": "@Monaco 123, Barcelona 99",
+                        "boxscoreUrl": "./boxes/box9-6.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 2,
+                "last3": "WLL"
             },
             {
-                "team": "Valencia",
+                "team": "Tottenham Hotspur",
                 "tier": "Tier 3",
                 "tierShort": "T3",
-                "standingRank": 7,
-                "rosterUrl": "./rosters/roster25.htm",
-                "rosterFile": "roster25.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
-                "closeGames": [],
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster22.htm",
+                "rosterFile": "roster22.htm",
+                "standingsLast10": "3-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 663,
+                "pointsAgainst": 701,
+                "pointDiff": -38,
+                "avgMargin": -6.33,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Juventus 115, Tottenham Hotspur 92",
+                        "boxscoreUrl": "./boxes/box1-12.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "Tottenham Hotspur 102, @Monaco 94",
+                        "boxscoreUrl": "./boxes/box4-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "25/10/1986",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "@Tottenham Hotspur 127, Valencia 119",
+                        "boxscoreUrl": "./boxes/box5-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "27/10/1986",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "Atletico Madrid 115, @Tottenham Hotspur 113",
+                        "boxscoreUrl": "./boxes/box7-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@Tottenham Hotspur 123, Barcelona 119",
+                        "boxscoreUrl": "./boxes/box8-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 33,
+                        "score": "@Valencia 139, Tottenham Hotspur 106",
+                        "boxscoreUrl": "./boxes/box10-7.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "24/10/1986",
+                    "opponent": "Monaco",
+                    "result": "W",
+                    "margin": 8,
+                    "score": "Tottenham Hotspur 102, @Monaco 94",
+                    "boxscoreUrl": "./boxes/box4-5.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "30/10/1986",
+                    "opponent": "Valencia",
+                    "result": "L",
+                    "margin": 33,
+                    "score": "@Valencia 139, Tottenham Hotspur 106",
+                    "boxscoreUrl": "./boxes/box10-7.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "27/10/1986",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "Atletico Madrid 115, @Tottenham Hotspur 113",
+                        "boxscoreUrl": "./boxes/box7-4.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "28/10/1986",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@Tottenham Hotspur 123, Barcelona 119",
+                        "boxscoreUrl": "./boxes/box8-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
                 "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
-                "closeGameCount": 0,
-                "last3": "-"
+                "blowoutLosses": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Juventus 115, Tottenham Hotspur 92",
+                        "boxscoreUrl": "./boxes/box1-12.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 33,
+                        "score": "@Valencia 139, Tottenham Hotspur 106",
+                        "boxscoreUrl": "./boxes/box10-7.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 2,
+                "last3": "LWL"
             },
             {
                 "team": "Manchester City",
@@ -614,24 +2899,260 @@
                 "standingRank": 8,
                 "rosterUrl": "./rosters/roster28.htm",
                 "rosterFile": "roster28.htm",
-                "standingsLast10": "0-0",
-                "wins": 0,
-                "losses": 0,
-                "games": 0,
-                "pointsFor": 0,
-                "pointsAgainst": 0,
-                "pointDiff": 0,
-                "avgMargin": 0.0,
-                "streak": "-",
-                "recentResults": [],
-                "bestWin": null,
-                "worstLoss": null,
+                "standingsLast10": "2-3",
+                "wins": 2,
+                "losses": 3,
+                "games": 5,
+                "pointsFor": 554,
+                "pointsAgainst": 525,
+                "pointDiff": 29,
+                "avgMargin": 5.8,
+                "streak": "L2",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "@Atletico Madrid 112, Manchester City 102",
+                        "boxscoreUrl": "./boxes/box1-10.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "23/10/1986",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 28,
+                        "score": "@Manchester City 112, Manchester United 84",
+                        "boxscoreUrl": "./boxes/box3-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 43,
+                        "score": "@Manchester City 127, Atletico Madrid 84",
+                        "boxscoreUrl": "./boxes/box4-7.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 12,
+                        "score": "Monaco 111, @Manchester City 99",
+                        "boxscoreUrl": "./boxes/box10-6.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "@Valencia 134, Manchester City 114",
+                        "boxscoreUrl": "./boxes/box13-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "24/10/1986",
+                    "opponent": "Atletico Madrid",
+                    "result": "W",
+                    "margin": 43,
+                    "score": "@Manchester City 127, Atletico Madrid 84",
+                    "boxscoreUrl": "./boxes/box4-7.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "2/11/1986",
+                    "opponent": "Valencia",
+                    "result": "L",
+                    "margin": 20,
+                    "score": "@Valencia 134, Manchester City 114",
+                    "boxscoreUrl": "./boxes/box13-5.htm",
+                    "section": "Preseason"
+                },
                 "closeGames": [],
-                "blowoutWins": [],
-                "blowoutLosses": [],
-                "record": "0-0",
+                "blowoutWins": [
+                    {
+                        "date": "23/10/1986",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 28,
+                        "score": "@Manchester City 112, Manchester United 84",
+                        "boxscoreUrl": "./boxes/box3-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "24/10/1986",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 43,
+                        "score": "@Manchester City 127, Atletico Madrid 84",
+                        "boxscoreUrl": "./boxes/box4-7.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "@Valencia 134, Manchester City 114",
+                        "boxscoreUrl": "./boxes/box13-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "2-3",
                 "closeGameCount": 0,
-                "last3": "-"
+                "last3": "WLL"
+            },
+            {
+                "team": "Manchester United",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 1,
+                "rosterUrl": "./rosters/roster5.htm",
+                "rosterFile": "roster5.htm",
+                "standingsLast10": "1-5",
+                "wins": 1,
+                "losses": 5,
+                "games": 6,
+                "pointsFor": 570,
+                "pointsAgainst": 633,
+                "pointDiff": -63,
+                "avgMargin": -10.5,
+                "streak": "L3",
+                "recentResults": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "Valencia 107, @Manchester United 92",
+                        "boxscoreUrl": "./boxes/box1-11.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "23/10/1986",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 28,
+                        "score": "@Manchester City 112, Manchester United 84",
+                        "boxscoreUrl": "./boxes/box3-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@Manchester United 105, Juventus 89",
+                        "boxscoreUrl": "./boxes/box6-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "30/10/1986",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "Atletico Madrid 95, @Manchester United 87",
+                        "boxscoreUrl": "./boxes/box10-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Atletico Madrid 123, Manchester United 118",
+                        "boxscoreUrl": "./boxes/box12-5.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Monaco 107, Manchester United 84",
+                        "boxscoreUrl": "./boxes/box13-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "26/10/1986",
+                    "opponent": "Juventus",
+                    "result": "W",
+                    "margin": 16,
+                    "score": "@Manchester United 105, Juventus 89",
+                    "boxscoreUrl": "./boxes/box6-3.htm",
+                    "section": "Preseason"
+                },
+                "worstLoss": {
+                    "date": "23/10/1986",
+                    "opponent": "Manchester City",
+                    "result": "L",
+                    "margin": 28,
+                    "score": "@Manchester City 112, Manchester United 84",
+                    "boxscoreUrl": "./boxes/box3-3.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [
+                    {
+                        "date": "1/11/1986",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Atletico Madrid 123, Manchester United 118",
+                        "boxscoreUrl": "./boxes/box12-5.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "26/10/1986",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@Manchester United 105, Juventus 89",
+                        "boxscoreUrl": "./boxes/box6-3.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "21/10/1986",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "Valencia 107, @Manchester United 92",
+                        "boxscoreUrl": "./boxes/box1-11.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "23/10/1986",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 28,
+                        "score": "@Manchester City 112, Manchester United 84",
+                        "boxscoreUrl": "./boxes/box3-3.htm",
+                        "section": "Preseason"
+                    },
+                    {
+                        "date": "2/11/1986",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Monaco 107, Manchester United 84",
+                        "boxscoreUrl": "./boxes/box13-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "record": "1-5",
+                "closeGameCount": 1,
+                "last3": "LLL"
             }
         ]
     }

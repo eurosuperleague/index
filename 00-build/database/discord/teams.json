@@ -12,7 +12,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "5-1",
     "starPlayer": {
       "name": "George Gervin",
       "url": "../players/player1046.htm",
@@ -22,8 +22,8 @@
       "potential": "132"
     },
     "cap": {
-      "salary": "$90,431,521",
-      "room": "($20,431,521)"
+      "salary": "$74,481,521",
+      "room": "($4,481,521)"
     },
     "strengths": [
       {
@@ -48,10 +48,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "1/11/1986",
+      "text": "@AC Milan 104, Inter Milan 93",
+      "boxscoreFile": "box12-3.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "AC Milan @ Chelsea",
+      "date": "4/11/1986",
+      "text": "Inter Milan @ AC Milan",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster9"
@@ -69,18 +73,18 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "3-4",
     "starPlayer": {
       "name": "Steve Johnson",
       "url": "../players/player897.htm",
       "pos": "C",
-      "age": "25",
+      "age": "26",
       "overall": "132",
       "potential": "141"
     },
     "cap": {
-      "salary": "$40,825,880",
-      "room": "$29,174,120"
+      "salary": "$46,565,880",
+      "room": "$23,434,120"
     },
     "strengths": [
       {
@@ -105,10 +109,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "30/10/1986",
+      "text": "@AC Sparta Praha 110, Inter Milan 96",
+      "boxscoreFile": "box10-4.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Marseille @ AC Sparta Praha",
+      "date": "4/11/1986",
+      "text": "AC Sparta Praha @ Chelsea",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster16"
@@ -126,12 +134,12 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "6-0",
     "starPlayer": {
       "name": "Larry Bird",
       "url": "../players/player697.htm",
       "pos": "SF",
-      "age": "26",
+      "age": "27",
       "overall": "151",
       "potential": "157"
     },
@@ -161,11 +169,22 @@
         "rank": 1
       }
     ],
-    "injuries": [],
-    "recentGame": null,
+    "injuries": [
+      {
+        "name": "Rick Mahorn",
+        "pos": "C",
+        "injury": "Stiff Neck",
+        "length": "1"
+      }
+    ],
+    "recentGame": {
+      "date": "1/11/1986",
+      "text": "AFC Richmond 114, @Real Madrid 111",
+      "boxscoreFile": "box12-2.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Brighton @ AFC Richmond",
+      "date": "5/11/1986",
+      "text": "AFC Richmond @ Real Madrid",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster12"
@@ -183,7 +202,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "1-5",
     "starPlayer": {
       "name": "Andre Iguodala",
       "url": "../players/player1314.htm",
@@ -219,10 +238,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "30/10/1986",
+      "text": "@Real Madrid 110, Ajax 83",
+      "boxscoreFile": "box10-1.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Paris Saint-Germain @ Ajax",
+      "date": "5/11/1986",
+      "text": "Ajax @ Paris Saint-Germain",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster18"
@@ -240,7 +263,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "4-2",
     "starPlayer": {
       "name": "Chris Bosh",
       "url": "../players/player622.htm",
@@ -276,10 +299,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "2/11/1986",
+      "text": "@Arsenal 134, Inter Milan 105",
+      "boxscoreFile": "box13-3.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Arsenal @ Bayern Munich",
+      "date": "6/11/1986",
+      "text": "Bayern Munich @ Arsenal",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster23"
@@ -297,7 +324,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "2-3",
     "starPlayer": {
       "name": "Xavier McDaniel",
       "url": "../players/player238.htm",
@@ -333,10 +360,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "28/10/1986",
+      "text": "@AC Sparta Praha 134, Aston Villa 125",
+      "boxscoreFile": "box8-3.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Aston Villa @ Inter Milan",
+      "date": "4/11/1986",
+      "text": "Marseille @ Aston Villa",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster19"
@@ -354,7 +385,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "4-3",
     "starPlayer": {
       "name": "Reggie Miller",
       "url": "../players/player55.htm",
@@ -390,9 +421,13 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "2/11/1986",
+      "text": "Juventus 120, @Atletico Madrid 119",
+      "boxscoreFile": "box13-6.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
+      "date": "4/11/1986",
       "text": "Manchester City @ Atletico Madrid",
       "boxscoreFile": ""
     },
@@ -411,7 +446,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "3-3",
     "starPlayer": {
       "name": "Paul Pierce",
       "url": "../players/player693.htm",
@@ -421,8 +456,8 @@
       "potential": "178"
     },
     "cap": {
-      "salary": "$49,814,156",
-      "room": "$185,844"
+      "salary": "$48,910,658",
+      "room": "$1,089,342"
     },
     "strengths": [
       {
@@ -447,9 +482,13 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "29/10/1986",
+      "text": "@Monaco 123, Barcelona 99",
+      "boxscoreFile": "box9-6.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
+      "date": "5/11/1986",
       "text": "Monaco @ Barcelona",
       "boxscoreFile": ""
     },
@@ -468,7 +507,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "4-2",
     "starPlayer": {
       "name": "Kevin McHale",
       "url": "../players/player717.htm",
@@ -504,10 +543,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "2/11/1986",
+      "text": "@Chelsea 130, Bayern Munich 111",
+      "boxscoreFile": "box13-2.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Arsenal @ Bayern Munich",
+      "date": "6/11/1986",
+      "text": "Bayern Munich @ Arsenal",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster7"
@@ -525,7 +568,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "4-2",
     "starPlayer": {
       "name": "Moses Malone",
       "url": "../players/player872.htm",
@@ -535,8 +578,8 @@
       "potential": "157"
     },
     "cap": {
-      "salary": "$103,502,239",
-      "room": "($3,502,239)"
+      "salary": "$99,782,239",
+      "room": "$217,761"
     },
     "strengths": [
       {
@@ -561,10 +604,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "2/11/1986",
+      "text": "FL Fart 114, @Benfica 111",
+      "boxscoreFile": "box13-1.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Benfica @ FL Fart",
+      "date": "4/11/1986",
+      "text": "Brighton @ Benfica",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster13"
@@ -582,7 +629,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "3-3",
     "starPlayer": {
       "name": "Kiki Vandeweghe",
       "url": "../players/player701.htm",
@@ -592,8 +639,8 @@
       "potential": "174"
     },
     "cap": {
-      "salary": "$98,092,613",
-      "room": "$1,907,387"
+      "salary": "$98,852,613",
+      "room": "$1,147,387"
     },
     "strengths": [
       {
@@ -618,10 +665,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "30/10/1986",
+      "text": "@FL Fart 108, Brighton 103",
+      "boxscoreFile": "box10-3.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Brighton @ AFC Richmond",
+      "date": "4/11/1986",
+      "text": "Brighton @ Benfica",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster10"
@@ -639,7 +690,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "3-3",
     "starPlayer": {
       "name": "Jim Paxson",
       "url": "../players/player875.htm",
@@ -649,8 +700,8 @@
       "potential": "142"
     },
     "cap": {
-      "salary": "$62,916,817",
-      "room": "$7,083,183"
+      "salary": "$65,849,817",
+      "room": "$4,150,183"
     },
     "strengths": [
       {
@@ -675,10 +726,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "2/11/1986",
+      "text": "@Chelsea 130, Bayern Munich 111",
+      "boxscoreFile": "box13-2.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "AC Milan @ Chelsea",
+      "date": "4/11/1986",
+      "text": "AC Sparta Praha @ Chelsea",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster17"
@@ -696,7 +751,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "2-4",
     "starPlayer": {
       "name": "Rolando Blackman",
       "url": "../players/player871.htm",
@@ -706,8 +761,8 @@
       "potential": "156"
     },
     "cap": {
-      "salary": "$83,798,046",
-      "room": "$16,201,954"
+      "salary": "$96,946,891",
+      "room": "$3,053,109"
     },
     "strengths": [
       {
@@ -732,10 +787,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "1/11/1986",
+      "text": "@Paris Saint-Germain 116, Crystal Palace 74",
+      "boxscoreFile": "box12-1.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Real Madrid @ Crystal Palace",
+      "date": "5/11/1986",
+      "text": "Crystal Palace @ FL Fart",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster6"
@@ -753,7 +812,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "2-4",
     "starPlayer": {
       "name": "Larry Drew",
       "url": "../players/player1053.htm",
@@ -789,10 +848,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "2/11/1986",
+      "text": "FL Fart 114, @Benfica 111",
+      "boxscoreFile": "box13-1.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Benfica @ FL Fart",
+      "date": "5/11/1986",
+      "text": "Crystal Palace @ FL Fart",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster27"
@@ -810,7 +873,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "1-5",
     "starPlayer": {
       "name": "David West",
       "url": "../players/player262.htm",
@@ -820,8 +883,8 @@
       "potential": "123"
     },
     "cap": {
-      "salary": "$40,918,594",
-      "room": "$29,081,406"
+      "salary": "$41,863,594",
+      "room": "$28,136,406"
     },
     "strengths": [
       {
@@ -846,10 +909,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "2/11/1986",
+      "text": "@Arsenal 134, Inter Milan 105",
+      "boxscoreFile": "box13-3.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Aston Villa @ Inter Milan",
+      "date": "4/11/1986",
+      "text": "Inter Milan @ AC Milan",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster26"
@@ -867,7 +934,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "3-3",
     "starPlayer": {
       "name": "Larry Smith",
       "url": "../players/player1061.htm",
@@ -877,8 +944,8 @@
       "potential": "120"
     },
     "cap": {
-      "salary": "$35,547,449",
-      "room": "$14,452,551"
+      "salary": "$37,802,449",
+      "room": "$12,197,551"
     },
     "strengths": [
       {
@@ -902,11 +969,22 @@
         "rank": 1
       }
     ],
-    "injuries": [],
-    "recentGame": null,
+    "injuries": [
+      {
+        "name": "Kyle O'Quinn",
+        "pos": "C",
+        "injury": "Hyperextended Knee",
+        "length": "2"
+      }
+    ],
+    "recentGame": {
+      "date": "2/11/1986",
+      "text": "Juventus 120, @Atletico Madrid 119",
+      "boxscoreFile": "box13-6.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Tottenham Hotspur @ Juventus",
+      "date": "5/11/1986",
+      "text": "Juventus @ Tottenham Hotspur",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster14"
@@ -924,7 +1002,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "2-3",
     "starPlayer": {
       "name": "Luol Deng",
       "url": "../players/player342.htm",
@@ -960,9 +1038,13 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "2/11/1986",
+      "text": "@Valencia 134, Manchester City 114",
+      "boxscoreFile": "box13-5.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
+      "date": "4/11/1986",
       "text": "Manchester City @ Atletico Madrid",
       "boxscoreFile": ""
     },
@@ -981,7 +1063,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "1-5",
     "starPlayer": {
       "name": "Mike McGee",
       "url": "../players/player736.htm",
@@ -1017,10 +1099,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "2/11/1986",
+      "text": "@Monaco 107, Manchester United 84",
+      "boxscoreFile": "box13-4.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Valencia @ Manchester United",
+      "date": "6/11/1986",
+      "text": "Barcelona @ Manchester United",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster5"
@@ -1038,7 +1124,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "2-4",
     "starPlayer": {
       "name": "Robert Parish",
       "url": "../players/player873.htm",
@@ -1074,10 +1160,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "1/11/1986",
+      "text": "Arsenal 132, @Marseille 129",
+      "boxscoreFile": "box12-4.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Marseille @ AC Sparta Praha",
+      "date": "4/11/1986",
+      "text": "Marseille @ Aston Villa",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster15"
@@ -1095,7 +1185,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "4-2",
     "starPlayer": {
       "name": "Alvin Robertson",
       "url": "../players/player423.htm",
@@ -1130,10 +1220,21 @@
         "rank": 1
       }
     ],
-    "injuries": [],
-    "recentGame": null,
+    "injuries": [
+      {
+        "name": "Alvin Robertson",
+        "pos": "SG",
+        "injury": "Fractured Nose",
+        "length": "4"
+      }
+    ],
+    "recentGame": {
+      "date": "2/11/1986",
+      "text": "@Monaco 107, Manchester United 84",
+      "boxscoreFile": "box13-4.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
+      "date": "5/11/1986",
       "text": "Monaco @ Barcelona",
       "boxscoreFile": ""
     },
@@ -1152,7 +1253,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "2-4",
     "starPlayer": {
       "name": "Brad Davis",
       "url": "../players/player714.htm",
@@ -1162,8 +1263,8 @@
       "potential": "147"
     },
     "cap": {
-      "salary": "$124,354,605",
-      "room": "($24,354,605)"
+      "salary": "$110,804,605",
+      "room": "($10,804,605)"
     },
     "strengths": [
       {
@@ -1188,10 +1289,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "1/11/1986",
+      "text": "@Paris Saint-Germain 116, Crystal Palace 74",
+      "boxscoreFile": "box12-1.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Paris Saint-Germain @ Ajax",
+      "date": "5/11/1986",
+      "text": "Ajax @ Paris Saint-Germain",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster21"
@@ -1209,7 +1314,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "4-2",
     "starPlayer": {
       "name": "Sidney Moncrief",
       "url": "../players/player699.htm",
@@ -1245,10 +1350,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "1/11/1986",
+      "text": "AFC Richmond 114, @Real Madrid 111",
+      "boxscoreFile": "box12-2.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Real Madrid @ Crystal Palace",
+      "date": "5/11/1986",
+      "text": "AFC Richmond @ Real Madrid",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster8"
@@ -1266,7 +1375,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "3-3",
     "starPlayer": {
       "name": "Hubert Davis",
       "url": "../players/player440.htm",
@@ -1276,8 +1385,8 @@
       "potential": "143"
     },
     "cap": {
-      "salary": "$49,771,087",
-      "room": "$228,913"
+      "salary": "$50,711,087",
+      "room": "($711,087)"
     },
     "strengths": [
       {
@@ -1302,10 +1411,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "30/10/1986",
+      "text": "@Valencia 139, Tottenham Hotspur 106",
+      "boxscoreFile": "box10-7.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Tottenham Hotspur @ Juventus",
+      "date": "5/11/1986",
+      "text": "Juventus @ Tottenham Hotspur",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster22"
@@ -1323,7 +1436,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "0-0",
+    "last10": "4-2",
     "starPlayer": {
       "name": "Brian Shaw",
       "url": "../players/player180.htm",
@@ -1359,10 +1472,14 @@
       }
     ],
     "injuries": [],
-    "recentGame": null,
+    "recentGame": {
+      "date": "2/11/1986",
+      "text": "@Valencia 134, Manchester City 114",
+      "boxscoreFile": "box13-5.htm"
+    },
     "nextGame": {
-      "date": "10/21/1986",
-      "text": "Valencia @ Manchester United",
+      "date": "6/11/1986",
+      "text": "Valencia @ Juventus",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster25"

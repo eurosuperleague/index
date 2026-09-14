@@ -5,64 +5,164 @@
         "monthly/tier_race_snapshot.json"
     ],
     "featured": [
+        "biggest-blowout",
         "hottest-team",
+        "closest-game",
         "coldest-team",
-        "tier-1-relegation-watch",
-        "tier-2-promotion-watch",
-        "tier-2-relegation-watch"
+        "upset-of-the-month"
     ],
     "byTier": {
         "Tier 1": [
-            "hottest-team",
+            "biggest-blowout",
             "coldest-team",
+            "upset-of-the-month",
             "tier-1-relegation-watch"
         ],
         "Tier 2": [
+            "hottest-team",
             "tier-2-promotion-watch",
             "tier-2-relegation-watch"
         ],
         "Tier 3": [
+            "closest-game",
             "tier-3-promotion-watch"
         ]
     },
     "storylines": [
         {
+            "id": "biggest-blowout",
+            "type": "game",
+            "title": "Biggest Blowout of the Month",
+            "summary": "Paris Saint-Germain beat Crystal Palace by 42, the biggest margin of the sim.",
+            "tier": "Tier 1",
+            "importance": 112,
+            "data": {
+                "section": "Preseason",
+                "sectionSlug": "preseason",
+                "date": "1/11/1986",
+                "matchupText": "@Paris Saint-Germain 116, Crystal Palace 74",
+                "boxscoreUrl": "./boxes/box12-1.htm",
+                "boxscoreFile": "box12-1.htm",
+                "homeTeam": "roster21",
+                "homeTeamName": "Paris Saint-Germain",
+                "homeScore": 116,
+                "awayTeam": "roster6",
+                "awayTeamName": "Crystal Palace",
+                "awayScore": 74,
+                "winner": "roster21",
+                "winnerName": "Paris Saint-Germain",
+                "loser": "roster6",
+                "loserName": "Crystal Palace",
+                "margin": 42
+            }
+        },
+        {
             "id": "hottest-team",
             "type": "team_trend",
             "title": "Hottest Team of the Month",
-            "summary": "Crystal Palace posted the strongest month at 0-0 and closed on a - run.",
-            "tier": "Tier 1",
+            "summary": "Arsenal posted the strongest month at 2-0 and closed on a W2 run.",
+            "tier": "Tier 2",
             "importance": 88,
             "data": {
-                "team": "Crystal Palace",
-                "record": "0-0",
-                "streak": "-",
-                "avgMargin": 0.0,
-                "bestWin": null,
-                "rosterUrl": "./rosters/roster6.htm"
+                "team": "Arsenal",
+                "record": "2-0",
+                "streak": "W2",
+                "avgMargin": 16.0,
+                "bestWin": {
+                    "date": "2/11/1986",
+                    "opponent": "Inter Milan",
+                    "result": "W",
+                    "margin": 29,
+                    "score": "@Arsenal 134, Inter Milan 105",
+                    "boxscoreUrl": "./boxes/box13-3.htm",
+                    "section": "Preseason"
+                },
+                "rosterUrl": "./rosters/roster23.htm"
+            }
+        },
+        {
+            "id": "closest-game",
+            "type": "game",
+            "title": "Closest Game of the Month",
+            "summary": "Juventus edged Atletico Madrid by 1 in the tightest finish of the sim.",
+            "tier": "Tier 3",
+            "importance": 84,
+            "data": {
+                "section": "Preseason",
+                "sectionSlug": "preseason",
+                "date": "2/11/1986",
+                "matchupText": "Juventus 120, @Atletico Madrid 119",
+                "boxscoreUrl": "./boxes/box13-6.htm",
+                "boxscoreFile": "box13-6.htm",
+                "homeTeam": "roster11",
+                "homeTeamName": "Atletico Madrid",
+                "homeScore": 119,
+                "awayTeam": "roster14",
+                "awayTeamName": "Juventus",
+                "awayScore": 120,
+                "winner": "roster14",
+                "winnerName": "Juventus",
+                "loser": "roster11",
+                "loserName": "Atletico Madrid",
+                "margin": 1
             }
         },
         {
             "id": "coldest-team",
             "type": "team_trend",
             "title": "Coldest Team of the Month",
-            "summary": "Crystal Palace had the roughest month at 0-0 and now carries a - slide.",
+            "summary": "Crystal Palace had the roughest month at 0-1 and now carries a L1 slide.",
             "tier": "Tier 1",
             "importance": 84,
             "data": {
                 "team": "Crystal Palace",
-                "record": "0-0",
-                "streak": "-",
-                "avgMargin": 0.0,
-                "worstLoss": null,
+                "record": "0-1",
+                "streak": "L1",
+                "avgMargin": -42.0,
+                "worstLoss": {
+                    "date": "1/11/1986",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "L",
+                    "margin": 42,
+                    "score": "@Paris Saint-Germain 116, Crystal Palace 74",
+                    "boxscoreUrl": "./boxes/box12-1.htm",
+                    "section": "Preseason"
+                },
                 "rosterUrl": "./rosters/roster6.htm"
+            }
+        },
+        {
+            "id": "upset-of-the-month",
+            "type": "game",
+            "title": "Upset of the Month",
+            "summary": "Paris Saint-Germain landed the sharpest upset of the sim by beating Crystal Palace.",
+            "tier": "Tier 1",
+            "importance": 82,
+            "data": {
+                "section": "Preseason",
+                "sectionSlug": "preseason",
+                "date": "1/11/1986",
+                "matchupText": "@Paris Saint-Germain 116, Crystal Palace 74",
+                "boxscoreUrl": "./boxes/box12-1.htm",
+                "boxscoreFile": "box12-1.htm",
+                "homeTeam": "roster21",
+                "homeTeamName": "Paris Saint-Germain",
+                "homeScore": 116,
+                "awayTeam": "roster6",
+                "awayTeamName": "Crystal Palace",
+                "awayScore": 74,
+                "winner": "roster21",
+                "winnerName": "Paris Saint-Germain",
+                "loser": "roster6",
+                "loserName": "Crystal Palace",
+                "margin": 42
             }
         },
         {
             "id": "tier-1-relegation-watch",
             "type": "race",
             "title": "Tier 1 Relegation Watch",
-            "summary": "Paris Saint-Germain sits on the current relegation line, with FL Fart close enough to keep the race live.",
+            "summary": "Benfica sits on the current relegation line, with Crystal Palace close enough to keep the race live.",
             "tier": "Tier 1",
             "importance": 78,
             "data": {
@@ -70,32 +170,44 @@
                 "tier": "Tier 1",
                 "type": "relegation",
                 "slots": 2,
-                "lineTeam": "Paris Saint-Germain",
-                "lineRecord": "0-0",
+                "lineTeam": "Benfica",
+                "lineRecord": "0-1",
                 "entries": [
                     {
-                        "team": "FL Fart",
-                        "record": "0-0",
-                        "standingRank": 8,
-                        "streak": "-",
-                        "last3": "-",
-                        "avgMargin": 0.0,
-                        "pointDiff": 0,
+                        "team": "Crystal Palace",
+                        "record": "0-1",
+                        "standingRank": 1,
+                        "streak": "L1",
+                        "last3": "L",
+                        "avgMargin": -42.0,
+                        "pointDiff": -42,
                         "gapToLine": 0,
                         "status": "on_or_below_line",
-                        "rosterUrl": "./rosters/roster27.htm"
+                        "rosterUrl": "./rosters/roster6.htm"
                     },
                     {
-                        "team": "Paris Saint-Germain",
-                        "record": "0-0",
-                        "standingRank": 7,
-                        "streak": "-",
-                        "last3": "-",
-                        "avgMargin": 0.0,
-                        "pointDiff": 0,
+                        "team": "Benfica",
+                        "record": "0-1",
+                        "standingRank": 5,
+                        "streak": "L1",
+                        "last3": "L",
+                        "avgMargin": -3.0,
+                        "pointDiff": -3,
                         "gapToLine": 0,
                         "status": "on_or_below_line",
-                        "rosterUrl": "./rosters/roster21.htm"
+                        "rosterUrl": "./rosters/roster13.htm"
+                    },
+                    {
+                        "team": "Real Madrid",
+                        "record": "0-1",
+                        "standingRank": 2,
+                        "streak": "L1",
+                        "last3": "L",
+                        "avgMargin": -3.0,
+                        "pointDiff": -3,
+                        "gapToLine": 0,
+                        "status": "on_or_below_line",
+                        "rosterUrl": "./rosters/roster8.htm"
                     },
                     {
                         "team": "Ajax",
@@ -108,18 +220,6 @@
                         "gapToLine": 0,
                         "status": "on_or_below_line",
                         "rosterUrl": "./rosters/roster18.htm"
-                    },
-                    {
-                        "team": "Benfica",
-                        "record": "0-0",
-                        "standingRank": 5,
-                        "streak": "-",
-                        "last3": "-",
-                        "avgMargin": 0.0,
-                        "pointDiff": 0,
-                        "gapToLine": 0,
-                        "status": "on_or_below_line",
-                        "rosterUrl": "./rosters/roster13.htm"
                     }
                 ]
             }
@@ -128,7 +228,7 @@
             "id": "tier-2-promotion-watch",
             "type": "race",
             "title": "Tier 2 Promotion Watch",
-            "summary": "AC Milan sits on the current promotion line, with Bayern Munich close enough to keep the race live.",
+            "summary": "Chelsea sits on the current promotion line, with Arsenal close enough to keep the race live.",
             "tier": "Tier 2",
             "importance": 78,
             "data": {
@@ -136,44 +236,44 @@
                 "tier": "Tier 2",
                 "type": "promotion",
                 "slots": 2,
-                "lineTeam": "AC Milan",
-                "lineRecord": "0-0",
+                "lineTeam": "Chelsea",
+                "lineRecord": "1-0",
                 "entries": [
                     {
-                        "team": "Bayern Munich",
-                        "record": "0-0",
-                        "standingRank": 1,
-                        "streak": "-",
-                        "last3": "-",
-                        "avgMargin": 0.0,
-                        "pointDiff": 0,
+                        "team": "Arsenal",
+                        "record": "2-0",
+                        "standingRank": 7,
+                        "streak": "W2",
+                        "last3": "WW",
+                        "avgMargin": 16.0,
+                        "pointDiff": 32,
+                        "gapToLine": -1,
+                        "status": "on_or_above_line",
+                        "rosterUrl": "./rosters/roster23.htm"
+                    },
+                    {
+                        "team": "Chelsea",
+                        "record": "1-0",
+                        "standingRank": 5,
+                        "streak": "W1",
+                        "last3": "W",
+                        "avgMargin": 19.0,
+                        "pointDiff": 19,
                         "gapToLine": 0,
                         "status": "on_or_above_line",
-                        "rosterUrl": "./rosters/roster7.htm"
+                        "rosterUrl": "./rosters/roster17.htm"
                     },
                     {
                         "team": "AC Milan",
-                        "record": "0-0",
+                        "record": "1-0",
                         "standingRank": 2,
-                        "streak": "-",
-                        "last3": "-",
-                        "avgMargin": 0.0,
-                        "pointDiff": 0,
+                        "streak": "W1",
+                        "last3": "W",
+                        "avgMargin": 11.0,
+                        "pointDiff": 11,
                         "gapToLine": 0,
                         "status": "on_or_above_line",
                         "rosterUrl": "./rosters/roster9.htm"
-                    },
-                    {
-                        "team": "Marseille",
-                        "record": "0-0",
-                        "standingRank": 3,
-                        "streak": "-",
-                        "last3": "-",
-                        "avgMargin": 0.0,
-                        "pointDiff": 0,
-                        "gapToLine": 0,
-                        "status": "on_or_above_line",
-                        "rosterUrl": "./rosters/roster15.htm"
                     },
                     {
                         "team": "AC Sparta Praha",
@@ -183,8 +283,8 @@
                         "last3": "-",
                         "avgMargin": 0.0,
                         "pointDiff": 0,
-                        "gapToLine": 0,
-                        "status": "on_or_above_line",
+                        "gapToLine": 1,
+                        "status": "chasing",
                         "rosterUrl": "./rosters/roster16.htm"
                     }
                 ]
@@ -194,7 +294,7 @@
             "id": "tier-2-relegation-watch",
             "type": "race",
             "title": "Tier 2 Relegation Watch",
-            "summary": "Inter Milan sits on the current relegation line, with Arsenal close enough to keep the race live.",
+            "summary": "Inter Milan sits on the current relegation line, with Bayern Munich close enough to keep the race live.",
             "tier": "Tier 2",
             "importance": 78,
             "data": {
@@ -203,43 +303,43 @@
                 "type": "relegation",
                 "slots": 1,
                 "lineTeam": "Inter Milan",
-                "lineRecord": "0-0",
+                "lineRecord": "0-2",
                 "entries": [
                     {
                         "team": "Inter Milan",
-                        "record": "0-0",
+                        "record": "0-2",
                         "standingRank": 8,
-                        "streak": "-",
-                        "last3": "-",
-                        "avgMargin": 0.0,
-                        "pointDiff": 0,
+                        "streak": "L2",
+                        "last3": "LL",
+                        "avgMargin": -20.0,
+                        "pointDiff": -40,
                         "gapToLine": 0,
                         "status": "on_or_below_line",
                         "rosterUrl": "./rosters/roster26.htm"
                     },
                     {
-                        "team": "Arsenal",
-                        "record": "0-0",
-                        "standingRank": 7,
-                        "streak": "-",
-                        "last3": "-",
-                        "avgMargin": 0.0,
-                        "pointDiff": 0,
+                        "team": "Bayern Munich",
+                        "record": "0-1",
+                        "standingRank": 1,
+                        "streak": "L1",
+                        "last3": "L",
+                        "avgMargin": -19.0,
+                        "pointDiff": -19,
                         "gapToLine": 0,
                         "status": "on_or_below_line",
-                        "rosterUrl": "./rosters/roster23.htm"
+                        "rosterUrl": "./rosters/roster7.htm"
                     },
                     {
-                        "team": "Aston Villa",
-                        "record": "0-0",
-                        "standingRank": 6,
-                        "streak": "-",
-                        "last3": "-",
-                        "avgMargin": 0.0,
-                        "pointDiff": 0,
+                        "team": "Marseille",
+                        "record": "0-1",
+                        "standingRank": 3,
+                        "streak": "L1",
+                        "last3": "L",
+                        "avgMargin": -3.0,
+                        "pointDiff": -3,
                         "gapToLine": 0,
                         "status": "on_or_below_line",
-                        "rosterUrl": "./rosters/roster19.htm"
+                        "rosterUrl": "./rosters/roster15.htm"
                     }
                 ]
             }
@@ -248,7 +348,7 @@
             "id": "tier-3-promotion-watch",
             "type": "race",
             "title": "Tier 3 Promotion Watch",
-            "summary": "Manchester United sits on the current promotion line, with Atletico Madrid close enough to keep the race live.",
+            "summary": "Monaco sits on the current promotion line, with Valencia close enough to keep the race live.",
             "tier": "Tier 3",
             "importance": 78,
             "data": {
@@ -256,44 +356,44 @@
                 "tier": "Tier 3",
                 "type": "promotion",
                 "slots": 1,
-                "lineTeam": "Manchester United",
-                "lineRecord": "0-0",
+                "lineTeam": "Monaco",
+                "lineRecord": "1-0",
                 "entries": [
                     {
-                        "team": "Manchester United",
-                        "record": "0-0",
-                        "standingRank": 1,
-                        "streak": "-",
-                        "last3": "-",
-                        "avgMargin": 0.0,
-                        "pointDiff": 0,
+                        "team": "Monaco",
+                        "record": "1-0",
+                        "standingRank": 4,
+                        "streak": "W1",
+                        "last3": "W",
+                        "avgMargin": 23.0,
+                        "pointDiff": 23,
                         "gapToLine": 0,
                         "status": "on_or_above_line",
-                        "rosterUrl": "./rosters/roster5.htm"
+                        "rosterUrl": "./rosters/roster20.htm"
+                    },
+                    {
+                        "team": "Valencia",
+                        "record": "1-0",
+                        "standingRank": 7,
+                        "streak": "W1",
+                        "last3": "W",
+                        "avgMargin": 20.0,
+                        "pointDiff": 20,
+                        "gapToLine": 0,
+                        "status": "on_or_above_line",
+                        "rosterUrl": "./rosters/roster25.htm"
                     },
                     {
                         "team": "Atletico Madrid",
-                        "record": "0-0",
+                        "record": "1-1",
                         "standingRank": 2,
-                        "streak": "-",
-                        "last3": "-",
-                        "avgMargin": 0.0,
-                        "pointDiff": 0,
+                        "streak": "L1",
+                        "last3": "WL",
+                        "avgMargin": 2.0,
+                        "pointDiff": 4,
                         "gapToLine": 0,
                         "status": "on_or_above_line",
                         "rosterUrl": "./rosters/roster11.htm"
-                    },
-                    {
-                        "team": "Juventus",
-                        "record": "0-0",
-                        "standingRank": 3,
-                        "streak": "-",
-                        "last3": "-",
-                        "avgMargin": 0.0,
-                        "pointDiff": 0,
-                        "gapToLine": 0,
-                        "status": "on_or_above_line",
-                        "rosterUrl": "./rosters/roster14.htm"
                     }
                 ]
             }

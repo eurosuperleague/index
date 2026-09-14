@@ -1,4 +1,38 @@
 {
     "source": "injuries.htm",
-    "injuries": []
+    "injuries": [
+        {
+            "pos": "SG",
+            "name": "Alvin Robertson",
+            "url": "",
+            "team": "roster20",
+            "teamName": "Monaco",
+            "rosterUrl": "./rosters/roster20.htm",
+            "length": "4",
+            "injury": "Fractured Nose",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "C",
+            "name": "Kyle O'Quinn",
+            "url": "",
+            "team": "roster14",
+            "teamName": "Juventus",
+            "rosterUrl": "./rosters/roster14.htm",
+            "length": "2",
+            "injury": "Hyperextended Knee",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "C",
+            "name": "Rick Mahorn",
+            "url": "",
+            "team": "roster12",
+            "teamName": "AFC Richmond",
+            "rosterUrl": "./rosters/roster12.htm",
+            "length": "1",
+            "injury": "Stiff Neck",
+            "rowClass": "row1"
+        }
+    ]
 }

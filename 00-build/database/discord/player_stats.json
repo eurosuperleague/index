@@ -902,8 +902,8 @@
   {
     "id": "player745",
     "name": "Al Wood",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster16",
+    "team": "AC Sparta Praha",
     "pos": "SF",
     "statLine": "8.8 PTS, 1.6 DRB, 1.9 AST, 0.7 STL, 0.2 BLK in 17.8 MIN",
     "season": {
@@ -2282,8 +2282,8 @@
   {
     "id": "player1318",
     "name": "Alexey Shved",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster16",
+    "team": "AC Sparta Praha",
     "pos": "PG",
     "statLine": "11.7 PTS, 2.3 DRB, 3.8 AST, 1.0 STL, 0.3 BLK in 32.8 MIN",
     "season": {
@@ -6902,8 +6902,8 @@
   {
     "id": "player889",
     "name": "Billy Knight",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster14",
+    "team": "Juventus",
     "pos": "SG",
     "statLine": "10.9 PTS, 1.3 DRB, 1.0 AST, 0.6 STL, 0.1 BLK in 17.1 MIN",
     "season": {
@@ -6962,8 +6962,8 @@
   {
     "id": "player1096",
     "name": "Billy McKinney",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster14",
+    "team": "Juventus",
     "pos": "PG",
     "statLine": "4.8 PTS, 0.6 DRB, 2.4 AST, 0.8 STL, 0.2 BLK in 12.4 MIN",
     "season": {
@@ -10382,8 +10382,8 @@
   {
     "id": "player624",
     "name": "Cameron Thomas",
-    "teamId": "roster13",
-    "team": "Benfica",
+    "teamId": "roster6",
+    "team": "Crystal Palace",
     "pos": "SG",
     "statLine": "4.7 PTS, 1.3 DRB, 0.7 AST, 0.5 STL, 0.1 BLK in 13.2 MIN",
     "season": {
@@ -13502,8 +13502,8 @@
   {
     "id": "player1296",
     "name": "Chris Morris",
-    "teamId": "roster6",
-    "team": "Crystal Palace",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "SF",
     "statLine": "4.2 PTS, 1.4 DRB, 0.8 AST, 0.6 STL, 0.2 BLK in 11.5 MIN",
     "season": {
@@ -16082,8 +16082,8 @@
   {
     "id": "player721",
     "name": "Dan Roundfield",
-    "teamId": "roster9",
-    "team": "AC Milan",
+    "teamId": "roster6",
+    "team": "Crystal Palace",
     "pos": "PF",
     "statLine": "18.5 PTS, 6.1 DRB, 2.5 AST, 0.8 STL, 1.4 BLK in 35.7 MIN",
     "season": {
@@ -20402,8 +20402,8 @@
   {
     "id": "player1348",
     "name": "Dion Waiters",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster10",
+    "team": "Brighton",
     "pos": "SG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -22742,8 +22742,8 @@
   {
     "id": "player739",
     "name": "Eddie Johnson",
-    "teamId": "roster21",
-    "team": "Paris Saint-Germain",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "PG",
     "statLine": "6.5 PTS, 1.0 DRB, 2.4 AST, 0.8 STL, 0.1 BLK in 18.3 MIN",
     "season": {
@@ -27722,8 +27722,8 @@
   {
     "id": "player1103",
     "name": "Garry Witts",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster14",
+    "team": "Juventus",
     "pos": "SF",
     "statLine": "6.8 PTS, 1.9 DRB, 1.0 AST, 0.5 STL, 0.1 BLK in 15.4 MIN",
     "season": {
@@ -28502,8 +28502,8 @@
   {
     "id": "player764",
     "name": "George Johnson",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster17",
+    "team": "Chelsea",
     "pos": "C",
     "statLine": "6.9 PTS, 4.4 DRB, 1.3 AST, 1.3 STL, 0.6 BLK in 26.1 MIN",
     "season": {
@@ -29522,8 +29522,8 @@
   {
     "id": "player429",
     "name": "Gordan Giricek",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster16",
+    "team": "AC Sparta Praha",
     "pos": "SG",
     "statLine": "0.0 PTS, 0.1 DRB, 0.0 AST, 0.1 STL, 0.0 BLK in 2.9 MIN",
     "season": {
@@ -41162,9 +41162,9 @@
   {
     "id": "player878",
     "name": "John Lucas",
-    "teamId": "roster13",
-    "team": "Benfica",
-    "pos": "SG",
+    "teamId": "FA",
+    "team": "FA",
+    "pos": "PG",
     "statLine": "4.5 PTS, 1.7 DRB, 5.3 AST, 1.4 STL, 0.2 BLK in 24.3 MIN",
     "season": {
       "season": 1985,
@@ -43382,8 +43382,8 @@
   {
     "id": "player258",
     "name": "Jrue Holiday",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster22",
+    "team": "Tottenham Hotspur",
     "pos": "PG",
     "statLine": "7.1 PTS, 2.6 DRB, 3.7 AST, 1.3 STL, 0.2 BLK in 27.8 MIN",
     "season": {
@@ -44402,8 +44402,8 @@
   {
     "id": "player671",
     "name": "Keith Lee",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster22",
+    "team": "Tottenham Hotspur",
     "pos": "PF",
     "statLine": "4.2 PTS, 3.4 DRB, 1.0 AST, 0.4 STL, 1.2 BLK in 16.6 MIN",
     "season": {
@@ -46262,8 +46262,8 @@
   {
     "id": "player249",
     "name": "Killian Hayes",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster16",
+    "team": "AC Sparta Praha",
     "pos": "PG",
     "statLine": "5.6 PTS, 2.2 DRB, 2.4 AST, 1.6 STL, 0.1 BLK in 20.4 MIN",
     "season": {
@@ -46442,8 +46442,8 @@
   {
     "id": "player636",
     "name": "Kirk Hinrich",
-    "teamId": "roster21",
-    "team": "Paris Saint-Germain",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "PG",
     "statLine": "13.8 PTS, 2.5 DRB, 6.7 AST, 1.3 STL, 0.2 BLK in 35.1 MIN",
     "season": {
@@ -46502,8 +46502,8 @@
   {
     "id": "player97",
     "name": "Kirk Snyder",
-    "teamId": "roster24",
-    "team": "Barcelona",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "SG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -47402,8 +47402,8 @@
   {
     "id": "player357",
     "name": "Landry Shamet",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster16",
+    "team": "AC Sparta Praha",
     "pos": "SG",
     "statLine": "2.3 PTS, 0.3 DRB, 0.3 AST, 0.1 STL, 0.1 BLK in 5.1 MIN",
     "season": {
@@ -50522,8 +50522,8 @@
   {
     "id": "player96",
     "name": "Malik Sealy",
-    "teamId": "roster24",
-    "team": "Barcelona",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "SG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -52622,8 +52622,8 @@
   {
     "id": "player732",
     "name": "Maurice Lucas",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster17",
+    "team": "Chelsea",
     "pos": "PF",
     "statLine": "5.5 PTS, 2.3 DRB, 1.1 AST, 0.1 STL, 0.3 BLK in 13.6 MIN",
     "season": {
@@ -54362,8 +54362,8 @@
   {
     "id": "player738",
     "name": "Mike Dunleavy",
-    "teamId": "roster21",
-    "team": "Paris Saint-Germain",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "SG",
     "statLine": "12.1 PTS, 2.1 DRB, 3.8 AST, 1.7 STL, 0.0 BLK in 26.7 MIN",
     "season": {
@@ -55262,8 +55262,8 @@
   {
     "id": "player93",
     "name": "Miles Plumlee",
-    "teamId": "roster22",
-    "team": "Tottenham Hotspur",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "PF",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -58742,8 +58742,8 @@
   {
     "id": "player621",
     "name": "Ousmane Dieng",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster16",
+    "team": "AC Sparta Praha",
     "pos": "PF",
     "statLine": "6.8 PTS, 3.7 DRB, 2.4 AST, 0.6 STL, 0.6 BLK in 25.6 MIN",
     "season": {
@@ -61982,8 +61982,8 @@
   {
     "id": "player1298",
     "name": "Rashad McCants",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster16",
+    "team": "AC Sparta Praha",
     "pos": "SG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -65702,8 +65702,8 @@
   {
     "id": "player767",
     "name": "Ron Brewer",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster17",
+    "team": "Chelsea",
     "pos": "SG",
     "statLine": "7.4 PTS, 1.1 DRB, 1.1 AST, 0.8 STL, 0.2 BLK in 17.0 MIN",
     "season": {
@@ -66182,8 +66182,8 @@
   {
     "id": "player744",
     "name": "Rory Sparrow",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster24",
+    "team": "Barcelona",
     "pos": "PG",
     "statLine": "8.3 PTS, 2.1 DRB, 8.6 AST, 1.4 STL, 0.2 BLK in 36.0 MIN",
     "season": {
@@ -66480,70 +66480,10 @@
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-player.htm?id=player1240"
   },
   {
-    "id": "player136",
-    "name": "Ruben Patterson",
-    "teamId": "FA",
-    "team": "FA",
-    "pos": "SF",
-    "statLine": "1.3 PTS, 0.3 DRB, 0.1 AST, 0.1 STL, 0.0 BLK in 2.5 MIN",
-    "season": {
-      "season": 1984,
-      "lge": "ECL",
-      "team": "INT",
-      "g": 16,
-      "gs": 0,
-      "min": 2.5,
-      "pts": 1.3,
-      "orb": 0.3,
-      "drb": 0.3,
-      "ast": 0.1,
-      "to": 0.4,
-      "a_t": 0.29,
-      "stl": 0.1,
-      "blk": 0.0,
-      "pf": 0.1,
-      "fg_pct": 0.538,
-      "ft_pct": 1.0,
-      "3p_pct": 0.0
-    },
-    "shooting": {
-      "fgm": 0.4,
-      "fga": 0.8,
-      "fg_pct": 0.538,
-      "ftm": 0.4,
-      "fta": 0.4,
-      "ft_pct": 1.0,
-      "inm": 0.3,
-      "ina": 0.4,
-      "in_pct": 0.833,
-      "jsm": 0.1,
-      "jsa": 0.4,
-      "js_pct": 0.333,
-      "3pm": 0.0,
-      "3pa": 0.1,
-      "3p_pct": 0.0
-    },
-    "efficiency": {
-      "plus_minus": -1.6,
-      "per": 13.8,
-      "ts_pct": 0.625
-    },
-    "careerHighs": {
-      "pts": 0,
-      "reb": 0,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "fgm": 0,
-      "3pm": 0
-    },
-    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-player.htm?id=player136"
-  },
-  {
     "id": "player323",
     "name": "Ruben Patterson",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster24",
+    "team": "Barcelona",
     "pos": "PF",
     "statLine": "8.4 PTS, 2.6 DRB, 0.9 AST, 1.1 STL, 0.3 BLK in 19.0 MIN",
     "season": {
@@ -73802,8 +73742,8 @@
   {
     "id": "player455",
     "name": "Tony Battie",
-    "teamId": "roster13",
-    "team": "Benfica",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "C",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -77942,8 +77882,8 @@
   {
     "id": "player912",
     "name": "Wes Matthews",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster6",
+    "team": "Crystal Palace",
     "pos": "PG",
     "statLine": "17.0 PTS, 3.2 DRB, 7.0 AST, 1.6 STL, 0.2 BLK in 36.4 MIN",
     "season": {
@@ -79382,8 +79322,8 @@
   {
     "id": "player1313",
     "name": "Zendon Hamilton",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster26",
+    "team": "Inter Milan",
     "pos": "C",
     "statLine": "2.0 PTS, 1.2 DRB, 0.6 AST, 0.2 STL, 0.3 BLK in 9.5 MIN",
     "season": {
