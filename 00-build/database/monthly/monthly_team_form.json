@@ -23,7 +23,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Crystal Palace",
                         "result": "W",
                         "margin": 42,
@@ -33,7 +33,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "1/11/1986",
+                    "date": "11/1/1986",
                     "opponent": "Crystal Palace",
                     "result": "W",
                     "margin": 42,
@@ -45,7 +45,7 @@
                 "closeGames": [],
                 "blowoutWins": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Crystal Palace",
                         "result": "W",
                         "margin": 42,
@@ -77,7 +77,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Real Madrid",
                         "result": "W",
                         "margin": 3,
@@ -87,7 +87,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "1/11/1986",
+                    "date": "11/1/1986",
                     "opponent": "Real Madrid",
                     "result": "W",
                     "margin": 3,
@@ -98,7 +98,7 @@
                 "worstLoss": null,
                 "closeGames": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Real Madrid",
                         "result": "W",
                         "margin": 3,
@@ -131,7 +131,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Benfica",
                         "result": "W",
                         "margin": 3,
@@ -141,7 +141,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "Benfica",
                     "result": "W",
                     "margin": 3,
@@ -152,7 +152,7 @@
                 "worstLoss": null,
                 "closeGames": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Benfica",
                         "result": "W",
                         "margin": 3,
@@ -237,7 +237,7 @@
                 "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 3,
@@ -248,7 +248,7 @@
                 ],
                 "bestWin": null,
                 "worstLoss": {
-                    "date": "1/11/1986",
+                    "date": "11/1/1986",
                     "opponent": "AFC Richmond",
                     "result": "L",
                     "margin": 3,
@@ -258,7 +258,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 3,
@@ -291,7 +291,7 @@
                 "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "FL Fart",
                         "result": "L",
                         "margin": 3,
@@ -302,7 +302,7 @@
                 ],
                 "bestWin": null,
                 "worstLoss": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "FL Fart",
                     "result": "L",
                     "margin": 3,
@@ -312,7 +312,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "FL Fart",
                         "result": "L",
                         "margin": 3,
@@ -345,7 +345,7 @@
                 "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Paris Saint-Germain",
                         "result": "L",
                         "margin": 42,
@@ -356,7 +356,7 @@
                 ],
                 "bestWin": null,
                 "worstLoss": {
-                    "date": "1/11/1986",
+                    "date": "11/1/1986",
                     "opponent": "Paris Saint-Germain",
                     "result": "L",
                     "margin": 42,
@@ -368,7 +368,7 @@
                 "blowoutWins": [],
                 "blowoutLosses": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Paris Saint-Germain",
                         "result": "L",
                         "margin": 42,
@@ -401,7 +401,7 @@
                 "streak": "W2",
                 "recentResults": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 3,
@@ -410,7 +410,7 @@
                         "section": "Preseason"
                     },
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Inter Milan",
                         "result": "W",
                         "margin": 29,
@@ -420,7 +420,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "Inter Milan",
                     "result": "W",
                     "margin": 29,
@@ -431,7 +431,7 @@
                 "worstLoss": null,
                 "closeGames": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 3,
@@ -442,7 +442,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Inter Milan",
                         "result": "W",
                         "margin": 29,
@@ -474,7 +474,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Bayern Munich",
                         "result": "W",
                         "margin": 19,
@@ -484,7 +484,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "Bayern Munich",
                     "result": "W",
                     "margin": 19,
@@ -496,7 +496,7 @@
                 "closeGames": [],
                 "blowoutWins": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Bayern Munich",
                         "result": "W",
                         "margin": 19,
@@ -528,7 +528,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Inter Milan",
                         "result": "W",
                         "margin": 11,
@@ -538,7 +538,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "1/11/1986",
+                    "date": "11/1/1986",
                     "opponent": "Inter Milan",
                     "result": "W",
                     "margin": 11,
@@ -624,7 +624,7 @@
                 "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 3,
@@ -635,7 +635,7 @@
                 ],
                 "bestWin": null,
                 "worstLoss": {
-                    "date": "1/11/1986",
+                    "date": "11/1/1986",
                     "opponent": "Arsenal",
                     "result": "L",
                     "margin": 3,
@@ -645,7 +645,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 3,
@@ -678,7 +678,7 @@
                 "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Chelsea",
                         "result": "L",
                         "margin": 19,
@@ -689,7 +689,7 @@
                 ],
                 "bestWin": null,
                 "worstLoss": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "Chelsea",
                     "result": "L",
                     "margin": 19,
@@ -701,7 +701,7 @@
                 "blowoutWins": [],
                 "blowoutLosses": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Chelsea",
                         "result": "L",
                         "margin": 19,
@@ -732,7 +732,7 @@
                 "streak": "L2",
                 "recentResults": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "AC Milan",
                         "result": "L",
                         "margin": 11,
@@ -741,7 +741,7 @@
                         "section": "Preseason"
                     },
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 29,
@@ -752,7 +752,7 @@
                 ],
                 "bestWin": null,
                 "worstLoss": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "Arsenal",
                     "result": "L",
                     "margin": 29,
@@ -764,7 +764,7 @@
                 "blowoutWins": [],
                 "blowoutLosses": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 29,
@@ -797,7 +797,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Manchester United",
                         "result": "W",
                         "margin": 23,
@@ -807,7 +807,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "Manchester United",
                     "result": "W",
                     "margin": 23,
@@ -819,7 +819,7 @@
                 "closeGames": [],
                 "blowoutWins": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Manchester United",
                         "result": "W",
                         "margin": 23,
@@ -851,7 +851,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Manchester City",
                         "result": "W",
                         "margin": 20,
@@ -861,7 +861,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "Manchester City",
                     "result": "W",
                     "margin": 20,
@@ -873,7 +873,7 @@
                 "closeGames": [],
                 "blowoutWins": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Manchester City",
                         "result": "W",
                         "margin": 20,
@@ -905,7 +905,7 @@
                 "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Manchester United",
                         "result": "W",
                         "margin": 5,
@@ -914,7 +914,7 @@
                         "section": "Preseason"
                     },
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Juventus",
                         "result": "L",
                         "margin": 1,
@@ -924,7 +924,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "1/11/1986",
+                    "date": "11/1/1986",
                     "opponent": "Manchester United",
                     "result": "W",
                     "margin": 5,
@@ -933,7 +933,7 @@
                     "section": "Preseason"
                 },
                 "worstLoss": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "Juventus",
                     "result": "L",
                     "margin": 1,
@@ -943,7 +943,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Manchester United",
                         "result": "W",
                         "margin": 5,
@@ -952,7 +952,7 @@
                         "section": "Preseason"
                     },
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Juventus",
                         "result": "L",
                         "margin": 1,
@@ -985,7 +985,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 1,
@@ -995,7 +995,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "Atletico Madrid",
                     "result": "W",
                     "margin": 1,
@@ -1006,7 +1006,7 @@
                 "worstLoss": null,
                 "closeGames": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 1,
@@ -1091,7 +1091,7 @@
                 "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Valencia",
                         "result": "L",
                         "margin": 20,
@@ -1102,7 +1102,7 @@
                 ],
                 "bestWin": null,
                 "worstLoss": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "Valencia",
                     "result": "L",
                     "margin": 20,
@@ -1114,7 +1114,7 @@
                 "blowoutWins": [],
                 "blowoutLosses": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Valencia",
                         "result": "L",
                         "margin": 20,
@@ -1145,7 +1145,7 @@
                 "streak": "L2",
                 "recentResults": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Atletico Madrid",
                         "result": "L",
                         "margin": 5,
@@ -1154,7 +1154,7 @@
                         "section": "Preseason"
                     },
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Monaco",
                         "result": "L",
                         "margin": 23,
@@ -1165,7 +1165,7 @@
                 ],
                 "bestWin": null,
                 "worstLoss": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "Monaco",
                     "result": "L",
                     "margin": 23,
@@ -1175,7 +1175,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "1/11/1986",
+                        "date": "11/1/1986",
                         "opponent": "Atletico Madrid",
                         "result": "L",
                         "margin": 5,
@@ -1187,7 +1187,7 @@
                 "blowoutWins": [],
                 "blowoutLosses": [
                     {
-                        "date": "2/11/1986",
+                        "date": "11/2/1986",
                         "opponent": "Monaco",
                         "result": "L",
                         "margin": 23,

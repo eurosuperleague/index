@@ -39,7 +39,7 @@
             "data": {
                 "section": "Preseason",
                 "sectionSlug": "preseason",
-                "date": "1/11/1986",
+                "date": "11/1/1986",
                 "matchupText": "@Paris Saint-Germain 116, Crystal Palace 74",
                 "boxscoreUrl": "./boxes/box12-1.htm",
                 "boxscoreFile": "box12-1.htm",
@@ -69,7 +69,7 @@
                 "streak": "W2",
                 "avgMargin": 16.0,
                 "bestWin": {
-                    "date": "2/11/1986",
+                    "date": "11/2/1986",
                     "opponent": "Inter Milan",
                     "result": "W",
                     "margin": 29,
@@ -90,7 +90,7 @@
             "data": {
                 "section": "Preseason",
                 "sectionSlug": "preseason",
-                "date": "2/11/1986",
+                "date": "11/2/1986",
                 "matchupText": "Juventus 120, @Atletico Madrid 119",
                 "boxscoreUrl": "./boxes/box13-6.htm",
                 "boxscoreFile": "box13-6.htm",
@@ -120,7 +120,7 @@
                 "streak": "L1",
                 "avgMargin": -42.0,
                 "worstLoss": {
-                    "date": "1/11/1986",
+                    "date": "11/1/1986",
                     "opponent": "Paris Saint-Germain",
                     "result": "L",
                     "margin": 42,
@@ -141,7 +141,7 @@
             "data": {
                 "section": "Preseason",
                 "sectionSlug": "preseason",
-                "date": "1/11/1986",
+                "date": "11/1/1986",
                 "matchupText": "@Paris Saint-Germain 116, Crystal Palace 74",
                 "boxscoreUrl": "./boxes/box12-1.htm",
                 "boxscoreFile": "box12-1.htm",
