@@ -19,11 +19,11 @@
         "file": "roster16.htm",
         "url": "../rosters/roster16.htm",
         "starPlayer": {
-            "name": "Steve Johnson",
-            "url": "../players/player897.htm",
-            "pos": "C",
-            "age": "26",
-            "overall": "132",
+            "name": "Doug Christie",
+            "url": "../players/player243.htm",
+            "pos": "SF",
+            "age": "25",
+            "overall": "139",
             "potential": "141"
         }
     },
@@ -36,7 +36,7 @@
             "name": "Larry Bird",
             "url": "../players/player697.htm",
             "pos": "SF",
-            "age": "26",
+            "age": "27",
             "overall": "151",
             "potential": "157"
         }
@@ -91,7 +91,7 @@
         "starPlayer": {
             "name": "Reggie Miller",
             "url": "../players/player55.htm",
-            "pos": "SG",
+            "pos": "SF",
             "age": "22",
             "overall": "141",
             "potential": "171"
@@ -147,7 +147,7 @@
         "starPlayer": {
             "name": "Kiki Vandeweghe",
             "url": "../players/player701.htm",
-            "pos": "SG",
+            "pos": "SF",
             "age": "26",
             "overall": "174",
             "potential": "174"
@@ -178,7 +178,7 @@
             "pos": "SF",
             "age": "25",
             "overall": "151",
-            "potential": "156"
+            "potential": "157"
         }
     },
     {
@@ -191,8 +191,8 @@
             "url": "../players/player1053.htm",
             "pos": "PG",
             "age": "26",
-            "overall": "141",
-            "potential": "141"
+            "overall": "142",
+            "potential": "142"
         }
     },
     {
@@ -215,12 +215,12 @@
         "file": "roster14.htm",
         "url": "../rosters/roster14.htm",
         "starPlayer": {
-            "name": "Larry Smith",
-            "url": "../players/player1061.htm",
-            "pos": "PF",
-            "age": "26",
+            "name": "Gilbert Arenas",
+            "url": "../players/player677.htm",
+            "pos": "SG",
+            "age": "21",
             "overall": "120",
-            "potential": "120"
+            "potential": "125"
         }
     },
     {
@@ -245,7 +245,7 @@
         "starPlayer": {
             "name": "Mike McGee",
             "url": "../players/player736.htm",
-            "pos": "SG",
+            "pos": "SF",
             "age": "25",
             "overall": "125",
             "potential": "130"
@@ -275,8 +275,8 @@
             "url": "../players/player423.htm",
             "pos": "SG",
             "age": "23",
-            "overall": "133",
-            "potential": "151"
+            "overall": "136",
+            "potential": "155"
         }
     },
     {
@@ -285,12 +285,12 @@
         "file": "roster21.htm",
         "url": "../rosters/roster21.htm",
         "starPlayer": {
-            "name": "Brad Davis",
-            "url": "../players/player714.htm",
-            "pos": "PG",
-            "age": "27",
-            "overall": "145",
-            "potential": "147"
+            "name": "Dan Majerle",
+            "url": "../players/player332.htm",
+            "pos": "SG",
+            "age": "26",
+            "overall": "151",
+            "potential": "155"
         }
     },
     {
@@ -315,10 +315,10 @@
         "starPlayer": {
             "name": "Hubert Davis",
             "url": "../players/player440.htm",
-            "pos": "SG",
+            "pos": "SF",
             "age": "25",
             "overall": "133",
-            "potential": "143"
+            "potential": "144"
         }
     },
     {
@@ -331,8 +331,8 @@
             "url": "../players/player180.htm",
             "pos": "SF",
             "age": "23",
-            "overall": "129",
-            "potential": "134"
+            "overall": "131",
+            "potential": "136"
         }
     }
 ]

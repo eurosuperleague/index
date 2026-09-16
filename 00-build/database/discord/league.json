@@ -6,22 +6,22 @@
       "title": "CLB Standings",
       "teams": [
         {
-          "name": "Crystal Palace",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
-        },
-        {
           "name": "Real Madrid",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "wins": 5,
+          "losses": 1,
+          "streak": "W4"
         },
         {
           "name": "Brighton",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "wins": 5,
+          "losses": 1,
+          "streak": "W5"
+        },
+        {
+          "name": "FL Fart",
+          "wins": 4,
+          "losses": 2,
+          "streak": "W3"
         }
       ]
     },
@@ -29,22 +29,22 @@
       "title": "ELB Standings",
       "teams": [
         {
-          "name": "Bayern Munich",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
-        },
-        {
           "name": "AC Milan",
-          "wins": 0,
+          "wins": 7,
           "losses": 0,
-          "streak": "-"
+          "streak": "W7"
         },
         {
-          "name": "Marseille",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "name": "Arsenal",
+          "wins": 5,
+          "losses": 1,
+          "streak": "W2"
+        },
+        {
+          "name": "Aston Villa",
+          "wins": 4,
+          "losses": 4,
+          "streak": "L1"
         }
       ]
     },
@@ -52,25 +52,56 @@
       "title": "ECL Standings",
       "teams": [
         {
-          "name": "Manchester United",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "name": "Valencia",
+          "wins": 5,
+          "losses": 1,
+          "streak": "W4"
         },
         {
-          "name": "Atletico Madrid",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "name": "Tottenham Hotspur",
+          "wins": 6,
+          "losses": 2,
+          "streak": "W1"
         },
         {
-          "name": "Juventus",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "name": "Barcelona",
+          "wins": 4,
+          "losses": 3,
+          "streak": "L1"
         }
       ]
     }
   ],
-  "leaders": []
+  "leaders": [
+    {
+      "category": "Minutes",
+      "player": "Buck Williams",
+      "team": "Benfica",
+      "value": "45.8"
+    },
+    {
+      "category": "Points",
+      "player": "Kiki Vandeweghe",
+      "team": "Brighton",
+      "value": "36.2"
+    },
+    {
+      "category": "Rebounds",
+      "player": "Moses Malone",
+      "team": "Benfica",
+      "value": "15.0"
+    },
+    {
+      "category": "Assists",
+      "player": "Maurice Cheeks",
+      "team": "Ajax",
+      "value": "11.9"
+    },
+    {
+      "category": "Steals",
+      "player": "Rickey Green",
+      "team": "Brighton",
+      "value": "3.5"
+    }
+  ]
 }

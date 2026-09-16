@@ -3,16 +3,16 @@
     "id": "roster9",
     "name": "AC Milan",
     "record": {
-      "wins": 0,
+      "wins": 7,
       "losses": 0,
-      "pct": 0.0
+      "pct": 1.0
     },
     "section": "ELB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "5-1",
+    "pf": 130.9,
+    "pa": 118.6,
+    "diff": 12.3,
+    "streak": "W7",
+    "last10": "9-1",
     "starPlayer": {
       "name": "George Gervin",
       "url": "../players/player1046.htm",
@@ -22,39 +22,39 @@
       "potential": "132"
     },
     "cap": {
-      "salary": "$74,481,521",
-      "room": "($4,481,521)"
+      "salary": "$69,889,521",
+      "room": "$110,479"
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
+        "label": "Assists",
+        "value": 30.7,
         "rank": 1
       },
       {
-        "label": "O.Rebounds",
-        "value": 0.0,
+        "label": "Steals",
+        "value": 9.3,
         "rank": 1
       },
       {
-        "label": "D.Rebounds",
-        "value": 0.0,
+        "label": "Fouls",
+        "value": 21.4,
         "rank": 1
       },
       {
-        "label": "Rebounds",
-        "value": 0.0,
+        "label": "FG%",
+        "value": 0.577,
         "rank": 1
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "11/1/1986",
-      "text": "@AC Milan 104, Inter Milan 93",
-      "boxscoreFile": "box12-3.htm"
+      "date": "27/11/1986",
+      "text": "@AC Milan 120, Bayern Munich 91",
+      "boxscoreFile": "box38-2.htm"
     },
     "nextGame": {
-      "date": "11/4/1986",
+      "date": "1/12/1986",
       "text": "Inter Milan @ AC Milan",
       "boxscoreFile": ""
     },
@@ -64,59 +64,66 @@
     "id": "roster16",
     "name": "AC Sparta Praha",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 2,
+      "losses": 5,
+      "pct": 0.286
     },
     "section": "ELB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "3-4",
+    "pf": 119.3,
+    "pa": 123.1,
+    "diff": -3.9,
+    "streak": "W1",
+    "last10": "4-6",
     "starPlayer": {
-      "name": "Steve Johnson",
-      "url": "../players/player897.htm",
-      "pos": "C",
-      "age": "26",
-      "overall": "132",
+      "name": "Doug Christie",
+      "url": "../players/player243.htm",
+      "pos": "SF",
+      "age": "25",
+      "overall": "139",
       "potential": "141"
     },
     "cap": {
-      "salary": "$46,565,880",
-      "room": "$23,434,120"
+      "salary": "$61,565,880",
+      "room": "$8,434,120"
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
         "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 13.9,
+        "rank": 3
       },
       {
-        "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "Turnovers",
+        "value": 14.1,
+        "rank": 3
       },
       {
-        "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "Blocks",
+        "value": 4.9,
+        "rank": 4
+      },
+      {
+        "label": "FG%",
+        "value": 0.518,
+        "rank": 4
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Donyell Marshall",
+        "pos": "SF",
+        "injury": "Dislocated Shoulder",
+        "length": "15"
+      }
+    ],
     "recentGame": {
-      "date": "10/30/1986",
-      "text": "@AC Sparta Praha 110, Inter Milan 96",
-      "boxscoreFile": "box10-4.htm"
+      "date": "30/11/1986",
+      "text": "@AC Sparta Praha 125, Chelsea 114",
+      "boxscoreFile": "box41-2.htm"
     },
     "nextGame": {
-      "date": "11/4/1986",
-      "text": "AC Sparta Praha @ Chelsea",
+      "date": "5/12/1986",
+      "text": "AC Sparta Praha @ Inter Milan",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster16"
@@ -125,66 +132,66 @@
     "id": "roster12",
     "name": "AFC Richmond",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 1,
+      "losses": 5,
+      "pct": 0.167
     },
     "section": "CLB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "6-0",
+    "pf": 107.3,
+    "pa": 115.8,
+    "diff": -8.5,
+    "streak": "L4",
+    "last10": "5-5",
     "starPlayer": {
       "name": "Larry Bird",
       "url": "../players/player697.htm",
       "pos": "SF",
-      "age": "26",
+      "age": "27",
       "overall": "151",
       "potential": "157"
     },
     "cap": {
-      "salary": "$108,622,200",
-      "room": "($8,622,200)"
+      "salary": "$99,472,541",
+      "room": "$527,459"
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
         "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 14.7,
+        "rank": 2
       },
       {
         "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 41.5,
+        "rank": 4
+      },
+      {
+        "label": "FT%",
+        "value": 0.759,
+        "rank": 4
+      },
+      {
+        "label": "3PT%",
+        "value": 0.342,
+        "rank": 4
       }
     ],
     "injuries": [
       {
-        "name": "Rick Mahorn",
-        "pos": "C",
-        "injury": "Stiff Neck",
-        "length": "1"
+        "name": "Shareef Abdur-Rahim",
+        "pos": "PF",
+        "injury": "Torn Ligament",
+        "length": "33"
       }
     ],
     "recentGame": {
-      "date": "11/1/1986",
-      "text": "AFC Richmond 114, @Real Madrid 111",
-      "boxscoreFile": "box12-2.htm"
+      "date": "25/11/1986",
+      "text": "@FL Fart 122, AFC Richmond 112",
+      "boxscoreFile": "box36-1.htm"
     },
     "nextGame": {
-      "date": "11/5/1986",
-      "text": "AFC Richmond @ Real Madrid",
+      "date": "1/12/1986",
+      "text": "AFC Richmond @ Paris Saint-Germain",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster12"
@@ -193,16 +200,16 @@
     "id": "roster18",
     "name": "Ajax",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 3,
+      "losses": 5,
+      "pct": 0.375
     },
     "section": "CLB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "1-5",
+    "pf": 115.8,
+    "pa": 117.5,
+    "diff": -1.8,
+    "streak": "L2",
+    "last10": "3-7",
     "starPlayer": {
       "name": "Andre Iguodala",
       "url": "../players/player1314.htm",
@@ -217,35 +224,35 @@
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
         "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 31.3,
+        "rank": 2
       },
       {
-        "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "Assists",
+        "value": 31.3,
+        "rank": 2
+      },
+      {
+        "label": "FG%",
+        "value": 0.524,
+        "rank": 2
+      },
+      {
+        "label": "3PT%",
+        "value": 0.365,
+        "rank": 3
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "10/30/1986",
-      "text": "@Real Madrid 110, Ajax 83",
-      "boxscoreFile": "box10-1.htm"
+      "date": "28/11/1986",
+      "text": "@FL Fart 128, Ajax 113",
+      "boxscoreFile": "box39-1.htm"
     },
     "nextGame": {
-      "date": "11/5/1986",
-      "text": "Ajax @ Paris Saint-Germain",
+      "date": "3/12/1986",
+      "text": "Ajax @ Real Madrid",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster18"
@@ -254,16 +261,16 @@
     "id": "roster23",
     "name": "Arsenal",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 5,
+      "losses": 1,
+      "pct": 0.833
     },
     "section": "ELB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "4-2",
+    "pf": 133.3,
+    "pa": 126.2,
+    "diff": 7.2,
+    "streak": "W2",
+    "last10": "8-2",
     "starPlayer": {
       "name": "Chris Bosh",
       "url": "../players/player622.htm",
@@ -273,40 +280,47 @@
       "potential": "143"
     },
     "cap": {
-      "salary": "$74,601,396",
-      "room": "($4,601,396)"
+      "salary": "$68,665,302",
+      "room": "$1,334,698"
     },
     "strengths": [
       {
         "label": "Points",
-        "value": 0.0,
+        "value": 133.3,
         "rank": 1
       },
       {
-        "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "Fouls",
+        "value": 21.8,
+        "rank": 2
       },
       {
-        "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "FG%",
+        "value": 0.553,
+        "rank": 2
       },
       {
-        "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "3PT%",
+        "value": 0.4,
+        "rank": 2
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Dewayne Dedmon",
+        "pos": "C",
+        "injury": "Broken Foot",
+        "length": "17"
+      }
+    ],
     "recentGame": {
-      "date": "11/2/1986",
-      "text": "@Arsenal 134, Inter Milan 105",
-      "boxscoreFile": "box13-3.htm"
+      "date": "30/11/1986",
+      "text": "Arsenal 145, @Aston Villa 133",
+      "boxscoreFile": "box41-1.htm"
     },
     "nextGame": {
-      "date": "11/6/1986",
-      "text": "Bayern Munich @ Arsenal",
+      "date": "6/12/1986",
+      "text": "Marseille @ Arsenal",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster23"
@@ -315,16 +329,16 @@
     "id": "roster19",
     "name": "Aston Villa",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 4,
+      "losses": 4,
+      "pct": 0.5
     },
     "section": "ELB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "2-3",
+    "pf": 122.4,
+    "pa": 126.8,
+    "diff": -4.4,
+    "streak": "L1",
+    "last10": "5-5",
     "starPlayer": {
       "name": "Xavier McDaniel",
       "url": "../players/player238.htm",
@@ -339,35 +353,35 @@
     },
     "strengths": [
       {
+        "label": "Turnovers",
+        "value": 12.1,
+        "rank": 1
+      },
+      {
+        "label": "Assists",
+        "value": 30.1,
+        "rank": 2
+      },
+      {
         "label": "Points",
-        "value": 0.0,
-        "rank": 1
+        "value": 122.4,
+        "rank": 3
       },
       {
-        "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "FG%",
+        "value": 0.535,
+        "rank": 3
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "10/28/1986",
-      "text": "@AC Sparta Praha 134, Aston Villa 125",
-      "boxscoreFile": "box8-3.htm"
+      "date": "30/11/1986",
+      "text": "Arsenal 145, @Aston Villa 133",
+      "boxscoreFile": "box41-1.htm"
     },
     "nextGame": {
-      "date": "11/4/1986",
-      "text": "Marseille @ Aston Villa",
+      "date": "1/12/1986",
+      "text": "Bayern Munich @ Aston Villa",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster19"
@@ -376,59 +390,66 @@
     "id": "roster11",
     "name": "Atletico Madrid",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 4,
+      "losses": 4,
+      "pct": 0.5
     },
     "section": "ECL Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "4-3",
+    "pf": 111.3,
+    "pa": 111.5,
+    "diff": -0.3,
+    "streak": "L4",
+    "last10": "5-5",
     "starPlayer": {
       "name": "Reggie Miller",
       "url": "../players/player55.htm",
-      "pos": "SG",
+      "pos": "SF",
       "age": "22",
       "overall": "141",
       "potential": "171"
     },
     "cap": {
-      "salary": "$61,678,033",
-      "room": "($11,678,033)"
+      "salary": "$45,916,213",
+      "room": "$4,083,787"
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
+        "label": "Blocks",
+        "value": 6.0,
+        "rank": 2
+      },
+      {
+        "label": "Steals",
+        "value": 10.4,
+        "rank": 3
+      },
+      {
+        "label": "FG%",
+        "value": 0.504,
+        "rank": 3
       },
       {
         "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 12.0,
+        "rank": 4
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Danny Vranes",
+        "pos": "SF",
+        "injury": "Patellar Tendanitis",
+        "length": "42"
+      }
+    ],
     "recentGame": {
-      "date": "11/2/1986",
-      "text": "Juventus 120, @Atletico Madrid 119",
-      "boxscoreFile": "box13-6.htm"
+      "date": "29/11/1986",
+      "text": "Valencia 124, @Atletico Madrid 106",
+      "boxscoreFile": "box40-3.htm"
     },
     "nextGame": {
-      "date": "11/4/1986",
-      "text": "Manchester City @ Atletico Madrid",
+      "date": "3/12/1986",
+      "text": "Atletico Madrid @ Juventus",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster11"
@@ -437,16 +458,16 @@
     "id": "roster24",
     "name": "Barcelona",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 4,
+      "losses": 3,
+      "pct": 0.571
     },
     "section": "ECL Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "3-3",
+    "pf": 131.1,
+    "pa": 121.6,
+    "diff": 9.6,
+    "streak": "L1",
+    "last10": "5-5",
     "starPlayer": {
       "name": "Paul Pierce",
       "url": "../players/player693.htm",
@@ -456,40 +477,59 @@
       "potential": "178"
     },
     "cap": {
-      "salary": "$48,910,658",
-      "room": "$1,089,342"
+      "salary": "$49,685,658",
+      "room": "$314,342"
     },
     "strengths": [
       {
         "label": "Points",
-        "value": 0.0,
+        "value": 131.1,
         "rank": 1
       },
       {
-        "label": "O.Rebounds",
-        "value": 0.0,
+        "label": "Assists",
+        "value": 30.9,
         "rank": 1
       },
       {
-        "label": "D.Rebounds",
-        "value": 0.0,
+        "label": "FG%",
+        "value": 0.57,
         "rank": 1
       },
       {
-        "label": "Rebounds",
-        "value": 0.0,
+        "label": "Adjusted FG%",
+        "value": 0.594,
         "rank": 1
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Darnell Valentine",
+        "pos": "PG",
+        "injury": "Broken Arm",
+        "length": "50"
+      },
+      {
+        "name": "Trent Tucker",
+        "pos": "SG",
+        "injury": "Concussion",
+        "length": "21"
+      },
+      {
+        "name": "Jim Spanarkel",
+        "pos": "SG",
+        "injury": "Sprained Knee",
+        "length": "6"
+      }
+    ],
     "recentGame": {
-      "date": "10/29/1986",
-      "text": "@Monaco 123, Barcelona 99",
-      "boxscoreFile": "box9-6.htm"
+      "date": "30/11/1986",
+      "text": "@Tottenham Hotspur 150, Barcelona 132",
+      "boxscoreFile": "box41-3.htm"
     },
     "nextGame": {
-      "date": "11/5/1986",
-      "text": "Monaco @ Barcelona",
+      "date": "7/12/1986",
+      "text": "Manchester United @ Barcelona",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster24"
@@ -498,16 +538,16 @@
     "id": "roster7",
     "name": "Bayern Munich",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 2,
+      "losses": 3,
+      "pct": 0.4
     },
     "section": "ELB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "4-2",
+    "pf": 112.0,
+    "pa": 114.0,
+    "diff": -2.0,
+    "streak": "L1",
+    "last10": "6-4",
     "starPlayer": {
       "name": "Kevin McHale",
       "url": "../players/player717.htm",
@@ -517,40 +557,40 @@
       "potential": "120"
     },
     "cap": {
-      "salary": "$74,296,128",
-      "room": "($4,296,128)"
+      "salary": "$66,874,319",
+      "room": "$3,125,681"
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
         "label": "O.Rebounds",
-        "value": 0.0,
+        "value": 14.8,
         "rank": 1
       },
       {
         "label": "D.Rebounds",
-        "value": 0.0,
+        "value": 34.6,
         "rank": 1
       },
       {
         "label": "Rebounds",
-        "value": 0.0,
+        "value": 49.4,
         "rank": 1
+      },
+      {
+        "label": "Blocks",
+        "value": 5.8,
+        "rank": 2
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "11/2/1986",
-      "text": "@Chelsea 130, Bayern Munich 111",
-      "boxscoreFile": "box13-2.htm"
+      "date": "27/11/1986",
+      "text": "@AC Milan 120, Bayern Munich 91",
+      "boxscoreFile": "box38-2.htm"
     },
     "nextGame": {
-      "date": "11/6/1986",
-      "text": "Bayern Munich @ Arsenal",
+      "date": "1/12/1986",
+      "text": "Bayern Munich @ Aston Villa",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster7"
@@ -559,16 +599,16 @@
     "id": "roster13",
     "name": "Benfica",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 2,
+      "losses": 4,
+      "pct": 0.333
     },
     "section": "CLB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "4-2",
+    "pf": 100.5,
+    "pa": 107.2,
+    "diff": -6.7,
+    "streak": "L4",
+    "last10": "4-6",
     "starPlayer": {
       "name": "Moses Malone",
       "url": "../players/player872.htm",
@@ -578,40 +618,47 @@
       "potential": "157"
     },
     "cap": {
-      "salary": "$99,782,239",
-      "room": "$217,761"
+      "salary": "$101,132,239",
+      "room": "($1,132,239)"
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
+        "label": "Fouls",
+        "value": 17.2,
         "rank": 1
       },
       {
-        "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "Steals",
+        "value": 11.3,
+        "rank": 2
       },
       {
         "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 42.0,
+        "rank": 3
+      },
+      {
+        "label": "FT%",
+        "value": 0.776,
+        "rank": 3
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Moses Malone",
+        "pos": "C",
+        "injury": "Broken Foot",
+        "length": "9"
+      }
+    ],
     "recentGame": {
-      "date": "11/2/1986",
-      "text": "FL Fart 114, @Benfica 111",
-      "boxscoreFile": "box13-1.htm"
+      "date": "27/11/1986",
+      "text": "Crystal Palace 108, @Benfica 101",
+      "boxscoreFile": "box38-1.htm"
     },
     "nextGame": {
-      "date": "11/4/1986",
-      "text": "Brighton @ Benfica",
+      "date": "1/12/1986",
+      "text": "Benfica @ Brighton",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster13"
@@ -620,59 +667,59 @@
     "id": "roster10",
     "name": "Brighton",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 5,
+      "losses": 1,
+      "pct": 0.833
     },
     "section": "CLB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "3-3",
+    "pf": 116.0,
+    "pa": 111.3,
+    "diff": 4.7,
+    "streak": "W5",
+    "last10": "8-2",
     "starPlayer": {
       "name": "Kiki Vandeweghe",
       "url": "../players/player701.htm",
-      "pos": "SG",
+      "pos": "SF",
       "age": "26",
       "overall": "174",
       "potential": "174"
     },
     "cap": {
-      "salary": "$98,852,613",
-      "room": "$1,147,387"
+      "salary": "$87,637,810",
+      "room": "$12,362,190"
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
+        "label": "FG%",
+        "value": 0.541,
         "rank": 1
       },
       {
-        "label": "O.Rebounds",
-        "value": 0.0,
+        "label": "Points Per Shot",
+        "value": 1.38,
         "rank": 1
       },
       {
-        "label": "D.Rebounds",
-        "value": 0.0,
+        "label": "Adjusted FG%",
+        "value": 0.575,
         "rank": 1
       },
       {
-        "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "Blocks",
+        "value": 10.8,
+        "rank": 2
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "10/30/1986",
-      "text": "@FL Fart 108, Brighton 103",
-      "boxscoreFile": "box10-3.htm"
+      "date": "25/11/1986",
+      "text": "@Brighton 123, Paris Saint-Germain 116",
+      "boxscoreFile": "box36-2.htm"
     },
     "nextGame": {
-      "date": "11/4/1986",
-      "text": "Brighton @ Benfica",
+      "date": "1/12/1986",
+      "text": "Benfica @ Brighton",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster10"
@@ -681,16 +728,16 @@
     "id": "roster17",
     "name": "Chelsea",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 2,
+      "losses": 5,
+      "pct": 0.286
     },
     "section": "ELB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "3-3",
+    "pf": 120.9,
+    "pa": 126.3,
+    "diff": -5.4,
+    "streak": "L2",
+    "last10": "5-5",
     "starPlayer": {
       "name": "Jim Paxson",
       "url": "../players/player875.htm",
@@ -705,35 +752,35 @@
     },
     "strengths": [
       {
+        "label": "Turnovers",
+        "value": 12.9,
+        "rank": 2
+      },
+      {
+        "label": "Assists",
+        "value": 27.6,
+        "rank": 3
+      },
+      {
+        "label": "Steals",
+        "value": 8.7,
+        "rank": 3
+      },
+      {
         "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 120.9,
+        "rank": 4
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "11/2/1986",
-      "text": "@Chelsea 130, Bayern Munich 111",
-      "boxscoreFile": "box13-2.htm"
+      "date": "30/11/1986",
+      "text": "@AC Sparta Praha 125, Chelsea 114",
+      "boxscoreFile": "box41-2.htm"
     },
     "nextGame": {
-      "date": "11/4/1986",
-      "text": "AC Sparta Praha @ Chelsea",
+      "date": "5/12/1986",
+      "text": "Bayern Munich @ Chelsea",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster17"
@@ -742,23 +789,23 @@
     "id": "roster6",
     "name": "Crystal Palace",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 2,
+      "losses": 5,
+      "pct": 0.286
     },
     "section": "CLB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "2-4",
+    "pf": 105.0,
+    "pa": 112.1,
+    "diff": -7.1,
+    "streak": "W1",
+    "last10": "4-6",
     "starPlayer": {
       "name": "Rolando Blackman",
       "url": "../players/player871.htm",
       "pos": "SF",
       "age": "25",
       "overall": "151",
-      "potential": "156"
+      "potential": "157"
     },
     "cap": {
       "salary": "$96,946,891",
@@ -766,35 +813,35 @@
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
+        "label": "Fouls",
+        "value": 18.1,
+        "rank": 2
       },
       {
-        "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "Turnovers",
+        "value": 16.9,
+        "rank": 3
       },
       {
-        "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "Points Per Shot",
+        "value": 1.23,
+        "rank": 4
       },
       {
-        "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "3PT%",
+        "value": 0.337,
+        "rank": 5
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "11/1/1986",
-      "text": "@Paris Saint-Germain 116, Crystal Palace 74",
-      "boxscoreFile": "box12-1.htm"
+      "date": "27/11/1986",
+      "text": "Crystal Palace 108, @Benfica 101",
+      "boxscoreFile": "box38-1.htm"
     },
     "nextGame": {
-      "date": "11/5/1986",
-      "text": "Crystal Palace @ FL Fart",
+      "date": "2/12/1986",
+      "text": "Real Madrid @ Crystal Palace",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster6"
@@ -803,59 +850,59 @@
     "id": "roster27",
     "name": "FL Fart",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 4,
+      "losses": 2,
+      "pct": 0.667
     },
     "section": "CLB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "2-4",
+    "pf": 117.3,
+    "pa": 115.5,
+    "diff": 1.8,
+    "streak": "W3",
+    "last10": "6-4",
     "starPlayer": {
       "name": "Larry Drew",
       "url": "../players/player1053.htm",
       "pos": "PG",
       "age": "26",
-      "overall": "141",
-      "potential": "141"
+      "overall": "142",
+      "potential": "142"
     },
     "cap": {
-      "salary": "$110,453,734",
-      "room": "($10,453,734)"
+      "salary": "$99,812,364",
+      "room": "$187,636"
     },
     "strengths": [
       {
         "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 117.3,
+        "rank": 2
       },
       {
         "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 43.5,
+        "rank": 2
+      },
+      {
+        "label": "Turnovers",
+        "value": 16.3,
+        "rank": 2
+      },
+      {
+        "label": "D.Rebounds",
+        "value": 30.8,
+        "rank": 3
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "11/2/1986",
-      "text": "FL Fart 114, @Benfica 111",
-      "boxscoreFile": "box13-1.htm"
+      "date": "28/11/1986",
+      "text": "@FL Fart 128, Ajax 113",
+      "boxscoreFile": "box39-1.htm"
     },
     "nextGame": {
-      "date": "11/5/1986",
-      "text": "Crystal Palace @ FL Fart",
+      "date": "2/12/1986",
+      "text": "Paris Saint-Germain @ FL Fart",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster27"
@@ -864,16 +911,16 @@
     "id": "roster26",
     "name": "Inter Milan",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 2,
+      "losses": 4,
+      "pct": 0.333
     },
     "section": "ELB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "1-5",
+    "pf": 119.7,
+    "pa": 122.8,
+    "diff": -3.2,
+    "streak": "L3",
+    "last10": "2-8",
     "starPlayer": {
       "name": "David West",
       "url": "../players/player262.htm",
@@ -883,39 +930,46 @@
       "potential": "123"
     },
     "cap": {
-      "salary": "$41,863,594",
-      "room": "$28,136,406"
+      "salary": "$42,948,594",
+      "room": "$27,051,406"
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
+        "label": "Blocks",
+        "value": 7.0,
         "rank": 1
       },
       {
         "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 14.2,
+        "rank": 2
       },
       {
         "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 34.3,
+        "rank": 2
       },
       {
         "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 48.5,
+        "rank": 2
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Delon Wright",
+        "pos": "SG",
+        "injury": "Broken Cheekbone",
+        "length": "2"
+      }
+    ],
     "recentGame": {
-      "date": "11/2/1986",
-      "text": "@Arsenal 134, Inter Milan 105",
-      "boxscoreFile": "box13-3.htm"
+      "date": "26/11/1986",
+      "text": "@Arsenal 128, Inter Milan 124",
+      "boxscoreFile": "box37-2.htm"
     },
     "nextGame": {
-      "date": "11/4/1986",
+      "date": "1/12/1986",
       "text": "Inter Milan @ AC Milan",
       "boxscoreFile": ""
     },
@@ -925,66 +979,59 @@
     "id": "roster14",
     "name": "Juventus",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 3,
+      "losses": 4,
+      "pct": 0.429
     },
     "section": "ECL Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "3-3",
+    "pf": 115.3,
+    "pa": 116.4,
+    "diff": -1.1,
+    "streak": "W1",
+    "last10": "5-5",
     "starPlayer": {
-      "name": "Larry Smith",
-      "url": "../players/player1061.htm",
-      "pos": "PF",
-      "age": "26",
+      "name": "Gilbert Arenas",
+      "url": "../players/player677.htm",
+      "pos": "SG",
+      "age": "21",
       "overall": "120",
-      "potential": "120"
+      "potential": "125"
     },
     "cap": {
-      "salary": "$37,802,449",
-      "room": "$12,197,551"
+      "salary": "$45,414,788",
+      "room": "$4,585,212"
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "O.Rebounds",
-        "value": 0.0,
+        "label": "FT%",
+        "value": 0.812,
         "rank": 1
       },
       {
         "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 32.1,
+        "rank": 2
       },
       {
         "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
-      }
-    ],
-    "injuries": [
+        "value": 45.0,
+        "rank": 2
+      },
       {
-        "name": "Kyle O'Quinn",
-        "pos": "C",
-        "injury": "Hyperextended Knee",
-        "length": "2"
+        "label": "3PT%",
+        "value": 0.41,
+        "rank": 2
       }
     ],
+    "injuries": [],
     "recentGame": {
-      "date": "11/2/1986",
-      "text": "Juventus 120, @Atletico Madrid 119",
-      "boxscoreFile": "box13-6.htm"
+      "date": "28/11/1986",
+      "text": "Juventus 134, @Monaco 111",
+      "boxscoreFile": "box39-3.htm"
     },
     "nextGame": {
-      "date": "11/5/1986",
-      "text": "Juventus @ Tottenham Hotspur",
+      "date": "3/12/1986",
+      "text": "Atletico Madrid @ Juventus",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster14"
@@ -993,16 +1040,16 @@
     "id": "roster28",
     "name": "Manchester City",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 2,
+      "losses": 4,
+      "pct": 0.333
     },
     "section": "ECL Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "2-3",
+    "pf": 114.2,
+    "pa": 111.0,
+    "diff": 3.2,
+    "streak": "L1",
+    "last10": "4-6",
     "starPlayer": {
       "name": "Luol Deng",
       "url": "../players/player342.htm",
@@ -1017,35 +1064,42 @@
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
         "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 0.0,
+        "value": 13.7,
         "rank": 1
       },
       {
         "label": "Rebounds",
-        "value": 0.0,
+        "value": 45.7,
         "rank": 1
+      },
+      {
+        "label": "D.Rebounds",
+        "value": 32.0,
+        "rank": 3
+      },
+      {
+        "label": "Turnovers",
+        "value": 15.0,
+        "rank": 3
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "James Bailey",
+        "pos": "PF",
+        "injury": "Fractured Hip",
+        "length": "22"
+      }
+    ],
     "recentGame": {
-      "date": "11/2/1986",
-      "text": "@Valencia 134, Manchester City 114",
-      "boxscoreFile": "box13-5.htm"
+      "date": "29/11/1986",
+      "text": "@Manchester United 120, Manchester City 116",
+      "boxscoreFile": "box40-2.htm"
     },
     "nextGame": {
-      "date": "11/4/1986",
-      "text": "Manchester City @ Atletico Madrid",
+      "date": "4/12/1986",
+      "text": "Manchester City @ Monaco",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster28"
@@ -1054,59 +1108,54 @@
     "id": "roster5",
     "name": "Manchester United",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 2,
+      "losses": 4,
+      "pct": 0.333
     },
     "section": "ECL Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "1-5",
+    "pf": 98.7,
+    "pa": 108.5,
+    "diff": -9.8,
+    "streak": "W1",
+    "last10": "3-7",
     "starPlayer": {
       "name": "Mike McGee",
       "url": "../players/player736.htm",
-      "pos": "SG",
+      "pos": "SF",
       "age": "25",
       "overall": "125",
       "potential": "130"
     },
     "cap": {
-      "salary": "$49,535,995",
-      "room": "$464,005"
+      "salary": "$46,047,591",
+      "room": "$3,952,409"
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
+        "label": "Turnovers",
+        "value": 13.0,
         "rank": 1
       },
       {
-        "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "Blocks",
+        "value": 6.0,
+        "rank": 2
       },
       {
-        "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "Fouls",
+        "value": 19.2,
+        "rank": 2
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "11/2/1986",
-      "text": "@Monaco 107, Manchester United 84",
-      "boxscoreFile": "box13-4.htm"
+      "date": "29/11/1986",
+      "text": "@Manchester United 120, Manchester City 116",
+      "boxscoreFile": "box40-2.htm"
     },
     "nextGame": {
-      "date": "11/6/1986",
-      "text": "Barcelona @ Manchester United",
+      "date": "3/12/1986",
+      "text": "Valencia @ Manchester United",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster5"
@@ -1115,16 +1164,16 @@
     "id": "roster15",
     "name": "Marseille",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 2,
+      "losses": 4,
+      "pct": 0.333
     },
     "section": "ELB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
+    "pf": 118.0,
+    "pa": 118.0,
     "diff": 0.0,
-    "streak": "-",
-    "last10": "2-4",
+    "streak": "W1",
+    "last10": "3-7",
     "starPlayer": {
       "name": "Robert Parish",
       "url": "../players/player873.htm",
@@ -1134,40 +1183,40 @@
       "potential": "129"
     },
     "cap": {
-      "salary": "$76,158,448",
-      "room": "($6,158,448)"
+      "salary": "$69,849,448",
+      "room": "$150,552"
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "Steals",
+        "value": 9.2,
+        "rank": 2
       },
       {
         "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 30.0,
+        "rank": 3
       },
       {
         "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 42.0,
+        "rank": 3
+      },
+      {
+        "label": "O.Rebounds",
+        "value": 12.0,
+        "rank": 5
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "11/1/1986",
-      "text": "Arsenal 132, @Marseille 129",
-      "boxscoreFile": "box12-4.htm"
+      "date": "29/11/1986",
+      "text": "@Marseille 126, Chelsea 116",
+      "boxscoreFile": "box40-1.htm"
     },
     "nextGame": {
-      "date": "11/4/1986",
-      "text": "Marseille @ Aston Villa",
+      "date": "6/12/1986",
+      "text": "Marseille @ Arsenal",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster15"
@@ -1176,23 +1225,23 @@
     "id": "roster20",
     "name": "Monaco",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 2,
+      "losses": 6,
+      "pct": 0.25
     },
     "section": "ECL Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "4-2",
+    "pf": 102.9,
+    "pa": 118.8,
+    "diff": -15.9,
+    "streak": "L2",
+    "last10": "4-6",
     "starPlayer": {
       "name": "Alvin Robertson",
       "url": "../players/player423.htm",
       "pos": "SG",
       "age": "23",
-      "overall": "133",
-      "potential": "151"
+      "overall": "136",
+      "potential": "155"
     },
     "cap": {
       "salary": "$43,583,507",
@@ -1200,42 +1249,35 @@
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
         "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 13.3,
+        "rank": 2
       },
       {
         "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "value": 29.4,
+        "rank": 4
       },
       {
         "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
-      }
-    ],
-    "injuries": [
+        "value": 42.6,
+        "rank": 4
+      },
       {
-        "name": "Alvin Robertson",
-        "pos": "SG",
-        "injury": "Fractured Nose",
-        "length": "4"
+        "label": "Assists",
+        "value": 27.1,
+        "rank": 4
       }
     ],
+    "injuries": [],
     "recentGame": {
-      "date": "11/2/1986",
-      "text": "@Monaco 107, Manchester United 84",
-      "boxscoreFile": "box13-4.htm"
+      "date": "28/11/1986",
+      "text": "Juventus 134, @Monaco 111",
+      "boxscoreFile": "box39-3.htm"
     },
     "nextGame": {
-      "date": "11/5/1986",
-      "text": "Monaco @ Barcelona",
+      "date": "4/12/1986",
+      "text": "Manchester City @ Monaco",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster20"
@@ -1244,59 +1286,59 @@
     "id": "roster21",
     "name": "Paris Saint-Germain",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 3,
+      "losses": 2,
+      "pct": 0.6
     },
     "section": "CLB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "2-4",
+    "pf": 130.0,
+    "pa": 128.0,
+    "diff": 2.0,
+    "streak": "L1",
+    "last10": "5-5",
     "starPlayer": {
-      "name": "Brad Davis",
-      "url": "../players/player714.htm",
-      "pos": "PG",
-      "age": "27",
-      "overall": "145",
-      "potential": "147"
+      "name": "Dan Majerle",
+      "url": "../players/player332.htm",
+      "pos": "SG",
+      "age": "26",
+      "overall": "151",
+      "potential": "155"
     },
     "cap": {
-      "salary": "$110,804,605",
-      "room": "($10,804,605)"
+      "salary": "$98,054,605",
+      "room": "$1,945,395"
     },
     "strengths": [
       {
         "label": "Points",
-        "value": 0.0,
+        "value": 130.0,
         "rank": 1
       },
       {
-        "label": "O.Rebounds",
-        "value": 0.0,
+        "label": "Steals",
+        "value": 14.6,
         "rank": 1
       },
       {
-        "label": "D.Rebounds",
-        "value": 0.0,
+        "label": "FT%",
+        "value": 0.81,
         "rank": 1
       },
       {
-        "label": "Rebounds",
-        "value": 0.0,
+        "label": "3PT%",
+        "value": 0.464,
         "rank": 1
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "11/1/1986",
-      "text": "@Paris Saint-Germain 116, Crystal Palace 74",
-      "boxscoreFile": "box12-1.htm"
+      "date": "25/11/1986",
+      "text": "@Brighton 123, Paris Saint-Germain 116",
+      "boxscoreFile": "box36-2.htm"
     },
     "nextGame": {
-      "date": "11/5/1986",
-      "text": "Ajax @ Paris Saint-Germain",
+      "date": "1/12/1986",
+      "text": "AFC Richmond @ Paris Saint-Germain",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster21"
@@ -1305,16 +1347,16 @@
     "id": "roster8",
     "name": "Real Madrid",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 5,
+      "losses": 1,
+      "pct": 0.833
     },
     "section": "CLB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "4-2",
+    "pf": 115.8,
+    "pa": 98.2,
+    "diff": 17.7,
+    "streak": "W4",
+    "last10": "7-3",
     "starPlayer": {
       "name": "Sidney Moncrief",
       "url": "../players/player699.htm",
@@ -1324,40 +1366,40 @@
       "potential": "157"
     },
     "cap": {
-      "salary": "$117,117,707",
-      "room": "($17,117,707)"
+      "salary": "$100,000,000",
+      "room": "($0)"
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
         "label": "O.Rebounds",
-        "value": 0.0,
+        "value": 16.0,
         "rank": 1
       },
       {
         "label": "D.Rebounds",
-        "value": 0.0,
+        "value": 35.8,
         "rank": 1
       },
       {
         "label": "Rebounds",
-        "value": 0.0,
+        "value": 51.8,
+        "rank": 1
+      },
+      {
+        "label": "Assists",
+        "value": 33.8,
         "rank": 1
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "11/1/1986",
-      "text": "AFC Richmond 114, @Real Madrid 111",
-      "boxscoreFile": "box12-2.htm"
+      "date": "26/11/1986",
+      "text": "@Real Madrid 129, Ajax 92",
+      "boxscoreFile": "box37-1.htm"
     },
     "nextGame": {
-      "date": "11/5/1986",
-      "text": "AFC Richmond @ Real Madrid",
+      "date": "2/12/1986",
+      "text": "Real Madrid @ Crystal Palace",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster8"
@@ -1366,59 +1408,59 @@
     "id": "roster22",
     "name": "Tottenham Hotspur",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 6,
+      "losses": 2,
+      "pct": 0.75
     },
     "section": "ECL Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "3-3",
+    "pf": 120.8,
+    "pa": 118.8,
+    "diff": 2.0,
+    "streak": "W1",
+    "last10": "7-3",
     "starPlayer": {
       "name": "Hubert Davis",
       "url": "../players/player440.htm",
-      "pos": "SG",
+      "pos": "SF",
       "age": "25",
       "overall": "133",
-      "potential": "143"
+      "potential": "144"
     },
     "cap": {
-      "salary": "$50,711,087",
-      "room": "($711,087)"
+      "salary": "$49,936,087",
+      "room": "$63,913"
     },
     "strengths": [
       {
+        "label": "Steals",
+        "value": 11.0,
+        "rank": 1
+      },
+      {
+        "label": "3PT%",
+        "value": 0.439,
+        "rank": 1
+      },
+      {
         "label": "Points",
-        "value": 0.0,
-        "rank": 1
+        "value": 120.8,
+        "rank": 2
       },
       {
-        "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
+        "label": "Assists",
+        "value": 29.5,
+        "rank": 2
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "10/30/1986",
-      "text": "@Valencia 139, Tottenham Hotspur 106",
-      "boxscoreFile": "box10-7.htm"
+      "date": "30/11/1986",
+      "text": "@Tottenham Hotspur 150, Barcelona 132",
+      "boxscoreFile": "box41-3.htm"
     },
     "nextGame": {
-      "date": "11/5/1986",
-      "text": "Juventus @ Tottenham Hotspur",
+      "date": "7/12/1986",
+      "text": "Tottenham Hotspur @ Juventus",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster22"
@@ -1427,23 +1469,23 @@
     "id": "roster25",
     "name": "Valencia",
     "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
+      "wins": 5,
+      "losses": 1,
+      "pct": 0.833
     },
     "section": "ECL Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "4-2",
+    "pf": 118.2,
+    "pa": 102.5,
+    "diff": 15.7,
+    "streak": "W4",
+    "last10": "7-3",
     "starPlayer": {
       "name": "Brian Shaw",
       "url": "../players/player180.htm",
       "pos": "SF",
       "age": "23",
-      "overall": "129",
-      "potential": "134"
+      "overall": "131",
+      "potential": "136"
     },
     "cap": {
       "salary": "$49,078,675",
@@ -1451,35 +1493,35 @@
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
         "label": "D.Rebounds",
-        "value": 0.0,
+        "value": 35.3,
         "rank": 1
       },
       {
-        "label": "Rebounds",
-        "value": 0.0,
+        "label": "Blocks",
+        "value": 7.3,
+        "rank": 1
+      },
+      {
+        "label": "Fouls",
+        "value": 17.7,
+        "rank": 1
+      },
+      {
+        "label": "Points Per Shot",
+        "value": 1.52,
         "rank": 1
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "11/2/1986",
-      "text": "@Valencia 134, Manchester City 114",
-      "boxscoreFile": "box13-5.htm"
+      "date": "29/11/1986",
+      "text": "Valencia 124, @Atletico Madrid 106",
+      "boxscoreFile": "box40-3.htm"
     },
     "nextGame": {
-      "date": "11/6/1986",
-      "text": "Valencia @ Juventus",
+      "date": "3/12/1986",
+      "text": "Valencia @ Manchester United",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster25"
