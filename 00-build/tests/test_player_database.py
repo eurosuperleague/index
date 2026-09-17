@@ -69,6 +69,14 @@ class PlayerDatabaseBuildTests(unittest.TestCase):
             MODULE.write_outputs(self.manifest, self.feeds, target, dry_run=True)
             self.assertFalse(target.exists())
 
+    def test_heights_are_numeric_and_snapshot_derived(self):
+        self.assertEqual(MODULE.height_inches("6-9"), 81)
+        self.assertEqual(MODULE.height_inches("7′0″"), 84)
+        for value in (None, "", "-", "6-12", "unknown"):
+            self.assertIsNone(MODULE.height_inches(value))
+        self.assertEqual(self.player("current", "A.C. Green")["height"], 81)
+        self.assertEqual(self.player("season-3", "A.C. Green")["height"], 81)
+
 
 if __name__ == "__main__":
     unittest.main()

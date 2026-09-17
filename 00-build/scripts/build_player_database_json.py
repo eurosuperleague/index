@@ -72,6 +72,15 @@ def season_number(value: Any) -> int | None:
     return int(match.group(1)) if match else None
 
 
+def height_inches(value: Any) -> int | None:
+    """Normalise exported feet-inches heights; never treat missing height as zero."""
+    match = re.fullmatch(r"(\d+)\s*[-'′]\s*(\d{1,2})\s*[\"″]?", clean(value))
+    if not match:
+        return None
+    feet, inches = map(int, match.groups())
+    return feet * 12 + inches if feet > 0 and 0 <= inches < 12 else None
+
+
 def player_file(record: dict[str, Any]) -> str:
     url = clean(record.get("url", "")).replace("\\", "/")
     if url:
@@ -234,6 +243,7 @@ def compact_player(
         "status": "free_agent" if team.casefold() == "fa" else "rostered",
         "pos": clean(player.get("pos")),
         "age": as_number(player.get("age")),
+        "height": height_inches(player.get("ht")),
         "href": href,
         "overall": as_number(player.get("overall")),
         "potential": as_number(player.get("potential")),

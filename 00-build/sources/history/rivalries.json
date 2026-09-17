@@ -42,6 +42,12 @@
       "name": "Le Classique",
       "location": "France",
       "featured": true
+    },
+    {
+      "teams": ["roster27.htm", "roster18.htm"],
+      "name": "Newfoundland Derby",
+      "location": "Newfoundland",
+      "featured": true
     }
   ]
 }

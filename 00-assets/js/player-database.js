@@ -10,6 +10,8 @@
   var cache = {};
   var manifest = null;
   var displayedPlayers = [];
+  var databaseTools = null;
+  var renderRevision = 0;
   var state = {
     tab: "attributes", season: "current", lastSnapshot: "current", query: "", status: "all",
     team: "all", position: "all", page: 1, pageSize: 100,
@@ -23,7 +25,7 @@
   function isStatTab(tab) { return STAT_TABS.indexOf(tab) >= 0; }
   function isMissing(value) { return value === null || value === undefined || value === "" || (typeof value === "number" && !isFinite(value)); }
   function safeText(value) { return isMissing(value) ? "—" : String(value); }
-  function number(value) { var parsed = Number(value); return isFinite(parsed) ? parsed : null; }
+  function number(value) { if (isMissing(value) || value === "-") { return null; } var parsed = Number(value); return isFinite(parsed) ? parsed : null; }
   function upper(value) { return String(value || "").toUpperCase(); }
   function compactSeasonLabel(value) {
     return String(value || "").replace(/(\d{4})-(\d{2})(\d{2})/, function (_, start, century, end) {
@@ -81,6 +83,7 @@
     params.set("dir", state.directions[state.tab]);
     params.set("page", String(state.page));
     params.set("size", String(state.pageSize));
+    if (databaseTools) { databaseTools.writeUrl(params); }
     window.history.replaceState(null, "", window.location.pathname + "?" + params.toString());
   }
 
@@ -99,9 +102,15 @@
   }
 
   function columnsForTab() {
+    var defaults = defaultColumns(state.tab);
+    return databaseTools ? databaseTools.columns(defaults) : defaults;
+  }
+
+  function defaultColumns(tab) {
     var columns;
-    if (state.tab === "attributes") {
+    if (tab === "attributes") {
       columns = identityColumns(true, true).concat([
+        makeColumn("height", "Height", null, { format: formatHeight }),
         makeColumn("overall", "OVR", null, { format: formatRating }),
         makeColumn("potential", "POT", null, { format: formatRating })
       ]);
@@ -110,8 +119,9 @@
       });
       return columns;
     }
-    if (state.tab === "potential") {
+    if (tab === "potential") {
       columns = identityColumns(true, false).concat([
+        makeColumn("height", "Height", null, { format: formatHeight }),
         makeColumn("overall", "OVR", null, { format: formatRating }),
         makeColumn("potential", "POT", null, { format: formatRating })
       ]);
@@ -120,7 +130,7 @@
       });
       return columns;
     }
-    if (state.tab === "contracts") {
+    if (tab === "contracts") {
       columns = identityColumns(true, true).concat([
         makeColumn("overall", "OVR", null, { format: formatRating }),
         makeColumn("potential", "POT", null, { format: formatRating }),
@@ -133,7 +143,7 @@
       columns.push(makeColumn("contractYears", "Years", function (player) { return (player.contracts || []).length || null; }, { format: formatInteger }));
       return columns;
     }
-    if (state.tab === "regular") {
+    if (tab === "regular") {
       columns = identityColumns(false, false);
       [
         ["g", "G", formatInteger], ["gs", "GS", formatInteger], ["min", "MIN", formatDecimal], ["pts", "PTS", formatDecimal],
@@ -154,6 +164,28 @@
       columns.push(makeColumn(item[0], item[1], statGetter(item[3] || "advanced", item[0]), { format: item[2] }));
     });
     return columns;
+  }
+
+  function allFields() {
+    var labels = { Ins: "Inside scoring", Jps: "Jump shooting", Fts: "Free throws", "3ps": "Three-point shooting", Hnd: "Handling", Pas: "Passing", Orb: "Offensive rebounding", Drb: "Defensive rebounding", Psd: "Post defense", Prd: "Perimeter defense", Stl: "Stealing", Blk: "Shot blocking", Qkn: "Quickness", Str: "Strength", Jmp: "Jumping", Sta: "Stamina" };
+    var names = { name: "Player", team: "Team", pos: "Position", age: "Age", overall: "Overall", potential: "Potential", currentSalary: "Current salary", contractTotal: "Contract total", contractYears: "Contract length", g: "Games", gs: "Games started", min: "Minutes per game", pts: "Points per game", orb: "Offensive rebounds per game", drb: "Defensive rebounds per game", reb: "Rebounds per game", ast: "Assists per game", to: "Turnovers per game", a_t: "Assist / turnover ratio", stl: "Steals per game", blk: "Blocks per game", pf: "Fouls per game", fg_pct: "Field goal %", ft_pct: "Free throw %", "3p_pct": "Three-point %", ts_pct: "True shooting %", pps: "Points per shot", usg: "Usage", orr: "Offensive rebound rate", drr: "Defensive rebound rate", rr: "Rebound rate", per: "Player efficiency rating", va: "Value added", ewa: "Estimated wins added", plus_minus: "Plus / minus", oeff: "Offensive efficiency", deff: "Defensive efficiency" };
+    var fields = [], seen = {};
+    TAB_NAMES.forEach(function (tab) {
+      defaultColumns(tab).forEach(function (column) {
+        if (seen[column.key]) { return; } seen[column.key] = true;
+        var key = column.key, group = { attributes: "Attributes", potential: "Potential", contracts: "Contracts", regular: "Regular Stats", advanced: "Advanced Stats" }[tab];
+        if (["name", "team", "pos", "age", "height", "overall"].indexOf(key) >= 0) { group = "General"; }
+        if (key === "potential") { group = "Potential"; }
+        var title = names[key] || column.label;
+        if (key.indexOf("attr_") === 0) { title = labels[key.slice(5)]; }
+        if (key.indexOf("pot_") === 0) { title = labels[key.slice(4)] + " potential"; }
+        if (key.indexOf("salary_") === 0) { title = "Salary " + key.slice(7); }
+        fields.push(Object.assign({}, column, { group: group, title: title, type: key.indexOf("pot_") === 0 ? "grade" : column.text ? "text" : "number", percent: column.format === formatPercent, currency: column.format === formatCurrency }));
+      });
+    });
+    fields.push(makeColumn("potentialGap", "POT−OVR", function (p) { var pot = number(p.potential), ovr = number(p.overall); return pot === null || ovr === null ? null : pot - ovr; }, { group: "Potential", title: "Potential gap", type: "number", format: formatInteger }));
+    fields.push(makeColumn("expiring", "Expiring", function (p) { return isPotentialFreeAgent(p) ? "Yes" : "No"; }, { group: "Contracts", title: "No contract next season", type: "text", text: true, format: safeText }));
+    return fields;
   }
 
   function statGetter(group, key) {
@@ -177,6 +209,7 @@
 
   function formatNumber(value) { return isMissing(value) ? "—" : safeText(value); }
   function formatInteger(value) { var n = number(value); return n === null ? "—" : String(Math.round(n)); }
+  function formatHeight(value) { var n = number(value); return n === null ? "—" : Math.floor(n / 12) + "′" + (n % 12) + "″"; }
   function formatDecimal(value) { var n = number(value); return n === null ? "—" : n.toFixed(1); }
   function formatPercent(value) { var n = number(value); return n === null ? "—" : (n * 100).toFixed(1) + "%"; }
   function formatCurrency(value) {
@@ -226,8 +259,9 @@
     elements.seasonNote.hidden = true;
     return feedPlayers().then(function (feed) {
       var players = (feed.players || []).map(function (player) { return Object.assign({}, player); });
-      if (!isStatTab(state.tab)) { return players; }
       if (state.season === "career") {
+        elements.seasonNote.textContent = "Career statistics · Current player details, attributes and contracts";
+        elements.seasonNote.hidden = false;
         players.forEach(function (player) {
           player.displayRegular = player.careerRegular || {};
           player.displayAdvanced = player.careerAdvanced || {};
@@ -255,7 +289,7 @@
   function updateSeasonOptions() {
     var selected = state.season;
     var options = (manifest.snapshots || []).map(function (entry) { return { value: entry.id, label: entry.label }; });
-    if (isStatTab(state.tab)) { options.push({ value: "career", label: "Career" }); }
+    options.push({ value: "career", label: "Career" });
     elements.seasonFilter.innerHTML = options.map(function (option) {
       return '<option value="' + escapeHtml(option.value) + '">' + escapeHtml(option.label) + "</option>";
     }).join("");
@@ -305,13 +339,16 @@
       return (!query || String(player.name || "").toLowerCase().indexOf(query) >= 0) &&
         (state.status === "all" || (state.status === "potential_fa" ? isPotentialFreeAgent(player) : player.status === state.status)) &&
         (state.team === "all" || player.team === state.team) &&
-        (state.position === "all" || player.pos === state.position);
+        (state.position === "all" || player.pos === state.position) &&
+        (!databaseTools || databaseTools.matches(player));
     });
     var sortKey = state.sorts[state.tab];
     var column = columns.find(function (item) { return item.key === sortKey; }) || columns[0];
     state.sorts[state.tab] = column.key;
     filtered.sort(function (left, right) {
-      var compared = compareValues(column.get(left), column.get(right), state.directions[state.tab], column.text);
+      var a = column.get(left), b = column.get(right);
+      if (column.key.indexOf("pot_") === 0) { a = isMissing(a) ? null : "FEDCBA".indexOf(a); b = isMissing(b) ? null : "FEDCBA".indexOf(b); }
+      var compared = compareValues(a, b, state.directions[state.tab], column.key.indexOf("pot_") === 0 ? false : column.text);
       return compared || String(left.name).localeCompare(String(right.name));
     });
     return filtered;
@@ -328,6 +365,7 @@
   function csvValue(column, player) {
     var value = column.get(player);
     if (isMissing(value)) { return ""; }
+    if (column.key === "height") { return formatHeight(value); }
     if (/%$/.test(column.label)) { return formatPercent(value); }
     return value;
   }
@@ -396,6 +434,7 @@
     elements.nextPage.disabled = state.page >= pages;
     elements.tablePanel.setAttribute("aria-labelledby", "tab-" + state.tab);
     bindSortButtons(players);
+    if (databaseTools) { databaseTools.rendered(); }
     writeUrl();
   }
 
@@ -412,12 +451,14 @@
   }
 
   function render() {
+    var revision = ++renderRevision;
     elements.resultSummary.textContent = "Loading player database…";
     preparePlayers().then(function (players) {
+      if (revision !== renderRevision) { return; }
       displayedPlayers = players;
       updatePoolFilters(players);
       renderTable(players);
-    }).catch(showError);
+    }).catch(function (error) { if (revision === renderRevision) { showError(error); } });
   }
 
   function showError(error) {
@@ -429,7 +470,7 @@
   function selectTab(tab, preservePage) {
     if (TAB_NAMES.indexOf(tab) < 0) { return; }
     state.tab = tab;
-    if (!isStatTab(tab) && state.season === "career") { state.season = snapshot(state.lastSnapshot) ? state.lastSnapshot : manifest.currentSnapshot; }
+    if (databaseTools && !preservePage) { databaseTools.selectTab(); }
     if (!preservePage) { state.page = 1; }
     document.querySelectorAll(".db-tab").forEach(function (button) {
       var active = button.getAttribute("data-tab") === tab;
@@ -448,6 +489,7 @@
     });
     [elements.statusFilter, elements.teamFilter, elements.positionFilter].forEach(function (control) {
       control.addEventListener("change", function () {
+        if (databaseTools) { databaseTools.quickFilter(control.id, control.value); return; }
         state.status = elements.statusFilter.value; state.team = elements.teamFilter.value; state.position = elements.positionFilter.value;
         state.page = 1; renderTable(displayedPlayers);
       });
@@ -462,6 +504,7 @@
     elements.nextPage.addEventListener("click", function () { state.page += 1; renderTable(displayedPlayers); elements.tablePanel.focus(); });
     elements.resetFilters.addEventListener("click", function () {
       state.query = ""; state.status = "all"; state.team = "all"; state.position = "all"; state.page = 1;
+      if (databaseTools) { databaseTools.reset(); }
       elements.search.value = ""; elements.statusFilter.value = "all"; render();
     });
     elements.exportCsv.addEventListener("click", exportCsv);
@@ -488,9 +531,20 @@
     fetchJson(MANIFEST_URL).then(function (data) {
       manifest = data; readUrl();
       if (!snapshot(state.season) && state.season !== "career") { state.season = manifest.currentSnapshot; state.lastSnapshot = state.season; }
-      if (state.season === "career" && !isStatTab(state.tab)) { state.season = manifest.currentSnapshot; }
+      return preparePlayers().then(function (players) {
+      displayedPlayers = players;
+      databaseTools = window.ESLDatabaseTools.create({
+        state: state, tabs: TAB_NAMES, fields: allFields, columns: columnsForTab, escape: escapeHtml,
+        defaults: function (tab) { return defaultColumns(tab || state.tab); },
+        players: function () { return displayedPlayers; }, expires: isPotentialFreeAgent,
+        matchesSearch: function (p) { return String(p.name || "").toLowerCase().indexOf(state.query.trim().toLowerCase()) >= 0; },
+        changed: function () { state.page = 1; renderTable(displayedPlayers); },
+        resetSort: function () { state.sorts[state.tab] = DEFAULT_SORTS[state.tab]; state.directions[state.tab] = "desc"; },
+        context: function () { return state.season === "career" ? "Career statistics; current player details, attributes and contracts." : state.season === manifest.currentSnapshot && !manifest.currentHasStats ? "Statistics: latest available, " + compactSeasonLabel(manifest.latestCompletedLabel) + ". Player details and contracts: Current." : "Statistics and player details: " + (snapshot(state.season) || {}).label + "."; }
+      });
       elements.search.value = state.query; elements.statusFilter.value = state.status; elements.pageSize.value = String(state.pageSize);
       bindEvents(); updateSeasonOptions(); selectTab(state.tab, true);
+      });
     }).catch(showError);
   }
 
