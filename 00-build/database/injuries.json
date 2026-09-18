@@ -2,15 +2,48 @@
     "source": "injuries.htm",
     "injuries": [
         {
+            "pos": "SG",
+            "name": "Nick Anderson",
+            "url": "",
+            "team": "roster28",
+            "teamName": "Manchester City",
+            "rosterUrl": "./rosters/roster28.htm",
+            "length": "78",
+            "injury": "Broken Leg",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "SG",
+            "name": "Steve Kerr",
+            "url": "",
+            "team": "roster22",
+            "teamName": "Tottenham Hotspur",
+            "rosterUrl": "./rosters/roster22.htm",
+            "length": "26",
+            "injury": "Broken Foot",
+            "rowClass": "row2"
+        },
+        {
             "pos": "PG",
             "name": "Darnell Valentine",
             "url": "",
             "team": "roster24",
             "teamName": "Barcelona",
             "rosterUrl": "./rosters/roster24.htm",
-            "length": "50",
+            "length": "19",
             "injury": "Broken Arm",
             "rowClass": "row1"
+        },
+        {
+            "pos": "SG",
+            "name": "Desmond Bane",
+            "url": "",
+            "team": "roster23",
+            "teamName": "Arsenal",
+            "rosterUrl": "./rosters/roster23.htm",
+            "length": "15",
+            "injury": "Torn Ligament",
+            "rowClass": "row2"
         },
         {
             "pos": "SF",
@@ -19,8 +52,63 @@
             "team": "roster11",
             "teamName": "Atletico Madrid",
             "rosterUrl": "./rosters/roster11.htm",
-            "length": "42",
+            "length": "11",
             "injury": "Patellar Tendanitis",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "SF",
+            "name": "Dennis Scott",
+            "url": "",
+            "team": "roster20",
+            "teamName": "Monaco",
+            "rosterUrl": "./rosters/roster20.htm",
+            "length": "11",
+            "injury": "Patellar Tendanitis",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "SG",
+            "name": "Steve Nash",
+            "url": "",
+            "team": "roster19",
+            "teamName": "Aston Villa",
+            "rosterUrl": "./rosters/roster19.htm",
+            "length": "8",
+            "injury": "Sprained Ankle",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PF",
+            "name": "Otis Thorpe",
+            "url": "",
+            "team": "roster25",
+            "teamName": "Valencia",
+            "rosterUrl": "./rosters/roster25.htm",
+            "length": "7",
+            "injury": "Patellar Tendanitis",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "SF",
+            "name": "Matt Geiger",
+            "url": "",
+            "team": "roster7",
+            "teamName": "Bayern Munich",
+            "rosterUrl": "./rosters/roster7.htm",
+            "length": "6",
+            "injury": "Groin Pull",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "SG",
+            "name": "Gilbert Arenas",
+            "url": "",
+            "team": "roster14",
+            "teamName": "Juventus",
+            "rosterUrl": "./rosters/roster14.htm",
+            "length": "3",
+            "injury": "Sprained Ankle",
             "rowClass": "row2"
         },
         {
@@ -30,85 +118,19 @@
             "team": "roster12",
             "teamName": "AFC Richmond",
             "rosterUrl": "./rosters/roster12.htm",
-            "length": "33",
+            "length": "2",
             "injury": "Torn Ligament",
             "rowClass": "row1"
         },
         {
-            "pos": "PF",
-            "name": "James Bailey",
-            "url": "",
-            "team": "roster28",
-            "teamName": "Manchester City",
-            "rosterUrl": "./rosters/roster28.htm",
-            "length": "22",
-            "injury": "Fractured Hip",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "SG",
-            "name": "Trent Tucker",
-            "url": "",
-            "team": "roster24",
-            "teamName": "Barcelona",
-            "rosterUrl": "./rosters/roster24.htm",
-            "length": "21",
-            "injury": "Concussion",
-            "rowClass": "row1"
-        },
-        {
             "pos": "C",
-            "name": "Dewayne Dedmon",
-            "url": "",
-            "team": "roster23",
-            "teamName": "Arsenal",
-            "rosterUrl": "./rosters/roster23.htm",
-            "length": "17",
-            "injury": "Broken Foot",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "SF",
-            "name": "Donyell Marshall",
-            "url": "",
-            "team": "roster16",
-            "teamName": "AC Sparta Praha",
-            "rosterUrl": "./rosters/roster16.htm",
-            "length": "15",
-            "injury": "Dislocated Shoulder",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "C",
-            "name": "Moses Malone",
-            "url": "",
-            "team": "roster13",
-            "teamName": "Benfica",
-            "rosterUrl": "./rosters/roster13.htm",
-            "length": "9",
-            "injury": "Broken Foot",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "SG",
-            "name": "Jim Spanarkel",
-            "url": "",
-            "team": "roster24",
-            "teamName": "Barcelona",
-            "rosterUrl": "./rosters/roster24.htm",
-            "length": "6",
-            "injury": "Sprained Knee",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "SG",
-            "name": "Delon Wright",
+            "name": "Salah Mejri",
             "url": "",
             "team": "roster26",
             "teamName": "Inter Milan",
             "rosterUrl": "./rosters/roster26.htm",
-            "length": "2",
-            "injury": "Broken Cheekbone",
+            "length": "1",
+            "injury": "Patellar Tendanitis",
             "rowClass": "row2"
         }
     ]
