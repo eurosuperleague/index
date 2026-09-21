@@ -7,21 +7,21 @@
       "teams": [
         {
           "name": "Brighton",
-          "wins": 12,
-          "losses": 2,
-          "streak": "W5"
+          "wins": 16,
+          "losses": 4,
+          "streak": "W2"
         },
         {
           "name": "Real Madrid",
-          "wins": 10,
-          "losses": 4,
-          "streak": "L2"
+          "wins": 14,
+          "losses": 8,
+          "streak": "W1"
         },
         {
           "name": "Crystal Palace",
-          "wins": 7,
-          "losses": 7,
-          "streak": "W3"
+          "wins": 12,
+          "losses": 10,
+          "streak": "W1"
         }
       ]
     },
@@ -29,21 +29,21 @@
       "title": "ELB Standings",
       "teams": [
         {
-          "name": "AC Milan",
-          "wins": 11,
-          "losses": 3,
-          "streak": "L1"
+          "name": "Arsenal",
+          "wins": 17,
+          "losses": 5,
+          "streak": "W5"
         },
         {
-          "name": "Arsenal",
-          "wins": 11,
-          "losses": 3,
+          "name": "AC Milan",
+          "wins": 16,
+          "losses": 5,
           "streak": "W1"
         },
         {
           "name": "Inter Milan",
-          "wins": 7,
-          "losses": 8,
+          "wins": 12,
+          "losses": 11,
           "streak": "L1"
         }
       ]
@@ -52,22 +52,22 @@
       "title": "ECL Standings",
       "teams": [
         {
-          "name": "Valencia",
-          "wins": 10,
-          "losses": 5,
-          "streak": "L1"
-        },
-        {
-          "name": "Tottenham Hotspur",
-          "wins": 9,
-          "losses": 6,
-          "streak": "W1"
-        },
-        {
           "name": "Barcelona",
-          "wins": 7,
-          "losses": 6,
-          "streak": "W1"
+          "wins": 14,
+          "losses": 8,
+          "streak": "W4"
+        },
+        {
+          "name": "Valencia",
+          "wins": 13,
+          "losses": 9,
+          "streak": "L2"
+        },
+        {
+          "name": "Monaco",
+          "wins": 13,
+          "losses": 10,
+          "streak": "W3"
         }
       ]
     }
@@ -77,31 +77,31 @@
       "category": "Minutes",
       "player": "Buck Williams",
       "team": "Benfica",
-      "value": "45.3"
+      "value": "44.5"
     },
     {
       "category": "Points",
       "player": "Kiki Vandeweghe",
       "team": "Brighton",
-      "value": "34.3"
+      "value": "34.7"
     },
     {
       "category": "Rebounds",
-      "player": "Buck Williams",
+      "player": "Moses Malone",
       "team": "Benfica",
-      "value": "11.3"
+      "value": "11.7"
     },
     {
       "category": "Assists",
       "player": "Maurice Cheeks",
       "team": "Ajax",
-      "value": "12.3"
+      "value": "12.2"
     },
     {
       "category": "Steals",
       "player": "Maurice Cheeks",
       "team": "Ajax",
-      "value": "3.1"
+      "value": "2.7"
     }
   ]
 }
