@@ -6,11 +6,11 @@
   },
   "counts": {
     "players": 1328,
-    "matched": 666,
-    "unmatched": 662,
-    "ambiguous": 0,
+    "matched": 665,
+    "unmatched": 663,
+    "ambiguous": 1,
     "name": 629,
-    "nameAndAge": 8,
+    "nameAndAge": 7,
     "overrides": 29,
     "belowMinimumOverall": 567
   },
@@ -2655,12 +2655,6 @@
       "sourceName": "Darrell Griffith",
       "match": "name"
     },
-    "player704": {
-      "url": "https://www.basketball-reference.com/req/202005142/images/players/johnsed03.jpg",
-      "sourceId": "johnsed03",
-      "sourceName": "Eddie Johnson",
-      "match": "name-and-age"
-    },
     "player705": {
       "url": "https://i.imgur.com/I0LjIxC.png",
       "sourceId": "coopemi01",
@@ -4013,7 +4007,9 @@
     }
   },
   "review": {
-    "ambiguousNames": [],
+    "ambiguousNames": [
+      "Eddie Johnson"
+    ],
     "unmatchedNames": [
       "Afanasi Machtcenko",
       "Albert Carrell",

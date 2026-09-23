@@ -2,13 +2,35 @@
     "source": "injuries.htm",
     "injuries": [
         {
+            "pos": "C",
+            "name": "Robert Parish",
+            "url": "",
+            "team": "roster15",
+            "teamName": "Marseille",
+            "rosterUrl": "./rosters/roster15.htm",
+            "length": "105",
+            "injury": "Broken Leg",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PF",
+            "name": "Jack Sikma",
+            "url": "",
+            "team": "roster6",
+            "teamName": "Crystal Palace",
+            "rosterUrl": "./rosters/roster6.htm",
+            "length": "24",
+            "injury": "Patellar Tendanitis",
+            "rowClass": "row2"
+        },
+        {
             "pos": "SG",
             "name": "Jim Paxson",
             "url": "",
             "team": "roster17",
             "teamName": "Chelsea",
             "rosterUrl": "./rosters/roster17.htm",
-            "length": "51",
+            "length": "23",
             "injury": "Concussion",
             "rowClass": "row1"
         },
@@ -19,9 +41,20 @@
             "team": "roster28",
             "teamName": "Manchester City",
             "rosterUrl": "./rosters/roster28.htm",
-            "length": "47",
+            "length": "19",
             "injury": "Broken Leg",
             "rowClass": "row2"
+        },
+        {
+            "pos": "PF",
+            "name": "Ron Brewer",
+            "url": "",
+            "team": "roster17",
+            "teamName": "Chelsea",
+            "rosterUrl": "./rosters/roster17.htm",
+            "length": "19",
+            "injury": "Torn Abdominal Muscle",
+            "rowClass": "row1"
         },
         {
             "pos": "SF",
@@ -30,74 +63,19 @@
             "team": "roster6",
             "teamName": "Crystal Palace",
             "rosterUrl": "./rosters/roster6.htm",
-            "length": "45",
+            "length": "17",
             "injury": "Broken Foot",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "SF",
-            "name": "Dirk Nowitzki",
-            "url": "",
-            "team": "roster14",
-            "teamName": "Juventus",
-            "rosterUrl": "./rosters/roster14.htm",
-            "length": "27",
-            "injury": "Hernia",
             "rowClass": "row2"
         },
         {
-            "pos": "C",
-            "name": "Jawann Oldham",
+            "pos": "SG",
+            "name": "Sidney Moncrief",
             "url": "",
             "team": "roster8",
             "teamName": "Real Madrid",
             "rosterUrl": "./rosters/roster8.htm",
-            "length": "20",
-            "injury": "Patellar Tendanitis",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "SF",
-            "name": "Ruben Patterson",
-            "url": "",
-            "team": "roster24",
-            "teamName": "Barcelona",
-            "rosterUrl": "./rosters/roster24.htm",
-            "length": "6",
-            "injury": "Bruised Hip",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "PF",
-            "name": "Zach Randolph",
-            "url": "",
-            "team": "roster24",
-            "teamName": "Barcelona",
-            "rosterUrl": "./rosters/roster24.htm",
-            "length": "5",
-            "injury": "Sprained Knee",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "SF",
-            "name": "Luol Deng",
-            "url": "",
-            "team": "roster28",
-            "teamName": "Manchester City",
-            "rosterUrl": "./rosters/roster28.htm",
-            "length": "4",
-            "injury": "Stress Fracture",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "C",
-            "name": "Steve Johnson",
-            "url": "",
-            "team": "roster16",
-            "teamName": "AC Sparta Praha",
-            "rosterUrl": "./rosters/roster16.htm",
-            "length": "1",
-            "injury": "Patellar Tendanitis",
+            "length": "7",
+            "injury": "Sprained Wrist",
             "rowClass": "row1"
         }
     ]

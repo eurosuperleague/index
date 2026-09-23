@@ -91,7 +91,7 @@
         "starPlayer": {
             "name": "Reggie Miller",
             "url": "../players/player55.htm",
-            "pos": "SF",
+            "pos": "SG",
             "age": "22",
             "overall": "141",
             "potential": "171"
@@ -148,7 +148,7 @@
             "name": "Kiki Vandeweghe",
             "url": "../players/player701.htm",
             "pos": "SF",
-            "age": "26",
+            "age": "27",
             "overall": "174",
             "potential": "174"
         }
@@ -176,7 +176,7 @@
             "name": "Rolando Blackman",
             "url": "../players/player871.htm",
             "pos": "SF",
-            "age": "25",
+            "age": "26",
             "overall": "151",
             "potential": "157"
         }
@@ -190,7 +190,7 @@
             "name": "Larry Drew",
             "url": "../players/player1053.htm",
             "pos": "PG",
-            "age": "26",
+            "age": "27",
             "overall": "142",
             "potential": "142"
         }
@@ -218,7 +218,7 @@
             "name": "Gilbert Arenas",
             "url": "../players/player677.htm",
             "pos": "SG",
-            "age": "22",
+            "age": "21",
             "overall": "120",
             "potential": "125"
         }
@@ -261,8 +261,8 @@
             "url": "../players/player873.htm",
             "pos": "C",
             "age": "31",
-            "overall": "129",
-            "potential": "129"
+            "overall": "117",
+            "potential": "117"
         }
     },
     {
