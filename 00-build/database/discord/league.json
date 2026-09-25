@@ -7,21 +7,21 @@
       "teams": [
         {
           "name": "Brighton",
-          "wins": 21,
-          "losses": 6,
-          "streak": "W3"
+          "wins": 27,
+          "losses": 8,
+          "streak": "W2"
         },
         {
           "name": "Real Madrid",
-          "wins": 17,
-          "losses": 10,
+          "wins": 22,
+          "losses": 12,
           "streak": "W2"
         },
         {
           "name": "Paris Saint-Germain",
-          "wins": 16,
-          "losses": 12,
-          "streak": "W1"
+          "wins": 19,
+          "losses": 17,
+          "streak": "L2"
         }
       ]
     },
@@ -30,21 +30,21 @@
       "teams": [
         {
           "name": "Arsenal",
-          "wins": 23,
-          "losses": 5,
-          "streak": "W11"
+          "wins": 30,
+          "losses": 6,
+          "streak": "L1"
         },
         {
           "name": "AC Milan",
-          "wins": 20,
-          "losses": 7,
-          "streak": "W1"
+          "wins": 23,
+          "losses": 12,
+          "streak": "L3"
         },
         {
-          "name": "AC Sparta Praha",
-          "wins": 15,
-          "losses": 13,
-          "streak": "W7"
+          "name": "Bayern Munich",
+          "wins": 19,
+          "losses": 16,
+          "streak": "W1"
         }
       ]
     },
@@ -53,21 +53,21 @@
       "teams": [
         {
           "name": "Barcelona",
-          "wins": 19,
-          "losses": 9,
-          "streak": "L1"
-        },
-        {
-          "name": "Atletico Madrid",
-          "wins": 18,
-          "losses": 10,
-          "streak": "W6"
+          "wins": 24,
+          "losses": 11,
+          "streak": "L2"
         },
         {
           "name": "Valencia",
-          "wins": 17,
-          "losses": 10,
+          "wins": 22,
+          "losses": 13,
           "streak": "W1"
+        },
+        {
+          "name": "Atletico Madrid",
+          "wins": 22,
+          "losses": 14,
+          "streak": "W2"
         }
       ]
     }
@@ -77,19 +77,19 @@
       "category": "Minutes",
       "player": "Buck Williams",
       "team": "Benfica",
-      "value": "43.5"
+      "value": "43.8"
     },
     {
       "category": "Points",
       "player": "Kiki Vandeweghe",
       "team": "Brighton",
-      "value": "34.8"
+      "value": "34.5"
     },
     {
       "category": "Rebounds",
       "player": "Buck Williams",
       "team": "Benfica",
-      "value": "11.4"
+      "value": "11.8"
     },
     {
       "category": "Assists",

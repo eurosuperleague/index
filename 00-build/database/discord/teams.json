@@ -3,16 +3,16 @@
     "id": "roster9",
     "name": "AC Milan",
     "record": {
-      "wins": 20,
-      "losses": 7,
-      "pct": 0.741
+      "wins": 23,
+      "losses": 12,
+      "pct": 0.657
     },
     "section": "ELB Standings",
-    "pf": 125.9,
-    "pa": 115.8,
-    "diff": 10.1,
-    "streak": "W1",
-    "last10": "7-3",
+    "pf": 124.0,
+    "pa": 116.2,
+    "diff": 7.8,
+    "streak": "L3",
+    "last10": "4-6",
     "starPlayer": {
       "name": "Michael Adams",
       "url": "../players/player681.htm",
@@ -27,35 +27,35 @@
     },
     "strengths": [
       {
+        "label": "FT%",
+        "value": 0.797,
+        "rank": 1
+      },
+      {
         "label": "3PT%",
-        "value": 0.405,
+        "value": 0.386,
         "rank": 1
       },
       {
         "label": "Points",
-        "value": 125.9,
+        "value": 124.0,
         "rank": 2
       },
       {
         "label": "Assists",
-        "value": 30.3,
-        "rank": 2
-      },
-      {
-        "label": "Steals",
-        "value": 8.9,
+        "value": 29.7,
         "rank": 2
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "28/02/1987",
-      "text": "AC Milan 114, @Chelsea 95",
-      "boxscoreFile": "box131-1.htm"
+      "date": "3/28/1987",
+      "text": "Bayern Munich 136, @AC Milan 122",
+      "boxscoreFile": "box159-2.htm"
     },
     "nextGame": {
-      "date": "2/03/1987",
-      "text": "Marseille @ AC Milan",
+      "date": "4/1/1987",
+      "text": "AC Milan @ Bayern Munich",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster9"
@@ -64,16 +64,16 @@
     "id": "roster16",
     "name": "AC Sparta Praha",
     "record": {
-      "wins": 15,
-      "losses": 13,
-      "pct": 0.536
+      "wins": 19,
+      "losses": 17,
+      "pct": 0.528
     },
     "section": "ELB Standings",
-    "pf": 113.8,
-    "pa": 112.5,
-    "diff": 1.4,
-    "streak": "W7",
-    "last10": "9-1",
+    "pf": 112.2,
+    "pa": 111.8,
+    "diff": 0.4,
+    "streak": "W3",
+    "last10": "6-4",
     "starPlayer": {
       "name": "Doug Christie",
       "url": "../players/player243.htm",
@@ -89,34 +89,34 @@
     "strengths": [
       {
         "label": "Turnovers",
-        "value": 13.7,
-        "rank": 1
+        "value": 14.0,
+        "rank": 2
       },
       {
         "label": "O.Rebounds",
-        "value": 13.1,
-        "rank": 4
-      },
-      {
-        "label": "Assists",
-        "value": 26.0,
-        "rank": 4
+        "value": 13.2,
+        "rank": 3
       },
       {
         "label": "Steals",
-        "value": 7.6,
+        "value": 8.0,
+        "rank": 4
+      },
+      {
+        "label": "FG%",
+        "value": 0.491,
         "rank": 4
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "28/02/1987",
-      "text": "@AC Sparta Praha 114, Inter Milan 81",
-      "boxscoreFile": "box131-2.htm"
+      "date": "3/29/1987",
+      "text": "@AC Sparta Praha 115, Aston Villa 106",
+      "boxscoreFile": "box160-4.htm"
     },
     "nextGame": {
-      "date": "5/03/1987",
-      "text": "Inter Milan @ AC Sparta Praha",
+      "date": "4/5/1987",
+      "text": "Bayern Munich @ AC Sparta Praha",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster16"
@@ -125,16 +125,16 @@
     "id": "roster12",
     "name": "AFC Richmond",
     "record": {
-      "wins": 10,
-      "losses": 17,
-      "pct": 0.37
+      "wins": 17,
+      "losses": 19,
+      "pct": 0.472
     },
     "section": "CLB Standings",
-    "pf": 113.1,
-    "pa": 115.4,
-    "diff": -2.3,
-    "streak": "L2",
-    "last10": "5-5",
+    "pf": 116.7,
+    "pa": 116.3,
+    "diff": 0.4,
+    "streak": "W1",
+    "last10": "7-3",
     "starPlayer": {
       "name": "Larry Bird",
       "url": "../players/player697.htm",
@@ -149,35 +149,35 @@
     },
     "strengths": [
       {
-        "label": "3PT%",
-        "value": 0.394,
-        "rank": 2
+        "label": "Points",
+        "value": 116.7,
+        "rank": 1
       },
       {
         "label": "Adjusted FG%",
-        "value": 0.546,
-        "rank": 2
+        "value": 0.558,
+        "rank": 1
       },
       {
         "label": "Assists",
-        "value": 31.1,
-        "rank": 3
+        "value": 32.1,
+        "rank": 2
       },
       {
-        "label": "Points Per Shot",
-        "value": 1.25,
-        "rank": 3
+        "label": "FG%",
+        "value": 0.513,
+        "rank": 2
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "27/02/1987",
-      "text": "@Paris Saint-Germain 126, AFC Richmond 125",
-      "boxscoreFile": "box130-1.htm"
+      "date": "3/29/1987",
+      "text": "@AFC Richmond 138, Ajax 118",
+      "boxscoreFile": "box160-2.htm"
     },
     "nextGame": {
-      "date": "3/03/1987",
-      "text": "FL Fart @ AFC Richmond",
+      "date": "4/2/1987",
+      "text": "AFC Richmond @ Real Madrid",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster12"
@@ -186,16 +186,16 @@
     "id": "roster18",
     "name": "Ajax",
     "record": {
-      "wins": 13,
-      "losses": 15,
-      "pct": 0.464
+      "wins": 15,
+      "losses": 20,
+      "pct": 0.429
     },
     "section": "CLB Standings",
-    "pf": 117.5,
-    "pa": 119.8,
-    "diff": -2.3,
-    "streak": "W1",
-    "last10": "8-2",
+    "pf": 116.7,
+    "pa": 120.7,
+    "diff": -4.0,
+    "streak": "L1",
+    "last10": "3-7",
     "starPlayer": {
       "name": "Andre Iguodala",
       "url": "../players/player1314.htm",
@@ -211,34 +211,34 @@
     "strengths": [
       {
         "label": "Points",
-        "value": 117.5,
+        "value": 116.7,
+        "rank": 2
+      },
+      {
+        "label": "Steals",
+        "value": 10.4,
+        "rank": 2
+      },
+      {
+        "label": "3PT%",
+        "value": 0.405,
         "rank": 2
       },
       {
         "label": "FG%",
-        "value": 0.515,
-        "rank": 2
-      },
-      {
-        "label": "Points Per Shot",
-        "value": 1.29,
-        "rank": 2
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 30.0,
+        "value": 0.511,
         "rank": 3
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "26/02/1987",
-      "text": "@Ajax 117, Benfica 107",
-      "boxscoreFile": "box129-1.htm"
+      "date": "3/29/1987",
+      "text": "@AFC Richmond 138, Ajax 118",
+      "boxscoreFile": "box160-2.htm"
     },
     "nextGame": {
-      "date": "4/03/1987",
-      "text": "Crystal Palace @ Ajax",
+      "date": "4/2/1987",
+      "text": "Paris Saint-Germain @ Ajax",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster18"
@@ -247,21 +247,21 @@
     "id": "roster23",
     "name": "Arsenal",
     "record": {
-      "wins": 23,
-      "losses": 5,
-      "pct": 0.821
+      "wins": 30,
+      "losses": 6,
+      "pct": 0.833
     },
     "section": "ELB Standings",
-    "pf": 127.9,
-    "pa": 117.4,
-    "diff": 10.4,
-    "streak": "W11",
-    "last10": "10-0",
+    "pf": 127.8,
+    "pa": 116.4,
+    "diff": 11.4,
+    "streak": "L1",
+    "last10": "9-1",
     "starPlayer": {
       "name": "Chris Bosh",
       "url": "../players/player622.htm",
       "pos": "C",
-      "age": "22",
+      "age": "23",
       "overall": "139",
       "potential": "142"
     },
@@ -272,34 +272,34 @@
     "strengths": [
       {
         "label": "Points",
-        "value": 127.9,
+        "value": 127.8,
         "rank": 1
       },
       {
         "label": "Fouls",
-        "value": 20.6,
+        "value": 20.4,
         "rank": 1
       },
       {
         "label": "FG%",
-        "value": 0.559,
+        "value": 0.556,
         "rank": 1
       },
       {
         "label": "Points Per Shot",
-        "value": 1.48,
+        "value": 1.49,
         "rank": 1
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "26/02/1987",
-      "text": "Arsenal 148, @Marseille 107",
-      "boxscoreFile": "box129-3.htm"
+      "date": "3/30/1987",
+      "text": "@Chelsea 131, Arsenal 123",
+      "boxscoreFile": "box161-1.htm"
     },
     "nextGame": {
-      "date": "2/03/1987",
-      "text": "Aston Villa @ Arsenal",
+      "date": "4/4/1987",
+      "text": "Arsenal @ Inter Milan",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster23"
@@ -308,15 +308,15 @@
     "id": "roster19",
     "name": "Aston Villa",
     "record": {
-      "wins": 11,
-      "losses": 18,
-      "pct": 0.379
+      "wins": 15,
+      "losses": 21,
+      "pct": 0.417
     },
     "section": "ELB Standings",
-    "pf": 121.1,
-    "pa": 125.1,
-    "diff": -4.0,
-    "streak": "L1",
+    "pf": 120.9,
+    "pa": 123.4,
+    "diff": -2.4,
+    "streak": "L2",
     "last10": "5-5",
     "starPlayer": {
       "name": "Xavier McDaniel",
@@ -333,34 +333,34 @@
     "strengths": [
       {
         "label": "Assists",
-        "value": 30.9,
+        "value": 30.8,
         "rank": 1
       },
       {
+        "label": "Adjusted FG%",
+        "value": 0.564,
+        "rank": 2
+      },
+      {
         "label": "Points",
-        "value": 121.1,
+        "value": 120.9,
         "rank": 3
       },
       {
-        "label": "FG%",
-        "value": 0.533,
-        "rank": 3
-      },
-      {
-        "label": "FT%",
-        "value": 0.791,
+        "label": "Turnovers",
+        "value": 14.9,
         "rank": 3
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "28/02/1987",
-      "text": "Bayern Munich 126, @Aston Villa 115",
-      "boxscoreFile": "box131-3.htm"
+      "date": "3/29/1987",
+      "text": "@AC Sparta Praha 115, Aston Villa 106",
+      "boxscoreFile": "box160-4.htm"
     },
     "nextGame": {
-      "date": "2/03/1987",
-      "text": "Aston Villa @ Arsenal",
+      "date": "4/3/1987",
+      "text": "Aston Villa @ Chelsea",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster19"
@@ -369,16 +369,16 @@
     "id": "roster11",
     "name": "Atletico Madrid",
     "record": {
-      "wins": 18,
-      "losses": 10,
-      "pct": 0.643
+      "wins": 22,
+      "losses": 14,
+      "pct": 0.611
     },
     "section": "ECL Standings",
-    "pf": 108.1,
-    "pa": 104.6,
-    "diff": 3.5,
-    "streak": "W6",
-    "last10": "7-3",
+    "pf": 108.3,
+    "pa": 105.8,
+    "diff": 2.5,
+    "streak": "W2",
+    "last10": "6-4",
     "starPlayer": {
       "name": "Reggie Miller",
       "url": "../players/player55.htm",
@@ -394,34 +394,34 @@
     "strengths": [
       {
         "label": "Steals",
-        "value": 11.1,
+        "value": 10.7,
         "rank": 2
       },
       {
         "label": "O.Rebounds",
-        "value": 12.5,
+        "value": 12.1,
         "rank": 3
       },
       {
         "label": "FG%",
-        "value": 0.51,
+        "value": 0.513,
         "rank": 3
       },
       {
         "label": "FT%",
-        "value": 0.738,
+        "value": 0.742,
         "rank": 3
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "26/02/1987",
-      "text": "@Atletico Madrid 125, Manchester United 86",
-      "boxscoreFile": "box129-5.htm"
+      "date": "3/30/1987",
+      "text": "@Atletico Madrid 102, Manchester United 90",
+      "boxscoreFile": "box161-3.htm"
     },
     "nextGame": {
-      "date": "2/03/1987",
-      "text": "Atletico Madrid @ Manchester City",
+      "date": "4/5/1987",
+      "text": "Manchester United @ Atletico Madrid",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster11"
@@ -430,16 +430,16 @@
     "id": "roster24",
     "name": "Barcelona",
     "record": {
-      "wins": 19,
-      "losses": 9,
-      "pct": 0.679
+      "wins": 24,
+      "losses": 11,
+      "pct": 0.686
     },
     "section": "ECL Standings",
-    "pf": 123.0,
-    "pa": 111.1,
-    "diff": 11.9,
-    "streak": "L1",
-    "last10": "9-1",
+    "pf": 122.9,
+    "pa": 111.9,
+    "diff": 11.1,
+    "streak": "L2",
+    "last10": "7-3",
     "starPlayer": {
       "name": "Paul Pierce",
       "url": "../players/player693.htm",
@@ -455,7 +455,7 @@
     "strengths": [
       {
         "label": "Points",
-        "value": 123.0,
+        "value": 122.9,
         "rank": 1
       },
       {
@@ -465,24 +465,24 @@
       },
       {
         "label": "FG%",
-        "value": 0.542,
+        "value": 0.543,
         "rank": 1
       },
       {
         "label": "Points Per Shot",
-        "value": 1.42,
+        "value": 1.41,
         "rank": 1
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "28/02/1987",
-      "text": "Juventus 127, @Barcelona 118",
-      "boxscoreFile": "box131-4.htm"
+      "date": "3/28/1987",
+      "text": "@Manchester City 117, Barcelona 108",
+      "boxscoreFile": "box159-4.htm"
     },
     "nextGame": {
-      "date": "2/03/1987",
-      "text": "Barcelona @ Monaco",
+      "date": "4/1/1987",
+      "text": "Barcelona @ Manchester United",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster24"
@@ -491,16 +491,16 @@
     "id": "roster7",
     "name": "Bayern Munich",
     "record": {
-      "wins": 14,
-      "losses": 14,
-      "pct": 0.5
+      "wins": 19,
+      "losses": 16,
+      "pct": 0.543
     },
     "section": "ELB Standings",
-    "pf": 110.8,
-    "pa": 113.2,
-    "diff": -2.5,
-    "streak": "W4",
-    "last10": "4-6",
+    "pf": 113.3,
+    "pa": 113.6,
+    "diff": -0.3,
+    "streak": "W1",
+    "last10": "8-2",
     "starPlayer": {
       "name": "Kevin McHale",
       "url": "../players/player717.htm",
@@ -516,12 +516,12 @@
     "strengths": [
       {
         "label": "D.Rebounds",
-        "value": 32.8,
+        "value": 33.3,
         "rank": 1
       },
       {
         "label": "Rebounds",
-        "value": 46.3,
+        "value": 46.9,
         "rank": 1
       },
       {
@@ -530,20 +530,20 @@
         "rank": 1
       },
       {
-        "label": "FT%",
-        "value": 0.797,
-        "rank": 1
+        "label": "O.Rebounds",
+        "value": 13.6,
+        "rank": 2
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "28/02/1987",
-      "text": "Bayern Munich 126, @Aston Villa 115",
-      "boxscoreFile": "box131-3.htm"
+      "date": "3/28/1987",
+      "text": "Bayern Munich 136, @AC Milan 122",
+      "boxscoreFile": "box159-2.htm"
     },
     "nextGame": {
-      "date": "6/03/1987",
-      "text": "Bayern Munich @ Marseille",
+      "date": "4/1/1987",
+      "text": "AC Milan @ Bayern Munich",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster7"
@@ -552,21 +552,21 @@
     "id": "roster13",
     "name": "Benfica",
     "record": {
-      "wins": 10,
-      "losses": 17,
-      "pct": 0.37
+      "wins": 14,
+      "losses": 22,
+      "pct": 0.389
     },
     "section": "CLB Standings",
-    "pf": 108.3,
-    "pa": 111.0,
-    "diff": -2.7,
-    "streak": "L1",
-    "last10": "3-7",
+    "pf": 109.8,
+    "pa": 110.9,
+    "diff": -1.2,
+    "streak": "L3",
+    "last10": "4-6",
     "starPlayer": {
       "name": "Moses Malone",
       "url": "../players/player872.htm",
       "pos": "C",
-      "age": "29",
+      "age": "30",
       "overall": "157",
       "potential": "157"
     },
@@ -576,29 +576,34 @@
     },
     "strengths": [
       {
-        "label": "Fouls",
-        "value": 16.4,
+        "label": "O.Rebounds",
+        "value": 14.4,
         "rank": 1
       },
       {
-        "label": "O.Rebounds",
-        "value": 14.2,
-        "rank": 2
+        "label": "Fouls",
+        "value": 16.2,
+        "rank": 1
       },
       {
         "label": "Rebounds",
-        "value": 43.4,
+        "value": 43.7,
+        "rank": 2
+      },
+      {
+        "label": "D.Rebounds",
+        "value": 29.4,
         "rank": 3
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "26/02/1987",
-      "text": "@Ajax 117, Benfica 107",
-      "boxscoreFile": "box129-1.htm"
+      "date": "3/29/1987",
+      "text": "@Brighton 123, Benfica 116",
+      "boxscoreFile": "box160-3.htm"
     },
     "nextGame": {
-      "date": "2/03/1987",
+      "date": "4/2/1987",
       "text": "Benfica @ FL Fart",
       "boxscoreFile": ""
     },
@@ -608,21 +613,21 @@
     "id": "roster10",
     "name": "Brighton",
     "record": {
-      "wins": 21,
-      "losses": 6,
-      "pct": 0.778
+      "wins": 27,
+      "losses": 8,
+      "pct": 0.771
     },
     "section": "CLB Standings",
-    "pf": 115.2,
-    "pa": 106.9,
-    "diff": 8.4,
-    "streak": "W3",
-    "last10": "7-3",
+    "pf": 114.9,
+    "pa": 106.4,
+    "diff": 8.5,
+    "streak": "W2",
+    "last10": "8-2",
     "starPlayer": {
       "name": "Kiki Vandeweghe",
       "url": "../players/player701.htm",
       "pos": "SF",
-      "age": "27",
+      "age": "26",
       "overall": "174",
       "potential": "174"
     },
@@ -633,34 +638,41 @@
     "strengths": [
       {
         "label": "Blocks",
-        "value": 14.7,
+        "value": 14.8,
         "rank": 1
       },
       {
         "label": "FG%",
-        "value": 0.521,
+        "value": 0.519,
+        "rank": 1
+      },
+      {
+        "label": "FT%",
+        "value": 0.801,
         "rank": 1
       },
       {
         "label": "3PT%",
-        "value": 0.433,
-        "rank": 1
-      },
-      {
-        "label": "Points Per Shot",
-        "value": 1.32,
+        "value": 0.417,
         "rank": 1
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Rickey Green",
+        "pos": "PG",
+        "injury": "Pinched Nerve",
+        "length": "10"
+      }
+    ],
     "recentGame": {
-      "date": "27/02/1987",
-      "text": "Brighton 112, @Crystal Palace 96",
-      "boxscoreFile": "box130-2.htm"
+      "date": "3/29/1987",
+      "text": "@Brighton 123, Benfica 116",
+      "boxscoreFile": "box160-3.htm"
     },
     "nextGame": {
-      "date": "3/03/1987",
-      "text": "Crystal Palace @ Brighton",
+      "date": "4/3/1987",
+      "text": "Brighton @ AFC Richmond",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster10"
@@ -669,16 +681,16 @@
     "id": "roster17",
     "name": "Chelsea",
     "record": {
-      "wins": 8,
-      "losses": 21,
-      "pct": 0.276
+      "wins": 11,
+      "losses": 26,
+      "pct": 0.297
     },
     "section": "ELB Standings",
-    "pf": 114.2,
-    "pa": 118.8,
-    "diff": -4.6,
-    "streak": "L10",
-    "last10": "0-10",
+    "pf": 113.5,
+    "pa": 119.1,
+    "diff": -5.6,
+    "streak": "W3",
+    "last10": "3-7",
     "starPlayer": {
       "name": "Jim Paxson",
       "url": "../players/player875.htm",
@@ -694,47 +706,34 @@
     "strengths": [
       {
         "label": "Steals",
-        "value": 10.1,
+        "value": 9.9,
         "rank": 1
       },
       {
+        "label": "Assists",
+        "value": 25.9,
+        "rank": 4
+      },
+      {
         "label": "Turnovers",
-        "value": 14.5,
-        "rank": 3
-      },
-      {
-        "label": "FT%",
-        "value": 0.784,
+        "value": 15.2,
         "rank": 4
       },
       {
-        "label": "Points Per Shot",
-        "value": 1.29,
-        "rank": 4
+        "label": "FG%",
+        "value": 0.487,
+        "rank": 5
       }
     ],
-    "injuries": [
-      {
-        "name": "Jim Paxson",
-        "pos": "SG",
-        "injury": "Concussion",
-        "length": "23"
-      },
-      {
-        "name": "Ron Brewer",
-        "pos": "PF",
-        "injury": "Torn Abdominal Muscle",
-        "length": "19"
-      }
-    ],
+    "injuries": [],
     "recentGame": {
-      "date": "28/02/1987",
-      "text": "AC Milan 114, @Chelsea 95",
-      "boxscoreFile": "box131-1.htm"
+      "date": "3/30/1987",
+      "text": "@Chelsea 131, Arsenal 123",
+      "boxscoreFile": "box161-1.htm"
     },
     "nextGame": {
-      "date": "7/03/1987",
-      "text": "Chelsea @ AC Milan",
+      "date": "4/3/1987",
+      "text": "Aston Villa @ Chelsea",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster17"
@@ -743,15 +742,15 @@
     "id": "roster6",
     "name": "Crystal Palace",
     "record": {
-      "wins": 12,
-      "losses": 16,
-      "pct": 0.429
+      "wins": 14,
+      "losses": 22,
+      "pct": 0.389
     },
     "section": "CLB Standings",
-    "pf": 108.8,
-    "pa": 113.2,
-    "diff": -4.4,
-    "streak": "L6",
+    "pf": 108.6,
+    "pa": 113.1,
+    "diff": -4.5,
+    "streak": "W1",
     "last10": "2-8",
     "starPlayer": {
       "name": "Rolando Blackman",
@@ -768,47 +767,34 @@
     "strengths": [
       {
         "label": "Turnovers",
-        "value": 16.4,
+        "value": 16.6,
         "rank": 1
       },
       {
         "label": "Fouls",
-        "value": 19.4,
+        "value": 19.5,
         "rank": 3
       },
       {
         "label": "FT%",
-        "value": 0.77,
+        "value": 0.773,
         "rank": 3
       },
       {
         "label": "Points Per Shot",
-        "value": 1.24,
-        "rank": 5
+        "value": 1.23,
+        "rank": 4
       }
     ],
-    "injuries": [
-      {
-        "name": "Jack Sikma",
-        "pos": "PF",
-        "injury": "Patellar Tendanitis",
-        "length": "24"
-      },
-      {
-        "name": "Robert Reid",
-        "pos": "SF",
-        "injury": "Broken Foot",
-        "length": "17"
-      }
-    ],
+    "injuries": [],
     "recentGame": {
-      "date": "27/02/1987",
-      "text": "Brighton 112, @Crystal Palace 96",
-      "boxscoreFile": "box130-2.htm"
+      "date": "3/28/1987",
+      "text": "Crystal Palace 119, @FL Fart 93",
+      "boxscoreFile": "box159-1.htm"
     },
     "nextGame": {
-      "date": "3/03/1987",
-      "text": "Crystal Palace @ Brighton",
+      "date": "4/3/1987",
+      "text": "Crystal Palace @ Real Madrid",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster6"
@@ -817,15 +803,15 @@
     "id": "roster27",
     "name": "FL Fart",
     "record": {
-      "wins": 11,
-      "losses": 17,
-      "pct": 0.393
+      "wins": 14,
+      "losses": 22,
+      "pct": 0.389
     },
     "section": "CLB Standings",
-    "pf": 112.1,
-    "pa": 118.8,
+    "pf": 110.6,
+    "pa": 117.2,
     "diff": -6.6,
-    "streak": "L2",
+    "streak": "L1",
     "last10": "3-7",
     "starPlayer": {
       "name": "Larry Drew",
@@ -842,33 +828,33 @@
     "strengths": [
       {
         "label": "Blocks",
-        "value": 9.0,
+        "value": 8.5,
         "rank": 3
       },
       {
         "label": "Turnovers",
-        "value": 17.5,
+        "value": 17.4,
         "rank": 3
       },
       {
         "label": "O.Rebounds",
-        "value": 13.9,
+        "value": 13.4,
         "rank": 4
       },
       {
-        "label": "Rebounds",
-        "value": 43.1,
+        "label": "Assists",
+        "value": 29.8,
         "rank": 4
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "26/02/1987",
-      "text": "Real Madrid 114, @FL Fart 105",
-      "boxscoreFile": "box129-2.htm"
+      "date": "3/28/1987",
+      "text": "Crystal Palace 119, @FL Fart 93",
+      "boxscoreFile": "box159-1.htm"
     },
     "nextGame": {
-      "date": "2/03/1987",
+      "date": "4/2/1987",
       "text": "Benfica @ FL Fart",
       "boxscoreFile": ""
     },
@@ -878,16 +864,16 @@
     "id": "roster26",
     "name": "Inter Milan",
     "record": {
-      "wins": 14,
-      "losses": 17,
-      "pct": 0.452
+      "wins": 17,
+      "losses": 19,
+      "pct": 0.472
     },
     "section": "ELB Standings",
-    "pf": 116.2,
-    "pa": 118.4,
-    "diff": -2.2,
-    "streak": "L2",
-    "last10": "3-7",
+    "pf": 115.4,
+    "pa": 117.4,
+    "diff": -1.9,
+    "streak": "W1",
+    "last10": "4-6",
     "starPlayer": {
       "name": "David West",
       "url": "../players/player262.htm",
@@ -897,40 +883,40 @@
       "potential": "123"
     },
     "cap": {
-      "salary": "$42,948,594",
-      "room": "$27,051,406"
+      "salary": "$53,148,594",
+      "room": "$16,851,406"
     },
     "strengths": [
       {
         "label": "O.Rebounds",
-        "value": 13.5,
+        "value": 13.6,
         "rank": 1
       },
       {
-        "label": "D.Rebounds",
-        "value": 32.2,
+        "label": "Rebounds",
+        "value": 45.8,
         "rank": 2
       },
       {
-        "label": "Rebounds",
-        "value": 45.7,
-        "rank": 2
+        "label": "D.Rebounds",
+        "value": 32.1,
+        "rank": 3
       },
       {
         "label": "Blocks",
         "value": 6.8,
-        "rank": 2
+        "rank": 3
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "28/02/1987",
-      "text": "@AC Sparta Praha 114, Inter Milan 81",
-      "boxscoreFile": "box131-2.htm"
+      "date": "3/30/1987",
+      "text": "@Inter Milan 137, Marseille 124",
+      "boxscoreFile": "box161-2.htm"
     },
     "nextGame": {
-      "date": "5/03/1987",
-      "text": "Inter Milan @ AC Sparta Praha",
+      "date": "4/4/1987",
+      "text": "Arsenal @ Inter Milan",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster26"
@@ -939,21 +925,21 @@
     "id": "roster14",
     "name": "Juventus",
     "record": {
-      "wins": 13,
-      "losses": 17,
-      "pct": 0.433
+      "wins": 15,
+      "losses": 21,
+      "pct": 0.417
     },
     "section": "ECL Standings",
-    "pf": 110.1,
-    "pa": 112.0,
-    "diff": -2.0,
-    "streak": "W1",
-    "last10": "4-6",
+    "pf": 109.0,
+    "pa": 112.3,
+    "diff": -3.3,
+    "streak": "W2",
+    "last10": "3-7",
     "starPlayer": {
       "name": "Gilbert Arenas",
       "url": "../players/player677.htm",
       "pos": "SG",
-      "age": "21",
+      "age": "22",
       "overall": "120",
       "potential": "125"
     },
@@ -964,33 +950,33 @@
     "strengths": [
       {
         "label": "O.Rebounds",
-        "value": 14.3,
+        "value": 14.6,
         "rank": 1
       },
       {
         "label": "Rebounds",
-        "value": 45.2,
+        "value": 45.0,
         "rank": 1
       },
       {
         "label": "Blocks",
-        "value": 6.7,
+        "value": 6.6,
         "rank": 1
       },
       {
         "label": "FT%",
-        "value": 0.77,
-        "rank": 1
+        "value": 0.769,
+        "rank": 2
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "28/02/1987",
-      "text": "Juventus 127, @Barcelona 118",
-      "boxscoreFile": "box131-4.htm"
+      "date": "3/28/1987",
+      "text": "Juventus 109, @Tottenham Hotspur 105",
+      "boxscoreFile": "box159-3.htm"
     },
     "nextGame": {
-      "date": "5/03/1987",
+      "date": "4/1/1987",
       "text": "Juventus @ Valencia",
       "boxscoreFile": ""
     },
@@ -1000,16 +986,16 @@
     "id": "roster28",
     "name": "Manchester City",
     "record": {
-      "wins": 9,
-      "losses": 17,
-      "pct": 0.346
+      "wins": 12,
+      "losses": 23,
+      "pct": 0.343
     },
     "section": "ECL Standings",
-    "pf": 110.4,
-    "pa": 115.7,
+    "pf": 111.6,
+    "pa": 117.0,
     "diff": -5.3,
-    "streak": "L1",
-    "last10": "5-5",
+    "streak": "W1",
+    "last10": "3-7",
     "starPlayer": {
       "name": "Luol Deng",
       "url": "../players/player342.htm",
@@ -1019,47 +1005,40 @@
       "potential": "133"
     },
     "cap": {
-      "salary": "$43,512,429",
-      "room": "$6,487,571"
+      "salary": "$33,487,429",
+      "room": "$16,512,571"
     },
     "strengths": [
       {
-        "label": "Turnovers",
-        "value": 15.5,
-        "rank": 2
-      },
-      {
         "label": "Fouls",
-        "value": 20.8,
+        "value": 21.5,
         "rank": 3
       },
       {
         "label": "Points",
-        "value": 110.4,
+        "value": 111.6,
         "rank": 4
       },
       {
         "label": "O.Rebounds",
-        "value": 11.8,
+        "value": 12.0,
+        "rank": 4
+      },
+      {
+        "label": "Turnovers",
+        "value": 15.7,
         "rank": 4
       }
     ],
-    "injuries": [
-      {
-        "name": "Nick Anderson",
-        "pos": "SG",
-        "injury": "Broken Leg",
-        "length": "19"
-      }
-    ],
+    "injuries": [],
     "recentGame": {
-      "date": "24/02/1987",
-      "text": "Valencia 116, @Manchester City 109",
-      "boxscoreFile": "box127-4.htm"
+      "date": "3/28/1987",
+      "text": "@Manchester City 117, Barcelona 108",
+      "boxscoreFile": "box159-4.htm"
     },
     "nextGame": {
-      "date": "1/03/1987",
-      "text": "Manchester City @ Valencia",
+      "date": "4/1/1987",
+      "text": "Manchester City @ Monaco",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster28"
@@ -1068,16 +1047,16 @@
     "id": "roster5",
     "name": "Manchester United",
     "record": {
-      "wins": 8,
-      "losses": 21,
-      "pct": 0.276
+      "wins": 11,
+      "losses": 25,
+      "pct": 0.306
     },
     "section": "ECL Standings",
-    "pf": 99.9,
+    "pf": 100.9,
     "pa": 108.4,
-    "diff": -8.5,
-    "streak": "L6",
-    "last10": "2-8",
+    "diff": -7.5,
+    "streak": "L1",
+    "last10": "3-7",
     "starPlayer": {
       "name": "Mike McGee",
       "url": "../players/player736.htm",
@@ -1093,13 +1072,13 @@
     "strengths": [
       {
         "label": "Fouls",
-        "value": 17.7,
+        "value": 17.5,
         "rank": 1
       },
       {
         "label": "Turnovers",
-        "value": 15.8,
-        "rank": 3
+        "value": 15.3,
+        "rank": 2
       },
       {
         "label": "O.Rebounds",
@@ -1108,19 +1087,19 @@
       },
       {
         "label": "Steals",
-        "value": 8.1,
+        "value": 8.0,
         "rank": 5
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "26/02/1987",
-      "text": "@Atletico Madrid 125, Manchester United 86",
-      "boxscoreFile": "box129-5.htm"
+      "date": "3/30/1987",
+      "text": "@Atletico Madrid 102, Manchester United 90",
+      "boxscoreFile": "box161-3.htm"
     },
     "nextGame": {
-      "date": "2/03/1987",
-      "text": "Manchester United @ Tottenham Hotspur",
+      "date": "4/1/1987",
+      "text": "Barcelona @ Manchester United",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster5"
@@ -1129,16 +1108,16 @@
     "id": "roster15",
     "name": "Marseille",
     "record": {
-      "wins": 9,
-      "losses": 19,
-      "pct": 0.321
+      "wins": 10,
+      "losses": 27,
+      "pct": 0.27
     },
     "section": "ELB Standings",
-    "pf": 115.1,
-    "pa": 122.8,
-    "diff": -7.7,
-    "streak": "L6",
-    "last10": "3-7",
+    "pf": 114.8,
+    "pa": 123.5,
+    "diff": -8.7,
+    "streak": "L2",
+    "last10": "1-9",
     "starPlayer": {
       "name": "Robert Parish",
       "url": "../players/player873.htm",
@@ -1154,22 +1133,22 @@
     "strengths": [
       {
         "label": "Turnovers",
-        "value": 13.7,
+        "value": 13.6,
+        "rank": 1
+      },
+      {
+        "label": "Steals",
+        "value": 9.2,
         "rank": 2
       },
       {
         "label": "O.Rebounds",
-        "value": 13.5,
-        "rank": 3
+        "value": 13.0,
+        "rank": 4
       },
       {
-        "label": "Steals",
-        "value": 8.8,
-        "rank": 3
-      },
-      {
-        "label": "Rebounds",
-        "value": 41.8,
+        "label": "FT%",
+        "value": 0.771,
         "rank": 4
       }
     ],
@@ -1178,17 +1157,17 @@
         "name": "Robert Parish",
         "pos": "C",
         "injury": "Broken Leg",
-        "length": "105"
+        "length": "74"
       }
     ],
     "recentGame": {
-      "date": "26/02/1987",
-      "text": "Arsenal 148, @Marseille 107",
-      "boxscoreFile": "box129-3.htm"
+      "date": "3/30/1987",
+      "text": "@Inter Milan 137, Marseille 124",
+      "boxscoreFile": "box161-2.htm"
     },
     "nextGame": {
-      "date": "2/03/1987",
-      "text": "Marseille @ AC Milan",
+      "date": "4/3/1987",
+      "text": "AC Milan @ Marseille",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster15"
@@ -1197,15 +1176,15 @@
     "id": "roster20",
     "name": "Monaco",
     "record": {
-      "wins": 13,
-      "losses": 15,
-      "pct": 0.464
+      "wins": 16,
+      "losses": 20,
+      "pct": 0.444
     },
     "section": "ECL Standings",
-    "pf": 105.2,
-    "pa": 107.1,
-    "diff": -1.9,
-    "streak": "L5",
+    "pf": 106.0,
+    "pa": 108.6,
+    "diff": -2.6,
+    "streak": "L1",
     "last10": "3-7",
     "starPlayer": {
       "name": "Alvin Robertson",
@@ -1216,18 +1195,13 @@
       "potential": "155"
     },
     "cap": {
-      "salary": "$41,866,106",
-      "room": "$8,133,894"
+      "salary": "$41,926,106",
+      "room": "$8,073,894"
     },
     "strengths": [
       {
         "label": "O.Rebounds",
-        "value": 13.3,
-        "rank": 2
-      },
-      {
-        "label": "Rebounds",
-        "value": 44.1,
+        "value": 13.2,
         "rank": 2
       },
       {
@@ -1236,20 +1210,25 @@
         "rank": 2
       },
       {
+        "label": "Rebounds",
+        "value": 43.4,
+        "rank": 3
+      },
+      {
         "label": "Blocks",
         "value": 6.5,
-        "rank": 2
+        "rank": 3
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "26/02/1987",
-      "text": "Tottenham Hotspur 122, @Monaco 89",
-      "boxscoreFile": "box129-4.htm"
+      "date": "3/31/1987",
+      "text": "@Valencia 137, Monaco 107",
+      "boxscoreFile": "box162-1.htm"
     },
     "nextGame": {
-      "date": "2/03/1987",
-      "text": "Barcelona @ Monaco",
+      "date": "4/1/1987",
+      "text": "Manchester City @ Monaco",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster20"
@@ -1258,16 +1237,16 @@
     "id": "roster21",
     "name": "Paris Saint-Germain",
     "record": {
-      "wins": 16,
-      "losses": 12,
-      "pct": 0.571
+      "wins": 19,
+      "losses": 17,
+      "pct": 0.528
     },
     "section": "CLB Standings",
-    "pf": 118.4,
-    "pa": 114.2,
-    "diff": 4.3,
-    "streak": "W1",
-    "last10": "7-3",
+    "pf": 115.0,
+    "pa": 112.9,
+    "diff": 2.1,
+    "streak": "L2",
+    "last10": "4-6",
     "starPlayer": {
       "name": "Dan Majerle",
       "url": "../players/player332.htm",
@@ -1282,35 +1261,35 @@
     },
     "strengths": [
       {
-        "label": "Points",
-        "value": 118.4,
+        "label": "Steals",
+        "value": 11.4,
         "rank": 1
       },
       {
-        "label": "Steals",
-        "value": 10.9,
-        "rank": 1
+        "label": "O.Rebounds",
+        "value": 14.3,
+        "rank": 2
+      },
+      {
+        "label": "Turnovers",
+        "value": 17.0,
+        "rank": 2
       },
       {
         "label": "FT%",
-        "value": 0.796,
-        "rank": 1
-      },
-      {
-        "label": "Rebounds",
-        "value": 43.7,
+        "value": 0.785,
         "rank": 2
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "27/02/1987",
-      "text": "@Paris Saint-Germain 126, AFC Richmond 125",
-      "boxscoreFile": "box130-1.htm"
+      "date": "3/29/1987",
+      "text": "@Real Madrid 112, Paris Saint-Germain 99",
+      "boxscoreFile": "box160-1.htm"
     },
     "nextGame": {
-      "date": "4/03/1987",
-      "text": "Paris Saint-Germain @ Benfica",
+      "date": "4/2/1987",
+      "text": "Paris Saint-Germain @ Ajax",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster21"
@@ -1319,16 +1298,16 @@
     "id": "roster8",
     "name": "Real Madrid",
     "record": {
-      "wins": 17,
-      "losses": 10,
-      "pct": 0.63
+      "wins": 22,
+      "losses": 12,
+      "pct": 0.647
     },
     "section": "CLB Standings",
-    "pf": 114.1,
-    "pa": 108.1,
-    "diff": 6.0,
+    "pf": 114.4,
+    "pa": 108.6,
+    "diff": 5.8,
     "streak": "W2",
-    "last10": "5-5",
+    "last10": "7-3",
     "starPlayer": {
       "name": "Sidney Moncrief",
       "url": "../players/player699.htm",
@@ -1343,42 +1322,35 @@
     },
     "strengths": [
       {
-        "label": "O.Rebounds",
-        "value": 14.3,
-        "rank": 1
-      },
-      {
         "label": "D.Rebounds",
-        "value": 33.0,
+        "value": 32.6,
         "rank": 1
       },
       {
         "label": "Rebounds",
-        "value": 47.3,
+        "value": 46.6,
         "rank": 1
       },
       {
         "label": "Assists",
-        "value": 31.9,
+        "value": 32.5,
         "rank": 1
-      }
-    ],
-    "injuries": [
+      },
       {
-        "name": "Sidney Moncrief",
-        "pos": "SG",
-        "injury": "Sprained Wrist",
-        "length": "7"
+        "label": "Blocks",
+        "value": 12.4,
+        "rank": 2
       }
     ],
+    "injuries": [],
     "recentGame": {
-      "date": "26/02/1987",
-      "text": "Real Madrid 114, @FL Fart 105",
-      "boxscoreFile": "box129-2.htm"
+      "date": "3/29/1987",
+      "text": "@Real Madrid 112, Paris Saint-Germain 99",
+      "boxscoreFile": "box160-1.htm"
     },
     "nextGame": {
-      "date": "5/03/1987",
-      "text": "Ajax @ Real Madrid",
+      "date": "4/2/1987",
+      "text": "AFC Richmond @ Real Madrid",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster8"
@@ -1387,16 +1359,16 @@
     "id": "roster22",
     "name": "Tottenham Hotspur",
     "record": {
-      "wins": 15,
-      "losses": 13,
-      "pct": 0.536
+      "wins": 20,
+      "losses": 15,
+      "pct": 0.571
     },
     "section": "ECL Standings",
-    "pf": 116.3,
-    "pa": 117.2,
-    "diff": -0.9,
-    "streak": "W3",
-    "last10": "5-5",
+    "pf": 116.0,
+    "pa": 115.7,
+    "diff": 0.3,
+    "streak": "L1",
+    "last10": "8-2",
     "starPlayer": {
       "name": "Hubert Davis",
       "url": "../players/player440.htm",
@@ -1412,7 +1384,7 @@
     "strengths": [
       {
         "label": "Assists",
-        "value": 30.5,
+        "value": 29.9,
         "rank": 1
       },
       {
@@ -1421,25 +1393,32 @@
         "rank": 1
       },
       {
-        "label": "3PT%",
-        "value": 0.405,
+        "label": "FT%",
+        "value": 0.774,
         "rank": 1
       },
       {
-        "label": "Points",
-        "value": 116.3,
-        "rank": 2
+        "label": "3PT%",
+        "value": 0.394,
+        "rank": 1
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Ray Williams",
+        "pos": "PG",
+        "injury": "Sprained Ankle",
+        "length": "16"
+      }
+    ],
     "recentGame": {
-      "date": "26/02/1987",
-      "text": "Tottenham Hotspur 122, @Monaco 89",
-      "boxscoreFile": "box129-4.htm"
+      "date": "3/28/1987",
+      "text": "Juventus 109, @Tottenham Hotspur 105",
+      "boxscoreFile": "box159-3.htm"
     },
     "nextGame": {
-      "date": "2/03/1987",
-      "text": "Manchester United @ Tottenham Hotspur",
+      "date": "4/2/1987",
+      "text": "Tottenham Hotspur @ Barcelona",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster22"
@@ -1448,21 +1427,21 @@
     "id": "roster25",
     "name": "Valencia",
     "record": {
-      "wins": 17,
-      "losses": 10,
-      "pct": 0.63
+      "wins": 22,
+      "losses": 13,
+      "pct": 0.629
     },
     "section": "ECL Standings",
-    "pf": 111.1,
-    "pa": 107.8,
-    "diff": 3.3,
+    "pf": 112.6,
+    "pa": 107.4,
+    "diff": 5.2,
     "streak": "W1",
     "last10": "6-4",
     "starPlayer": {
       "name": "Brian Shaw",
       "url": "../players/player180.htm",
       "pos": "SF",
-      "age": "23",
+      "age": "24",
       "overall": "131",
       "potential": "136"
     },
@@ -1473,34 +1452,34 @@
     "strengths": [
       {
         "label": "D.Rebounds",
-        "value": 32.1,
+        "value": 32.7,
         "rank": 1
       },
       {
+        "label": "Rebounds",
+        "value": 43.5,
+        "rank": 2
+      },
+      {
+        "label": "Blocks",
+        "value": 6.5,
+        "rank": 2
+      },
+      {
         "label": "Fouls",
-        "value": 19.0,
-        "rank": 2
-      },
-      {
-        "label": "FG%",
-        "value": 0.522,
-        "rank": 2
-      },
-      {
-        "label": "Points Per Shot",
-        "value": 1.38,
+        "value": 18.8,
         "rank": 2
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "24/02/1987",
-      "text": "Valencia 116, @Manchester City 109",
-      "boxscoreFile": "box127-4.htm"
+      "date": "3/31/1987",
+      "text": "@Valencia 137, Monaco 107",
+      "boxscoreFile": "box162-1.htm"
     },
     "nextGame": {
-      "date": "1/03/1987",
-      "text": "Manchester City @ Valencia",
+      "date": "4/1/1987",
+      "text": "Juventus @ Valencia",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster25"
