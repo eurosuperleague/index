@@ -1,4 +1,27 @@
 {
     "source": "injuries.htm",
-    "injuries": []
+    "injuries": [
+        {
+            "pos": "SF",
+            "name": "Mike McGee",
+            "url": "",
+            "team": "roster20",
+            "teamName": "Manchester United",
+            "rosterUrl": "./rosters/roster20.htm",
+            "length": "168",
+            "injury": "Ruptured Achilles",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PG",
+            "name": "Reggie Theus",
+            "url": "",
+            "team": "roster15",
+            "teamName": "Crystal Palace",
+            "rosterUrl": "./rosters/roster15.htm",
+            "length": "98",
+            "injury": "Broken Leg",
+            "rowClass": "row2"
+        }
+    ]
 }

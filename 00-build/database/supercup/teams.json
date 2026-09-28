@@ -9,8 +9,8 @@
             "url": "../players/player698.htm",
             "pos": "PF",
             "age": "25",
-            "overall": "133",
-            "potential": "137"
+            "overall": "132",
+            "potential": "133"
         }
     },
     {
@@ -23,8 +23,8 @@
             "url": "../players/player243.htm",
             "pos": "SF",
             "age": "25",
-            "overall": "136",
-            "potential": "147"
+            "overall": "140",
+            "potential": "149"
         }
     },
     {
@@ -36,9 +36,9 @@
             "name": "Larry Bird",
             "url": "../players/player697.htm",
             "pos": "SF",
-            "age": "26",
-            "overall": "152",
-            "potential": "159"
+            "age": "27",
+            "overall": "150",
+            "potential": "160"
         }
     },
     {
@@ -50,9 +50,9 @@
             "name": "Andre Iguodala",
             "url": "../players/player1314.htm",
             "pos": "SF",
-            "age": "22",
+            "age": "23",
             "overall": "153",
-            "potential": "157"
+            "potential": "158"
         }
     },
     {
@@ -64,9 +64,9 @@
             "name": "Chris Bosh",
             "url": "../players/player622.htm",
             "pos": "C",
-            "age": "22",
-            "overall": "140",
-            "potential": "143"
+            "age": "23",
+            "overall": "138",
+            "potential": "145"
         }
     },
     {
@@ -79,8 +79,8 @@
             "url": "../players/player238.htm",
             "pos": "PF",
             "age": "25",
-            "overall": "128",
-            "potential": "130"
+            "overall": "129",
+            "potential": "133"
         }
     },
     {
@@ -91,10 +91,10 @@
         "starPlayer": {
             "name": "Reggie Miller",
             "url": "../players/player55.htm",
-            "pos": "SG",
+            "pos": "SF",
             "age": "22",
-            "overall": "142",
-            "potential": "165"
+            "overall": "144",
+            "potential": "166"
         }
     },
     {
@@ -107,8 +107,8 @@
             "url": "../players/player693.htm",
             "pos": "SF",
             "age": "23",
-            "overall": "165",
-            "potential": "172"
+            "overall": "160",
+            "potential": "176"
         }
     },
     {
@@ -120,9 +120,9 @@
             "name": "Kevin McHale",
             "url": "../players/player717.htm",
             "pos": "PF",
-            "age": "25",
+            "age": "26",
             "overall": "123",
-            "potential": "126"
+            "potential": "125"
         }
     },
     {
@@ -134,9 +134,9 @@
             "name": "Moses Malone",
             "url": "../players/player872.htm",
             "pos": "C",
-            "age": "29",
+            "age": "30",
             "overall": "144",
-            "potential": "146"
+            "potential": "145"
         }
     },
     {
@@ -149,8 +149,8 @@
             "url": "../players/player701.htm",
             "pos": "SF",
             "age": "26",
-            "overall": "165",
-            "potential": "169"
+            "overall": "164",
+            "potential": "167"
         }
     },
     {
@@ -163,8 +163,8 @@
             "url": "../players/player875.htm",
             "pos": "SG",
             "age": "27",
-            "overall": "141",
-            "potential": "145"
+            "overall": "140",
+            "potential": "144"
         }
     },
     {
@@ -176,8 +176,8 @@
             "name": "Rolando Blackman",
             "url": "../players/player871.htm",
             "pos": "SF",
-            "age": "25",
-            "overall": "152",
+            "age": "26",
+            "overall": "153",
             "potential": "159"
         }
     },
@@ -190,9 +190,9 @@
             "name": "Larry Drew",
             "url": "../players/player1053.htm",
             "pos": "PG",
-            "age": "26",
-            "overall": "141",
-            "potential": "145"
+            "age": "27",
+            "overall": "142",
+            "potential": "146"
         }
     },
     {
@@ -205,8 +205,8 @@
             "url": "../players/player262.htm",
             "pos": "PF",
             "age": "27",
-            "overall": "121",
-            "potential": "126"
+            "overall": "119",
+            "potential": "122"
         }
     },
     {
@@ -218,9 +218,9 @@
             "name": "Gilbert Arenas",
             "url": "../players/player677.htm",
             "pos": "SG",
-            "age": "21",
-            "overall": "123",
-            "potential": "127"
+            "age": "22",
+            "overall": "122",
+            "potential": "129"
         }
     },
     {
@@ -232,9 +232,9 @@
             "name": "Luol Deng",
             "url": "../players/player342.htm",
             "pos": "SF",
-            "age": "21",
+            "age": "22",
             "overall": "130",
-            "potential": "135"
+            "potential": "136"
         }
     },
     {
@@ -243,12 +243,12 @@
         "file": "roster20.htm",
         "url": "../rosters/roster20.htm",
         "starPlayer": {
-            "name": "Mike McGee",
-            "url": "../players/player736.htm",
-            "pos": "SF",
-            "age": "25",
-            "overall": "128",
-            "potential": "136"
+            "name": "Tony Parker",
+            "url": "../players/player1327.htm",
+            "pos": "PG",
+            "age": "21",
+            "overall": "119",
+            "potential": "126"
         }
     },
     {
@@ -261,8 +261,8 @@
             "url": "../players/player873.htm",
             "pos": "C",
             "age": "31",
-            "overall": "117",
-            "potential": "119"
+            "overall": "115",
+            "potential": "120"
         }
     },
     {
@@ -275,8 +275,8 @@
             "url": "../players/player423.htm",
             "pos": "SG",
             "age": "23",
-            "overall": "133",
-            "potential": "151"
+            "overall": "134",
+            "potential": "150"
         }
     },
     {
@@ -288,9 +288,9 @@
             "name": "Brad Davis",
             "url": "../players/player714.htm",
             "pos": "PG",
-            "age": "27",
-            "overall": "146",
-            "potential": "151"
+            "age": "28",
+            "overall": "149",
+            "potential": "152"
         }
     },
     {
@@ -303,8 +303,8 @@
             "url": "../players/player699.htm",
             "pos": "SG",
             "age": "27",
-            "overall": "150",
-            "potential": "154"
+            "overall": "152",
+            "potential": "155"
         }
     },
     {
@@ -317,8 +317,8 @@
             "url": "../players/player440.htm",
             "pos": "SF",
             "age": "25",
-            "overall": "130",
-            "potential": "136"
+            "overall": "126",
+            "potential": "134"
         }
     },
     {
@@ -330,9 +330,9 @@
             "name": "Brian Shaw",
             "url": "../players/player180.htm",
             "pos": "SF",
-            "age": "23",
-            "overall": "132",
-            "potential": "145"
+            "age": "24",
+            "overall": "131",
+            "potential": "140"
         }
     }
 ]
