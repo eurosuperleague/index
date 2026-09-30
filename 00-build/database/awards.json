@@ -10,6 +10,57 @@
                     "slug": "player-of-the-week",
                     "awards": [
                         {
+                            "date": "04/19/1987",
+                            "pos": "SG",
+                            "player": "Glen Rice",
+                            "playerUrl": "./players/player1297.htm",
+                            "playerFile": "player1297.htm",
+                            "team": "roster10",
+                            "teamName": "Brighton",
+                            "teamUrl": "./rosters/roster10.htm",
+                            "teamFile": "roster10.htm",
+                            "ppg": 24.0,
+                            "rpg": 5.0,
+                            "apg": 5.0,
+                            "spg": 0.5,
+                            "bpg": 0.0,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "date": "12/04/1987",
+                            "pos": "PG",
+                            "player": "Reggie Theus",
+                            "playerUrl": "./players/player708.htm",
+                            "playerFile": "player708.htm",
+                            "team": "roster6",
+                            "teamName": "Crystal Palace",
+                            "teamUrl": "./rosters/roster6.htm",
+                            "teamFile": "roster6.htm",
+                            "ppg": 21.0,
+                            "rpg": 7.5,
+                            "apg": 7.0,
+                            "spg": 5.0,
+                            "bpg": 0.5,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "date": "05/04/1987",
+                            "pos": "SG",
+                            "player": "Glen Rice",
+                            "playerUrl": "./players/player1297.htm",
+                            "playerFile": "player1297.htm",
+                            "team": "roster10",
+                            "teamName": "Brighton",
+                            "teamUrl": "./rosters/roster10.htm",
+                            "teamFile": "roster10.htm",
+                            "ppg": 42.0,
+                            "rpg": 4.5,
+                            "apg": 2.5,
+                            "spg": 1.0,
+                            "bpg": 0.5,
+                            "rowClass": "row1"
+                        },
+                        {
                             "date": "03/29/1987",
                             "pos": "PF",
                             "player": "Cliff Robinson",
@@ -24,7 +75,7 @@
                             "apg": 4.5,
                             "spg": 2.0,
                             "bpg": 0.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "03/22/1987",
@@ -41,7 +92,7 @@
                             "apg": 1.5,
                             "spg": 2.0,
                             "bpg": 4.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "03/15/1987",
@@ -58,10 +109,10 @@
                             "apg": 3.0,
                             "spg": 2.0,
                             "bpg": 1.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
-                            "date": "03/08/1987",
+                            "date": "08/03/1987",
                             "pos": "C",
                             "player": "Mike Gminski",
                             "playerUrl": "./players/player722.htm",
@@ -75,10 +126,10 @@
                             "apg": 1.0,
                             "spg": 0.3,
                             "bpg": 2.7,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "03/01/1987",
+                            "date": "01/03/1987",
                             "pos": "PF",
                             "player": "Tom Chambers",
                             "playerUrl": "./players/player724.htm",
@@ -92,7 +143,7 @@
                             "apg": 3.0,
                             "spg": 0.0,
                             "bpg": 1.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "02/22/1987",
@@ -109,7 +160,7 @@
                             "apg": 7.5,
                             "spg": 2.0,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "02/15/1987",
@@ -126,10 +177,10 @@
                             "apg": 2.3,
                             "spg": 2.0,
                             "bpg": 0.3,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
-                            "date": "02/08/1987",
+                            "date": "08/02/1987",
                             "pos": "PF",
                             "player": "Tom Chambers",
                             "playerUrl": "./players/player724.htm",
@@ -143,10 +194,10 @@
                             "apg": 3.5,
                             "spg": 0.5,
                             "bpg": 1.5,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "02/01/1987",
+                            "date": "01/02/1987",
                             "pos": "PG",
                             "player": "Larry Drew",
                             "playerUrl": "./players/player1053.htm",
@@ -160,7 +211,7 @@
                             "apg": 15.5,
                             "spg": 2.0,
                             "bpg": 0.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "01/25/1987",
@@ -177,7 +228,7 @@
                             "apg": 5.0,
                             "spg": 1.0,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "01/18/1987",
@@ -194,10 +245,10 @@
                             "apg": 3.5,
                             "spg": 2.0,
                             "bpg": 0.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
-                            "date": "01/11/1987",
+                            "date": "11/01/1987",
                             "pos": "C",
                             "player": "Moses Malone",
                             "playerUrl": "./players/player872.htm",
@@ -211,10 +262,10 @@
                             "apg": 0.0,
                             "spg": 2.0,
                             "bpg": 3.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "01/04/1987",
+                            "date": "04/01/1987",
                             "pos": "PF",
                             "player": "Eddie Johnson",
                             "playerUrl": "./players/player704.htm",
@@ -228,7 +279,7 @@
                             "apg": 0.5,
                             "spg": 1.0,
                             "bpg": 0.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "12/28/1986",
@@ -245,7 +296,7 @@
                             "apg": 3.5,
                             "spg": 0.0,
                             "bpg": 5.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "12/21/1986",
@@ -262,7 +313,7 @@
                             "apg": 2.5,
                             "spg": 2.5,
                             "bpg": 0.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "12/14/1986",
@@ -279,10 +330,10 @@
                             "apg": 1.5,
                             "spg": 0.5,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "12/07/1986",
+                            "date": "07/12/1986",
                             "pos": "SG",
                             "player": "Sidney Moncrief",
                             "playerUrl": "./players/player699.htm",
@@ -296,7 +347,7 @@
                             "apg": 4.0,
                             "spg": 3.0,
                             "bpg": 0.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "11/30/1986",
@@ -313,7 +364,7 @@
                             "apg": 13.5,
                             "spg": 3.0,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "11/23/1986",
@@ -330,7 +381,7 @@
                             "apg": 2.0,
                             "spg": 2.0,
                             "bpg": 1.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "11/16/1986",
@@ -347,10 +398,10 @@
                             "apg": 2.5,
                             "spg": 1.0,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "11/09/1986",
+                            "date": "09/11/1986",
                             "pos": "PF",
                             "player": "Buck Williams",
                             "playerUrl": "./players/player1051.htm",
@@ -364,7 +415,7 @@
                             "apg": 3.0,
                             "spg": 2.0,
                             "bpg": 0.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         }
                     ]
                 },
@@ -372,6 +423,23 @@
                     "title": "Player of the Month",
                     "slug": "player-of-the-month",
                     "awards": [
+                        {
+                            "date": "April",
+                            "pos": "PF",
+                            "player": "Tom Chambers",
+                            "playerUrl": "./players/player724.htm",
+                            "playerFile": "player724.htm",
+                            "team": "roster12",
+                            "teamName": "AFC Richmond",
+                            "teamUrl": "./rosters/roster12.htm",
+                            "teamFile": "roster12.htm",
+                            "ppg": 36.5,
+                            "rpg": 7.2,
+                            "apg": 2.5,
+                            "spg": 1.0,
+                            "bpg": 0.8,
+                            "rowClass": "row1"
+                        },
                         {
                             "date": "March",
                             "pos": "PF",
@@ -387,7 +455,7 @@
                             "apg": 3.8,
                             "spg": 0.3,
                             "bpg": 0.9,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "February",
@@ -404,7 +472,7 @@
                             "apg": 4.9,
                             "spg": 1.6,
                             "bpg": 0.4,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "January",
@@ -421,7 +489,7 @@
                             "apg": 4.9,
                             "spg": 1.8,
                             "bpg": 0.1,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "December",
@@ -438,7 +506,7 @@
                             "apg": 3.5,
                             "spg": 0.8,
                             "bpg": 0.6,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "November",
@@ -455,7 +523,7 @@
                             "apg": 3.7,
                             "spg": 0.7,
                             "bpg": 0.3,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         }
                     ]
                 },
@@ -463,6 +531,23 @@
                     "title": "Rookie of the Month",
                     "slug": "rookie-of-the-month",
                     "awards": [
+                        {
+                            "date": "April",
+                            "pos": "C",
+                            "player": "Andre Drummond",
+                            "playerUrl": "./players/player378.htm",
+                            "playerFile": "player378.htm",
+                            "team": "roster12",
+                            "teamName": "AFC Richmond",
+                            "teamUrl": "./rosters/roster12.htm",
+                            "teamFile": "roster12.htm",
+                            "ppg": 11.3,
+                            "rpg": 10.0,
+                            "apg": 1.7,
+                            "spg": 0.8,
+                            "bpg": 2.2,
+                            "rowClass": "row1"
+                        },
                         {
                             "date": "March",
                             "pos": "C",
@@ -478,7 +563,7 @@
                             "apg": 1.1,
                             "spg": 0.9,
                             "bpg": 2.3,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "February",
@@ -495,7 +580,7 @@
                             "apg": 4.8,
                             "spg": 1.8,
                             "bpg": 0.2,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "January",
@@ -512,7 +597,7 @@
                             "apg": 5.3,
                             "spg": 1.0,
                             "bpg": 0.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "December",
@@ -529,7 +614,7 @@
                             "apg": 10.0,
                             "spg": 2.3,
                             "bpg": 0.1,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "November",
@@ -546,7 +631,7 @@
                             "apg": 8.1,
                             "spg": 2.3,
                             "bpg": 0.4,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         }
                     ]
                 }
@@ -560,6 +645,57 @@
                     "title": "Player of the Week",
                     "slug": "player-of-the-week",
                     "awards": [
+                        {
+                            "date": "04/19/1987",
+                            "pos": "C",
+                            "player": "Joe Barry Carroll",
+                            "playerUrl": "./players/player710.htm",
+                            "playerFile": "player710.htm",
+                            "team": "roster9",
+                            "teamName": "AC Milan",
+                            "teamUrl": "./rosters/roster9.htm",
+                            "teamFile": "roster9.htm",
+                            "ppg": 35.0,
+                            "rpg": 10.5,
+                            "apg": 3.5,
+                            "spg": 3.0,
+                            "bpg": 2.0,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "date": "12/04/1987",
+                            "pos": "SG",
+                            "player": "Steve Nash",
+                            "playerUrl": "./players/player255.htm",
+                            "playerFile": "player255.htm",
+                            "team": "roster19",
+                            "teamName": "Aston Villa",
+                            "teamUrl": "./rosters/roster19.htm",
+                            "teamFile": "roster19.htm",
+                            "ppg": 21.0,
+                            "rpg": 5.0,
+                            "apg": 13.5,
+                            "spg": 0.0,
+                            "bpg": 1.0,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "date": "05/04/1987",
+                            "pos": "PF",
+                            "player": "Kevin McHale",
+                            "playerUrl": "./players/player717.htm",
+                            "playerFile": "player717.htm",
+                            "team": "roster7",
+                            "teamName": "Bayern Munich",
+                            "teamUrl": "./rosters/roster7.htm",
+                            "teamFile": "roster7.htm",
+                            "ppg": 46.5,
+                            "rpg": 10.0,
+                            "apg": 1.0,
+                            "spg": 0.0,
+                            "bpg": 1.5,
+                            "rowClass": "row1"
+                        },
                         {
                             "date": "03/29/1987",
                             "pos": "C",
@@ -575,7 +711,7 @@
                             "apg": 2.0,
                             "spg": 1.0,
                             "bpg": 3.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "03/22/1987",
@@ -592,7 +728,7 @@
                             "apg": 4.0,
                             "spg": 0.0,
                             "bpg": 5.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "03/15/1987",
@@ -609,10 +745,10 @@
                             "apg": 3.3,
                             "spg": 0.7,
                             "bpg": 3.3,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
-                            "date": "03/08/1987",
+                            "date": "08/03/1987",
                             "pos": "C",
                             "player": "Joe Barry Carroll",
                             "playerUrl": "./players/player710.htm",
@@ -626,10 +762,10 @@
                             "apg": 3.0,
                             "spg": 1.5,
                             "bpg": 0.5,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "03/01/1987",
+                            "date": "01/03/1987",
                             "pos": "PF",
                             "player": "Kevin McHale",
                             "playerUrl": "./players/player717.htm",
@@ -643,7 +779,7 @@
                             "apg": 3.5,
                             "spg": 0.0,
                             "bpg": 2.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "02/22/1987",
@@ -660,7 +796,7 @@
                             "apg": 5.0,
                             "spg": 0.0,
                             "bpg": 5.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "02/15/1987",
@@ -677,10 +813,10 @@
                             "apg": 2.0,
                             "spg": 1.0,
                             "bpg": 2.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
-                            "date": "02/08/1987",
+                            "date": "08/02/1987",
                             "pos": "C",
                             "player": "Chris Bosh",
                             "playerUrl": "./players/player622.htm",
@@ -694,10 +830,10 @@
                             "apg": 4.0,
                             "spg": 0.0,
                             "bpg": 1.5,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "02/01/1987",
+                            "date": "01/02/1987",
                             "pos": "C",
                             "player": "Joe Barry Carroll",
                             "playerUrl": "./players/player710.htm",
@@ -711,7 +847,7 @@
                             "apg": 2.0,
                             "spg": 1.0,
                             "bpg": 4.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "01/25/1987",
@@ -728,7 +864,7 @@
                             "apg": 1.5,
                             "spg": 0.5,
                             "bpg": 1.5,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "01/18/1987",
@@ -745,10 +881,10 @@
                             "apg": 2.5,
                             "spg": 0.0,
                             "bpg": 1.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
-                            "date": "01/11/1987",
+                            "date": "11/01/1987",
                             "pos": "PF",
                             "player": "David West",
                             "playerUrl": "./players/player262.htm",
@@ -762,10 +898,10 @@
                             "apg": 1.5,
                             "spg": 2.0,
                             "bpg": 0.5,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "01/04/1987",
+                            "date": "04/01/1987",
                             "pos": "PF",
                             "player": "Kevin McHale",
                             "playerUrl": "./players/player717.htm",
@@ -779,7 +915,7 @@
                             "apg": 2.0,
                             "spg": 0.0,
                             "bpg": 2.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "12/28/1986",
@@ -796,7 +932,7 @@
                             "apg": 6.5,
                             "spg": 2.0,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "12/21/1986",
@@ -813,7 +949,7 @@
                             "apg": 2.0,
                             "spg": 1.0,
                             "bpg": 2.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "12/14/1986",
@@ -830,10 +966,10 @@
                             "apg": 5.0,
                             "spg": 1.0,
                             "bpg": 2.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "12/07/1986",
+                            "date": "07/12/1986",
                             "pos": "PF",
                             "player": "David West",
                             "playerUrl": "./players/player262.htm",
@@ -847,7 +983,7 @@
                             "apg": 7.0,
                             "spg": 0.0,
                             "bpg": 1.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "11/30/1986",
@@ -864,7 +1000,7 @@
                             "apg": 4.7,
                             "spg": 0.7,
                             "bpg": 3.7,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "11/23/1986",
@@ -881,7 +1017,7 @@
                             "apg": 1.0,
                             "spg": 0.7,
                             "bpg": 3.3,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "11/16/1986",
@@ -898,10 +1034,10 @@
                             "apg": 1.0,
                             "spg": 0.0,
                             "bpg": 1.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "11/09/1986",
+                            "date": "09/11/1986",
                             "pos": "C",
                             "player": "Larry Nance",
                             "playerUrl": "./players/player880.htm",
@@ -915,7 +1051,7 @@
                             "apg": 3.5,
                             "spg": 1.0,
                             "bpg": 2.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         }
                     ]
                 },
@@ -923,6 +1059,23 @@
                     "title": "Player of the Month",
                     "slug": "player-of-the-month",
                     "awards": [
+                        {
+                            "date": "April",
+                            "pos": "PF",
+                            "player": "Kevin McHale",
+                            "playerUrl": "./players/player717.htm",
+                            "playerFile": "player717.htm",
+                            "team": "roster7",
+                            "teamName": "Bayern Munich",
+                            "teamUrl": "./rosters/roster7.htm",
+                            "teamFile": "roster7.htm",
+                            "ppg": 40.4,
+                            "rpg": 9.4,
+                            "apg": 1.1,
+                            "spg": 0.1,
+                            "bpg": 2.1,
+                            "rowClass": "row1"
+                        },
                         {
                             "date": "March",
                             "pos": "C",
@@ -938,7 +1091,7 @@
                             "apg": 2.3,
                             "spg": 1.4,
                             "bpg": 3.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "February",
@@ -955,7 +1108,7 @@
                             "apg": 2.9,
                             "spg": 1.1,
                             "bpg": 2.9,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "January",
@@ -972,7 +1125,7 @@
                             "apg": 2.5,
                             "spg": 0.1,
                             "bpg": 1.4,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "December",
@@ -989,7 +1142,7 @@
                             "apg": 5.3,
                             "spg": 2.4,
                             "bpg": 0.3,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "November",
@@ -1006,7 +1159,7 @@
                             "apg": 3.7,
                             "spg": 1.0,
                             "bpg": 2.7,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         }
                     ]
                 },
@@ -1014,6 +1167,23 @@
                     "title": "Rookie of the Month",
                     "slug": "rookie-of-the-month",
                     "awards": [
+                        {
+                            "date": "April",
+                            "pos": "SF",
+                            "player": "Doug Christie",
+                            "playerUrl": "./players/player243.htm",
+                            "playerFile": "player243.htm",
+                            "team": "roster16",
+                            "teamName": "AC Sparta Praha",
+                            "teamUrl": "./rosters/roster16.htm",
+                            "teamFile": "roster16.htm",
+                            "ppg": 20.0,
+                            "rpg": 5.0,
+                            "apg": 3.7,
+                            "spg": 2.2,
+                            "bpg": 0.3,
+                            "rowClass": "row1"
+                        },
                         {
                             "date": "March",
                             "pos": "SF",
@@ -1029,7 +1199,7 @@
                             "apg": 5.1,
                             "spg": 2.6,
                             "bpg": 0.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "February",
@@ -1046,7 +1216,7 @@
                             "apg": 5.8,
                             "spg": 2.4,
                             "bpg": 0.5,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "January",
@@ -1063,7 +1233,7 @@
                             "apg": 8.5,
                             "spg": 1.8,
                             "bpg": 0.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "December",
@@ -1080,7 +1250,7 @@
                             "apg": 2.0,
                             "spg": 0.3,
                             "bpg": 2.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "November",
@@ -1097,7 +1267,7 @@
                             "apg": 10.1,
                             "spg": 1.3,
                             "bpg": 0.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         }
                     ]
                 }
@@ -1111,6 +1281,57 @@
                     "title": "Player of the Week",
                     "slug": "player-of-the-week",
                     "awards": [
+                        {
+                            "date": "04/19/1987",
+                            "pos": "PF",
+                            "player": "Otis Thorpe",
+                            "playerUrl": "./players/player178.htm",
+                            "playerFile": "player178.htm",
+                            "team": "roster25",
+                            "teamName": "Valencia",
+                            "teamUrl": "./rosters/roster25.htm",
+                            "teamFile": "roster25.htm",
+                            "ppg": 43.0,
+                            "rpg": 11.3,
+                            "apg": 3.0,
+                            "spg": 0.0,
+                            "bpg": 1.3,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "date": "12/04/1987",
+                            "pos": "PF",
+                            "player": "Darryl Dawkins",
+                            "playerUrl": "./players/player1058.htm",
+                            "playerFile": "player1058.htm",
+                            "team": "roster22",
+                            "teamName": "Tottenham Hotspur",
+                            "teamUrl": "./rosters/roster22.htm",
+                            "teamFile": "roster22.htm",
+                            "ppg": 22.0,
+                            "rpg": 11.5,
+                            "apg": 1.0,
+                            "spg": 1.5,
+                            "bpg": 5.5,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "date": "05/04/1987",
+                            "pos": "SF",
+                            "player": "Paul Pierce",
+                            "playerUrl": "./players/player693.htm",
+                            "playerFile": "player693.htm",
+                            "team": "roster24",
+                            "teamName": "Barcelona",
+                            "teamUrl": "./rosters/roster24.htm",
+                            "teamFile": "roster24.htm",
+                            "ppg": 34.5,
+                            "rpg": 7.5,
+                            "apg": 4.0,
+                            "spg": 2.5,
+                            "bpg": 0.5,
+                            "rowClass": "row1"
+                        },
                         {
                             "date": "03/29/1987",
                             "pos": "C",
@@ -1126,7 +1347,7 @@
                             "apg": 0.5,
                             "spg": 0.0,
                             "bpg": 2.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "03/22/1987",
@@ -1143,7 +1364,7 @@
                             "apg": 2.5,
                             "spg": 0.5,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "03/15/1987",
@@ -1160,10 +1381,10 @@
                             "apg": 3.5,
                             "spg": 1.0,
                             "bpg": 2.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
-                            "date": "03/08/1987",
+                            "date": "08/03/1987",
                             "pos": "C",
                             "player": "Eddy Curry",
                             "playerUrl": "./players/player252.htm",
@@ -1177,10 +1398,10 @@
                             "apg": 2.0,
                             "spg": 0.0,
                             "bpg": 1.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "03/01/1987",
+                            "date": "01/03/1987",
                             "pos": "PF",
                             "player": "Otis Thorpe",
                             "playerUrl": "./players/player178.htm",
@@ -1194,7 +1415,7 @@
                             "apg": 1.5,
                             "spg": 1.0,
                             "bpg": 1.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "02/22/1987",
@@ -1211,7 +1432,7 @@
                             "apg": 8.0,
                             "spg": 2.0,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "02/15/1987",
@@ -1228,10 +1449,10 @@
                             "apg": 3.0,
                             "spg": 0.3,
                             "bpg": 0.3,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
-                            "date": "02/08/1987",
+                            "date": "08/02/1987",
                             "pos": "PF",
                             "player": "Otis Thorpe",
                             "playerUrl": "./players/player178.htm",
@@ -1245,10 +1466,10 @@
                             "apg": 2.0,
                             "spg": 0.0,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "02/01/1987",
+                            "date": "01/02/1987",
                             "pos": "SF",
                             "player": "Paul Pierce",
                             "playerUrl": "./players/player693.htm",
@@ -1262,7 +1483,7 @@
                             "apg": 5.0,
                             "spg": 2.0,
                             "bpg": 1.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "01/25/1987",
@@ -1279,7 +1500,7 @@
                             "apg": 3.5,
                             "spg": 2.5,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "01/18/1987",
@@ -1296,10 +1517,10 @@
                             "apg": 1.0,
                             "spg": 0.0,
                             "bpg": 2.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
-                            "date": "01/11/1987",
+                            "date": "11/01/1987",
                             "pos": "SF",
                             "player": "Paul Pierce",
                             "playerUrl": "./players/player693.htm",
@@ -1313,10 +1534,10 @@
                             "apg": 8.0,
                             "spg": 3.0,
                             "bpg": 1.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "01/04/1987",
+                            "date": "04/01/1987",
                             "pos": "PF",
                             "player": "Otis Thorpe",
                             "playerUrl": "./players/player178.htm",
@@ -1330,7 +1551,7 @@
                             "apg": 1.0,
                             "spg": 0.5,
                             "bpg": 0.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "12/28/1986",
@@ -1347,7 +1568,7 @@
                             "apg": 2.0,
                             "spg": 2.0,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "12/21/1986",
@@ -1364,7 +1585,7 @@
                             "apg": 4.0,
                             "spg": 1.0,
                             "bpg": 0.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "12/14/1986",
@@ -1381,10 +1602,10 @@
                             "apg": 2.0,
                             "spg": 0.5,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "12/07/1986",
+                            "date": "07/12/1986",
                             "pos": "SF",
                             "player": "Reggie Miller",
                             "playerUrl": "./players/player55.htm",
@@ -1398,7 +1619,7 @@
                             "apg": 4.5,
                             "spg": 2.0,
                             "bpg": 0.5,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "11/30/1986",
@@ -1415,7 +1636,7 @@
                             "apg": 3.0,
                             "spg": 1.5,
                             "bpg": 1.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "11/23/1986",
@@ -1432,7 +1653,7 @@
                             "apg": 2.5,
                             "spg": 1.0,
                             "bpg": 0.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "11/16/1986",
@@ -1449,10 +1670,10 @@
                             "apg": 4.5,
                             "spg": 1.5,
                             "bpg": 1.5,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
-                            "date": "11/09/1986",
+                            "date": "09/11/1986",
                             "pos": "SF",
                             "player": "Paul Pierce",
                             "playerUrl": "./players/player693.htm",
@@ -1466,7 +1687,7 @@
                             "apg": 3.5,
                             "spg": 3.5,
                             "bpg": 1.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         }
                     ]
                 },
@@ -1474,6 +1695,23 @@
                     "title": "Player of the Month",
                     "slug": "player-of-the-month",
                     "awards": [
+                        {
+                            "date": "April",
+                            "pos": "PF",
+                            "player": "Otis Thorpe",
+                            "playerUrl": "./players/player178.htm",
+                            "playerFile": "player178.htm",
+                            "team": "roster25",
+                            "teamName": "Valencia",
+                            "teamUrl": "./rosters/roster25.htm",
+                            "teamFile": "roster25.htm",
+                            "ppg": 36.3,
+                            "rpg": 11.3,
+                            "apg": 3.1,
+                            "spg": 0.6,
+                            "bpg": 1.1,
+                            "rowClass": "row1"
+                        },
                         {
                             "date": "March",
                             "pos": "C",
@@ -1489,7 +1727,7 @@
                             "apg": 2.4,
                             "spg": 0.3,
                             "bpg": 2.3,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "February",
@@ -1506,7 +1744,7 @@
                             "apg": 1.7,
                             "spg": 0.7,
                             "bpg": 1.2,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "January",
@@ -1523,7 +1761,7 @@
                             "apg": 5.1,
                             "spg": 2.3,
                             "bpg": 0.4,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "December",
@@ -1540,7 +1778,7 @@
                             "apg": 2.3,
                             "spg": 1.0,
                             "bpg": 0.3,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "November",
@@ -1557,7 +1795,7 @@
                             "apg": 3.4,
                             "spg": 1.9,
                             "bpg": 0.9,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         }
                     ]
                 },
@@ -1565,6 +1803,23 @@
                     "title": "Rookie of the Month",
                     "slug": "rookie-of-the-month",
                     "awards": [
+                        {
+                            "date": "April",
+                            "pos": "SG",
+                            "player": "Reggie Miller",
+                            "playerUrl": "./players/player55.htm",
+                            "playerFile": "player55.htm",
+                            "team": "roster11",
+                            "teamName": "Atletico Madrid",
+                            "teamUrl": "./rosters/roster11.htm",
+                            "teamFile": "roster11.htm",
+                            "ppg": 32.8,
+                            "rpg": 2.7,
+                            "apg": 3.2,
+                            "spg": 1.2,
+                            "bpg": 0.2,
+                            "rowClass": "row1"
+                        },
                         {
                             "date": "March",
                             "pos": "SG",
@@ -1580,7 +1835,7 @@
                             "apg": 2.5,
                             "spg": 1.3,
                             "bpg": 0.4,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "February",
@@ -1597,7 +1852,7 @@
                             "apg": 3.9,
                             "spg": 0.8,
                             "bpg": 0.5,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "January",
@@ -1614,7 +1869,7 @@
                             "apg": 2.9,
                             "spg": 1.9,
                             "bpg": 0.0,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         },
                         {
                             "date": "December",
@@ -1631,7 +1886,7 @@
                             "apg": 9.0,
                             "spg": 1.8,
                             "bpg": 0.0,
-                            "rowClass": "row2"
+                            "rowClass": "row1"
                         },
                         {
                             "date": "November",
@@ -1648,7 +1903,7 @@
                             "apg": 3.5,
                             "spg": 1.1,
                             "bpg": 0.3,
-                            "rowClass": "row1"
+                            "rowClass": "row2"
                         }
                     ]
                 }

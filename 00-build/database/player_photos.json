@@ -6,11 +6,11 @@
   },
   "counts": {
     "players": 1490,
-    "matched": 733,
-    "unmatched": 757,
-    "ambiguous": 0,
+    "matched": 732,
+    "unmatched": 758,
+    "ambiguous": 1,
     "name": 695,
-    "nameAndAge": 10,
+    "nameAndAge": 9,
     "overrides": 28,
     "belowMinimumOverall": 754
   },
@@ -3057,12 +3057,6 @@
       "sourceName": "Darrell Griffith",
       "match": "name"
     },
-    "player704": {
-      "url": "https://www.basketball-reference.com/req/202005142/images/players/johnsed03.jpg",
-      "sourceId": "johnsed03",
-      "sourceName": "Eddie Johnson",
-      "match": "name-and-age"
-    },
     "player705": {
       "url": "https://i.imgur.com/I0LjIxC.png",
       "sourceId": "coopemi01",
@@ -4415,7 +4409,9 @@
     }
   },
   "review": {
-    "ambiguousNames": [],
+    "ambiguousNames": [
+      "Eddie Johnson"
+    ],
     "unmatchedNames": [
       "Jaron Pierre Jr.",
       "Kameron McGusty",

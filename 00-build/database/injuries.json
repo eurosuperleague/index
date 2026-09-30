@@ -2,37 +2,136 @@
     "source": "injuries.htm",
     "injuries": [
         {
+            "pos": "SF",
+            "name": "Andre Iguodala",
+            "url": "",
+            "team": "roster18",
+            "teamName": "Ajax",
+            "rosterUrl": "./rosters/roster18.htm",
+            "length": "51",
+            "injury": "Broken Foot",
+            "rowClass": "row1"
+        },
+        {
             "pos": "C",
             "name": "Robert Parish",
             "url": "",
             "team": "roster15",
             "teamName": "Marseille",
             "rosterUrl": "./rosters/roster15.htm",
-            "length": "74",
+            "length": "50",
             "injury": "Broken Leg",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "C",
+            "name": "Wayne Cooper",
+            "url": "",
+            "team": "roster8",
+            "teamName": "Real Madrid",
+            "rosterUrl": "./rosters/roster8.htm",
+            "length": "34",
+            "injury": "Fractured Leg",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "SG",
+            "name": "Geoff Huston",
+            "url": "",
+            "team": "roster25",
+            "teamName": "Valencia",
+            "rosterUrl": "./rosters/roster25.htm",
+            "length": "17",
+            "injury": "Patellar Tendanitis",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "SG",
+            "name": "Alvin Robertson",
+            "url": "",
+            "team": "roster20",
+            "teamName": "Monaco",
+            "rosterUrl": "./rosters/roster20.htm",
+            "length": "16",
+            "injury": "Dislocated Shoulder",
             "rowClass": "row1"
         },
         {
             "pos": "PG",
-            "name": "Ray Williams",
+            "name": "Kirk Hinrich",
             "url": "",
-            "team": "roster22",
-            "teamName": "Tottenham Hotspur",
-            "rosterUrl": "./rosters/roster22.htm",
-            "length": "16",
+            "team": "roster28",
+            "teamName": "Manchester City",
+            "rosterUrl": "./rosters/roster28.htm",
+            "length": "8",
+            "injury": "Sprained Knee",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "SG",
+            "name": "Tony Parker",
+            "url": "",
+            "team": "roster5",
+            "teamName": "Manchester United",
+            "rosterUrl": "./rosters/roster5.htm",
+            "length": "6",
+            "injury": "Sprained Ankle",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "C",
+            "name": "James Edwards",
+            "url": "",
+            "team": "roster18",
+            "teamName": "Ajax",
+            "rosterUrl": "./rosters/roster18.htm",
+            "length": "6",
+            "injury": "Sprained Knee",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "PG",
+            "name": "Micheal Ray Richardson",
+            "url": "",
+            "team": "roster8",
+            "teamName": "Real Madrid",
+            "rosterUrl": "./rosters/roster8.htm",
+            "length": "4",
+            "injury": "Broken Finger",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PG",
+            "name": "Trae Young",
+            "url": "",
+            "team": "roster19",
+            "teamName": "Aston Villa",
+            "rosterUrl": "./rosters/roster19.htm",
+            "length": "3",
             "injury": "Sprained Ankle",
             "rowClass": "row2"
         },
         {
             "pos": "PG",
-            "name": "Rickey Green",
+            "name": "Brad Wanamaker",
             "url": "",
-            "team": "roster10",
-            "teamName": "Brighton",
-            "rosterUrl": "./rosters/roster10.htm",
-            "length": "10",
-            "injury": "Pinched Nerve",
+            "team": "roster17",
+            "teamName": "Chelsea",
+            "rosterUrl": "./rosters/roster17.htm",
+            "length": "1",
+            "injury": "Sprained Wrist",
             "rowClass": "row1"
+        },
+        {
+            "pos": "C",
+            "name": "Vin Baker",
+            "url": "",
+            "team": "roster28",
+            "teamName": "Manchester City",
+            "rosterUrl": "./rosters/roster28.htm",
+            "length": "1",
+            "injury": "Strained Back",
+            "rowClass": "row2"
         }
     ]
 }
