@@ -15,17 +15,17 @@
         "Tier 1": [
             "biggest-blowout",
             "closest-game",
-            "upset-of-the-month",
             "tier-1-relegation-watch"
         ],
-        "Tier 3": [
-            "hottest-team",
-            "tier-3-promotion-watch"
-        ],
         "Tier 2": [
-            "coldest-team",
+            "hottest-team",
             "tier-2-promotion-watch",
             "tier-2-relegation-watch"
+        ],
+        "Tier 3": [
+            "coldest-team",
+            "upset-of-the-month",
+            "tier-3-promotion-watch"
         ]
     },
     "storylines": [
@@ -39,7 +39,7 @@
             "data": {
                 "section": "Regular Season",
                 "sectionSlug": "regular-season",
-                "date": "22/04/1987",
+                "date": "4/22/1987",
                 "matchupText": "@Paris Saint-Germain 122, Ajax 85",
                 "boxscoreUrl": "./boxes/box184-1.htm",
                 "boxscoreFile": "box184-1.htm",
@@ -61,7 +61,7 @@
             "type": "team_trend",
             "title": "Hottest Team of the Month",
             "summary": "Barcelona posted the strongest month at 6-1 and closed on a W3 run.",
-            "tier": "Tier 3",
+            "tier": "Tier 2",
             "importance": 88,
             "data": {
                 "team": "Barcelona",
@@ -69,7 +69,7 @@
                 "streak": "W3",
                 "avgMargin": 6.43,
                 "bestWin": {
-                    "date": "23/04/1987",
+                    "date": "4/23/1987",
                     "opponent": "Monaco",
                     "result": "W",
                     "margin": 15,
@@ -90,7 +90,7 @@
             "data": {
                 "section": "Regular Season",
                 "sectionSlug": "regular-season",
-                "date": "2/04/1987",
+                "date": "4/2/1987",
                 "matchupText": "@Ajax 114, Paris Saint-Germain 113",
                 "boxscoreUrl": "./boxes/box164-1.htm",
                 "boxscoreFile": "box164-1.htm",
@@ -112,7 +112,7 @@
             "type": "team_trend",
             "title": "Coldest Team of the Month",
             "summary": "Marseille had the roughest month at 0-5 and now carries a L5 slide.",
-            "tier": "Tier 2",
+            "tier": "Tier 3",
             "importance": 84,
             "data": {
                 "team": "Marseille",
@@ -120,7 +120,7 @@
                 "streak": "L5",
                 "avgMargin": -23.8,
                 "worstLoss": {
-                    "date": "3/04/1987",
+                    "date": "4/3/1987",
                     "opponent": "AC Milan",
                     "result": "L",
                     "margin": 36,
@@ -135,34 +135,34 @@
             "id": "upset-of-the-month",
             "type": "game",
             "title": "Upset of the Month",
-            "summary": "FL Fart landed the sharpest upset of the sim by beating Real Madrid.",
-            "tier": "Tier 1",
+            "summary": "Manchester City landed the sharpest upset of the sim by beating Manchester United.",
+            "tier": "Tier 3",
             "importance": 82,
             "data": {
                 "section": "Regular Season",
                 "sectionSlug": "regular-season",
-                "date": "21/04/1987",
-                "matchupText": "@FL Fart 105, Real Madrid 96",
-                "boxscoreUrl": "./boxes/box183-1.htm",
-                "boxscoreFile": "box183-1.htm",
-                "homeTeam": "roster27",
-                "homeTeamName": "FL Fart",
-                "homeScore": 105,
-                "awayTeam": "roster8",
-                "awayTeamName": "Real Madrid",
-                "awayScore": 96,
-                "winner": "roster27",
-                "winnerName": "FL Fart",
-                "loser": "roster8",
-                "loserName": "Real Madrid",
-                "margin": 9
+                "date": "4/10/1987",
+                "matchupText": "@Manchester City 119, Manchester United 97",
+                "boxscoreUrl": "./boxes/box172-3.htm",
+                "boxscoreFile": "box172-3.htm",
+                "homeTeam": "roster28",
+                "homeTeamName": "Manchester City",
+                "homeScore": 119,
+                "awayTeam": "roster5",
+                "awayTeamName": "Manchester United",
+                "awayScore": 97,
+                "winner": "roster28",
+                "winnerName": "Manchester City",
+                "loser": "roster5",
+                "loserName": "Manchester United",
+                "margin": 22
             }
         },
         {
             "id": "tier-1-relegation-watch",
             "type": "race",
             "title": "Tier 1 Relegation Watch",
-            "summary": "FL Fart sits on the current relegation line, with Crystal Palace close enough to keep the race live.",
+            "summary": "Real Madrid sits on the current relegation line, with Ajax close enough to keep the race live.",
             "tier": "Tier 1",
             "importance": 78,
             "data": {
@@ -170,56 +170,56 @@
                 "tier": "Tier 1",
                 "type": "relegation",
                 "slots": 2,
-                "lineTeam": "FL Fart",
-                "lineRecord": "2-4",
+                "lineTeam": "Real Madrid",
+                "lineRecord": "3-5",
                 "entries": [
-                    {
-                        "team": "Crystal Palace",
-                        "record": "1-5",
-                        "standingRank": 8,
-                        "streak": "L2",
-                        "last3": "WLL",
-                        "avgMargin": -10.0,
-                        "pointDiff": -60,
-                        "gapToLine": -1,
-                        "status": "on_or_below_line",
-                        "rosterUrl": "./rosters/roster6.htm"
-                    },
-                    {
-                        "team": "FL Fart",
-                        "record": "2-4",
-                        "standingRank": 7,
-                        "streak": "L1",
-                        "last3": "LWL",
-                        "avgMargin": -9.0,
-                        "pointDiff": -54,
-                        "gapToLine": 0,
-                        "status": "on_or_below_line",
-                        "rosterUrl": "./rosters/roster27.htm"
-                    },
                     {
                         "team": "Ajax",
                         "record": "3-4",
-                        "standingRank": 5,
+                        "standingRank": 6,
                         "streak": "L4",
                         "last3": "LLL",
                         "avgMargin": -9.29,
                         "pointDiff": -65,
-                        "gapToLine": 1,
-                        "status": "above_safety",
+                        "gapToLine": 0,
+                        "status": "on_or_below_line",
                         "rosterUrl": "./rosters/roster18.htm"
                     },
                     {
                         "team": "Real Madrid",
                         "record": "3-5",
-                        "standingRank": 2,
+                        "standingRank": 1,
                         "streak": "L4",
                         "last3": "LLL",
                         "avgMargin": -1.38,
                         "pointDiff": -11,
+                        "gapToLine": 0,
+                        "status": "on_or_below_line",
+                        "rosterUrl": "./rosters/roster8.htm"
+                    },
+                    {
+                        "team": "Paris Saint-Germain",
+                        "record": "3-3",
+                        "standingRank": 7,
+                        "streak": "W3",
+                        "last3": "WWW",
+                        "avgMargin": 11.67,
+                        "pointDiff": 70,
+                        "gapToLine": 0,
+                        "status": "on_or_below_line",
+                        "rosterUrl": "./rosters/roster21.htm"
+                    },
+                    {
+                        "team": "Benfica",
+                        "record": "4-2",
+                        "standingRank": 5,
+                        "streak": "W3",
+                        "last3": "WWW",
+                        "avgMargin": 4.5,
+                        "pointDiff": 27,
                         "gapToLine": 1,
                         "status": "above_safety",
-                        "rosterUrl": "./rosters/roster8.htm"
+                        "rosterUrl": "./rosters/roster13.htm"
                     }
                 ]
             }
@@ -228,7 +228,7 @@
             "id": "tier-2-promotion-watch",
             "type": "race",
             "title": "Tier 2 Promotion Watch",
-            "summary": "Bayern Munich sits on the current promotion line, with AC Milan close enough to keep the race live.",
+            "summary": "Bayern Munich sits on the current promotion line, with Barcelona close enough to keep the race live.",
             "tier": "Tier 2",
             "importance": 78,
             "data": {
@@ -240,21 +240,21 @@
                 "lineRecord": "5-2",
                 "entries": [
                     {
-                        "team": "AC Milan",
-                        "record": "5-2",
-                        "standingRank": 2,
-                        "streak": "L1",
-                        "last3": "WWL",
-                        "avgMargin": 14.43,
-                        "pointDiff": 101,
-                        "gapToLine": 0,
+                        "team": "Barcelona",
+                        "record": "6-1",
+                        "standingRank": 6,
+                        "streak": "W3",
+                        "last3": "WWW",
+                        "avgMargin": 6.43,
+                        "pointDiff": 45,
+                        "gapToLine": -1,
                         "status": "on_or_above_line",
-                        "rosterUrl": "./rosters/roster9.htm"
+                        "rosterUrl": "./rosters/roster24.htm"
                     },
                     {
                         "team": "Bayern Munich",
                         "record": "5-2",
-                        "standingRank": 3,
+                        "standingRank": 2,
                         "streak": "L2",
                         "last3": "WLL",
                         "avgMargin": 3.14,
@@ -264,21 +264,9 @@
                         "rosterUrl": "./rosters/roster7.htm"
                     },
                     {
-                        "team": "Arsenal",
-                        "record": "4-2",
-                        "standingRank": 1,
-                        "streak": "W3",
-                        "last3": "WWW",
-                        "avgMargin": 8.33,
-                        "pointDiff": 50,
-                        "gapToLine": 1,
-                        "status": "chasing",
-                        "rosterUrl": "./rosters/roster23.htm"
-                    },
-                    {
                         "team": "Inter Milan",
                         "record": "4-2",
-                        "standingRank": 4,
+                        "standingRank": 7,
                         "streak": "W3",
                         "last3": "WWW",
                         "avgMargin": -1.5,
@@ -286,6 +274,18 @@
                         "gapToLine": 1,
                         "status": "chasing",
                         "rosterUrl": "./rosters/roster26.htm"
+                    },
+                    {
+                        "team": "Aston Villa",
+                        "record": "3-3",
+                        "standingRank": 5,
+                        "streak": "L3",
+                        "last3": "LLL",
+                        "avgMargin": 3.0,
+                        "pointDiff": 18,
+                        "gapToLine": 2,
+                        "status": "chasing",
+                        "rosterUrl": "./rosters/roster19.htm"
                     }
                 ]
             }
@@ -294,7 +294,7 @@
             "id": "tier-2-relegation-watch",
             "type": "race",
             "title": "Tier 2 Relegation Watch",
-            "summary": "Marseille sits on the current relegation line, with Chelsea close enough to keep the race live.",
+            "summary": "Crystal Palace sits on the current relegation line, with Chelsea close enough to keep the race live.",
             "tier": "Tier 2",
             "importance": 78,
             "data": {
@@ -302,44 +302,44 @@
                 "tier": "Tier 2",
                 "type": "relegation",
                 "slots": 1,
-                "lineTeam": "Marseille",
-                "lineRecord": "0-5",
+                "lineTeam": "Crystal Palace",
+                "lineRecord": "1-5",
                 "entries": [
                     {
-                        "team": "Marseille",
-                        "record": "0-5",
-                        "standingRank": 8,
-                        "streak": "L5",
-                        "last3": "LLL",
-                        "avgMargin": -23.8,
-                        "pointDiff": -119,
+                        "team": "Crystal Palace",
+                        "record": "1-5",
+                        "standingRank": 1,
+                        "streak": "L2",
+                        "last3": "WLL",
+                        "avgMargin": -10.0,
+                        "pointDiff": -60,
                         "gapToLine": 0,
                         "status": "on_or_below_line",
-                        "rosterUrl": "./rosters/roster15.htm"
+                        "rosterUrl": "./rosters/roster6.htm"
                     },
                     {
                         "team": "Chelsea",
                         "record": "1-4",
-                        "standingRank": 7,
+                        "standingRank": 4,
                         "streak": "W1",
                         "last3": "LLW",
                         "avgMargin": -6.8,
                         "pointDiff": -34,
-                        "gapToLine": 1,
-                        "status": "above_safety",
+                        "gapToLine": 0,
+                        "status": "on_or_below_line",
                         "rosterUrl": "./rosters/roster17.htm"
                     },
                     {
-                        "team": "AC Sparta Praha",
+                        "team": "FL Fart",
                         "record": "2-4",
-                        "standingRank": 5,
-                        "streak": "W1",
-                        "last3": "LLW",
-                        "avgMargin": -4.83,
-                        "pointDiff": -29,
-                        "gapToLine": 2,
+                        "standingRank": 8,
+                        "streak": "L1",
+                        "last3": "LWL",
+                        "avgMargin": -9.0,
+                        "pointDiff": -54,
+                        "gapToLine": 1,
                         "status": "above_safety",
-                        "rosterUrl": "./rosters/roster16.htm"
+                        "rosterUrl": "./rosters/roster27.htm"
                     }
                 ]
             }
@@ -348,52 +348,52 @@
             "id": "tier-3-promotion-watch",
             "type": "race",
             "title": "Tier 3 Promotion Watch",
-            "summary": "Barcelona sits on the current promotion line, with Valencia close enough to keep the race live.",
+            "summary": "Valencia sits on the current promotion line, with Tottenham Hotspur close enough to keep the race live.",
             "tier": "Tier 3",
-            "importance": 68,
+            "importance": 78,
             "data": {
                 "id": "tier-3-promotion",
                 "tier": "Tier 3",
                 "type": "promotion",
                 "slots": 1,
-                "lineTeam": "Barcelona",
-                "lineRecord": "6-1",
+                "lineTeam": "Valencia",
+                "lineRecord": "4-3",
                 "entries": [
-                    {
-                        "team": "Barcelona",
-                        "record": "6-1",
-                        "standingRank": 1,
-                        "streak": "W3",
-                        "last3": "WWW",
-                        "avgMargin": 6.43,
-                        "pointDiff": 45,
-                        "gapToLine": 0,
-                        "status": "on_or_above_line",
-                        "rosterUrl": "./rosters/roster24.htm"
-                    },
                     {
                         "team": "Valencia",
                         "record": "4-3",
-                        "standingRank": 2,
+                        "standingRank": 7,
                         "streak": "W1",
                         "last3": "WLW",
                         "avgMargin": 4.0,
                         "pointDiff": 28,
-                        "gapToLine": 2,
-                        "status": "chasing",
+                        "gapToLine": 0,
+                        "status": "on_or_above_line",
                         "rosterUrl": "./rosters/roster25.htm"
                     },
                     {
                         "team": "Tottenham Hotspur",
                         "record": "4-3",
-                        "standingRank": 4,
+                        "standingRank": 6,
                         "streak": "L1",
                         "last3": "WWL",
                         "avgMargin": 1.57,
                         "pointDiff": 11,
-                        "gapToLine": 2,
-                        "status": "chasing",
+                        "gapToLine": 0,
+                        "status": "on_or_above_line",
                         "rosterUrl": "./rosters/roster22.htm"
+                    },
+                    {
+                        "team": "Juventus",
+                        "record": "3-3",
+                        "standingRank": 3,
+                        "streak": "W3",
+                        "last3": "WWW",
+                        "avgMargin": 9.17,
+                        "pointDiff": 55,
+                        "gapToLine": 1,
+                        "status": "chasing",
+                        "rosterUrl": "./rosters/roster14.htm"
                     }
                 ]
             }

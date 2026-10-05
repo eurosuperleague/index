@@ -1,0 +1,3224 @@
+{
+    "source": [
+        "standings.json",
+        "monthly/latest_sim_results.json"
+    ],
+    "tiers": {
+        "Tier 1": [
+            {
+                "team": "Brighton",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 1,
+                "rosterUrl": "./rosters/roster10.htm",
+                "rosterFile": "roster10.htm",
+                "standingsLast10": "7-3",
+                "wins": 5,
+                "losses": 2,
+                "games": 7,
+                "pointsFor": 812,
+                "pointsAgainst": 762,
+                "pointDiff": 50,
+                "avgMargin": 7.14,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@AFC Richmond 106, Brighton 102",
+                        "boxscoreUrl": "./boxes/box165-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "4/04/1987",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "Brighton 121, @FL Fart 107",
+                        "boxscoreUrl": "./boxes/box166-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1987",
+                        "opponent": "AFC Richmond",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Brighton 116, @AFC Richmond 113",
+                        "boxscoreUrl": "./boxes/box170-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1987",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "@Brighton 109, Ajax 99",
+                        "boxscoreUrl": "./boxes/box175-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "17/04/1987",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "Brighton 134, @Ajax 117",
+                        "boxscoreUrl": "./boxes/box179-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "@Benfica 116, Brighton 114",
+                        "boxscoreUrl": "./boxes/box180-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 12,
+                        "score": "@Brighton 116, Ajax 104",
+                        "boxscoreUrl": "./boxes/box185-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "17/04/1987",
+                    "opponent": "Ajax",
+                    "result": "W",
+                    "margin": 17,
+                    "score": "Brighton 134, @Ajax 117",
+                    "boxscoreUrl": "./boxes/box179-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "3/04/1987",
+                    "opponent": "AFC Richmond",
+                    "result": "L",
+                    "margin": 4,
+                    "score": "@AFC Richmond 106, Brighton 102",
+                    "boxscoreUrl": "./boxes/box165-2.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@AFC Richmond 106, Brighton 102",
+                        "boxscoreUrl": "./boxes/box165-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1987",
+                        "opponent": "AFC Richmond",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Brighton 116, @AFC Richmond 113",
+                        "boxscoreUrl": "./boxes/box170-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "@Benfica 116, Brighton 114",
+                        "boxscoreUrl": "./boxes/box180-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "17/04/1987",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "Brighton 134, @Ajax 117",
+                        "boxscoreUrl": "./boxes/box179-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "5-2",
+                "closeGameCount": 3,
+                "last3": "WLW"
+            },
+            {
+                "team": "AFC Richmond",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 4,
+                "rosterUrl": "./rosters/roster12.htm",
+                "rosterFile": "roster12.htm",
+                "standingsLast10": "7-3",
+                "wins": 5,
+                "losses": 1,
+                "games": 6,
+                "pointsFor": 719,
+                "pointsAgainst": 676,
+                "pointDiff": 43,
+                "avgMargin": 7.17,
+                "streak": "W3",
+                "recentResults": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "AFC Richmond 115, @Real Madrid 97",
+                        "boxscoreUrl": "./boxes/box164-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@AFC Richmond 106, Brighton 102",
+                        "boxscoreUrl": "./boxes/box165-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1987",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Brighton 116, @AFC Richmond 113",
+                        "boxscoreUrl": "./boxes/box170-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1987",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 6,
+                        "score": "@AFC Richmond 131, Paris Saint-Germain 125",
+                        "boxscoreUrl": "./boxes/box175-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "17/04/1987",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 7,
+                        "score": "AFC Richmond 127, @Real Madrid 120",
+                        "boxscoreUrl": "./boxes/box179-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "AFC Richmond 127, @Crystal Palace 116",
+                        "boxscoreUrl": "./boxes/box185-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "2/04/1987",
+                    "opponent": "Real Madrid",
+                    "result": "W",
+                    "margin": 18,
+                    "score": "AFC Richmond 115, @Real Madrid 97",
+                    "boxscoreUrl": "./boxes/box164-3.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "8/04/1987",
+                    "opponent": "Brighton",
+                    "result": "L",
+                    "margin": 3,
+                    "score": "Brighton 116, @AFC Richmond 113",
+                    "boxscoreUrl": "./boxes/box170-1.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@AFC Richmond 106, Brighton 102",
+                        "boxscoreUrl": "./boxes/box165-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1987",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Brighton 116, @AFC Richmond 113",
+                        "boxscoreUrl": "./boxes/box170-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "AFC Richmond 115, @Real Madrid 97",
+                        "boxscoreUrl": "./boxes/box164-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "5-1",
+                "closeGameCount": 2,
+                "last3": "WWW"
+            },
+            {
+                "team": "Benfica",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 6,
+                "rosterUrl": "./rosters/roster13.htm",
+                "rosterFile": "roster13.htm",
+                "standingsLast10": "5-5",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 690,
+                "pointsAgainst": 663,
+                "pointDiff": 27,
+                "avgMargin": 4.5,
+                "streak": "W3",
+                "recentResults": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "Benfica 131, @FL Fart 114",
+                        "boxscoreUrl": "./boxes/box164-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1987",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 7,
+                        "score": "@Ajax 110, Benfica 103",
+                        "boxscoreUrl": "./boxes/box170-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1987",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@FL Fart 109, Benfica 106",
+                        "boxscoreUrl": "./boxes/box171-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1987",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Benfica 129, Real Madrid 118",
+                        "boxscoreUrl": "./boxes/box175-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "@Benfica 116, Brighton 114",
+                        "boxscoreUrl": "./boxes/box180-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 7,
+                        "score": "@Benfica 105, Real Madrid 98",
+                        "boxscoreUrl": "./boxes/box185-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "2/04/1987",
+                    "opponent": "FL Fart",
+                    "result": "W",
+                    "margin": 17,
+                    "score": "Benfica 131, @FL Fart 114",
+                    "boxscoreUrl": "./boxes/box164-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "8/04/1987",
+                    "opponent": "Ajax",
+                    "result": "L",
+                    "margin": 7,
+                    "score": "@Ajax 110, Benfica 103",
+                    "boxscoreUrl": "./boxes/box170-3.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "9/04/1987",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@FL Fart 109, Benfica 106",
+                        "boxscoreUrl": "./boxes/box171-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "@Benfica 116, Brighton 114",
+                        "boxscoreUrl": "./boxes/box180-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "Benfica 131, @FL Fart 114",
+                        "boxscoreUrl": "./boxes/box164-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "4-2",
+                "closeGameCount": 2,
+                "last3": "WWW"
+            },
+            {
+                "team": "Paris Saint-Germain",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster21.htm",
+                "rosterFile": "roster21.htm",
+                "standingsLast10": "5-5",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 681,
+                "pointsAgainst": 611,
+                "pointDiff": 70,
+                "avgMargin": 11.67,
+                "streak": "W3",
+                "recentResults": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "@Ajax 114, Paris Saint-Germain 113",
+                        "boxscoreUrl": "./boxes/box164-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1987",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Real Madrid 101, Paris Saint-Germain 90",
+                        "boxscoreUrl": "./boxes/box170-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1987",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 6,
+                        "score": "@AFC Richmond 131, Paris Saint-Germain 125",
+                        "boxscoreUrl": "./boxes/box175-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "@Paris Saint-Germain 118, Crystal Palace 99",
+                        "boxscoreUrl": "./boxes/box180-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "22/04/1987",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 37,
+                        "score": "@Paris Saint-Germain 122, Ajax 85",
+                        "boxscoreUrl": "./boxes/box184-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "Paris Saint-Germain 113, @FL Fart 81",
+                        "boxscoreUrl": "./boxes/box185-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "22/04/1987",
+                    "opponent": "Ajax",
+                    "result": "W",
+                    "margin": 37,
+                    "score": "@Paris Saint-Germain 122, Ajax 85",
+                    "boxscoreUrl": "./boxes/box184-1.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "8/04/1987",
+                    "opponent": "Real Madrid",
+                    "result": "L",
+                    "margin": 11,
+                    "score": "@Real Madrid 101, Paris Saint-Germain 90",
+                    "boxscoreUrl": "./boxes/box170-2.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "@Ajax 114, Paris Saint-Germain 113",
+                        "boxscoreUrl": "./boxes/box164-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "@Paris Saint-Germain 118, Crystal Palace 99",
+                        "boxscoreUrl": "./boxes/box180-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "22/04/1987",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 37,
+                        "score": "@Paris Saint-Germain 122, Ajax 85",
+                        "boxscoreUrl": "./boxes/box184-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "Paris Saint-Germain 113, @FL Fart 81",
+                        "boxscoreUrl": "./boxes/box185-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "3-3",
+                "closeGameCount": 1,
+                "last3": "WWW"
+            },
+            {
+                "team": "Real Madrid",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster8.htm",
+                "rosterFile": "roster8.htm",
+                "standingsLast10": "5-5",
+                "wins": 3,
+                "losses": 5,
+                "games": 8,
+                "pointsFor": 857,
+                "pointsAgainst": 868,
+                "pointDiff": -11,
+                "avgMargin": -1.38,
+                "streak": "L4",
+                "recentResults": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "AFC Richmond 115, @Real Madrid 97",
+                        "boxscoreUrl": "./boxes/box164-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@Real Madrid 115, Crystal Palace 99",
+                        "boxscoreUrl": "./boxes/box165-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1987",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Real Madrid 101, Paris Saint-Germain 90",
+                        "boxscoreUrl": "./boxes/box170-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "12/04/1987",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "Real Madrid 112, @Crystal Palace 98",
+                        "boxscoreUrl": "./boxes/box174-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1987",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Benfica 129, Real Madrid 118",
+                        "boxscoreUrl": "./boxes/box175-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "17/04/1987",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 7,
+                        "score": "AFC Richmond 127, @Real Madrid 120",
+                        "boxscoreUrl": "./boxes/box179-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1987",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "@FL Fart 105, Real Madrid 96",
+                        "boxscoreUrl": "./boxes/box183-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 7,
+                        "score": "@Benfica 105, Real Madrid 98",
+                        "boxscoreUrl": "./boxes/box185-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "3/04/1987",
+                    "opponent": "Crystal Palace",
+                    "result": "W",
+                    "margin": 16,
+                    "score": "@Real Madrid 115, Crystal Palace 99",
+                    "boxscoreUrl": "./boxes/box165-1.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "2/04/1987",
+                    "opponent": "AFC Richmond",
+                    "result": "L",
+                    "margin": 18,
+                    "score": "AFC Richmond 115, @Real Madrid 97",
+                    "boxscoreUrl": "./boxes/box164-3.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@Real Madrid 115, Crystal Palace 99",
+                        "boxscoreUrl": "./boxes/box165-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "AFC Richmond 115, @Real Madrid 97",
+                        "boxscoreUrl": "./boxes/box164-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "3-5",
+                "closeGameCount": 0,
+                "last3": "LLL"
+            },
+            {
+                "team": "Ajax",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster18.htm",
+                "rosterFile": "roster18.htm",
+                "standingsLast10": "4-6",
+                "wins": 3,
+                "losses": 4,
+                "games": 7,
+                "pointsFor": 744,
+                "pointsAgainst": 809,
+                "pointDiff": -65,
+                "avgMargin": -9.29,
+                "streak": "L4",
+                "recentResults": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "@Ajax 114, Paris Saint-Germain 113",
+                        "boxscoreUrl": "./boxes/box164-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "7/04/1987",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Ajax 115, Crystal Palace 112",
+                        "boxscoreUrl": "./boxes/box169-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1987",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 7,
+                        "score": "@Ajax 110, Benfica 103",
+                        "boxscoreUrl": "./boxes/box170-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1987",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "@Brighton 109, Ajax 99",
+                        "boxscoreUrl": "./boxes/box175-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "17/04/1987",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "Brighton 134, @Ajax 117",
+                        "boxscoreUrl": "./boxes/box179-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "22/04/1987",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 37,
+                        "score": "@Paris Saint-Germain 122, Ajax 85",
+                        "boxscoreUrl": "./boxes/box184-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 12,
+                        "score": "@Brighton 116, Ajax 104",
+                        "boxscoreUrl": "./boxes/box185-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "8/04/1987",
+                    "opponent": "Benfica",
+                    "result": "W",
+                    "margin": 7,
+                    "score": "@Ajax 110, Benfica 103",
+                    "boxscoreUrl": "./boxes/box170-3.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "22/04/1987",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "L",
+                    "margin": 37,
+                    "score": "@Paris Saint-Germain 122, Ajax 85",
+                    "boxscoreUrl": "./boxes/box184-1.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "@Ajax 114, Paris Saint-Germain 113",
+                        "boxscoreUrl": "./boxes/box164-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "7/04/1987",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Ajax 115, Crystal Palace 112",
+                        "boxscoreUrl": "./boxes/box169-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "17/04/1987",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "Brighton 134, @Ajax 117",
+                        "boxscoreUrl": "./boxes/box179-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "22/04/1987",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 37,
+                        "score": "@Paris Saint-Germain 122, Ajax 85",
+                        "boxscoreUrl": "./boxes/box184-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "3-4",
+                "closeGameCount": 2,
+                "last3": "LLL"
+            },
+            {
+                "team": "FL Fart",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 7,
+                "rosterUrl": "./rosters/roster27.htm",
+                "rosterFile": "roster27.htm",
+                "standingsLast10": "4-6",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 618,
+                "pointsAgainst": 672,
+                "pointDiff": -54,
+                "avgMargin": -9.0,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "Benfica 131, @FL Fart 114",
+                        "boxscoreUrl": "./boxes/box164-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "4/04/1987",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "Brighton 121, @FL Fart 107",
+                        "boxscoreUrl": "./boxes/box166-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1987",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@FL Fart 109, Benfica 106",
+                        "boxscoreUrl": "./boxes/box171-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1987",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Crystal Palace 105, FL Fart 102",
+                        "boxscoreUrl": "./boxes/box178-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1987",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 9,
+                        "score": "@FL Fart 105, Real Madrid 96",
+                        "boxscoreUrl": "./boxes/box183-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "Paris Saint-Germain 113, @FL Fart 81",
+                        "boxscoreUrl": "./boxes/box185-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/04/1987",
+                    "opponent": "Real Madrid",
+                    "result": "W",
+                    "margin": 9,
+                    "score": "@FL Fart 105, Real Madrid 96",
+                    "boxscoreUrl": "./boxes/box183-1.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "23/04/1987",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "L",
+                    "margin": 32,
+                    "score": "Paris Saint-Germain 113, @FL Fart 81",
+                    "boxscoreUrl": "./boxes/box185-3.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "9/04/1987",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@FL Fart 109, Benfica 106",
+                        "boxscoreUrl": "./boxes/box171-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1987",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Crystal Palace 105, FL Fart 102",
+                        "boxscoreUrl": "./boxes/box178-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "Benfica 131, @FL Fart 114",
+                        "boxscoreUrl": "./boxes/box164-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "Paris Saint-Germain 113, @FL Fart 81",
+                        "boxscoreUrl": "./boxes/box185-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "2-4",
+                "closeGameCount": 2,
+                "last3": "LWL"
+            },
+            {
+                "team": "Crystal Palace",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster6.htm",
+                "rosterFile": "roster6.htm",
+                "standingsLast10": "3-7",
+                "wins": 1,
+                "losses": 5,
+                "games": 6,
+                "pointsFor": 629,
+                "pointsAgainst": 689,
+                "pointDiff": -60,
+                "avgMargin": -10.0,
+                "streak": "L2",
+                "recentResults": [
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@Real Madrid 115, Crystal Palace 99",
+                        "boxscoreUrl": "./boxes/box165-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "7/04/1987",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Ajax 115, Crystal Palace 112",
+                        "boxscoreUrl": "./boxes/box169-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "12/04/1987",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "Real Madrid 112, @Crystal Palace 98",
+                        "boxscoreUrl": "./boxes/box174-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1987",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Crystal Palace 105, FL Fart 102",
+                        "boxscoreUrl": "./boxes/box178-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "@Paris Saint-Germain 118, Crystal Palace 99",
+                        "boxscoreUrl": "./boxes/box180-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "AFC Richmond 127, @Crystal Palace 116",
+                        "boxscoreUrl": "./boxes/box185-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "16/04/1987",
+                    "opponent": "FL Fart",
+                    "result": "W",
+                    "margin": 3,
+                    "score": "@Crystal Palace 105, FL Fart 102",
+                    "boxscoreUrl": "./boxes/box178-1.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "18/04/1987",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "L",
+                    "margin": 19,
+                    "score": "@Paris Saint-Germain 118, Crystal Palace 99",
+                    "boxscoreUrl": "./boxes/box180-2.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "7/04/1987",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Ajax 115, Crystal Palace 112",
+                        "boxscoreUrl": "./boxes/box169-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1987",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Crystal Palace 105, FL Fart 102",
+                        "boxscoreUrl": "./boxes/box178-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@Real Madrid 115, Crystal Palace 99",
+                        "boxscoreUrl": "./boxes/box165-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "@Paris Saint-Germain 118, Crystal Palace 99",
+                        "boxscoreUrl": "./boxes/box180-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "1-5",
+                "closeGameCount": 2,
+                "last3": "WLL"
+            }
+        ],
+        "Tier 2": [
+            {
+                "team": "AC Milan",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster9.htm",
+                "rosterFile": "roster9.htm",
+                "standingsLast10": "5-5",
+                "wins": 5,
+                "losses": 2,
+                "games": 7,
+                "pointsFor": 904,
+                "pointsAgainst": 803,
+                "pointDiff": 101,
+                "avgMargin": 14.43,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "1/04/1987",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@Bayern Munich 124, AC Milan 120",
+                        "boxscoreUrl": "./boxes/box163-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 36,
+                        "score": "AC Milan 132, @Marseille 96",
+                        "boxscoreUrl": "./boxes/box165-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1987",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@AC Milan 123, Marseille 107",
+                        "boxscoreUrl": "./boxes/box171-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1987",
+                        "opponent": "Arsenal",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "@AC Milan 142, Arsenal 122",
+                        "boxscoreUrl": "./boxes/box175-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "@AC Milan 134, Chelsea 102",
+                        "boxscoreUrl": "./boxes/box180-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1987",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 33,
+                        "score": "@AC Milan 151, Marseille 118",
+                        "boxscoreUrl": "./boxes/box181-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "@Arsenal 134, AC Milan 102",
+                        "boxscoreUrl": "./boxes/box185-6.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "3/04/1987",
+                    "opponent": "Marseille",
+                    "result": "W",
+                    "margin": 36,
+                    "score": "AC Milan 132, @Marseille 96",
+                    "boxscoreUrl": "./boxes/box165-4.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "23/04/1987",
+                    "opponent": "Arsenal",
+                    "result": "L",
+                    "margin": 32,
+                    "score": "@Arsenal 134, AC Milan 102",
+                    "boxscoreUrl": "./boxes/box185-6.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "1/04/1987",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@Bayern Munich 124, AC Milan 120",
+                        "boxscoreUrl": "./boxes/box163-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 36,
+                        "score": "AC Milan 132, @Marseille 96",
+                        "boxscoreUrl": "./boxes/box165-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1987",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@AC Milan 123, Marseille 107",
+                        "boxscoreUrl": "./boxes/box171-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1987",
+                        "opponent": "Arsenal",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "@AC Milan 142, Arsenal 122",
+                        "boxscoreUrl": "./boxes/box175-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "@AC Milan 134, Chelsea 102",
+                        "boxscoreUrl": "./boxes/box180-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1987",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 33,
+                        "score": "@AC Milan 151, Marseille 118",
+                        "boxscoreUrl": "./boxes/box181-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "@Arsenal 134, AC Milan 102",
+                        "boxscoreUrl": "./boxes/box185-6.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "5-2",
+                "closeGameCount": 1,
+                "last3": "WWL"
+            },
+            {
+                "team": "Bayern Munich",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster7.htm",
+                "rosterFile": "roster7.htm",
+                "standingsLast10": "7-3",
+                "wins": 5,
+                "losses": 2,
+                "games": 7,
+                "pointsFor": 803,
+                "pointsAgainst": 781,
+                "pointDiff": 22,
+                "avgMargin": 3.14,
+                "streak": "L2",
+                "recentResults": [
+                    {
+                        "date": "1/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@Bayern Munich 124, AC Milan 120",
+                        "boxscoreUrl": "./boxes/box163-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "5/04/1987",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "Bayern Munich 112, @AC Sparta Praha 93",
+                        "boxscoreUrl": "./boxes/box167-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1987",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "@Bayern Munich 119, AC Sparta Praha 117",
+                        "boxscoreUrl": "./boxes/box172-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1987",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Bayern Munich 115, Aston Villa 104",
+                        "boxscoreUrl": "./boxes/box176-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1987",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "@Bayern Munich 118, Marseille 86",
+                        "boxscoreUrl": "./boxes/box178-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1987",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "Arsenal 121, @Bayern Munich 107",
+                        "boxscoreUrl": "./boxes/box182-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "@Chelsea 140, Bayern Munich 108",
+                        "boxscoreUrl": "./boxes/box185-5.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "16/04/1987",
+                    "opponent": "Marseille",
+                    "result": "W",
+                    "margin": 32,
+                    "score": "@Bayern Munich 118, Marseille 86",
+                    "boxscoreUrl": "./boxes/box178-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "23/04/1987",
+                    "opponent": "Chelsea",
+                    "result": "L",
+                    "margin": 32,
+                    "score": "@Chelsea 140, Bayern Munich 108",
+                    "boxscoreUrl": "./boxes/box185-5.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "1/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@Bayern Munich 124, AC Milan 120",
+                        "boxscoreUrl": "./boxes/box163-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1987",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "@Bayern Munich 119, AC Sparta Praha 117",
+                        "boxscoreUrl": "./boxes/box172-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "5/04/1987",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "Bayern Munich 112, @AC Sparta Praha 93",
+                        "boxscoreUrl": "./boxes/box167-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1987",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "@Bayern Munich 118, Marseille 86",
+                        "boxscoreUrl": "./boxes/box178-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "@Chelsea 140, Bayern Munich 108",
+                        "boxscoreUrl": "./boxes/box185-5.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "5-2",
+                "closeGameCount": 2,
+                "last3": "WLL"
+            },
+            {
+                "team": "Arsenal",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 1,
+                "rosterUrl": "./rosters/roster23.htm",
+                "rosterFile": "roster23.htm",
+                "standingsLast10": "7-3",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 743,
+                "pointsAgainst": 693,
+                "pointDiff": 50,
+                "avgMargin": 8.33,
+                "streak": "W3",
+                "recentResults": [
+                    {
+                        "date": "4/04/1987",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Inter Milan 116, Arsenal 111",
+                        "boxscoreUrl": "./boxes/box166-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1987",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 21,
+                        "score": "Arsenal 125, @Inter Milan 104",
+                        "boxscoreUrl": "./boxes/box170-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "@AC Milan 142, Arsenal 122",
+                        "boxscoreUrl": "./boxes/box175-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1987",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "Arsenal 130, @Aston Villa 122",
+                        "boxscoreUrl": "./boxes/box181-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1987",
+                        "opponent": "Bayern Munich",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "Arsenal 121, @Bayern Munich 107",
+                        "boxscoreUrl": "./boxes/box182-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "@Arsenal 134, AC Milan 102",
+                        "boxscoreUrl": "./boxes/box185-6.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "23/04/1987",
+                    "opponent": "AC Milan",
+                    "result": "W",
+                    "margin": 32,
+                    "score": "@Arsenal 134, AC Milan 102",
+                    "boxscoreUrl": "./boxes/box185-6.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "13/04/1987",
+                    "opponent": "AC Milan",
+                    "result": "L",
+                    "margin": 20,
+                    "score": "@AC Milan 142, Arsenal 122",
+                    "boxscoreUrl": "./boxes/box175-4.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "4/04/1987",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "@Inter Milan 116, Arsenal 111",
+                        "boxscoreUrl": "./boxes/box166-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "8/04/1987",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 21,
+                        "score": "Arsenal 125, @Inter Milan 104",
+                        "boxscoreUrl": "./boxes/box170-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "@Arsenal 134, AC Milan 102",
+                        "boxscoreUrl": "./boxes/box185-6.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "13/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "@AC Milan 142, Arsenal 122",
+                        "boxscoreUrl": "./boxes/box175-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "4-2",
+                "closeGameCount": 1,
+                "last3": "WWW"
+            },
+            {
+                "team": "Inter Milan",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 4,
+                "rosterUrl": "./rosters/roster26.htm",
+                "rosterFile": "roster26.htm",
+                "standingsLast10": "6-4",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 688,
+                "pointsAgainst": 697,
+                "pointDiff": -9,
+                "avgMargin": -1.5,
+                "streak": "W3",
+                "recentResults": [
+                    {
+                        "date": "4/04/1987",
+                        "opponent": "Arsenal",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Inter Milan 116, Arsenal 111",
+                        "boxscoreUrl": "./boxes/box166-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1987",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 21,
+                        "score": "Arsenal 125, @Inter Milan 104",
+                        "boxscoreUrl": "./boxes/box170-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1987",
+                        "opponent": "Aston Villa",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "Aston Villa 121, @Inter Milan 112",
+                        "boxscoreUrl": "./boxes/box172-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1987",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "Inter Milan 115, @AC Sparta Praha 110",
+                        "boxscoreUrl": "./boxes/box177-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1987",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "@Inter Milan 118, AC Sparta Praha 110",
+                        "boxscoreUrl": "./boxes/box182-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Inter Milan 123, @Aston Villa 120",
+                        "boxscoreUrl": "./boxes/box185-7.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "20/04/1987",
+                    "opponent": "AC Sparta Praha",
+                    "result": "W",
+                    "margin": 8,
+                    "score": "@Inter Milan 118, AC Sparta Praha 110",
+                    "boxscoreUrl": "./boxes/box182-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "8/04/1987",
+                    "opponent": "Arsenal",
+                    "result": "L",
+                    "margin": 21,
+                    "score": "Arsenal 125, @Inter Milan 104",
+                    "boxscoreUrl": "./boxes/box170-4.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "4/04/1987",
+                        "opponent": "Arsenal",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "@Inter Milan 116, Arsenal 111",
+                        "boxscoreUrl": "./boxes/box166-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1987",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "Inter Milan 115, @AC Sparta Praha 110",
+                        "boxscoreUrl": "./boxes/box177-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Inter Milan 123, @Aston Villa 120",
+                        "boxscoreUrl": "./boxes/box185-7.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "8/04/1987",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 21,
+                        "score": "Arsenal 125, @Inter Milan 104",
+                        "boxscoreUrl": "./boxes/box170-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "4-2",
+                "closeGameCount": 3,
+                "last3": "WWW"
+            },
+            {
+                "team": "Aston Villa",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 6,
+                "rosterUrl": "./rosters/roster19.htm",
+                "rosterFile": "roster19.htm",
+                "standingsLast10": "5-5",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 693,
+                "pointsAgainst": 675,
+                "pointDiff": 18,
+                "avgMargin": 3.0,
+                "streak": "L3",
+                "recentResults": [
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 13,
+                        "score": "Aston Villa 112, @Chelsea 99",
+                        "boxscoreUrl": "./boxes/box165-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "7/04/1987",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "Aston Villa 114, @Chelsea 96",
+                        "boxscoreUrl": "./boxes/box169-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1987",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 9,
+                        "score": "Aston Villa 121, @Inter Milan 112",
+                        "boxscoreUrl": "./boxes/box172-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1987",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Bayern Munich 115, Aston Villa 104",
+                        "boxscoreUrl": "./boxes/box176-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1987",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "Arsenal 130, @Aston Villa 122",
+                        "boxscoreUrl": "./boxes/box181-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Inter Milan 123, @Aston Villa 120",
+                        "boxscoreUrl": "./boxes/box185-7.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "7/04/1987",
+                    "opponent": "Chelsea",
+                    "result": "W",
+                    "margin": 18,
+                    "score": "Aston Villa 114, @Chelsea 96",
+                    "boxscoreUrl": "./boxes/box169-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "14/04/1987",
+                    "opponent": "Bayern Munich",
+                    "result": "L",
+                    "margin": 11,
+                    "score": "@Bayern Munich 115, Aston Villa 104",
+                    "boxscoreUrl": "./boxes/box176-1.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Inter Milan 123, @Aston Villa 120",
+                        "boxscoreUrl": "./boxes/box185-7.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "7/04/1987",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "Aston Villa 114, @Chelsea 96",
+                        "boxscoreUrl": "./boxes/box169-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "3-3",
+                "closeGameCount": 1,
+                "last3": "LLL"
+            },
+            {
+                "team": "AC Sparta Praha",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster16.htm",
+                "rosterFile": "roster16.htm",
+                "standingsLast10": "5-5",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 667,
+                "pointsAgainst": 696,
+                "pointDiff": -29,
+                "avgMargin": -4.83,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "5/04/1987",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "Bayern Munich 112, @AC Sparta Praha 93",
+                        "boxscoreUrl": "./boxes/box167-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1987",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "@Bayern Munich 119, AC Sparta Praha 117",
+                        "boxscoreUrl": "./boxes/box172-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1987",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@AC Sparta Praha 108, Chelsea 105",
+                        "boxscoreUrl": "./boxes/box176-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1987",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "Inter Milan 115, @AC Sparta Praha 110",
+                        "boxscoreUrl": "./boxes/box177-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1987",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "@Inter Milan 118, AC Sparta Praha 110",
+                        "boxscoreUrl": "./boxes/box182-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "AC Sparta Praha 129, @Marseille 127",
+                        "boxscoreUrl": "./boxes/box185-8.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "14/04/1987",
+                    "opponent": "Chelsea",
+                    "result": "W",
+                    "margin": 3,
+                    "score": "@AC Sparta Praha 108, Chelsea 105",
+                    "boxscoreUrl": "./boxes/box176-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "5/04/1987",
+                    "opponent": "Bayern Munich",
+                    "result": "L",
+                    "margin": 19,
+                    "score": "Bayern Munich 112, @AC Sparta Praha 93",
+                    "boxscoreUrl": "./boxes/box167-1.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/04/1987",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "@Bayern Munich 119, AC Sparta Praha 117",
+                        "boxscoreUrl": "./boxes/box172-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1987",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@AC Sparta Praha 108, Chelsea 105",
+                        "boxscoreUrl": "./boxes/box176-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1987",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "Inter Milan 115, @AC Sparta Praha 110",
+                        "boxscoreUrl": "./boxes/box177-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "AC Sparta Praha 129, @Marseille 127",
+                        "boxscoreUrl": "./boxes/box185-8.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "5/04/1987",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "Bayern Munich 112, @AC Sparta Praha 93",
+                        "boxscoreUrl": "./boxes/box167-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "2-4",
+                "closeGameCount": 4,
+                "last3": "LLW"
+            },
+            {
+                "team": "Chelsea",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 7,
+                "rosterUrl": "./rosters/roster17.htm",
+                "rosterFile": "roster17.htm",
+                "standingsLast10": "4-6",
+                "wins": 1,
+                "losses": 4,
+                "games": 5,
+                "pointsFor": 542,
+                "pointsAgainst": 576,
+                "pointDiff": -34,
+                "avgMargin": -6.8,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "Aston Villa",
+                        "result": "L",
+                        "margin": 13,
+                        "score": "Aston Villa 112, @Chelsea 99",
+                        "boxscoreUrl": "./boxes/box165-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "7/04/1987",
+                        "opponent": "Aston Villa",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "Aston Villa 114, @Chelsea 96",
+                        "boxscoreUrl": "./boxes/box169-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1987",
+                        "opponent": "AC Sparta Praha",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@AC Sparta Praha 108, Chelsea 105",
+                        "boxscoreUrl": "./boxes/box176-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "@AC Milan 134, Chelsea 102",
+                        "boxscoreUrl": "./boxes/box180-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Bayern Munich",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "@Chelsea 140, Bayern Munich 108",
+                        "boxscoreUrl": "./boxes/box185-5.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "23/04/1987",
+                    "opponent": "Bayern Munich",
+                    "result": "W",
+                    "margin": 32,
+                    "score": "@Chelsea 140, Bayern Munich 108",
+                    "boxscoreUrl": "./boxes/box185-5.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "18/04/1987",
+                    "opponent": "AC Milan",
+                    "result": "L",
+                    "margin": 32,
+                    "score": "@AC Milan 134, Chelsea 102",
+                    "boxscoreUrl": "./boxes/box180-3.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "14/04/1987",
+                        "opponent": "AC Sparta Praha",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@AC Sparta Praha 108, Chelsea 105",
+                        "boxscoreUrl": "./boxes/box176-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Bayern Munich",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "@Chelsea 140, Bayern Munich 108",
+                        "boxscoreUrl": "./boxes/box185-5.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "7/04/1987",
+                        "opponent": "Aston Villa",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "Aston Villa 114, @Chelsea 96",
+                        "boxscoreUrl": "./boxes/box169-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "@AC Milan 134, Chelsea 102",
+                        "boxscoreUrl": "./boxes/box180-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "1-4",
+                "closeGameCount": 1,
+                "last3": "LLW"
+            },
+            {
+                "team": "Marseille",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster15.htm",
+                "rosterFile": "roster15.htm",
+                "standingsLast10": "1-9",
+                "wins": 0,
+                "losses": 5,
+                "games": 5,
+                "pointsFor": 534,
+                "pointsAgainst": 653,
+                "pointDiff": -119,
+                "avgMargin": -23.8,
+                "streak": "L5",
+                "recentResults": [
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 36,
+                        "score": "AC Milan 132, @Marseille 96",
+                        "boxscoreUrl": "./boxes/box165-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@AC Milan 123, Marseille 107",
+                        "boxscoreUrl": "./boxes/box171-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1987",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "@Bayern Munich 118, Marseille 86",
+                        "boxscoreUrl": "./boxes/box178-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 33,
+                        "score": "@AC Milan 151, Marseille 118",
+                        "boxscoreUrl": "./boxes/box181-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "AC Sparta Praha",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "AC Sparta Praha 129, @Marseille 127",
+                        "boxscoreUrl": "./boxes/box185-8.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": null,
+                "worstLoss": {
+                    "date": "3/04/1987",
+                    "opponent": "AC Milan",
+                    "result": "L",
+                    "margin": 36,
+                    "score": "AC Milan 132, @Marseille 96",
+                    "boxscoreUrl": "./boxes/box165-4.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "AC Sparta Praha",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "AC Sparta Praha 129, @Marseille 127",
+                        "boxscoreUrl": "./boxes/box185-8.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "3/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 36,
+                        "score": "AC Milan 132, @Marseille 96",
+                        "boxscoreUrl": "./boxes/box165-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@AC Milan 123, Marseille 107",
+                        "boxscoreUrl": "./boxes/box171-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1987",
+                        "opponent": "Bayern Munich",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "@Bayern Munich 118, Marseille 86",
+                        "boxscoreUrl": "./boxes/box178-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1987",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 33,
+                        "score": "@AC Milan 151, Marseille 118",
+                        "boxscoreUrl": "./boxes/box181-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "0-5",
+                "closeGameCount": 1,
+                "last3": "LLL"
+            }
+        ],
+        "Tier 3": [
+            {
+                "team": "Barcelona",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 1,
+                "rosterUrl": "./rosters/roster24.htm",
+                "rosterFile": "roster24.htm",
+                "standingsLast10": "7-3",
+                "wins": 6,
+                "losses": 1,
+                "games": 7,
+                "pointsFor": 857,
+                "pointsAgainst": 812,
+                "pointDiff": 45,
+                "avgMargin": 6.43,
+                "streak": "W3",
+                "recentResults": [
+                    {
+                        "date": "1/04/1987",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 6,
+                        "score": "Barcelona 113, @Manchester United 107",
+                        "boxscoreUrl": "./boxes/box163-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "@Barcelona 131, Tottenham Hotspur 121",
+                        "boxscoreUrl": "./boxes/box164-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "6/04/1987",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "Barcelona 117, @Manchester City 103",
+                        "boxscoreUrl": "./boxes/box168-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "7/04/1987",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 7,
+                        "score": "@Tottenham Hotspur 127, Barcelona 120",
+                        "boxscoreUrl": "./boxes/box169-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/04/1987",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 6,
+                        "score": "Barcelona 131, @Tottenham Hotspur 125",
+                        "boxscoreUrl": "./boxes/box173-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "17/04/1987",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "Barcelona 115, @Monaco 114",
+                        "boxscoreUrl": "./boxes/box179-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "Barcelona 130, @Monaco 115",
+                        "boxscoreUrl": "./boxes/box185-11.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "23/04/1987",
+                    "opponent": "Monaco",
+                    "result": "W",
+                    "margin": 15,
+                    "score": "Barcelona 130, @Monaco 115",
+                    "boxscoreUrl": "./boxes/box185-11.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "7/04/1987",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "L",
+                    "margin": 7,
+                    "score": "@Tottenham Hotspur 127, Barcelona 120",
+                    "boxscoreUrl": "./boxes/box169-4.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "17/04/1987",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "Barcelona 115, @Monaco 114",
+                        "boxscoreUrl": "./boxes/box179-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "Barcelona 130, @Monaco 115",
+                        "boxscoreUrl": "./boxes/box185-11.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "6-1",
+                "closeGameCount": 1,
+                "last3": "WWW"
+            },
+            {
+                "team": "Valencia",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster25.htm",
+                "rosterFile": "roster25.htm",
+                "standingsLast10": "5-5",
+                "wins": 4,
+                "losses": 3,
+                "games": 7,
+                "pointsFor": 827,
+                "pointsAgainst": 799,
+                "pointDiff": 28,
+                "avgMargin": 4.0,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "1/04/1987",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 6,
+                        "score": "@Valencia 119, Juventus 113",
+                        "boxscoreUrl": "./boxes/box163-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "6/04/1987",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "Tottenham Hotspur 125, @Valencia 111",
+                        "boxscoreUrl": "./boxes/box168-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "7/04/1987",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Monaco 110, Valencia 99",
+                        "boxscoreUrl": "./boxes/box169-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1987",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 6,
+                        "score": "Valencia 121, @Atletico Madrid 115",
+                        "boxscoreUrl": "./boxes/box176-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1987",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 34,
+                        "score": "@Valencia 134, Manchester City 100",
+                        "boxscoreUrl": "./boxes/box177-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1987",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "Juventus 142, @Valencia 134",
+                        "boxscoreUrl": "./boxes/box181-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Valencia 109, Manchester City 94",
+                        "boxscoreUrl": "./boxes/box185-12.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "15/04/1987",
+                    "opponent": "Manchester City",
+                    "result": "W",
+                    "margin": 34,
+                    "score": "@Valencia 134, Manchester City 100",
+                    "boxscoreUrl": "./boxes/box177-3.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "6/04/1987",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "L",
+                    "margin": 14,
+                    "score": "Tottenham Hotspur 125, @Valencia 111",
+                    "boxscoreUrl": "./boxes/box168-2.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "15/04/1987",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 34,
+                        "score": "@Valencia 134, Manchester City 100",
+                        "boxscoreUrl": "./boxes/box177-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Valencia 109, Manchester City 94",
+                        "boxscoreUrl": "./boxes/box185-12.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "4-3",
+                "closeGameCount": 0,
+                "last3": "WLW"
+            },
+            {
+                "team": "Tottenham Hotspur",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 4,
+                "rosterUrl": "./rosters/roster22.htm",
+                "rosterFile": "roster22.htm",
+                "standingsLast10": "5-5",
+                "wins": 4,
+                "losses": 3,
+                "games": 7,
+                "pointsFor": 796,
+                "pointsAgainst": 785,
+                "pointDiff": 11,
+                "avgMargin": 1.57,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "2/04/1987",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "@Barcelona 131, Tottenham Hotspur 121",
+                        "boxscoreUrl": "./boxes/box164-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "6/04/1987",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "Tottenham Hotspur 125, @Valencia 111",
+                        "boxscoreUrl": "./boxes/box168-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "7/04/1987",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 7,
+                        "score": "@Tottenham Hotspur 127, Barcelona 120",
+                        "boxscoreUrl": "./boxes/box169-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/04/1987",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 6,
+                        "score": "Barcelona 131, @Tottenham Hotspur 125",
+                        "boxscoreUrl": "./boxes/box173-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1987",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 25,
+                        "score": "@Tottenham Hotspur 112, Manchester United 87",
+                        "boxscoreUrl": "./boxes/box177-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "22/04/1987",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Tottenham Hotspur 90, Atletico Madrid 79",
+                        "boxscoreUrl": "./boxes/box184-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 30,
+                        "score": "@Juventus 126, Tottenham Hotspur 96",
+                        "boxscoreUrl": "./boxes/box185-10.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "15/04/1987",
+                    "opponent": "Manchester United",
+                    "result": "W",
+                    "margin": 25,
+                    "score": "@Tottenham Hotspur 112, Manchester United 87",
+                    "boxscoreUrl": "./boxes/box177-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "23/04/1987",
+                    "opponent": "Juventus",
+                    "result": "L",
+                    "margin": 30,
+                    "score": "@Juventus 126, Tottenham Hotspur 96",
+                    "boxscoreUrl": "./boxes/box185-10.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "15/04/1987",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 25,
+                        "score": "@Tottenham Hotspur 112, Manchester United 87",
+                        "boxscoreUrl": "./boxes/box177-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 30,
+                        "score": "@Juventus 126, Tottenham Hotspur 96",
+                        "boxscoreUrl": "./boxes/box185-10.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "4-3",
+                "closeGameCount": 0,
+                "last3": "WWL"
+            },
+            {
+                "team": "Juventus",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 6,
+                "rosterUrl": "./rosters/roster14.htm",
+                "rosterFile": "roster14.htm",
+                "standingsLast10": "5-5",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 727,
+                "pointsAgainst": 672,
+                "pointDiff": 55,
+                "avgMargin": 9.17,
+                "streak": "W3",
+                "recentResults": [
+                    {
+                        "date": "1/04/1987",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 6,
+                        "score": "@Valencia 119, Juventus 113",
+                        "boxscoreUrl": "./boxes/box163-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "5/04/1987",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "@Manchester City 108, Juventus 107",
+                        "boxscoreUrl": "./boxes/box167-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1987",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 6,
+                        "score": "Monaco 110, @Juventus 104",
+                        "boxscoreUrl": "./boxes/box175-5.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 30,
+                        "score": "@Juventus 135, Atletico Madrid 105",
+                        "boxscoreUrl": "./boxes/box180-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1987",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "Juventus 142, @Valencia 134",
+                        "boxscoreUrl": "./boxes/box181-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 30,
+                        "score": "@Juventus 126, Tottenham Hotspur 96",
+                        "boxscoreUrl": "./boxes/box185-10.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "18/04/1987",
+                    "opponent": "Atletico Madrid",
+                    "result": "W",
+                    "margin": 30,
+                    "score": "@Juventus 135, Atletico Madrid 105",
+                    "boxscoreUrl": "./boxes/box180-4.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "1/04/1987",
+                    "opponent": "Valencia",
+                    "result": "L",
+                    "margin": 6,
+                    "score": "@Valencia 119, Juventus 113",
+                    "boxscoreUrl": "./boxes/box163-3.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "5/04/1987",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "@Manchester City 108, Juventus 107",
+                        "boxscoreUrl": "./boxes/box167-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 30,
+                        "score": "@Juventus 135, Atletico Madrid 105",
+                        "boxscoreUrl": "./boxes/box180-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 30,
+                        "score": "@Juventus 126, Tottenham Hotspur 96",
+                        "boxscoreUrl": "./boxes/box185-10.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "3-3",
+                "closeGameCount": 1,
+                "last3": "WWW"
+            },
+            {
+                "team": "Monaco",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster20.htm",
+                "rosterFile": "roster20.htm",
+                "standingsLast10": "5-5",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 661,
+                "pointsAgainst": 657,
+                "pointDiff": 4,
+                "avgMargin": 0.67,
+                "streak": "L2",
+                "recentResults": [
+                    {
+                        "date": "1/04/1987",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 33,
+                        "score": "@Monaco 119, Manchester City 86",
+                        "boxscoreUrl": "./boxes/box163-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "7/04/1987",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Monaco 110, Valencia 99",
+                        "boxscoreUrl": "./boxes/box169-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1987",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 30,
+                        "score": "@Atletico Madrid 123, Monaco 93",
+                        "boxscoreUrl": "./boxes/box171-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1987",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 6,
+                        "score": "Monaco 110, @Juventus 104",
+                        "boxscoreUrl": "./boxes/box175-5.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "17/04/1987",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "Barcelona 115, @Monaco 114",
+                        "boxscoreUrl": "./boxes/box179-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "Barcelona 130, @Monaco 115",
+                        "boxscoreUrl": "./boxes/box185-11.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "1/04/1987",
+                    "opponent": "Manchester City",
+                    "result": "W",
+                    "margin": 33,
+                    "score": "@Monaco 119, Manchester City 86",
+                    "boxscoreUrl": "./boxes/box163-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "9/04/1987",
+                    "opponent": "Atletico Madrid",
+                    "result": "L",
+                    "margin": 30,
+                    "score": "@Atletico Madrid 123, Monaco 93",
+                    "boxscoreUrl": "./boxes/box171-3.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "17/04/1987",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 1,
+                        "score": "Barcelona 115, @Monaco 114",
+                        "boxscoreUrl": "./boxes/box179-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "1/04/1987",
+                        "opponent": "Manchester City",
+                        "result": "W",
+                        "margin": 33,
+                        "score": "@Monaco 119, Manchester City 86",
+                        "boxscoreUrl": "./boxes/box163-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "9/04/1987",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 30,
+                        "score": "@Atletico Madrid 123, Monaco 93",
+                        "boxscoreUrl": "./boxes/box171-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "Barcelona 130, @Monaco 115",
+                        "boxscoreUrl": "./boxes/box185-11.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 1,
+                "last3": "WLL"
+            },
+            {
+                "team": "Atletico Madrid",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster11.htm",
+                "rosterFile": "roster11.htm",
+                "standingsLast10": "6-4",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 629,
+                "pointsAgainst": 626,
+                "pointDiff": 3,
+                "avgMargin": 0.5,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "5/04/1987",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 12,
+                        "score": "@Atletico Madrid 100, Manchester United 88",
+                        "boxscoreUrl": "./boxes/box167-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1987",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 30,
+                        "score": "@Atletico Madrid 123, Monaco 93",
+                        "boxscoreUrl": "./boxes/box171-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1987",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 6,
+                        "score": "Valencia 121, @Atletico Madrid 115",
+                        "boxscoreUrl": "./boxes/box176-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 30,
+                        "score": "@Juventus 135, Atletico Madrid 105",
+                        "boxscoreUrl": "./boxes/box180-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "22/04/1987",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Tottenham Hotspur 90, Atletico Madrid 79",
+                        "boxscoreUrl": "./boxes/box184-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "Atletico Madrid 107, @Manchester United 99",
+                        "boxscoreUrl": "./boxes/box185-9.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "9/04/1987",
+                    "opponent": "Monaco",
+                    "result": "W",
+                    "margin": 30,
+                    "score": "@Atletico Madrid 123, Monaco 93",
+                    "boxscoreUrl": "./boxes/box171-3.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "18/04/1987",
+                    "opponent": "Juventus",
+                    "result": "L",
+                    "margin": 30,
+                    "score": "@Juventus 135, Atletico Madrid 105",
+                    "boxscoreUrl": "./boxes/box180-4.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "9/04/1987",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 30,
+                        "score": "@Atletico Madrid 123, Monaco 93",
+                        "boxscoreUrl": "./boxes/box171-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "18/04/1987",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 30,
+                        "score": "@Juventus 135, Atletico Madrid 105",
+                        "boxscoreUrl": "./boxes/box180-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 0,
+                "last3": "LLW"
+            },
+            {
+                "team": "Manchester City",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 7,
+                "rosterUrl": "./rosters/roster28.htm",
+                "rosterFile": "roster28.htm",
+                "standingsLast10": "5-5",
+                "wins": 3,
+                "losses": 4,
+                "games": 7,
+                "pointsFor": 711,
+                "pointsAgainst": 774,
+                "pointDiff": -63,
+                "avgMargin": -9.0,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "1/04/1987",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 33,
+                        "score": "@Monaco 119, Manchester City 86",
+                        "boxscoreUrl": "./boxes/box163-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "5/04/1987",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "@Manchester City 108, Juventus 107",
+                        "boxscoreUrl": "./boxes/box167-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "6/04/1987",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "Barcelona 117, @Manchester City 103",
+                        "boxscoreUrl": "./boxes/box168-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1987",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 22,
+                        "score": "@Manchester City 119, Manchester United 97",
+                        "boxscoreUrl": "./boxes/box172-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1987",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 34,
+                        "score": "@Valencia 134, Manchester City 100",
+                        "boxscoreUrl": "./boxes/box177-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1987",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "Manchester City 101, @Manchester United 91",
+                        "boxscoreUrl": "./boxes/box181-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Valencia 109, Manchester City 94",
+                        "boxscoreUrl": "./boxes/box185-12.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/04/1987",
+                    "opponent": "Manchester United",
+                    "result": "W",
+                    "margin": 22,
+                    "score": "@Manchester City 119, Manchester United 97",
+                    "boxscoreUrl": "./boxes/box172-3.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "15/04/1987",
+                    "opponent": "Valencia",
+                    "result": "L",
+                    "margin": 34,
+                    "score": "@Valencia 134, Manchester City 100",
+                    "boxscoreUrl": "./boxes/box177-3.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "5/04/1987",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 1,
+                        "score": "@Manchester City 108, Juventus 107",
+                        "boxscoreUrl": "./boxes/box167-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/04/1987",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 22,
+                        "score": "@Manchester City 119, Manchester United 97",
+                        "boxscoreUrl": "./boxes/box172-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "1/04/1987",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 33,
+                        "score": "@Monaco 119, Manchester City 86",
+                        "boxscoreUrl": "./boxes/box163-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1987",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 34,
+                        "score": "@Valencia 134, Manchester City 100",
+                        "boxscoreUrl": "./boxes/box177-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Valencia 109, Manchester City 94",
+                        "boxscoreUrl": "./boxes/box185-12.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "3-4",
+                "closeGameCount": 1,
+                "last3": "LWL"
+            },
+            {
+                "team": "Manchester United",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster5.htm",
+                "rosterFile": "roster5.htm",
+                "standingsLast10": "2-8",
+                "wins": 0,
+                "losses": 6,
+                "games": 6,
+                "pointsFor": 569,
+                "pointsAgainst": 652,
+                "pointDiff": -83,
+                "avgMargin": -13.83,
+                "streak": "L6",
+                "recentResults": [
+                    {
+                        "date": "1/04/1987",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 6,
+                        "score": "Barcelona 113, @Manchester United 107",
+                        "boxscoreUrl": "./boxes/box163-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "5/04/1987",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 12,
+                        "score": "@Atletico Madrid 100, Manchester United 88",
+                        "boxscoreUrl": "./boxes/box167-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1987",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 22,
+                        "score": "@Manchester City 119, Manchester United 97",
+                        "boxscoreUrl": "./boxes/box172-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1987",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 25,
+                        "score": "@Tottenham Hotspur 112, Manchester United 87",
+                        "boxscoreUrl": "./boxes/box177-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1987",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "Manchester City 101, @Manchester United 91",
+                        "boxscoreUrl": "./boxes/box181-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "23/04/1987",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "Atletico Madrid 107, @Manchester United 99",
+                        "boxscoreUrl": "./boxes/box185-9.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": null,
+                "worstLoss": {
+                    "date": "15/04/1987",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "L",
+                    "margin": 25,
+                    "score": "@Tottenham Hotspur 112, Manchester United 87",
+                    "boxscoreUrl": "./boxes/box177-2.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "10/04/1987",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 22,
+                        "score": "@Manchester City 119, Manchester United 97",
+                        "boxscoreUrl": "./boxes/box172-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1987",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 25,
+                        "score": "@Tottenham Hotspur 112, Manchester United 87",
+                        "boxscoreUrl": "./boxes/box177-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "0-6",
+                "closeGameCount": 0,
+                "last3": "LLL"
+            }
+        ]
+    }
+}

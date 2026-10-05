@@ -1,14 +1,20 @@
 {
   "source": "ESL player database compact feeds",
   "currentSnapshot": "current",
-  "latestCompletedSnapshot": "season-5",
-  "latestCompletedLabel": "1985-1986",
-  "currentHasStats": true,
+  "latestCompletedSnapshot": "season-6",
+  "latestCompletedLabel": "1986-1987",
+  "currentHasStats": false,
   "snapshots": [
     {
       "id": "current",
       "label": "Current",
       "path": "current.json",
+      "statYear": 1986
+    },
+    {
+      "id": "season-6",
+      "label": "1986-1987",
+      "path": "season-6.json",
       "statYear": 1986
     },
     {

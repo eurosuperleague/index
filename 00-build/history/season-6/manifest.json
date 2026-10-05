@@ -1,0 +1,236 @@
+{
+  "season": "season-6",
+  "label": "1986-1987",
+  "source": "00-build/database",
+  "archived_at_utc": "2026-10-05T05:56:40.713543+00:00",
+  "json_count": 52,
+  "feeds": {
+    "players.json": true,
+    "player_stats.json": true,
+    "standings.json": true,
+    "leaders.json": true,
+    "teams.json": true,
+    "team_stats.json": true,
+    "awards.json": true,
+    "season_awards.json": true,
+    "youth_intake.json": true,
+    "youth_intake_players.json": true,
+    "supercup/standings.json": true,
+    "supercup/leaders.json": true
+  },
+  "season_awards": {
+    "missing": false,
+    "sectionCount": 3,
+    "awardCount": 123
+  },
+  "files": [
+    {
+      "path": "awards.json",
+      "bytes": 90046
+    },
+    {
+      "path": "box_scores.json",
+      "bytes": 2734378
+    },
+    {
+      "path": "camp_tracker.json",
+      "bytes": 20676
+    },
+    {
+      "path": "capreport.json",
+      "bytes": 18259
+    },
+    {
+      "path": "discord/league.json",
+      "bytes": 2181
+    },
+    {
+      "path": "discord/player_stats.json",
+      "bytes": 1867480
+    },
+    {
+      "path": "discord/players.json",
+      "bytes": 4113094
+    },
+    {
+      "path": "discord/teams.json",
+      "bytes": 31295
+    },
+    {
+      "path": "freeagents.json",
+      "bytes": 945705
+    },
+    {
+      "path": "future_players.json",
+      "bytes": 2630924
+    },
+    {
+      "path": "game_results.json",
+      "bytes": 407408
+    },
+    {
+      "path": "injuries.json",
+      "bytes": 4084
+    },
+    {
+      "path": "leaders.json",
+      "bytes": 476044
+    },
+    {
+      "path": "monthly/latest_sim_results.json",
+      "bytes": 53856
+    },
+    {
+      "path": "monthly/monthly_storylines.json",
+      "bytes": 15505
+    },
+    {
+      "path": "monthly/monthly_team_form.json",
+      "bytes": 137323
+    },
+    {
+      "path": "monthly/overall_team_form.json",
+      "bytes": 681499
+    },
+    {
+      "path": "monthly/tier_race_snapshot.json",
+      "bytes": 7540
+    },
+    {
+      "path": "player-database/current.json",
+      "bytes": 1188532
+    },
+    {
+      "path": "player-database/index.json",
+      "bytes": 965
+    },
+    {
+      "path": "player-database/season-1.json",
+      "bytes": 452357
+    },
+    {
+      "path": "player-database/season-2.json",
+      "bytes": 539672
+    },
+    {
+      "path": "player-database/season-3.json",
+      "bytes": 641626
+    },
+    {
+      "path": "player-database/season-4.json",
+      "bytes": 726245
+    },
+    {
+      "path": "player-database/season-5.json",
+      "bytes": 750911
+    },
+    {
+      "path": "player_gamelogs.json",
+      "bytes": 2486190
+    },
+    {
+      "path": "player_photos.json",
+      "bytes": 151127
+    },
+    {
+      "path": "player_stats.json",
+      "bytes": 5917969
+    },
+    {
+      "path": "players.json",
+      "bytes": 2544142
+    },
+    {
+      "path": "PreTC/players.json",
+      "bytes": 2240587
+    },
+    {
+      "path": "schedule.json",
+      "bytes": 505912
+    },
+    {
+      "path": "season_awards.json",
+      "bytes": 79446
+    },
+    {
+      "path": "standings.json",
+      "bytes": 17434
+    },
+    {
+      "path": "supercup/awards.json",
+      "bytes": 30005
+    },
+    {
+      "path": "supercup/box_scores.json",
+      "bytes": 646070
+    },
+    {
+      "path": "supercup/capreport.json",
+      "bytes": 18048
+    },
+    {
+      "path": "supercup/freeagents.json",
+      "bytes": 941209
+    },
+    {
+      "path": "supercup/game_results.json",
+      "bytes": 95241
+    },
+    {
+      "path": "supercup/injuries.json",
+      "bytes": 1744
+    },
+    {
+      "path": "supercup/leaders.json",
+      "bytes": 164172
+    },
+    {
+      "path": "supercup/player_gamelogs.json",
+      "bytes": 925272
+    },
+    {
+      "path": "supercup/player_stats.json",
+      "bytes": 4788278
+    },
+    {
+      "path": "supercup/players.json",
+      "bytes": 1893755
+    },
+    {
+      "path": "supercup/schedule.json",
+      "bytes": 125739
+    },
+    {
+      "path": "supercup/season_awards.json",
+      "bytes": 27165
+    },
+    {
+      "path": "supercup/standings.json",
+      "bytes": 16940
+    },
+    {
+      "path": "supercup/team_stats.json",
+      "bytes": 221907
+    },
+    {
+      "path": "supercup/teams.json",
+      "bytes": 9250
+    },
+    {
+      "path": "team_stats.json",
+      "bytes": 220677
+    },
+    {
+      "path": "teams.json",
+      "bytes": 9249
+    },
+    {
+      "path": "youth_intake.json",
+      "bytes": 218956
+    },
+    {
+      "path": "youth_intake_players.json",
+      "bytes": 2323435
+    }
+  ]
+}

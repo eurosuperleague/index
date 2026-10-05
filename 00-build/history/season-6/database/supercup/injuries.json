@@ -1,0 +1,60 @@
+{
+    "source": "injuries.htm",
+    "injuries": [
+        {
+            "pos": "SF",
+            "name": "Mike McGee",
+            "url": "",
+            "team": "roster20",
+            "teamName": "Manchester United",
+            "rosterUrl": "./rosters/roster20.htm",
+            "length": "161",
+            "injury": "Ruptured Achilles",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PG",
+            "name": "Reggie Theus",
+            "url": "",
+            "team": "roster15",
+            "teamName": "Crystal Palace",
+            "rosterUrl": "./rosters/roster15.htm",
+            "length": "91",
+            "injury": "Broken Leg",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "PG",
+            "name": "Maurice Cheeks",
+            "url": "",
+            "team": "roster7",
+            "teamName": "Ajax",
+            "rosterUrl": "./rosters/roster7.htm",
+            "length": "18",
+            "injury": "Sprained Ankle",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PF",
+            "name": "Bobby Jones",
+            "url": "",
+            "team": "roster13",
+            "teamName": "Brighton",
+            "rosterUrl": "./rosters/roster13.htm",
+            "length": "14",
+            "injury": "Patellar Tendanitis",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "PF",
+            "name": "Tom Chambers",
+            "url": "",
+            "team": "roster6",
+            "teamName": "AFC Richmond",
+            "rosterUrl": "./rosters/roster6.htm",
+            "length": "11",
+            "injury": "Sprained Knee",
+            "rowClass": "row1"
+        }
+    ]
+}
