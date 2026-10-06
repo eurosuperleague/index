@@ -148766,15 +148766,15 @@
   {
     "id": "player693",
     "name": "Paul Pierce",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster24",
+    "team": "Barcelona",
     "pos": "SF",
     "age": "23",
     "height": "6-7",
     "weight": "226",
     "overall": "165",
     "potential": "178",
-    "salary": "$0",
+    "salary": "$12,500,000",
     "statLine": "32.3 PTS, 5.1 DRB, 3.9 AST, 2.1 STL, 0.6 BLK in 35.1 MIN",
     "stats": {
       "season": {

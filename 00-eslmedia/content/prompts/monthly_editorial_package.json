@@ -696,12 +696,12 @@
                         },
                         "rosterUrl": "./rosters/roster24.htm",
                         "starPlayer": {
-                            "name": "Trent Tucker",
-                            "url": "../players/player432.htm",
-                            "pos": "SG",
-                            "age": "22",
-                            "overall": "108",
-                            "potential": "118"
+                            "name": "Paul Pierce",
+                            "url": "../players/player693.htm",
+                            "pos": "SF",
+                            "age": "23",
+                            "overall": "165",
+                            "potential": "178"
                         }
                     },
                     {
@@ -3280,12 +3280,12 @@
                 {
                     "team": "Barcelona",
                     "starPlayer": {
-                        "name": "Trent Tucker",
-                        "url": "../players/player432.htm",
-                        "pos": "SG",
-                        "age": "22",
-                        "overall": "108",
-                        "potential": "118"
+                        "name": "Paul Pierce",
+                        "url": "../players/player693.htm",
+                        "pos": "SF",
+                        "age": "23",
+                        "overall": "165",
+                        "potential": "178"
                     }
                 },
                 {
@@ -3998,8 +3998,8 @@
                 "Tier 3": [
                     {
                         "name": "Paul Pierce",
-                        "team": "FA",
-                        "teamName": "FA",
+                        "team": "roster24",
+                        "teamName": "Barcelona",
                         "pos": "SF",
                         "url": "../players/player693.htm",
                         "overall": "165",

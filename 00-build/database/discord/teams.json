@@ -413,16 +413,16 @@
     "streak": "-",
     "last10": "7-3",
     "starPlayer": {
-      "name": "Trent Tucker",
-      "url": "../players/player432.htm",
-      "pos": "SG",
-      "age": "22",
-      "overall": "108",
-      "potential": "118"
+      "name": "Paul Pierce",
+      "url": "../players/player693.htm",
+      "pos": "SF",
+      "age": "23",
+      "overall": "165",
+      "potential": "178"
     },
     "cap": {
-      "salary": "$17,220,127",
-      "room": "$52,779,873"
+      "salary": "$29,720,127",
+      "room": "$40,279,873"
     },
     "strengths": [
       {

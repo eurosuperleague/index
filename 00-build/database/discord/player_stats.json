@@ -67622,8 +67622,8 @@
   {
     "id": "player693",
     "name": "Paul Pierce",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster24",
+    "team": "Barcelona",
     "pos": "SF",
     "statLine": "32.3 PTS, 5.1 DRB, 3.9 AST, 2.1 STL, 0.6 BLK in 35.1 MIN",
     "season": {
