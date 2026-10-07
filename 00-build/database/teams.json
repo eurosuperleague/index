@@ -5,12 +5,12 @@
         "file": "roster9.htm",
         "url": "../rosters/roster9.htm",
         "starPlayer": {
-            "name": "Joe Barry Carroll",
-            "url": "../players/player710.htm",
-            "pos": "C",
+            "name": "Dan Majerle",
+            "url": "../players/player332.htm",
+            "pos": "SG",
             "age": "26",
-            "overall": "132",
-            "potential": "133"
+            "overall": "151",
+            "potential": "155"
         }
     },
     {
@@ -61,12 +61,12 @@
         "file": "roster23.htm",
         "url": "../rosters/roster23.htm",
         "starPlayer": {
-            "name": "Chris Bosh",
-            "url": "../players/player622.htm",
-            "pos": "C",
-            "age": "23",
-            "overall": "139",
-            "potential": "142"
+            "name": "Reggie Theus",
+            "url": "../players/player708.htm",
+            "pos": "PG",
+            "age": "27",
+            "overall": "150",
+            "potential": "152"
         }
     },
     {
@@ -117,12 +117,12 @@
         "file": "roster7.htm",
         "url": "../rosters/roster7.htm",
         "starPlayer": {
-            "name": "Kevin McHale",
-            "url": "../players/player717.htm",
-            "pos": "PF",
-            "age": "26",
-            "overall": "120",
-            "potential": "120"
+            "name": "Jawann Oldham",
+            "url": "../players/player1064.htm",
+            "pos": "C",
+            "age": "28",
+            "overall": "121",
+            "potential": "123"
         }
     },
     {
@@ -274,7 +274,7 @@
             "name": "Alvin Robertson",
             "url": "../players/player423.htm",
             "pos": "SG",
-            "age": "23",
+            "age": "24",
             "overall": "136",
             "potential": "155"
         }
