@@ -158,16 +158,16 @@
       if (token === "CLB" && index === 0) return { className: "race-champion", label: "Champ" };
       if (token === "CLB" && index >= total - 2) return { className: "race-relegated", label: "Rel" };
       if (token === "ELB" && index <= 1) return { className: "race-promoted", label: "Prom" };
-      if (token === "ELB" && index === total - 1) return { className: "race-relegated", label: "Rel" };
-      if (token === "ECL" && index === 0) return { className: "race-promoted", label: "Prom" };
+      if (token === "ELB" && index >= total - 2) return { className: "race-relegated", label: "Rel" };
+      if (token === "ECL" && index <= 1) return { className: "race-promoted", label: "Prom" };
       return { className: "", label: "" };
     }
     function isRaceLabelGuaranteed(token, label, team, teams, remainingByTeam) {
       if (token === "CLB" && label === "Champ") return isGuaranteedTopSlot(team, teams, 1, remainingByTeam);
       if (token === "CLB" && label === "Rel") return isGuaranteedBottomSlot(team, teams, 2, remainingByTeam);
       if (token === "ELB" && label === "Prom") return isGuaranteedTopSlot(team, teams, 2, remainingByTeam);
-      if (token === "ELB" && label === "Rel") return isGuaranteedBottomSlot(team, teams, 1, remainingByTeam);
-      if (token === "ECL" && label === "Prom") return isGuaranteedTopSlot(team, teams, 1, remainingByTeam);
+      if (token === "ELB" && label === "Rel") return isGuaranteedBottomSlot(team, teams, 2, remainingByTeam);
+      if (token === "ECL" && label === "Prom") return isGuaranteedTopSlot(team, teams, 2, remainingByTeam);
       return false;
     }
     function getRaceMeta(sectionTitle, team, teams, index, remainingByTeam) {
