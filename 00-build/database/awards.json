@@ -10,7 +10,7 @@
                     "slug": "player-of-the-week",
                     "awards": [
                         {
-                            "date": "04/19/1987",
+                            "date": "04-19-1987",
                             "pos": "SG",
                             "player": "Glen Rice",
                             "playerUrl": "./players/player1297.htm",
@@ -27,7 +27,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "04/12/1987",
+                            "date": "04-12-1987",
                             "pos": "PG",
                             "player": "Reggie Theus",
                             "playerUrl": "./players/player708.htm",
@@ -44,7 +44,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "04/05/1987",
+                            "date": "04-05-1987",
                             "pos": "SG",
                             "player": "Glen Rice",
                             "playerUrl": "./players/player1297.htm",
@@ -61,7 +61,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "03/29/1987",
+                            "date": "03-29-1987",
                             "pos": "PF",
                             "player": "Cliff Robinson",
                             "playerUrl": "./players/player881.htm",
@@ -78,7 +78,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "03/22/1987",
+                            "date": "03-22-1987",
                             "pos": "C",
                             "player": "Moses Malone",
                             "playerUrl": "./players/player872.htm",
@@ -95,7 +95,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "03/15/1987",
+                            "date": "03-15-1987",
                             "pos": "SF",
                             "player": "Kiki Vandeweghe",
                             "playerUrl": "./players/player701.htm",
@@ -112,7 +112,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "03/08/1987",
+                            "date": "03-08-1987",
                             "pos": "C",
                             "player": "Mike Gminski",
                             "playerUrl": "./players/player722.htm",
@@ -129,7 +129,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "03/01/1987",
+                            "date": "03-01-1987",
                             "pos": "PF",
                             "player": "Tom Chambers",
                             "playerUrl": "./players/player724.htm",
@@ -146,7 +146,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "02/22/1987",
+                            "date": "02-22-1987",
                             "pos": "SF",
                             "player": "Kiki Vandeweghe",
                             "playerUrl": "./players/player701.htm",
@@ -163,7 +163,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "02/15/1987",
+                            "date": "02-15-1987",
                             "pos": "SG",
                             "player": "Glen Rice",
                             "playerUrl": "./players/player1297.htm",
@@ -180,7 +180,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "02/08/1987",
+                            "date": "02-08-1987",
                             "pos": "PF",
                             "player": "Tom Chambers",
                             "playerUrl": "./players/player724.htm",
@@ -197,7 +197,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "02/01/1987",
+                            "date": "02-01-1987",
                             "pos": "PG",
                             "player": "Larry Drew",
                             "playerUrl": "./players/player1053.htm",
@@ -214,7 +214,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "01/25/1987",
+                            "date": "01-25-1987",
                             "pos": "SG",
                             "player": "Sidney Moncrief",
                             "playerUrl": "./players/player699.htm",
@@ -231,7 +231,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "01/18/1987",
+                            "date": "01-18-1987",
                             "pos": "SG",
                             "player": "Darrell Griffith",
                             "playerUrl": "./players/player703.htm",
@@ -248,7 +248,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "01/11/1987",
+                            "date": "01-11-1987",
                             "pos": "C",
                             "player": "Moses Malone",
                             "playerUrl": "./players/player872.htm",
@@ -265,7 +265,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "01/04/1987",
+                            "date": "01-04-1987",
                             "pos": "PF",
                             "player": "Eddie Johnson",
                             "playerUrl": "./players/player704.htm",
@@ -282,7 +282,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "12/28/1986",
+                            "date": "12-28-1986",
                             "pos": "C",
                             "player": "Mike Gminski",
                             "playerUrl": "./players/player722.htm",
@@ -299,7 +299,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "12/21/1986",
+                            "date": "12-21-1986",
                             "pos": "SG",
                             "player": "Glen Rice",
                             "playerUrl": "./players/player1297.htm",
@@ -316,7 +316,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "12/14/1986",
+                            "date": "12-14-1986",
                             "pos": "PF",
                             "player": "Tom Chambers",
                             "playerUrl": "./players/player724.htm",
@@ -333,7 +333,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "12/07/1986",
+                            "date": "12-07-1986",
                             "pos": "SG",
                             "player": "Sidney Moncrief",
                             "playerUrl": "./players/player699.htm",
@@ -350,7 +350,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "11/30/1986",
+                            "date": "11-30-1986",
                             "pos": "PG",
                             "player": "Larry Drew",
                             "playerUrl": "./players/player1053.htm",
@@ -367,7 +367,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "11/23/1986",
+                            "date": "11-23-1986",
                             "pos": "SG",
                             "player": "Glen Rice",
                             "playerUrl": "./players/player1297.htm",
@@ -384,7 +384,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "11/16/1986",
+                            "date": "11-16-1986",
                             "pos": "SG",
                             "player": "Sidney Moncrief",
                             "playerUrl": "./players/player699.htm",
@@ -401,7 +401,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "11/09/1986",
+                            "date": "11-09-1986",
                             "pos": "PF",
                             "player": "Buck Williams",
                             "playerUrl": "./players/player1051.htm",
@@ -646,7 +646,7 @@
                     "slug": "player-of-the-week",
                     "awards": [
                         {
-                            "date": "04/19/1987",
+                            "date": "04-19-1987",
                             "pos": "C",
                             "player": "Joe Barry Carroll",
                             "playerUrl": "./players/player710.htm",
@@ -663,7 +663,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "04/12/1987",
+                            "date": "04-12-1987",
                             "pos": "SG",
                             "player": "Steve Nash",
                             "playerUrl": "./players/player255.htm",
@@ -680,7 +680,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "04/05/1987",
+                            "date": "04-05-1987",
                             "pos": "PF",
                             "player": "Kevin McHale",
                             "playerUrl": "./players/player717.htm",
@@ -697,7 +697,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "03/29/1987",
+                            "date": "03-29-1987",
                             "pos": "C",
                             "player": "Steve Johnson",
                             "playerUrl": "./players/player897.htm",
@@ -714,7 +714,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "03/22/1987",
+                            "date": "03-22-1987",
                             "pos": "PF",
                             "player": "Kevin McHale",
                             "playerUrl": "./players/player717.htm",
@@ -731,7 +731,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "03/15/1987",
+                            "date": "03-15-1987",
                             "pos": "C",
                             "player": "Chris Bosh",
                             "playerUrl": "./players/player622.htm",
@@ -748,7 +748,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "03/08/1987",
+                            "date": "03-08-1987",
                             "pos": "C",
                             "player": "Joe Barry Carroll",
                             "playerUrl": "./players/player710.htm",
@@ -765,7 +765,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "03/01/1987",
+                            "date": "03-01-1987",
                             "pos": "PF",
                             "player": "Kevin McHale",
                             "playerUrl": "./players/player717.htm",
@@ -782,7 +782,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "02/22/1987",
+                            "date": "02-22-1987",
                             "pos": "C",
                             "player": "Steve Johnson",
                             "playerUrl": "./players/player897.htm",
@@ -799,7 +799,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "02/15/1987",
+                            "date": "02-15-1987",
                             "pos": "C",
                             "player": "Steve Johnson",
                             "playerUrl": "./players/player897.htm",
@@ -816,7 +816,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "02/08/1987",
+                            "date": "02-08-1987",
                             "pos": "C",
                             "player": "Chris Bosh",
                             "playerUrl": "./players/player622.htm",
@@ -833,7 +833,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "02/01/1987",
+                            "date": "02-01-1987",
                             "pos": "C",
                             "player": "Joe Barry Carroll",
                             "playerUrl": "./players/player710.htm",
@@ -850,7 +850,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "01/25/1987",
+                            "date": "01-25-1987",
                             "pos": "C",
                             "player": "Larry Nance",
                             "playerUrl": "./players/player880.htm",
@@ -867,7 +867,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "01/18/1987",
+                            "date": "01-18-1987",
                             "pos": "PF",
                             "player": "Kevin McHale",
                             "playerUrl": "./players/player717.htm",
@@ -884,7 +884,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "01/11/1987",
+                            "date": "01-11-1987",
                             "pos": "PF",
                             "player": "David West",
                             "playerUrl": "./players/player262.htm",
@@ -901,7 +901,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "01/04/1987",
+                            "date": "01-04-1987",
                             "pos": "PF",
                             "player": "Kevin McHale",
                             "playerUrl": "./players/player717.htm",
@@ -918,7 +918,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "12/28/1986",
+                            "date": "12-28-1986",
                             "pos": "SG",
                             "player": "Jim Paxson",
                             "playerUrl": "./players/player875.htm",
@@ -935,7 +935,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "12/21/1986",
+                            "date": "12-21-1986",
                             "pos": "PF",
                             "player": "Kevin McHale",
                             "playerUrl": "./players/player717.htm",
@@ -952,7 +952,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "12/14/1986",
+                            "date": "12-14-1986",
                             "pos": "PF",
                             "player": "David West",
                             "playerUrl": "./players/player262.htm",
@@ -969,7 +969,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "12/07/1986",
+                            "date": "12-07-1986",
                             "pos": "PF",
                             "player": "David West",
                             "playerUrl": "./players/player262.htm",
@@ -986,7 +986,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "11/30/1986",
+                            "date": "11-30-1986",
                             "pos": "C",
                             "player": "Steve Johnson",
                             "playerUrl": "./players/player897.htm",
@@ -1003,7 +1003,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "11/23/1986",
+                            "date": "11-23-1986",
                             "pos": "C",
                             "player": "Joe Barry Carroll",
                             "playerUrl": "./players/player710.htm",
@@ -1020,7 +1020,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "11/16/1986",
+                            "date": "11-16-1986",
                             "pos": "PF",
                             "player": "Kevin McHale",
                             "playerUrl": "./players/player717.htm",
@@ -1037,7 +1037,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "11/09/1986",
+                            "date": "11-09-1986",
                             "pos": "C",
                             "player": "Larry Nance",
                             "playerUrl": "./players/player880.htm",
@@ -1282,7 +1282,7 @@
                     "slug": "player-of-the-week",
                     "awards": [
                         {
-                            "date": "04/19/1987",
+                            "date": "04-19-1987",
                             "pos": "PF",
                             "player": "Otis Thorpe",
                             "playerUrl": "./players/player178.htm",
@@ -1299,7 +1299,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "04/12/1987",
+                            "date": "04-12-1987",
                             "pos": "PF",
                             "player": "Darryl Dawkins",
                             "playerUrl": "./players/player1058.htm",
@@ -1316,7 +1316,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "04/05/1987",
+                            "date": "04-05-1987",
                             "pos": "SF",
                             "player": "Paul Pierce",
                             "playerUrl": "./players/player693.htm",
@@ -1333,7 +1333,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "03/29/1987",
+                            "date": "03-29-1987",
                             "pos": "C",
                             "player": "Eddy Curry",
                             "playerUrl": "./players/player252.htm",
@@ -1350,7 +1350,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "03/22/1987",
+                            "date": "03-22-1987",
                             "pos": "SG",
                             "player": "Reggie Miller",
                             "playerUrl": "./players/player55.htm",
@@ -1367,7 +1367,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "03/15/1987",
+                            "date": "03-15-1987",
                             "pos": "PF",
                             "player": "Darryl Dawkins",
                             "playerUrl": "./players/player1058.htm",
@@ -1384,7 +1384,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "03/08/1987",
+                            "date": "03-08-1987",
                             "pos": "C",
                             "player": "Eddy Curry",
                             "playerUrl": "./players/player252.htm",
@@ -1401,7 +1401,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "03/01/1987",
+                            "date": "03-01-1987",
                             "pos": "PF",
                             "player": "Otis Thorpe",
                             "playerUrl": "./players/player178.htm",
@@ -1418,7 +1418,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "02/22/1987",
+                            "date": "02-22-1987",
                             "pos": "PF",
                             "player": "Bernard King",
                             "playerUrl": "./players/player713.htm",
@@ -1435,7 +1435,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "02/15/1987",
+                            "date": "02-15-1987",
                             "pos": "SF",
                             "player": "Luol Deng",
                             "playerUrl": "./players/player342.htm",
@@ -1452,7 +1452,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "02/08/1987",
+                            "date": "02-08-1987",
                             "pos": "PF",
                             "player": "Otis Thorpe",
                             "playerUrl": "./players/player178.htm",
@@ -1469,7 +1469,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "02/01/1987",
+                            "date": "02-01-1987",
                             "pos": "SF",
                             "player": "Paul Pierce",
                             "playerUrl": "./players/player693.htm",
@@ -1486,7 +1486,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "01/25/1987",
+                            "date": "01-25-1987",
                             "pos": "SF",
                             "player": "Paul Pierce",
                             "playerUrl": "./players/player693.htm",
@@ -1503,7 +1503,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "01/18/1987",
+                            "date": "01-18-1987",
                             "pos": "C",
                             "player": "Eddy Curry",
                             "playerUrl": "./players/player252.htm",
@@ -1520,7 +1520,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "01/11/1987",
+                            "date": "01-11-1987",
                             "pos": "SF",
                             "player": "Paul Pierce",
                             "playerUrl": "./players/player693.htm",
@@ -1537,7 +1537,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "01/04/1987",
+                            "date": "01-04-1987",
                             "pos": "PF",
                             "player": "Otis Thorpe",
                             "playerUrl": "./players/player178.htm",
@@ -1554,7 +1554,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "12/28/1986",
+                            "date": "12-28-1986",
                             "pos": "PF",
                             "player": "Otis Thorpe",
                             "playerUrl": "./players/player178.htm",
@@ -1571,7 +1571,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "12/21/1986",
+                            "date": "12-21-1986",
                             "pos": "SF",
                             "player": "Hubert Davis",
                             "playerUrl": "./players/player440.htm",
@@ -1588,7 +1588,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "12/14/1986",
+                            "date": "12-14-1986",
                             "pos": "PF",
                             "player": "Otis Thorpe",
                             "playerUrl": "./players/player178.htm",
@@ -1605,7 +1605,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "12/07/1986",
+                            "date": "12-07-1986",
                             "pos": "SF",
                             "player": "Reggie Miller",
                             "playerUrl": "./players/player55.htm",
@@ -1622,7 +1622,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "11/30/1986",
+                            "date": "11-30-1986",
                             "pos": "SF",
                             "player": "Paul Pierce",
                             "playerUrl": "./players/player693.htm",
@@ -1639,7 +1639,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "11/23/1986",
+                            "date": "11-23-1986",
                             "pos": "SF",
                             "player": "Dirk Nowitzki",
                             "playerUrl": "./players/player1325.htm",
@@ -1656,7 +1656,7 @@
                             "rowClass": "row2"
                         },
                         {
-                            "date": "11/16/1986",
+                            "date": "11-16-1986",
                             "pos": "PF",
                             "player": "Darryl Dawkins",
                             "playerUrl": "./players/player1058.htm",
@@ -1673,7 +1673,7 @@
                             "rowClass": "row1"
                         },
                         {
-                            "date": "11/09/1986",
+                            "date": "11-09-1986",
                             "pos": "SF",
                             "player": "Paul Pierce",
                             "playerUrl": "./players/player693.htm",

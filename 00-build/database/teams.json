@@ -117,12 +117,12 @@
         "file": "roster7.htm",
         "url": "../rosters/roster7.htm",
         "starPlayer": {
-            "name": "Jawann Oldham",
-            "url": "../players/player1064.htm",
-            "pos": "C",
-            "age": "28",
-            "overall": "121",
-            "potential": "123"
+            "name": "Gerald Henderson",
+            "url": "../players/player890.htm",
+            "pos": "PG",
+            "age": "29",
+            "overall": "124",
+            "potential": "124"
         }
     },
     {
@@ -148,7 +148,7 @@
             "name": "Kiki Vandeweghe",
             "url": "../players/player701.htm",
             "pos": "SF",
-            "age": "26",
+            "age": "27",
             "overall": "174",
             "potential": "174"
         }
@@ -246,7 +246,7 @@
             "name": "Mike McGee",
             "url": "../players/player736.htm",
             "pos": "SF",
-            "age": "25",
+            "age": "26",
             "overall": "125",
             "potential": "130"
         }

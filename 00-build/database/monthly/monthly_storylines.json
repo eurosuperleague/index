@@ -39,7 +39,7 @@
             "data": {
                 "section": "Regular Season",
                 "sectionSlug": "regular-season",
-                "date": "4/22/1987",
+                "date": "1987-04-22",
                 "matchupText": "@Paris Saint-Germain 122, Ajax 85",
                 "boxscoreUrl": "./boxes/box184-1.htm",
                 "boxscoreFile": "box184-1.htm",
@@ -69,7 +69,7 @@
                 "streak": "W3",
                 "avgMargin": 6.43,
                 "bestWin": {
-                    "date": "4/23/1987",
+                    "date": "1987-04-23",
                     "opponent": "Monaco",
                     "result": "W",
                     "margin": 15,
@@ -90,7 +90,7 @@
             "data": {
                 "section": "Regular Season",
                 "sectionSlug": "regular-season",
-                "date": "4/2/1987",
+                "date": "1987-04-02",
                 "matchupText": "@Ajax 114, Paris Saint-Germain 113",
                 "boxscoreUrl": "./boxes/box164-1.htm",
                 "boxscoreFile": "box164-1.htm",
@@ -120,7 +120,7 @@
                 "streak": "L5",
                 "avgMargin": -23.8,
                 "worstLoss": {
-                    "date": "4/3/1987",
+                    "date": "1987-04-03",
                     "opponent": "AC Milan",
                     "result": "L",
                     "margin": 36,
@@ -141,7 +141,7 @@
             "data": {
                 "section": "Regular Season",
                 "sectionSlug": "regular-season",
-                "date": "4/10/1987",
+                "date": "1987-04-10",
                 "matchupText": "@Manchester City 119, Manchester United 97",
                 "boxscoreUrl": "./boxes/box172-3.htm",
                 "boxscoreFile": "box172-3.htm",
