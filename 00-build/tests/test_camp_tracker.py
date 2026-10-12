@@ -51,6 +51,16 @@ class CampTrackerMatchingTests(unittest.TestCase):
         self.assertEqual(payload["players"]["player704"]["rehab"], 1)
         self.assertEqual(payload["issues"], [])
 
+    def test_mike_dunleavy_override_selects_ac_milan_player(self):
+        players = [
+            {**player("Mike Dunleavy", "player54"), "teamLabel": "AC Milan"},
+            {**player("Mike Dunleavy", "player738"), "teamLabel": "FA"},
+        ]
+        payload = MODULE.build_tracker_payload(players, [tracker_row("Mike Dunleavy", "1")])
+        self.assertEqual(set(payload["players"]), {"player54"})
+        self.assertEqual(payload["players"]["player54"]["regular"], 1)
+        self.assertEqual(payload["issues"], [])
+
     def test_missing_override_target_does_not_select_namesake(self):
         payload = MODULE.build_tracker_payload(
             [player("Eddie Johnson", "player739")], [tracker_row("Eddie Johnson")]

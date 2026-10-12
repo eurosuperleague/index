@@ -2,13 +2,20 @@
   "source": {
     "type": "google_sheets_csv",
     "url": "https://docs.google.com/spreadsheets/d/1ZCa_G7E9h6Z7Yf6gdFCBL9Aj4nhi92Um2rxb0rgDYew/gviz/tq?tqx=out:csv",
-    "fetchedAtUtc": "2026-10-12T02:03:21.551885+00:00"
+    "fetchedAtUtc": "2026-10-12T02:34:28.859942+00:00"
   },
   "careerLimits": {
     "regular": 3,
     "rehab": 1
   },
   "players": {
+    "player104": {
+      "playerId": "player104",
+      "name": "Vin Baker",
+      "sourceName": "Vin Baker",
+      "regular": 1,
+      "rehab": 0
+    },
     "player1046": {
       "playerId": "player1046",
       "name": "George Gervin",
@@ -55,7 +62,7 @@
       "playerId": "player1052",
       "name": "John Long",
       "sourceName": "John Long",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player1053": {
@@ -69,7 +76,7 @@
       "playerId": "player1054",
       "name": "Allen Leavell",
       "sourceName": "Allen leavell",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player1055": {
@@ -83,7 +90,7 @@
       "playerId": "player1056",
       "name": "Darnell Valentine",
       "sourceName": "Darnell Valentine",
-      "regular": 2,
+      "regular": 3,
       "rehab": 0
     },
     "player1058": {
@@ -111,7 +118,7 @@
       "playerId": "player1063",
       "name": "Clemon Johnson",
       "sourceName": "Clemon Johnson",
-      "regular": 2,
+      "regular": 3,
       "rehab": 0
     },
     "player1064": {
@@ -142,18 +149,25 @@
       "regular": 1,
       "rehab": 0
     },
+    "player126": {
+      "playerId": "player126",
+      "name": "Lauri Markkanen",
+      "sourceName": "Lauri Markkanen",
+      "regular": 1,
+      "rehab": 0
+    },
     "player1297": {
       "playerId": "player1297",
       "name": "Glen Rice",
       "sourceName": "Glen Rice",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player1303": {
       "playerId": "player1303",
       "name": "Christian Braun",
       "sourceName": "Christian Braun",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player1314": {
@@ -167,14 +181,14 @@
       "playerId": "player1327",
       "name": "Tony Parker",
       "sourceName": "Tony Parker",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player1350": {
       "playerId": "player1350",
       "name": "Robert Pack",
       "sourceName": "Robert Pack",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player1369": {
@@ -188,14 +202,21 @@
       "playerId": "player165",
       "name": "Gheorghe Muresan",
       "sourceName": "Gheorghe Muresan",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player178": {
       "playerId": "player178",
       "name": "Otis Thorpe",
       "sourceName": "Otis Thorpe",
-      "regular": 2,
+      "regular": 3,
+      "rehab": 0
+    },
+    "player180": {
+      "playerId": "player180",
+      "name": "Brian Shaw",
+      "sourceName": "Brian Shaw",
+      "regular": 1,
       "rehab": 0
     },
     "player240": {
@@ -223,7 +244,7 @@
       "playerId": "player254",
       "name": "Theo Ratliff",
       "sourceName": "Theo Ratliff",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player255": {
@@ -247,11 +268,18 @@
       "regular": 3,
       "rehab": 0
     },
+    "player328": {
+      "playerId": "player328",
+      "name": "Shareef Abdur-Rahim",
+      "sourceName": "Shareef Abdur-Rahim",
+      "regular": 1,
+      "rehab": 0
+    },
     "player332": {
       "playerId": "player332",
       "name": "Dan Majerle",
       "sourceName": "Dan Majerle",
-      "regular": 2,
+      "regular": 3,
       "rehab": 0
     },
     "player342": {
@@ -293,14 +321,14 @@
       "playerId": "player419",
       "name": "Jim Jackson",
       "sourceName": "Jim Jackson",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player423": {
       "playerId": "player423",
       "name": "Alvin Robertson",
       "sourceName": "Alvin Robertson",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player426": {
@@ -310,24 +338,52 @@
       "regular": 1,
       "rehab": 0
     },
+    "player427": {
+      "playerId": "player427",
+      "name": "Antawn Jamison",
+      "sourceName": "Antawn Jamison",
+      "regular": 1,
+      "rehab": 0
+    },
+    "player428": {
+      "playerId": "player428",
+      "name": "Nick Anderson",
+      "sourceName": "Nick Anderson",
+      "regular": 1,
+      "rehab": 0
+    },
     "player436": {
       "playerId": "player436",
       "name": "Pervis Ellison",
       "sourceName": "Pervis Ellison",
-      "regular": 2,
+      "regular": 3,
+      "rehab": 0
+    },
+    "player439": {
+      "playerId": "player439",
+      "name": "Damon Stoudamire",
+      "sourceName": "Damon Stoudamire",
+      "regular": 1,
       "rehab": 0
     },
     "player440": {
       "playerId": "player440",
       "name": "Hubert Davis",
       "sourceName": "Hubert Davis",
-      "regular": 2,
+      "regular": 3,
       "rehab": 0
     },
     "player446": {
       "playerId": "player446",
       "name": "Bam Adebayo",
       "sourceName": "Bam Adebayo",
+      "regular": 2,
+      "rehab": 0
+    },
+    "player54": {
+      "playerId": "player54",
+      "name": "Mike Dunleavy",
+      "sourceName": "Mike Dunleavy",
       "regular": 1,
       "rehab": 0
     },
@@ -349,7 +405,7 @@
       "playerId": "player622",
       "name": "Chris Bosh",
       "sourceName": "Chris Bosh",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player626": {
@@ -384,7 +440,7 @@
       "playerId": "player681",
       "name": "Michael Adams",
       "sourceName": "Michael Adams",
-      "regular": 2,
+      "regular": 3,
       "rehab": 0
     },
     "player688": {
@@ -412,7 +468,7 @@
       "playerId": "player698",
       "name": "Magic Johnson",
       "sourceName": "Magic Johnson",
-      "regular": 2,
+      "regular": 3,
       "rehab": 0
     },
     "player699": {
@@ -447,7 +503,7 @@
       "playerId": "player704",
       "name": "Eddie Johnson",
       "sourceName": "Eddie Johnson",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player705": {
@@ -503,14 +559,21 @@
       "playerId": "player713",
       "name": "Bernard King",
       "sourceName": "Bernard King",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player714": {
       "playerId": "player714",
       "name": "Brad Davis",
       "sourceName": "Brad Davis",
-      "regular": 1,
+      "regular": 2,
+      "rehab": 0
+    },
+    "player715": {
+      "playerId": "player715",
+      "name": "Dennis Johnson",
+      "sourceName": "Dennis Johnson",
+      "regular": 0,
       "rehab": 0
     },
     "player716": {
@@ -545,14 +608,14 @@
       "playerId": "player721",
       "name": "Dan Roundfield",
       "sourceName": "Dan Roundfield",
-      "regular": 2,
+      "regular": 3,
       "rehab": 0
     },
     "player722": {
       "playerId": "player722",
       "name": "Mike Gminski",
       "sourceName": "Mike Gminski",
-      "regular": 1,
+      "regular": 3,
       "rehab": 0
     },
     "player724": {
@@ -580,7 +643,7 @@
       "playerId": "player729",
       "name": "Micheal Ray Richardson",
       "sourceName": "Micheal Ray Richardson",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player730": {
@@ -594,6 +657,13 @@
       "playerId": "player733",
       "name": "Dave Corzine",
       "sourceName": "Dave Corzine",
+      "regular": 1,
+      "rehab": 0
+    },
+    "player734": {
+      "playerId": "player734",
+      "name": "Adrian Dantley",
+      "sourceName": "Adrian Dantley",
       "regular": 1,
       "rehab": 0
     },
@@ -636,7 +706,7 @@
       "playerId": "player749",
       "name": "Orlando Woolridge",
       "sourceName": "Orlando Woolridge",
-      "regular": 2,
+      "regular": 3,
       "rehab": 0
     },
     "player750": {
@@ -650,7 +720,7 @@
       "playerId": "player752",
       "name": "Edgar Jones",
       "sourceName": "Edgar Jones",
-      "regular": 2,
+      "regular": 3,
       "rehab": 0
     },
     "player755": {
@@ -664,6 +734,13 @@
       "playerId": "player82",
       "name": "Pooh Richardson",
       "sourceName": "Pooh Richardson",
+      "regular": 1,
+      "rehab": 0
+    },
+    "player848": {
+      "playerId": "player848",
+      "name": "Thurl Bailey",
+      "sourceName": "Thurl Bailey",
       "regular": 1,
       "rehab": 0
     },
@@ -741,7 +818,7 @@
       "playerId": "player882",
       "name": "Rickey Green",
       "sourceName": "Rickey Green",
-      "regular": 1,
+      "regular": 2,
       "rehab": 0
     },
     "player883": {
@@ -818,14 +895,21 @@
       "playerId": "player903",
       "name": "Ray Williams",
       "sourceName": "Ray Williams",
-      "regular": 2,
+      "regular": 3,
+      "rehab": 0
+    },
+    "player912": {
+      "playerId": "player912",
+      "name": "Wes Matthews",
+      "sourceName": "Wes Matthews",
+      "regular": 1,
       "rehab": 0
     },
     "player914": {
       "playerId": "player914",
       "name": "Kurt Nimphius",
       "sourceName": "Kurt Nimphius",
-      "regular": 2,
+      "regular": 3,
       "rehab": 0
     },
     "player917": {
@@ -846,14 +930,21 @@
       "playerId": "player975",
       "name": "Kyle Lowry",
       "sourceName": "Kyle Lowry",
+      "regular": 2,
+      "rehab": 0
+    },
+    "player99": {
+      "playerId": "player99",
+      "name": "Zach Randolph",
+      "sourceName": "Zach Randolph",
       "regular": 1,
       "rehab": 0
     }
   },
   "issues": [],
   "summary": {
-    "trackerNames": 120,
-    "matchedPlayers": 120,
+    "trackerNames": 133,
+    "matchedPlayers": 133,
     "flaggedNames": 0,
     "totalIssues": 0,
     "issueCounts": {}

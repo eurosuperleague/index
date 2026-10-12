@@ -22,7 +22,10 @@ TRACKER_URL = "https://docs.google.com/spreadsheets/d/1ZCa_G7E9h6Z7Yf6gdFCBL9Aj4
 REGULAR_CAREER_LIMIT = 3
 REHAB_CAREER_LIMIT = 1
 # Resolve confirmed same-name identities without overriding spreadsheet counts.
-TRACKER_PLAYER_ID_OVERRIDES = {"eddiejohnson": "player704"}
+TRACKER_PLAYER_ID_OVERRIDES = {
+    "eddiejohnson": "player704",
+    "mikedunleavy": "player54",
+}
 
 
 def normalize_name(value):

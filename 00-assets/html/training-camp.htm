@@ -522,6 +522,10 @@
         return String(player && (player.url || player.name) || "").toLowerCase();
       }
 
+      function normalizedPlayerName(player) {
+        return String(player && player.name || "").trim().toLowerCase().replace(/[^a-z0-9]+/g, "");
+      }
+
       function playerFile(player) {
         var match = String(player && (player.url || player.playerId) || "").match(/(player\d+)(?:\.htm)?/i);
         return match ? match[1].toLowerCase() + ".htm" : "";
@@ -529,7 +533,8 @@
 
       function mappedIdentity(player, keyMap) {
         var file = playerFile(player);
-        return keyMap && file && keyMap[file] ? String(keyMap[file]) : playerId(player);
+        if (keyMap) return file && keyMap[file] ? String(keyMap[file]) : "";
+        return playerId(player);
       }
 
       function playerHref(row) {
@@ -579,15 +584,19 @@
       function calculateRows(current, previous, config) {
         var currentKeys = config.currentKeys || null;
         var previousKeys = config.previousKeys || null;
-        var priorById = new Map(previous.map(function (player) {
-          return [mappedIdentity(player, previousKeys), player];
-        }));
+        var priorById = new Map();
+        previous.forEach(function (player) {
+          var identityKey = mappedIdentity(player, previousKeys);
+          if (identityKey) priorById.set(identityKey, player);
+        });
 
         return current.map(function (player) {
           if (valueOf(player, "overall") < MINIMUM_OVR) return null;
           var identityKey = mappedIdentity(player, currentKeys);
+          if (!identityKey) return null;
           var prior = priorById.get(identityKey);
           if (!prior) return null;
+          if (!currentKeys && !previousKeys && normalizedPlayerName(player) !== normalizedPlayerName(prior)) return null;
           var deltas = {};
           SKILLS.concat(KEY_RATINGS).forEach(function (column) {
             deltas[column.key] = valueOf(player, column.key) - valueOf(prior, column.key);
