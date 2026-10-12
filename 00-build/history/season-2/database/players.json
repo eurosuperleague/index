@@ -13723,7 +13723,7 @@
     },
     {
         "playerId": "player1235",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player1235.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -13824,7 +13824,7 @@
     },
     {
         "playerId": "player1317",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player1317.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -13925,7 +13925,7 @@
     },
     {
         "playerId": "player1341",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player1341.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -14026,7 +14026,7 @@
     },
     {
         "playerId": "player1365",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player1365.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -14127,7 +14127,7 @@
     },
     {
         "playerId": "player346",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player346.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -14228,7 +14228,7 @@
     },
     {
         "playerId": "player362",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player362.htm",
         "team": "FA",
         "teamLabel": "FA",
@@ -14329,7 +14329,7 @@
     },
     {
         "playerId": "player401",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player401.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -14430,7 +14430,7 @@
     },
     {
         "playerId": "player425",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player425.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -14531,7 +14531,7 @@
     },
     {
         "playerId": "player508",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player508.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -14632,7 +14632,7 @@
     },
     {
         "playerId": "player563",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player563.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -14733,7 +14733,7 @@
     },
     {
         "playerId": "player611",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player611.htm",
         "team": "FA",
         "teamLabel": "FA",
@@ -16257,7 +16257,7 @@
         "name": "Bernard King",
         "url": "../players/player713.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SF",
         "age": "23",
         "ht": "6-7",
@@ -16399,7 +16399,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #7 of round 3 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #7 of round 3 of the creation draft.",
                 "rowClass": "row1"
             }
         ],
@@ -16426,7 +16426,7 @@
         "loyalty": "56",
         "happiness": "63",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "A",
             "Jps": "B",
@@ -29435,12 +29435,12 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #2 of round 14 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #2 of round 14 of the creation draft.",
                 "rowClass": "row1"
             },
             {
                 "date": "11/3/1981",
-                "action": "Released by Bayern Munich",
+                "action": "Released by ACF Fiorentina",
                 "rowClass": "row2"
             }
         ],
@@ -35391,7 +35391,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #2 of round 2 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #2 of round 2 of the creation draft.",
                 "rowClass": "row1"
             },
             {
@@ -56762,7 +56762,7 @@
         "name": "James Bailey",
         "url": "../players/player759.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SF",
         "age": "23",
         "ht": "6-9",
@@ -56777,7 +56777,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #7 of round 7 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #7 of round 7 of the creation draft.",
                 "rowClass": "row1"
             }
         ],
@@ -56804,7 +56804,7 @@
         "loyalty": "37",
         "happiness": "2",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "B",
             "Jps": "C",
@@ -62771,7 +62771,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #2 of round 12 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #2 of round 12 of the creation draft.",
                 "rowClass": "row1"
             },
             {
@@ -73267,7 +73267,7 @@
         "name": "Kevin McHale",
         "url": "../players/player717.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "PF",
         "age": "22",
         "ht": "6-10",
@@ -73442,7 +73442,7 @@
             },
             {
                 "date": "10/8/1982",
-                "action": "Traded to Bayern Munich",
+                "action": "Traded to ACF Fiorentina",
                 "rowClass": "row2"
             }
         ],
@@ -73469,7 +73469,7 @@
         "loyalty": "38",
         "happiness": "60",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "A",
             "Jps": "B",
@@ -75441,7 +75441,7 @@
         "name": "Kyle Lowry",
         "url": "../players/player975.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "PG",
         "age": "19",
         "ht": "6-0",
@@ -75491,7 +75491,7 @@
         "loyalty": "100",
         "happiness": "17",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "B",
             "Jps": "C",
@@ -79027,7 +79027,7 @@
         "name": "Louis Orr",
         "url": "../players/player742.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "PF",
         "age": "22",
         "ht": "6-8",
@@ -79042,7 +79042,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #7 of round 9 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #7 of round 9 of the creation draft.",
                 "rowClass": "row1"
             }
         ],
@@ -79069,7 +79069,7 @@
         "loyalty": "16",
         "happiness": "2",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "C",
             "Jps": "B",
@@ -82810,7 +82810,7 @@
         "name": "Mark Landsberger",
         "url": "../players/player1107.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SF",
         "age": "25",
         "ht": "6-8",
@@ -82857,7 +82857,7 @@
         "loyalty": "73",
         "happiness": "69",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "D",
             "Jps": "D",
@@ -87680,7 +87680,7 @@
         "name": "Micheal Ray Richardson",
         "url": "../players/player729.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "PG",
         "age": "26",
         "ht": "6-5",
@@ -87782,7 +87782,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #2 of round 4 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #2 of round 4 of the creation draft.",
                 "rowClass": "row1"
             },
             {
@@ -87814,7 +87814,7 @@
         "loyalty": "87",
         "happiness": "66",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "B",
             "Jps": "B",
@@ -90008,7 +90008,7 @@
         "name": "Mike Woodson",
         "url": "../players/player720.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SG",
         "age": "23",
         "ht": "6-5",
@@ -90041,7 +90041,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #7 of round 5 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #7 of round 5 of the creation draft.",
                 "rowClass": "row1"
             },
             {
@@ -90073,7 +90073,7 @@
         "loyalty": "5",
         "happiness": "53",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "B",
             "Jps": "B",
@@ -94126,7 +94126,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #7 of round 1 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #7 of round 1 of the creation draft.",
                 "rowClass": "row1"
             },
             {
@@ -102797,7 +102797,7 @@
         "name": "Rex Walters",
         "url": "../players/player630.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SG",
         "age": "23",
         "ht": "6-4",
@@ -102812,7 +102812,7 @@
         "transactions": [
             {
                 "date": "6/30/1982",
-                "action": "Drafted by Bayern Munich with pick #3 of round 1.",
+                "action": "Drafted by ACF Fiorentina with pick #3 of round 1.",
                 "rowClass": "row1"
             }
         ],
@@ -102839,7 +102839,7 @@
         "loyalty": "70",
         "happiness": "3",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "D",
             "Jps": "B",
@@ -103057,12 +103057,12 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #7 of round 13 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #7 of round 13 of the creation draft.",
                 "rowClass": "row1"
             },
             {
                 "date": "11/3/1981",
-                "action": "Released by Bayern Munich",
+                "action": "Released by ACF Fiorentina",
                 "rowClass": "row2"
             }
         ],
@@ -103671,7 +103671,7 @@
         "name": "Rick Mahorn",
         "url": "../players/player746.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "C",
         "age": "22",
         "ht": "6-10",
@@ -103686,7 +103686,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #2 of round 6 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #2 of round 6 of the creation draft.",
                 "rowClass": "row1"
             }
         ],
@@ -103713,7 +103713,7 @@
         "loyalty": "30",
         "happiness": "2",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "C",
             "Jps": "C",
@@ -107463,7 +107463,7 @@
         "name": "Ron Lee",
         "url": "../players/player794.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "PG",
         "age": "27",
         "ht": "6-3",
@@ -107478,7 +107478,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #2 of round 8 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #2 of round 8 of the creation draft.",
                 "rowClass": "row1"
             }
         ],
@@ -107505,7 +107505,7 @@
         "loyalty": "87",
         "happiness": "3",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "C",
             "Jps": "D",
@@ -107686,7 +107686,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #7 of round 11 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #7 of round 11 of the creation draft.",
                 "rowClass": "row1"
             },
             {
@@ -119610,7 +119610,7 @@
         "name": "Tre Mann",
         "url": "../players/player629.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SG",
         "age": "21",
         "ht": "6-3",
@@ -119639,7 +119639,7 @@
         "transactions": [
             {
                 "date": "6/30/1982",
-                "action": "Drafted by Bayern Munich with pick #3 of round 2.",
+                "action": "Drafted by ACF Fiorentina with pick #3 of round 2.",
                 "rowClass": "row1"
             }
         ],
@@ -119666,7 +119666,7 @@
         "loyalty": "94",
         "happiness": "44",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "C",
             "Jps": "C",
@@ -119731,7 +119731,7 @@
         "name": "Tree Rollins",
         "url": "../players/player737.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "C",
         "age": "25",
         "ht": "7-1",
@@ -119874,7 +119874,7 @@
             },
             {
                 "date": "10/8/1982",
-                "action": "Traded to Bayern Munich",
+                "action": "Traded to ACF Fiorentina",
                 "rowClass": "row2"
             }
         ],
@@ -119901,7 +119901,7 @@
         "loyalty": "37",
         "happiness": "55",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "D",
             "Jps": "C",
@@ -120385,12 +120385,12 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #7 of round 15 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #7 of round 15 of the creation draft.",
                 "rowClass": "row1"
             },
             {
                 "date": "11/3/1981",
-                "action": "Released by Bayern Munich",
+                "action": "Released by ACF Fiorentina",
                 "rowClass": "row2"
             }
         ],
@@ -120482,7 +120482,7 @@
         "name": "Truck Robinson",
         "url": "../players/player777.htm",
         "team": "roster7",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SF",
         "age": "29",
         "ht": "6-7",
@@ -120497,7 +120497,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Drafted by Bayern Munich with pick #2 of round 10 of the creation draft.",
+                "action": "Drafted by ACF Fiorentina with pick #2 of round 10 of the creation draft.",
                 "rowClass": "row1"
             }
         ],
@@ -120524,7 +120524,7 @@
         "loyalty": "56",
         "happiness": "2",
         "lastTeamId": "roster7",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "B",
             "Jps": "D",

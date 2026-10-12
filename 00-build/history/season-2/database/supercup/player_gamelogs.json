@@ -1334,7 +1334,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 28,
                         "fgm": 5,
@@ -1742,7 +1742,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/3",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 32,
                         "fgm": 8,
@@ -2856,7 +2856,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 34,
                         "fgm": 7,
@@ -3363,7 +3363,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 24,
                         "fgm": 1,
@@ -4279,7 +4279,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 32,
                         "fgm": 3,
@@ -4698,7 +4698,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 39,
                         "fgm": 10,
@@ -7033,7 +7033,7 @@
         },
         {
             "playerId": "player1032",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player1032.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -7066,7 +7066,7 @@
         },
         {
             "playerId": "player1056",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player1056.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -7099,7 +7099,7 @@
         },
         {
             "playerId": "player1080",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player1080.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -7132,7 +7132,7 @@
         },
         {
             "playerId": "player184",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player184.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -7165,7 +7165,7 @@
         },
         {
             "playerId": "player200",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player200.htm",
             "team": "FA",
             "teamLabel": "FA",
@@ -7198,7 +7198,7 @@
         },
         {
             "playerId": "player239",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player239.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -7231,7 +7231,7 @@
         },
         {
             "playerId": "player263",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player263.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -7264,7 +7264,7 @@
         },
         {
             "playerId": "player346",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player346.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -7297,7 +7297,7 @@
         },
         {
             "playerId": "player401",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player401.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -7330,7 +7330,7 @@
         },
         {
             "playerId": "player417",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player417.htm",
             "team": "FA",
             "teamLabel": "FA",
@@ -7363,7 +7363,7 @@
         },
         {
             "playerId": "player950",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player950.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -7571,7 +7571,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 18,
                         "fgm": 0,
@@ -8060,7 +8060,7 @@
             "name": "Bernard King",
             "url": "../players/player453.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -8806,7 +8806,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 14,
                         "fgm": 5,
@@ -9038,7 +9038,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 33,
                         "fgm": 8,
@@ -9922,7 +9922,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 14,
                         "fgm": 4,
@@ -10342,7 +10342,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 4,
@@ -10850,7 +10850,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/3",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 19,
                         "fgm": 3,
@@ -12815,7 +12815,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 1,
                         "fgm": 1,
@@ -13003,7 +13003,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 32,
                         "fgm": 8,
@@ -13631,7 +13631,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 36,
                         "fgm": 4,
@@ -13786,7 +13786,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 17,
                         "fgm": 0,
@@ -14623,7 +14623,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/3",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 38,
                         "fgm": 8,
@@ -15075,7 +15075,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 33,
                         "fgm": 8,
@@ -15639,7 +15639,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 44,
                         "fgm": 13,
@@ -17073,7 +17073,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 13,
                         "fgm": 5,
@@ -18197,7 +18197,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 33,
                         "fgm": 9,
@@ -19300,7 +19300,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 40,
                         "fgm": 8,
@@ -21550,7 +21550,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 37,
                         "fgm": 9,
@@ -21958,7 +21958,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 40,
                         "fgm": 7,
@@ -23934,7 +23934,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 29,
                         "fgm": 1,
@@ -25258,7 +25258,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 34,
                         "fgm": 11,
@@ -25932,7 +25932,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 25,
                         "fgm": 7,
@@ -27890,7 +27890,7 @@
             "name": "Dwight Jones",
             "url": "../players/player528.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "PF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -28183,7 +28183,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 33,
                         "fgm": 7,
@@ -28791,7 +28791,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 25,
                         "fgm": 4,
@@ -29585,7 +29585,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 9,
                         "fgm": 2,
@@ -29861,7 +29861,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 22,
                         "fgm": 7,
@@ -31691,7 +31691,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 44,
                         "fgm": 4,
@@ -31935,7 +31935,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 1,
                         "fgm": 0,
@@ -32343,7 +32343,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 15,
                         "fgm": 4,
@@ -33050,7 +33050,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 29,
                         "fgm": 2,
@@ -34672,7 +34672,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 21,
                         "fgm": 2,
@@ -35787,7 +35787,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 35,
                         "fgm": 1,
@@ -36239,7 +36239,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 24,
                         "fgm": 5,
@@ -36736,7 +36736,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 37,
                         "fgm": 4,
@@ -38138,7 +38138,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 31,
                         "fgm": 1,
@@ -40807,7 +40807,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 1,
                         "fgm": 0,
@@ -41485,7 +41485,7 @@
             "name": "James Bailey",
             "url": "../players/player499.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -41845,7 +41845,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 38,
                         "fgm": 3,
@@ -42264,7 +42264,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 34,
                         "fgm": 3,
@@ -43842,7 +43842,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 15,
                         "fgm": 6,
@@ -44096,7 +44096,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 20,
                         "fgm": 2,
@@ -44627,7 +44627,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 6,
                         "fgm": 2,
@@ -46988,7 +46988,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 14,
                         "fgm": 3,
@@ -48657,7 +48657,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 5,
                         "fgm": 2,
@@ -49043,7 +49043,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 21,
                         "fgm": 6,
@@ -50269,7 +50269,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 35,
                         "fgm": 5,
@@ -50743,7 +50743,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 20,
                         "fgm": 3,
@@ -51240,7 +51240,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 15,
@@ -51461,7 +51461,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 17,
                         "fgm": 3,
@@ -52640,7 +52640,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 38,
                         "fgm": 8,
@@ -53225,7 +53225,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 26,
                         "fgm": 8,
@@ -53943,7 +53943,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 24,
                         "fgm": 3,
@@ -54809,7 +54809,7 @@
             "name": "Kevin McHale",
             "url": "../players/player457.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "PF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -56361,7 +56361,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/3",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 13,
                         "fgm": 1,
@@ -56659,7 +56659,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 9,
@@ -57072,7 +57072,7 @@
             "name": "Kyle Lowry",
             "url": "../players/player708.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "PG",
             "gameLogs": {
                 "title": "Game Logs",
@@ -57443,7 +57443,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/3",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 39,
                         "fgm": 6,
@@ -58359,7 +58359,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 5,
                         "fgm": 0,
@@ -58745,7 +58745,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 38,
                         "fgm": 7,
@@ -58889,7 +58889,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 9,
                         "fgm": 0,
@@ -59055,7 +59055,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 38,
                         "fgm": 15,
@@ -60082,7 +60082,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 8,
@@ -60623,7 +60623,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 9,
                         "fgm": 0,
@@ -61080,7 +61080,7 @@
             "name": "Louis Orr",
             "url": "../players/player482.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "PF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -61463,7 +61463,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 14,
                         "fgm": 2,
@@ -61585,7 +61585,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 3,
@@ -62015,7 +62015,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 7,
                         "fgm": 1,
@@ -63209,7 +63209,7 @@
             "name": "Mark Landsberger",
             "url": "../players/player830.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -63602,7 +63602,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/3",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 16,
                         "fgm": 6,
@@ -64296,7 +64296,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 27,
                         "fgm": 2,
@@ -64990,7 +64990,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 41,
                         "fgm": 7,
@@ -65961,7 +65961,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 15,
                         "fgm": 0,
@@ -66391,7 +66391,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 27,
                         "fgm": 8,
@@ -66469,7 +66469,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 7,
@@ -66921,7 +66921,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 33,
                         "fgm": 7,
@@ -67014,7 +67014,7 @@
             "name": "Micheal Ray Richardson",
             "url": "../players/player469.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "PG",
             "gameLogs": {
                 "title": "Game Logs",
@@ -68345,7 +68345,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 9,
                         "fgm": 1,
@@ -69052,7 +69052,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 37,
                         "fgm": 2,
@@ -70366,7 +70366,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 34,
                         "fgm": 5,
@@ -70492,7 +70492,7 @@
             "name": "Mike Woodson",
             "url": "../players/player460.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SG",
             "gameLogs": {
                 "title": "Game Logs",
@@ -71425,7 +71425,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/3",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 35,
                         "fgm": 12,
@@ -71844,7 +71844,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/3",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 14,
                         "fgm": 4,
@@ -72517,7 +72517,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 4,
                         "fgm": 1,
@@ -73322,7 +73322,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 20,
                         "fgm": 0,
@@ -73719,7 +73719,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 41,
                         "fgm": 7,
@@ -75042,7 +75042,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 20,
                         "fgm": 3,
@@ -75516,7 +75516,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 14,
                         "fgm": 1,
@@ -75991,7 +75991,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 28,
                         "fgm": 4,
@@ -76289,7 +76289,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 17,
                         "fgm": 1,
@@ -76565,7 +76565,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 8,
                         "fgm": 6,
@@ -77216,7 +77216,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 27,
                         "fgm": 4,
@@ -77613,7 +77613,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 10,
                         "fgm": 1,
@@ -78464,7 +78464,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/3",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 34,
                         "fgm": 4,
@@ -79802,7 +79802,7 @@
             "name": "Rex Walters",
             "url": "../players/player430.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SG",
             "gameLogs": {
                 "title": "Game Logs",
@@ -80443,7 +80443,7 @@
             "name": "Rick Mahorn",
             "url": "../players/player486.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "C",
             "gameLogs": {
                 "title": "Game Logs",
@@ -81730,7 +81730,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 30,
                         "fgm": 4,
@@ -83958,7 +83958,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 33,
                         "fgm": 0,
@@ -84139,7 +84139,7 @@
             "name": "Ron Lee",
             "url": "../players/player534.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "PG",
             "gameLogs": {
                 "title": "Game Logs",
@@ -84566,7 +84566,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 9,
                         "fgm": 1,
@@ -85867,7 +85867,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 7,
                         "fgm": 1,
@@ -86475,7 +86475,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 39,
                         "fgm": 7,
@@ -86894,7 +86894,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 11,
                         "fgm": 3,
@@ -88935,7 +88935,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 44,
                         "fgm": 10,
@@ -89730,7 +89730,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 18,
                         "fgm": 0,
@@ -90073,7 +90073,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 33,
                         "fgm": 3,
@@ -90800,7 +90800,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 27,
                         "fgm": 7,
@@ -92036,7 +92036,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 34,
                         "fgm": 10,
@@ -92129,7 +92129,7 @@
             "name": "Tre Mann",
             "url": "../players/player429.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SG",
             "gameLogs": {
                 "title": "Game Logs",
@@ -92361,7 +92361,7 @@
             "name": "Tree Rollins",
             "url": "../players/player477.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "C",
             "gameLogs": {
                 "title": "Game Logs",
@@ -92802,7 +92802,7 @@
             "name": "Truck Robinson",
             "url": "../players/player517.htm",
             "team": "roster11",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -93955,7 +93955,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 16,
                         "fgm": 2,
@@ -94286,7 +94286,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 3,
                         "fgm": 0,
@@ -95401,7 +95401,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 15,
                         "fgm": 0,
@@ -95666,7 +95666,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 25,
                         "fgm": 1,

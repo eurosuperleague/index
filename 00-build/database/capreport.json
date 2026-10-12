@@ -10,12 +10,38 @@
                     "team": "Ajax",
                     "rosterUrl": "./rosters/roster18.htm",
                     "rosterFile": "roster18.htm",
+<<<<<<< Updated upstream
                     "salary": 60947877.0,
                     "salaryText": "$60,947,877",
                     "capRoom": 39052123.0,
                     "capRoomText": "$39,052,123",
                     "budgetRoom": 64052123.0,
                     "budgetRoomText": "$64,052,123",
+=======
+                    "salary": 83808586.0,
+                    "salaryText": "$83,808,586",
+                    "capRoom": 16191414.0,
+                    "capRoomText": "$16,191,414",
+                    "budgetRoom": 41191414.0,
+                    "budgetRoomText": "$41,191,414",
+                    "midException": -0.0,
+                    "midExceptionText": "($0)",
+                    "lowException": -0.0,
+                    "lowExceptionText": "($0)",
+                    "rowClass": "row1"
+                },
+                {
+                    "pick": 2,
+                    "team": "Benfica",
+                    "rosterUrl": "./rosters/roster13.htm",
+                    "rosterFile": "roster13.htm",
+                    "salary": 96182337.0,
+                    "salaryText": "$96,182,337",
+                    "capRoom": 3817663.0,
+                    "capRoomText": "$3,817,663",
+                    "budgetRoom": 28817663.0,
+                    "budgetRoomText": "$28,817,663",
+>>>>>>> Stashed changes
                     "midException": -0.0,
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
@@ -58,6 +84,7 @@
                 },
                 {
                     "pick": 4,
+<<<<<<< Updated upstream
                     "team": "Paris Saint-Germain",
                     "rosterUrl": "./rosters/roster21.htm",
                     "rosterFile": "roster21.htm",
@@ -67,6 +94,17 @@
                     "capRoomText": "$2,075,000",
                     "budgetRoom": 27075000.0,
                     "budgetRoomText": "$27,075,000",
+=======
+                    "team": "Brighton",
+                    "rosterUrl": "./rosters/roster10.htm",
+                    "rosterFile": "roster10.htm",
+                    "salary": 103730125.0,
+                    "salaryText": "$103,730,125",
+                    "capRoom": -3730125.0,
+                    "capRoomText": "($3,730,125)",
+                    "budgetRoom": 21269875.0,
+                    "budgetRoomText": "$21,269,875",
+>>>>>>> Stashed changes
                     "midException": -0.0,
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
@@ -75,6 +113,7 @@
                 },
                 {
                     "pick": 5,
+<<<<<<< Updated upstream
                     "team": "Brighton",
                     "rosterUrl": "./rosters/roster10.htm",
                     "rosterFile": "roster10.htm",
@@ -84,6 +123,17 @@
                     "capRoomText": "($340,125)",
                     "budgetRoom": 24659875.0,
                     "budgetRoomText": "$24,659,875",
+=======
+                    "team": "Paris Saint-Germain",
+                    "rosterUrl": "./rosters/roster21.htm",
+                    "rosterFile": "roster21.htm",
+                    "salary": 106005000.0,
+                    "salaryText": "$106,005,000",
+                    "capRoom": -6005000.0,
+                    "capRoomText": "($6,005,000)",
+                    "budgetRoom": 18995000.0,
+                    "budgetRoomText": "$18,995,000",
+>>>>>>> Stashed changes
                     "midException": -0.0,
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
@@ -149,6 +199,7 @@
             "entries": [
                 {
                     "pick": 1,
+<<<<<<< Updated upstream
                     "team": "Crystal Palace",
                     "rosterUrl": "./rosters/roster6.htm",
                     "rosterFile": "roster6.htm",
@@ -158,6 +209,17 @@
                     "capRoomText": "$11,752,801",
                     "budgetRoom": 41752801.0,
                     "budgetRoomText": "$41,752,801",
+=======
+                    "team": "Barcelona",
+                    "rosterUrl": "./rosters/roster24.htm",
+                    "rosterFile": "roster24.htm",
+                    "salary": 59765127.0,
+                    "salaryText": "$59,765,127",
+                    "capRoom": 10234873.0,
+                    "capRoomText": "$10,234,873",
+                    "budgetRoom": 40234873.0,
+                    "budgetRoomText": "$40,234,873",
+>>>>>>> Stashed changes
                     "midException": -0.0,
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
@@ -166,6 +228,7 @@
                 },
                 {
                     "pick": 2,
+<<<<<<< Updated upstream
                     "team": "Barcelona",
                     "rosterUrl": "./rosters/roster24.htm",
                     "rosterFile": "roster24.htm",
@@ -183,6 +246,8 @@
                 },
                 {
                     "pick": 3,
+=======
+>>>>>>> Stashed changes
                     "team": "Inter Milan",
                     "rosterUrl": "./rosters/roster26.htm",
                     "rosterFile": "roster26.htm",
@@ -199,6 +264,26 @@
                     "rowClass": "row1"
                 },
                 {
+<<<<<<< Updated upstream
+=======
+                    "pick": 3,
+                    "team": "Crystal Palace",
+                    "rosterUrl": "./rosters/roster6.htm",
+                    "rosterFile": "roster6.htm",
+                    "salary": 65641199.0,
+                    "salaryText": "$65,641,199",
+                    "capRoom": 4358801.0,
+                    "capRoomText": "$4,358,801",
+                    "budgetRoom": 34358801.0,
+                    "budgetRoomText": "$34,358,801",
+                    "midException": -0.0,
+                    "midExceptionText": "($0)",
+                    "lowException": -0.0,
+                    "lowExceptionText": "($0)",
+                    "rowClass": "row1"
+                },
+                {
+>>>>>>> Stashed changes
                     "pick": 4,
                     "team": "AC Sparta Praha",
                     "rosterUrl": "./rosters/roster16.htm",
@@ -217,6 +302,7 @@
                 },
                 {
                     "pick": 5,
+<<<<<<< Updated upstream
                     "team": "FL Fart",
                     "rosterUrl": "./rosters/roster27.htm",
                     "rosterFile": "roster27.htm",
@@ -226,6 +312,17 @@
                     "capRoomText": "$3,254,134",
                     "budgetRoom": 33254134.0,
                     "budgetRoomText": "$33,254,134",
+=======
+                    "team": "ACF Fiorentina",
+                    "rosterUrl": "./rosters/roster7.htm",
+                    "rosterFile": "roster7.htm",
+                    "salary": 69996362.0,
+                    "salaryText": "$69,996,362",
+                    "capRoom": 3638.0,
+                    "capRoomText": "$3,638",
+                    "budgetRoom": 30003638.0,
+                    "budgetRoomText": "$30,003,638",
+>>>>>>> Stashed changes
                     "midException": -0.0,
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
@@ -234,6 +331,7 @@
                 },
                 {
                     "pick": 6,
+<<<<<<< Updated upstream
                     "team": "Bayern Munich",
                     "rosterUrl": "./rosters/roster7.htm",
                     "rosterFile": "roster7.htm",
@@ -243,6 +341,17 @@
                     "capRoomText": "$1,103,638",
                     "budgetRoom": 31103638.0,
                     "budgetRoomText": "$31,103,638",
+=======
+                    "team": "FL Fart",
+                    "rosterUrl": "./rosters/roster27.htm",
+                    "rosterFile": "roster27.htm",
+                    "salary": 71101750.0,
+                    "salaryText": "$71,101,750",
+                    "capRoom": -1101750.0,
+                    "capRoomText": "($1,101,750)",
+                    "budgetRoom": 28898250.0,
+                    "budgetRoomText": "$28,898,250",
+>>>>>>> Stashed changes
                     "midException": -0.0,
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
@@ -311,12 +420,12 @@
                     "team": "Atletico Madrid",
                     "rosterUrl": "./rosters/roster11.htm",
                     "rosterFile": "roster11.htm",
-                    "salary": 33794949.0,
-                    "salaryText": "$33,794,949",
-                    "capRoom": 16205051.0,
-                    "capRoomText": "$16,205,051",
-                    "budgetRoom": 66205051.0,
-                    "budgetRoomText": "$66,205,051",
+                    "salary": 35284949.0,
+                    "salaryText": "$35,284,949",
+                    "capRoom": 14715051.0,
+                    "capRoomText": "$14,715,051",
+                    "budgetRoom": 64715051.0,
+                    "budgetRoomText": "$64,715,051",
                     "midException": -0.0,
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
@@ -328,12 +437,21 @@
                     "team": "Tottenham Hotspur",
                     "rosterUrl": "./rosters/roster22.htm",
                     "rosterFile": "roster22.htm",
+<<<<<<< Updated upstream
                     "salary": 50614151.0,
                     "salaryText": "$50,614,151",
                     "capRoom": -614151.0,
                     "capRoomText": "($614,151)",
                     "budgetRoom": 49385849.0,
                     "budgetRoomText": "$49,385,849",
+=======
+                    "salary": 48371750.0,
+                    "salaryText": "$48,371,750",
+                    "capRoom": 1628250.0,
+                    "capRoomText": "$1,628,250",
+                    "budgetRoom": 51628250.0,
+                    "budgetRoomText": "$51,628,250",
+>>>>>>> Stashed changes
                     "midException": -0.0,
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
@@ -345,12 +463,12 @@
                     "team": "Marseille",
                     "rosterUrl": "./rosters/roster15.htm",
                     "rosterFile": "roster15.htm",
-                    "salary": 51270376.0,
-                    "salaryText": "$51,270,376",
-                    "capRoom": -1270376.0,
-                    "capRoomText": "($1,270,376)",
-                    "budgetRoom": 48729624.0,
-                    "budgetRoomText": "$48,729,624",
+                    "salary": 51825376.0,
+                    "salaryText": "$51,825,376",
+                    "capRoom": -1825376.0,
+                    "capRoomText": "($1,825,376)",
+                    "budgetRoom": 48174624.0,
+                    "budgetRoomText": "$48,174,624",
                     "midException": -0.0,
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
@@ -376,6 +494,7 @@
                 },
                 {
                     "pick": 6,
+<<<<<<< Updated upstream
                     "team": "Valencia",
                     "rosterUrl": "./rosters/roster25.htm",
                     "rosterFile": "roster25.htm",
@@ -393,6 +512,8 @@
                 },
                 {
                     "pick": 7,
+=======
+>>>>>>> Stashed changes
                     "team": "Manchester City",
                     "rosterUrl": "./rosters/roster28.htm",
                     "rosterFile": "roster28.htm",
@@ -402,6 +523,40 @@
                     "capRoomText": "($5,848,111)",
                     "budgetRoom": 44151889.0,
                     "budgetRoomText": "$44,151,889",
+                    "midException": -0.0,
+                    "midExceptionText": "($0)",
+                    "lowException": -0.0,
+                    "lowExceptionText": "($0)",
+                    "rowClass": "row1"
+                },
+                {
+                    "pick": 8,
+                    "team": "Monaco",
+                    "rosterUrl": "./rosters/roster20.htm",
+                    "rosterFile": "roster20.htm",
+                    "salary": 58400612.0,
+                    "salaryText": "$58,400,612",
+                    "capRoom": -8400612.0,
+                    "capRoomText": "($8,400,612)",
+                    "budgetRoom": 41599388.0,
+                    "budgetRoomText": "$41,599,388",
+                    "midException": -0.0,
+                    "midExceptionText": "($0)",
+                    "lowException": -0.0,
+                    "lowExceptionText": "($0)",
+                    "rowClass": "row2"
+                },
+                {
+                    "pick": 7,
+                    "team": "Valencia",
+                    "rosterUrl": "./rosters/roster25.htm",
+                    "rosterFile": "roster25.htm",
+                    "salary": 57268670.0,
+                    "salaryText": "$57,268,670",
+                    "capRoom": -7268670.0,
+                    "capRoomText": "($7,268,670)",
+                    "budgetRoom": 42731330.0,
+                    "budgetRoomText": "$42,731,330",
                     "midException": -0.0,
                     "midExceptionText": "($0)",
                     "lowException": -0.0,

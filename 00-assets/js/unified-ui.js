@@ -35,7 +35,7 @@
   var TEAM_ABBREVIATIONS = {
     "AC Milan": "ACM", "AFC Richmond": "AFC", "Ajax": "AJX",
     "Aston Villa": "AVL", "Atletico Madrid": "ATM", "Barcelona": "BAR",
-    "Bayern Munich": "BAY", "Benfica": "BEN", "Brighton": "BRI",
+    "ACF Fiorentina": "ACF", "Benfica": "BEN", "Brighton": "BRI",
     "Chelsea": "CHE", "Crystal Palace": "CRY", "FL Fart": "FLF",
     "Inter Milan": "INT", "Juventus": "JUV", "Manchester City": "MCI",
     "Manchester United": "MUN", "Marseille": "MAR", "Monaco": "MON",
@@ -47,7 +47,7 @@
   var TEAM_COLORS = {
     "AC Milan": "#B50909", "AFC Richmond": "#021E73", "Ajax": "#D2122E",
     "Aston Villa": "#670E36", "Atletico Madrid": "#CB3524", "Barcelona": "#A60042",
-    "Bayern Munich": "#DC052D", "Benfica": "#E41E26", "Brighton": "#0057B8",
+    "ACF Fiorentina": "#5B2C83", "Benfica": "#E41E26", "Brighton": "#0057B8",
     "Chelsea": "#034694", "Crystal Palace": "#1B458F", "FL Fart": "#D72B2B",
     "Inter Milan": "#0055A0", "Juventus": "#000000", "Manchester City": "#6CABDD",
     "Manchester United": "#D9020D", "Marseille": "#099FFF", "Monaco": "#CE1126",

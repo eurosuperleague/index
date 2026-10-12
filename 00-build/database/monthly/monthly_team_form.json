@@ -6,6 +6,7 @@
     "tiers": {
         "Tier 1": [
             {
+<<<<<<< Updated upstream
                 "team": "AC Milan",
                 "tier": "Tier 1",
                 "tierShort": "T1",
@@ -584,23 +585,26 @@
                 "last3": "WWW"
             },
             {
+=======
+>>>>>>> Stashed changes
                 "team": "Benfica",
                 "tier": "Tier 1",
                 "tierShort": "T1",
                 "standingRank": 5,
                 "rosterUrl": "./rosters/roster13.htm",
                 "rosterFile": "roster13.htm",
-                "standingsLast10": "5-5",
-                "wins": 4,
-                "losses": 2,
-                "games": 6,
-                "pointsFor": 690,
-                "pointsAgainst": 663,
-                "pointDiff": 27,
-                "avgMargin": 4.5,
-                "streak": "W3",
+                "standingsLast10": "4-2",
+                "wins": 1,
+                "losses": 0,
+                "games": 1,
+                "pointsFor": 117,
+                "pointsAgainst": 92,
+                "pointDiff": 25,
+                "avgMargin": 25.0,
+                "streak": "W1",
                 "recentResults": [
                     {
+<<<<<<< Updated upstream
                         "date": "1987-04-02",
                         "opponent": "FL Fart",
                         "result": "W",
@@ -784,12 +788,27 @@
                 "bestWin": {
                     "date": "1987-04-22",
                     "opponent": "Ajax",
+=======
+                        "date": "11/1/1987",
+                        "opponent": "AFC Richmond",
+                        "result": "W",
+                        "margin": 25,
+                        "score": "Benfica 117, @AFC Richmond 92",
+                        "boxscoreUrl": "./boxes/box13-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "11/1/1987",
+                    "opponent": "AFC Richmond",
+>>>>>>> Stashed changes
                     "result": "W",
-                    "margin": 37,
-                    "score": "@Paris Saint-Germain 122, Ajax 85",
-                    "boxscoreUrl": "./boxes/box184-1.htm",
-                    "section": "Regular Season"
+                    "margin": 25,
+                    "score": "Benfica 117, @AFC Richmond 92",
+                    "boxscoreUrl": "./boxes/box13-1.htm",
+                    "section": "Preseason"
                 },
+<<<<<<< Updated upstream
                 "worstLoss": {
                     "date": "1987-04-08",
                     "opponent": "Real Madrid",
@@ -837,12 +856,25 @@
                         "score": "Paris Saint-Germain 113, @FL Fart 81",
                         "boxscoreUrl": "./boxes/box185-3.htm",
                         "section": "Regular Season"
+=======
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "11/1/1987",
+                        "opponent": "AFC Richmond",
+                        "result": "W",
+                        "margin": 25,
+                        "score": "Benfica 117, @AFC Richmond 92",
+                        "boxscoreUrl": "./boxes/box13-1.htm",
+                        "section": "Preseason"
+>>>>>>> Stashed changes
                     }
                 ],
                 "blowoutLosses": [],
-                "record": "3-3",
-                "closeGameCount": 1,
-                "last3": "WWW"
+                "record": "1-0",
+                "closeGameCount": 0,
+                "last3": "W"
             },
             {
                 "team": "Real Madrid",
@@ -851,6 +883,7 @@
                 "standingRank": 1,
                 "rosterUrl": "./rosters/roster8.htm",
                 "rosterFile": "roster8.htm",
+<<<<<<< Updated upstream
                 "standingsLast10": "5-5",
                 "wins": 3,
                 "losses": 5,
@@ -976,8 +1009,78 @@
                     }
                 ],
                 "record": "3-5",
+=======
+                "standingsLast10": "2-4",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+>>>>>>> Stashed changes
                 "closeGameCount": 0,
-                "last3": "LLL"
+                "last3": "-"
+            },
+            {
+                "team": "AC Milan",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster9.htm",
+                "rosterFile": "roster9.htm",
+                "standingsLast10": "6-0",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
+            },
+            {
+                "team": "Brighton",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster10.htm",
+                "rosterFile": "roster10.htm",
+                "standingsLast10": "2-4",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
             },
             {
                 "team": "Ajax",
@@ -986,17 +1089,96 @@
                 "standingRank": 6,
                 "rosterUrl": "./rosters/roster18.htm",
                 "rosterFile": "roster18.htm",
-                "standingsLast10": "4-6",
-                "wins": 3,
-                "losses": 4,
-                "games": 7,
-                "pointsFor": 744,
-                "pointsAgainst": 809,
-                "pointDiff": -65,
-                "avgMargin": -9.29,
-                "streak": "L4",
+                "standingsLast10": "0-6",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
+            },
+            {
+                "team": "Paris Saint-Germain",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 7,
+                "rosterUrl": "./rosters/roster21.htm",
+                "rosterFile": "roster21.htm",
+                "standingsLast10": "4-2",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
+            },
+            {
+                "team": "Arsenal",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster23.htm",
+                "rosterFile": "roster23.htm",
+                "standingsLast10": "5-1",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
+            },
+            {
+                "team": "AFC Richmond",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 4,
+                "rosterUrl": "./rosters/roster12.htm",
+                "rosterFile": "roster12.htm",
+                "standingsLast10": "1-5",
+                "wins": 0,
+                "losses": 1,
+                "games": 1,
+                "pointsFor": 92,
+                "pointsAgainst": 117,
+                "pointDiff": -25,
+                "avgMargin": -25.0,
+                "streak": "L1",
                 "recentResults": [
                     {
+<<<<<<< Updated upstream
                         "date": "1987-04-02",
                         "opponent": "Paris Saint-Germain",
                         "result": "W",
@@ -1072,12 +1254,28 @@
                 "worstLoss": {
                     "date": "1987-04-22",
                     "opponent": "Paris Saint-Germain",
+=======
+                        "date": "11/1/1987",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 25,
+                        "score": "Benfica 117, @AFC Richmond 92",
+                        "boxscoreUrl": "./boxes/box13-1.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": null,
+                "worstLoss": {
+                    "date": "11/1/1987",
+                    "opponent": "Benfica",
+>>>>>>> Stashed changes
                     "result": "L",
-                    "margin": 37,
-                    "score": "@Paris Saint-Germain 122, Ajax 85",
-                    "boxscoreUrl": "./boxes/box184-1.htm",
-                    "section": "Regular Season"
+                    "margin": 25,
+                    "score": "Benfica 117, @AFC Richmond 92",
+                    "boxscoreUrl": "./boxes/box13-1.htm",
+                    "section": "Preseason"
                 },
+<<<<<<< Updated upstream
                 "closeGames": [
                     {
                         "date": "1987-04-02",
@@ -1117,15 +1315,29 @@
                         "score": "@Paris Saint-Germain 122, Ajax 85",
                         "boxscoreUrl": "./boxes/box184-1.htm",
                         "section": "Regular Season"
+=======
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "11/1/1987",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 25,
+                        "score": "Benfica 117, @AFC Richmond 92",
+                        "boxscoreUrl": "./boxes/box13-1.htm",
+                        "section": "Preseason"
+>>>>>>> Stashed changes
                     }
                 ],
-                "record": "3-4",
-                "closeGameCount": 2,
-                "last3": "LLL"
+                "record": "0-1",
+                "closeGameCount": 0,
+                "last3": "L"
             }
         ],
         "Tier 2": [
             {
+<<<<<<< Updated upstream
                 "team": "Barcelona",
                 "tier": "Tier 2",
                 "tierShort": "T2",
@@ -1406,23 +1618,26 @@
                 "last3": "WLL"
             },
             {
+=======
+>>>>>>> Stashed changes
                 "team": "Inter Milan",
                 "tier": "Tier 2",
                 "tierShort": "T2",
                 "standingRank": 7,
                 "rosterUrl": "./rosters/roster26.htm",
                 "rosterFile": "roster26.htm",
-                "standingsLast10": "6-4",
-                "wins": 4,
-                "losses": 2,
-                "games": 6,
-                "pointsFor": 688,
-                "pointsAgainst": 697,
-                "pointDiff": -9,
-                "avgMargin": -1.5,
-                "streak": "W3",
+                "standingsLast10": "3-3",
+                "wins": 1,
+                "losses": 0,
+                "games": 1,
+                "pointsFor": 114,
+                "pointsAgainst": 105,
+                "pointDiff": 9,
+                "avgMargin": 9.0,
+                "streak": "W1",
                 "recentResults": [
                     {
+<<<<<<< Updated upstream
                         "date": "1987-04-04",
                         "opponent": "Arsenal",
                         "result": "W",
@@ -1480,12 +1695,27 @@
                 "bestWin": {
                     "date": "1987-04-20",
                     "opponent": "AC Sparta Praha",
+=======
+                        "date": "11/1/1987",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 9,
+                        "score": "@Inter Milan 114, Crystal Palace 105",
+                        "boxscoreUrl": "./boxes/box13-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "11/1/1987",
+                    "opponent": "Crystal Palace",
+>>>>>>> Stashed changes
                     "result": "W",
-                    "margin": 8,
-                    "score": "@Inter Milan 118, AC Sparta Praha 110",
-                    "boxscoreUrl": "./boxes/box182-2.htm",
-                    "section": "Regular Season"
+                    "margin": 9,
+                    "score": "@Inter Milan 114, Crystal Palace 105",
+                    "boxscoreUrl": "./boxes/box13-2.htm",
+                    "section": "Preseason"
                 },
+<<<<<<< Updated upstream
                 "worstLoss": {
                     "date": "1987-04-08",
                     "opponent": "Arsenal",
@@ -1539,11 +1769,21 @@
                 "record": "4-2",
                 "closeGameCount": 3,
                 "last3": "WWW"
+=======
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "1-0",
+                "closeGameCount": 0,
+                "last3": "W"
+>>>>>>> Stashed changes
             },
             {
-                "team": "Aston Villa",
+                "team": "ACF Fiorentina",
                 "tier": "Tier 2",
                 "tierShort": "T2",
+<<<<<<< Updated upstream
                 "standingRank": 5,
                 "rosterUrl": "./rosters/roster19.htm",
                 "rosterFile": "roster19.htm",
@@ -1652,10 +1892,29 @@
                         "section": "Regular Season"
                     }
                 ],
+=======
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster7.htm",
+                "rosterFile": "roster7.htm",
+                "standingsLast10": "3-3",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+>>>>>>> Stashed changes
                 "blowoutLosses": [],
-                "record": "3-3",
-                "closeGameCount": 1,
-                "last3": "LLL"
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
             },
             {
                 "team": "AC Sparta Praha",
@@ -1664,6 +1923,7 @@
                 "standingRank": 3,
                 "rosterUrl": "./rosters/roster16.htm",
                 "rosterFile": "roster16.htm",
+<<<<<<< Updated upstream
                 "standingsLast10": "5-5",
                 "wins": 2,
                 "losses": 4,
@@ -1935,6 +2195,26 @@
                 "record": "2-4",
                 "closeGameCount": 2,
                 "last3": "LWL"
+=======
+                "standingsLast10": "4-2",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
+>>>>>>> Stashed changes
             },
             {
                 "team": "Chelsea",
@@ -1943,6 +2223,7 @@
                 "standingRank": 4,
                 "rosterUrl": "./rosters/roster17.htm",
                 "rosterFile": "roster17.htm",
+<<<<<<< Updated upstream
                 "standingsLast10": "4-6",
                 "wins": 1,
                 "losses": 4,
@@ -2062,6 +2343,104 @@
                 "record": "1-4",
                 "closeGameCount": 1,
                 "last3": "LLW"
+=======
+                "standingsLast10": "3-3",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
+            },
+            {
+                "team": "Aston Villa",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster19.htm",
+                "rosterFile": "roster19.htm",
+                "standingsLast10": "1-5",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
+            },
+            {
+                "team": "Barcelona",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 6,
+                "rosterUrl": "./rosters/roster24.htm",
+                "rosterFile": "roster24.htm",
+                "standingsLast10": "4-2",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
+            },
+            {
+                "team": "FL Fart",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster27.htm",
+                "rosterFile": "roster27.htm",
+                "standingsLast10": "2-4",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
+>>>>>>> Stashed changes
             },
             {
                 "team": "Crystal Palace",
@@ -2070,17 +2449,18 @@
                 "standingRank": 1,
                 "rosterUrl": "./rosters/roster6.htm",
                 "rosterFile": "roster6.htm",
-                "standingsLast10": "3-7",
-                "wins": 1,
-                "losses": 5,
-                "games": 6,
-                "pointsFor": 629,
-                "pointsAgainst": 689,
-                "pointDiff": -60,
-                "avgMargin": -10.0,
-                "streak": "L2",
+                "standingsLast10": "4-2",
+                "wins": 0,
+                "losses": 1,
+                "games": 1,
+                "pointsFor": 105,
+                "pointsAgainst": 114,
+                "pointDiff": -9,
+                "avgMargin": -9.0,
+                "streak": "L1",
                 "recentResults": [
                     {
+<<<<<<< Updated upstream
                         "date": "1987-04-03",
                         "opponent": "Real Madrid",
                         "result": "L",
@@ -2147,12 +2527,28 @@
                 "worstLoss": {
                     "date": "1987-04-18",
                     "opponent": "Paris Saint-Germain",
+=======
+                        "date": "11/1/1987",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "@Inter Milan 114, Crystal Palace 105",
+                        "boxscoreUrl": "./boxes/box13-2.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": null,
+                "worstLoss": {
+                    "date": "11/1/1987",
+                    "opponent": "Inter Milan",
+>>>>>>> Stashed changes
                     "result": "L",
-                    "margin": 19,
-                    "score": "@Paris Saint-Germain 118, Crystal Palace 99",
-                    "boxscoreUrl": "./boxes/box180-2.htm",
-                    "section": "Regular Season"
+                    "margin": 9,
+                    "score": "@Inter Milan 114, Crystal Palace 105",
+                    "boxscoreUrl": "./boxes/box13-2.htm",
+                    "section": "Preseason"
                 },
+<<<<<<< Updated upstream
                 "closeGames": [
                     {
                         "date": "1987-04-07",
@@ -2197,10 +2593,19 @@
                 "record": "1-5",
                 "closeGameCount": 2,
                 "last3": "WLL"
+=======
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-1",
+                "closeGameCount": 0,
+                "last3": "L"
+>>>>>>> Stashed changes
             }
         ],
         "Tier 3": [
             {
+<<<<<<< Updated upstream
                 "team": "Valencia",
                 "tier": "Tier 3",
                 "tierShort": "T3",
@@ -2326,12 +2731,15 @@
                 "last3": "WLW"
             },
             {
+=======
+>>>>>>> Stashed changes
                 "team": "Tottenham Hotspur",
                 "tier": "Tier 3",
                 "tierShort": "T3",
                 "standingRank": 6,
                 "rosterUrl": "./rosters/roster22.htm",
                 "rosterFile": "roster22.htm",
+<<<<<<< Updated upstream
                 "standingsLast10": "5-5",
                 "wins": 4,
                 "losses": 3,
@@ -2778,14 +3186,30 @@
                     {
                         "date": "1987-04-23",
                         "opponent": "Manchester United",
+=======
+                "standingsLast10": "4-1",
+                "wins": 1,
+                "losses": 0,
+                "games": 1,
+                "pointsFor": 109,
+                "pointsAgainst": 93,
+                "pointDiff": 16,
+                "avgMargin": 16.0,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "11/1/1987",
+                        "opponent": "Juventus",
+>>>>>>> Stashed changes
                         "result": "W",
-                        "margin": 8,
-                        "score": "Atletico Madrid 107, @Manchester United 99",
-                        "boxscoreUrl": "./boxes/box185-9.htm",
-                        "section": "Regular Season"
+                        "margin": 16,
+                        "score": "@Tottenham Hotspur 109, Juventus 93",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
                     }
                 ],
                 "bestWin": {
+<<<<<<< Updated upstream
                     "date": "1987-04-09",
                     "opponent": "Monaco",
                     "result": "W",
@@ -2796,16 +3220,21 @@
                 },
                 "worstLoss": {
                     "date": "1987-04-18",
+=======
+                    "date": "11/1/1987",
+>>>>>>> Stashed changes
                     "opponent": "Juventus",
-                    "result": "L",
-                    "margin": 30,
-                    "score": "@Juventus 135, Atletico Madrid 105",
-                    "boxscoreUrl": "./boxes/box180-4.htm",
-                    "section": "Regular Season"
+                    "result": "W",
+                    "margin": 16,
+                    "score": "@Tottenham Hotspur 109, Juventus 93",
+                    "boxscoreUrl": "./boxes/box13-3.htm",
+                    "section": "Preseason"
                 },
+                "worstLoss": null,
                 "closeGames": [],
                 "blowoutWins": [
                     {
+<<<<<<< Updated upstream
                         "date": "1987-04-09",
                         "opponent": "Monaco",
                         "result": "W",
@@ -2818,36 +3247,41 @@
                 "blowoutLosses": [
                     {
                         "date": "1987-04-18",
+=======
+                        "date": "11/1/1987",
+>>>>>>> Stashed changes
                         "opponent": "Juventus",
-                        "result": "L",
-                        "margin": 30,
-                        "score": "@Juventus 135, Atletico Madrid 105",
-                        "boxscoreUrl": "./boxes/box180-4.htm",
-                        "section": "Regular Season"
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@Tottenham Hotspur 109, Juventus 93",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
                     }
                 ],
-                "record": "3-3",
+                "blowoutLosses": [],
+                "record": "1-0",
                 "closeGameCount": 0,
-                "last3": "LLW"
+                "last3": "W"
             },
             {
-                "team": "Manchester City",
+                "team": "Valencia",
                 "tier": "Tier 3",
                 "tierShort": "T3",
-                "standingRank": 8,
-                "rosterUrl": "./rosters/roster28.htm",
-                "rosterFile": "roster28.htm",
-                "standingsLast10": "5-5",
-                "wins": 3,
-                "losses": 4,
-                "games": 7,
-                "pointsFor": 711,
-                "pointsAgainst": 774,
-                "pointDiff": -63,
-                "avgMargin": -9.0,
-                "streak": "L1",
+                "standingRank": 7,
+                "rosterUrl": "./rosters/roster25.htm",
+                "rosterFile": "roster25.htm",
+                "standingsLast10": "6-0",
+                "wins": 1,
+                "losses": 0,
+                "games": 1,
+                "pointsFor": 121,
+                "pointsAgainst": 107,
+                "pointDiff": 14,
+                "avgMargin": 14.0,
+                "streak": "W1",
                 "recentResults": [
                     {
+<<<<<<< Updated upstream
                         "date": "1987-04-01",
                         "opponent": "Monaco",
                         "result": "L",
@@ -2914,12 +3348,27 @@
                 "bestWin": {
                     "date": "1987-04-10",
                     "opponent": "Manchester United",
+=======
+                        "date": "11/1/1987",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "@Valencia 121, Marseille 107",
+                        "boxscoreUrl": "./boxes/box13-4.htm",
+                        "section": "Preseason"
+                    }
+                ],
+                "bestWin": {
+                    "date": "11/1/1987",
+                    "opponent": "Marseille",
+>>>>>>> Stashed changes
                     "result": "W",
-                    "margin": 22,
-                    "score": "@Manchester City 119, Manchester United 97",
-                    "boxscoreUrl": "./boxes/box172-3.htm",
-                    "section": "Regular Season"
+                    "margin": 14,
+                    "score": "@Valencia 121, Marseille 107",
+                    "boxscoreUrl": "./boxes/box13-4.htm",
+                    "section": "Preseason"
                 },
+<<<<<<< Updated upstream
                 "worstLoss": {
                     "date": "1987-04-15",
                     "opponent": "Valencia",
@@ -2983,6 +3432,15 @@
                 "record": "3-4",
                 "closeGameCount": 1,
                 "last3": "LWL"
+=======
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "1-0",
+                "closeGameCount": 0,
+                "last3": "W"
+>>>>>>> Stashed changes
             },
             {
                 "team": "Manchester United",
@@ -2991,8 +3449,9 @@
                 "standingRank": 1,
                 "rosterUrl": "./rosters/roster5.htm",
                 "rosterFile": "roster5.htm",
-                "standingsLast10": "2-8",
+                "standingsLast10": "1-4",
                 "wins": 0,
+<<<<<<< Updated upstream
                 "losses": 6,
                 "games": 6,
                 "pointsFor": 569,
@@ -3089,8 +3548,102 @@
                     }
                 ],
                 "record": "0-6",
+=======
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+>>>>>>> Stashed changes
                 "closeGameCount": 0,
-                "last3": "LLL"
+                "last3": "-"
+            },
+            {
+                "team": "Atletico Madrid",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster11.htm",
+                "rosterFile": "roster11.htm",
+                "standingsLast10": "2-4",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
+            },
+            {
+                "team": "Monaco",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster20.htm",
+                "rosterFile": "roster20.htm",
+                "standingsLast10": "6-0",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
+            },
+            {
+                "team": "Manchester City",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster28.htm",
+                "rosterFile": "roster28.htm",
+                "standingsLast10": "2-4",
+                "wins": 0,
+                "losses": 0,
+                "games": 0,
+                "pointsFor": 0,
+                "pointsAgainst": 0,
+                "pointDiff": 0,
+                "avgMargin": 0.0,
+                "streak": "-",
+                "recentResults": [],
+                "bestWin": null,
+                "worstLoss": null,
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-0",
+                "closeGameCount": 0,
+                "last3": "-"
             },
             {
                 "team": "Marseille",
@@ -3099,17 +3652,18 @@
                 "standingRank": 4,
                 "rosterUrl": "./rosters/roster15.htm",
                 "rosterFile": "roster15.htm",
-                "standingsLast10": "1-9",
+                "standingsLast10": "0-6",
                 "wins": 0,
-                "losses": 5,
-                "games": 5,
-                "pointsFor": 534,
-                "pointsAgainst": 653,
-                "pointDiff": -119,
-                "avgMargin": -23.8,
-                "streak": "L5",
+                "losses": 1,
+                "games": 1,
+                "pointsFor": 107,
+                "pointsAgainst": 121,
+                "pointDiff": -14,
+                "avgMargin": -14.0,
+                "streak": "L1",
                 "recentResults": [
                     {
+<<<<<<< Updated upstream
                         "date": "1987-04-03",
                         "opponent": "AC Milan",
                         "result": "L",
@@ -3153,32 +3707,86 @@
                         "score": "AC Sparta Praha 129, @Marseille 127",
                         "boxscoreUrl": "./boxes/box185-8.htm",
                         "section": "Regular Season"
+=======
+                        "date": "11/1/1987",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "@Valencia 121, Marseille 107",
+                        "boxscoreUrl": "./boxes/box13-4.htm",
+                        "section": "Preseason"
+>>>>>>> Stashed changes
                     }
                 ],
                 "bestWin": null,
                 "worstLoss": {
+<<<<<<< Updated upstream
                     "date": "1987-04-03",
                     "opponent": "AC Milan",
+=======
+                    "date": "11/1/1987",
+                    "opponent": "Valencia",
+>>>>>>> Stashed changes
                     "result": "L",
-                    "margin": 36,
-                    "score": "AC Milan 132, @Marseille 96",
-                    "boxscoreUrl": "./boxes/box165-4.htm",
-                    "section": "Regular Season"
+                    "margin": 14,
+                    "score": "@Valencia 121, Marseille 107",
+                    "boxscoreUrl": "./boxes/box13-4.htm",
+                    "section": "Preseason"
                 },
-                "closeGames": [
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "0-1",
+                "closeGameCount": 0,
+                "last3": "L"
+            },
+            {
+                "team": "Juventus",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster14.htm",
+                "rosterFile": "roster14.htm",
+                "standingsLast10": "2-4",
+                "wins": 0,
+                "losses": 1,
+                "games": 1,
+                "pointsFor": 93,
+                "pointsAgainst": 109,
+                "pointDiff": -16,
+                "avgMargin": -16.0,
+                "streak": "L1",
+                "recentResults": [
                     {
+<<<<<<< Updated upstream
                         "date": "1987-04-23",
                         "opponent": "AC Sparta Praha",
+=======
+                        "date": "11/1/1987",
+                        "opponent": "Tottenham Hotspur",
+>>>>>>> Stashed changes
                         "result": "L",
-                        "margin": 2,
-                        "score": "AC Sparta Praha 129, @Marseille 127",
-                        "boxscoreUrl": "./boxes/box185-8.htm",
-                        "section": "Regular Season"
+                        "margin": 16,
+                        "score": "@Tottenham Hotspur 109, Juventus 93",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
                     }
                 ],
+                "bestWin": null,
+                "worstLoss": {
+                    "date": "11/1/1987",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "L",
+                    "margin": 16,
+                    "score": "@Tottenham Hotspur 109, Juventus 93",
+                    "boxscoreUrl": "./boxes/box13-3.htm",
+                    "section": "Preseason"
+                },
+                "closeGames": [],
                 "blowoutWins": [],
                 "blowoutLosses": [
                     {
+<<<<<<< Updated upstream
                         "date": "1987-04-03",
                         "opponent": "AC Milan",
                         "result": "L",
@@ -3213,11 +3821,20 @@
                         "score": "@AC Milan 151, Marseille 118",
                         "boxscoreUrl": "./boxes/box181-2.htm",
                         "section": "Regular Season"
+=======
+                        "date": "11/1/1987",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@Tottenham Hotspur 109, Juventus 93",
+                        "boxscoreUrl": "./boxes/box13-3.htm",
+                        "section": "Preseason"
+>>>>>>> Stashed changes
                     }
                 ],
-                "record": "0-5",
-                "closeGameCount": 1,
-                "last3": "LLL"
+                "record": "0-1",
+                "closeGameCount": 0,
+                "last3": "L"
             }
         ]
     }

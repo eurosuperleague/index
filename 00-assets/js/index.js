@@ -700,7 +700,7 @@
       "Aston Villa": ["AVL", "astonvilla"],
       "Atletico Madrid": ["ATM", "atletico"],
       "Barcelona": ["BAR", "barcelona"],
-      "Bayern Munich": ["BAY", "bayern"],
+      "ACF Fiorentina": ["ACF", "acffiorentina.png"],
       "Benfica": ["BEN", "benfica"],
       "Brighton": ["BRI", "brighton"],
       "Chelsea": ["CHE", "chelsea"],

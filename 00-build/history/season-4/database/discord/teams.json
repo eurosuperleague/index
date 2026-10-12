@@ -364,7 +364,7 @@
   },
   {
     "id": "roster7",
-    "name": "Bayern Munich",
+    "name": "ACF Fiorentina",
     "record": {
       "wins": 14,
       "losses": 28,
@@ -413,7 +413,7 @@
     "injuries": [],
     "recentGame": {
       "date": "4/18/1985",
-      "text": "@Benfica 131, Bayern Munich 100",
+      "text": "@Benfica 131, ACF Fiorentina 100",
       "boxscoreFile": "box185-1.htm"
     },
     "nextGame": null,
@@ -477,7 +477,7 @@
     ],
     "recentGame": {
       "date": "4/18/1985",
-      "text": "@Benfica 131, Bayern Munich 100",
+      "text": "@Benfica 131, ACF Fiorentina 100",
       "boxscoreFile": "box185-1.htm"
     },
     "nextGame": null,

@@ -1862,7 +1862,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/29",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 40,
                         "fgm": 11,
@@ -1994,7 +1994,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 28,
                         "fgm": 9,
@@ -2060,7 +2060,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 37,
                         "fgm": 7,
@@ -2104,7 +2104,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 24,
                         "fgm": 4,
@@ -2214,7 +2214,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 32,
                         "fgm": 3,
@@ -2522,7 +2522,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 34,
                         "fgm": 11,
@@ -3117,7 +3117,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/29",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 8,
                         "fgm": 1,
@@ -3227,7 +3227,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 9,
                         "fgm": 3,
@@ -3293,7 +3293,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 1,
                         "fgm": 0,
@@ -3337,7 +3337,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 24,
                         "fgm": 7,
@@ -3403,7 +3403,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 23,
                         "fgm": 2,
@@ -3645,7 +3645,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 4,
                         "fgm": 2,
@@ -3909,7 +3909,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 29,
                         "fgm": 3,
@@ -4141,7 +4141,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 5,
                         "fgm": 0,
@@ -4163,7 +4163,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 5,
                         "fgm": 0,
@@ -4361,7 +4361,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 10,
                         "fgm": 4,
@@ -4757,7 +4757,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/30",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 11,
                         "fgm": 2,
@@ -4845,7 +4845,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 9,
                         "fgm": 3,
@@ -4977,7 +4977,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 15,
                         "fgm": 2,
@@ -5065,7 +5065,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 21,
                         "fgm": 5,
@@ -5175,7 +5175,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 29,
                         "fgm": 5,
@@ -5616,7 +5616,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 43,
                         "fgm": 11,
@@ -6012,7 +6012,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 20,
                         "fgm": 2,
@@ -6188,7 +6188,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 42,
                         "fgm": 16,
@@ -6210,7 +6210,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 39,
                         "fgm": 4,
@@ -6276,7 +6276,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/28",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 44,
                         "fgm": 11,
@@ -6342,7 +6342,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 16,
                         "fgm": 3,
@@ -6486,7 +6486,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 1,
                         "fgm": 0,
@@ -6684,7 +6684,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 2,
                         "fgm": 0,
@@ -6794,7 +6794,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/24",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 3,
                         "fgm": 0,
@@ -6970,7 +6970,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 7,
                         "fgm": 1,
@@ -6992,7 +6992,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 6,
                         "fgm": 1,
@@ -13367,7 +13367,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 34,
                         "fgm": 7,
@@ -13653,7 +13653,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 33,
                         "fgm": 5,
@@ -13675,7 +13675,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/12",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 34,
                         "fgm": 7,
@@ -13697,7 +13697,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 29,
                         "fgm": 4,
@@ -13939,7 +13939,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 32,
                         "fgm": 4,
@@ -15007,7 +15007,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 45,
                         "fgm": 4,
@@ -15403,7 +15403,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 27,
                         "fgm": 3,
@@ -15491,7 +15491,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/28",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 43,
                         "fgm": 1,
@@ -15557,7 +15557,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 35,
                         "fgm": 6,
@@ -16912,7 +16912,7 @@
         },
         {
             "playerId": "player1235",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player1235.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -16945,7 +16945,7 @@
         },
         {
             "playerId": "player1317",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player1317.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -16978,7 +16978,7 @@
         },
         {
             "playerId": "player1341",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player1341.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -17011,7 +17011,7 @@
         },
         {
             "playerId": "player1365",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player1365.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -17044,7 +17044,7 @@
         },
         {
             "playerId": "player346",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player346.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -17077,7 +17077,7 @@
         },
         {
             "playerId": "player362",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player362.htm",
             "team": "FA",
             "teamLabel": "FA",
@@ -17110,7 +17110,7 @@
         },
         {
             "playerId": "player401",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player401.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -17143,7 +17143,7 @@
         },
         {
             "playerId": "player425",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player425.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -17176,7 +17176,7 @@
         },
         {
             "playerId": "player508",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player508.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -17209,7 +17209,7 @@
         },
         {
             "playerId": "player563",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player563.htm",
             "team": "Draft",
             "teamLabel": "Draft",
@@ -17242,7 +17242,7 @@
         },
         {
             "playerId": "player611",
-            "name": "Bayern Munich Mascot",
+            "name": "ACF Fiorentina Mascot",
             "url": "../players/player611.htm",
             "team": "FA",
             "teamLabel": "FA",
@@ -17740,7 +17740,7 @@
             "name": "Bernard King",
             "url": "../players/player713.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -19090,7 +19090,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/10",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 42,
                         "fgm": 10,
@@ -19222,7 +19222,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 10,
@@ -19266,7 +19266,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/18",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 29,
                         "fgm": 5,
@@ -19288,7 +19288,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 42,
                         "fgm": 6,
@@ -19332,7 +19332,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/2",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 31,
                         "fgm": 7,
@@ -19508,7 +19508,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/31",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 40,
                         "fgm": 7,
@@ -20202,7 +20202,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 16,
                         "fgm": 2,
@@ -20268,7 +20268,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 26,
                         "fgm": 3,
@@ -20312,7 +20312,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 18,
                         "fgm": 4,
@@ -20422,7 +20422,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 13,
                         "fgm": 0,
@@ -20686,7 +20686,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 31,
                         "fgm": 7,
@@ -20950,7 +20950,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 26,
                         "fgm": 2,
@@ -23351,7 +23351,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 24,
                         "fgm": 5,
@@ -23439,7 +23439,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/10",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 43,
                         "fgm": 8,
@@ -23571,7 +23571,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 5,
@@ -23615,7 +23615,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/18",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 40,
                         "fgm": 14,
@@ -23637,7 +23637,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 11,
@@ -23681,7 +23681,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/2",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 32,
                         "fgm": 8,
@@ -23857,7 +23857,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/31",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 43,
                         "fgm": 14,
@@ -26930,7 +26930,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/30",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 3,
                         "fgm": 0,
@@ -27040,7 +27040,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 3,
                         "fgm": 2,
@@ -27106,7 +27106,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 4,
                         "fgm": 0,
@@ -27172,7 +27172,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 3,
                         "fgm": 0,
@@ -28373,7 +28373,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 12,
                         "fgm": 0,
@@ -28703,7 +28703,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 14,
                         "fgm": 2,
@@ -28835,7 +28835,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 8,
                         "fgm": 1,
@@ -28967,7 +28967,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 6,
                         "fgm": 1,
@@ -29033,7 +29033,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 9,
                         "fgm": 0,
@@ -29077,7 +29077,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 8,
                         "fgm": 2,
@@ -30322,7 +30322,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 15,
                         "fgm": 0,
@@ -30366,7 +30366,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 20,
                         "fgm": 4,
@@ -30432,7 +30432,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/10",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 9,
                         "fgm": 2,
@@ -30564,7 +30564,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 13,
                         "fgm": 1,
@@ -30608,7 +30608,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/18",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 12,
                         "fgm": 1,
@@ -30630,7 +30630,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 8,
                         "fgm": 2,
@@ -30674,7 +30674,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/2",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 15,
                         "fgm": 2,
@@ -30850,7 +30850,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/31",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 6,
                         "fgm": 0,
@@ -32678,7 +32678,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 1,
                         "fgm": 0,
@@ -32766,7 +32766,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 7,
                         "fgm": 0,
@@ -32854,7 +32854,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 8,
                         "fgm": 0,
@@ -33218,7 +33218,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 35,
                         "fgm": 6,
@@ -33416,7 +33416,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 41,
                         "fgm": 9,
@@ -33658,7 +33658,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/24",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 37,
                         "fgm": 6,
@@ -33856,7 +33856,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 36,
                         "fgm": 5,
@@ -33878,7 +33878,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 25,
                         "fgm": 2,
@@ -34032,7 +34032,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 38,
                         "fgm": 7,
@@ -35387,7 +35387,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 28,
                         "fgm": 6,
@@ -35585,7 +35585,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 17,
                         "fgm": 2,
@@ -35761,7 +35761,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 25,
                         "fgm": 4,
@@ -35915,7 +35915,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/24",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 12,
                         "fgm": 1,
@@ -36091,7 +36091,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 26,
                         "fgm": 9,
@@ -36113,7 +36113,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 27,
                         "fgm": 6,
@@ -36267,7 +36267,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 10,
                         "fgm": 3,
@@ -37610,7 +37610,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 3,
                         "fgm": 0,
@@ -37676,7 +37676,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 33,
                         "fgm": 7,
@@ -37786,7 +37786,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 6,
@@ -41510,7 +41510,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 2,
                         "fgm": 1,
@@ -41664,7 +41664,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 1,
                         "fgm": 0,
@@ -42060,7 +42060,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/30",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 6,
                         "fgm": 1,
@@ -42148,7 +42148,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 1,
                         "fgm": 0,
@@ -42258,7 +42258,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 8,
                         "fgm": 0,
@@ -42346,7 +42346,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 13,
                         "fgm": 1,
@@ -42456,7 +42456,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 8,
                         "fgm": 2,
@@ -47589,7 +47589,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 7,
                         "fgm": 0,
@@ -47611,7 +47611,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 5,
                         "fgm": 1,
@@ -47809,7 +47809,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 27,
                         "fgm": 3,
@@ -48205,7 +48205,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/30",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 22,
                         "fgm": 2,
@@ -48293,7 +48293,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 1,
                         "fgm": 0,
@@ -48723,7 +48723,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 20,
                         "fgm": 2,
@@ -48767,7 +48767,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 9,
                         "fgm": 0,
@@ -48855,7 +48855,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/18",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 4,
                         "fgm": 0,
@@ -48877,7 +48877,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 1,
                         "fgm": 0,
@@ -53096,7 +53096,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 26,
                         "fgm": 4,
@@ -53140,7 +53140,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 33,
                         "fgm": 4,
@@ -53228,7 +53228,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/10",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 8,
                         "fgm": 1,
@@ -53360,7 +53360,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 15,
                         "fgm": 0,
@@ -53404,7 +53404,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/18",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 15,
                         "fgm": 3,
@@ -53426,7 +53426,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 19,
                         "fgm": 2,
@@ -53470,7 +53470,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/2",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 19,
                         "fgm": 2,
@@ -53646,7 +53646,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/31",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 4,
                         "fgm": 1,
@@ -55903,7 +55903,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 3,
                         "fgm": 0,
@@ -57237,7 +57237,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 33,
                         "fgm": 8,
@@ -57523,7 +57523,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 40,
                         "fgm": 12,
@@ -57545,7 +57545,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/12",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 36,
                         "fgm": 5,
@@ -57567,7 +57567,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 47,
                         "fgm": 9,
@@ -57721,7 +57721,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 12,
@@ -57941,7 +57941,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 45,
                         "fgm": 9,
@@ -61752,7 +61752,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 42,
                         "fgm": 6,
@@ -62148,7 +62148,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 32,
                         "fgm": 4,
@@ -62302,7 +62302,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 34,
                         "fgm": 7,
@@ -62324,7 +62324,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 35,
                         "fgm": 12,
@@ -62390,7 +62390,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/28",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 35,
                         "fgm": 9,
@@ -62456,7 +62456,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 27,
                         "fgm": 5,
@@ -63899,7 +63899,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 25,
                         "fgm": 1,
@@ -63943,7 +63943,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 28,
                         "fgm": 3,
@@ -64031,7 +64031,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/10",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 18,
                         "fgm": 0,
@@ -64163,7 +64163,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 14,
                         "fgm": 3,
@@ -64207,7 +64207,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/18",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 30,
                         "fgm": 1,
@@ -64229,7 +64229,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 19,
                         "fgm": 5,
@@ -64273,7 +64273,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/2",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 20,
                         "fgm": 2,
@@ -64449,7 +64449,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/31",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 13,
                         "fgm": 0,
@@ -65253,7 +65253,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 25,
                         "fgm": 4,
@@ -65583,7 +65583,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 37,
                         "fgm": 9,
@@ -70153,7 +70153,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/29",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 41,
                         "fgm": 6,
@@ -70285,7 +70285,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 41,
                         "fgm": 10,
@@ -70351,7 +70351,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 40,
                         "fgm": 12,
@@ -70395,7 +70395,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 10,
                         "fgm": 1,
@@ -70505,7 +70505,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 32,
                         "fgm": 11,
@@ -70791,7 +70791,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 29,
                         "fgm": 5,
@@ -71055,7 +71055,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 22,
                         "fgm": 3,
@@ -72587,7 +72587,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 21,
                         "fgm": 2,
@@ -72917,7 +72917,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 5,
                         "fgm": 1,
@@ -72983,7 +72983,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 11,
                         "fgm": 1,
@@ -73115,7 +73115,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 5,
                         "fgm": 2,
@@ -73181,7 +73181,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 8,
                         "fgm": 2,
@@ -73225,7 +73225,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 9,
                         "fgm": 1,
@@ -77003,7 +77003,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 22,
                         "fgm": 4,
@@ -77399,7 +77399,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 29,
                         "fgm": 8,
@@ -77553,7 +77553,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 29,
                         "fgm": 1,
@@ -77575,7 +77575,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 26,
                         "fgm": 6,
@@ -77641,7 +77641,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/28",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 18,
                         "fgm": 4,
@@ -77707,7 +77707,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 26,
                         "fgm": 5,
@@ -79624,7 +79624,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 22,
                         "fgm": 4,
@@ -80020,7 +80020,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 24,
                         "fgm": 3,
@@ -80174,7 +80174,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 28,
                         "fgm": 5,
@@ -80196,7 +80196,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 23,
                         "fgm": 4,
@@ -80262,7 +80262,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/28",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 10,
                         "fgm": 1,
@@ -80328,7 +80328,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 20,
                         "fgm": 1,
@@ -82002,7 +82002,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 29,
                         "fgm": 1,
@@ -82288,7 +82288,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 45,
                         "fgm": 2,
@@ -82310,7 +82310,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/12",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 29,
                         "fgm": 8,
@@ -82332,7 +82332,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 29,
                         "fgm": 2,
@@ -82486,7 +82486,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 31,
                         "fgm": 2,
@@ -82684,7 +82684,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 32,
                         "fgm": 3,
@@ -87188,7 +87188,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 6,
                         "fgm": 3,
@@ -87210,7 +87210,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 11,
                         "fgm": 1,
@@ -87276,7 +87276,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/10",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 4,
                         "fgm": 0,
@@ -87364,7 +87364,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 1,
                         "fgm": 1,
@@ -87386,7 +87386,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/18",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 3,
                         "fgm": 1,
@@ -87408,7 +87408,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/2",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 7,
                         "fgm": 1,
@@ -87904,7 +87904,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 12,
                         "fgm": 2,
@@ -88124,7 +88124,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 16,
                         "fgm": 1,
@@ -88278,7 +88278,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/24",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 11,
                         "fgm": 1,
@@ -88454,7 +88454,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 15,
                         "fgm": 4,
@@ -88476,7 +88476,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 19,
                         "fgm": 1,
@@ -88630,7 +88630,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 10,
                         "fgm": 2,
@@ -89908,7 +89908,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 2,
                         "fgm": 0,
@@ -90106,7 +90106,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 7,
                         "fgm": 0,
@@ -90238,7 +90238,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 1,
                         "fgm": 0,
@@ -90260,7 +90260,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 9,
                         "fgm": 0,
@@ -90348,7 +90348,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 3,
                         "fgm": 0,
@@ -95359,7 +95359,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 36,
                         "fgm": 14,
@@ -95689,7 +95689,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 41,
                         "fgm": 18,
@@ -95843,7 +95843,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 27,
                         "fgm": 2,
@@ -95975,7 +95975,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 40,
                         "fgm": 8,
@@ -96041,7 +96041,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 36,
                         "fgm": 10,
@@ -96085,7 +96085,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 33,
                         "fgm": 15,
@@ -96273,7 +96273,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/29",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 21,
                         "fgm": 2,
@@ -96405,7 +96405,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 22,
                         "fgm": 0,
@@ -96471,7 +96471,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 34,
                         "fgm": 1,
@@ -96515,7 +96515,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 22,
                         "fgm": 2,
@@ -96625,7 +96625,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 28,
                         "fgm": 1,
@@ -96889,7 +96889,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 26,
                         "fgm": 1,
@@ -97153,7 +97153,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 29,
                         "fgm": 3,
@@ -103155,7 +103155,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 31,
                         "fgm": 5,
@@ -103441,7 +103441,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 42,
                         "fgm": 5,
@@ -103463,7 +103463,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/12",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 4,
@@ -103485,7 +103485,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 38,
                         "fgm": 3,
@@ -103639,7 +103639,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 45,
                         "fgm": 6,
@@ -103837,7 +103837,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 44,
                         "fgm": 6,
@@ -118025,7 +118025,7 @@
             "name": "James Bailey",
             "url": "../players/player759.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -119287,7 +119287,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/29",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 42,
                         "fgm": 1,
@@ -119419,7 +119419,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 36,
                         "fgm": 2,
@@ -119485,7 +119485,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 37,
                         "fgm": 2,
@@ -119529,7 +119529,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 32,
                         "fgm": 6,
@@ -119639,7 +119639,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 21,
                         "fgm": 1,
@@ -119925,7 +119925,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 38,
                         "fgm": 6,
@@ -120189,7 +120189,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 34,
                         "fgm": 4,
@@ -132238,7 +132238,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 12,
                         "fgm": 0,
@@ -132568,7 +132568,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 21,
                         "fgm": 0,
@@ -132700,7 +132700,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 28,
                         "fgm": 4,
@@ -132832,7 +132832,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 26,
                         "fgm": 4,
@@ -132898,7 +132898,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 21,
                         "fgm": 1,
@@ -132942,7 +132942,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 28,
                         "fgm": 1,
@@ -133163,7 +133163,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 17,
                         "fgm": 1,
@@ -133449,7 +133449,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 16,
                         "fgm": 0,
@@ -133471,7 +133471,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/12",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 26,
                         "fgm": 1,
@@ -133493,7 +133493,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 16,
                         "fgm": 2,
@@ -133647,7 +133647,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 14,
                         "fgm": 0,
@@ -133845,7 +133845,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 15,
                         "fgm": 3,
@@ -137513,7 +137513,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 40,
                         "fgm": 10,
@@ -137645,7 +137645,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 47,
                         "fgm": 12,
@@ -137711,7 +137711,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 43,
                         "fgm": 7,
@@ -137755,7 +137755,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 40,
                         "fgm": 6,
@@ -139563,7 +139563,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/10",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 40,
                         "fgm": 7,
@@ -139695,7 +139695,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 33,
                         "fgm": 8,
@@ -139739,7 +139739,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/18",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 21,
                         "fgm": 3,
@@ -139761,7 +139761,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 24,
                         "fgm": 7,
@@ -139805,7 +139805,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/2",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 30,
                         "fgm": 3,
@@ -139981,7 +139981,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/31",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 44,
                         "fgm": 12,
@@ -144088,7 +144088,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 1,
                         "fgm": 0,
@@ -144110,7 +144110,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/12",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 8,
                         "fgm": 0,
@@ -144132,7 +144132,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 4,
                         "fgm": 0,
@@ -144286,7 +144286,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 25,
                         "fgm": 2,
@@ -144506,7 +144506,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 1,
                         "fgm": 0,
@@ -147139,7 +147139,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/29",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 43,
                         "fgm": 3,
@@ -147271,7 +147271,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 5,
@@ -147337,7 +147337,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 6,
@@ -147381,7 +147381,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 27,
                         "fgm": 6,
@@ -147491,7 +147491,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 10,
                         "fgm": 2,
@@ -147777,7 +147777,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 36,
                         "fgm": 6,
@@ -148041,7 +148041,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 7,
@@ -148449,7 +148449,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 6,
                         "fgm": 2,
@@ -148471,7 +148471,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 14,
                         "fgm": 1,
@@ -148625,7 +148625,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 1,
                         "fgm": 1,
@@ -148801,7 +148801,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 2,
                         "fgm": 0,
@@ -149738,7 +149738,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 31,
                         "fgm": 6,
@@ -150068,7 +150068,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 24,
                         "fgm": 5,
@@ -150641,7 +150641,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/29",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 13,
                         "fgm": 3,
@@ -150729,7 +150729,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 11,
                         "fgm": 2,
@@ -150795,7 +150795,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 1,
                         "fgm": 0,
@@ -150839,7 +150839,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 36,
                         "fgm": 6,
@@ -150927,7 +150927,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 14,
                         "fgm": 1,
@@ -151169,7 +151169,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 9,
                         "fgm": 1,
@@ -151433,7 +151433,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 26,
                         "fgm": 4,
@@ -160805,7 +160805,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 8,
                         "fgm": 1,
@@ -160871,7 +160871,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 4,
                         "fgm": 0,
@@ -160915,7 +160915,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 6,
                         "fgm": 1,
@@ -161025,7 +161025,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 15,
                         "fgm": 1,
@@ -161289,7 +161289,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 6,
                         "fgm": 1,
@@ -161553,7 +161553,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 9,
                         "fgm": 0,
@@ -162395,7 +162395,7 @@
             "name": "Kevin McHale",
             "url": "../players/player717.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "PF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -167312,7 +167312,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 27,
                         "fgm": 1,
@@ -167642,7 +167642,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 24,
                         "fgm": 3,
@@ -167796,7 +167796,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 26,
                         "fgm": 3,
@@ -167928,7 +167928,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 31,
                         "fgm": 1,
@@ -167994,7 +167994,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 30,
                         "fgm": 5,
@@ -168038,7 +168038,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 20,
                         "fgm": 0,
@@ -168238,7 +168238,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 7,
                         "fgm": 1,
@@ -168260,7 +168260,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 9,
                         "fgm": 0,
@@ -168458,7 +168458,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 5,
                         "fgm": 1,
@@ -168854,7 +168854,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/30",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 7,
                         "fgm": 2,
@@ -168942,7 +168942,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 37,
                         "fgm": 3,
@@ -169074,7 +169074,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 37,
                         "fgm": 2,
@@ -169162,7 +169162,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 24,
                         "fgm": 1,
@@ -169272,7 +169272,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 13,
                         "fgm": 0,
@@ -169372,7 +169372,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 34,
                         "fgm": 4,
@@ -169570,7 +169570,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 32,
                         "fgm": 2,
@@ -169746,7 +169746,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 44,
                         "fgm": 7,
@@ -169900,7 +169900,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/24",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 17,
                         "fgm": 5,
@@ -169988,7 +169988,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 22,
                         "fgm": 3,
@@ -170010,7 +170010,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 40,
                         "fgm": 2,
@@ -170164,7 +170164,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 28,
                         "fgm": 3,
@@ -171039,7 +171039,7 @@
             "name": "Kyle Lowry",
             "url": "../players/player975.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "PG",
             "gameLogs": {
                 "title": "Game Logs",
@@ -172180,7 +172180,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 46,
                         "fgm": 2,
@@ -172202,7 +172202,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 48,
                         "fgm": 9,
@@ -172400,7 +172400,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 32,
                         "fgm": 2,
@@ -172796,7 +172796,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/30",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 36,
                         "fgm": 6,
@@ -172906,7 +172906,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 31,
                         "fgm": 7,
@@ -173038,7 +173038,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 40,
                         "fgm": 5,
@@ -173126,7 +173126,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 35,
                         "fgm": 1,
@@ -173236,7 +173236,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 41,
                         "fgm": 4,
@@ -174712,7 +174712,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 36,
                         "fgm": 7,
@@ -175042,7 +175042,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 36,
                         "fgm": 7,
@@ -175218,7 +175218,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 35,
                         "fgm": 8,
@@ -175350,7 +175350,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 42,
                         "fgm": 4,
@@ -175416,7 +175416,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 32,
                         "fgm": 7,
@@ -175460,7 +175460,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 42,
                         "fgm": 7,
@@ -178743,7 +178743,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 27,
                         "fgm": 3,
@@ -178897,7 +178897,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 31,
                         "fgm": 3,
@@ -178919,7 +178919,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 31,
                         "fgm": 6,
@@ -178985,7 +178985,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/28",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 28,
                         "fgm": 3,
@@ -179051,7 +179051,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 30,
                         "fgm": 2,
@@ -179570,7 +179570,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 28,
                         "fgm": 7,
@@ -179592,7 +179592,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 20,
                         "fgm": 5,
@@ -179790,7 +179790,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 38,
                         "fgm": 6,
@@ -180186,7 +180186,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/30",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 29,
                         "fgm": 5,
@@ -180274,7 +180274,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 25,
                         "fgm": 4,
@@ -183054,7 +183054,7 @@
             "name": "Louis Orr",
             "url": "../players/player742.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "PF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -185406,7 +185406,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 26,
                         "fgm": 5,
@@ -185604,7 +185604,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 44,
                         "fgm": 15,
@@ -185780,7 +185780,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 21,
                         "fgm": 4,
@@ -185934,7 +185934,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/24",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 43,
                         "fgm": 5,
@@ -186154,7 +186154,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 34,
                         "fgm": 6,
@@ -188526,7 +188526,7 @@
             "name": "Mark Landsberger",
             "url": "../players/player1107.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -189559,7 +189559,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 35,
                         "fgm": 12,
@@ -189581,7 +189581,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 43,
                         "fgm": 7,
@@ -189889,7 +189889,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/30",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 33,
                         "fgm": 7,
@@ -189977,7 +189977,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 39,
                         "fgm": 6,
@@ -190109,7 +190109,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 33,
                         "fgm": 4,
@@ -190197,7 +190197,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 40,
                         "fgm": 10,
@@ -190307,7 +190307,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 35,
                         "fgm": 6,
@@ -190803,7 +190803,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 26,
                         "fgm": 2,
@@ -191001,7 +191001,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 18,
                         "fgm": 0,
@@ -191177,7 +191177,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 40,
                         "fgm": 2,
@@ -191331,7 +191331,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/24",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 32,
                         "fgm": 1,
@@ -191507,7 +191507,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 27,
                         "fgm": 3,
@@ -191529,7 +191529,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 21,
                         "fgm": 0,
@@ -191683,7 +191683,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 35,
                         "fgm": 3,
@@ -193655,7 +193655,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 18,
                         "fgm": 2,
@@ -193985,7 +193985,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 22,
                         "fgm": 2,
@@ -194117,7 +194117,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 28,
                         "fgm": 7,
@@ -194249,7 +194249,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 23,
                         "fgm": 3,
@@ -194315,7 +194315,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 16,
                         "fgm": 2,
@@ -194359,7 +194359,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 27,
                         "fgm": 5,
@@ -197861,7 +197861,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 28,
                         "fgm": 5,
@@ -198059,7 +198059,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 39,
                         "fgm": 7,
@@ -198235,7 +198235,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 41,
                         "fgm": 7,
@@ -198389,7 +198389,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/24",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 37,
                         "fgm": 4,
@@ -198587,7 +198587,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 41,
                         "fgm": 10,
@@ -198609,7 +198609,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 32,
                         "fgm": 5,
@@ -198763,7 +198763,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 38,
                         "fgm": 9,
@@ -199990,7 +199990,7 @@
             "name": "Micheal Ray Richardson",
             "url": "../players/player729.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "PG",
             "gameLogs": {
                 "title": "Game Logs",
@@ -201252,7 +201252,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 6,
                         "fgm": 0,
@@ -201648,7 +201648,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 12,
                         "fgm": 2,
@@ -201802,7 +201802,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 19,
                         "fgm": 0,
@@ -201824,7 +201824,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 20,
                         "fgm": 4,
@@ -201890,7 +201890,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/28",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 5,
                         "fgm": 0,
@@ -201956,7 +201956,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 12,
                         "fgm": 3,
@@ -204401,7 +204401,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 1,
                         "fgm": 0,
@@ -204665,7 +204665,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 15,
                         "fgm": 6,
@@ -204687,7 +204687,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/12",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 11,
                         "fgm": 1,
@@ -204709,7 +204709,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 8,
                         "fgm": 1,
@@ -204863,7 +204863,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 19,
                         "fgm": 6,
@@ -205061,7 +205061,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 5,
                         "fgm": 0,
@@ -205381,7 +205381,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 1,
                         "fgm": 0,
@@ -205569,7 +205569,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 17,
                         "fgm": 3,
@@ -205701,7 +205701,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 9,
                         "fgm": 1,
@@ -205767,7 +205767,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 21,
                         "fgm": 3,
@@ -205811,7 +205811,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 8,
                         "fgm": 1,
@@ -207001,7 +207001,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 34,
                         "fgm": 5,
@@ -208411,7 +208411,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 5,
                         "fgm": 1,
@@ -208763,7 +208763,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 10,
                         "fgm": 1,
@@ -208873,7 +208873,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 1,
                         "fgm": 0,
@@ -208939,7 +208939,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/28",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 2,
                         "fgm": 0,
@@ -209005,7 +209005,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 23,
                         "fgm": 2,
@@ -212379,7 +212379,7 @@
             "name": "Mike Woodson",
             "url": "../players/player720.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SG",
             "gameLogs": {
                 "title": "Game Logs",
@@ -213971,7 +213971,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 41,
                         "fgm": 12,
@@ -213993,7 +213993,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 39,
                         "fgm": 16,
@@ -214191,7 +214191,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 43,
                         "fgm": 14,
@@ -214587,7 +214587,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/30",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 41,
                         "fgm": 14,
@@ -214719,7 +214719,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 40,
                         "fgm": 12,
@@ -214851,7 +214851,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 36,
                         "fgm": 9,
@@ -214939,7 +214939,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 28,
                         "fgm": 14,
@@ -215049,7 +215049,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 11,
@@ -215138,7 +215138,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 41,
                         "fgm": 6,
@@ -215160,7 +215160,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 43,
                         "fgm": 6,
@@ -215358,7 +215358,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 39,
                         "fgm": 6,
@@ -215754,7 +215754,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/30",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 33,
                         "fgm": 4,
@@ -215842,7 +215842,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 18,
                         "fgm": 4,
@@ -215974,7 +215974,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 20,
                         "fgm": 1,
@@ -216062,7 +216062,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 11,
                         "fgm": 3,
@@ -216172,7 +216172,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 4,
                         "fgm": 0,
@@ -222955,7 +222955,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/29",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 32,
                         "fgm": 5,
@@ -223087,7 +223087,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 30,
                         "fgm": 7,
@@ -223153,7 +223153,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 22,
                         "fgm": 4,
@@ -223197,7 +223197,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 28,
                         "fgm": 4,
@@ -223307,7 +223307,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/7",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 27,
                         "fgm": 3,
@@ -223571,7 +223571,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 25,
                         "fgm": 3,
@@ -223835,7 +223835,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 24,
                         "fgm": 6,
@@ -225146,7 +225146,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 4,
                         "fgm": 0,
@@ -236014,7 +236014,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 2,
                         "fgm": 1,
@@ -236235,7 +236235,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/19",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 28,
                         "fgm": 6,
@@ -236257,7 +236257,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 28,
                         "fgm": 2,
@@ -236455,7 +236455,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 45,
                         "fgm": 1,
@@ -236851,7 +236851,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/30",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 19,
                         "fgm": 4,
@@ -236939,7 +236939,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 39,
                         "fgm": 9,
@@ -237071,7 +237071,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 44,
                         "fgm": 6,
@@ -237159,7 +237159,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 30,
                         "fgm": 7,
@@ -237269,7 +237269,7 @@
                     {
                         "rowClass": "row2",
                         "date": "4/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 28,
                         "fgm": 1,
@@ -238218,7 +238218,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 43,
                         "fgm": 6,
@@ -238614,7 +238614,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 30,
                         "fgm": 4,
@@ -238812,7 +238812,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 40,
                         "fgm": 8,
@@ -238834,7 +238834,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 41,
                         "fgm": 5,
@@ -238900,7 +238900,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/28",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 40,
                         "fgm": 6,
@@ -238966,7 +238966,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 22,
                         "fgm": 3,
@@ -239202,7 +239202,7 @@
             "name": "Rex Walters",
             "url": "../players/player630.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SG",
             "gameLogs": {
                 "title": "Game Logs",
@@ -240586,7 +240586,7 @@
                     {
                         "rowClass": "row2",
                         "date": "10/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 4,
                         "fgm": 1,
@@ -241296,7 +241296,7 @@
             "name": "Rick Mahorn",
             "url": "../players/player746.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "C",
             "gameLogs": {
                 "title": "Game Logs",
@@ -243582,7 +243582,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 45,
                         "fgm": 10,
@@ -243626,7 +243626,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 32,
                         "fgm": 10,
@@ -243714,7 +243714,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/10",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 28,
                         "fgm": 5,
@@ -243846,7 +243846,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 43,
                         "fgm": 5,
@@ -243890,7 +243890,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/18",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 27,
                         "fgm": 7,
@@ -243912,7 +243912,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 42,
                         "fgm": 10,
@@ -243956,7 +243956,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/2",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 37,
                         "fgm": 3,
@@ -244132,7 +244132,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/31",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 40,
                         "fgm": 3,
@@ -253594,7 +253594,7 @@
             "name": "Ron Lee",
             "url": "../players/player794.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "PG",
             "gameLogs": {
                 "title": "Game Logs",
@@ -254549,7 +254549,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 23,
                         "fgm": 0,
@@ -254835,7 +254835,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 19,
                         "fgm": 3,
@@ -254857,7 +254857,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/12",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 20,
                         "fgm": 2,
@@ -254879,7 +254879,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 26,
                         "fgm": 1,
@@ -255033,7 +255033,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 23,
                         "fgm": 1,
@@ -255231,7 +255231,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 27,
                         "fgm": 3,
@@ -258591,7 +258591,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 3,
                         "fgm": 0,
@@ -259253,7 +259253,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 38,
                         "fgm": 12,
@@ -259539,7 +259539,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 28,
                         "fgm": 10,
@@ -259561,7 +259561,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/12",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 38,
                         "fgm": 11,
@@ -259583,7 +259583,7 @@
                     {
                         "rowClass": "row1",
                         "date": "1/16",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 42,
                         "fgm": 9,
@@ -259737,7 +259737,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/8",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 45,
                         "fgm": 15,
@@ -259979,7 +259979,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/21",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 11,
@@ -263261,7 +263261,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 43,
                         "fgm": 10,
@@ -263305,7 +263305,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 32,
                         "fgm": 13,
@@ -263393,7 +263393,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/10",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 39,
                         "fgm": 13,
@@ -263525,7 +263525,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 35,
                         "fgm": 8,
@@ -263569,7 +263569,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/18",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 38,
                         "fgm": 6,
@@ -263591,7 +263591,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 40,
                         "fgm": 5,
@@ -263635,7 +263635,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/2",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 34,
                         "fgm": 8,
@@ -263811,7 +263811,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/31",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 42,
                         "fgm": 4,
@@ -264483,7 +264483,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 10,
                         "fgm": 1,
@@ -264879,7 +264879,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 21,
                         "fgm": 3,
@@ -265055,7 +265055,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/15",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 17,
                         "fgm": 3,
@@ -265077,7 +265077,7 @@
                     {
                         "rowClass": "row1",
                         "date": "2/17",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 15,
                         "fgm": 2,
@@ -265143,7 +265143,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/28",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 15,
                         "fgm": 3,
@@ -265209,7 +265209,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/13",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 26,
                         "fgm": 4,
@@ -266873,7 +266873,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 41,
                         "fgm": 5,
@@ -266917,7 +266917,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 41,
                         "fgm": 6,
@@ -267005,7 +267005,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/10",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 6,
                         "fgm": 0,
@@ -267137,7 +267137,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/11",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 9,
                         "fgm": 2,
@@ -267181,7 +267181,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/18",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 19,
                         "fgm": 3,
@@ -267203,7 +267203,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/22",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 6,
                         "fgm": 0,
@@ -267247,7 +267247,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/2",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 17,
                         "fgm": 0,
@@ -267423,7 +267423,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/31",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 8,
                         "fgm": 1,
@@ -270000,7 +270000,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 27,
                         "fgm": 5,
@@ -270198,7 +270198,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 42,
                         "fgm": 3,
@@ -270418,7 +270418,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/24",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 31,
                         "fgm": 9,
@@ -270616,7 +270616,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 37,
                         "fgm": 9,
@@ -270638,7 +270638,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 33,
                         "fgm": 12,
@@ -270792,7 +270792,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 34,
                         "fgm": 4,
@@ -270958,7 +270958,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/23",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 21,
                         "fgm": 1,
@@ -271002,7 +271002,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 3,
                         "fgm": 1,
@@ -271046,7 +271046,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/10",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 3,
                         "fgm": 0,
@@ -271112,7 +271112,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/18",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 1,
                         "fgm": 0,
@@ -273748,7 +273748,7 @@
             "name": "Tre Mann",
             "url": "../players/player629.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SG",
             "gameLogs": {
                 "title": "Game Logs",
@@ -274750,7 +274750,7 @@
             "name": "Tree Rollins",
             "url": "../players/player737.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "C",
             "gameLogs": {
                 "title": "Game Logs",
@@ -276005,7 +276005,7 @@
             "name": "Truck Robinson",
             "url": "../players/player777.htm",
             "team": "roster7",
-            "teamLabel": "Bayern Munich",
+            "teamLabel": "ACF Fiorentina",
             "pos": "SF",
             "gameLogs": {
                 "title": "Game Logs",
@@ -278346,7 +278346,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 16,
                         "fgm": 3,
@@ -278544,7 +278544,7 @@
                     {
                         "rowClass": "row2",
                         "date": "11/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 7,
                         "fgm": 2,
@@ -278720,7 +278720,7 @@
                     {
                         "rowClass": "row2",
                         "date": "12/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 39,
                         "fgm": 8,
@@ -278962,7 +278962,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 6,
                         "fgm": 0,
@@ -278984,7 +278984,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 9,
                         "fgm": 2,
@@ -279315,7 +279315,7 @@
                     {
                         "rowClass": "row1",
                         "date": "10/27",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 8,
                         "fgm": 2,
@@ -279447,7 +279447,7 @@
                     {
                         "rowClass": "row1",
                         "date": "11/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 1,
                         "fgm": 0,
@@ -279623,7 +279623,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 12,
                         "fgm": 1,
@@ -279777,7 +279777,7 @@
                     {
                         "rowClass": "row2",
                         "date": "1/24",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 17,
                         "fgm": 0,
@@ -279975,7 +279975,7 @@
                     {
                         "rowClass": "row1",
                         "date": "3/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 24,
                         "fgm": 3,
@@ -279997,7 +279997,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 28,
                         "fgm": 1,
@@ -280151,7 +280151,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/5",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 13,
                         "fgm": 2,
@@ -281826,7 +281826,7 @@
                     {
                         "rowClass": "row1",
                         "date": "12/1",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 23,
                         "fgm": 2,
@@ -282156,7 +282156,7 @@
                     {
                         "rowClass": "row2",
                         "date": "2/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 11,
                         "fgm": 4,
@@ -282288,7 +282288,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/4",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 21,
                         "fgm": 1,
@@ -282420,7 +282420,7 @@
                     {
                         "rowClass": "row2",
                         "date": "3/26",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 35,
                         "fgm": 6,
@@ -282486,7 +282486,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/9",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "W",
                         "min": 24,
                         "fgm": 3,
@@ -282530,7 +282530,7 @@
                     {
                         "rowClass": "row1",
                         "date": "4/20",
-                        "opp": "BAY",
+                        "opp": "ACF",
                         "w_l": "L",
                         "min": 25,
                         "fgm": 2,

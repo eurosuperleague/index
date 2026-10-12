@@ -233,7 +233,7 @@
                 },
                 {
                     "name": "Kevin Edwards",
-                    "team": "Bayern Munich",
+                    "team": "ACF Fiorentina",
                     "pos": "SG",
                     "age": 23,
                     "overall": 98,
@@ -747,7 +747,7 @@
                 },
                 {
                     "name": "Kevin Edwards",
-                    "team": "Bayern Munich",
+                    "team": "ACF Fiorentina",
                     "pos": "SG",
                     "age": 23,
                     "overall": 98,
@@ -1194,7 +1194,7 @@
                     },
                     {
                         "name": "Kevin Edwards",
-                        "team": "Bayern Munich",
+                        "team": "ACF Fiorentina",
                         "pos": "SG",
                         "age": 23,
                         "overall": 98,
@@ -1913,7 +1913,7 @@
                     "budgetRoomText": "$14,425,812"
                 },
                 {
-                    "team": "Bayern Munich",
+                    "team": "ACF Fiorentina",
                     "league": "Europa League Basketball",
                     "rosterFile": "roster7.htm",
                     "salary": 79150200.0,
@@ -2069,7 +2069,7 @@
                     "budgetRoomText": "$121,362,000"
                 },
                 {
-                    "team": "Bayern Munich",
+                    "team": "ACF Fiorentina",
                     "league": "Europa League Basketball",
                     "rosterFile": "roster7.htm",
                     "salary": 79150200.0,
@@ -2287,7 +2287,7 @@
                 "budgetRoom": "$37,202,911"
             },
             {
-                "team": "Bayern Munich",
+                "team": "ACF Fiorentina",
                 "needs": [
                     "guard depth",
                     "wing depth"
@@ -2300,7 +2300,7 @@
                 "topPlayers": [
                     {
                         "name": "Tree Rollins",
-                        "team": "Bayern Munich",
+                        "team": "ACF Fiorentina",
                         "pos": "C",
                         "age": 28,
                         "overall": 120,
@@ -2310,7 +2310,7 @@
                     },
                     {
                         "name": "Kevin McHale",
-                        "team": "Bayern Munich",
+                        "team": "ACF Fiorentina",
                         "pos": "PF",
                         "age": 24,
                         "overall": 119,
@@ -2320,7 +2320,7 @@
                     },
                     {
                         "name": "Kyle Lowry",
-                        "team": "Bayern Munich",
+                        "team": "ACF Fiorentina",
                         "pos": "PG",
                         "age": 21,
                         "overall": 111,
@@ -3568,7 +3568,7 @@
                     "slug": "elb-standings",
                     "teams": [
                         {
-                            "team": "Bayern Munich",
+                            "team": "ACF Fiorentina",
                             "rosterUrl": "./rosters/roster7.htm",
                             "rosterFile": "roster7.htm",
                             "wins": 0,
@@ -3954,8 +3954,8 @@
                     "potential": "176"
                 }
             },
-            "Bayern Munich": {
-                "team": "Bayern Munich",
+            "ACF Fiorentina": {
+                "team": "ACF Fiorentina",
                 "rosterFile": "roster7.htm",
                 "starPlayer": {
                     "name": "Tree Rollins",

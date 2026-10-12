@@ -42,19 +42,19 @@
                     },
                     {
                         "date": "4/11/1982",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 15,
-                        "score": "AFC Richmond 99, @Bayern Munich 84",
+                        "score": "AFC Richmond 99, @ACF Fiorentina 84",
                         "boxscoreUrl": "./boxes/box174-3.htm",
                         "section": "Regular Season"
                     },
                     {
                         "date": "4/15/1982",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 25,
-                        "score": "@AFC Richmond 114, Bayern Munich 89",
+                        "score": "@AFC Richmond 114, ACF Fiorentina 89",
                         "boxscoreUrl": "./boxes/box178-2.htm",
                         "section": "Regular Season"
                     },
@@ -79,10 +79,10 @@
                 ],
                 "bestWin": {
                     "date": "4/15/1982",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "W",
                     "margin": 25,
-                    "score": "@AFC Richmond 114, Bayern Munich 89",
+                    "score": "@AFC Richmond 114, ACF Fiorentina 89",
                     "boxscoreUrl": "./boxes/box178-2.htm",
                     "section": "Regular Season"
                 },
@@ -100,19 +100,19 @@
                     },
                     {
                         "date": "4/11/1982",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 15,
-                        "score": "AFC Richmond 99, @Bayern Munich 84",
+                        "score": "AFC Richmond 99, @ACF Fiorentina 84",
                         "boxscoreUrl": "./boxes/box174-3.htm",
                         "section": "Regular Season"
                     },
                     {
                         "date": "4/15/1982",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 25,
-                        "score": "@AFC Richmond 114, Bayern Munich 89",
+                        "score": "@AFC Richmond 114, ACF Fiorentina 89",
                         "boxscoreUrl": "./boxes/box178-2.htm",
                         "section": "Regular Season"
                     },
@@ -195,19 +195,19 @@
                     },
                     {
                         "date": "4/19/1982",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 2,
-                        "score": "@Bayern Munich 119, Real Madrid 117",
+                        "score": "@ACF Fiorentina 119, Real Madrid 117",
                         "boxscoreUrl": "./boxes/box182-1.htm",
                         "section": "Regular Season"
                     },
                     {
                         "date": "4/22/1982",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 8,
-                        "score": "Real Madrid 113, @Bayern Munich 105",
+                        "score": "Real Madrid 113, @ACF Fiorentina 105",
                         "boxscoreUrl": "./boxes/box185-3.htm",
                         "section": "Regular Season"
                     }
@@ -223,20 +223,20 @@
                 },
                 "worstLoss": {
                     "date": "4/19/1982",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "L",
                     "margin": 2,
-                    "score": "@Bayern Munich 119, Real Madrid 117",
+                    "score": "@ACF Fiorentina 119, Real Madrid 117",
                     "boxscoreUrl": "./boxes/box182-1.htm",
                     "section": "Regular Season"
                 },
                 "closeGames": [
                     {
                         "date": "4/19/1982",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 2,
-                        "score": "@Bayern Munich 119, Real Madrid 117",
+                        "score": "@ACF Fiorentina 119, Real Madrid 117",
                         "boxscoreUrl": "./boxes/box182-1.htm",
                         "section": "Regular Season"
                     }
@@ -303,10 +303,10 @@
                     },
                     {
                         "date": "4/6/1982",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 29,
-                        "score": "@AC Milan 124, Bayern Munich 95",
+                        "score": "@AC Milan 124, ACF Fiorentina 95",
                         "boxscoreUrl": "./boxes/box169-1.htm",
                         "section": "Regular Season"
                     },
@@ -349,10 +349,10 @@
                 ],
                 "bestWin": {
                     "date": "4/6/1982",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "W",
                     "margin": 29,
-                    "score": "@AC Milan 124, Bayern Munich 95",
+                    "score": "@AC Milan 124, ACF Fiorentina 95",
                     "boxscoreUrl": "./boxes/box169-1.htm",
                     "section": "Regular Season"
                 },
@@ -379,10 +379,10 @@
                 "blowoutWins": [
                     {
                         "date": "4/6/1982",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 29,
-                        "score": "@AC Milan 124, Bayern Munich 95",
+                        "score": "@AC Milan 124, ACF Fiorentina 95",
                         "boxscoreUrl": "./boxes/box169-1.htm",
                         "section": "Regular Season"
                     },
@@ -547,10 +547,10 @@
                 "recentResults": [
                     {
                         "date": "4/4/1982",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 17,
-                        "score": "@Atletico Madrid 109, Bayern Munich 92",
+                        "score": "@Atletico Madrid 109, ACF Fiorentina 92",
                         "boxscoreUrl": "./boxes/box167-1.htm",
                         "section": "Regular Season"
                     },
@@ -602,10 +602,10 @@
                 ],
                 "bestWin": {
                     "date": "4/4/1982",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "W",
                     "margin": 17,
-                    "score": "@Atletico Madrid 109, Bayern Munich 92",
+                    "score": "@Atletico Madrid 109, ACF Fiorentina 92",
                     "boxscoreUrl": "./boxes/box167-1.htm",
                     "section": "Regular Season"
                 },
@@ -632,10 +632,10 @@
                 "blowoutWins": [
                     {
                         "date": "4/4/1982",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 17,
-                        "score": "@Atletico Madrid 109, Bayern Munich 92",
+                        "score": "@Atletico Madrid 109, ACF Fiorentina 92",
                         "boxscoreUrl": "./boxes/box167-1.htm",
                         "section": "Regular Season"
                     }
@@ -954,7 +954,7 @@
                 "last3": "LWL"
             },
             {
-                "team": "Bayern Munich",
+                "team": "ACF Fiorentina",
                 "tier": "Tier 1",
                 "tierShort": "T1",
                 "standingRank": 4,
@@ -975,7 +975,7 @@
                         "opponent": "Atletico Madrid",
                         "result": "L",
                         "margin": 17,
-                        "score": "@Atletico Madrid 109, Bayern Munich 92",
+                        "score": "@Atletico Madrid 109, ACF Fiorentina 92",
                         "boxscoreUrl": "./boxes/box167-1.htm",
                         "section": "Regular Season"
                     },
@@ -984,7 +984,7 @@
                         "opponent": "AC Milan",
                         "result": "L",
                         "margin": 29,
-                        "score": "@AC Milan 124, Bayern Munich 95",
+                        "score": "@AC Milan 124, ACF Fiorentina 95",
                         "boxscoreUrl": "./boxes/box169-1.htm",
                         "section": "Regular Season"
                     },
@@ -993,7 +993,7 @@
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 15,
-                        "score": "AFC Richmond 99, @Bayern Munich 84",
+                        "score": "AFC Richmond 99, @ACF Fiorentina 84",
                         "boxscoreUrl": "./boxes/box174-3.htm",
                         "section": "Regular Season"
                     },
@@ -1002,7 +1002,7 @@
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 25,
-                        "score": "@AFC Richmond 114, Bayern Munich 89",
+                        "score": "@AFC Richmond 114, ACF Fiorentina 89",
                         "boxscoreUrl": "./boxes/box178-2.htm",
                         "section": "Regular Season"
                     },
@@ -1011,7 +1011,7 @@
                         "opponent": "Real Madrid",
                         "result": "W",
                         "margin": 2,
-                        "score": "@Bayern Munich 119, Real Madrid 117",
+                        "score": "@ACF Fiorentina 119, Real Madrid 117",
                         "boxscoreUrl": "./boxes/box182-1.htm",
                         "section": "Regular Season"
                     },
@@ -1020,7 +1020,7 @@
                         "opponent": "Real Madrid",
                         "result": "L",
                         "margin": 8,
-                        "score": "Real Madrid 113, @Bayern Munich 105",
+                        "score": "Real Madrid 113, @ACF Fiorentina 105",
                         "boxscoreUrl": "./boxes/box185-3.htm",
                         "section": "Regular Season"
                     }
@@ -1030,7 +1030,7 @@
                     "opponent": "Real Madrid",
                     "result": "W",
                     "margin": 2,
-                    "score": "@Bayern Munich 119, Real Madrid 117",
+                    "score": "@ACF Fiorentina 119, Real Madrid 117",
                     "boxscoreUrl": "./boxes/box182-1.htm",
                     "section": "Regular Season"
                 },
@@ -1039,7 +1039,7 @@
                     "opponent": "AC Milan",
                     "result": "L",
                     "margin": 29,
-                    "score": "@AC Milan 124, Bayern Munich 95",
+                    "score": "@AC Milan 124, ACF Fiorentina 95",
                     "boxscoreUrl": "./boxes/box169-1.htm",
                     "section": "Regular Season"
                 },
@@ -1049,7 +1049,7 @@
                         "opponent": "Real Madrid",
                         "result": "W",
                         "margin": 2,
-                        "score": "@Bayern Munich 119, Real Madrid 117",
+                        "score": "@ACF Fiorentina 119, Real Madrid 117",
                         "boxscoreUrl": "./boxes/box182-1.htm",
                         "section": "Regular Season"
                     }
@@ -1061,7 +1061,7 @@
                         "opponent": "Atletico Madrid",
                         "result": "L",
                         "margin": 17,
-                        "score": "@Atletico Madrid 109, Bayern Munich 92",
+                        "score": "@Atletico Madrid 109, ACF Fiorentina 92",
                         "boxscoreUrl": "./boxes/box167-1.htm",
                         "section": "Regular Season"
                     },
@@ -1070,7 +1070,7 @@
                         "opponent": "AC Milan",
                         "result": "L",
                         "margin": 29,
-                        "score": "@AC Milan 124, Bayern Munich 95",
+                        "score": "@AC Milan 124, ACF Fiorentina 95",
                         "boxscoreUrl": "./boxes/box169-1.htm",
                         "section": "Regular Season"
                     },
@@ -1079,7 +1079,7 @@
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 15,
-                        "score": "AFC Richmond 99, @Bayern Munich 84",
+                        "score": "AFC Richmond 99, @ACF Fiorentina 84",
                         "boxscoreUrl": "./boxes/box174-3.htm",
                         "section": "Regular Season"
                     },
@@ -1088,7 +1088,7 @@
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 25,
-                        "score": "@AFC Richmond 114, Bayern Munich 89",
+                        "score": "@AFC Richmond 114, ACF Fiorentina 89",
                         "boxscoreUrl": "./boxes/box178-2.htm",
                         "section": "Regular Season"
                     }

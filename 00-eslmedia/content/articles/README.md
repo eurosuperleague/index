@@ -193,7 +193,7 @@ Use these conventions:
 - headline in title case
 - headline should sound like a sports headline, not an internal summary label
 - prefer one strong central claim over a list of three mini-claims
-- power rankings headlines should always include the month or period in the title, for example `February Tier 1 Power Rankings: Bayern Still Own The Room`
+- power rankings headlines should always include the month or period in the title, for example `February Tier 1 Power Rankings: Fiorentina Still Own The Room`
 - for power rankings, the month/period should appear in both the `<title>` and the visible `<h1>`
 - let the dek carry some explanatory detail so the headline can stay sharper
 - dek is 1 sentence, 20 to 35 words
@@ -474,7 +474,7 @@ Team assignments:
 - `Aston Villa` - `Vinnie Midlands`
 - `Atletico Madrid` - `Diego Grudge`
 - `Barcelona` - `Pablo Parquet`
-- `Bayern Munich` - `Klaus Banner`
+- `ACF Fiorentina` - `Klaus Banner`
 - `Benfica` - `Rui Ledger`
 - `Brighton` - `Benny Seaside`
 - `Chelsea` - `Grant Bridge`

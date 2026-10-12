@@ -57,7 +57,7 @@
     var photoMap = {
       "Manchester United": "manutd.jpg",
       "Crystal Palace": "crystalpalace.jpg",
-      "Bayern Munich": "bayern.jpg",
+      "ACF Fiorentina": "acffiorentina.png",
       "Real Madrid": "realmadrid.jpg",
       "AC Milan": "acmilan.jpg",
       "Brighton": "brighton.jpg",
@@ -164,7 +164,7 @@
       "Aston Villa": "#670E36",
       "Atletico Madrid": "#CB3524",
       "Barcelona": "#A60042",
-      "Bayern Munich": "#DC052D",
+      "ACF Fiorentina": "#5B2C83",
       "Benfica": "#E41E26",
       "Brighton": "#0057B8",
       "Chelsea": "#034694",

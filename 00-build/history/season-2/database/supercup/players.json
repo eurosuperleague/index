@@ -4563,12 +4563,12 @@
         "transactions": [
             {
                 "date": "10/20/1982",
-                "action": "Signed with Bayern Munich for $2,220,000 over one year.",
+                "action": "Signed with ACF Fiorentina for $2,220,000 over one year.",
                 "rowClass": "row1"
             },
             {
                 "date": "11/2/1982",
-                "action": "Released by Bayern Munich",
+                "action": "Released by ACF Fiorentina",
                 "rowClass": "row2"
             }
         ],
@@ -5126,12 +5126,12 @@
         "transactions": [
             {
                 "date": "10/20/1982",
-                "action": "Signed with Bayern Munich for $2,220,000 over one year.",
+                "action": "Signed with ACF Fiorentina for $2,220,000 over one year.",
                 "rowClass": "row1"
             },
             {
                 "date": "11/2/1982",
-                "action": "Released by Bayern Munich",
+                "action": "Released by ACF Fiorentina",
                 "rowClass": "row2"
             }
         ],
@@ -12683,7 +12683,7 @@
     },
     {
         "playerId": "player1032",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player1032.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -12784,7 +12784,7 @@
     },
     {
         "playerId": "player1056",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player1056.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -12885,7 +12885,7 @@
     },
     {
         "playerId": "player1080",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player1080.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -12986,7 +12986,7 @@
     },
     {
         "playerId": "player184",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player184.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -13087,7 +13087,7 @@
     },
     {
         "playerId": "player200",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player200.htm",
         "team": "FA",
         "teamLabel": "FA",
@@ -13188,7 +13188,7 @@
     },
     {
         "playerId": "player239",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player239.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -13289,7 +13289,7 @@
     },
     {
         "playerId": "player263",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player263.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -13390,7 +13390,7 @@
     },
     {
         "playerId": "player346",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player346.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -13491,7 +13491,7 @@
     },
     {
         "playerId": "player401",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player401.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -13592,7 +13592,7 @@
     },
     {
         "playerId": "player417",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player417.htm",
         "team": "FA",
         "teamLabel": "FA",
@@ -13693,7 +13693,7 @@
     },
     {
         "playerId": "player950",
-        "name": "Bayern Munich Mascot",
+        "name": "ACF Fiorentina Mascot",
         "url": "../players/player950.htm",
         "team": "Draft",
         "teamLabel": "Draft",
@@ -15217,7 +15217,7 @@
         "name": "Bernard King",
         "url": "../players/player453.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SF",
         "age": "23",
         "ht": "6-7",
@@ -15368,7 +15368,7 @@
         "loyalty": "43",
         "happiness": "67",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "A",
             "Jps": "B",
@@ -32202,12 +32202,12 @@
         "transactions": [
             {
                 "date": "10/26/1982",
-                "action": "Signed with Bayern Munich for $1,520,000 over one year.",
+                "action": "Signed with ACF Fiorentina for $1,520,000 over one year.",
                 "rowClass": "row1"
             },
             {
                 "date": "11/2/1982",
-                "action": "Released by Bayern Munich",
+                "action": "Released by ACF Fiorentina",
                 "rowClass": "row2"
             }
         ],
@@ -37352,7 +37352,7 @@
         "name": "Dwight Jones",
         "url": "../players/player528.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "PF",
         "age": "29",
         "ht": "6-10",
@@ -37367,7 +37367,7 @@
         "transactions": [
             {
                 "date": "10/8/1982",
-                "action": "Signed with Bayern Munich for $2,220,000 over one year.",
+                "action": "Signed with ACF Fiorentina for $2,220,000 over one year.",
                 "rowClass": "row1"
             }
         ],
@@ -37394,7 +37394,7 @@
         "loyalty": "68",
         "happiness": "59",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "C",
             "Jps": "D",
@@ -51559,7 +51559,7 @@
         "name": "James Bailey",
         "url": "../players/player499.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SF",
         "age": "23",
         "ht": "6-9",
@@ -51595,7 +51595,7 @@
         "loyalty": "37",
         "happiness": "6",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "B",
             "Jps": "C",
@@ -55633,12 +55633,12 @@
         "transactions": [
             {
                 "date": "10/25/1982",
-                "action": "Signed with Bayern Munich for $1,520,000 over one year.",
+                "action": "Signed with ACF Fiorentina for $1,520,000 over one year.",
                 "rowClass": "row1"
             },
             {
                 "date": "11/2/1982",
-                "action": "Released by Bayern Munich",
+                "action": "Released by ACF Fiorentina",
                 "rowClass": "row2"
             }
         ],
@@ -66261,7 +66261,7 @@
         "name": "Kevin McHale",
         "url": "../players/player457.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "PF",
         "age": "22",
         "ht": "6-10",
@@ -66356,7 +66356,7 @@
         "loyalty": "77",
         "happiness": "75",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "A",
             "Jps": "B",
@@ -68012,7 +68012,7 @@
         "name": "Kyle Lowry",
         "url": "../players/player708.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "PG",
         "age": "19",
         "ht": "6-0",
@@ -68062,7 +68062,7 @@
         "loyalty": "54",
         "happiness": "36",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "B",
             "Jps": "C",
@@ -70750,7 +70750,7 @@
         "name": "Louis Orr",
         "url": "../players/player482.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "PF",
         "age": "22",
         "ht": "6-8",
@@ -70786,7 +70786,7 @@
         "loyalty": "81",
         "happiness": "95",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "C",
             "Jps": "B",
@@ -74266,7 +74266,7 @@
         "name": "Mark Landsberger",
         "url": "../players/player830.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SF",
         "age": "25",
         "ht": "6-8",
@@ -74302,7 +74302,7 @@
         "loyalty": "98",
         "happiness": "97",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "D",
             "Jps": "D",
@@ -78492,7 +78492,7 @@
         "name": "Micheal Ray Richardson",
         "url": "../players/player469.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "PG",
         "age": "26",
         "ht": "6-5",
@@ -78546,7 +78546,7 @@
         "loyalty": "63",
         "happiness": "48",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "B",
             "Jps": "B",
@@ -80303,7 +80303,7 @@
         "name": "Mike Woodson",
         "url": "../players/player460.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SG",
         "age": "23",
         "ht": "6-5",
@@ -80370,7 +80370,7 @@
         "loyalty": "87",
         "happiness": "47",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "B",
             "Jps": "B",
@@ -81073,12 +81073,12 @@
         "transactions": [
             {
                 "date": "10/27/1982",
-                "action": "Signed with Bayern Munich for $1,520,000 over one year.",
+                "action": "Signed with ACF Fiorentina for $1,520,000 over one year.",
                 "rowClass": "row1"
             },
             {
                 "date": "11/2/1982",
-                "action": "Released by Bayern Munich",
+                "action": "Released by ACF Fiorentina",
                 "rowClass": "row2"
             }
         ],
@@ -92171,7 +92171,7 @@
         "name": "Rex Walters",
         "url": "../players/player430.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SG",
         "age": "23",
         "ht": "6-4",
@@ -92207,7 +92207,7 @@
         "loyalty": "50",
         "happiness": "56",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "D",
             "Jps": "B",
@@ -92990,7 +92990,7 @@
         "name": "Rick Mahorn",
         "url": "../players/player486.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "C",
         "age": "22",
         "ht": "6-10",
@@ -93026,7 +93026,7 @@
         "loyalty": "20",
         "happiness": "2",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "C",
             "Jps": "C",
@@ -95968,7 +95968,7 @@
         "name": "Ron Lee",
         "url": "../players/player534.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "PG",
         "age": "27",
         "ht": "6-3",
@@ -96004,7 +96004,7 @@
         "loyalty": "64",
         "happiness": "73",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "C",
             "Jps": "D",
@@ -107363,7 +107363,7 @@
         "name": "Tre Mann",
         "url": "../players/player429.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SG",
         "age": "21",
         "ht": "6-3",
@@ -107399,7 +107399,7 @@
         "loyalty": "14",
         "happiness": "40",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "C",
             "Jps": "C",
@@ -107464,7 +107464,7 @@
         "name": "Tree Rollins",
         "url": "../players/player477.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "C",
         "age": "25",
         "ht": "7-1",
@@ -107531,7 +107531,7 @@
         "loyalty": "4",
         "happiness": "60",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "D",
             "Jps": "C",
@@ -108123,7 +108123,7 @@
         "name": "Truck Robinson",
         "url": "../players/player517.htm",
         "team": "roster11",
-        "teamLabel": "Bayern Munich",
+        "teamLabel": "ACF Fiorentina",
         "pos": "SF",
         "age": "29",
         "ht": "6-7",
@@ -108159,7 +108159,7 @@
         "loyalty": "88",
         "happiness": "59",
         "lastTeamId": "roster11",
-        "lastTeam": "Bayern Munich",
+        "lastTeam": "ACF Fiorentina",
         "potentials": {
             "Ins": "B",
             "Jps": "D",

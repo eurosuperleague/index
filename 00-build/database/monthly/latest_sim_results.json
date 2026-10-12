@@ -4,11 +4,12 @@
     ],
     "period": {
         "year": 1987,
-        "month": 4,
-        "label": "April 1987"
+        "month": 11,
+        "label": "November 1987"
     },
     "results": [
         {
+<<<<<<< Updated upstream
             "section": "Regular Season",
             "sectionSlug": "regular-season",
             "date": "1987-04-01",
@@ -113,11 +114,23 @@
             "homeTeam": "roster27",
             "homeTeamName": "FL Fart",
             "homeScore": 114,
+=======
+            "section": "Preseason",
+            "sectionSlug": "preseason",
+            "date": "11/1/1987",
+            "matchupText": "Benfica 117, @AFC Richmond 92",
+            "boxscoreUrl": "./boxes/box13-1.htm",
+            "boxscoreFile": "box13-1.htm",
+            "homeTeam": "roster12",
+            "homeTeamName": "AFC Richmond",
+            "homeScore": 92,
+>>>>>>> Stashed changes
             "awayTeam": "roster13",
             "awayTeamName": "Benfica",
-            "awayScore": 131,
+            "awayScore": 117,
             "winner": "roster13",
             "winnerName": "Benfica",
+<<<<<<< Updated upstream
             "loser": "roster27",
             "loserName": "FL Fart",
             "margin": 17
@@ -1155,14 +1168,28 @@
             "matchupText": "@Inter Milan 118, AC Sparta Praha 110",
             "boxscoreUrl": "./boxes/box182-2.htm",
             "boxscoreFile": "box182-2.htm",
+=======
+            "loser": "roster12",
+            "loserName": "AFC Richmond",
+            "margin": 25
+        },
+        {
+            "section": "Preseason",
+            "sectionSlug": "preseason",
+            "date": "11/1/1987",
+            "matchupText": "@Inter Milan 114, Crystal Palace 105",
+            "boxscoreUrl": "./boxes/box13-2.htm",
+            "boxscoreFile": "box13-2.htm",
+>>>>>>> Stashed changes
             "homeTeam": "roster26",
             "homeTeamName": "Inter Milan",
-            "homeScore": 118,
-            "awayTeam": "roster16",
-            "awayTeamName": "AC Sparta Praha",
-            "awayScore": 110,
+            "homeScore": 114,
+            "awayTeam": "roster6",
+            "awayTeamName": "Crystal Palace",
+            "awayScore": 105,
             "winner": "roster26",
             "winnerName": "Inter Milan",
+<<<<<<< Updated upstream
             "loser": "roster16",
             "loserName": "AC Sparta Praha",
             "margin": 8
@@ -1212,19 +1239,33 @@
             "matchupText": "@Tottenham Hotspur 90, Atletico Madrid 79",
             "boxscoreUrl": "./boxes/box184-2.htm",
             "boxscoreFile": "box184-2.htm",
-            "homeTeam": "roster22",
-            "homeTeamName": "Tottenham Hotspur",
-            "homeScore": 90,
-            "awayTeam": "roster11",
-            "awayTeamName": "Atletico Madrid",
-            "awayScore": 79,
-            "winner": "roster22",
-            "winnerName": "Tottenham Hotspur",
-            "loser": "roster11",
-            "loserName": "Atletico Madrid",
-            "margin": 11
+=======
+            "loser": "roster6",
+            "loserName": "Crystal Palace",
+            "margin": 9
         },
         {
+            "section": "Preseason",
+            "sectionSlug": "preseason",
+            "date": "11/1/1987",
+            "matchupText": "@Tottenham Hotspur 109, Juventus 93",
+            "boxscoreUrl": "./boxes/box13-3.htm",
+            "boxscoreFile": "box13-3.htm",
+>>>>>>> Stashed changes
+            "homeTeam": "roster22",
+            "homeTeamName": "Tottenham Hotspur",
+            "homeScore": 109,
+            "awayTeam": "roster14",
+            "awayTeamName": "Juventus",
+            "awayScore": 93,
+            "winner": "roster22",
+            "winnerName": "Tottenham Hotspur",
+            "loser": "roster14",
+            "loserName": "Juventus",
+            "margin": 16
+        },
+        {
+<<<<<<< Updated upstream
             "section": "Regular Season",
             "sectionSlug": "regular-season",
             "date": "1987-04-23",
@@ -1440,17 +1481,25 @@
             "matchupText": "@Valencia 109, Manchester City 94",
             "boxscoreUrl": "./boxes/box185-12.htm",
             "boxscoreFile": "box185-12.htm",
+=======
+            "section": "Preseason",
+            "sectionSlug": "preseason",
+            "date": "11/1/1987",
+            "matchupText": "@Valencia 121, Marseille 107",
+            "boxscoreUrl": "./boxes/box13-4.htm",
+            "boxscoreFile": "box13-4.htm",
+>>>>>>> Stashed changes
             "homeTeam": "roster25",
             "homeTeamName": "Valencia",
-            "homeScore": 109,
-            "awayTeam": "roster28",
-            "awayTeamName": "Manchester City",
-            "awayScore": 94,
+            "homeScore": 121,
+            "awayTeam": "roster15",
+            "awayTeamName": "Marseille",
+            "awayScore": 107,
             "winner": "roster25",
             "winnerName": "Valencia",
-            "loser": "roster28",
-            "loserName": "Manchester City",
-            "margin": 15
+            "loser": "roster15",
+            "loserName": "Marseille",
+            "margin": 14
         }
     ]
 }

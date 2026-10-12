@@ -66,7 +66,7 @@
             "tier": "Tier 2",
             "type": "promotion",
             "slots": 2,
-            "lineTeam": "Bayern Munich",
+            "lineTeam": "ACF Fiorentina",
             "lineRecord": "5-2",
             "entries": [
                 {
@@ -82,7 +82,7 @@
                     "rosterUrl": "./rosters/roster9.htm"
                 },
                 {
-                    "team": "Bayern Munich",
+                    "team": "ACF Fiorentina",
                     "record": "5-2",
                     "standingRank": 3,
                     "streak": "L2",

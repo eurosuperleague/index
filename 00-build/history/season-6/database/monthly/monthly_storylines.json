@@ -228,7 +228,7 @@
             "id": "tier-2-promotion-watch",
             "type": "race",
             "title": "Tier 2 Promotion Watch",
-            "summary": "Bayern Munich sits on the current promotion line, with AC Milan close enough to keep the race live.",
+            "summary": "ACF Fiorentina sits on the current promotion line, with AC Milan close enough to keep the race live.",
             "tier": "Tier 2",
             "importance": 78,
             "data": {
@@ -236,7 +236,7 @@
                 "tier": "Tier 2",
                 "type": "promotion",
                 "slots": 2,
-                "lineTeam": "Bayern Munich",
+                "lineTeam": "ACF Fiorentina",
                 "lineRecord": "5-2",
                 "entries": [
                     {
@@ -252,7 +252,7 @@
                         "rosterUrl": "./rosters/roster9.htm"
                     },
                     {
-                        "team": "Bayern Munich",
+                        "team": "ACF Fiorentina",
                         "record": "5-2",
                         "standingRank": 3,
                         "streak": "L2",

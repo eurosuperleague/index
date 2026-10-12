@@ -33,10 +33,10 @@
                     },
                     {
                         "date": "4/5/1983",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 8,
-                        "score": "AFC Richmond 121, @Bayern Munich 113",
+                        "score": "AFC Richmond 121, @ACF Fiorentina 113",
                         "boxscoreUrl": "./boxes/box169-1.htm",
                         "section": "Regular Season"
                     },
@@ -178,10 +178,10 @@
                 "recentResults": [
                     {
                         "date": "4/1/1983",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 21,
-                        "score": "Benfica 119, @Bayern Munich 98",
+                        "score": "Benfica 119, @ACF Fiorentina 98",
                         "boxscoreUrl": "./boxes/box165-3.htm",
                         "section": "Regular Season"
                     },
@@ -223,20 +223,20 @@
                     },
                     {
                         "date": "4/21/1983",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 6,
-                        "score": "@Bayern Munich 106, Benfica 100",
+                        "score": "@ACF Fiorentina 106, Benfica 100",
                         "boxscoreUrl": "./boxes/box185-1.htm",
                         "section": "Regular Season"
                     }
                 ],
                 "bestWin": {
                     "date": "4/1/1983",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "W",
                     "margin": 21,
-                    "score": "Benfica 119, @Bayern Munich 98",
+                    "score": "Benfica 119, @ACF Fiorentina 98",
                     "boxscoreUrl": "./boxes/box165-3.htm",
                     "section": "Regular Season"
                 },
@@ -263,10 +263,10 @@
                 "blowoutWins": [
                     {
                         "date": "4/1/1983",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 21,
-                        "score": "Benfica 119, @Bayern Munich 98",
+                        "score": "Benfica 119, @ACF Fiorentina 98",
                         "boxscoreUrl": "./boxes/box165-3.htm",
                         "section": "Regular Season"
                     },
@@ -296,7 +296,7 @@
                 "last3": "LWL"
             },
             {
-                "team": "Bayern Munich",
+                "team": "ACF Fiorentina",
                 "tier": "Tier 1",
                 "tierShort": "T1",
                 "standingRank": 3,
@@ -317,7 +317,7 @@
                         "opponent": "Benfica",
                         "result": "L",
                         "margin": 21,
-                        "score": "Benfica 119, @Bayern Munich 98",
+                        "score": "Benfica 119, @ACF Fiorentina 98",
                         "boxscoreUrl": "./boxes/box165-3.htm",
                         "section": "Regular Season"
                     },
@@ -326,7 +326,7 @@
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 8,
-                        "score": "AFC Richmond 121, @Bayern Munich 113",
+                        "score": "AFC Richmond 121, @ACF Fiorentina 113",
                         "boxscoreUrl": "./boxes/box169-1.htm",
                         "section": "Regular Season"
                     },
@@ -335,7 +335,7 @@
                         "opponent": "AC Milan",
                         "result": "L",
                         "margin": 2,
-                        "score": "AC Milan 100, @Bayern Munich 98",
+                        "score": "AC Milan 100, @ACF Fiorentina 98",
                         "boxscoreUrl": "./boxes/box173-1.htm",
                         "section": "Regular Season"
                     },
@@ -344,7 +344,7 @@
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 15,
-                        "score": "Bayern Munich 98, @Atletico Madrid 83",
+                        "score": "ACF Fiorentina 98, @Atletico Madrid 83",
                         "boxscoreUrl": "./boxes/box177-1.htm",
                         "section": "Regular Season"
                     },
@@ -353,7 +353,7 @@
                         "opponent": "AC Milan",
                         "result": "W",
                         "margin": 11,
-                        "score": "@Bayern Munich 113, AC Milan 102",
+                        "score": "@ACF Fiorentina 113, AC Milan 102",
                         "boxscoreUrl": "./boxes/box184-1.htm",
                         "section": "Regular Season"
                     },
@@ -362,7 +362,7 @@
                         "opponent": "Benfica",
                         "result": "W",
                         "margin": 6,
-                        "score": "@Bayern Munich 106, Benfica 100",
+                        "score": "@ACF Fiorentina 106, Benfica 100",
                         "boxscoreUrl": "./boxes/box185-1.htm",
                         "section": "Regular Season"
                     }
@@ -372,7 +372,7 @@
                     "opponent": "Atletico Madrid",
                     "result": "W",
                     "margin": 15,
-                    "score": "Bayern Munich 98, @Atletico Madrid 83",
+                    "score": "ACF Fiorentina 98, @Atletico Madrid 83",
                     "boxscoreUrl": "./boxes/box177-1.htm",
                     "section": "Regular Season"
                 },
@@ -381,7 +381,7 @@
                     "opponent": "Benfica",
                     "result": "L",
                     "margin": 21,
-                    "score": "Benfica 119, @Bayern Munich 98",
+                    "score": "Benfica 119, @ACF Fiorentina 98",
                     "boxscoreUrl": "./boxes/box165-3.htm",
                     "section": "Regular Season"
                 },
@@ -391,7 +391,7 @@
                         "opponent": "AC Milan",
                         "result": "L",
                         "margin": 2,
-                        "score": "AC Milan 100, @Bayern Munich 98",
+                        "score": "AC Milan 100, @ACF Fiorentina 98",
                         "boxscoreUrl": "./boxes/box173-1.htm",
                         "section": "Regular Season"
                     }
@@ -402,7 +402,7 @@
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 15,
-                        "score": "Bayern Munich 98, @Atletico Madrid 83",
+                        "score": "ACF Fiorentina 98, @Atletico Madrid 83",
                         "boxscoreUrl": "./boxes/box177-1.htm",
                         "section": "Regular Season"
                     }
@@ -413,7 +413,7 @@
                         "opponent": "Benfica",
                         "result": "L",
                         "margin": 21,
-                        "score": "Benfica 119, @Bayern Munich 98",
+                        "score": "Benfica 119, @ACF Fiorentina 98",
                         "boxscoreUrl": "./boxes/box165-3.htm",
                         "section": "Regular Season"
                     }
@@ -613,10 +613,10 @@
                     },
                     {
                         "date": "4/9/1983",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 2,
-                        "score": "AC Milan 100, @Bayern Munich 98",
+                        "score": "AC Milan 100, @ACF Fiorentina 98",
                         "boxscoreUrl": "./boxes/box173-1.htm",
                         "section": "Regular Season"
                     },
@@ -631,10 +631,10 @@
                     },
                     {
                         "date": "4/20/1983",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 11,
-                        "score": "@Bayern Munich 113, AC Milan 102",
+                        "score": "@ACF Fiorentina 113, AC Milan 102",
                         "boxscoreUrl": "./boxes/box184-1.htm",
                         "section": "Regular Season"
                     },
@@ -687,10 +687,10 @@
                     },
                     {
                         "date": "4/9/1983",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 2,
-                        "score": "AC Milan 100, @Bayern Munich 98",
+                        "score": "AC Milan 100, @ACF Fiorentina 98",
                         "boxscoreUrl": "./boxes/box173-1.htm",
                         "section": "Regular Season"
                     }
@@ -892,10 +892,10 @@
                     },
                     {
                         "date": "4/13/1983",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 15,
-                        "score": "Bayern Munich 98, @Atletico Madrid 83",
+                        "score": "ACF Fiorentina 98, @Atletico Madrid 83",
                         "boxscoreUrl": "./boxes/box177-1.htm",
                         "section": "Regular Season"
                     },
@@ -970,10 +970,10 @@
                 "blowoutLosses": [
                     {
                         "date": "4/13/1983",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 15,
-                        "score": "Bayern Munich 98, @Atletico Madrid 83",
+                        "score": "ACF Fiorentina 98, @Atletico Madrid 83",
                         "boxscoreUrl": "./boxes/box177-1.htm",
                         "section": "Regular Season"
                     },

@@ -267,7 +267,7 @@
                 "last3": "LLL"
             },
             {
-                "team": "Bayern Munich",
+                "team": "ACF Fiorentina",
                 "tier": "Tier 1",
                 "tierShort": "T1",
                 "standingRank": 5,
@@ -288,7 +288,7 @@
                         "opponent": "AC Sparta Praha",
                         "result": "L",
                         "margin": 22,
-                        "score": "@AC Sparta Praha 137, Bayern Munich 115",
+                        "score": "@AC Sparta Praha 137, ACF Fiorentina 115",
                         "boxscoreUrl": "./boxes/box171-2.htm",
                         "section": "Regular Season"
                     },
@@ -297,7 +297,7 @@
                         "opponent": "Benfica",
                         "result": "W",
                         "margin": 14,
-                        "score": "Bayern Munich 119, @Benfica 105",
+                        "score": "ACF Fiorentina 119, @Benfica 105",
                         "boxscoreUrl": "./boxes/box172-2.htm",
                         "section": "Regular Season"
                     },
@@ -306,7 +306,7 @@
                         "opponent": "Benfica",
                         "result": "W",
                         "margin": 18,
-                        "score": "@Bayern Munich 133, Benfica 115",
+                        "score": "@ACF Fiorentina 133, Benfica 115",
                         "boxscoreUrl": "./boxes/box176-1.htm",
                         "section": "Regular Season"
                     },
@@ -315,7 +315,7 @@
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 27,
-                        "score": "@Bayern Munich 138, AC Sparta Praha 111",
+                        "score": "@ACF Fiorentina 138, AC Sparta Praha 111",
                         "boxscoreUrl": "./boxes/box182-1.htm",
                         "section": "Regular Season"
                     },
@@ -324,7 +324,7 @@
                         "opponent": "FL Fart",
                         "result": "L",
                         "margin": 9,
-                        "score": "FL Fart 128, @Bayern Munich 119",
+                        "score": "FL Fart 128, @ACF Fiorentina 119",
                         "boxscoreUrl": "./boxes/box185-4.htm",
                         "section": "Regular Season"
                     }
@@ -334,7 +334,7 @@
                     "opponent": "AC Sparta Praha",
                     "result": "W",
                     "margin": 27,
-                    "score": "@Bayern Munich 138, AC Sparta Praha 111",
+                    "score": "@ACF Fiorentina 138, AC Sparta Praha 111",
                     "boxscoreUrl": "./boxes/box182-1.htm",
                     "section": "Regular Season"
                 },
@@ -343,7 +343,7 @@
                     "opponent": "AC Sparta Praha",
                     "result": "L",
                     "margin": 22,
-                    "score": "@AC Sparta Praha 137, Bayern Munich 115",
+                    "score": "@AC Sparta Praha 137, ACF Fiorentina 115",
                     "boxscoreUrl": "./boxes/box171-2.htm",
                     "section": "Regular Season"
                 },
@@ -354,7 +354,7 @@
                         "opponent": "Benfica",
                         "result": "W",
                         "margin": 18,
-                        "score": "@Bayern Munich 133, Benfica 115",
+                        "score": "@ACF Fiorentina 133, Benfica 115",
                         "boxscoreUrl": "./boxes/box176-1.htm",
                         "section": "Regular Season"
                     },
@@ -363,7 +363,7 @@
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 27,
-                        "score": "@Bayern Munich 138, AC Sparta Praha 111",
+                        "score": "@ACF Fiorentina 138, AC Sparta Praha 111",
                         "boxscoreUrl": "./boxes/box182-1.htm",
                         "section": "Regular Season"
                     }
@@ -374,7 +374,7 @@
                         "opponent": "AC Sparta Praha",
                         "result": "L",
                         "margin": 22,
-                        "score": "@AC Sparta Praha 137, Bayern Munich 115",
+                        "score": "@AC Sparta Praha 137, ACF Fiorentina 115",
                         "boxscoreUrl": "./boxes/box171-2.htm",
                         "section": "Regular Season"
                     }
@@ -537,19 +537,19 @@
                     },
                     {
                         "date": "4/6/1984",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 14,
-                        "score": "Bayern Munich 119, @Benfica 105",
+                        "score": "ACF Fiorentina 119, @Benfica 105",
                         "boxscoreUrl": "./boxes/box172-2.htm",
                         "section": "Regular Season"
                     },
                     {
                         "date": "4/10/1984",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 18,
-                        "score": "@Bayern Munich 133, Benfica 115",
+                        "score": "@ACF Fiorentina 133, Benfica 115",
                         "boxscoreUrl": "./boxes/box176-1.htm",
                         "section": "Regular Season"
                     },
@@ -592,10 +592,10 @@
                 },
                 "worstLoss": {
                     "date": "4/10/1984",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "L",
                     "margin": 18,
-                    "score": "@Bayern Munich 133, Benfica 115",
+                    "score": "@ACF Fiorentina 133, Benfica 115",
                     "boxscoreUrl": "./boxes/box176-1.htm",
                     "section": "Regular Season"
                 },
@@ -614,10 +614,10 @@
                 "blowoutLosses": [
                     {
                         "date": "4/10/1984",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 18,
-                        "score": "@Bayern Munich 133, Benfica 115",
+                        "score": "@ACF Fiorentina 133, Benfica 115",
                         "boxscoreUrl": "./boxes/box176-1.htm",
                         "section": "Regular Season"
                     },
@@ -835,20 +835,20 @@
                     },
                     {
                         "date": "4/19/1984",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 9,
-                        "score": "FL Fart 128, @Bayern Munich 119",
+                        "score": "FL Fart 128, @ACF Fiorentina 119",
                         "boxscoreUrl": "./boxes/box185-4.htm",
                         "section": "Regular Season"
                     }
                 ],
                 "bestWin": {
                     "date": "4/19/1984",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "W",
                     "margin": 9,
-                    "score": "FL Fart 128, @Bayern Munich 119",
+                    "score": "FL Fart 128, @ACF Fiorentina 119",
                     "boxscoreUrl": "./boxes/box185-4.htm",
                     "section": "Regular Season"
                 },
@@ -934,10 +934,10 @@
                 "recentResults": [
                     {
                         "date": "4/5/1984",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 22,
-                        "score": "@AC Sparta Praha 137, Bayern Munich 115",
+                        "score": "@AC Sparta Praha 137, ACF Fiorentina 115",
                         "boxscoreUrl": "./boxes/box171-2.htm",
                         "section": "Regular Season"
                     },
@@ -961,10 +961,10 @@
                     },
                     {
                         "date": "4/16/1984",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 27,
-                        "score": "@Bayern Munich 138, AC Sparta Praha 111",
+                        "score": "@ACF Fiorentina 138, AC Sparta Praha 111",
                         "boxscoreUrl": "./boxes/box182-1.htm",
                         "section": "Regular Season"
                     },
@@ -980,10 +980,10 @@
                 ],
                 "bestWin": {
                     "date": "4/5/1984",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "W",
                     "margin": 22,
-                    "score": "@AC Sparta Praha 137, Bayern Munich 115",
+                    "score": "@AC Sparta Praha 137, ACF Fiorentina 115",
                     "boxscoreUrl": "./boxes/box171-2.htm",
                     "section": "Regular Season"
                 },
@@ -1010,10 +1010,10 @@
                 "blowoutWins": [
                     {
                         "date": "4/5/1984",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 22,
-                        "score": "@AC Sparta Praha 137, Bayern Munich 115",
+                        "score": "@AC Sparta Praha 137, ACF Fiorentina 115",
                         "boxscoreUrl": "./boxes/box171-2.htm",
                         "section": "Regular Season"
                     }
@@ -1030,10 +1030,10 @@
                     },
                     {
                         "date": "4/16/1984",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 27,
-                        "score": "@Bayern Munich 138, AC Sparta Praha 111",
+                        "score": "@ACF Fiorentina 138, AC Sparta Praha 111",
                         "boxscoreUrl": "./boxes/box182-1.htm",
                         "section": "Regular Season"
                     },

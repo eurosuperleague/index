@@ -70,10 +70,10 @@
                 "avgMargin": 16.67,
                 "bestWin": {
                     "date": "4/15/1982",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "W",
                     "margin": 25,
-                    "score": "@AFC Richmond 114, Bayern Munich 89",
+                    "score": "@AFC Richmond 114, ACF Fiorentina 89",
                     "boxscoreUrl": "./boxes/box178-2.htm",
                     "section": "Regular Season"
                 },
@@ -162,7 +162,7 @@
             "id": "tier-1-relegation-watch",
             "type": "race",
             "title": "Tier 1 Relegation Watch",
-            "summary": "Crystal Palace sits on the current relegation line, with Bayern Munich close enough to keep the race live.",
+            "summary": "Crystal Palace sits on the current relegation line, with ACF Fiorentina close enough to keep the race live.",
             "tier": "Tier 1",
             "importance": 78,
             "data": {
@@ -174,7 +174,7 @@
                 "lineRecord": "1-5",
                 "entries": [
                     {
-                        "team": "Bayern Munich",
+                        "team": "ACF Fiorentina",
                         "record": "1-5",
                         "standingRank": 4,
                         "streak": "L1",

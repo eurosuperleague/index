@@ -89,7 +89,7 @@ TEAM_LOGO_FILES = {
     "Aston Villa": "astonvilla.jpg",
     "Atletico Madrid": "atletico.jpg",
     "Barcelona": "barcelona.jpg",
-    "Bayern Munich": "bayern.jpg",
+    "ACF Fiorentina": "acffiorentina.png",
     "Benfica": "benfica.jpg",
     "Brighton": "brighton.jpg",
     "Chelsea": "chelsea.jpg",

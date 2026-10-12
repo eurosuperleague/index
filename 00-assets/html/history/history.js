@@ -67,7 +67,7 @@
     "aston villa": "astonvilla.jpg",
     "atletico madrid": "atletico.jpg",
     barcelona: "barcelona.jpg",
-    "bayern munich": "bayern.jpg",
+    "acf fiorentina": "acffiorentina.png",
     benfica: "benfica.jpg",
     brighton: "brighton.jpg",
     chelsea: "chelsea.jpg",
@@ -89,11 +89,16 @@
     valencia: "valencia.jpg"
   };
   const CANONICAL_TEAM_NAMES_BY_FILE = {
+    roster7: "ACF Fiorentina",
     roster16: "AC Sparta Praha",
     roster20: "Monaco",
     roster23: "Arsenal"
   };
   const LEGACY_TEAM_NAMES = {
+    "acf fiorentina": "ACF Fiorentina",
+    fiorentina: "ACF Fiorentina",
+    "bayern munich": "ACF Fiorentina",
+    bayern: "ACF Fiorentina",
     "sheffield united": "AC Sparta Praha",
     sheffield: "AC Sparta Praha",
     "sporting cp": "Arsenal"

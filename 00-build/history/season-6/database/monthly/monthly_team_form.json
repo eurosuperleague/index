@@ -1106,10 +1106,10 @@
                 "recentResults": [
                     {
                         "date": "1/04/1987",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 4,
-                        "score": "@Bayern Munich 124, AC Milan 120",
+                        "score": "@ACF Fiorentina 124, AC Milan 120",
                         "boxscoreUrl": "./boxes/box163-1.htm",
                         "section": "Regular Season"
                     },
@@ -1189,10 +1189,10 @@
                 "closeGames": [
                     {
                         "date": "1/04/1987",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 4,
-                        "score": "@Bayern Munich 124, AC Milan 120",
+                        "score": "@ACF Fiorentina 124, AC Milan 120",
                         "boxscoreUrl": "./boxes/box163-1.htm",
                         "section": "Regular Season"
                     }
@@ -1260,7 +1260,7 @@
                 "last3": "WWL"
             },
             {
-                "team": "Bayern Munich",
+                "team": "ACF Fiorentina",
                 "tier": "Tier 2",
                 "tierShort": "T2",
                 "standingRank": 3,
@@ -1281,7 +1281,7 @@
                         "opponent": "AC Milan",
                         "result": "W",
                         "margin": 4,
-                        "score": "@Bayern Munich 124, AC Milan 120",
+                        "score": "@ACF Fiorentina 124, AC Milan 120",
                         "boxscoreUrl": "./boxes/box163-1.htm",
                         "section": "Regular Season"
                     },
@@ -1290,7 +1290,7 @@
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 19,
-                        "score": "Bayern Munich 112, @AC Sparta Praha 93",
+                        "score": "ACF Fiorentina 112, @AC Sparta Praha 93",
                         "boxscoreUrl": "./boxes/box167-1.htm",
                         "section": "Regular Season"
                     },
@@ -1299,7 +1299,7 @@
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 2,
-                        "score": "@Bayern Munich 119, AC Sparta Praha 117",
+                        "score": "@ACF Fiorentina 119, AC Sparta Praha 117",
                         "boxscoreUrl": "./boxes/box172-1.htm",
                         "section": "Regular Season"
                     },
@@ -1308,7 +1308,7 @@
                         "opponent": "Aston Villa",
                         "result": "W",
                         "margin": 11,
-                        "score": "@Bayern Munich 115, Aston Villa 104",
+                        "score": "@ACF Fiorentina 115, Aston Villa 104",
                         "boxscoreUrl": "./boxes/box176-1.htm",
                         "section": "Regular Season"
                     },
@@ -1317,7 +1317,7 @@
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 32,
-                        "score": "@Bayern Munich 118, Marseille 86",
+                        "score": "@ACF Fiorentina 118, Marseille 86",
                         "boxscoreUrl": "./boxes/box178-2.htm",
                         "section": "Regular Season"
                     },
@@ -1326,7 +1326,7 @@
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 14,
-                        "score": "Arsenal 121, @Bayern Munich 107",
+                        "score": "Arsenal 121, @ACF Fiorentina 107",
                         "boxscoreUrl": "./boxes/box182-1.htm",
                         "section": "Regular Season"
                     },
@@ -1335,7 +1335,7 @@
                         "opponent": "Chelsea",
                         "result": "L",
                         "margin": 32,
-                        "score": "@Chelsea 140, Bayern Munich 108",
+                        "score": "@Chelsea 140, ACF Fiorentina 108",
                         "boxscoreUrl": "./boxes/box185-5.htm",
                         "section": "Regular Season"
                     }
@@ -1345,7 +1345,7 @@
                     "opponent": "Marseille",
                     "result": "W",
                     "margin": 32,
-                    "score": "@Bayern Munich 118, Marseille 86",
+                    "score": "@ACF Fiorentina 118, Marseille 86",
                     "boxscoreUrl": "./boxes/box178-2.htm",
                     "section": "Regular Season"
                 },
@@ -1354,7 +1354,7 @@
                     "opponent": "Chelsea",
                     "result": "L",
                     "margin": 32,
-                    "score": "@Chelsea 140, Bayern Munich 108",
+                    "score": "@Chelsea 140, ACF Fiorentina 108",
                     "boxscoreUrl": "./boxes/box185-5.htm",
                     "section": "Regular Season"
                 },
@@ -1364,7 +1364,7 @@
                         "opponent": "AC Milan",
                         "result": "W",
                         "margin": 4,
-                        "score": "@Bayern Munich 124, AC Milan 120",
+                        "score": "@ACF Fiorentina 124, AC Milan 120",
                         "boxscoreUrl": "./boxes/box163-1.htm",
                         "section": "Regular Season"
                     },
@@ -1373,7 +1373,7 @@
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 2,
-                        "score": "@Bayern Munich 119, AC Sparta Praha 117",
+                        "score": "@ACF Fiorentina 119, AC Sparta Praha 117",
                         "boxscoreUrl": "./boxes/box172-1.htm",
                         "section": "Regular Season"
                     }
@@ -1384,7 +1384,7 @@
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 19,
-                        "score": "Bayern Munich 112, @AC Sparta Praha 93",
+                        "score": "ACF Fiorentina 112, @AC Sparta Praha 93",
                         "boxscoreUrl": "./boxes/box167-1.htm",
                         "section": "Regular Season"
                     },
@@ -1393,7 +1393,7 @@
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 32,
-                        "score": "@Bayern Munich 118, Marseille 86",
+                        "score": "@ACF Fiorentina 118, Marseille 86",
                         "boxscoreUrl": "./boxes/box178-2.htm",
                         "section": "Regular Season"
                     }
@@ -1404,7 +1404,7 @@
                         "opponent": "Chelsea",
                         "result": "L",
                         "margin": 32,
-                        "score": "@Chelsea 140, Bayern Munich 108",
+                        "score": "@Chelsea 140, ACF Fiorentina 108",
                         "boxscoreUrl": "./boxes/box185-5.htm",
                         "section": "Regular Season"
                     }
@@ -1468,10 +1468,10 @@
                     },
                     {
                         "date": "20/04/1987",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 14,
-                        "score": "Arsenal 121, @Bayern Munich 107",
+                        "score": "Arsenal 121, @ACF Fiorentina 107",
                         "boxscoreUrl": "./boxes/box182-1.htm",
                         "section": "Regular Season"
                     },
@@ -1730,10 +1730,10 @@
                     },
                     {
                         "date": "14/04/1987",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 11,
-                        "score": "@Bayern Munich 115, Aston Villa 104",
+                        "score": "@ACF Fiorentina 115, Aston Villa 104",
                         "boxscoreUrl": "./boxes/box176-1.htm",
                         "section": "Regular Season"
                     },
@@ -1767,10 +1767,10 @@
                 },
                 "worstLoss": {
                     "date": "14/04/1987",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "L",
                     "margin": 11,
-                    "score": "@Bayern Munich 115, Aston Villa 104",
+                    "score": "@ACF Fiorentina 115, Aston Villa 104",
                     "boxscoreUrl": "./boxes/box176-1.htm",
                     "section": "Regular Season"
                 },
@@ -1820,19 +1820,19 @@
                 "recentResults": [
                     {
                         "date": "5/04/1987",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 19,
-                        "score": "Bayern Munich 112, @AC Sparta Praha 93",
+                        "score": "ACF Fiorentina 112, @AC Sparta Praha 93",
                         "boxscoreUrl": "./boxes/box167-1.htm",
                         "section": "Regular Season"
                     },
                     {
                         "date": "10/04/1987",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 2,
-                        "score": "@Bayern Munich 119, AC Sparta Praha 117",
+                        "score": "@ACF Fiorentina 119, AC Sparta Praha 117",
                         "boxscoreUrl": "./boxes/box172-1.htm",
                         "section": "Regular Season"
                     },
@@ -1884,20 +1884,20 @@
                 },
                 "worstLoss": {
                     "date": "5/04/1987",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "L",
                     "margin": 19,
-                    "score": "Bayern Munich 112, @AC Sparta Praha 93",
+                    "score": "ACF Fiorentina 112, @AC Sparta Praha 93",
                     "boxscoreUrl": "./boxes/box167-1.htm",
                     "section": "Regular Season"
                 },
                 "closeGames": [
                     {
                         "date": "10/04/1987",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 2,
-                        "score": "@Bayern Munich 119, AC Sparta Praha 117",
+                        "score": "@ACF Fiorentina 119, AC Sparta Praha 117",
                         "boxscoreUrl": "./boxes/box172-1.htm",
                         "section": "Regular Season"
                     },
@@ -1933,10 +1933,10 @@
                 "blowoutLosses": [
                     {
                         "date": "5/04/1987",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 19,
-                        "score": "Bayern Munich 112, @AC Sparta Praha 93",
+                        "score": "ACF Fiorentina 112, @AC Sparta Praha 93",
                         "boxscoreUrl": "./boxes/box167-1.htm",
                         "section": "Regular Season"
                     }
@@ -2000,20 +2000,20 @@
                     },
                     {
                         "date": "23/04/1987",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 32,
-                        "score": "@Chelsea 140, Bayern Munich 108",
+                        "score": "@Chelsea 140, ACF Fiorentina 108",
                         "boxscoreUrl": "./boxes/box185-5.htm",
                         "section": "Regular Season"
                     }
                 ],
                 "bestWin": {
                     "date": "23/04/1987",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "W",
                     "margin": 32,
-                    "score": "@Chelsea 140, Bayern Munich 108",
+                    "score": "@Chelsea 140, ACF Fiorentina 108",
                     "boxscoreUrl": "./boxes/box185-5.htm",
                     "section": "Regular Season"
                 },
@@ -2040,10 +2040,10 @@
                 "blowoutWins": [
                     {
                         "date": "23/04/1987",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 32,
-                        "score": "@Chelsea 140, Bayern Munich 108",
+                        "score": "@Chelsea 140, ACF Fiorentina 108",
                         "boxscoreUrl": "./boxes/box185-5.htm",
                         "section": "Regular Season"
                     }
@@ -2109,10 +2109,10 @@
                     },
                     {
                         "date": "16/04/1987",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 32,
-                        "score": "@Bayern Munich 118, Marseille 86",
+                        "score": "@ACF Fiorentina 118, Marseille 86",
                         "boxscoreUrl": "./boxes/box178-2.htm",
                         "section": "Regular Season"
                     },
@@ -2178,10 +2178,10 @@
                     },
                     {
                         "date": "16/04/1987",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 32,
-                        "score": "@Bayern Munich 118, Marseille 86",
+                        "score": "@ACF Fiorentina 118, Marseille 86",
                         "boxscoreUrl": "./boxes/box178-2.htm",
                         "section": "Regular Season"
                     },

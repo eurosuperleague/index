@@ -477,7 +477,7 @@
   },
   {
     "id": "roster7",
-    "name": "Bayern Munich",
+    "name": "ACF Fiorentina",
     "record": {
       "wins": 24,
       "losses": 18,
@@ -526,7 +526,7 @@
     "injuries": [],
     "recentGame": {
       "date": "23/04/1987",
-      "text": "@Chelsea 140, Bayern Munich 108",
+      "text": "@Chelsea 140, ACF Fiorentina 108",
       "boxscoreFile": "box185-5.htm"
     },
     "nextGame": null,
@@ -704,7 +704,7 @@
     ],
     "recentGame": {
       "date": "23/04/1987",
-      "text": "@Chelsea 140, Bayern Munich 108",
+      "text": "@Chelsea 140, ACF Fiorentina 108",
       "boxscoreFile": "box185-5.htm"
     },
     "nextGame": null,

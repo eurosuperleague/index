@@ -56,7 +56,7 @@
     "crystalpalace:guaranteed-b",
     "atleticomadrid:guaranteed-b",
     "manchestercity:guaranteed-c",
-    "bayernmunich:guaranteed-c",
+    "acffiorentina:guaranteed-c",
     "brighton:guaranteed-b",
     "arsenal:wildcard-1",
     "juventus:wildcard-2",
@@ -65,7 +65,7 @@
     "monaco:guaranteed-b",
     "manchestercity:wildcard-1",
     "manchestercity:guaranteed-b",
-    "bayernmunich:guaranteed-b",
+    "acffiorentina:guaranteed-b",
     "tottenhamhotspur:guaranteed-b",
     "monaco:guaranteed-c",
     "monaco:wildcard-2",
@@ -82,7 +82,7 @@
     "realmadrid:guaranteed-c",
     "marseille:wildcard-1",
     "astonvilla:wildcard-1",
-    "bayernmunich:wildcard-1",
+    "acffiorentina:wildcard-1",
     "manchesterunited:wildcard-1",
     "benfica:guaranteed-b",
     "arsenal:guaranteed-c",
@@ -106,7 +106,7 @@
     "Aston Villa",
     "Atletico Madrid",
     "Barcelona",
-    "Bayern Munich",
+    "ACF Fiorentina",
     "Benfica",
     "Brighton",
     "Chelsea",
@@ -905,11 +905,11 @@
     },
     {
       "allocationIndex": 33,
-      "slotId": "bayernmunich:guaranteed-c",
+      "slotId": "acffiorentina:guaranteed-c",
       "slotKey": "guaranteed-c",
       "slotLabel": "Guaranteed C",
       "slotType": "guaranteed",
-      "team": "Bayern Munich",
+      "team": "ACF Fiorentina",
       "division": "ELB",
       "tier": "C",
       "tierWeights": {
@@ -1127,11 +1127,11 @@
     },
     {
       "allocationIndex": 42,
-      "slotId": "bayernmunich:guaranteed-b",
+      "slotId": "acffiorentina:guaranteed-b",
       "slotKey": "guaranteed-b",
       "slotLabel": "Guaranteed B",
       "slotType": "guaranteed",
-      "team": "Bayern Munich",
+      "team": "ACF Fiorentina",
       "division": "ELB",
       "tier": "B",
       "tierWeights": {
@@ -1541,11 +1541,11 @@
     },
     {
       "allocationIndex": 59,
-      "slotId": "bayernmunich:wildcard-1",
+      "slotId": "acffiorentina:wildcard-1",
       "slotKey": "wildcard-1",
       "slotLabel": "Europa Wildcard",
       "slotType": "wildcard",
-      "team": "Bayern Munich",
+      "team": "ACF Fiorentina",
       "division": "ELB",
       "tier": "D",
       "tierWeights": {
@@ -3158,7 +3158,7 @@
       ]
     },
     {
-      "team": "Bayern Munich",
+      "team": "ACF Fiorentina",
       "gm": "Derick Rose",
       "tierRaw": "Europa League",
       "tier": "ELB",
@@ -3223,7 +3223,7 @@
           "tierRaw": "B",
           "tier": "B",
           "prospectKey": "jahlilokafor|35414|83",
-          "slotId": "bayernmunich:guaranteed-b",
+          "slotId": "acffiorentina:guaranteed-b",
           "slotKey": "guaranteed-b",
           "slotLabel": "Guaranteed B",
           "slotType": "guaranteed",
@@ -3238,8 +3238,8 @@
           "playerId": "player367",
           "overall": 86,
           "potential": 103,
-          "intakeTeam": "Bayern Munich",
-          "rightsTeam": "Bayern Munich"
+          "intakeTeam": "ACF Fiorentina",
+          "rightsTeam": "ACF Fiorentina"
         },
         {
           "name": "Mike Brown",
@@ -3295,7 +3295,7 @@
           "tierRaw": "C",
           "tier": "C",
           "prospectKey": "mikebrown|23211|82",
-          "slotId": "bayernmunich:guaranteed-c",
+          "slotId": "acffiorentina:guaranteed-c",
           "slotKey": "guaranteed-c",
           "slotLabel": "Guaranteed C",
           "slotType": "guaranteed",
@@ -3310,8 +3310,8 @@
           "playerId": "player368",
           "overall": 85,
           "potential": 94,
-          "intakeTeam": "Bayern Munich",
-          "rightsTeam": "Bayern Munich"
+          "intakeTeam": "ACF Fiorentina",
+          "rightsTeam": "ACF Fiorentina"
         },
         {
           "name": "Doug Roth",
@@ -3367,7 +3367,7 @@
           "tierRaw": "D",
           "tier": "D",
           "prospectKey": "dougroth|24708|83",
-          "slotId": "bayernmunich:wildcard-1",
+          "slotId": "acffiorentina:wildcard-1",
           "slotKey": "wildcard-1",
           "slotLabel": "Europa Wildcard",
           "slotType": "wildcard",
@@ -3382,8 +3382,8 @@
           "playerId": "player398",
           "overall": 79,
           "potential": 81,
-          "intakeTeam": "Bayern Munich",
-          "rightsTeam": "Bayern Munich"
+          "intakeTeam": "ACF Fiorentina",
+          "rightsTeam": "ACF Fiorentina"
         }
       ]
     },

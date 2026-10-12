@@ -16,7 +16,7 @@
   var TEAM_LOGOS = {
     "AC Milan": "acmilan.jpg", "AFC Richmond": "richmond.jpg", "Ajax": "ajax.jpg",
     "Aston Villa": "astonvilla.jpg", "Atletico Madrid": "atletico.jpg", "Barcelona": "barcelona.jpg",
-    "Bayern Munich": "bayern.jpg", "Benfica": "benfica.jpg", "Brighton": "brighton.jpg",
+    "ACF Fiorentina": "acffiorentina.png", "Benfica": "benfica.jpg", "Brighton": "brighton.jpg",
     "Chelsea": "chelsea.jpg", "Crystal Palace": "crystalpalace.jpg", "FL Fart": "flfart.jpg",
     "Inter Milan": "intermilan.jpg", "Juventus": "juventus.jpg", "Manchester City": "manchestercity.jpg",
     "Manchester United": "manutd.jpg", "Marseille": "marseille.jpg", "Monaco": "monaco.jpg",

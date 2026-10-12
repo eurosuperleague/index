@@ -696,7 +696,7 @@
       astonvilla: { primary: "#670e36", secondary: "#95bfe5" },
       atleticomadrid: { primary: "#c8102e", secondary: "#0b2f6b" },
       barcelona: { primary: "#004d98", secondary: "#a50044" },
-      bayernmunich: { primary: "#dc052d", secondary: "#0066b2" },
+      acffiorentina: { primary: "#5b2c83", secondary: "#e52b20" },
       benfica: { primary: "#e30613", secondary: "#f4c430" },
       brighton: { primary: "#0057b8", secondary: "#ffffff" },
       chelsea: { primary: "#034694", secondary: "#dba111" },

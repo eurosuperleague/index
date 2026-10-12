@@ -51,20 +51,20 @@
                     },
                     {
                         "date": "4/18/1985",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 31,
-                        "score": "@Benfica 131, Bayern Munich 100",
+                        "score": "@Benfica 131, ACF Fiorentina 100",
                         "boxscoreUrl": "./boxes/box185-1.htm",
                         "section": "Regular Season"
                     }
                 ],
                 "bestWin": {
                     "date": "4/18/1985",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "W",
                     "margin": 31,
-                    "score": "@Benfica 131, Bayern Munich 100",
+                    "score": "@Benfica 131, ACF Fiorentina 100",
                     "boxscoreUrl": "./boxes/box185-1.htm",
                     "section": "Regular Season"
                 },
@@ -101,10 +101,10 @@
                     },
                     {
                         "date": "4/18/1985",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 31,
-                        "score": "@Benfica 131, Bayern Munich 100",
+                        "score": "@Benfica 131, ACF Fiorentina 100",
                         "boxscoreUrl": "./boxes/box185-1.htm",
                         "section": "Regular Season"
                     }
@@ -495,7 +495,7 @@
                 "last3": "LLW"
             },
             {
-                "team": "Bayern Munich",
+                "team": "ACF Fiorentina",
                 "tier": "Tier 1",
                 "tierShort": "T1",
                 "standingRank": 8,
@@ -516,7 +516,7 @@
                         "opponent": "FL Fart",
                         "result": "W",
                         "margin": 13,
-                        "score": "@Bayern Munich 134, FL Fart 121",
+                        "score": "@ACF Fiorentina 134, FL Fart 121",
                         "boxscoreUrl": "./boxes/box172-2.htm",
                         "section": "Regular Season"
                     },
@@ -525,7 +525,7 @@
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 8,
-                        "score": "Bayern Munich 126, @Chelsea 118",
+                        "score": "ACF Fiorentina 126, @Chelsea 118",
                         "boxscoreUrl": "./boxes/box179-1.htm",
                         "section": "Regular Season"
                     },
@@ -534,7 +534,7 @@
                         "opponent": "Benfica",
                         "result": "L",
                         "margin": 31,
-                        "score": "@Benfica 131, Bayern Munich 100",
+                        "score": "@Benfica 131, ACF Fiorentina 100",
                         "boxscoreUrl": "./boxes/box185-1.htm",
                         "section": "Regular Season"
                     }
@@ -544,7 +544,7 @@
                     "opponent": "FL Fart",
                     "result": "W",
                     "margin": 13,
-                    "score": "@Bayern Munich 134, FL Fart 121",
+                    "score": "@ACF Fiorentina 134, FL Fart 121",
                     "boxscoreUrl": "./boxes/box172-2.htm",
                     "section": "Regular Season"
                 },
@@ -553,7 +553,7 @@
                     "opponent": "Benfica",
                     "result": "L",
                     "margin": 31,
-                    "score": "@Benfica 131, Bayern Munich 100",
+                    "score": "@Benfica 131, ACF Fiorentina 100",
                     "boxscoreUrl": "./boxes/box185-1.htm",
                     "section": "Regular Season"
                 },
@@ -565,7 +565,7 @@
                         "opponent": "Benfica",
                         "result": "L",
                         "margin": 31,
-                        "score": "@Benfica 131, Bayern Munich 100",
+                        "score": "@Benfica 131, ACF Fiorentina 100",
                         "boxscoreUrl": "./boxes/box185-1.htm",
                         "section": "Regular Season"
                     }
@@ -729,10 +729,10 @@
                     },
                     {
                         "date": "4/12/1985",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 8,
-                        "score": "Bayern Munich 126, @Chelsea 118",
+                        "score": "ACF Fiorentina 126, @Chelsea 118",
                         "boxscoreUrl": "./boxes/box179-1.htm",
                         "section": "Regular Season"
                     },
@@ -809,10 +809,10 @@
                     },
                     {
                         "date": "4/5/1985",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 13,
-                        "score": "@Bayern Munich 134, FL Fart 121",
+                        "score": "@ACF Fiorentina 134, FL Fart 121",
                         "boxscoreUrl": "./boxes/box172-2.htm",
                         "section": "Regular Season"
                     },

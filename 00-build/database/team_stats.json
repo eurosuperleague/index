@@ -522,6 +522,266 @@
             }
         },
         {
+            "teamId": "roster7",
+            "team": "ACF Fiorentina",
+            "file": "roster7.htm",
+            "url": "../rosters/roster7.htm",
+            "stats": {
+                "points": {
+                    "label": "Points",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "o_rebounds": {
+                    "label": "O.Rebounds",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "d_rebounds": {
+                    "label": "D.Rebounds",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "rebounds": {
+                    "label": "Rebounds",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "assists": {
+                    "label": "Assists",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "steals": {
+                    "label": "Steals",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "blocks": {
+                    "label": "Blocks",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "turnovers": {
+                    "label": "Turnovers",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "fouls": {
+                    "label": "Fouls",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "fg_pct": {
+                    "label": "FG%",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "ft_pct": {
+                    "label": "FT%",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "3pt_pct": {
+                    "label": "3PT%",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "points_per_shot": {
+                    "label": "Points Per Shot",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                },
+                "adjusted_fg_pct": {
+                    "label": "Adjusted FG%",
+                    "team": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "opponent": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    },
+                    "margin": {
+                        "value": 0.0,
+                        "conferenceRank": 1,
+                        "totalRank": 1
+                    }
+                }
+            }
+        },
+        {
             "teamId": "roster12",
             "team": "AFC Richmond",
             "file": "roster12.htm",
@@ -1826,266 +2086,6 @@
             "team": "Barcelona",
             "file": "roster24.htm",
             "url": "../rosters/roster24.htm",
-            "stats": {
-                "points": {
-                    "label": "Points",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "o_rebounds": {
-                    "label": "O.Rebounds",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "d_rebounds": {
-                    "label": "D.Rebounds",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "rebounds": {
-                    "label": "Rebounds",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "assists": {
-                    "label": "Assists",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "steals": {
-                    "label": "Steals",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "blocks": {
-                    "label": "Blocks",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "turnovers": {
-                    "label": "Turnovers",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "fouls": {
-                    "label": "Fouls",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "fg_pct": {
-                    "label": "FG%",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "ft_pct": {
-                    "label": "FT%",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "3pt_pct": {
-                    "label": "3PT%",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "points_per_shot": {
-                    "label": "Points Per Shot",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                },
-                "adjusted_fg_pct": {
-                    "label": "Adjusted FG%",
-                    "team": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "opponent": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    },
-                    "margin": {
-                        "value": 0.0,
-                        "conferenceRank": 1,
-                        "totalRank": 1
-                    }
-                }
-            }
-        },
-        {
-            "teamId": "roster7",
-            "team": "Bayern Munich",
-            "file": "roster7.htm",
-            "url": "../rosters/roster7.htm",
             "stats": {
                 "points": {
                     "label": "Points",

@@ -990,10 +990,10 @@
                     },
                     {
                         "date": "12/04/1986",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 3,
-                        "score": "@FL Fart 107, Bayern Munich 104",
+                        "score": "@FL Fart 107, ACF Fiorentina 104",
                         "boxscoreUrl": "./boxes/box180-3.htm",
                         "section": "Regular Season"
                     },
@@ -1029,10 +1029,10 @@
                 "closeGames": [
                     {
                         "date": "12/04/1986",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 3,
-                        "score": "@FL Fart 107, Bayern Munich 104",
+                        "score": "@FL Fart 107, ACF Fiorentina 104",
                         "boxscoreUrl": "./boxes/box180-3.htm",
                         "section": "Regular Season"
                     },
@@ -1081,10 +1081,10 @@
                 "recentResults": [
                     {
                         "date": "4/04/1986",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 32,
-                        "score": "@Ajax 116, Bayern Munich 84",
+                        "score": "@Ajax 116, ACF Fiorentina 84",
                         "boxscoreUrl": "./boxes/box172-2.htm",
                         "section": "Regular Season"
                     },
@@ -1157,10 +1157,10 @@
                 "blowoutWins": [
                     {
                         "date": "4/04/1986",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 32,
-                        "score": "@Ajax 116, Bayern Munich 84",
+                        "score": "@Ajax 116, ACF Fiorentina 84",
                         "boxscoreUrl": "./boxes/box172-2.htm",
                         "section": "Regular Season"
                     },
@@ -1207,10 +1207,10 @@
                     },
                     {
                         "date": "5/04/1986",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 9,
-                        "score": "Bayern Munich 109, @AC Sparta Praha 100",
+                        "score": "ACF Fiorentina 109, @AC Sparta Praha 100",
                         "boxscoreUrl": "./boxes/box173-2.htm",
                         "section": "Regular Season"
                     },
@@ -1531,7 +1531,7 @@
                 "last3": "LWW"
             },
             {
-                "team": "Bayern Munich",
+                "team": "ACF Fiorentina",
                 "tier": "Tier 2",
                 "tierShort": "T2",
                 "standingRank": 7,
@@ -1552,7 +1552,7 @@
                         "opponent": "Ajax",
                         "result": "L",
                         "margin": 32,
-                        "score": "@Ajax 116, Bayern Munich 84",
+                        "score": "@Ajax 116, ACF Fiorentina 84",
                         "boxscoreUrl": "./boxes/box172-2.htm",
                         "section": "Regular Season"
                     },
@@ -1561,7 +1561,7 @@
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 9,
-                        "score": "Bayern Munich 109, @AC Sparta Praha 100",
+                        "score": "ACF Fiorentina 109, @AC Sparta Praha 100",
                         "boxscoreUrl": "./boxes/box173-2.htm",
                         "section": "Regular Season"
                     },
@@ -1570,7 +1570,7 @@
                         "opponent": "Atletico Madrid",
                         "result": "L",
                         "margin": 21,
-                        "score": "@Atletico Madrid 119, Bayern Munich 98",
+                        "score": "@Atletico Madrid 119, ACF Fiorentina 98",
                         "boxscoreUrl": "./boxes/box177-2.htm",
                         "section": "Regular Season"
                     },
@@ -1579,7 +1579,7 @@
                         "opponent": "FL Fart",
                         "result": "L",
                         "margin": 3,
-                        "score": "@FL Fart 107, Bayern Munich 104",
+                        "score": "@FL Fart 107, ACF Fiorentina 104",
                         "boxscoreUrl": "./boxes/box180-3.htm",
                         "section": "Regular Season"
                     },
@@ -1588,7 +1588,7 @@
                         "opponent": "Marseille",
                         "result": "L",
                         "margin": 6,
-                        "score": "@Marseille 125, Bayern Munich 119",
+                        "score": "@Marseille 125, ACF Fiorentina 119",
                         "boxscoreUrl": "./boxes/box184-4.htm",
                         "section": "Regular Season"
                     },
@@ -1597,7 +1597,7 @@
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 26,
-                        "score": "Bayern Munich 120, @Atletico Madrid 94",
+                        "score": "ACF Fiorentina 120, @Atletico Madrid 94",
                         "boxscoreUrl": "./boxes/box185-8.htm",
                         "section": "Regular Season"
                     }
@@ -1607,7 +1607,7 @@
                     "opponent": "Atletico Madrid",
                     "result": "W",
                     "margin": 26,
-                    "score": "Bayern Munich 120, @Atletico Madrid 94",
+                    "score": "ACF Fiorentina 120, @Atletico Madrid 94",
                     "boxscoreUrl": "./boxes/box185-8.htm",
                     "section": "Regular Season"
                 },
@@ -1616,7 +1616,7 @@
                     "opponent": "Ajax",
                     "result": "L",
                     "margin": 32,
-                    "score": "@Ajax 116, Bayern Munich 84",
+                    "score": "@Ajax 116, ACF Fiorentina 84",
                     "boxscoreUrl": "./boxes/box172-2.htm",
                     "section": "Regular Season"
                 },
@@ -1626,7 +1626,7 @@
                         "opponent": "FL Fart",
                         "result": "L",
                         "margin": 3,
-                        "score": "@FL Fart 107, Bayern Munich 104",
+                        "score": "@FL Fart 107, ACF Fiorentina 104",
                         "boxscoreUrl": "./boxes/box180-3.htm",
                         "section": "Regular Season"
                     }
@@ -1637,7 +1637,7 @@
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 26,
-                        "score": "Bayern Munich 120, @Atletico Madrid 94",
+                        "score": "ACF Fiorentina 120, @Atletico Madrid 94",
                         "boxscoreUrl": "./boxes/box185-8.htm",
                         "section": "Regular Season"
                     }
@@ -1648,7 +1648,7 @@
                         "opponent": "Ajax",
                         "result": "L",
                         "margin": 32,
-                        "score": "@Ajax 116, Bayern Munich 84",
+                        "score": "@Ajax 116, ACF Fiorentina 84",
                         "boxscoreUrl": "./boxes/box172-2.htm",
                         "section": "Regular Season"
                     },
@@ -1657,7 +1657,7 @@
                         "opponent": "Atletico Madrid",
                         "result": "L",
                         "margin": 21,
-                        "score": "@Atletico Madrid 119, Bayern Munich 98",
+                        "score": "@Atletico Madrid 119, ACF Fiorentina 98",
                         "boxscoreUrl": "./boxes/box177-2.htm",
                         "section": "Regular Season"
                     }
@@ -1694,10 +1694,10 @@
                     },
                     {
                         "date": "9/04/1986",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 21,
-                        "score": "@Atletico Madrid 119, Bayern Munich 98",
+                        "score": "@Atletico Madrid 119, ACF Fiorentina 98",
                         "boxscoreUrl": "./boxes/box177-2.htm",
                         "section": "Regular Season"
                     },
@@ -1712,29 +1712,29 @@
                     },
                     {
                         "date": "17/04/1986",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 26,
-                        "score": "Bayern Munich 120, @Atletico Madrid 94",
+                        "score": "ACF Fiorentina 120, @Atletico Madrid 94",
                         "boxscoreUrl": "./boxes/box185-8.htm",
                         "section": "Regular Season"
                     }
                 ],
                 "bestWin": {
                     "date": "9/04/1986",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "W",
                     "margin": 21,
-                    "score": "@Atletico Madrid 119, Bayern Munich 98",
+                    "score": "@Atletico Madrid 119, ACF Fiorentina 98",
                     "boxscoreUrl": "./boxes/box177-2.htm",
                     "section": "Regular Season"
                 },
                 "worstLoss": {
                     "date": "17/04/1986",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "L",
                     "margin": 26,
-                    "score": "Bayern Munich 120, @Atletico Madrid 94",
+                    "score": "ACF Fiorentina 120, @Atletico Madrid 94",
                     "boxscoreUrl": "./boxes/box185-8.htm",
                     "section": "Regular Season"
                 },
@@ -1742,10 +1742,10 @@
                 "blowoutWins": [
                     {
                         "date": "9/04/1986",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 21,
-                        "score": "@Atletico Madrid 119, Bayern Munich 98",
+                        "score": "@Atletico Madrid 119, ACF Fiorentina 98",
                         "boxscoreUrl": "./boxes/box177-2.htm",
                         "section": "Regular Season"
                     }
@@ -1753,10 +1753,10 @@
                 "blowoutLosses": [
                     {
                         "date": "17/04/1986",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 26,
-                        "score": "Bayern Munich 120, @Atletico Madrid 94",
+                        "score": "ACF Fiorentina 120, @Atletico Madrid 94",
                         "boxscoreUrl": "./boxes/box185-8.htm",
                         "section": "Regular Season"
                     }
@@ -1802,10 +1802,10 @@
                     },
                     {
                         "date": "16/04/1986",
-                        "opponent": "Bayern Munich",
+                        "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 6,
-                        "score": "@Marseille 125, Bayern Munich 119",
+                        "score": "@Marseille 125, ACF Fiorentina 119",
                         "boxscoreUrl": "./boxes/box184-4.htm",
                         "section": "Regular Season"
                     },
@@ -1821,10 +1821,10 @@
                 ],
                 "bestWin": {
                     "date": "16/04/1986",
-                    "opponent": "Bayern Munich",
+                    "opponent": "ACF Fiorentina",
                     "result": "W",
                     "margin": 6,
-                    "score": "@Marseille 125, Bayern Munich 119",
+                    "score": "@Marseille 125, ACF Fiorentina 119",
                     "boxscoreUrl": "./boxes/box184-4.htm",
                     "section": "Regular Season"
                 },
