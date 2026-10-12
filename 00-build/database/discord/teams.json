@@ -49,11 +49,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "@Arsenal 134, AC Milan 102",
-      "boxscoreFile": "box185-6.htm"
-=======
       "date": "10/31/1987",
       "text": "@AC Milan 128, Ajax 109",
       "boxscoreFile": "box12-2.htm"
@@ -62,7 +57,6 @@
       "date": "11/4/1987",
       "text": "AC Milan @ Arsenal",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster9"
   },
@@ -116,11 +110,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "AC Sparta Praha 129, @Marseille 127",
-      "boxscoreFile": "box185-8.htm"
-=======
       "date": "10/29/1987",
       "text": "@AC Sparta Praha 134, Inter Milan 120",
       "boxscoreFile": "box10-2.htm"
@@ -129,7 +118,6 @@
       "date": "11/3/1987",
       "text": "AC Sparta Praha @ Chelsea",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster16"
   },
@@ -156,13 +144,8 @@
       "potential": "122"
     },
     "cap": {
-<<<<<<< Updated upstream
-      "salary": "$97,443,386",
-      "room": "$2,556,614"
-=======
       "salary": "$69,996,362",
       "room": "$3,638"
->>>>>>> Stashed changes
     },
     "strengths": [
       {
@@ -188,11 +171,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "AFC Richmond 127, @Crystal Palace 116",
-      "boxscoreFile": "box185-1.htm"
-=======
       "date": "10/28/1987",
       "text": "@ACF Fiorentina 116, Inter Milan 98",
       "boxscoreFile": "box9-4.htm"
@@ -262,7 +240,6 @@
       "date": "11/4/1987",
       "text": "Ajax @ AFC Richmond",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster12"
   },
@@ -316,11 +293,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "@Brighton 116, Ajax 104",
-      "boxscoreFile": "box185-2.htm"
-=======
       "date": "10/31/1987",
       "text": "@AC Milan 128, Ajax 109",
       "boxscoreFile": "box12-2.htm"
@@ -329,7 +301,6 @@
       "date": "11/4/1987",
       "text": "Ajax @ AFC Richmond",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster18"
   },
@@ -383,11 +354,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "@Arsenal 134, AC Milan 102",
-      "boxscoreFile": "box185-6.htm"
-=======
       "date": "10/31/1987",
       "text": "Arsenal 124, @AFC Richmond 122",
       "boxscoreFile": "box12-1.htm"
@@ -396,7 +362,6 @@
       "date": "11/4/1987",
       "text": "AC Milan @ Arsenal",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster23"
   },
@@ -450,11 +415,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "Inter Milan 123, @Aston Villa 120",
-      "boxscoreFile": "box185-7.htm"
-=======
       "date": "10/30/1987",
       "text": "@Chelsea 134, Aston Villa 132",
       "boxscoreFile": "box11-3.htm"
@@ -463,7 +423,6 @@
       "date": "11/4/1987",
       "text": "Aston Villa @ FL Fart",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster19"
   },
@@ -517,11 +476,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "Atletico Madrid 107, @Manchester United 99",
-      "boxscoreFile": "box185-9.htm"
-=======
       "date": "10/28/1987",
       "text": "@Valencia 135, Atletico Madrid 130",
       "boxscoreFile": "box9-6.htm"
@@ -530,7 +484,6 @@
       "date": "11/3/1987",
       "text": "Atletico Madrid @ Marseille",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster11"
   },
@@ -584,11 +537,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "Barcelona 130, @Monaco 115",
-      "boxscoreFile": "box185-11.htm"
-=======
       "date": "10/31/1987",
       "text": "Barcelona 121, @FL Fart 110",
       "boxscoreFile": "box12-3.htm"
@@ -597,71 +545,10 @@
       "date": "11/6/1987",
       "text": "Chelsea @ Barcelona",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster24"
   },
   {
-<<<<<<< Updated upstream
-    "id": "roster7",
-    "name": "Bayern Munich",
-    "record": {
-      "wins": 0,
-      "losses": 0,
-      "pct": 0.0
-    },
-    "section": "ELB Standings",
-    "pf": 0.0,
-    "pa": 0.0,
-    "diff": 0.0,
-    "streak": "-",
-    "last10": "7-3",
-    "starPlayer": {
-      "name": "Gerald Henderson",
-      "url": "../players/player890.htm",
-      "pos": "PG",
-      "age": "29",
-      "overall": "124",
-      "potential": "124"
-    },
-    "cap": {
-      "salary": "$68,896,362",
-      "room": "$1,103,638"
-    },
-    "strengths": [
-      {
-        "label": "Points",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "O.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 0.0,
-        "rank": 1
-      },
-      {
-        "label": "Rebounds",
-        "value": 0.0,
-        "rank": 1
-      }
-    ],
-    "injuries": [],
-    "recentGame": {
-      "date": "1987-04-23",
-      "text": "@Chelsea 140, Bayern Munich 108",
-      "boxscoreFile": "box185-5.htm"
-    },
-    "nextGame": null,
-    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster7"
-  },
-  {
-=======
->>>>>>> Stashed changes
     "id": "roster13",
     "name": "Benfica",
     "record": {
@@ -684,13 +571,8 @@
       "potential": "156"
     },
     "cap": {
-<<<<<<< Updated upstream
-      "salary": "$93,362,337",
-      "room": "$6,637,663"
-=======
       "salary": "$96,182,337",
       "room": "$3,817,663"
->>>>>>> Stashed changes
     },
     "strengths": [
       {
@@ -716,11 +598,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "@Benfica 105, Real Madrid 98",
-      "boxscoreFile": "box185-4.htm"
-=======
       "date": "11/1/1987",
       "text": "Benfica 117, @AFC Richmond 92",
       "boxscoreFile": "box13-1.htm"
@@ -729,7 +606,6 @@
       "date": "11/5/1987",
       "text": "Benfica @ Real Madrid",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster13"
   },
@@ -756,13 +632,8 @@
       "potential": "174"
     },
     "cap": {
-<<<<<<< Updated upstream
-      "salary": "$100,340,125",
-      "room": "($340,125)"
-=======
       "salary": "$103,730,125",
       "room": "($3,730,125)"
->>>>>>> Stashed changes
     },
     "strengths": [
       {
@@ -788,11 +659,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "@Brighton 116, Ajax 104",
-      "boxscoreFile": "box185-2.htm"
-=======
       "date": "10/30/1987",
       "text": "@Brighton 138, Ajax 130",
       "boxscoreFile": "box11-2.htm"
@@ -801,7 +667,6 @@
       "date": "11/3/1987",
       "text": "Paris Saint-Germain @ Brighton",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster10"
   },
@@ -855,11 +720,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "@Chelsea 140, Bayern Munich 108",
-      "boxscoreFile": "box185-5.htm"
-=======
       "date": "10/31/1987",
       "text": "Inter Milan 136, @Chelsea 124",
       "boxscoreFile": "box12-4.htm"
@@ -868,7 +728,6 @@
       "date": "11/3/1987",
       "text": "AC Sparta Praha @ Chelsea",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster17"
   },
@@ -895,13 +754,8 @@
       "potential": "157"
     },
     "cap": {
-<<<<<<< Updated upstream
-      "salary": "$58,247,199",
-      "room": "$11,752,801"
-=======
       "salary": "$65,641,199",
       "room": "$4,358,801"
->>>>>>> Stashed changes
     },
     "strengths": [
       {
@@ -927,11 +781,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "AFC Richmond 127, @Crystal Palace 116",
-      "boxscoreFile": "box185-1.htm"
-=======
       "date": "11/1/1987",
       "text": "@Inter Milan 114, Crystal Palace 105",
       "boxscoreFile": "box13-2.htm"
@@ -940,7 +789,6 @@
       "date": "11/3/1987",
       "text": "Crystal Palace @ Inter Milan",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster6"
   },
@@ -967,13 +815,8 @@
       "potential": "142"
     },
     "cap": {
-<<<<<<< Updated upstream
-      "salary": "$66,745,866",
-      "room": "$3,254,134"
-=======
       "salary": "$71,101,750",
       "room": "($1,101,750)"
->>>>>>> Stashed changes
     },
     "strengths": [
       {
@@ -999,11 +842,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "Paris Saint-Germain 113, @FL Fart 81",
-      "boxscoreFile": "box185-3.htm"
-=======
       "date": "10/31/1987",
       "text": "Barcelona 121, @FL Fart 110",
       "boxscoreFile": "box12-3.htm"
@@ -1012,7 +850,6 @@
       "date": "11/4/1987",
       "text": "Aston Villa @ FL Fart",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster27"
   },
@@ -1066,11 +903,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "Inter Milan 123, @Aston Villa 120",
-      "boxscoreFile": "box185-7.htm"
-=======
       "date": "11/1/1987",
       "text": "@Inter Milan 114, Crystal Palace 105",
       "boxscoreFile": "box13-2.htm"
@@ -1079,7 +911,6 @@
       "date": "11/3/1987",
       "text": "Crystal Palace @ Inter Milan",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster26"
   },
@@ -1133,11 +964,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "@Juventus 126, Tottenham Hotspur 96",
-      "boxscoreFile": "box185-10.htm"
-=======
       "date": "11/1/1987",
       "text": "@Tottenham Hotspur 109, Juventus 93",
       "boxscoreFile": "box13-3.htm"
@@ -1146,7 +972,6 @@
       "date": "11/4/1987",
       "text": "Juventus @ Tottenham Hotspur",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster14"
   },
@@ -1200,11 +1025,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "@Valencia 109, Manchester City 94",
-      "boxscoreFile": "box185-12.htm"
-=======
       "date": "10/28/1987",
       "text": "@Tottenham Hotspur 97, Manchester City 85",
       "boxscoreFile": "box9-7.htm"
@@ -1213,7 +1033,6 @@
       "date": "11/3/1987",
       "text": "Manchester United @ Manchester City",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster28"
   },
@@ -1232,21 +1051,12 @@
     "streak": "-",
     "last10": "1-4",
     "starPlayer": {
-<<<<<<< Updated upstream
-      "name": "Mike McGee",
-      "url": "../players/player736.htm",
-      "pos": "SF",
-      "age": "26",
-      "overall": "125",
-      "potential": "130"
-=======
       "name": "Tony Parker",
       "url": "../players/player1327.htm",
       "pos": "SG",
       "age": "22",
       "overall": "121",
       "potential": "125"
->>>>>>> Stashed changes
     },
     "cap": {
       "salary": "$53,204,566",
@@ -1276,11 +1086,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "Atletico Madrid 107, @Manchester United 99",
-      "boxscoreFile": "box185-9.htm"
-=======
       "date": "10/30/1987",
       "text": "@Monaco 99, Manchester United 80",
       "boxscoreFile": "box11-5.htm"
@@ -1289,7 +1094,6 @@
       "date": "11/3/1987",
       "text": "Manchester United @ Manchester City",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster5"
   },
@@ -1343,11 +1147,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "AC Sparta Praha 129, @Marseille 127",
-      "boxscoreFile": "box185-8.htm"
-=======
       "date": "11/1/1987",
       "text": "@Valencia 121, Marseille 107",
       "boxscoreFile": "box13-4.htm"
@@ -1356,7 +1155,6 @@
       "date": "11/3/1987",
       "text": "Atletico Madrid @ Marseille",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster15"
   },
@@ -1410,11 +1208,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "Barcelona 130, @Monaco 115",
-      "boxscoreFile": "box185-11.htm"
-=======
       "date": "10/31/1987",
       "text": "Monaco 125, @Marseille 103",
       "boxscoreFile": "box12-5.htm"
@@ -1423,7 +1216,6 @@
       "date": "11/4/1987",
       "text": "Valencia @ Monaco",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster20"
   },
@@ -1450,13 +1242,8 @@
       "potential": "156"
     },
     "cap": {
-<<<<<<< Updated upstream
-      "salary": "$97,925,000",
-      "room": "$2,075,000"
-=======
       "salary": "$106,005,000",
       "room": "($6,005,000)"
->>>>>>> Stashed changes
     },
     "strengths": [
       {
@@ -1482,11 +1269,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "Paris Saint-Germain 113, @FL Fart 81",
-      "boxscoreFile": "box185-3.htm"
-=======
       "date": "10/29/1987",
       "text": "Paris Saint-Germain 120, @Brighton 116",
       "boxscoreFile": "box10-1.htm"
@@ -1495,7 +1277,6 @@
       "date": "11/3/1987",
       "text": "Paris Saint-Germain @ Brighton",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster21"
   },
@@ -1549,11 +1330,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "@Benfica 105, Real Madrid 98",
-      "boxscoreFile": "box185-4.htm"
-=======
       "date": "10/28/1987",
       "text": "Real Madrid 124, @Ajax 111",
       "boxscoreFile": "box9-2.htm"
@@ -1562,7 +1338,6 @@
       "date": "11/5/1987",
       "text": "Benfica @ Real Madrid",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster8"
   },
@@ -1589,13 +1364,8 @@
       "potential": "144"
     },
     "cap": {
-<<<<<<< Updated upstream
-      "salary": "$50,614,151",
-      "room": "($614,151)"
-=======
       "salary": "$48,371,750",
       "room": "$1,628,250"
->>>>>>> Stashed changes
     },
     "strengths": [
       {
@@ -1621,11 +1391,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "@Juventus 126, Tottenham Hotspur 96",
-      "boxscoreFile": "box185-10.htm"
-=======
       "date": "11/1/1987",
       "text": "@Tottenham Hotspur 109, Juventus 93",
       "boxscoreFile": "box13-3.htm"
@@ -1634,7 +1399,6 @@
       "date": "11/4/1987",
       "text": "Juventus @ Tottenham Hotspur",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster22"
   },
@@ -1688,11 +1452,6 @@
     ],
     "injuries": [],
     "recentGame": {
-<<<<<<< Updated upstream
-      "date": "1987-04-23",
-      "text": "@Valencia 109, Manchester City 94",
-      "boxscoreFile": "box185-12.htm"
-=======
       "date": "11/1/1987",
       "text": "@Valencia 121, Marseille 107",
       "boxscoreFile": "box13-4.htm"
@@ -1701,7 +1460,6 @@
       "date": "11/4/1987",
       "text": "Valencia @ Monaco",
       "boxscoreFile": ""
->>>>>>> Stashed changes
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster25"
   }

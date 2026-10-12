@@ -2883,11 +2883,7 @@
     "id": "player892",
     "name": "Alvan Adams",
     "teamId": "roster7",
-<<<<<<< Updated upstream
-    "team": "Bayern Munich",
-=======
     "team": "ACF Fiorentina",
->>>>>>> Stashed changes
     "pos": "PF",
     "statLine": "11.6 PTS, 4.8 DRB, 5.3 AST, 1.2 STL, 0.7 BLK in 29.8 MIN",
     "season": {
@@ -18606,8 +18602,8 @@
   {
     "id": "player439",
     "name": "Damon Stoudamire",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster21",
+    "team": "Paris Saint-Germain",
     "pos": "PG",
     "statLine": "5.0 PTS, 0.9 DRB, 2.6 AST, 0.4 STL, 0.0 BLK in 12.0 MIN",
     "season": {
@@ -28087,11 +28083,7 @@
     "id": "player45",
     "name": "Eric Snow",
     "teamId": "roster7",
-<<<<<<< Updated upstream
-    "team": "Bayern Munich",
-=======
     "team": "ACF Fiorentina",
->>>>>>> Stashed changes
     "pos": "PG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -32591,11 +32583,7 @@
     "id": "player890",
     "name": "Gerald Henderson",
     "teamId": "roster7",
-<<<<<<< Updated upstream
-    "team": "Bayern Munich",
-=======
     "team": "ACF Fiorentina",
->>>>>>> Stashed changes
     "pos": "PG",
     "statLine": "7.6 PTS, 1.0 DRB, 3.5 AST, 1.6 STL, 0.1 BLK in 16.1 MIN",
     "season": {
@@ -33255,11 +33243,7 @@
     "id": "player934",
     "name": "Glen Gondrezick",
     "teamId": "roster7",
-<<<<<<< Updated upstream
-    "team": "Bayern Munich",
-=======
     "team": "ACF Fiorentina",
->>>>>>> Stashed changes
     "pos": "PF",
     "statLine": "8.6 PTS, 4.1 DRB, 2.4 AST, 1.8 STL, 0.1 BLK in 24.5 MIN",
     "season": {
@@ -33618,8 +33602,8 @@
   {
     "id": "player1512",
     "name": "Goran Dragic",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster10",
+    "team": "Brighton",
     "pos": "PG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -34999,11 +34983,7 @@
     "id": "player171",
     "name": "Hamed Haddadi",
     "teamId": "roster7",
-<<<<<<< Updated upstream
-    "team": "Bayern Munich",
-=======
     "team": "ACF Fiorentina",
->>>>>>> Stashed changes
     "pos": "C",
     "statLine": "4.3 PTS, 3.3 DRB, 0.9 AST, 0.2 STL, 1.8 BLK in 18.6 MIN",
     "season": {
@@ -53183,11 +53163,7 @@
     "id": "player740",
     "name": "Kurt Rambis",
     "teamId": "roster7",
-<<<<<<< Updated upstream
-    "team": "Bayern Munich",
-=======
     "team": "ACF Fiorentina",
->>>>>>> Stashed changes
     "pos": "PF",
     "statLine": "9.8 PTS, 4.8 DRB, 1.5 AST, 1.6 STL, 0.9 BLK in 27.9 MIN",
     "season": {
@@ -60807,11 +60783,7 @@
     "id": "player1081",
     "name": "Michael Brooks",
     "teamId": "roster7",
-<<<<<<< Updated upstream
-    "team": "Bayern Munich",
-=======
     "team": "ACF Fiorentina",
->>>>>>> Stashed changes
     "pos": "SF",
     "statLine": "7.3 PTS, 1.7 DRB, 0.9 AST, 0.5 STL, 0.1 BLK in 11.9 MIN",
     "season": {
@@ -80611,11 +80583,7 @@
     "id": "player254",
     "name": "Theo Ratliff",
     "teamId": "roster7",
-<<<<<<< Updated upstream
-    "team": "Bayern Munich",
-=======
     "team": "ACF Fiorentina",
->>>>>>> Stashed changes
     "pos": "C",
     "statLine": "6.2 PTS, 5.1 DRB, 1.2 AST, 0.3 STL, 4.4 BLK in 28.3 MIN",
     "season": {
