@@ -1,4 +1,93 @@
 {
     "source": "injuries.htm",
-    "injuries": []
+    "injuries": [
+        {
+            "pos": "SF",
+            "name": "Xavier McDaniel",
+            "url": "",
+            "team": "roster19",
+            "teamName": "Aston Villa",
+            "rosterUrl": "./rosters/roster19.htm",
+            "length": "59",
+            "injury": "Broken Arm",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PG",
+            "name": "Darrick Martin",
+            "url": "",
+            "team": "roster16",
+            "teamName": "AC Sparta Praha",
+            "rosterUrl": "./rosters/roster16.htm",
+            "length": "36",
+            "injury": "Broken Foot",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "PG",
+            "name": "Alex Caruso",
+            "url": "",
+            "team": "roster17",
+            "teamName": "Chelsea",
+            "rosterUrl": "./rosters/roster17.htm",
+            "length": "24",
+            "injury": "Broken Foot",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "SF",
+            "name": "Reggie Theus",
+            "url": "",
+            "team": "roster23",
+            "teamName": "Arsenal",
+            "rosterUrl": "./rosters/roster23.htm",
+            "length": "21",
+            "injury": "Sprained Ankle",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "PG",
+            "name": "Tony Parker",
+            "url": "",
+            "team": "roster5",
+            "teamName": "Manchester United",
+            "rosterUrl": "./rosters/roster5.htm",
+            "length": "18",
+            "injury": "Broken Cheekbone",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "SG",
+            "name": "Billy Knight",
+            "url": "",
+            "team": "roster14",
+            "teamName": "Juventus",
+            "rosterUrl": "./rosters/roster14.htm",
+            "length": "17",
+            "injury": "Torn Abdominal Muscle",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "PG",
+            "name": "Wes Matthews",
+            "url": "",
+            "team": "roster7",
+            "teamName": "ACF Fiorentina",
+            "rosterUrl": "./rosters/roster7.htm",
+            "length": "6",
+            "injury": "Bruised Jaw",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "C",
+            "name": "Joe Barry Carroll",
+            "url": "",
+            "team": "roster9",
+            "teamName": "AC Milan",
+            "rosterUrl": "./rosters/roster9.htm",
+            "length": "4",
+            "injury": "Sprained Ankle",
+            "rowClass": "row2"
+        }
+    ]
 }

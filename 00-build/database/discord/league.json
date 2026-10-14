@@ -6,22 +6,22 @@
       "title": "CLB Standings",
       "teams": [
         {
-          "name": "Real Madrid",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "name": "Benfica",
+          "wins": 5,
+          "losses": 1,
+          "streak": "W1"
         },
         {
-          "name": "AC Milan",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "name": "Arsenal",
+          "wins": 5,
+          "losses": 1,
+          "streak": "L1"
         },
         {
-          "name": "Brighton",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "name": "Paris Saint-Germain",
+          "wins": 4,
+          "losses": 3,
+          "streak": "W1"
         }
       ]
     },
@@ -29,22 +29,22 @@
       "title": "ELB Standings",
       "teams": [
         {
-          "name": "Crystal Palace",
-          "wins": 0,
+          "name": "Barcelona",
+          "wins": 7,
           "losses": 0,
-          "streak": "-"
+          "streak": "W7"
         },
         {
           "name": "ACF Fiorentina",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "wins": 5,
+          "losses": 2,
+          "streak": "W3"
         },
         {
-          "name": "AC Sparta Praha",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "name": "Inter Milan",
+          "wins": 5,
+          "losses": 2,
+          "streak": "L1"
         }
       ]
     },
@@ -52,25 +52,56 @@
       "title": "ECL Standings",
       "teams": [
         {
-          "name": "Manchester United",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "name": "Tottenham Hotspur",
+          "wins": 7,
+          "losses": 1,
+          "streak": "W1"
         },
         {
-          "name": "Atletico Madrid",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "name": "Valencia",
+          "wins": 5,
+          "losses": 2,
+          "streak": "W1"
         },
         {
-          "name": "Juventus",
-          "wins": 0,
-          "losses": 0,
-          "streak": "-"
+          "name": "Manchester City",
+          "wins": 5,
+          "losses": 4,
+          "streak": "W3"
         }
       ]
     }
   ],
-  "leaders": []
+  "leaders": [
+    {
+      "category": "Minutes",
+      "player": "Jay Vincent",
+      "team": "Real Madrid",
+      "value": "46.0"
+    },
+    {
+      "category": "Points",
+      "player": "Chris Bosh",
+      "team": "Arsenal",
+      "value": "34.3"
+    },
+    {
+      "category": "Rebounds",
+      "player": "Bill Laimbeer",
+      "team": "Paris Saint-Germain",
+      "value": "13.4"
+    },
+    {
+      "category": "Assists",
+      "player": "Allen Leavell",
+      "team": "Real Madrid",
+      "value": "12.3"
+    },
+    {
+      "category": "Steals",
+      "player": "Dan Majerle",
+      "team": "AC Milan",
+      "value": "3.0"
+    }
+  ]
 }
