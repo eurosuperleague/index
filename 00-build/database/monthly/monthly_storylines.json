@@ -39,7 +39,7 @@
             "data": {
                 "section": "Regular Season",
                 "sectionSlug": "regular-season",
-                "date": "15/11/1987",
+                "date": "11/15/1987",
                 "matchupText": "Real Madrid 141, @Ajax 87",
                 "boxscoreUrl": "./boxes/box27-1.htm",
                 "boxscoreFile": "box27-1.htm",
@@ -69,7 +69,7 @@
                 "streak": "W7",
                 "avgMargin": 19.14,
                 "bestWin": {
-                    "date": "15/11/1987",
+                    "date": "11/15/1987",
                     "opponent": "Chelsea",
                     "result": "W",
                     "margin": 34,
@@ -90,7 +90,7 @@
             "data": {
                 "section": "Regular Season",
                 "sectionSlug": "regular-season",
-                "date": "8/11/1987",
+                "date": "11/8/1987",
                 "matchupText": "@Inter Milan 92, ACF Fiorentina 91",
                 "boxscoreUrl": "./boxes/box20-2.htm",
                 "boxscoreFile": "box20-2.htm",
@@ -120,7 +120,7 @@
                 "streak": "L7",
                 "avgMargin": -19.57,
                 "worstLoss": {
-                    "date": "25/11/1987",
+                    "date": "11/25/1987",
                     "opponent": "FL Fart",
                     "result": "L",
                     "margin": 39,
@@ -141,7 +141,7 @@
             "data": {
                 "section": "Regular Season",
                 "sectionSlug": "regular-season",
-                "date": "21/11/1987",
+                "date": "11/21/1987",
                 "matchupText": "@Ajax 114, Benfica 109",
                 "boxscoreUrl": "./boxes/box33-2.htm",
                 "boxscoreFile": "box33-2.htm",

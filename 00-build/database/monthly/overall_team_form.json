@@ -23,7 +23,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "5/11/1987",
+                        "date": "11/5/1987",
                         "opponent": "Real Madrid",
                         "result": "W",
                         "margin": 25,
@@ -32,7 +32,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "10/11/1987",
+                        "date": "11/10/1987",
                         "opponent": "AFC Richmond",
                         "result": "W",
                         "margin": 7,
@@ -41,7 +41,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "14/11/1987",
+                        "date": "11/14/1987",
                         "opponent": "AFC Richmond",
                         "result": "W",
                         "margin": 6,
@@ -50,7 +50,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "16/11/1987",
+                        "date": "11/16/1987",
                         "opponent": "AFC Richmond",
                         "result": "W",
                         "margin": 6,
@@ -59,7 +59,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Ajax",
                         "result": "L",
                         "margin": 5,
@@ -68,7 +68,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Real Madrid",
                         "result": "W",
                         "margin": 23,
@@ -78,7 +78,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "5/11/1987",
+                    "date": "11/5/1987",
                     "opponent": "Real Madrid",
                     "result": "W",
                     "margin": 25,
@@ -87,7 +87,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "21/11/1987",
+                    "date": "11/21/1987",
                     "opponent": "Ajax",
                     "result": "L",
                     "margin": 5,
@@ -97,7 +97,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Ajax",
                         "result": "L",
                         "margin": 5,
@@ -108,7 +108,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "5/11/1987",
+                        "date": "11/5/1987",
                         "opponent": "Real Madrid",
                         "result": "W",
                         "margin": 25,
@@ -117,7 +117,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Real Madrid",
                         "result": "W",
                         "margin": 23,
@@ -149,7 +149,7 @@
                 "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "AC Milan",
                         "result": "W",
                         "margin": 5,
@@ -158,7 +158,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "9/11/1987",
+                        "date": "11/9/1987",
                         "opponent": "AFC Richmond",
                         "result": "W",
                         "margin": 28,
@@ -167,7 +167,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 5,
@@ -176,7 +176,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "17/11/1987",
+                        "date": "11/17/1987",
                         "opponent": "Brighton",
                         "result": "W",
                         "margin": 1,
@@ -185,7 +185,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Brighton",
                         "result": "W",
                         "margin": 15,
@@ -194,7 +194,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "27/11/1987",
+                        "date": "11/27/1987",
                         "opponent": "Paris Saint-Germain",
                         "result": "L",
                         "margin": 1,
@@ -204,7 +204,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "9/11/1987",
+                    "date": "11/9/1987",
                     "opponent": "AFC Richmond",
                     "result": "W",
                     "margin": 28,
@@ -213,7 +213,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "27/11/1987",
+                    "date": "11/27/1987",
                     "opponent": "Paris Saint-Germain",
                     "result": "L",
                     "margin": 1,
@@ -223,7 +223,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "AC Milan",
                         "result": "W",
                         "margin": 5,
@@ -232,7 +232,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 5,
@@ -241,7 +241,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "17/11/1987",
+                        "date": "11/17/1987",
                         "opponent": "Brighton",
                         "result": "W",
                         "margin": 1,
@@ -250,7 +250,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "27/11/1987",
+                        "date": "11/27/1987",
                         "opponent": "Paris Saint-Germain",
                         "result": "L",
                         "margin": 1,
@@ -261,7 +261,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "9/11/1987",
+                        "date": "11/9/1987",
                         "opponent": "AFC Richmond",
                         "result": "W",
                         "margin": 28,
@@ -270,7 +270,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Brighton",
                         "result": "W",
                         "margin": 15,
@@ -302,7 +302,7 @@
                 "streak": "W2",
                 "recentResults": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 13,
@@ -311,7 +311,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "9/11/1987",
+                        "date": "11/9/1987",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 28,
@@ -320,7 +320,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "10/11/1987",
+                        "date": "11/10/1987",
                         "opponent": "Benfica",
                         "result": "L",
                         "margin": 7,
@@ -329,7 +329,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "14/11/1987",
+                        "date": "11/14/1987",
                         "opponent": "Benfica",
                         "result": "L",
                         "margin": 6,
@@ -338,7 +338,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "16/11/1987",
+                        "date": "11/16/1987",
                         "opponent": "Benfica",
                         "result": "L",
                         "margin": 6,
@@ -347,7 +347,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "20/11/1987",
+                        "date": "11/20/1987",
                         "opponent": "Real Madrid",
                         "result": "W",
                         "margin": 5,
@@ -356,7 +356,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "22/11/1987",
+                        "date": "11/22/1987",
                         "opponent": "Paris Saint-Germain",
                         "result": "L",
                         "margin": 2,
@@ -365,7 +365,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "26/11/1987",
+                        "date": "11/26/1987",
                         "opponent": "AC Milan",
                         "result": "W",
                         "margin": 2,
@@ -374,7 +374,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "30/11/1987",
+                        "date": "11/30/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 27,
@@ -384,7 +384,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "30/11/1987",
+                    "date": "11/30/1987",
                     "opponent": "Ajax",
                     "result": "W",
                     "margin": 27,
@@ -393,7 +393,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "9/11/1987",
+                    "date": "11/9/1987",
                     "opponent": "Arsenal",
                     "result": "L",
                     "margin": 28,
@@ -403,7 +403,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "20/11/1987",
+                        "date": "11/20/1987",
                         "opponent": "Real Madrid",
                         "result": "W",
                         "margin": 5,
@@ -412,7 +412,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "22/11/1987",
+                        "date": "11/22/1987",
                         "opponent": "Paris Saint-Germain",
                         "result": "L",
                         "margin": 2,
@@ -421,7 +421,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "26/11/1987",
+                        "date": "11/26/1987",
                         "opponent": "AC Milan",
                         "result": "W",
                         "margin": 2,
@@ -432,7 +432,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "30/11/1987",
+                        "date": "11/30/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 27,
@@ -443,7 +443,7 @@
                 ],
                 "blowoutLosses": [
                     {
-                        "date": "9/11/1987",
+                        "date": "11/9/1987",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 28,
@@ -474,7 +474,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "Brighton",
                         "result": "L",
                         "margin": 13,
@@ -483,7 +483,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 22,
@@ -492,7 +492,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "14/11/1987",
+                        "date": "11/14/1987",
                         "opponent": "Real Madrid",
                         "result": "W",
                         "margin": 12,
@@ -501,7 +501,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "18/11/1987",
+                        "date": "11/18/1987",
                         "opponent": "AC Milan",
                         "result": "L",
                         "margin": 5,
@@ -510,7 +510,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "22/11/1987",
+                        "date": "11/22/1987",
                         "opponent": "AFC Richmond",
                         "result": "W",
                         "margin": 2,
@@ -519,7 +519,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "23/11/1987",
+                        "date": "11/23/1987",
                         "opponent": "Brighton",
                         "result": "L",
                         "margin": 22,
@@ -528,7 +528,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "27/11/1987",
+                        "date": "11/27/1987",
                         "opponent": "Arsenal",
                         "result": "W",
                         "margin": 1,
@@ -538,7 +538,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "8/11/1987",
+                    "date": "11/8/1987",
                     "opponent": "Ajax",
                     "result": "W",
                     "margin": 22,
@@ -547,7 +547,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "23/11/1987",
+                    "date": "11/23/1987",
                     "opponent": "Brighton",
                     "result": "L",
                     "margin": 22,
@@ -557,7 +557,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "18/11/1987",
+                        "date": "11/18/1987",
                         "opponent": "AC Milan",
                         "result": "L",
                         "margin": 5,
@@ -566,7 +566,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "22/11/1987",
+                        "date": "11/22/1987",
                         "opponent": "AFC Richmond",
                         "result": "W",
                         "margin": 2,
@@ -575,7 +575,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "27/11/1987",
+                        "date": "11/27/1987",
                         "opponent": "Arsenal",
                         "result": "W",
                         "margin": 1,
@@ -586,7 +586,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 22,
@@ -597,7 +597,7 @@
                 ],
                 "blowoutLosses": [
                     {
-                        "date": "23/11/1987",
+                        "date": "11/23/1987",
                         "opponent": "Brighton",
                         "result": "L",
                         "margin": 22,
@@ -628,7 +628,7 @@
                 "streak": "L3",
                 "recentResults": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 5,
@@ -637,7 +637,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "9/11/1987",
+                        "date": "11/9/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 37,
@@ -646,7 +646,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Brighton",
                         "result": "W",
                         "margin": 7,
@@ -655,7 +655,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "18/11/1987",
+                        "date": "11/18/1987",
                         "opponent": "Paris Saint-Germain",
                         "result": "W",
                         "margin": 5,
@@ -664,7 +664,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Ajax",
                         "result": "L",
                         "margin": 6,
@@ -673,7 +673,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "26/11/1987",
+                        "date": "11/26/1987",
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 2,
@@ -682,7 +682,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "30/11/1987",
+                        "date": "11/30/1987",
                         "opponent": "Real Madrid",
                         "result": "L",
                         "margin": 6,
@@ -692,7 +692,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "9/11/1987",
+                    "date": "11/9/1987",
                     "opponent": "Ajax",
                     "result": "W",
                     "margin": 37,
@@ -701,7 +701,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "25/11/1987",
+                    "date": "11/25/1987",
                     "opponent": "Ajax",
                     "result": "L",
                     "margin": 6,
@@ -711,7 +711,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 5,
@@ -720,7 +720,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "18/11/1987",
+                        "date": "11/18/1987",
                         "opponent": "Paris Saint-Germain",
                         "result": "W",
                         "margin": 5,
@@ -729,7 +729,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "26/11/1987",
+                        "date": "11/26/1987",
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 2,
@@ -740,7 +740,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "9/11/1987",
+                        "date": "11/9/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 37,
@@ -772,7 +772,7 @@
                 "streak": "W2",
                 "recentResults": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "Paris Saint-Germain",
                         "result": "W",
                         "margin": 13,
@@ -781,7 +781,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "9/11/1987",
+                        "date": "11/9/1987",
                         "opponent": "Real Madrid",
                         "result": "L",
                         "margin": 8,
@@ -790,7 +790,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "AC Milan",
                         "result": "L",
                         "margin": 7,
@@ -799,7 +799,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "17/11/1987",
+                        "date": "11/17/1987",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 1,
@@ -808,7 +808,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 15,
@@ -817,7 +817,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "23/11/1987",
+                        "date": "11/23/1987",
                         "opponent": "Paris Saint-Germain",
                         "result": "W",
                         "margin": 22,
@@ -826,7 +826,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "29/11/1987",
+                        "date": "11/29/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 18,
@@ -836,7 +836,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "23/11/1987",
+                    "date": "11/23/1987",
                     "opponent": "Paris Saint-Germain",
                     "result": "W",
                     "margin": 22,
@@ -845,7 +845,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "21/11/1987",
+                    "date": "11/21/1987",
                     "opponent": "Arsenal",
                     "result": "L",
                     "margin": 15,
@@ -855,7 +855,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "17/11/1987",
+                        "date": "11/17/1987",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 1,
@@ -866,7 +866,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "23/11/1987",
+                        "date": "11/23/1987",
                         "opponent": "Paris Saint-Germain",
                         "result": "W",
                         "margin": 22,
@@ -875,7 +875,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "29/11/1987",
+                        "date": "11/29/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 18,
@@ -886,7 +886,7 @@
                 ],
                 "blowoutLosses": [
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 15,
@@ -917,7 +917,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "5/11/1987",
+                        "date": "11/5/1987",
                         "opponent": "Benfica",
                         "result": "L",
                         "margin": 25,
@@ -926,7 +926,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "9/11/1987",
+                        "date": "11/9/1987",
                         "opponent": "Brighton",
                         "result": "W",
                         "margin": 8,
@@ -935,7 +935,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "14/11/1987",
+                        "date": "11/14/1987",
                         "opponent": "Paris Saint-Germain",
                         "result": "L",
                         "margin": 12,
@@ -944,7 +944,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 54,
@@ -953,7 +953,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "20/11/1987",
+                        "date": "11/20/1987",
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 5,
@@ -962,7 +962,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Benfica",
                         "result": "L",
                         "margin": 23,
@@ -971,7 +971,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "30/11/1987",
+                        "date": "11/30/1987",
                         "opponent": "AC Milan",
                         "result": "W",
                         "margin": 6,
@@ -981,7 +981,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "15/11/1987",
+                    "date": "11/15/1987",
                     "opponent": "Ajax",
                     "result": "W",
                     "margin": 54,
@@ -990,7 +990,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "5/11/1987",
+                    "date": "11/5/1987",
                     "opponent": "Benfica",
                     "result": "L",
                     "margin": 25,
@@ -1000,7 +1000,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "20/11/1987",
+                        "date": "11/20/1987",
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 5,
@@ -1011,7 +1011,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "Ajax",
                         "result": "W",
                         "margin": 54,
@@ -1022,7 +1022,7 @@
                 ],
                 "blowoutLosses": [
                     {
-                        "date": "5/11/1987",
+                        "date": "11/5/1987",
                         "opponent": "Benfica",
                         "result": "L",
                         "margin": 25,
@@ -1031,7 +1031,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Benfica",
                         "result": "L",
                         "margin": 23,
@@ -1062,7 +1062,7 @@
                 "streak": "L2",
                 "recentResults": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 13,
@@ -1071,7 +1071,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Paris Saint-Germain",
                         "result": "L",
                         "margin": 22,
@@ -1080,7 +1080,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "9/11/1987",
+                        "date": "11/9/1987",
                         "opponent": "AC Milan",
                         "result": "L",
                         "margin": 37,
@@ -1089,7 +1089,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 5,
@@ -1098,7 +1098,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "Real Madrid",
                         "result": "L",
                         "margin": 54,
@@ -1107,7 +1107,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Benfica",
                         "result": "W",
                         "margin": 5,
@@ -1116,7 +1116,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "AC Milan",
                         "result": "W",
                         "margin": 6,
@@ -1125,7 +1125,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "29/11/1987",
+                        "date": "11/29/1987",
                         "opponent": "Brighton",
                         "result": "L",
                         "margin": 18,
@@ -1134,7 +1134,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "30/11/1987",
+                        "date": "11/30/1987",
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 27,
@@ -1144,7 +1144,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "25/11/1987",
+                    "date": "11/25/1987",
                     "opponent": "AC Milan",
                     "result": "W",
                     "margin": 6,
@@ -1153,7 +1153,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "15/11/1987",
+                    "date": "11/15/1987",
                     "opponent": "Real Madrid",
                     "result": "L",
                     "margin": 54,
@@ -1163,7 +1163,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Arsenal",
                         "result": "L",
                         "margin": 5,
@@ -1172,7 +1172,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Benfica",
                         "result": "W",
                         "margin": 5,
@@ -1184,7 +1184,7 @@
                 "blowoutWins": [],
                 "blowoutLosses": [
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Paris Saint-Germain",
                         "result": "L",
                         "margin": 22,
@@ -1193,7 +1193,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "9/11/1987",
+                        "date": "11/9/1987",
                         "opponent": "AC Milan",
                         "result": "L",
                         "margin": 37,
@@ -1202,7 +1202,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "Real Madrid",
                         "result": "L",
                         "margin": 54,
@@ -1211,7 +1211,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "29/11/1987",
+                        "date": "11/29/1987",
                         "opponent": "Brighton",
                         "result": "L",
                         "margin": 18,
@@ -1220,7 +1220,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "30/11/1987",
+                        "date": "11/30/1987",
                         "opponent": "AFC Richmond",
                         "result": "L",
                         "margin": 27,
@@ -1253,7 +1253,7 @@
                 "streak": "W7",
                 "recentResults": [
                     {
-                        "date": "6/11/1987",
+                        "date": "11/6/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 32,
@@ -1262,7 +1262,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "10/11/1987",
+                        "date": "11/10/1987",
                         "opponent": "Aston Villa",
                         "result": "W",
                         "margin": 10,
@@ -1271,7 +1271,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 34,
@@ -1280,7 +1280,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "FL Fart",
                         "result": "W",
                         "margin": 3,
@@ -1289,7 +1289,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Crystal Palace",
                         "result": "W",
                         "margin": 14,
@@ -1298,7 +1298,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "26/11/1987",
+                        "date": "11/26/1987",
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 29,
@@ -1307,7 +1307,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "30/11/1987",
+                        "date": "11/30/1987",
                         "opponent": "FL Fart",
                         "result": "W",
                         "margin": 12,
@@ -1317,7 +1317,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "15/11/1987",
+                    "date": "11/15/1987",
                     "opponent": "Chelsea",
                     "result": "W",
                     "margin": 34,
@@ -1328,7 +1328,7 @@
                 "worstLoss": null,
                 "closeGames": [
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "FL Fart",
                         "result": "W",
                         "margin": 3,
@@ -1339,7 +1339,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "6/11/1987",
+                        "date": "11/6/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 32,
@@ -1348,7 +1348,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 34,
@@ -1357,7 +1357,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "26/11/1987",
+                        "date": "11/26/1987",
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 29,
@@ -1389,7 +1389,7 @@
                 "streak": "W3",
                 "recentResults": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 29,
@@ -1398,7 +1398,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Inter Milan",
                         "result": "L",
                         "margin": 1,
@@ -1407,7 +1407,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "10/11/1987",
+                        "date": "11/10/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 10,
@@ -1416,7 +1416,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "FL Fart",
                         "result": "L",
                         "margin": 27,
@@ -1425,7 +1425,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "17/11/1987",
+                        "date": "11/17/1987",
                         "opponent": "Inter Milan",
                         "result": "W",
                         "margin": 16,
@@ -1434,7 +1434,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "22/11/1987",
+                        "date": "11/22/1987",
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 8,
@@ -1443,7 +1443,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "27/11/1987",
+                        "date": "11/27/1987",
                         "opponent": "Inter Milan",
                         "result": "W",
                         "margin": 10,
@@ -1453,7 +1453,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "4/11/1987",
+                    "date": "11/4/1987",
                     "opponent": "AC Sparta Praha",
                     "result": "W",
                     "margin": 29,
@@ -1462,7 +1462,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "15/11/1987",
+                    "date": "11/15/1987",
                     "opponent": "FL Fart",
                     "result": "L",
                     "margin": 27,
@@ -1472,7 +1472,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Inter Milan",
                         "result": "L",
                         "margin": 1,
@@ -1483,7 +1483,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 29,
@@ -1492,7 +1492,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "17/11/1987",
+                        "date": "11/17/1987",
                         "opponent": "Inter Milan",
                         "result": "W",
                         "margin": 16,
@@ -1503,7 +1503,7 @@
                 ],
                 "blowoutLosses": [
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "FL Fart",
                         "result": "L",
                         "margin": 27,
@@ -1534,7 +1534,7 @@
                 "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "Crystal Palace",
                         "result": "W",
                         "margin": 9,
@@ -1543,7 +1543,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 1,
@@ -1552,7 +1552,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "12/11/1987",
+                        "date": "11/12/1987",
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 12,
@@ -1561,7 +1561,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "17/11/1987",
+                        "date": "11/17/1987",
                         "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 16,
@@ -1570,7 +1570,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 15,
@@ -1579,7 +1579,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "26/11/1987",
+                        "date": "11/26/1987",
                         "opponent": "Aston Villa",
                         "result": "W",
                         "margin": 14,
@@ -1588,7 +1588,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "27/11/1987",
+                        "date": "11/27/1987",
                         "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 10,
@@ -1598,7 +1598,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "21/11/1987",
+                    "date": "11/21/1987",
                     "opponent": "Chelsea",
                     "result": "W",
                     "margin": 15,
@@ -1607,7 +1607,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "17/11/1987",
+                    "date": "11/17/1987",
                     "opponent": "ACF Fiorentina",
                     "result": "L",
                     "margin": 16,
@@ -1617,7 +1617,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 1,
@@ -1628,7 +1628,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 15,
@@ -1639,7 +1639,7 @@
                 ],
                 "blowoutLosses": [
                     {
-                        "date": "17/11/1987",
+                        "date": "11/17/1987",
                         "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 16,
@@ -1670,7 +1670,7 @@
                 "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "Aston Villa",
                         "result": "W",
                         "margin": 11,
@@ -1679,7 +1679,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "6/11/1987",
+                        "date": "11/6/1987",
                         "opponent": "Crystal Palace",
                         "result": "L",
                         "margin": 7,
@@ -1697,7 +1697,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 27,
@@ -1706,7 +1706,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "16/11/1987",
+                        "date": "11/16/1987",
                         "opponent": "Crystal Palace",
                         "result": "L",
                         "margin": 2,
@@ -1715,7 +1715,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Barcelona",
                         "result": "L",
                         "margin": 3,
@@ -1724,7 +1724,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 39,
@@ -1733,7 +1733,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "30/11/1987",
+                        "date": "11/30/1987",
                         "opponent": "Barcelona",
                         "result": "L",
                         "margin": 12,
@@ -1743,7 +1743,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "25/11/1987",
+                    "date": "11/25/1987",
                     "opponent": "Chelsea",
                     "result": "W",
                     "margin": 39,
@@ -1752,7 +1752,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "30/11/1987",
+                    "date": "11/30/1987",
                     "opponent": "Barcelona",
                     "result": "L",
                     "margin": 12,
@@ -1762,7 +1762,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "16/11/1987",
+                        "date": "11/16/1987",
                         "opponent": "Crystal Palace",
                         "result": "L",
                         "margin": 2,
@@ -1771,7 +1771,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Barcelona",
                         "result": "L",
                         "margin": 3,
@@ -1782,7 +1782,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "ACF Fiorentina",
                         "result": "W",
                         "margin": 27,
@@ -1791,7 +1791,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 39,
@@ -1823,7 +1823,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "FL Fart",
                         "result": "L",
                         "margin": 11,
@@ -1832,7 +1832,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "10/11/1987",
+                        "date": "11/10/1987",
                         "opponent": "Barcelona",
                         "result": "L",
                         "margin": 10,
@@ -1841,7 +1841,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "16/11/1987",
+                        "date": "11/16/1987",
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 43,
@@ -1850,7 +1850,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "20/11/1987",
+                        "date": "11/20/1987",
                         "opponent": "Crystal Palace",
                         "result": "W",
                         "margin": 7,
@@ -1859,7 +1859,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "26/11/1987",
+                        "date": "11/26/1987",
                         "opponent": "Inter Milan",
                         "result": "L",
                         "margin": 14,
@@ -1868,7 +1868,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "27/11/1987",
+                        "date": "11/27/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 3,
@@ -1878,7 +1878,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "16/11/1987",
+                    "date": "11/16/1987",
                     "opponent": "AC Sparta Praha",
                     "result": "W",
                     "margin": 43,
@@ -1887,7 +1887,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "26/11/1987",
+                    "date": "11/26/1987",
                     "opponent": "Inter Milan",
                     "result": "L",
                     "margin": 14,
@@ -1897,7 +1897,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "27/11/1987",
+                        "date": "11/27/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 3,
@@ -1908,7 +1908,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "16/11/1987",
+                        "date": "11/16/1987",
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 43,
@@ -1940,7 +1940,7 @@
                 "streak": "L2",
                 "recentResults": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "Inter Milan",
                         "result": "L",
                         "margin": 9,
@@ -1949,7 +1949,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "6/11/1987",
+                        "date": "11/6/1987",
                         "opponent": "FL Fart",
                         "result": "W",
                         "margin": 7,
@@ -1967,7 +1967,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "16/11/1987",
+                        "date": "11/16/1987",
                         "opponent": "FL Fart",
                         "result": "W",
                         "margin": 2,
@@ -1976,7 +1976,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "20/11/1987",
+                        "date": "11/20/1987",
                         "opponent": "Aston Villa",
                         "result": "L",
                         "margin": 7,
@@ -1985,7 +1985,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Barcelona",
                         "result": "L",
                         "margin": 14,
@@ -1995,7 +1995,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "6/11/1987",
+                    "date": "11/6/1987",
                     "opponent": "FL Fart",
                     "result": "W",
                     "margin": 7,
@@ -2004,7 +2004,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "25/11/1987",
+                    "date": "11/25/1987",
                     "opponent": "Barcelona",
                     "result": "L",
                     "margin": 14,
@@ -2014,7 +2014,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "16/11/1987",
+                        "date": "11/16/1987",
                         "opponent": "FL Fart",
                         "result": "W",
                         "margin": 2,
@@ -2047,7 +2047,7 @@
                 "streak": "L5",
                 "recentResults": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 4,
@@ -2056,7 +2056,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 29,
@@ -2065,7 +2065,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "12/11/1987",
+                        "date": "11/12/1987",
                         "opponent": "Inter Milan",
                         "result": "L",
                         "margin": 12,
@@ -2074,7 +2074,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "16/11/1987",
+                        "date": "11/16/1987",
                         "opponent": "Aston Villa",
                         "result": "L",
                         "margin": 43,
@@ -2083,7 +2083,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "22/11/1987",
+                        "date": "11/22/1987",
                         "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 8,
@@ -2092,7 +2092,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "26/11/1987",
+                        "date": "11/26/1987",
                         "opponent": "Barcelona",
                         "result": "L",
                         "margin": 29,
@@ -2102,7 +2102,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "3/11/1987",
+                    "date": "11/3/1987",
                     "opponent": "Chelsea",
                     "result": "W",
                     "margin": 4,
@@ -2111,7 +2111,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "16/11/1987",
+                    "date": "11/16/1987",
                     "opponent": "Aston Villa",
                     "result": "L",
                     "margin": 43,
@@ -2121,7 +2121,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 4,
@@ -2133,7 +2133,7 @@
                 "blowoutWins": [],
                 "blowoutLosses": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 29,
@@ -2142,7 +2142,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "16/11/1987",
+                        "date": "11/16/1987",
                         "opponent": "Aston Villa",
                         "result": "L",
                         "margin": 43,
@@ -2151,7 +2151,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "26/11/1987",
+                        "date": "11/26/1987",
                         "opponent": "Barcelona",
                         "result": "L",
                         "margin": 29,
@@ -2182,7 +2182,7 @@
                 "streak": "L7",
                 "recentResults": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "AC Sparta Praha",
                         "result": "L",
                         "margin": 4,
@@ -2191,7 +2191,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "6/11/1987",
+                        "date": "11/6/1987",
                         "opponent": "Barcelona",
                         "result": "L",
                         "margin": 32,
@@ -2200,7 +2200,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "10/11/1987",
+                        "date": "11/10/1987",
                         "opponent": "ACF Fiorentina",
                         "result": "L",
                         "margin": 10,
@@ -2209,7 +2209,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "Barcelona",
                         "result": "L",
                         "margin": 34,
@@ -2218,7 +2218,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Inter Milan",
                         "result": "L",
                         "margin": 15,
@@ -2227,7 +2227,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "FL Fart",
                         "result": "L",
                         "margin": 39,
@@ -2236,7 +2236,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "27/11/1987",
+                        "date": "11/27/1987",
                         "opponent": "Aston Villa",
                         "result": "L",
                         "margin": 3,
@@ -2247,7 +2247,7 @@
                 ],
                 "bestWin": null,
                 "worstLoss": {
-                    "date": "25/11/1987",
+                    "date": "11/25/1987",
                     "opponent": "FL Fart",
                     "result": "L",
                     "margin": 39,
@@ -2257,7 +2257,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "AC Sparta Praha",
                         "result": "L",
                         "margin": 4,
@@ -2266,7 +2266,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "27/11/1987",
+                        "date": "11/27/1987",
                         "opponent": "Aston Villa",
                         "result": "L",
                         "margin": 3,
@@ -2278,7 +2278,7 @@
                 "blowoutWins": [],
                 "blowoutLosses": [
                     {
-                        "date": "6/11/1987",
+                        "date": "11/6/1987",
                         "opponent": "Barcelona",
                         "result": "L",
                         "margin": 32,
@@ -2287,7 +2287,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "Barcelona",
                         "result": "L",
                         "margin": 34,
@@ -2296,7 +2296,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Inter Milan",
                         "result": "L",
                         "margin": 15,
@@ -2305,7 +2305,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "FL Fart",
                         "result": "L",
                         "margin": 39,
@@ -2338,7 +2338,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "Juventus",
                         "result": "W",
                         "margin": 2,
@@ -2347,7 +2347,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "5/11/1987",
+                        "date": "11/5/1987",
                         "opponent": "Manchester City",
                         "result": "W",
                         "margin": 15,
@@ -2356,7 +2356,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "9/11/1987",
+                        "date": "11/9/1987",
                         "opponent": "Manchester City",
                         "result": "W",
                         "margin": 9,
@@ -2365,7 +2365,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 43,
@@ -2374,7 +2374,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "14/11/1987",
+                        "date": "11/14/1987",
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 13,
@@ -2383,7 +2383,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "18/11/1987",
+                        "date": "11/18/1987",
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 21,
@@ -2392,7 +2392,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "19/11/1987",
+                        "date": "11/19/1987",
                         "opponent": "Juventus",
                         "result": "L",
                         "margin": 10,
@@ -2401,7 +2401,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 23,
@@ -2411,7 +2411,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "13/11/1987",
+                    "date": "11/13/1987",
                     "opponent": "Atletico Madrid",
                     "result": "W",
                     "margin": 43,
@@ -2420,7 +2420,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "19/11/1987",
+                    "date": "11/19/1987",
                     "opponent": "Juventus",
                     "result": "L",
                     "margin": 10,
@@ -2430,7 +2430,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "Juventus",
                         "result": "W",
                         "margin": 2,
@@ -2441,7 +2441,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "5/11/1987",
+                        "date": "11/5/1987",
                         "opponent": "Manchester City",
                         "result": "W",
                         "margin": 15,
@@ -2450,7 +2450,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 43,
@@ -2459,7 +2459,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "18/11/1987",
+                        "date": "11/18/1987",
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 21,
@@ -2468,7 +2468,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 23,
@@ -2500,7 +2500,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "Monaco",
                         "result": "L",
                         "margin": 11,
@@ -2509,7 +2509,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 5,
@@ -2518,7 +2518,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Juventus",
                         "result": "W",
                         "margin": 16,
@@ -2527,7 +2527,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "Manchester City",
                         "result": "W",
                         "margin": 13,
@@ -2536,7 +2536,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "20/11/1987",
+                        "date": "11/20/1987",
                         "opponent": "Monaco",
                         "result": "W",
                         "margin": 1,
@@ -2545,7 +2545,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "24/11/1987",
+                        "date": "11/24/1987",
                         "opponent": "Manchester City",
                         "result": "L",
                         "margin": 4,
@@ -2554,7 +2554,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "28/11/1987",
+                        "date": "11/28/1987",
                         "opponent": "Manchester United",
                         "result": "W",
                         "margin": 5,
@@ -2564,7 +2564,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "13/11/1987",
+                    "date": "11/13/1987",
                     "opponent": "Juventus",
                     "result": "W",
                     "margin": 16,
@@ -2573,7 +2573,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "4/11/1987",
+                    "date": "11/4/1987",
                     "opponent": "Monaco",
                     "result": "L",
                     "margin": 11,
@@ -2583,7 +2583,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 5,
@@ -2592,7 +2592,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "20/11/1987",
+                        "date": "11/20/1987",
                         "opponent": "Monaco",
                         "result": "W",
                         "margin": 1,
@@ -2601,7 +2601,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "24/11/1987",
+                        "date": "11/24/1987",
                         "opponent": "Manchester City",
                         "result": "L",
                         "margin": 4,
@@ -2610,7 +2610,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "28/11/1987",
+                        "date": "11/28/1987",
                         "opponent": "Manchester United",
                         "result": "W",
                         "margin": 5,
@@ -2621,7 +2621,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Juventus",
                         "result": "W",
                         "margin": 16,
@@ -2653,7 +2653,7 @@
                 "streak": "W3",
                 "recentResults": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "Manchester United",
                         "result": "W",
                         "margin": 19,
@@ -2662,7 +2662,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "5/11/1987",
+                        "date": "11/5/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "L",
                         "margin": 15,
@@ -2671,7 +2671,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "9/11/1987",
+                        "date": "11/9/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "L",
                         "margin": 9,
@@ -2680,7 +2680,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "15/11/1987",
+                        "date": "11/15/1987",
                         "opponent": "Valencia",
                         "result": "L",
                         "margin": 13,
@@ -2689,7 +2689,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "19/11/1987",
+                        "date": "11/19/1987",
                         "opponent": "Monaco",
                         "result": "W",
                         "margin": 1,
@@ -2698,7 +2698,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "23/11/1987",
+                        "date": "11/23/1987",
                         "opponent": "Juventus",
                         "result": "L",
                         "margin": 3,
@@ -2707,7 +2707,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "24/11/1987",
+                        "date": "11/24/1987",
                         "opponent": "Valencia",
                         "result": "W",
                         "margin": 4,
@@ -2716,7 +2716,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "28/11/1987",
+                        "date": "11/28/1987",
                         "opponent": "Monaco",
                         "result": "W",
                         "margin": 4,
@@ -2725,7 +2725,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "29/11/1987",
+                        "date": "11/29/1987",
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 31,
@@ -2735,7 +2735,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "29/11/1987",
+                    "date": "11/29/1987",
                     "opponent": "Marseille",
                     "result": "W",
                     "margin": 31,
@@ -2744,7 +2744,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "5/11/1987",
+                    "date": "11/5/1987",
                     "opponent": "Tottenham Hotspur",
                     "result": "L",
                     "margin": 15,
@@ -2754,7 +2754,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "19/11/1987",
+                        "date": "11/19/1987",
                         "opponent": "Monaco",
                         "result": "W",
                         "margin": 1,
@@ -2763,7 +2763,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "23/11/1987",
+                        "date": "11/23/1987",
                         "opponent": "Juventus",
                         "result": "L",
                         "margin": 3,
@@ -2772,7 +2772,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "24/11/1987",
+                        "date": "11/24/1987",
                         "opponent": "Valencia",
                         "result": "W",
                         "margin": 4,
@@ -2781,7 +2781,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "28/11/1987",
+                        "date": "11/28/1987",
                         "opponent": "Monaco",
                         "result": "W",
                         "margin": 4,
@@ -2792,7 +2792,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "Manchester United",
                         "result": "W",
                         "margin": 19,
@@ -2801,7 +2801,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "29/11/1987",
+                        "date": "11/29/1987",
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 31,
@@ -2812,7 +2812,7 @@
                 ],
                 "blowoutLosses": [
                     {
-                        "date": "5/11/1987",
+                        "date": "11/5/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "L",
                         "margin": 15,
@@ -2843,7 +2843,7 @@
                 "streak": "W1",
                 "recentResults": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "Valencia",
                         "result": "W",
                         "margin": 11,
@@ -2852,7 +2852,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 7,
@@ -2861,7 +2861,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "12/11/1987",
+                        "date": "11/12/1987",
                         "opponent": "Atletico Madrid",
                         "result": "L",
                         "margin": 2,
@@ -2870,7 +2870,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "19/11/1987",
+                        "date": "11/19/1987",
                         "opponent": "Manchester City",
                         "result": "L",
                         "margin": 1,
@@ -2879,7 +2879,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "20/11/1987",
+                        "date": "11/20/1987",
                         "opponent": "Valencia",
                         "result": "L",
                         "margin": 1,
@@ -2888,7 +2888,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "24/11/1987",
+                        "date": "11/24/1987",
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 2,
@@ -2897,7 +2897,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "28/11/1987",
+                        "date": "11/28/1987",
                         "opponent": "Manchester City",
                         "result": "L",
                         "margin": 4,
@@ -2906,7 +2906,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "29/11/1987",
+                        "date": "11/29/1987",
                         "opponent": "Juventus",
                         "result": "W",
                         "margin": 9,
@@ -2916,7 +2916,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "4/11/1987",
+                    "date": "11/4/1987",
                     "opponent": "Valencia",
                     "result": "W",
                     "margin": 11,
@@ -2925,7 +2925,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "28/11/1987",
+                    "date": "11/28/1987",
                     "opponent": "Manchester City",
                     "result": "L",
                     "margin": 4,
@@ -2935,7 +2935,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "12/11/1987",
+                        "date": "11/12/1987",
                         "opponent": "Atletico Madrid",
                         "result": "L",
                         "margin": 2,
@@ -2944,7 +2944,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "19/11/1987",
+                        "date": "11/19/1987",
                         "opponent": "Manchester City",
                         "result": "L",
                         "margin": 1,
@@ -2953,7 +2953,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "20/11/1987",
+                        "date": "11/20/1987",
                         "opponent": "Valencia",
                         "result": "L",
                         "margin": 1,
@@ -2962,7 +2962,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "24/11/1987",
+                        "date": "11/24/1987",
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 2,
@@ -2971,7 +2971,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "28/11/1987",
+                        "date": "11/28/1987",
                         "opponent": "Manchester City",
                         "result": "L",
                         "margin": 4,
@@ -3004,7 +3004,7 @@
                 "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "L",
                         "margin": 2,
@@ -3013,7 +3013,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Manchester United",
                         "result": "L",
                         "margin": 37,
@@ -3022,7 +3022,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Valencia",
                         "result": "L",
                         "margin": 16,
@@ -3031,7 +3031,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "14/11/1987",
+                        "date": "11/14/1987",
                         "opponent": "Manchester United",
                         "result": "W",
                         "margin": 18,
@@ -3040,7 +3040,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "19/11/1987",
+                        "date": "11/19/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "W",
                         "margin": 10,
@@ -3049,7 +3049,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "23/11/1987",
+                        "date": "11/23/1987",
                         "opponent": "Manchester City",
                         "result": "W",
                         "margin": 3,
@@ -3058,7 +3058,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "29/11/1987",
+                        "date": "11/29/1987",
                         "opponent": "Monaco",
                         "result": "L",
                         "margin": 9,
@@ -3068,7 +3068,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "14/11/1987",
+                    "date": "11/14/1987",
                     "opponent": "Manchester United",
                     "result": "W",
                     "margin": 18,
@@ -3077,7 +3077,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "8/11/1987",
+                    "date": "11/8/1987",
                     "opponent": "Manchester United",
                     "result": "L",
                     "margin": 37,
@@ -3087,7 +3087,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "L",
                         "margin": 2,
@@ -3096,7 +3096,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "23/11/1987",
+                        "date": "11/23/1987",
                         "opponent": "Manchester City",
                         "result": "W",
                         "margin": 3,
@@ -3107,7 +3107,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "14/11/1987",
+                        "date": "11/14/1987",
                         "opponent": "Manchester United",
                         "result": "W",
                         "margin": 18,
@@ -3118,7 +3118,7 @@
                 ],
                 "blowoutLosses": [
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Manchester United",
                         "result": "L",
                         "margin": 37,
@@ -3127,7 +3127,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Valencia",
                         "result": "L",
                         "margin": 16,
@@ -3158,7 +3158,7 @@
                 "streak": "L3",
                 "recentResults": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 14,
@@ -3167,7 +3167,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "Manchester United",
                         "result": "W",
                         "margin": 10,
@@ -3176,7 +3176,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Valencia",
                         "result": "L",
                         "margin": 5,
@@ -3185,7 +3185,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "12/11/1987",
+                        "date": "11/12/1987",
                         "opponent": "Monaco",
                         "result": "W",
                         "margin": 2,
@@ -3194,7 +3194,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "L",
                         "margin": 43,
@@ -3203,7 +3203,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "18/11/1987",
+                        "date": "11/18/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "L",
                         "margin": 21,
@@ -3212,7 +3212,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "24/11/1987",
+                        "date": "11/24/1987",
                         "opponent": "Monaco",
                         "result": "L",
                         "margin": 2,
@@ -3222,7 +3222,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "3/11/1987",
+                    "date": "11/3/1987",
                     "opponent": "Marseille",
                     "result": "W",
                     "margin": 14,
@@ -3231,7 +3231,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "13/11/1987",
+                    "date": "11/13/1987",
                     "opponent": "Tottenham Hotspur",
                     "result": "L",
                     "margin": 43,
@@ -3241,7 +3241,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Valencia",
                         "result": "L",
                         "margin": 5,
@@ -3250,7 +3250,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "12/11/1987",
+                        "date": "11/12/1987",
                         "opponent": "Monaco",
                         "result": "W",
                         "margin": 2,
@@ -3259,7 +3259,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "24/11/1987",
+                        "date": "11/24/1987",
                         "opponent": "Monaco",
                         "result": "L",
                         "margin": 2,
@@ -3271,7 +3271,7 @@
                 "blowoutWins": [],
                 "blowoutLosses": [
                     {
-                        "date": "13/11/1987",
+                        "date": "11/13/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "L",
                         "margin": 43,
@@ -3280,7 +3280,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "18/11/1987",
+                        "date": "11/18/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "L",
                         "margin": 21,
@@ -3311,7 +3311,7 @@
                 "streak": "L1",
                 "recentResults": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "Manchester City",
                         "result": "L",
                         "margin": 19,
@@ -3320,7 +3320,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "4/11/1987",
+                        "date": "11/4/1987",
                         "opponent": "Atletico Madrid",
                         "result": "L",
                         "margin": 10,
@@ -3329,7 +3329,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Juventus",
                         "result": "W",
                         "margin": 37,
@@ -3338,7 +3338,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "14/11/1987",
+                        "date": "11/14/1987",
                         "opponent": "Juventus",
                         "result": "L",
                         "margin": 18,
@@ -3347,7 +3347,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 48,
@@ -3356,7 +3356,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "28/11/1987",
+                        "date": "11/28/1987",
                         "opponent": "Valencia",
                         "result": "L",
                         "margin": 5,
@@ -3366,7 +3366,7 @@
                     }
                 ],
                 "bestWin": {
-                    "date": "21/11/1987",
+                    "date": "11/21/1987",
                     "opponent": "Marseille",
                     "result": "W",
                     "margin": 48,
@@ -3375,7 +3375,7 @@
                     "section": "Regular Season"
                 },
                 "worstLoss": {
-                    "date": "3/11/1987",
+                    "date": "11/3/1987",
                     "opponent": "Manchester City",
                     "result": "L",
                     "margin": 19,
@@ -3385,7 +3385,7 @@
                 },
                 "closeGames": [
                     {
-                        "date": "28/11/1987",
+                        "date": "11/28/1987",
                         "opponent": "Valencia",
                         "result": "L",
                         "margin": 5,
@@ -3396,7 +3396,7 @@
                 ],
                 "blowoutWins": [
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Juventus",
                         "result": "W",
                         "margin": 37,
@@ -3405,7 +3405,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Marseille",
                         "result": "W",
                         "margin": 48,
@@ -3416,7 +3416,7 @@
                 ],
                 "blowoutLosses": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "Manchester City",
                         "result": "L",
                         "margin": 19,
@@ -3425,7 +3425,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "14/11/1987",
+                        "date": "11/14/1987",
                         "opponent": "Juventus",
                         "result": "L",
                         "margin": 18,
@@ -3456,7 +3456,7 @@
                 "streak": "L6",
                 "recentResults": [
                     {
-                        "date": "3/11/1987",
+                        "date": "11/3/1987",
                         "opponent": "Atletico Madrid",
                         "result": "L",
                         "margin": 14,
@@ -3465,7 +3465,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "8/11/1987",
+                        "date": "11/8/1987",
                         "opponent": "Monaco",
                         "result": "L",
                         "margin": 7,
@@ -3474,7 +3474,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "14/11/1987",
+                        "date": "11/14/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "L",
                         "margin": 13,
@@ -3483,7 +3483,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Manchester United",
                         "result": "L",
                         "margin": 48,
@@ -3492,7 +3492,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "L",
                         "margin": 23,
@@ -3501,7 +3501,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "29/11/1987",
+                        "date": "11/29/1987",
                         "opponent": "Manchester City",
                         "result": "L",
                         "margin": 31,
@@ -3512,7 +3512,7 @@
                 ],
                 "bestWin": null,
                 "worstLoss": {
-                    "date": "21/11/1987",
+                    "date": "11/21/1987",
                     "opponent": "Manchester United",
                     "result": "L",
                     "margin": 48,
@@ -3524,7 +3524,7 @@
                 "blowoutWins": [],
                 "blowoutLosses": [
                     {
-                        "date": "21/11/1987",
+                        "date": "11/21/1987",
                         "opponent": "Manchester United",
                         "result": "L",
                         "margin": 48,
@@ -3533,7 +3533,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "25/11/1987",
+                        "date": "11/25/1987",
                         "opponent": "Tottenham Hotspur",
                         "result": "L",
                         "margin": 23,
@@ -3542,7 +3542,7 @@
                         "section": "Regular Season"
                     },
                     {
-                        "date": "29/11/1987",
+                        "date": "11/29/1987",
                         "opponent": "Manchester City",
                         "result": "L",
                         "margin": 31,

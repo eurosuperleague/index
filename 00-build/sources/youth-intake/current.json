@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "rulesVersion": "2026.1",
   "season": "season-7",
   "status": "published",
@@ -7029,5 +7029,43 @@
     "exclusions": "7d576972ef2a26d4866748e478bddd9586554f3755dcbdc04fc8939d7e733a4a"
   },
   "publishedAt": "2026-10-14T12:21:13Z",
-  "publicationHash": "abbb9b4effa764bf3f4b4d9ed98c784827bdd28b0266e83735329b76fd0ed535"
+  "publicationHash": "abbb9b4effa764bf3f4b4d9ed98c784827bdd28b0266e83735329b76fd0ed535",
+  "rightsTransfers": [
+    {
+      "revision": 1,
+      "prospectKey": "jonahbolden|35066|80",
+      "playerName": "Jonah Bolden",
+      "intakeTeam": "AC Milan",
+      "fromTeam": "AC Milan",
+      "toTeam": "Barcelona",
+      "tradedAt": "2026-10-15T08:52:15Z",
+      "note": "trade",
+      "transactionId": "rights-0001-71638468e55f"
+    },
+    {
+      "revision": 2,
+      "prospectKey": "jonathanisaac|35706|83",
+      "playerName": "Jonathan Isaac",
+      "intakeTeam": "AC Milan",
+      "fromTeam": "AC Milan",
+      "toTeam": "AC Sparta Praha",
+      "tradedAt": "2026-10-15T08:52:24Z",
+      "note": "trade",
+      "transactionId": "rights-0002-1b41f9027720"
+    },
+    {
+      "revision": 3,
+      "prospectKey": "jonathanisaac|35706|83",
+      "playerName": "Jonathan Isaac",
+      "intakeTeam": "AC Milan",
+      "fromTeam": "AC Sparta Praha",
+      "toTeam": "Barcelona",
+      "tradedAt": "2026-10-15T08:52:49Z",
+      "note": "oops wrong team",
+      "transactionId": "rights-0003-2334789b49c0"
+    }
+  ],
+  "rightsRevision": 3,
+  "rightsUpdatedAt": "2026-10-15T08:52:49Z",
+  "rightsHash": "96c84f80d51eef3ef46541eb54e26224ae63d64299f6c38726f5f02c328910da"
 }
