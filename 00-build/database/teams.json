@@ -148,7 +148,7 @@
             "name": "Kiki Vandeweghe",
             "url": "../players/player701.htm",
             "pos": "SF",
-            "age": "28",
+            "age": "27",
             "overall": "174",
             "potential": "174"
         }
@@ -190,7 +190,7 @@
             "name": "Eddie Johnson",
             "url": "../players/player704.htm",
             "pos": "SF",
-            "age": "27",
+            "age": "26",
             "overall": "143",
             "potential": "144"
         }
@@ -205,8 +205,8 @@
             "url": "../players/player262.htm",
             "pos": "PF",
             "age": "28",
-            "overall": "122",
-            "potential": "122"
+            "overall": "124",
+            "potential": "125"
         }
     },
     {
@@ -260,7 +260,7 @@
             "name": "Anthony Black",
             "url": "../players/player351.htm",
             "pos": "SF",
-            "age": "21",
+            "age": "22",
             "overall": "122",
             "potential": "144"
         }
@@ -301,7 +301,7 @@
         "starPlayer": {
             "name": "Sidney Moncrief",
             "url": "../players/player699.htm",
-            "pos": "SF",
+            "pos": "SG",
             "age": "28",
             "overall": "157",
             "potential": "157"

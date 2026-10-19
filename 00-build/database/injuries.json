@@ -2,102 +2,14 @@
     "source": "injuries.htm",
     "injuries": [
         {
-            "pos": "SF",
-            "name": "Xavier McDaniel",
-            "url": "",
-            "team": "roster19",
-            "teamName": "Aston Villa",
-            "rosterUrl": "./rosters/roster19.htm",
-            "length": "28",
-            "injury": "Broken Arm",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "SF",
-            "name": "Robert Reid",
-            "url": "",
-            "team": "roster6",
-            "teamName": "Crystal Palace",
-            "rosterUrl": "./rosters/roster6.htm",
-            "length": "26",
-            "injury": "Broken Foot",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "PF",
-            "name": "Chris Bosh",
-            "url": "",
-            "team": "roster23",
-            "teamName": "Arsenal",
-            "rosterUrl": "./rosters/roster23.htm",
-            "length": "18",
-            "injury": "Sprained Ankle",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "SG",
-            "name": "Luguentz Dort",
-            "url": "",
-            "team": "roster6",
-            "teamName": "Crystal Palace",
-            "rosterUrl": "./rosters/roster6.htm",
-            "length": "14",
-            "injury": "Broken Foot",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "SF",
-            "name": "Glen Gondrezick",
-            "url": "",
-            "team": "roster7",
-            "teamName": "ACF Fiorentina",
-            "rosterUrl": "./rosters/roster7.htm",
-            "length": "9",
-            "injury": "Sprained Knee",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "SG",
-            "name": "Gilbert Arenas",
-            "url": "",
-            "team": "roster12",
-            "teamName": "AFC Richmond",
-            "rosterUrl": "./rosters/roster12.htm",
-            "length": "6",
-            "injury": "Sprained Knee",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "PF",
-            "name": "Greg Oden",
-            "url": "",
-            "team": "roster11",
-            "teamName": "Atletico Madrid",
-            "rosterUrl": "./rosters/roster11.htm",
-            "length": "6",
-            "injury": "Broken Cheekbone",
-            "rowClass": "row1"
-        },
-        {
             "pos": "PG",
-            "name": "Darrick Martin",
+            "name": "Rickey Green",
             "url": "",
-            "team": "roster16",
-            "teamName": "AC Sparta Praha",
-            "rosterUrl": "./rosters/roster16.htm",
-            "length": "5",
-            "injury": "Broken Foot",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "PG",
-            "name": "Michael Cooper",
-            "url": "",
-            "team": "roster12",
-            "teamName": "AFC Richmond",
-            "rosterUrl": "./rosters/roster12.htm",
-            "length": "5",
-            "injury": "Sprained Knee",
+            "team": "roster10",
+            "teamName": "Brighton",
+            "rosterUrl": "./rosters/roster10.htm",
+            "length": "265",
+            "injury": "Torn MCL",
             "rowClass": "row1"
         },
         {
@@ -107,9 +19,86 @@
             "team": "roster19",
             "teamName": "Aston Villa",
             "rosterUrl": "./rosters/roster19.htm",
-            "length": "3",
-            "injury": "Broken Rib",
+            "length": "62",
+            "injury": "Torn Ligament",
             "rowClass": "row2"
+        },
+        {
+            "pos": "PF",
+            "name": "Bobby Portis",
+            "url": "",
+            "team": "roster25",
+            "teamName": "Valencia",
+            "rosterUrl": "./rosters/roster25.htm",
+            "length": "11",
+            "injury": "Broken Foot",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PF",
+            "name": "Kyle O'Quinn",
+            "url": "",
+            "team": "roster14",
+            "teamName": "Juventus",
+            "rosterUrl": "./rosters/roster14.htm",
+            "length": "8",
+            "injury": "Broken Collarbone",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "SF",
+            "name": "Anthony Morrow",
+            "url": "",
+            "team": "roster19",
+            "teamName": "Aston Villa",
+            "rosterUrl": "./rosters/roster19.htm",
+            "length": "6",
+            "injury": "Broken Cheekbone",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PG",
+            "name": "Brad Davis",
+            "url": "",
+            "team": "roster21",
+            "teamName": "Paris Saint-Germain",
+            "rosterUrl": "./rosters/roster21.htm",
+            "length": "4",
+            "injury": "Sprained Knee",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "PG",
+            "name": "Gus Williams",
+            "url": "",
+            "team": "roster15",
+            "teamName": "Marseille",
+            "rosterUrl": "./rosters/roster15.htm",
+            "length": "4",
+            "injury": "Bruised Jaw",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "C",
+            "name": "Tyrone Corbin",
+            "url": "",
+            "team": "roster19",
+            "teamName": "Aston Villa",
+            "rosterUrl": "./rosters/roster19.htm",
+            "length": "4",
+            "injury": "Pinched Nerve",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "SG",
+            "name": "Jon Sundvold",
+            "url": "",
+            "team": "roster5",
+            "teamName": "Manchester United",
+            "rosterUrl": "./rosters/roster5.htm",
+            "length": "1",
+            "injury": "Severe Migraines",
+            "rowClass": "row1"
         }
     ]
 }

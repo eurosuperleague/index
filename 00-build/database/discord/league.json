@@ -6,21 +6,21 @@
       "title": "CLB Standings",
       "teams": [
         {
+          "name": "AC Milan",
+          "wins": 14,
+          "losses": 6,
+          "streak": "W5"
+        },
+        {
           "name": "Arsenal",
-          "wins": 10,
-          "losses": 5,
-          "streak": "L2"
+          "wins": 15,
+          "losses": 7,
+          "streak": "W1"
         },
         {
           "name": "Brighton",
-          "wins": 9,
-          "losses": 5,
-          "streak": "W4"
-        },
-        {
-          "name": "AC Milan",
-          "wins": 8,
-          "losses": 5,
+          "wins": 12,
+          "losses": 9,
           "streak": "L1"
         }
       ]
@@ -30,21 +30,21 @@
       "teams": [
         {
           "name": "Barcelona",
-          "wins": 12,
-          "losses": 2,
-          "streak": "W3"
+          "wins": 16,
+          "losses": 6,
+          "streak": "W1"
         },
         {
-          "name": "Inter Milan",
-          "wins": 10,
-          "losses": 4,
-          "streak": "W5"
+          "name": "Crystal Palace",
+          "wins": 14,
+          "losses": 6,
+          "streak": "L1"
         },
         {
           "name": "ACF Fiorentina",
-          "wins": 10,
-          "losses": 5,
-          "streak": "W1"
+          "wins": 14,
+          "losses": 7,
+          "streak": "W2"
         }
       ]
     },
@@ -53,20 +53,20 @@
       "teams": [
         {
           "name": "Monaco",
-          "wins": 12,
-          "losses": 5,
-          "streak": "W4"
-        },
-        {
-          "name": "Tottenham Hotspur",
-          "wins": 10,
-          "losses": 5,
-          "streak": "L1"
+          "wins": 17,
+          "losses": 6,
+          "streak": "W2"
         },
         {
           "name": "Manchester City",
-          "wins": 10,
-          "losses": 6,
+          "wins": 15,
+          "losses": 8,
+          "streak": "W1"
+        },
+        {
+          "name": "Valencia",
+          "wins": 15,
+          "losses": 8,
           "streak": "L1"
         }
       ]
@@ -77,31 +77,31 @@
       "category": "Minutes",
       "player": "Mike Gminski",
       "team": "Paris Saint-Germain",
-      "value": "44.4"
+      "value": "44.3"
     },
     {
       "category": "Points",
       "player": "Sidney Moncrief",
       "team": "Real Madrid",
-      "value": "32.9"
+      "value": "31.6"
     },
     {
       "category": "Rebounds",
       "player": "Mike Gminski",
       "team": "Paris Saint-Germain",
-      "value": "12.0"
+      "value": "12.1"
     },
     {
       "category": "Assists",
       "player": "Allen Leavell",
       "team": "Real Madrid",
-      "value": "12.7"
+      "value": "12.6"
     },
     {
       "category": "Steals",
       "player": "Micheal Ray Richardson",
       "team": "Real Madrid",
-      "value": "3.1"
+      "value": "2.9"
     }
   ]
 }
