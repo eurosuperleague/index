@@ -6,22 +6,22 @@
       "title": "CLB Standings",
       "teams": [
         {
-          "name": "AC Milan",
-          "wins": 19,
-          "losses": 9,
-          "streak": "W3"
-        },
-        {
           "name": "Arsenal",
-          "wins": 19,
-          "losses": 10,
-          "streak": "L2"
+          "wins": 23,
+          "losses": 13,
+          "streak": "W1"
         },
         {
-          "name": "Brighton",
-          "wins": 17,
-          "losses": 11,
-          "streak": "W1"
+          "name": "Real Madrid",
+          "wins": 22,
+          "losses": 13,
+          "streak": "W2"
+        },
+        {
+          "name": "AC Milan",
+          "wins": 23,
+          "losses": 14,
+          "streak": "W3"
         }
       ]
     },
@@ -30,21 +30,21 @@
       "teams": [
         {
           "name": "Barcelona",
-          "wins": 21,
-          "losses": 7,
-          "streak": "W5"
+          "wins": 27,
+          "losses": 9,
+          "streak": "L1"
         },
         {
           "name": "ACF Fiorentina",
-          "wins": 21,
-          "losses": 7,
-          "streak": "W9"
-        },
-        {
-          "name": "Crystal Palace",
-          "wins": 18,
+          "wins": 25,
           "losses": 9,
           "streak": "W1"
+        },
+        {
+          "name": "FL Fart",
+          "wins": 24,
+          "losses": 13,
+          "streak": "W6"
         }
       ]
     },
@@ -53,20 +53,20 @@
       "teams": [
         {
           "name": "Monaco",
-          "wins": 22,
-          "losses": 6,
-          "streak": "W7"
-        },
-        {
-          "name": "Manchester City",
-          "wins": 19,
+          "wins": 26,
           "losses": 9,
           "streak": "W1"
         },
         {
-          "name": "Valencia",
-          "wins": 18,
-          "losses": 11,
+          "name": "Manchester City",
+          "wins": 23,
+          "losses": 13,
+          "streak": "L2"
+        },
+        {
+          "name": "Atletico Madrid",
+          "wins": 23,
+          "losses": 15,
           "streak": "L1"
         }
       ]
@@ -77,7 +77,7 @@
       "category": "Minutes",
       "player": "Mike Gminski",
       "team": "Paris Saint-Germain",
-      "value": "44.0"
+      "value": "43.6"
     },
     {
       "category": "Points",
@@ -95,13 +95,13 @@
       "category": "Assists",
       "player": "Allen Leavell",
       "team": "Real Madrid",
-      "value": "12.6"
+      "value": "12.3"
     },
     {
       "category": "Steals",
-      "player": "Dan Majerle",
-      "team": "AC Milan",
-      "value": "2.6"
+      "player": "Micheal Ray Richardson",
+      "team": "Real Madrid",
+      "value": "2.8"
     }
   ]
 }
