@@ -3,135 +3,36 @@
     "injuries": [
         {
             "pos": "PG",
+            "name": "John Lucas",
+            "url": "",
+            "team": "roster15",
+            "teamName": "Crystal Palace",
+            "rosterUrl": "./rosters/roster15.htm",
+            "length": "47",
+            "injury": "Broken Leg",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "SF",
+            "name": "Scott Burrell",
+            "url": "",
+            "team": "roster18",
+            "teamName": "Inter Milan",
+            "rosterUrl": "./rosters/roster18.htm",
+            "length": "23",
+            "injury": "Stress Fracture",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "PG",
             "name": "Rickey Green",
             "url": "",
             "team": "roster13",
             "teamName": "Brighton",
             "rosterUrl": "./rosters/roster13.htm",
-            "length": "191",
+            "length": "19",
             "injury": "Torn MCL",
             "rowClass": "row1"
-        },
-        {
-            "pos": "PG",
-            "name": "Trae Young",
-            "url": "",
-            "team": "roster8",
-            "teamName": "Aston Villa",
-            "rosterUrl": "./rosters/roster8.htm",
-            "length": "44",
-            "injury": "Ruptured Disc",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "C",
-            "name": "Jalen Duren",
-            "url": "",
-            "team": "roster5",
-            "teamName": "AC Milan",
-            "rosterUrl": "./rosters/roster5.htm",
-            "length": "40",
-            "injury": "Severe Concussion",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "SF",
-            "name": "Rod Higgins",
-            "url": "",
-            "team": "roster28",
-            "teamName": "Valencia",
-            "rosterUrl": "./rosters/roster28.htm",
-            "length": "34",
-            "injury": "Broken Ankle",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "C",
-            "name": "Rick Mahorn",
-            "url": "",
-            "team": "roster6",
-            "teamName": "AFC Richmond",
-            "rosterUrl": "./rosters/roster6.htm",
-            "length": "28",
-            "injury": "Dislocated Knee",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "PF",
-            "name": "Bill Cartwright",
-            "url": "",
-            "team": "roster5",
-            "teamName": "AC Milan",
-            "rosterUrl": "./rosters/roster5.htm",
-            "length": "24",
-            "injury": "Broken Foot",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "PG",
-            "name": "Johnny Moore",
-            "url": "",
-            "team": "roster9",
-            "teamName": "Atletico Madrid",
-            "rosterUrl": "./rosters/roster9.htm",
-            "length": "15",
-            "injury": "Sprained Knee",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "PG",
-            "name": "Brad Davis",
-            "url": "",
-            "team": "roster23",
-            "teamName": "Paris Saint-Germain",
-            "rosterUrl": "./rosters/roster23.htm",
-            "length": "15",
-            "injury": "Dislocated Shoulder",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "SG",
-            "name": "Raja Bell",
-            "url": "",
-            "team": "roster21",
-            "teamName": "Marseille",
-            "rosterUrl": "./rosters/roster21.htm",
-            "length": "5",
-            "injury": "Blurred Vision",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "SF",
-            "name": "Orlando Woolridge",
-            "url": "",
-            "team": "roster26",
-            "teamName": "Arsenal",
-            "rosterUrl": "./rosters/roster26.htm",
-            "length": "5",
-            "injury": "Sprained Wrist",
-            "rowClass": "row2"
-        },
-        {
-            "pos": "PG",
-            "name": "Pooh Richardson",
-            "url": "",
-            "team": "roster6",
-            "teamName": "AFC Richmond",
-            "rosterUrl": "./rosters/roster6.htm",
-            "length": "3",
-            "injury": "Bruised Jaw",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "SG",
-            "name": "Dion Waiters",
-            "url": "",
-            "team": "roster13",
-            "teamName": "Brighton",
-            "rosterUrl": "./rosters/roster13.htm",
-            "length": "2",
-            "injury": "Sprained Knee",
-            "rowClass": "row2"
         }
     ]
 }
