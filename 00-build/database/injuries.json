@@ -8,9 +8,20 @@
             "team": "roster10",
             "teamName": "Brighton",
             "rosterUrl": "./rosters/roster10.htm",
-            "length": "205",
+            "length": "183",
             "injury": "Torn MCL",
             "rowClass": "row1"
+        },
+        {
+            "pos": "PG",
+            "name": "Ray Williams",
+            "url": "",
+            "team": "roster22",
+            "teamName": "Tottenham Hotspur",
+            "rosterUrl": "./rosters/roster22.htm",
+            "length": "91",
+            "injury": "Broken Leg",
+            "rowClass": "row2"
         },
         {
             "pos": "PG",
@@ -19,9 +30,9 @@
             "team": "roster19",
             "teamName": "Aston Villa",
             "rosterUrl": "./rosters/roster19.htm",
-            "length": "58",
+            "length": "36",
             "injury": "Ruptured Disc",
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "pos": "C",
@@ -30,9 +41,9 @@
             "team": "roster9",
             "teamName": "AC Milan",
             "rosterUrl": "./rosters/roster9.htm",
-            "length": "54",
+            "length": "32",
             "injury": "Severe Concussion",
-            "rowClass": "row1"
+            "rowClass": "row2"
         },
         {
             "pos": "SF",
@@ -41,9 +52,53 @@
             "team": "roster25",
             "teamName": "Valencia",
             "rosterUrl": "./rosters/roster25.htm",
-            "length": "48",
+            "length": "26",
             "injury": "Broken Ankle",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PG",
+            "name": "Xavier Munford",
+            "url": "",
+            "team": "roster18",
+            "teamName": "Ajax",
+            "rosterUrl": "./rosters/roster18.htm",
+            "length": "12",
+            "injury": "Stress Fracture",
             "rowClass": "row2"
+        },
+        {
+            "pos": "PG",
+            "name": "Magic Johnson",
+            "url": "",
+            "team": "roster24",
+            "teamName": "Barcelona",
+            "rosterUrl": "./rosters/roster24.htm",
+            "length": "9",
+            "injury": "Fractured Hip",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PF",
+            "name": "Cedric Maxwell",
+            "url": "",
+            "team": "roster24",
+            "teamName": "Barcelona",
+            "rosterUrl": "./rosters/roster24.htm",
+            "length": "9",
+            "injury": "Hyperextended Knee",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "C",
+            "name": "Joakim Noah",
+            "url": "",
+            "team": "roster26",
+            "teamName": "Inter Milan",
+            "rosterUrl": "./rosters/roster26.htm",
+            "length": "9",
+            "injury": "Concussion",
+            "rowClass": "row1"
         },
         {
             "pos": "PG",
@@ -52,41 +107,30 @@
             "team": "roster21",
             "teamName": "Paris Saint-Germain",
             "rosterUrl": "./rosters/roster21.htm",
-            "length": "29",
+            "length": "7",
             "injury": "Dislocated Shoulder",
-            "rowClass": "row1"
-        },
-        {
-            "pos": "PG",
-            "name": "Gus Williams",
-            "url": "",
-            "team": "roster15",
-            "teamName": "Marseille",
-            "rosterUrl": "./rosters/roster15.htm",
-            "length": "8",
-            "injury": "Fractured Cheekbone",
             "rowClass": "row2"
         },
         {
-            "pos": "PG",
-            "name": "Darrick Martin",
+            "pos": "PF",
+            "name": "Donyell Marshall",
             "url": "",
             "team": "roster16",
             "teamName": "AC Sparta Praha",
             "rosterUrl": "./rosters/roster16.htm",
-            "length": "4",
-            "injury": "Dislocated Shoulder",
+            "length": "2",
+            "injury": "Sprained Ankle",
             "rowClass": "row1"
         },
         {
             "pos": "PF",
-            "name": "Larry Nance",
+            "name": "Bam Adebayo",
             "url": "",
-            "team": "roster19",
-            "teamName": "Aston Villa",
-            "rosterUrl": "./rosters/roster19.htm",
+            "team": "roster22",
+            "teamName": "Tottenham Hotspur",
+            "rosterUrl": "./rosters/roster22.htm",
             "length": "2",
-            "injury": "Torn Ligament",
+            "injury": "Sprained Wrist",
             "rowClass": "row2"
         }
     ]
