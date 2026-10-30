@@ -8,9 +8,20 @@
             "team": "roster15",
             "teamName": "Crystal Palace",
             "rosterUrl": "./rosters/roster15.htm",
-            "length": "47",
+            "length": "40",
             "injury": "Broken Leg",
             "rowClass": "row1"
+        },
+        {
+            "pos": "SG",
+            "name": "Gilbert Arenas",
+            "url": "",
+            "team": "roster6",
+            "teamName": "AFC Richmond",
+            "rosterUrl": "./rosters/roster6.htm",
+            "length": "21",
+            "injury": "Broken Foot",
+            "rowClass": "row2"
         },
         {
             "pos": "SF",
@@ -19,9 +30,9 @@
             "team": "roster18",
             "teamName": "Inter Milan",
             "rosterUrl": "./rosters/roster18.htm",
-            "length": "23",
+            "length": "16",
             "injury": "Stress Fracture",
-            "rowClass": "row2"
+            "rowClass": "row1"
         },
         {
             "pos": "PG",
@@ -30,9 +41,31 @@
             "team": "roster13",
             "teamName": "Brighton",
             "rosterUrl": "./rosters/roster13.htm",
-            "length": "19",
+            "length": "12",
             "injury": "Torn MCL",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "PG",
+            "name": "Wes Matthews",
+            "url": "",
+            "team": "roster11",
+            "teamName": "ACF Fiorentina",
+            "rosterUrl": "./rosters/roster11.htm",
+            "length": "5",
+            "injury": "Broken Finger",
             "rowClass": "row1"
+        },
+        {
+            "pos": "SF",
+            "name": "Reggie Miller",
+            "url": "",
+            "team": "roster9",
+            "teamName": "Atletico Madrid",
+            "rosterUrl": "./rosters/roster9.htm",
+            "length": "2",
+            "injury": "Bruised Jaw",
+            "rowClass": "row2"
         }
     ]
 }
