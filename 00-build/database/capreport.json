@@ -149,6 +149,23 @@
             "entries": [
                 {
                     "pick": 1,
+                    "team": "Chelsea",
+                    "rosterUrl": "./rosters/roster17.htm",
+                    "rosterFile": "roster17.htm",
+                    "salary": 62688000.0,
+                    "salaryText": "$62,688,000",
+                    "capRoom": 7312000.0,
+                    "capRoomText": "$7,312,000",
+                    "budgetRoom": 37312000.0,
+                    "budgetRoomText": "$37,312,000",
+                    "midException": -0.0,
+                    "midExceptionText": "($0)",
+                    "lowException": -0.0,
+                    "lowExceptionText": "($0)",
+                    "rowClass": "row1"
+                },
+                {
+                    "pick": 2,
                     "team": "Inter Milan",
                     "rosterUrl": "./rosters/roster26.htm",
                     "rosterFile": "roster26.htm",
@@ -162,10 +179,10 @@
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
                     "lowExceptionText": "($0)",
-                    "rowClass": "row1"
+                    "rowClass": "row2"
                 },
                 {
-                    "pick": 2,
+                    "pick": 3,
                     "team": "AC Sparta Praha",
                     "rosterUrl": "./rosters/roster16.htm",
                     "rosterFile": "roster16.htm",
@@ -179,10 +196,10 @@
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
                     "lowExceptionText": "($0)",
-                    "rowClass": "row2"
+                    "rowClass": "row1"
                 },
                 {
-                    "pick": 3,
+                    "pick": 4,
                     "team": "Crystal Palace",
                     "rosterUrl": "./rosters/roster6.htm",
                     "rosterFile": "roster6.htm",
@@ -196,10 +213,10 @@
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
                     "lowExceptionText": "($0)",
-                    "rowClass": "row1"
+                    "rowClass": "row2"
                 },
                 {
-                    "pick": 4,
+                    "pick": 5,
                     "team": "ACF Fiorentina",
                     "rosterUrl": "./rosters/roster7.htm",
                     "rosterFile": "roster7.htm",
@@ -213,10 +230,10 @@
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
                     "lowExceptionText": "($0)",
-                    "rowClass": "row2"
+                    "rowClass": "row1"
                 },
                 {
-                    "pick": 5,
+                    "pick": 6,
                     "team": "FL Fart",
                     "rosterUrl": "./rosters/roster27.htm",
                     "rosterFile": "roster27.htm",
@@ -230,10 +247,10 @@
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
                     "lowExceptionText": "($0)",
-                    "rowClass": "row1"
+                    "rowClass": "row2"
                 },
                 {
-                    "pick": 6,
+                    "pick": 7,
                     "team": "Barcelona",
                     "rosterUrl": "./rosters/roster24.htm",
                     "rosterFile": "roster24.htm",
@@ -243,23 +260,6 @@
                     "capRoomText": "$8,964",
                     "budgetRoom": 30008964.0,
                     "budgetRoomText": "$30,008,964",
-                    "midException": -0.0,
-                    "midExceptionText": "($0)",
-                    "lowException": -0.0,
-                    "lowExceptionText": "($0)",
-                    "rowClass": "row2"
-                },
-                {
-                    "pick": 7,
-                    "team": "Chelsea",
-                    "rosterUrl": "./rosters/roster17.htm",
-                    "rosterFile": "roster17.htm",
-                    "salary": 74387707.0,
-                    "salaryText": "$74,387,707",
-                    "capRoom": -4387707.0,
-                    "capRoomText": "($4,387,707)",
-                    "budgetRoom": 25612293.0,
-                    "budgetRoomText": "$25,612,293",
                     "midException": -0.0,
                     "midExceptionText": "($0)",
                     "lowException": -0.0,
