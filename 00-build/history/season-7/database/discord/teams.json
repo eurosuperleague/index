@@ -1,0 +1,1427 @@
+[
+  {
+    "id": "roster9",
+    "name": "AC Milan",
+    "record": {
+      "wins": 27,
+      "losses": 15,
+      "pct": 0.643
+    },
+    "section": "CLB Standings",
+    "pf": 119.5,
+    "pa": 113.6,
+    "diff": 5.8,
+    "streak": "W1",
+    "last10": "7-3",
+    "starPlayer": {
+      "name": "Dan Majerle",
+      "url": "../players/player332.htm",
+      "pos": "SG",
+      "age": "27",
+      "overall": "154",
+      "potential": "155"
+    },
+    "cap": {
+      "salary": "$99,128,501",
+      "room": "$871,499"
+    },
+    "strengths": [
+      {
+        "label": "Points",
+        "value": 119.5,
+        "rank": 1
+      },
+      {
+        "label": "Adjusted FG%",
+        "value": 0.55,
+        "rank": 1
+      },
+      {
+        "label": "Fouls",
+        "value": 17.9,
+        "rank": 2
+      },
+      {
+        "label": "FG%",
+        "value": 0.52,
+        "rank": 2
+      }
+    ],
+    "injuries": [
+      {
+        "name": "Jalen Duren",
+        "pos": "C",
+        "injury": "Severe Concussion",
+        "length": "32"
+      }
+    ],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@AC Milan 109, Real Madrid 92",
+      "boxscoreFile": "box185-4.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster9"
+  },
+  {
+    "id": "roster16",
+    "name": "AC Sparta Praha",
+    "record": {
+      "wins": 9,
+      "losses": 33,
+      "pct": 0.214
+    },
+    "section": "ELB Standings",
+    "pf": 97.9,
+    "pa": 109.6,
+    "diff": -11.7,
+    "streak": "L4",
+    "last10": "3-7",
+    "starPlayer": {
+      "name": "Doug Christie",
+      "url": "../players/player243.htm",
+      "pos": "SF",
+      "age": "26",
+      "overall": "141",
+      "potential": "142"
+    },
+    "cap": {
+      "salary": "$66,640,331",
+      "room": "$3,359,669"
+    },
+    "strengths": [
+      {
+        "label": "Turnovers",
+        "value": 15.4,
+        "rank": 1
+      },
+      {
+        "label": "O.Rebounds",
+        "value": 12.5,
+        "rank": 3
+      },
+      {
+        "label": "3PT%",
+        "value": 0.346,
+        "rank": 3
+      },
+      {
+        "label": "Fouls",
+        "value": 22.9,
+        "rank": 4
+      }
+    ],
+    "injuries": [
+      {
+        "name": "Donyell Marshall",
+        "pos": "PF",
+        "injury": "Sprained Ankle",
+        "length": "2"
+      }
+    ],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@Barcelona 111, AC Sparta Praha 108",
+      "boxscoreFile": "box185-8.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster16"
+  },
+  {
+    "id": "roster7",
+    "name": "ACF Fiorentina",
+    "record": {
+      "wins": 31,
+      "losses": 11,
+      "pct": 0.738
+    },
+    "section": "ELB Standings",
+    "pf": 108.1,
+    "pa": 99.2,
+    "diff": 8.9,
+    "streak": "W6",
+    "last10": "7-3",
+    "starPlayer": {
+      "name": "Jawann Oldham",
+      "url": "../players/player1064.htm",
+      "pos": "C",
+      "age": "29",
+      "overall": "124",
+      "potential": "124"
+    },
+    "cap": {
+      "salary": "$69,165,368",
+      "room": "$834,632"
+    },
+    "strengths": [
+      {
+        "label": "D.Rebounds",
+        "value": 32.0,
+        "rank": 1
+      },
+      {
+        "label": "Steals",
+        "value": 10.9,
+        "rank": 1
+      },
+      {
+        "label": "Blocks",
+        "value": 12.1,
+        "rank": 1
+      },
+      {
+        "label": "Fouls",
+        "value": 18.5,
+        "rank": 1
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@ACF Fiorentina 113, Aston Villa 91",
+      "boxscoreFile": "box185-7.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster7"
+  },
+  {
+    "id": "roster12",
+    "name": "AFC Richmond",
+    "record": {
+      "wins": 18,
+      "losses": 24,
+      "pct": 0.429
+    },
+    "section": "CLB Standings",
+    "pf": 109.7,
+    "pa": 114.2,
+    "diff": -4.4,
+    "streak": "W2",
+    "last10": "5-5",
+    "starPlayer": {
+      "name": "Michael Cooper",
+      "url": "../players/player705.htm",
+      "pos": "PG",
+      "age": "30",
+      "overall": "146",
+      "potential": "146"
+    },
+    "cap": {
+      "salary": "$98,853,386",
+      "room": "$1,146,614"
+    },
+    "strengths": [
+      {
+        "label": "O.Rebounds",
+        "value": 13.0,
+        "rank": 5
+      },
+      {
+        "label": "Rebounds",
+        "value": 42.6,
+        "rank": 5
+      },
+      {
+        "label": "Steals",
+        "value": 9.1,
+        "rank": 5
+      },
+      {
+        "label": "Blocks",
+        "value": 8.0,
+        "rank": 5
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "AFC Richmond 118, @Benfica 97",
+      "boxscoreFile": "box185-3.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster12"
+  },
+  {
+    "id": "roster18",
+    "name": "Ajax",
+    "record": {
+      "wins": 7,
+      "losses": 35,
+      "pct": 0.167
+    },
+    "section": "CLB Standings",
+    "pf": 106.1,
+    "pa": 119.7,
+    "diff": -13.6,
+    "streak": "W1",
+    "last10": "2-8",
+    "starPlayer": {
+      "name": "Andrew Toney",
+      "url": "../players/player709.htm",
+      "pos": "SG",
+      "age": "27",
+      "overall": "140",
+      "potential": "143"
+    },
+    "cap": {
+      "salary": "$97,678,586",
+      "room": "$2,321,414"
+    },
+    "strengths": [
+      {
+        "label": "Turnovers",
+        "value": 16.1,
+        "rank": 1
+      },
+      {
+        "label": "3PT%",
+        "value": 0.378,
+        "rank": 4
+      }
+    ],
+    "injuries": [
+      {
+        "name": "Xavier Munford",
+        "pos": "PG",
+        "injury": "Stress Fracture",
+        "length": "12"
+      }
+    ],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@Ajax 115, Brighton 100",
+      "boxscoreFile": "box185-2.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster18"
+  },
+  {
+    "id": "roster23",
+    "name": "Arsenal",
+    "record": {
+      "wins": 26,
+      "losses": 16,
+      "pct": 0.619
+    },
+    "section": "CLB Standings",
+    "pf": 110.6,
+    "pa": 108.7,
+    "diff": 1.8,
+    "streak": "L1",
+    "last10": "5-5",
+    "starPlayer": {
+      "name": "Reggie Theus",
+      "url": "../players/player708.htm",
+      "pos": "SG",
+      "age": "28",
+      "overall": "150",
+      "potential": "151"
+    },
+    "cap": {
+      "salary": "$99,856,189",
+      "room": "$143,811"
+    },
+    "strengths": [
+      {
+        "label": "FG%",
+        "value": 0.525,
+        "rank": 1
+      },
+      {
+        "label": "Points Per Shot",
+        "value": 1.31,
+        "rank": 1
+      },
+      {
+        "label": "Assists",
+        "value": 30.8,
+        "rank": 2
+      },
+      {
+        "label": "Adjusted FG%",
+        "value": 0.537,
+        "rank": 2
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@Paris Saint-Germain 125, Arsenal 110",
+      "boxscoreFile": "box185-1.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster23"
+  },
+  {
+    "id": "roster19",
+    "name": "Aston Villa",
+    "record": {
+      "wins": 6,
+      "losses": 36,
+      "pct": 0.143
+    },
+    "section": "ELB Standings",
+    "pf": 102.2,
+    "pa": 118.3,
+    "diff": -16.1,
+    "streak": "L1",
+    "last10": "2-8",
+    "starPlayer": {
+      "name": "Xavier McDaniel",
+      "url": "../players/player238.htm",
+      "pos": "SF",
+      "age": "27",
+      "overall": "129",
+      "potential": "129"
+    },
+    "cap": {
+      "salary": "$80,146,775",
+      "room": "($10,146,775)"
+    },
+    "strengths": [
+      {
+        "label": "O.Rebounds",
+        "value": 12.4,
+        "rank": 4
+      },
+      {
+        "label": "Turnovers",
+        "value": 16.2,
+        "rank": 5
+      }
+    ],
+    "injuries": [
+      {
+        "name": "Trae Young",
+        "pos": "PG",
+        "injury": "Ruptured Disc",
+        "length": "36"
+      }
+    ],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@ACF Fiorentina 113, Aston Villa 91",
+      "boxscoreFile": "box185-7.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster19"
+  },
+  {
+    "id": "roster11",
+    "name": "Atletico Madrid",
+    "record": {
+      "wins": 24,
+      "losses": 18,
+      "pct": 0.571
+    },
+    "section": "ECL Standings",
+    "pf": 109.0,
+    "pa": 104.8,
+    "diff": 4.3,
+    "streak": "L1",
+    "last10": "5-5",
+    "starPlayer": {
+      "name": "Reggie Miller",
+      "url": "../players/player55.htm",
+      "pos": "SG",
+      "age": "23",
+      "overall": "153",
+      "potential": "171"
+    },
+    "cap": {
+      "salary": "$39,199,949",
+      "room": "$10,800,051"
+    },
+    "strengths": [
+      {
+        "label": "Steals",
+        "value": 9.7,
+        "rank": 1
+      },
+      {
+        "label": "FT%",
+        "value": 0.795,
+        "rank": 1
+      },
+      {
+        "label": "O.Rebounds",
+        "value": 13.0,
+        "rank": 2
+      },
+      {
+        "label": "Assists",
+        "value": 27.1,
+        "rank": 2
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@Manchester City 110, Atletico Madrid 83",
+      "boxscoreFile": "box185-10.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster11"
+  },
+  {
+    "id": "roster24",
+    "name": "Barcelona",
+    "record": {
+      "wins": 30,
+      "losses": 12,
+      "pct": 0.714
+    },
+    "section": "ELB Standings",
+    "pf": 120.5,
+    "pa": 112.3,
+    "diff": 8.2,
+    "streak": "W1",
+    "last10": "5-5",
+    "starPlayer": {
+      "name": "Paul Pierce",
+      "url": "../players/player693.htm",
+      "pos": "SF",
+      "age": "24",
+      "overall": "157",
+      "potential": "157"
+    },
+    "cap": {
+      "salary": "$69,991,036",
+      "room": "$8,964"
+    },
+    "strengths": [
+      {
+        "label": "FG%",
+        "value": 0.549,
+        "rank": 1
+      },
+      {
+        "label": "Points Per Shot",
+        "value": 1.51,
+        "rank": 1
+      },
+      {
+        "label": "Adjusted FG%",
+        "value": 0.571,
+        "rank": 1
+      },
+      {
+        "label": "Points",
+        "value": 120.5,
+        "rank": 2
+      }
+    ],
+    "injuries": [
+      {
+        "name": "Magic Johnson",
+        "pos": "PG",
+        "injury": "Fractured Hip",
+        "length": "9"
+      },
+      {
+        "name": "Cedric Maxwell",
+        "pos": "PF",
+        "injury": "Hyperextended Knee",
+        "length": "9"
+      }
+    ],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@Barcelona 111, AC Sparta Praha 108",
+      "boxscoreFile": "box185-8.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster24"
+  },
+  {
+    "id": "roster13",
+    "name": "Benfica",
+    "record": {
+      "wins": 23,
+      "losses": 19,
+      "pct": 0.548
+    },
+    "section": "CLB Standings",
+    "pf": 113.0,
+    "pa": 109.5,
+    "diff": 3.5,
+    "streak": "L1",
+    "last10": "6-4",
+    "starPlayer": {
+      "name": "Moses Malone",
+      "url": "../players/player872.htm",
+      "pos": "C",
+      "age": "31",
+      "overall": "156",
+      "potential": "156"
+    },
+    "cap": {
+      "salary": "$97,732,337",
+      "room": "$2,267,663"
+    },
+    "strengths": [
+      {
+        "label": "Fouls",
+        "value": 15.1,
+        "rank": 1
+      },
+      {
+        "label": "3PT%",
+        "value": 0.411,
+        "rank": 1
+      },
+      {
+        "label": "O.Rebounds",
+        "value": 14.0,
+        "rank": 2
+      },
+      {
+        "label": "Turnovers",
+        "value": 16.6,
+        "rank": 2
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "AFC Richmond 118, @Benfica 97",
+      "boxscoreFile": "box185-3.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster13"
+  },
+  {
+    "id": "roster10",
+    "name": "Brighton",
+    "record": {
+      "wins": 25,
+      "losses": 17,
+      "pct": 0.595
+    },
+    "section": "CLB Standings",
+    "pf": 110.9,
+    "pa": 106.5,
+    "diff": 4.3,
+    "streak": "L1",
+    "last10": "7-3",
+    "starPlayer": {
+      "name": "Kiki Vandeweghe",
+      "url": "../players/player701.htm",
+      "pos": "SF",
+      "age": "28",
+      "overall": "174",
+      "potential": "174"
+    },
+    "cap": {
+      "salary": "$99,439,500",
+      "room": "$560,500"
+    },
+    "strengths": [
+      {
+        "label": "Blocks",
+        "value": 15.3,
+        "rank": 1
+      },
+      {
+        "label": "D.Rebounds",
+        "value": 31.2,
+        "rank": 2
+      },
+      {
+        "label": "Steals",
+        "value": 10.9,
+        "rank": 2
+      },
+      {
+        "label": "FT%",
+        "value": 0.792,
+        "rank": 2
+      }
+    ],
+    "injuries": [
+      {
+        "name": "Rickey Green",
+        "pos": "PG",
+        "injury": "Torn MCL",
+        "length": "183"
+      }
+    ],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@Ajax 115, Brighton 100",
+      "boxscoreFile": "box185-2.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster10"
+  },
+  {
+    "id": "roster17",
+    "name": "Chelsea",
+    "record": {
+      "wins": 14,
+      "losses": 28,
+      "pct": 0.333
+    },
+    "section": "ELB Standings",
+    "pf": 112.2,
+    "pa": 121.7,
+    "diff": -9.5,
+    "streak": "W1",
+    "last10": "2-8",
+    "starPlayer": {
+      "name": "Jim Paxson",
+      "url": "../players/player875.htm",
+      "pos": "SG",
+      "age": "28",
+      "overall": "142",
+      "potential": "142"
+    },
+    "cap": {
+      "salary": "$62,688,000",
+      "room": "$7,312,000"
+    },
+    "strengths": [
+      {
+        "label": "Turnovers",
+        "value": 15.6,
+        "rank": 3
+      },
+      {
+        "label": "FT%",
+        "value": 0.774,
+        "rank": 3
+      },
+      {
+        "label": "3PT%",
+        "value": 0.344,
+        "rank": 4
+      },
+      {
+        "label": "Points",
+        "value": 112.2,
+        "rank": 5
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@Chelsea 119, Crystal Palace 108",
+      "boxscoreFile": "box185-6.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster17"
+  },
+  {
+    "id": "roster6",
+    "name": "Crystal Palace",
+    "record": {
+      "wins": 28,
+      "losses": 14,
+      "pct": 0.667
+    },
+    "section": "ELB Standings",
+    "pf": 114.3,
+    "pa": 104.4,
+    "diff": 9.9,
+    "streak": "L1",
+    "last10": "8-2",
+    "starPlayer": {
+      "name": "Rolando Blackman",
+      "url": "../players/player871.htm",
+      "pos": "SF",
+      "age": "27",
+      "overall": "156",
+      "potential": "157"
+    },
+    "cap": {
+      "salary": "$66,838,199",
+      "room": "$3,161,801"
+    },
+    "strengths": [
+      {
+        "label": "Assists",
+        "value": 28.5,
+        "rank": 2
+      },
+      {
+        "label": "Steals",
+        "value": 10.5,
+        "rank": 2
+      },
+      {
+        "label": "Turnovers",
+        "value": 15.4,
+        "rank": 2
+      },
+      {
+        "label": "Fouls",
+        "value": 20.1,
+        "rank": 2
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@Chelsea 119, Crystal Palace 108",
+      "boxscoreFile": "box185-6.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster6"
+  },
+  {
+    "id": "roster27",
+    "name": "FL Fart",
+    "record": {
+      "wins": 27,
+      "losses": 15,
+      "pct": 0.643
+    },
+    "section": "ELB Standings",
+    "pf": 122.1,
+    "pa": 111.5,
+    "diff": 10.6,
+    "streak": "W1",
+    "last10": "8-2",
+    "starPlayer": {
+      "name": "Eddie Johnson",
+      "url": "../players/player704.htm",
+      "pos": "SF",
+      "age": "27",
+      "overall": "143",
+      "potential": "144"
+    },
+    "cap": {
+      "salary": "$69,460,750",
+      "room": "$539,250"
+    },
+    "strengths": [
+      {
+        "label": "Points",
+        "value": 122.1,
+        "rank": 1
+      },
+      {
+        "label": "Assists",
+        "value": 31.5,
+        "rank": 1
+      },
+      {
+        "label": "FT%",
+        "value": 0.785,
+        "rank": 1
+      },
+      {
+        "label": "3PT%",
+        "value": 0.388,
+        "rank": 1
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@FL Fart 168, Inter Milan 107",
+      "boxscoreFile": "box185-5.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster27"
+  },
+  {
+    "id": "roster26",
+    "name": "Inter Milan",
+    "record": {
+      "wins": 23,
+      "losses": 19,
+      "pct": 0.548
+    },
+    "section": "ELB Standings",
+    "pf": 114.2,
+    "pa": 114.5,
+    "diff": -0.3,
+    "streak": "L1",
+    "last10": "5-5",
+    "starPlayer": {
+      "name": "David West",
+      "url": "../players/player262.htm",
+      "pos": "PF",
+      "age": "28",
+      "overall": "124",
+      "potential": "125"
+    },
+    "cap": {
+      "salary": "$65,232,121",
+      "room": "$4,767,879"
+    },
+    "strengths": [
+      {
+        "label": "O.Rebounds",
+        "value": 14.7,
+        "rank": 1
+      },
+      {
+        "label": "Rebounds",
+        "value": 45.7,
+        "rank": 1
+      },
+      {
+        "label": "D.Rebounds",
+        "value": 31.0,
+        "rank": 2
+      },
+      {
+        "label": "Blocks",
+        "value": 5.7,
+        "rank": 2
+      }
+    ],
+    "injuries": [
+      {
+        "name": "Joakim Noah",
+        "pos": "C",
+        "injury": "Concussion",
+        "length": "9"
+      }
+    ],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@FL Fart 168, Inter Milan 107",
+      "boxscoreFile": "box185-5.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster26"
+  },
+  {
+    "id": "roster14",
+    "name": "Juventus",
+    "record": {
+      "wins": 15,
+      "losses": 27,
+      "pct": 0.357
+    },
+    "section": "ECL Standings",
+    "pf": 105.3,
+    "pa": 109.4,
+    "diff": -4.1,
+    "streak": "W1",
+    "last10": "3-7",
+    "starPlayer": {
+      "name": "Dirk Nowitzki",
+      "url": "../players/player1325.htm",
+      "pos": "SF",
+      "age": "23",
+      "overall": "121",
+      "potential": "122"
+    },
+    "cap": {
+      "salary": "$32,938,054",
+      "room": "$17,061,946"
+    },
+    "strengths": [
+      {
+        "label": "D.Rebounds",
+        "value": 31.1,
+        "rank": 1
+      },
+      {
+        "label": "Blocks",
+        "value": 8.0,
+        "rank": 1
+      },
+      {
+        "label": "3PT%",
+        "value": 0.377,
+        "rank": 1
+      },
+      {
+        "label": "Rebounds",
+        "value": 43.3,
+        "rank": 2
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@Juventus 101, Marseille 82",
+      "boxscoreFile": "box185-9.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster14"
+  },
+  {
+    "id": "roster28",
+    "name": "Manchester City",
+    "record": {
+      "wins": 29,
+      "losses": 13,
+      "pct": 0.69
+    },
+    "section": "ECL Standings",
+    "pf": 111.8,
+    "pa": 105.9,
+    "diff": 5.9,
+    "streak": "W6",
+    "last10": "8-2",
+    "starPlayer": {
+      "name": "Luol Deng",
+      "url": "../players/player342.htm",
+      "pos": "SF",
+      "age": "23",
+      "overall": "132",
+      "potential": "134"
+    },
+    "cap": {
+      "salary": "$49,068,743",
+      "room": "$931,257"
+    },
+    "strengths": [
+      {
+        "label": "Fouls",
+        "value": 17.5,
+        "rank": 1
+      },
+      {
+        "label": "Points",
+        "value": 111.8,
+        "rank": 2
+      },
+      {
+        "label": "Turnovers",
+        "value": 14.7,
+        "rank": 3
+      },
+      {
+        "label": "3PT%",
+        "value": 0.364,
+        "rank": 3
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@Manchester City 110, Atletico Madrid 83",
+      "boxscoreFile": "box185-10.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster28"
+  },
+  {
+    "id": "roster5",
+    "name": "Manchester United",
+    "record": {
+      "wins": 11,
+      "losses": 31,
+      "pct": 0.262
+    },
+    "section": "ECL Standings",
+    "pf": 99.5,
+    "pa": 106.8,
+    "diff": -7.3,
+    "streak": "L4",
+    "last10": "2-8",
+    "starPlayer": {
+      "name": "Tony Parker",
+      "url": "../players/player1327.htm",
+      "pos": "PG",
+      "age": "22",
+      "overall": "124",
+      "potential": "128"
+    },
+    "cap": {
+      "salary": "$35,026,658",
+      "room": "$14,973,342"
+    },
+    "strengths": [
+      {
+        "label": "Fouls",
+        "value": 18.5,
+        "rank": 2
+      },
+      {
+        "label": "Blocks",
+        "value": 6.2,
+        "rank": 4
+      },
+      {
+        "label": "Turnovers",
+        "value": 14.8,
+        "rank": 4
+      },
+      {
+        "label": "3PT%",
+        "value": 0.354,
+        "rank": 5
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "Valencia 127, @Manchester United 123",
+      "boxscoreFile": "box185-11.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster5"
+  },
+  {
+    "id": "roster15",
+    "name": "Marseille",
+    "record": {
+      "wins": 6,
+      "losses": 36,
+      "pct": 0.143
+    },
+    "section": "ECL Standings",
+    "pf": 100.8,
+    "pa": 117.7,
+    "diff": -17.0,
+    "streak": "L9",
+    "last10": "1-9",
+    "starPlayer": {
+      "name": "Anthony Black",
+      "url": "../players/player351.htm",
+      "pos": "SF",
+      "age": "22",
+      "overall": "122",
+      "potential": "144"
+    },
+    "cap": {
+      "salary": "$52,680,376",
+      "room": "($2,680,376)"
+    },
+    "strengths": [
+      {
+        "label": "Turnovers",
+        "value": 13.8,
+        "rank": 1
+      },
+      {
+        "label": "O.Rebounds",
+        "value": 12.4,
+        "rank": 5
+      },
+      {
+        "label": "Steals",
+        "value": 7.7,
+        "rank": 5
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@Juventus 101, Marseille 82",
+      "boxscoreFile": "box185-9.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster15"
+  },
+  {
+    "id": "roster20",
+    "name": "Monaco",
+    "record": {
+      "wins": 31,
+      "losses": 11,
+      "pct": 0.738
+    },
+    "section": "ECL Standings",
+    "pf": 109.9,
+    "pa": 99.5,
+    "diff": 10.3,
+    "streak": "W3",
+    "last10": "7-3",
+    "starPlayer": {
+      "name": "Alvin Robertson",
+      "url": "../players/player423.htm",
+      "pos": "SG",
+      "age": "24",
+      "overall": "149",
+      "potential": "157"
+    },
+    "cap": {
+      "salary": "$47,543,846",
+      "room": "$2,456,154"
+    },
+    "strengths": [
+      {
+        "label": "O.Rebounds",
+        "value": 13.4,
+        "rank": 1
+      },
+      {
+        "label": "Rebounds",
+        "value": 44.0,
+        "rank": 1
+      },
+      {
+        "label": "Blocks",
+        "value": 8.0,
+        "rank": 1
+      },
+      {
+        "label": "FG%",
+        "value": 0.513,
+        "rank": 1
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "Monaco 94, @Tottenham Hotspur 74",
+      "boxscoreFile": "box185-12.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster20"
+  },
+  {
+    "id": "roster21",
+    "name": "Paris Saint-Germain",
+    "record": {
+      "wins": 19,
+      "losses": 23,
+      "pct": 0.452
+    },
+    "section": "CLB Standings",
+    "pf": 115.2,
+    "pa": 114.2,
+    "diff": 1.0,
+    "streak": "W1",
+    "last10": "2-8",
+    "starPlayer": {
+      "name": "Larry Bird",
+      "url": "../players/player697.htm",
+      "pos": "SF",
+      "age": "28",
+      "overall": "156",
+      "potential": "156"
+    },
+    "cap": {
+      "salary": "$101,505,000",
+      "room": "($1,505,000)"
+    },
+    "strengths": [
+      {
+        "label": "O.Rebounds",
+        "value": 14.8,
+        "rank": 1
+      },
+      {
+        "label": "Rebounds",
+        "value": 45.3,
+        "rank": 1
+      },
+      {
+        "label": "FT%",
+        "value": 0.808,
+        "rank": 1
+      },
+      {
+        "label": "Points",
+        "value": 115.2,
+        "rank": 2
+      }
+    ],
+    "injuries": [
+      {
+        "name": "Brad Davis",
+        "pos": "PG",
+        "injury": "Dislocated Shoulder",
+        "length": "7"
+      }
+    ],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@Paris Saint-Germain 125, Arsenal 110",
+      "boxscoreFile": "box185-1.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster21"
+  },
+  {
+    "id": "roster8",
+    "name": "Real Madrid",
+    "record": {
+      "wins": 23,
+      "losses": 19,
+      "pct": 0.548
+    },
+    "section": "CLB Standings",
+    "pf": 110.8,
+    "pa": 109.4,
+    "diff": 1.5,
+    "streak": "L4",
+    "last10": "3-7",
+    "starPlayer": {
+      "name": "Sidney Moncrief",
+      "url": "../players/player699.htm",
+      "pos": "SG",
+      "age": "28",
+      "overall": "157",
+      "potential": "157"
+    },
+    "cap": {
+      "salary": "$99,470,000",
+      "room": "$530,000"
+    },
+    "strengths": [
+      {
+        "label": "D.Rebounds",
+        "value": 31.3,
+        "rank": 1
+      },
+      {
+        "label": "Assists",
+        "value": 32.5,
+        "rank": 1
+      },
+      {
+        "label": "Steals",
+        "value": 11.3,
+        "rank": 1
+      },
+      {
+        "label": "Rebounds",
+        "value": 45.0,
+        "rank": 2
+      }
+    ],
+    "injuries": [],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "@AC Milan 109, Real Madrid 92",
+      "boxscoreFile": "box185-4.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster8"
+  },
+  {
+    "id": "roster22",
+    "name": "Tottenham Hotspur",
+    "record": {
+      "wins": 26,
+      "losses": 16,
+      "pct": 0.619
+    },
+    "section": "ECL Standings",
+    "pf": 106.3,
+    "pa": 100.7,
+    "diff": 5.6,
+    "streak": "L1",
+    "last10": "8-2",
+    "starPlayer": {
+      "name": "Hubert Davis",
+      "url": "../players/player440.htm",
+      "pos": "SF",
+      "age": "26",
+      "overall": "137",
+      "potential": "144"
+    },
+    "cap": {
+      "salary": "$49,016,750",
+      "room": "$983,250"
+    },
+    "strengths": [
+      {
+        "label": "Steals",
+        "value": 9.2,
+        "rank": 2
+      },
+      {
+        "label": "Turnovers",
+        "value": 14.0,
+        "rank": 2
+      },
+      {
+        "label": "3PT%",
+        "value": 0.372,
+        "rank": 2
+      },
+      {
+        "label": "O.Rebounds",
+        "value": 12.9,
+        "rank": 3
+      }
+    ],
+    "injuries": [
+      {
+        "name": "Ray Williams",
+        "pos": "PG",
+        "injury": "Broken Leg",
+        "length": "91"
+      },
+      {
+        "name": "Bam Adebayo",
+        "pos": "PF",
+        "injury": "Sprained Wrist",
+        "length": "2"
+      }
+    ],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "Monaco 94, @Tottenham Hotspur 74",
+      "boxscoreFile": "box185-12.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster22"
+  },
+  {
+    "id": "roster25",
+    "name": "Valencia",
+    "record": {
+      "wins": 26,
+      "losses": 16,
+      "pct": 0.619
+    },
+    "section": "ECL Standings",
+    "pf": 112.4,
+    "pa": 110.2,
+    "diff": 2.2,
+    "streak": "W1",
+    "last10": "6-4",
+    "starPlayer": {
+      "name": "Brian Shaw",
+      "url": "../players/player180.htm",
+      "pos": "SG",
+      "age": "25",
+      "overall": "136",
+      "potential": "137"
+    },
+    "cap": {
+      "salary": "$57,268,670",
+      "room": "($7,268,670)"
+    },
+    "strengths": [
+      {
+        "label": "Points",
+        "value": 112.4,
+        "rank": 1
+      },
+      {
+        "label": "Assists",
+        "value": 28.7,
+        "rank": 1
+      },
+      {
+        "label": "Points Per Shot",
+        "value": 1.31,
+        "rank": 1
+      },
+      {
+        "label": "FG%",
+        "value": 0.502,
+        "rank": 2
+      }
+    ],
+    "injuries": [
+      {
+        "name": "Rod Higgins",
+        "pos": "SF",
+        "injury": "Broken Ankle",
+        "length": "26"
+      }
+    ],
+    "recentGame": {
+      "date": "21/04/1988",
+      "text": "Valencia 127, @Manchester United 123",
+      "boxscoreFile": "box185-11.htm"
+    },
+    "nextGame": null,
+    "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster25"
+  }
+]

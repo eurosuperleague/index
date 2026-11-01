@@ -1,0 +1,3153 @@
+{
+    "source": [
+        "standings.json",
+        "monthly/latest_sim_results.json"
+    ],
+    "tiers": {
+        "Tier 1": [
+            {
+                "team": "Benfica",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 4,
+                "rosterUrl": "./rosters/roster13.htm",
+                "rosterFile": "roster13.htm",
+                "standingsLast10": "6-4",
+                "wins": 6,
+                "losses": 2,
+                "games": 8,
+                "pointsFor": 982,
+                "pointsAgainst": 906,
+                "pointDiff": 76,
+                "avgMargin": 9.5,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@AC Milan 125, Benfica 114",
+                        "boxscoreUrl": "./boxes/box165-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "5/04/1988",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Benfica 114, @Brighton 111",
+                        "boxscoreUrl": "./boxes/box169-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "6/04/1988",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "@Benfica 128, Ajax 114",
+                        "boxscoreUrl": "./boxes/box170-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 25,
+                        "score": "@Benfica 145, Ajax 120",
+                        "boxscoreUrl": "./boxes/box174-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "AFC Richmond",
+                        "result": "W",
+                        "margin": 40,
+                        "score": "@Benfica 131, AFC Richmond 91",
+                        "boxscoreUrl": "./boxes/box178-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@Benfica 111, Real Madrid 95",
+                        "boxscoreUrl": "./boxes/box180-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "Benfica 142, @Paris Saint-Germain 132",
+                        "boxscoreUrl": "./boxes/box184-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 21,
+                        "score": "AFC Richmond 118, @Benfica 97",
+                        "boxscoreUrl": "./boxes/box185-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "14/04/1988",
+                    "opponent": "AFC Richmond",
+                    "result": "W",
+                    "margin": 40,
+                    "score": "@Benfica 131, AFC Richmond 91",
+                    "boxscoreUrl": "./boxes/box178-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "21/04/1988",
+                    "opponent": "AFC Richmond",
+                    "result": "L",
+                    "margin": 21,
+                    "score": "AFC Richmond 118, @Benfica 97",
+                    "boxscoreUrl": "./boxes/box185-3.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "5/04/1988",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Benfica 114, @Brighton 111",
+                        "boxscoreUrl": "./boxes/box169-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 25,
+                        "score": "@Benfica 145, Ajax 120",
+                        "boxscoreUrl": "./boxes/box174-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "AFC Richmond",
+                        "result": "W",
+                        "margin": 40,
+                        "score": "@Benfica 131, AFC Richmond 91",
+                        "boxscoreUrl": "./boxes/box178-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 16,
+                        "score": "@Benfica 111, Real Madrid 95",
+                        "boxscoreUrl": "./boxes/box180-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 21,
+                        "score": "AFC Richmond 118, @Benfica 97",
+                        "boxscoreUrl": "./boxes/box185-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "6-2",
+                "closeGameCount": 1,
+                "last3": "WWL"
+            },
+            {
+                "team": "AC Milan",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 1,
+                "rosterUrl": "./rosters/roster9.htm",
+                "rosterFile": "roster9.htm",
+                "standingsLast10": "7-3",
+                "wins": 4,
+                "losses": 1,
+                "games": 5,
+                "pointsFor": 578,
+                "pointsAgainst": 521,
+                "pointDiff": 57,
+                "avgMargin": 11.4,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@AC Milan 125, Benfica 114",
+                        "boxscoreUrl": "./boxes/box165-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1988",
+                        "opponent": "Arsenal",
+                        "result": "W",
+                        "margin": 31,
+                        "score": "AC Milan 117, @Arsenal 86",
+                        "boxscoreUrl": "./boxes/box172-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1988",
+                        "opponent": "Arsenal",
+                        "result": "W",
+                        "margin": 7,
+                        "score": "@AC Milan 107, Arsenal 100",
+                        "boxscoreUrl": "./boxes/box177-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "17/04/1988",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "Arsenal 129, @AC Milan 120",
+                        "boxscoreUrl": "./boxes/box181-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "@AC Milan 109, Real Madrid 92",
+                        "boxscoreUrl": "./boxes/box185-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "8/04/1988",
+                    "opponent": "Arsenal",
+                    "result": "W",
+                    "margin": 31,
+                    "score": "AC Milan 117, @Arsenal 86",
+                    "boxscoreUrl": "./boxes/box172-1.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "17/04/1988",
+                    "opponent": "Arsenal",
+                    "result": "L",
+                    "margin": 9,
+                    "score": "Arsenal 129, @AC Milan 120",
+                    "boxscoreUrl": "./boxes/box181-1.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "8/04/1988",
+                        "opponent": "Arsenal",
+                        "result": "W",
+                        "margin": 31,
+                        "score": "AC Milan 117, @Arsenal 86",
+                        "boxscoreUrl": "./boxes/box172-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "@AC Milan 109, Real Madrid 92",
+                        "boxscoreUrl": "./boxes/box185-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "4-1",
+                "closeGameCount": 0,
+                "last3": "WLW"
+            },
+            {
+                "team": "AFC Richmond",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 7,
+                "rosterUrl": "./rosters/roster12.htm",
+                "rosterFile": "roster12.htm",
+                "standingsLast10": "5-5",
+                "wins": 4,
+                "losses": 2,
+                "games": 6,
+                "pointsFor": 684,
+                "pointsAgainst": 704,
+                "pointDiff": -20,
+                "avgMargin": -3.33,
+                "streak": "W2",
+                "recentResults": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@AFC Richmond 121, Real Madrid 117",
+                        "boxscoreUrl": "./boxes/box165-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "6/04/1988",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "@Paris Saint-Germain 133, AFC Richmond 119",
+                        "boxscoreUrl": "./boxes/box170-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 7,
+                        "score": "AFC Richmond 121, @Brighton 114",
+                        "boxscoreUrl": "./boxes/box174-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 40,
+                        "score": "@Benfica 131, AFC Richmond 91",
+                        "boxscoreUrl": "./boxes/box178-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1988",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "AFC Richmond 114, @Ajax 112",
+                        "boxscoreUrl": "./boxes/box182-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 21,
+                        "score": "AFC Richmond 118, @Benfica 97",
+                        "boxscoreUrl": "./boxes/box185-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/04/1988",
+                    "opponent": "Benfica",
+                    "result": "W",
+                    "margin": 21,
+                    "score": "AFC Richmond 118, @Benfica 97",
+                    "boxscoreUrl": "./boxes/box185-3.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "14/04/1988",
+                    "opponent": "Benfica",
+                    "result": "L",
+                    "margin": 40,
+                    "score": "@Benfica 131, AFC Richmond 91",
+                    "boxscoreUrl": "./boxes/box178-2.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@AFC Richmond 121, Real Madrid 117",
+                        "boxscoreUrl": "./boxes/box165-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1988",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "AFC Richmond 114, @Ajax 112",
+                        "boxscoreUrl": "./boxes/box182-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Benfica",
+                        "result": "W",
+                        "margin": 21,
+                        "score": "AFC Richmond 118, @Benfica 97",
+                        "boxscoreUrl": "./boxes/box185-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 40,
+                        "score": "@Benfica 131, AFC Richmond 91",
+                        "boxscoreUrl": "./boxes/box178-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "4-2",
+                "closeGameCount": 2,
+                "last3": "LWW"
+            },
+            {
+                "team": "Arsenal",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster23.htm",
+                "rosterFile": "roster23.htm",
+                "standingsLast10": "5-5",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 677,
+                "pointsAgainst": 662,
+                "pointDiff": 15,
+                "avgMargin": 2.5,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "2/04/1988",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 29,
+                        "score": "@Arsenal 133, Paris Saint-Germain 104",
+                        "boxscoreUrl": "./boxes/box166-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "3/04/1988",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 30,
+                        "score": "@Arsenal 119, Ajax 89",
+                        "boxscoreUrl": "./boxes/box167-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1988",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 31,
+                        "score": "AC Milan 117, @Arsenal 86",
+                        "boxscoreUrl": "./boxes/box172-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1988",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 7,
+                        "score": "@AC Milan 107, Arsenal 100",
+                        "boxscoreUrl": "./boxes/box177-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "17/04/1988",
+                        "opponent": "AC Milan",
+                        "result": "W",
+                        "margin": 9,
+                        "score": "Arsenal 129, @AC Milan 120",
+                        "boxscoreUrl": "./boxes/box181-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Paris Saint-Germain 125, Arsenal 110",
+                        "boxscoreUrl": "./boxes/box185-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "3/04/1988",
+                    "opponent": "Ajax",
+                    "result": "W",
+                    "margin": 30,
+                    "score": "@Arsenal 119, Ajax 89",
+                    "boxscoreUrl": "./boxes/box167-1.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "8/04/1988",
+                    "opponent": "AC Milan",
+                    "result": "L",
+                    "margin": 31,
+                    "score": "AC Milan 117, @Arsenal 86",
+                    "boxscoreUrl": "./boxes/box172-1.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "2/04/1988",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 29,
+                        "score": "@Arsenal 133, Paris Saint-Germain 104",
+                        "boxscoreUrl": "./boxes/box166-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "3/04/1988",
+                        "opponent": "Ajax",
+                        "result": "W",
+                        "margin": 30,
+                        "score": "@Arsenal 119, Ajax 89",
+                        "boxscoreUrl": "./boxes/box167-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "8/04/1988",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 31,
+                        "score": "AC Milan 117, @Arsenal 86",
+                        "boxscoreUrl": "./boxes/box172-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Paris Saint-Germain 125, Arsenal 110",
+                        "boxscoreUrl": "./boxes/box185-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 0,
+                "last3": "LWL"
+            },
+            {
+                "team": "Brighton",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster10.htm",
+                "rosterFile": "roster10.htm",
+                "standingsLast10": "7-3",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 653,
+                "pointsAgainst": 640,
+                "pointDiff": 13,
+                "avgMargin": 2.17,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "5/04/1988",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Benfica 114, @Brighton 111",
+                        "boxscoreUrl": "./boxes/box169-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "6/04/1988",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 12,
+                        "score": "@Brighton 106, Real Madrid 94",
+                        "boxscoreUrl": "./boxes/box170-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 7,
+                        "score": "AFC Richmond 121, @Brighton 114",
+                        "boxscoreUrl": "./boxes/box174-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 12,
+                        "score": "@Brighton 112, Real Madrid 100",
+                        "boxscoreUrl": "./boxes/box178-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "Real Madrid",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "Brighton 110, @Real Madrid 96",
+                        "boxscoreUrl": "./boxes/box184-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Ajax 115, Brighton 100",
+                        "boxscoreUrl": "./boxes/box185-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "20/04/1988",
+                    "opponent": "Real Madrid",
+                    "result": "W",
+                    "margin": 14,
+                    "score": "Brighton 110, @Real Madrid 96",
+                    "boxscoreUrl": "./boxes/box184-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "21/04/1988",
+                    "opponent": "Ajax",
+                    "result": "L",
+                    "margin": 15,
+                    "score": "@Ajax 115, Brighton 100",
+                    "boxscoreUrl": "./boxes/box185-2.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "5/04/1988",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Benfica 114, @Brighton 111",
+                        "boxscoreUrl": "./boxes/box169-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Ajax 115, Brighton 100",
+                        "boxscoreUrl": "./boxes/box185-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "3-3",
+                "closeGameCount": 1,
+                "last3": "WWL"
+            },
+            {
+                "team": "Paris Saint-Germain",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 6,
+                "rosterUrl": "./rosters/roster21.htm",
+                "rosterFile": "roster21.htm",
+                "standingsLast10": "2-8",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 728,
+                "pointsAgainst": 750,
+                "pointDiff": -22,
+                "avgMargin": -3.67,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "2/04/1988",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 29,
+                        "score": "@Arsenal 133, Paris Saint-Germain 104",
+                        "boxscoreUrl": "./boxes/box166-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "6/04/1988",
+                        "opponent": "AFC Richmond",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "@Paris Saint-Germain 133, AFC Richmond 119",
+                        "boxscoreUrl": "./boxes/box170-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@Real Madrid 115, Paris Saint-Germain 111",
+                        "boxscoreUrl": "./boxes/box174-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "Ajax",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "Ajax 131, @Paris Saint-Germain 123",
+                        "boxscoreUrl": "./boxes/box178-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "Benfica 142, @Paris Saint-Germain 132",
+                        "boxscoreUrl": "./boxes/box184-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Arsenal",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Paris Saint-Germain 125, Arsenal 110",
+                        "boxscoreUrl": "./boxes/box185-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/04/1988",
+                    "opponent": "Arsenal",
+                    "result": "W",
+                    "margin": 15,
+                    "score": "@Paris Saint-Germain 125, Arsenal 110",
+                    "boxscoreUrl": "./boxes/box185-1.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "2/04/1988",
+                    "opponent": "Arsenal",
+                    "result": "L",
+                    "margin": 29,
+                    "score": "@Arsenal 133, Paris Saint-Germain 104",
+                    "boxscoreUrl": "./boxes/box166-1.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Real Madrid",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@Real Madrid 115, Paris Saint-Germain 111",
+                        "boxscoreUrl": "./boxes/box174-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Arsenal",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Paris Saint-Germain 125, Arsenal 110",
+                        "boxscoreUrl": "./boxes/box185-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "2/04/1988",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 29,
+                        "score": "@Arsenal 133, Paris Saint-Germain 104",
+                        "boxscoreUrl": "./boxes/box166-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "2-4",
+                "closeGameCount": 1,
+                "last3": "LLW"
+            },
+            {
+                "team": "Ajax",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster18.htm",
+                "rosterFile": "roster18.htm",
+                "standingsLast10": "2-8",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 681,
+                "pointsAgainst": 729,
+                "pointDiff": -48,
+                "avgMargin": -8.0,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "3/04/1988",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 30,
+                        "score": "@Arsenal 119, Ajax 89",
+                        "boxscoreUrl": "./boxes/box167-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "6/04/1988",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "@Benfica 128, Ajax 114",
+                        "boxscoreUrl": "./boxes/box170-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 25,
+                        "score": "@Benfica 145, Ajax 120",
+                        "boxscoreUrl": "./boxes/box174-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "Ajax 131, @Paris Saint-Germain 123",
+                        "boxscoreUrl": "./boxes/box178-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "18/04/1988",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "AFC Richmond 114, @Ajax 112",
+                        "boxscoreUrl": "./boxes/box182-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Ajax 115, Brighton 100",
+                        "boxscoreUrl": "./boxes/box185-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/04/1988",
+                    "opponent": "Brighton",
+                    "result": "W",
+                    "margin": 15,
+                    "score": "@Ajax 115, Brighton 100",
+                    "boxscoreUrl": "./boxes/box185-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "3/04/1988",
+                    "opponent": "Arsenal",
+                    "result": "L",
+                    "margin": 30,
+                    "score": "@Arsenal 119, Ajax 89",
+                    "boxscoreUrl": "./boxes/box167-1.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "18/04/1988",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "AFC Richmond 114, @Ajax 112",
+                        "boxscoreUrl": "./boxes/box182-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Brighton",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Ajax 115, Brighton 100",
+                        "boxscoreUrl": "./boxes/box185-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "3/04/1988",
+                        "opponent": "Arsenal",
+                        "result": "L",
+                        "margin": 30,
+                        "score": "@Arsenal 119, Ajax 89",
+                        "boxscoreUrl": "./boxes/box167-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 25,
+                        "score": "@Benfica 145, Ajax 120",
+                        "boxscoreUrl": "./boxes/box174-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "2-4",
+                "closeGameCount": 1,
+                "last3": "WLW"
+            },
+            {
+                "team": "Real Madrid",
+                "tier": "Tier 1",
+                "tierShort": "T1",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster8.htm",
+                "rosterFile": "roster8.htm",
+                "standingsLast10": "3-7",
+                "wins": 1,
+                "losses": 6,
+                "games": 7,
+                "pointsFor": 709,
+                "pointsAgainst": 780,
+                "pointDiff": -71,
+                "avgMargin": -10.14,
+                "streak": "L4",
+                "recentResults": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@AFC Richmond 121, Real Madrid 117",
+                        "boxscoreUrl": "./boxes/box165-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "6/04/1988",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 12,
+                        "score": "@Brighton 106, Real Madrid 94",
+                        "boxscoreUrl": "./boxes/box170-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@Real Madrid 115, Paris Saint-Germain 111",
+                        "boxscoreUrl": "./boxes/box174-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 12,
+                        "score": "@Brighton 112, Real Madrid 100",
+                        "boxscoreUrl": "./boxes/box178-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@Benfica 111, Real Madrid 95",
+                        "boxscoreUrl": "./boxes/box180-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "Brighton",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "Brighton 110, @Real Madrid 96",
+                        "boxscoreUrl": "./boxes/box184-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "@AC Milan 109, Real Madrid 92",
+                        "boxscoreUrl": "./boxes/box185-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "10/04/1988",
+                    "opponent": "Paris Saint-Germain",
+                    "result": "W",
+                    "margin": 4,
+                    "score": "@Real Madrid 115, Paris Saint-Germain 111",
+                    "boxscoreUrl": "./boxes/box174-3.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "21/04/1988",
+                    "opponent": "AC Milan",
+                    "result": "L",
+                    "margin": 17,
+                    "score": "@AC Milan 109, Real Madrid 92",
+                    "boxscoreUrl": "./boxes/box185-4.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "AFC Richmond",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@AFC Richmond 121, Real Madrid 117",
+                        "boxscoreUrl": "./boxes/box165-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Paris Saint-Germain",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@Real Madrid 115, Paris Saint-Germain 111",
+                        "boxscoreUrl": "./boxes/box174-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Benfica",
+                        "result": "L",
+                        "margin": 16,
+                        "score": "@Benfica 111, Real Madrid 95",
+                        "boxscoreUrl": "./boxes/box180-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "AC Milan",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "@AC Milan 109, Real Madrid 92",
+                        "boxscoreUrl": "./boxes/box185-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "1-6",
+                "closeGameCount": 2,
+                "last3": "LLL"
+            }
+        ],
+        "Tier 2": [
+            {
+                "team": "Crystal Palace",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster6.htm",
+                "rosterFile": "roster6.htm",
+                "standingsLast10": "8-2",
+                "wins": 6,
+                "losses": 1,
+                "games": 7,
+                "pointsFor": 832,
+                "pointsAgainst": 702,
+                "pointDiff": 130,
+                "avgMargin": 18.57,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@Crystal Palace 103, ACF Fiorentina 99",
+                        "boxscoreUrl": "./boxes/box165-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "7/04/1988",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 22,
+                        "score": "@Crystal Palace 140, Chelsea 118",
+                        "boxscoreUrl": "./boxes/box171-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/04/1988",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 41,
+                        "score": "@Crystal Palace 130, Chelsea 89",
+                        "boxscoreUrl": "./boxes/box175-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "12/04/1988",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "Crystal Palace 119, @Aston Villa 102",
+                        "boxscoreUrl": "./boxes/box176-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "@Crystal Palace 105, Barcelona 95",
+                        "boxscoreUrl": "./boxes/box180-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 47,
+                        "score": "@Crystal Palace 127, AC Sparta Praha 80",
+                        "boxscoreUrl": "./boxes/box184-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Chelsea",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@Chelsea 119, Crystal Palace 108",
+                        "boxscoreUrl": "./boxes/box185-6.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "20/04/1988",
+                    "opponent": "AC Sparta Praha",
+                    "result": "W",
+                    "margin": 47,
+                    "score": "@Crystal Palace 127, AC Sparta Praha 80",
+                    "boxscoreUrl": "./boxes/box184-3.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "21/04/1988",
+                    "opponent": "Chelsea",
+                    "result": "L",
+                    "margin": 11,
+                    "score": "@Chelsea 119, Crystal Palace 108",
+                    "boxscoreUrl": "./boxes/box185-6.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "@Crystal Palace 103, ACF Fiorentina 99",
+                        "boxscoreUrl": "./boxes/box165-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "7/04/1988",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 22,
+                        "score": "@Crystal Palace 140, Chelsea 118",
+                        "boxscoreUrl": "./boxes/box171-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/04/1988",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 41,
+                        "score": "@Crystal Palace 130, Chelsea 89",
+                        "boxscoreUrl": "./boxes/box175-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "12/04/1988",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 17,
+                        "score": "Crystal Palace 119, @Aston Villa 102",
+                        "boxscoreUrl": "./boxes/box176-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 47,
+                        "score": "@Crystal Palace 127, AC Sparta Praha 80",
+                        "boxscoreUrl": "./boxes/box184-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "6-1",
+                "closeGameCount": 1,
+                "last3": "WWL"
+            },
+            {
+                "team": "ACF Fiorentina",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 1,
+                "rosterUrl": "./rosters/roster7.htm",
+                "rosterFile": "roster7.htm",
+                "standingsLast10": "7-3",
+                "wins": 6,
+                "losses": 2,
+                "games": 8,
+                "pointsFor": 882,
+                "pointsAgainst": 800,
+                "pointDiff": 82,
+                "avgMargin": 10.25,
+                "streak": "W6",
+                "recentResults": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@Crystal Palace 103, ACF Fiorentina 99",
+                        "boxscoreUrl": "./boxes/box165-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "2/04/1988",
+                        "opponent": "AC Sparta Praha",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "@AC Sparta Praha 99, ACF Fiorentina 91",
+                        "boxscoreUrl": "./boxes/box166-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1988",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "ACF Fiorentina 120, @Aston Villa 106",
+                        "boxscoreUrl": "./boxes/box172-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1988",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "ACF Fiorentina 120, @AC Sparta Praha 106",
+                        "boxscoreUrl": "./boxes/box173-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@ACF Fiorentina 126, FL Fart 111",
+                        "boxscoreUrl": "./boxes/box178-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1988",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "ACF Fiorentina 102, @Barcelona 100",
+                        "boxscoreUrl": "./boxes/box179-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 27,
+                        "score": "@ACF Fiorentina 111, Chelsea 84",
+                        "boxscoreUrl": "./boxes/box184-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 22,
+                        "score": "@ACF Fiorentina 113, Aston Villa 91",
+                        "boxscoreUrl": "./boxes/box185-7.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "20/04/1988",
+                    "opponent": "Chelsea",
+                    "result": "W",
+                    "margin": 27,
+                    "score": "@ACF Fiorentina 111, Chelsea 84",
+                    "boxscoreUrl": "./boxes/box184-4.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "2/04/1988",
+                    "opponent": "AC Sparta Praha",
+                    "result": "L",
+                    "margin": 8,
+                    "score": "@AC Sparta Praha 99, ACF Fiorentina 91",
+                    "boxscoreUrl": "./boxes/box166-2.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "@Crystal Palace 103, ACF Fiorentina 99",
+                        "boxscoreUrl": "./boxes/box165-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1988",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 2,
+                        "score": "ACF Fiorentina 102, @Barcelona 100",
+                        "boxscoreUrl": "./boxes/box179-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@ACF Fiorentina 126, FL Fart 111",
+                        "boxscoreUrl": "./boxes/box178-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 27,
+                        "score": "@ACF Fiorentina 111, Chelsea 84",
+                        "boxscoreUrl": "./boxes/box184-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 22,
+                        "score": "@ACF Fiorentina 113, Aston Villa 91",
+                        "boxscoreUrl": "./boxes/box185-7.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "6-2",
+                "closeGameCount": 2,
+                "last3": "WWW"
+            },
+            {
+                "team": "FL Fart",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 4,
+                "rosterUrl": "./rosters/roster27.htm",
+                "rosterFile": "roster27.htm",
+                "standingsLast10": "8-2",
+                "wins": 3,
+                "losses": 2,
+                "games": 5,
+                "pointsFor": 652,
+                "pointsAgainst": 581,
+                "pointDiff": 71,
+                "avgMargin": 14.2,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "@FL Fart 125, Chelsea 105",
+                        "boxscoreUrl": "./boxes/box165-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1988",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 6,
+                        "score": "Barcelona 123, @FL Fart 117",
+                        "boxscoreUrl": "./boxes/box172-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1988",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@FL Fart 131, Inter Milan 120",
+                        "boxscoreUrl": "./boxes/box177-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@ACF Fiorentina 126, FL Fart 111",
+                        "boxscoreUrl": "./boxes/box178-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 61,
+                        "score": "@FL Fart 168, Inter Milan 107",
+                        "boxscoreUrl": "./boxes/box185-5.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/04/1988",
+                    "opponent": "Inter Milan",
+                    "result": "W",
+                    "margin": 61,
+                    "score": "@FL Fart 168, Inter Milan 107",
+                    "boxscoreUrl": "./boxes/box185-5.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "14/04/1988",
+                    "opponent": "ACF Fiorentina",
+                    "result": "L",
+                    "margin": 15,
+                    "score": "@ACF Fiorentina 126, FL Fart 111",
+                    "boxscoreUrl": "./boxes/box178-4.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "@FL Fart 125, Chelsea 105",
+                        "boxscoreUrl": "./boxes/box165-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 61,
+                        "score": "@FL Fart 168, Inter Milan 107",
+                        "boxscoreUrl": "./boxes/box185-5.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@ACF Fiorentina 126, FL Fart 111",
+                        "boxscoreUrl": "./boxes/box178-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "3-2",
+                "closeGameCount": 0,
+                "last3": "WLW"
+            },
+            {
+                "team": "Barcelona",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster24.htm",
+                "rosterFile": "roster24.htm",
+                "standingsLast10": "5-5",
+                "wins": 3,
+                "losses": 3,
+                "games": 6,
+                "pointsFor": 673,
+                "pointsAgainst": 671,
+                "pointDiff": 2,
+                "avgMargin": 0.33,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "3/04/1988",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Inter Milan 119, @Barcelona 116",
+                        "boxscoreUrl": "./boxes/box167-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1988",
+                        "opponent": "FL Fart",
+                        "result": "W",
+                        "margin": 6,
+                        "score": "Barcelona 123, @FL Fart 117",
+                        "boxscoreUrl": "./boxes/box172-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1988",
+                        "opponent": "Inter Milan",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "@Barcelona 128, Inter Milan 120",
+                        "boxscoreUrl": "./boxes/box173-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "ACF Fiorentina 102, @Barcelona 100",
+                        "boxscoreUrl": "./boxes/box179-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "@Crystal Palace 105, Barcelona 95",
+                        "boxscoreUrl": "./boxes/box180-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Barcelona 111, AC Sparta Praha 108",
+                        "boxscoreUrl": "./boxes/box185-8.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "9/04/1988",
+                    "opponent": "Inter Milan",
+                    "result": "W",
+                    "margin": 8,
+                    "score": "@Barcelona 128, Inter Milan 120",
+                    "boxscoreUrl": "./boxes/box173-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "16/04/1988",
+                    "opponent": "Crystal Palace",
+                    "result": "L",
+                    "margin": 10,
+                    "score": "@Crystal Palace 105, Barcelona 95",
+                    "boxscoreUrl": "./boxes/box180-3.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "3/04/1988",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Inter Milan 119, @Barcelona 116",
+                        "boxscoreUrl": "./boxes/box167-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "L",
+                        "margin": 2,
+                        "score": "ACF Fiorentina 102, @Barcelona 100",
+                        "boxscoreUrl": "./boxes/box179-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "@Barcelona 111, AC Sparta Praha 108",
+                        "boxscoreUrl": "./boxes/box185-8.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [],
+                "record": "3-3",
+                "closeGameCount": 3,
+                "last3": "LLW"
+            },
+            {
+                "team": "Inter Milan",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster26.htm",
+                "rosterFile": "roster26.htm",
+                "standingsLast10": "5-5",
+                "wins": 2,
+                "losses": 3,
+                "games": 5,
+                "pointsFor": 601,
+                "pointsAgainst": 655,
+                "pointDiff": -54,
+                "avgMargin": -10.8,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "3/04/1988",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Inter Milan 119, @Barcelona 116",
+                        "boxscoreUrl": "./boxes/box167-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1988",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "@Barcelona 128, Inter Milan 120",
+                        "boxscoreUrl": "./boxes/box173-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "13/04/1988",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 11,
+                        "score": "@FL Fart 131, Inter Milan 120",
+                        "boxscoreUrl": "./boxes/box177-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Inter Milan 135, Chelsea 112",
+                        "boxscoreUrl": "./boxes/box180-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 61,
+                        "score": "@FL Fart 168, Inter Milan 107",
+                        "boxscoreUrl": "./boxes/box185-5.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "16/04/1988",
+                    "opponent": "Chelsea",
+                    "result": "W",
+                    "margin": 23,
+                    "score": "@Inter Milan 135, Chelsea 112",
+                    "boxscoreUrl": "./boxes/box180-4.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "21/04/1988",
+                    "opponent": "FL Fart",
+                    "result": "L",
+                    "margin": 61,
+                    "score": "@FL Fart 168, Inter Milan 107",
+                    "boxscoreUrl": "./boxes/box185-5.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "3/04/1988",
+                        "opponent": "Barcelona",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Inter Milan 119, @Barcelona 116",
+                        "boxscoreUrl": "./boxes/box167-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Chelsea",
+                        "result": "W",
+                        "margin": 23,
+                        "score": "@Inter Milan 135, Chelsea 112",
+                        "boxscoreUrl": "./boxes/box180-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 61,
+                        "score": "@FL Fart 168, Inter Milan 107",
+                        "boxscoreUrl": "./boxes/box185-5.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "2-3",
+                "closeGameCount": 1,
+                "last3": "LWL"
+            },
+            {
+                "team": "AC Sparta Praha",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 7,
+                "rosterUrl": "./rosters/roster16.htm",
+                "rosterFile": "roster16.htm",
+                "standingsLast10": "3-7",
+                "wins": 2,
+                "losses": 4,
+                "games": 6,
+                "pointsFor": 604,
+                "pointsAgainst": 660,
+                "pointDiff": -56,
+                "avgMargin": -9.33,
+                "streak": "L4",
+                "recentResults": [
+                    {
+                        "date": "2/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "@AC Sparta Praha 99, ACF Fiorentina 91",
+                        "boxscoreUrl": "./boxes/box166-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "4/04/1988",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "AC Sparta Praha 108, @Aston Villa 103",
+                        "boxscoreUrl": "./boxes/box168-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "ACF Fiorentina 120, @AC Sparta Praha 106",
+                        "boxscoreUrl": "./boxes/box173-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Aston Villa",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "Aston Villa 108, @AC Sparta Praha 103",
+                        "boxscoreUrl": "./boxes/box180-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 47,
+                        "score": "@Crystal Palace 127, AC Sparta Praha 80",
+                        "boxscoreUrl": "./boxes/box184-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Barcelona 111, AC Sparta Praha 108",
+                        "boxscoreUrl": "./boxes/box185-8.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "2/04/1988",
+                    "opponent": "ACF Fiorentina",
+                    "result": "W",
+                    "margin": 8,
+                    "score": "@AC Sparta Praha 99, ACF Fiorentina 91",
+                    "boxscoreUrl": "./boxes/box166-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "20/04/1988",
+                    "opponent": "Crystal Palace",
+                    "result": "L",
+                    "margin": 47,
+                    "score": "@Crystal Palace 127, AC Sparta Praha 80",
+                    "boxscoreUrl": "./boxes/box184-3.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "4/04/1988",
+                        "opponent": "Aston Villa",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "AC Sparta Praha 108, @Aston Villa 103",
+                        "boxscoreUrl": "./boxes/box168-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Aston Villa",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "Aston Villa 108, @AC Sparta Praha 103",
+                        "boxscoreUrl": "./boxes/box180-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Barcelona",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "@Barcelona 111, AC Sparta Praha 108",
+                        "boxscoreUrl": "./boxes/box185-8.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 47,
+                        "score": "@Crystal Palace 127, AC Sparta Praha 80",
+                        "boxscoreUrl": "./boxes/box184-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "2-4",
+                "closeGameCount": 3,
+                "last3": "LLL"
+            },
+            {
+                "team": "Aston Villa",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster19.htm",
+                "rosterFile": "roster19.htm",
+                "standingsLast10": "2-8",
+                "wins": 1,
+                "losses": 4,
+                "games": 5,
+                "pointsFor": 510,
+                "pointsAgainst": 563,
+                "pointDiff": -53,
+                "avgMargin": -10.6,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "4/04/1988",
+                        "opponent": "AC Sparta Praha",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "AC Sparta Praha 108, @Aston Villa 103",
+                        "boxscoreUrl": "./boxes/box168-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "ACF Fiorentina 120, @Aston Villa 106",
+                        "boxscoreUrl": "./boxes/box172-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "12/04/1988",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "Crystal Palace 119, @Aston Villa 102",
+                        "boxscoreUrl": "./boxes/box176-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "Aston Villa 108, @AC Sparta Praha 103",
+                        "boxscoreUrl": "./boxes/box180-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "L",
+                        "margin": 22,
+                        "score": "@ACF Fiorentina 113, Aston Villa 91",
+                        "boxscoreUrl": "./boxes/box185-7.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "16/04/1988",
+                    "opponent": "AC Sparta Praha",
+                    "result": "W",
+                    "margin": 5,
+                    "score": "Aston Villa 108, @AC Sparta Praha 103",
+                    "boxscoreUrl": "./boxes/box180-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "21/04/1988",
+                    "opponent": "ACF Fiorentina",
+                    "result": "L",
+                    "margin": 22,
+                    "score": "@ACF Fiorentina 113, Aston Villa 91",
+                    "boxscoreUrl": "./boxes/box185-7.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "4/04/1988",
+                        "opponent": "AC Sparta Praha",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "AC Sparta Praha 108, @Aston Villa 103",
+                        "boxscoreUrl": "./boxes/box168-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "AC Sparta Praha",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "Aston Villa 108, @AC Sparta Praha 103",
+                        "boxscoreUrl": "./boxes/box180-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "12/04/1988",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 17,
+                        "score": "Crystal Palace 119, @Aston Villa 102",
+                        "boxscoreUrl": "./boxes/box176-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "L",
+                        "margin": 22,
+                        "score": "@ACF Fiorentina 113, Aston Villa 91",
+                        "boxscoreUrl": "./boxes/box185-7.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "1-4",
+                "closeGameCount": 2,
+                "last3": "LWL"
+            },
+            {
+                "team": "Chelsea",
+                "tier": "Tier 2",
+                "tierShort": "T2",
+                "standingRank": 6,
+                "rosterUrl": "./rosters/roster17.htm",
+                "rosterFile": "roster17.htm",
+                "standingsLast10": "2-8",
+                "wins": 1,
+                "losses": 5,
+                "games": 6,
+                "pointsFor": 627,
+                "pointsAgainst": 749,
+                "pointDiff": -122,
+                "avgMargin": -20.33,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "@FL Fart 125, Chelsea 105",
+                        "boxscoreUrl": "./boxes/box165-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "7/04/1988",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 22,
+                        "score": "@Crystal Palace 140, Chelsea 118",
+                        "boxscoreUrl": "./boxes/box171-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/04/1988",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 41,
+                        "score": "@Crystal Palace 130, Chelsea 89",
+                        "boxscoreUrl": "./boxes/box175-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Inter Milan 135, Chelsea 112",
+                        "boxscoreUrl": "./boxes/box180-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "L",
+                        "margin": 27,
+                        "score": "@ACF Fiorentina 111, Chelsea 84",
+                        "boxscoreUrl": "./boxes/box184-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Crystal Palace",
+                        "result": "W",
+                        "margin": 11,
+                        "score": "@Chelsea 119, Crystal Palace 108",
+                        "boxscoreUrl": "./boxes/box185-6.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/04/1988",
+                    "opponent": "Crystal Palace",
+                    "result": "W",
+                    "margin": 11,
+                    "score": "@Chelsea 119, Crystal Palace 108",
+                    "boxscoreUrl": "./boxes/box185-6.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "11/04/1988",
+                    "opponent": "Crystal Palace",
+                    "result": "L",
+                    "margin": 41,
+                    "score": "@Crystal Palace 130, Chelsea 89",
+                    "boxscoreUrl": "./boxes/box175-1.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "FL Fart",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "@FL Fart 125, Chelsea 105",
+                        "boxscoreUrl": "./boxes/box165-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "7/04/1988",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 22,
+                        "score": "@Crystal Palace 140, Chelsea 118",
+                        "boxscoreUrl": "./boxes/box171-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "11/04/1988",
+                        "opponent": "Crystal Palace",
+                        "result": "L",
+                        "margin": 41,
+                        "score": "@Crystal Palace 130, Chelsea 89",
+                        "boxscoreUrl": "./boxes/box175-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Inter Milan",
+                        "result": "L",
+                        "margin": 23,
+                        "score": "@Inter Milan 135, Chelsea 112",
+                        "boxscoreUrl": "./boxes/box180-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "ACF Fiorentina",
+                        "result": "L",
+                        "margin": 27,
+                        "score": "@ACF Fiorentina 111, Chelsea 84",
+                        "boxscoreUrl": "./boxes/box184-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "1-5",
+                "closeGameCount": 0,
+                "last3": "LLW"
+            }
+        ],
+        "Tier 3": [
+            {
+                "team": "Manchester City",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 2,
+                "rosterUrl": "./rosters/roster28.htm",
+                "rosterFile": "roster28.htm",
+                "standingsLast10": "8-2",
+                "wins": 6,
+                "losses": 0,
+                "games": 6,
+                "pointsFor": 699,
+                "pointsAgainst": 623,
+                "pointDiff": 76,
+                "avgMargin": 12.67,
+                "streak": "W6",
+                "recentResults": [
+                    {
+                        "date": "3/04/1988",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Manchester City 128, @Atletico Madrid 125",
+                        "boxscoreUrl": "./boxes/box167-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "4/04/1988",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 9,
+                        "score": "@Manchester City 121, Juventus 112",
+                        "boxscoreUrl": "./boxes/box168-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 25,
+                        "score": "Manchester City 114, @Marseille 89",
+                        "boxscoreUrl": "./boxes/box174-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 7,
+                        "score": "@Manchester City 107, Monaco 100",
+                        "boxscoreUrl": "./boxes/box178-5.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1988",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "Manchester City 119, @Marseille 114",
+                        "boxscoreUrl": "./boxes/box183-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 27,
+                        "score": "@Manchester City 110, Atletico Madrid 83",
+                        "boxscoreUrl": "./boxes/box185-10.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/04/1988",
+                    "opponent": "Atletico Madrid",
+                    "result": "W",
+                    "margin": 27,
+                    "score": "@Manchester City 110, Atletico Madrid 83",
+                    "boxscoreUrl": "./boxes/box185-10.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": null,
+                "closeGames": [
+                    {
+                        "date": "3/04/1988",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Manchester City 128, @Atletico Madrid 125",
+                        "boxscoreUrl": "./boxes/box167-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1988",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 5,
+                        "score": "Manchester City 119, @Marseille 114",
+                        "boxscoreUrl": "./boxes/box183-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 25,
+                        "score": "Manchester City 114, @Marseille 89",
+                        "boxscoreUrl": "./boxes/box174-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 27,
+                        "score": "@Manchester City 110, Atletico Madrid 83",
+                        "boxscoreUrl": "./boxes/box185-10.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "6-0",
+                "closeGameCount": 2,
+                "last3": "WWW"
+            },
+            {
+                "team": "Monaco",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 1,
+                "rosterUrl": "./rosters/roster20.htm",
+                "rosterFile": "roster20.htm",
+                "standingsLast10": "7-3",
+                "wins": 5,
+                "losses": 2,
+                "games": 7,
+                "pointsFor": 758,
+                "pointsAgainst": 701,
+                "pointDiff": 57,
+                "avgMargin": 8.14,
+                "streak": "W3",
+                "recentResults": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "Monaco 123, @Marseille 113",
+                        "boxscoreUrl": "./boxes/box165-5.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "5/04/1988",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Valencia 132, Monaco 117",
+                        "boxscoreUrl": "./boxes/box169-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1988",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Monaco 111, @Atletico Madrid 108",
+                        "boxscoreUrl": "./boxes/box173-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "14/04/1988",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 7,
+                        "score": "@Manchester City 107, Monaco 100",
+                        "boxscoreUrl": "./boxes/box178-5.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "@Monaco 109, Manchester United 77",
+                        "boxscoreUrl": "./boxes/box180-6.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 14,
+                        "score": "@Monaco 104, Manchester United 90",
+                        "boxscoreUrl": "./boxes/box184-5.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "Monaco 94, @Tottenham Hotspur 74",
+                        "boxscoreUrl": "./boxes/box185-12.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "16/04/1988",
+                    "opponent": "Manchester United",
+                    "result": "W",
+                    "margin": 32,
+                    "score": "@Monaco 109, Manchester United 77",
+                    "boxscoreUrl": "./boxes/box180-6.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "5/04/1988",
+                    "opponent": "Valencia",
+                    "result": "L",
+                    "margin": 15,
+                    "score": "@Valencia 132, Monaco 117",
+                    "boxscoreUrl": "./boxes/box169-2.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "9/04/1988",
+                        "opponent": "Atletico Madrid",
+                        "result": "W",
+                        "margin": 3,
+                        "score": "Monaco 111, @Atletico Madrid 108",
+                        "boxscoreUrl": "./boxes/box173-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "@Monaco 109, Manchester United 77",
+                        "boxscoreUrl": "./boxes/box180-6.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "W",
+                        "margin": 20,
+                        "score": "Monaco 94, @Tottenham Hotspur 74",
+                        "boxscoreUrl": "./boxes/box185-12.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "5/04/1988",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "@Valencia 132, Monaco 117",
+                        "boxscoreUrl": "./boxes/box169-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "5-2",
+                "closeGameCount": 1,
+                "last3": "WWW"
+            },
+            {
+                "team": "Tottenham Hotspur",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 4,
+                "rosterUrl": "./rosters/roster22.htm",
+                "rosterFile": "roster22.htm",
+                "standingsLast10": "8-2",
+                "wins": 4,
+                "losses": 1,
+                "games": 5,
+                "pointsFor": 515,
+                "pointsAgainst": 470,
+                "pointDiff": 45,
+                "avgMargin": 9.0,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "4/04/1988",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "@Tottenham Hotspur 115, Manchester United 83",
+                        "boxscoreUrl": "./boxes/box168-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1988",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "Tottenham Hotspur 119, @Juventus 104",
+                        "boxscoreUrl": "./boxes/box172-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "12/04/1988",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 8,
+                        "score": "Tottenham Hotspur 98, @Manchester United 90",
+                        "boxscoreUrl": "./boxes/box176-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "17/04/1988",
+                        "opponent": "Valencia",
+                        "result": "W",
+                        "margin": 10,
+                        "score": "@Tottenham Hotspur 109, Valencia 99",
+                        "boxscoreUrl": "./boxes/box181-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "Monaco 94, @Tottenham Hotspur 74",
+                        "boxscoreUrl": "./boxes/box185-12.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "4/04/1988",
+                    "opponent": "Manchester United",
+                    "result": "W",
+                    "margin": 32,
+                    "score": "@Tottenham Hotspur 115, Manchester United 83",
+                    "boxscoreUrl": "./boxes/box168-3.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "21/04/1988",
+                    "opponent": "Monaco",
+                    "result": "L",
+                    "margin": 20,
+                    "score": "Monaco 94, @Tottenham Hotspur 74",
+                    "boxscoreUrl": "./boxes/box185-12.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "4/04/1988",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 32,
+                        "score": "@Tottenham Hotspur 115, Manchester United 83",
+                        "boxscoreUrl": "./boxes/box168-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1988",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "Tottenham Hotspur 119, @Juventus 104",
+                        "boxscoreUrl": "./boxes/box172-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 20,
+                        "score": "Monaco 94, @Tottenham Hotspur 74",
+                        "boxscoreUrl": "./boxes/box185-12.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "4-1",
+                "closeGameCount": 0,
+                "last3": "WWL"
+            },
+            {
+                "team": "Valencia",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 3,
+                "rosterUrl": "./rosters/roster25.htm",
+                "rosterFile": "roster25.htm",
+                "standingsLast10": "6-4",
+                "wins": 4,
+                "losses": 1,
+                "games": 5,
+                "pointsFor": 584,
+                "pointsAgainst": 559,
+                "pointDiff": 25,
+                "avgMargin": 5.0,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "5/04/1988",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Valencia 132, Monaco 117",
+                        "boxscoreUrl": "./boxes/box169-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "12/04/1988",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 9,
+                        "score": "@Valencia 116, Juventus 107",
+                        "boxscoreUrl": "./boxes/box176-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Juventus",
+                        "result": "W",
+                        "margin": 7,
+                        "score": "@Valencia 110, Juventus 103",
+                        "boxscoreUrl": "./boxes/box180-5.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "17/04/1988",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "@Tottenham Hotspur 109, Valencia 99",
+                        "boxscoreUrl": "./boxes/box181-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "Valencia 127, @Manchester United 123",
+                        "boxscoreUrl": "./boxes/box185-11.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "5/04/1988",
+                    "opponent": "Monaco",
+                    "result": "W",
+                    "margin": 15,
+                    "score": "@Valencia 132, Monaco 117",
+                    "boxscoreUrl": "./boxes/box169-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "17/04/1988",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "L",
+                    "margin": 10,
+                    "score": "@Tottenham Hotspur 109, Valencia 99",
+                    "boxscoreUrl": "./boxes/box181-2.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Manchester United",
+                        "result": "W",
+                        "margin": 4,
+                        "score": "Valencia 127, @Manchester United 123",
+                        "boxscoreUrl": "./boxes/box185-11.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "5/04/1988",
+                        "opponent": "Monaco",
+                        "result": "W",
+                        "margin": 15,
+                        "score": "@Valencia 132, Monaco 117",
+                        "boxscoreUrl": "./boxes/box169-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [],
+                "record": "4-1",
+                "closeGameCount": 1,
+                "last3": "WLW"
+            },
+            {
+                "team": "Atletico Madrid",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 5,
+                "rosterUrl": "./rosters/roster11.htm",
+                "rosterFile": "roster11.htm",
+                "standingsLast10": "5-5",
+                "wins": 1,
+                "losses": 3,
+                "games": 4,
+                "pointsFor": 443,
+                "pointsAgainst": 458,
+                "pointDiff": -15,
+                "avgMargin": -3.75,
+                "streak": "L1",
+                "recentResults": [
+                    {
+                        "date": "3/04/1988",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Manchester City 128, @Atletico Madrid 125",
+                        "boxscoreUrl": "./boxes/box167-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1988",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Monaco 111, @Atletico Madrid 108",
+                        "boxscoreUrl": "./boxes/box173-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1988",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "@Atletico Madrid 127, Marseille 109",
+                        "boxscoreUrl": "./boxes/box179-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 27,
+                        "score": "@Manchester City 110, Atletico Madrid 83",
+                        "boxscoreUrl": "./boxes/box185-10.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "15/04/1988",
+                    "opponent": "Marseille",
+                    "result": "W",
+                    "margin": 18,
+                    "score": "@Atletico Madrid 127, Marseille 109",
+                    "boxscoreUrl": "./boxes/box179-2.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "21/04/1988",
+                    "opponent": "Manchester City",
+                    "result": "L",
+                    "margin": 27,
+                    "score": "@Manchester City 110, Atletico Madrid 83",
+                    "boxscoreUrl": "./boxes/box185-10.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "3/04/1988",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Manchester City 128, @Atletico Madrid 125",
+                        "boxscoreUrl": "./boxes/box167-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "9/04/1988",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 3,
+                        "score": "Monaco 111, @Atletico Madrid 108",
+                        "boxscoreUrl": "./boxes/box173-3.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "15/04/1988",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 18,
+                        "score": "@Atletico Madrid 127, Marseille 109",
+                        "boxscoreUrl": "./boxes/box179-2.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 27,
+                        "score": "@Manchester City 110, Atletico Madrid 83",
+                        "boxscoreUrl": "./boxes/box185-10.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "1-3",
+                "closeGameCount": 2,
+                "last3": "LWL"
+            },
+            {
+                "team": "Juventus",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 6,
+                "rosterUrl": "./rosters/roster14.htm",
+                "rosterFile": "roster14.htm",
+                "standingsLast10": "3-7",
+                "wins": 1,
+                "losses": 4,
+                "games": 5,
+                "pointsFor": 527,
+                "pointsAgainst": 548,
+                "pointDiff": -21,
+                "avgMargin": -4.2,
+                "streak": "W1",
+                "recentResults": [
+                    {
+                        "date": "4/04/1988",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "@Manchester City 121, Juventus 112",
+                        "boxscoreUrl": "./boxes/box168-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "8/04/1988",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "Tottenham Hotspur 119, @Juventus 104",
+                        "boxscoreUrl": "./boxes/box172-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "12/04/1988",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 9,
+                        "score": "@Valencia 116, Juventus 107",
+                        "boxscoreUrl": "./boxes/box176-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 7,
+                        "score": "@Valencia 110, Juventus 103",
+                        "boxscoreUrl": "./boxes/box180-5.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "@Juventus 101, Marseille 82",
+                        "boxscoreUrl": "./boxes/box185-9.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "21/04/1988",
+                    "opponent": "Marseille",
+                    "result": "W",
+                    "margin": 19,
+                    "score": "@Juventus 101, Marseille 82",
+                    "boxscoreUrl": "./boxes/box185-9.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "8/04/1988",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "L",
+                    "margin": 15,
+                    "score": "Tottenham Hotspur 119, @Juventus 104",
+                    "boxscoreUrl": "./boxes/box172-4.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [],
+                "blowoutWins": [
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 19,
+                        "score": "@Juventus 101, Marseille 82",
+                        "boxscoreUrl": "./boxes/box185-9.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "8/04/1988",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 15,
+                        "score": "Tottenham Hotspur 119, @Juventus 104",
+                        "boxscoreUrl": "./boxes/box172-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "1-4",
+                "closeGameCount": 0,
+                "last3": "LLW"
+            },
+            {
+                "team": "Manchester United",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 7,
+                "rosterUrl": "./rosters/roster5.htm",
+                "rosterFile": "roster5.htm",
+                "standingsLast10": "2-8",
+                "wins": 1,
+                "losses": 5,
+                "games": 6,
+                "pointsFor": 581,
+                "pointsAgainst": 629,
+                "pointDiff": -48,
+                "avgMargin": -8.0,
+                "streak": "L4",
+                "recentResults": [
+                    {
+                        "date": "4/04/1988",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "@Tottenham Hotspur 115, Manchester United 83",
+                        "boxscoreUrl": "./boxes/box168-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "6/04/1988",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 42,
+                        "score": "@Manchester United 118, Marseille 76",
+                        "boxscoreUrl": "./boxes/box170-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "12/04/1988",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 8,
+                        "score": "Tottenham Hotspur 98, @Manchester United 90",
+                        "boxscoreUrl": "./boxes/box176-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "@Monaco 109, Manchester United 77",
+                        "boxscoreUrl": "./boxes/box180-6.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "20/04/1988",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 14,
+                        "score": "@Monaco 104, Manchester United 90",
+                        "boxscoreUrl": "./boxes/box184-5.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "Valencia 127, @Manchester United 123",
+                        "boxscoreUrl": "./boxes/box185-11.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": {
+                    "date": "6/04/1988",
+                    "opponent": "Marseille",
+                    "result": "W",
+                    "margin": 42,
+                    "score": "@Manchester United 118, Marseille 76",
+                    "boxscoreUrl": "./boxes/box170-4.htm",
+                    "section": "Regular Season"
+                },
+                "worstLoss": {
+                    "date": "4/04/1988",
+                    "opponent": "Tottenham Hotspur",
+                    "result": "L",
+                    "margin": 32,
+                    "score": "@Tottenham Hotspur 115, Manchester United 83",
+                    "boxscoreUrl": "./boxes/box168-3.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Valencia",
+                        "result": "L",
+                        "margin": 4,
+                        "score": "Valencia 127, @Manchester United 123",
+                        "boxscoreUrl": "./boxes/box185-11.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [
+                    {
+                        "date": "6/04/1988",
+                        "opponent": "Marseille",
+                        "result": "W",
+                        "margin": 42,
+                        "score": "@Manchester United 118, Marseille 76",
+                        "boxscoreUrl": "./boxes/box170-4.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutLosses": [
+                    {
+                        "date": "4/04/1988",
+                        "opponent": "Tottenham Hotspur",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "@Tottenham Hotspur 115, Manchester United 83",
+                        "boxscoreUrl": "./boxes/box168-3.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "16/04/1988",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 32,
+                        "score": "@Monaco 109, Manchester United 77",
+                        "boxscoreUrl": "./boxes/box180-6.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "1-5",
+                "closeGameCount": 1,
+                "last3": "LLL"
+            },
+            {
+                "team": "Marseille",
+                "tier": "Tier 3",
+                "tierShort": "T3",
+                "standingRank": 8,
+                "rosterUrl": "./rosters/roster15.htm",
+                "rosterFile": "roster15.htm",
+                "standingsLast10": "1-9",
+                "wins": 0,
+                "losses": 6,
+                "games": 6,
+                "pointsFor": 583,
+                "pointsAgainst": 702,
+                "pointDiff": -119,
+                "avgMargin": -19.83,
+                "streak": "L6",
+                "recentResults": [
+                    {
+                        "date": "1/04/1988",
+                        "opponent": "Monaco",
+                        "result": "L",
+                        "margin": 10,
+                        "score": "Monaco 123, @Marseille 113",
+                        "boxscoreUrl": "./boxes/box165-5.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "6/04/1988",
+                        "opponent": "Manchester United",
+                        "result": "L",
+                        "margin": 42,
+                        "score": "@Manchester United 118, Marseille 76",
+                        "boxscoreUrl": "./boxes/box170-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 25,
+                        "score": "Manchester City 114, @Marseille 89",
+                        "boxscoreUrl": "./boxes/box174-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1988",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "@Atletico Madrid 127, Marseille 109",
+                        "boxscoreUrl": "./boxes/box179-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "19/04/1988",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "Manchester City 119, @Marseille 114",
+                        "boxscoreUrl": "./boxes/box183-1.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "@Juventus 101, Marseille 82",
+                        "boxscoreUrl": "./boxes/box185-9.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "bestWin": null,
+                "worstLoss": {
+                    "date": "6/04/1988",
+                    "opponent": "Manchester United",
+                    "result": "L",
+                    "margin": 42,
+                    "score": "@Manchester United 118, Marseille 76",
+                    "boxscoreUrl": "./boxes/box170-4.htm",
+                    "section": "Regular Season"
+                },
+                "closeGames": [
+                    {
+                        "date": "19/04/1988",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 5,
+                        "score": "Manchester City 119, @Marseille 114",
+                        "boxscoreUrl": "./boxes/box183-1.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "blowoutWins": [],
+                "blowoutLosses": [
+                    {
+                        "date": "6/04/1988",
+                        "opponent": "Manchester United",
+                        "result": "L",
+                        "margin": 42,
+                        "score": "@Manchester United 118, Marseille 76",
+                        "boxscoreUrl": "./boxes/box170-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "10/04/1988",
+                        "opponent": "Manchester City",
+                        "result": "L",
+                        "margin": 25,
+                        "score": "Manchester City 114, @Marseille 89",
+                        "boxscoreUrl": "./boxes/box174-4.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "15/04/1988",
+                        "opponent": "Atletico Madrid",
+                        "result": "L",
+                        "margin": 18,
+                        "score": "@Atletico Madrid 127, Marseille 109",
+                        "boxscoreUrl": "./boxes/box179-2.htm",
+                        "section": "Regular Season"
+                    },
+                    {
+                        "date": "21/04/1988",
+                        "opponent": "Juventus",
+                        "result": "L",
+                        "margin": 19,
+                        "score": "@Juventus 101, Marseille 82",
+                        "boxscoreUrl": "./boxes/box185-9.htm",
+                        "section": "Regular Season"
+                    }
+                ],
+                "record": "0-6",
+                "closeGameCount": 1,
+                "last3": "LLL"
+            }
+        ]
+    }
+}

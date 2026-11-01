@@ -2172,7 +2172,17 @@
       "source": "commissioner-app",
       "status": "active",
       "awardId": ""
+    },
+    {
+      "prospectKey": "ervinjohnson|24827|83",
+      "name": "Ervin Johnson",
+      "season": "season-7",
+      "team": "Benfica",
+      "publishedAt": "2026-10-14T12:21:13Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": "award-91ede8da52ad1dab"
     }
   ],
-  "updatedAt": "2026-10-14T12:21:13Z"
+  "updatedAt": "2026-10-31T03:59:56Z"
 }

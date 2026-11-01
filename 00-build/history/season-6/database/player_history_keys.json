@@ -1,7 +1,7 @@
 {
   "source": "players.json",
   "season": "season-6",
-  "generatedAtUtc": "2026-10-05T05:56:49.340651+00:00",
+  "generatedAtUtc": "2026-10-31T04:12:13.889405+00:00",
   "keys": {
     "player240.htm": "a-c-green__6-9__season-1__21",
     "player1190.htm": "ac-milan-mascot__6-5__season-5__40",
@@ -113,8 +113,8 @@
     "player1206.htm": "barcelona-mascot__6-5__season-6__40",
     "player1373.htm": "barcelona-mascot__6-5__season-6__40",
     "player1483.htm": "barcelona-mascot__6-5__season-5__41",
-    "player1372.htm": "fiorentina-munich-mascot__6-5__season-5__40",
-    "player1458.htm": "fiorentina-munich-mascot__6-5__season-5__40",
+    "player1372.htm": "acf-fiorentina-mascot__6-5__season-5__40",
+    "player1458.htm": "acf-fiorentina-mascot__6-5__season-5__40",
     "player786.htm": "ben-poquette__6-9__season-1__24",
     "player1398.htm": "ben-sheppard__6-6__season-6__21",
     "player1371.htm": "benfica-mascot__6-5__season-5__40",

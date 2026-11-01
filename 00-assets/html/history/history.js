@@ -781,7 +781,7 @@
         ${table(["#", "Team", "W-L", "PCT", "GB", "PF", "PA", "DIFF", "L10", "Streak"], (section.teams || []).map((team, index) => {
           const tier = tierFromTitle(section.title);
           const position = index + 1;
-          const rowClass = standingsHighlightClass(tier, position, (section.teams || []).length);
+          const rowClass = standingsHighlightClass(tier, position, (section.teams || []).length, seasonData.season);
           return `<tr class="${rowClass}"><td class="num">${position}</td><td>${teamMini(team.team, team.rosterFile)}</td><td class="num">${team.wins}-${team.losses}</td><td class="num">${esc(team.pct)}</td><td class="num">${esc(team.gb)}</td><td class="num">${esc(team.pf)}</td><td class="num">${esc(team.pa)}</td><td class="num">${esc(team.diff)}</td><td class="num">${esc(team.last10)}</td><td class="num">${esc(team.streak)}</td></tr>`;
         }))}
       </section>`).join("");
@@ -860,8 +860,8 @@
   async function dashboardFacts(season) {
     const teams = allTeamsFromLatest(season);
     const champion = teams.slice().sort((a, b) => teamOverallRank(a) - teamOverallRank(b))[0] || {};
-    const promoted = teams.filter((row) => movementMarker(row.tier, row.position, row.teamCount) === "P");
-    const relegated = teams.filter((row) => movementMarker(row.tier, row.position, row.teamCount) === "R");
+    const promoted = teams.filter((row) => movementMarker(row.tier, row.position, row.teamCount, season.season) === "P");
+    const relegated = teams.filter((row) => movementMarker(row.tier, row.position, row.teamCount, season.season) === "R");
     const allTime = await rankedPlayers({ limit: 1 });
     const current = await rankedLatestSeasonPlayers({ limit: 1 });
     return { teams, champion, promoted, relegated, allTime: allTime[0], current: current[0] };
@@ -1049,7 +1049,7 @@
         <a class="team-directory-card" href="team.htm?id=${encodeURIComponent(team.id)}">
           ${logoFor(team.team) ? `<img src="${logoFor(team.team)}" alt="">` : ""}
           <span><strong>${esc(team.team)}</strong><small>${esc(team.tier)} #${esc(team.position)} | ${esc(team.wins)}-${esc(team.losses)} | Diff ${esc(team.diff)}</small></span>
-          ${movementBadge(movementMarker(team.tier, team.position, team.teamCount))}
+          ${movementBadge(movementMarker(team.tier, team.position, team.teamCount, season.season))}
         </a>`).join("")}</section>`;
   }
 
@@ -1140,7 +1140,7 @@
       return `<rect class="tier-band tier-band-${index}" x="${pad.left}" y="${y1}" width="${width - pad.left - pad.right}" height="${Math.max(1, y2 - y1)}"></rect><text class="tier-label" x="12" y="${(y1 + y2) / 2 + 4}">${tier}</text>`;
     }).join("");
     const dots = positionHistory.map(({ season, standing }, index) => {
-      const marker = movementMarker(standing.tier, standing.position, standing.teamCount);
+      const marker = movementMarker(standing.tier, standing.position, standing.teamCount, season);
       const rank = chartRank(standing);
       return `<g class="position-dot ${marker === "C" ? "champion" : marker === "P" ? "promoted" : marker === "R" ? "relegated" : ""}">
         <circle cx="${x(index)}" cy="${y(rank)}" r="4"></circle>
@@ -1218,7 +1218,7 @@
   async function renderTeamTimeline(positionHistory, id, supercupHistory) {
     const rows = await Promise.all(positionHistory.map(async ({ season, standing }) => {
       const best = bestPlayerForTeam(season, standing.team);
-      const marker = movementMarker(standing.tier, standing.position, standing.teamCount);
+      const marker = movementMarker(standing.tier, standing.position, standing.teamCount, season);
       const cup = supercupHistory.find((entry) => entry.season === season)?.performance;
       return `<article class="timeline-card">
         <div><strong>${esc(seasonLabel(season))}</strong><span>${esc(standing.tier)} #${esc(standing.position)}</span></div>
@@ -1663,20 +1663,22 @@
     });
   }
 
-  function movementMarker(tier, position, teamCount) {
+  function movementMarker(tier, position, teamCount, season) {
+    // The expanded ECL/ELB movement rules start in 1987-1988 (season 7).
+    const lowerTierSlots = seasonNumber(season) >= 7 ? 2 : 1;
     const t = String(tier || "").toUpperCase();
     if (t === "CLB" && position === 1) return "C";
     if (t === "ELB" && position <= 2) return "P";
-    if (t === "ECL" && position <= 1) return "P";
+    if (t === "ECL" && position <= lowerTierSlots) return "P";
     if (t === "CLB" && position > Math.max(0, teamCount - 2)) return "R";
-    if (t === "ELB" && position === teamCount) return "R";
+    if (t === "ELB" && position > teamCount - lowerTierSlots) return "R";
     return "";
   }
 
-  function standingsHighlightClass(tier, position, teamCount) {
+  function standingsHighlightClass(tier, position, teamCount, season) {
     const t = String(tier || "").toUpperCase();
     if (t === "CLB" && position === 1) return "standing-champ";
-    const marker = movementMarker(tier, position, teamCount);
+    const marker = movementMarker(tier, position, teamCount, season);
     if (marker === "P") return "standing-promo";
     if (marker === "R") return "standing-relegated";
     return "";
@@ -1698,7 +1700,7 @@
         tier,
         position: index + 1,
         teamCount: teams.length,
-        marker: movementMarker(tier, index + 1, teams.length)
+        marker: movementMarker(tier, index + 1, teams.length, data.season)
       }));
     }).find((row) => fileStem(row.rosterFile) === id) || {};
   }
@@ -1748,8 +1750,8 @@
     const teams = allTeamsFromLatest(data);
     const teamFiles = new Map(teams.map((team) => [slug(team.team), team.rosterFile]));
     const champion = teams.slice().sort((a, b) => teamOverallRank(a) - teamOverallRank(b))[0] || {};
-    const promoted = teams.filter((row) => movementMarker(row.tier, row.position, row.teamCount) === "P");
-    const relegated = teams.filter((row) => movementMarker(row.tier, row.position, row.teamCount) === "R");
+    const promoted = teams.filter((row) => movementMarker(row.tier, row.position, row.teamCount, data.season) === "P");
+    const relegated = teams.filter((row) => movementMarker(row.tier, row.position, row.teamCount, data.season) === "R");
     const awardHighlights = seasonAwardRows(data, ["most valuable", "rookie", "defender", "6th", "sixth", "gm"]).slice(0, 8);
     const leaderHighlights = ["points", "rebounds", "assists", "steals", "blocks"].map((key) => {
       const match = leaderCategoryByTitle(data, [key]);
