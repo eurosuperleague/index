@@ -22,7 +22,7 @@
             "name": "Doug Christie",
             "url": "../players/player243.htm",
             "pos": "SF",
-            "age": "26",
+            "age": "27",
             "overall": "141",
             "potential": "142"
         }
@@ -117,12 +117,12 @@
         "file": "roster24.htm",
         "url": "../rosters/roster24.htm",
         "starPlayer": {
-            "name": "Paul Pierce",
-            "url": "../players/player693.htm",
-            "pos": "SF",
-            "age": "24",
-            "overall": "157",
-            "potential": "157"
+            "name": "Jeff Ruland",
+            "url": "../players/player718.htm",
+            "pos": "C",
+            "age": "26",
+            "overall": "131",
+            "potential": "131"
         }
     },
     {
@@ -131,12 +131,12 @@
         "file": "roster13.htm",
         "url": "../rosters/roster13.htm",
         "starPlayer": {
-            "name": "Moses Malone",
-            "url": "../players/player872.htm",
-            "pos": "C",
-            "age": "31",
-            "overall": "156",
-            "potential": "156"
+            "name": "Andre Iguodala",
+            "url": "../players/player1314.htm",
+            "pos": "SF",
+            "age": "24",
+            "overall": "153",
+            "potential": "154"
         }
     },
     {
@@ -148,7 +148,7 @@
             "name": "Kiki Vandeweghe",
             "url": "../players/player701.htm",
             "pos": "SF",
-            "age": "28",
+            "age": "27",
             "overall": "174",
             "potential": "174"
         }
@@ -162,7 +162,7 @@
             "name": "Jim Paxson",
             "url": "../players/player875.htm",
             "pos": "SG",
-            "age": "28",
+            "age": "29",
             "overall": "142",
             "potential": "142"
         }
@@ -173,12 +173,12 @@
         "file": "roster6.htm",
         "url": "../rosters/roster6.htm",
         "starPlayer": {
-            "name": "Rolando Blackman",
-            "url": "../players/player871.htm",
-            "pos": "SF",
-            "age": "27",
-            "overall": "156",
-            "potential": "157"
+            "name": "Edgar Jones",
+            "url": "../players/player752.htm",
+            "pos": "PF",
+            "age": "30",
+            "overall": "127",
+            "potential": "127"
         }
     },
     {
@@ -218,7 +218,7 @@
             "name": "Dirk Nowitzki",
             "url": "../players/player1325.htm",
             "pos": "SF",
-            "age": "23",
+            "age": "24",
             "overall": "121",
             "potential": "122"
         }
@@ -246,7 +246,7 @@
             "name": "Tony Parker",
             "url": "../players/player1327.htm",
             "pos": "PG",
-            "age": "22",
+            "age": "23",
             "overall": "124",
             "potential": "128"
         }
@@ -274,7 +274,7 @@
             "name": "Alvin Robertson",
             "url": "../players/player423.htm",
             "pos": "SG",
-            "age": "24",
+            "age": "25",
             "overall": "149",
             "potential": "157"
         }
@@ -285,12 +285,12 @@
         "file": "roster21.htm",
         "url": "../rosters/roster21.htm",
         "starPlayer": {
-            "name": "Larry Bird",
-            "url": "../players/player697.htm",
-            "pos": "SF",
-            "age": "28",
-            "overall": "156",
-            "potential": "156"
+            "name": "Brad Davis",
+            "url": "../players/player714.htm",
+            "pos": "PG",
+            "age": "29",
+            "overall": "154",
+            "potential": "154"
         }
     },
     {
@@ -316,7 +316,7 @@
             "name": "Hubert Davis",
             "url": "../players/player440.htm",
             "pos": "SF",
-            "age": "26",
+            "age": "27",
             "overall": "137",
             "potential": "144"
         }
@@ -327,12 +327,12 @@
         "file": "roster25.htm",
         "url": "../rosters/roster25.htm",
         "starPlayer": {
-            "name": "Brian Shaw",
-            "url": "../players/player180.htm",
-            "pos": "SG",
-            "age": "25",
-            "overall": "136",
-            "potential": "137"
+            "name": "A.C. Green",
+            "url": "../players/player240.htm",
+            "pos": "PF",
+            "age": "27",
+            "overall": "116",
+            "potential": "116"
         }
     }
 ]
