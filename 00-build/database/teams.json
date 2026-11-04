@@ -22,7 +22,7 @@
             "name": "Doug Christie",
             "url": "../players/player243.htm",
             "pos": "SF",
-            "age": "27",
+            "age": "26",
             "overall": "141",
             "potential": "142"
         }
@@ -117,12 +117,12 @@
         "file": "roster24.htm",
         "url": "../rosters/roster24.htm",
         "starPlayer": {
-            "name": "Jeff Ruland",
-            "url": "../players/player718.htm",
-            "pos": "C",
-            "age": "26",
-            "overall": "131",
-            "potential": "131"
+            "name": "Paul Pierce",
+            "url": "../players/player693.htm",
+            "pos": "SF",
+            "age": "24",
+            "overall": "157",
+            "potential": "157"
         }
     },
     {
@@ -148,7 +148,7 @@
             "name": "Kiki Vandeweghe",
             "url": "../players/player701.htm",
             "pos": "SF",
-            "age": "27",
+            "age": "28",
             "overall": "174",
             "potential": "174"
         }
@@ -162,7 +162,7 @@
             "name": "Jim Paxson",
             "url": "../players/player875.htm",
             "pos": "SG",
-            "age": "29",
+            "age": "28",
             "overall": "142",
             "potential": "142"
         }
@@ -173,12 +173,12 @@
         "file": "roster6.htm",
         "url": "../rosters/roster6.htm",
         "starPlayer": {
-            "name": "Edgar Jones",
-            "url": "../players/player752.htm",
-            "pos": "PF",
-            "age": "30",
-            "overall": "127",
-            "potential": "127"
+            "name": "Rolando Blackman",
+            "url": "../players/player871.htm",
+            "pos": "SF",
+            "age": "27",
+            "overall": "156",
+            "potential": "157"
         }
     },
     {
@@ -229,12 +229,12 @@
         "file": "roster28.htm",
         "url": "../rosters/roster28.htm",
         "starPlayer": {
-            "name": "Luol Deng",
-            "url": "../players/player342.htm",
-            "pos": "SF",
-            "age": "23",
-            "overall": "132",
-            "potential": "134"
+            "name": "Mike Gminski",
+            "url": "../players/player722.htm",
+            "pos": "C",
+            "age": "27",
+            "overall": "145",
+            "potential": "145"
         }
     },
     {
@@ -330,7 +330,7 @@
             "name": "A.C. Green",
             "url": "../players/player240.htm",
             "pos": "PF",
-            "age": "27",
+            "age": "28",
             "overall": "116",
             "potential": "116"
         }

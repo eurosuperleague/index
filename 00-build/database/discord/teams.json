@@ -49,7 +49,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@AC Milan 109, Real Madrid 92",
       "boxscoreFile": "box185-4.htm"
     },
@@ -74,7 +74,7 @@
       "name": "Doug Christie",
       "url": "../players/player243.htm",
       "pos": "SF",
-      "age": "27",
+      "age": "26",
       "overall": "141",
       "potential": "142"
     },
@@ -106,7 +106,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@Barcelona 111, AC Sparta Praha 108",
       "boxscoreFile": "box185-8.htm"
     },
@@ -136,8 +136,8 @@
       "potential": "124"
     },
     "cap": {
-      "salary": "$32,224,596",
-      "room": "$67,775,404"
+      "salary": "$51,464,596",
+      "room": "$48,535,404"
     },
     "strengths": [
       {
@@ -163,7 +163,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@ACF Fiorentina 113, Aston Villa 91",
       "boxscoreFile": "box185-7.htm"
     },
@@ -220,7 +220,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "AFC Richmond 118, @Benfica 97",
       "boxscoreFile": "box185-3.htm"
     },
@@ -277,7 +277,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@Ajax 115, Brighton 100",
       "boxscoreFile": "box185-2.htm"
     },
@@ -334,7 +334,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@Paris Saint-Germain 125, Arsenal 110",
       "boxscoreFile": "box185-1.htm"
     },
@@ -391,7 +391,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@ACF Fiorentina 113, Aston Villa 91",
       "boxscoreFile": "box185-7.htm"
     },
@@ -448,7 +448,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@Manchester City 110, Atletico Madrid 83",
       "boxscoreFile": "box185-10.htm"
     },
@@ -470,16 +470,16 @@
     "streak": "-",
     "last10": "5-5",
     "starPlayer": {
-      "name": "Jeff Ruland",
-      "url": "../players/player718.htm",
-      "pos": "C",
-      "age": "26",
-      "overall": "131",
-      "potential": "131"
+      "name": "Paul Pierce",
+      "url": "../players/player693.htm",
+      "pos": "SF",
+      "age": "24",
+      "overall": "157",
+      "potential": "157"
     },
     "cap": {
-      "salary": "$65,091,901",
-      "room": "$34,908,099"
+      "salary": "$90,091,901",
+      "room": "$9,908,099"
     },
     "strengths": [
       {
@@ -505,7 +505,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@Barcelona 111, AC Sparta Praha 108",
       "boxscoreFile": "box185-8.htm"
     },
@@ -535,8 +535,8 @@
       "potential": "154"
     },
     "cap": {
-      "salary": "$56,818,737",
-      "room": "$43,181,263"
+      "salary": "$60,760,000",
+      "room": "$39,240,000"
     },
     "strengths": [
       {
@@ -562,7 +562,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "AFC Richmond 118, @Benfica 97",
       "boxscoreFile": "box185-3.htm"
     },
@@ -587,13 +587,13 @@
       "name": "Kiki Vandeweghe",
       "url": "../players/player701.htm",
       "pos": "SF",
-      "age": "27",
+      "age": "28",
       "overall": "174",
       "potential": "174"
     },
     "cap": {
-      "salary": "$90,181,792",
-      "room": "$9,818,208"
+      "salary": "$83,962,216",
+      "room": "$16,037,784"
     },
     "strengths": [
       {
@@ -622,11 +622,11 @@
         "name": "Rickey Green",
         "pos": "PG",
         "injury": "Torn MCL",
-        "length": "92"
+        "length": "88"
       }
     ],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@Ajax 115, Brighton 100",
       "boxscoreFile": "box185-2.htm"
     },
@@ -651,7 +651,7 @@
       "name": "Jim Paxson",
       "url": "../players/player875.htm",
       "pos": "SG",
-      "age": "29",
+      "age": "28",
       "overall": "142",
       "potential": "142"
     },
@@ -683,7 +683,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@Chelsea 119, Crystal Palace 108",
       "boxscoreFile": "box185-6.htm"
     },
@@ -705,16 +705,16 @@
     "streak": "-",
     "last10": "8-2",
     "starPlayer": {
-      "name": "Edgar Jones",
-      "url": "../players/player752.htm",
-      "pos": "PF",
-      "age": "30",
-      "overall": "127",
-      "potential": "127"
+      "name": "Rolando Blackman",
+      "url": "../players/player871.htm",
+      "pos": "SF",
+      "age": "27",
+      "overall": "156",
+      "potential": "157"
     },
     "cap": {
-      "salary": "$24,762,713",
-      "room": "$45,237,287"
+      "salary": "$48,555,713",
+      "room": "$21,444,287"
     },
     "strengths": [
       {
@@ -740,7 +740,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@Chelsea 119, Crystal Palace 108",
       "boxscoreFile": "box185-6.htm"
     },
@@ -797,7 +797,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@FL Fart 168, Inter Milan 107",
       "boxscoreFile": "box185-5.htm"
     },
@@ -827,8 +827,8 @@
       "potential": "125"
     },
     "cap": {
-      "salary": "$52,873,844",
-      "room": "$17,126,156"
+      "salary": "$39,394,904",
+      "room": "$30,605,096"
     },
     "strengths": [
       {
@@ -854,7 +854,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@FL Fart 168, Inter Milan 107",
       "boxscoreFile": "box185-5.htm"
     },
@@ -911,7 +911,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@Juventus 101, Marseille 82",
       "boxscoreFile": "box185-9.htm"
     },
@@ -933,16 +933,16 @@
     "streak": "-",
     "last10": "8-2",
     "starPlayer": {
-      "name": "Luol Deng",
-      "url": "../players/player342.htm",
-      "pos": "SF",
-      "age": "23",
-      "overall": "132",
-      "potential": "134"
+      "name": "Mike Gminski",
+      "url": "../players/player722.htm",
+      "pos": "C",
+      "age": "27",
+      "overall": "145",
+      "potential": "145"
     },
     "cap": {
-      "salary": "$52,620,595",
-      "room": "$17,379,405"
+      "salary": "$70,000,000",
+      "room": "($0)"
     },
     "strengths": [
       {
@@ -968,7 +968,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@Manchester City 110, Atletico Madrid 83",
       "boxscoreFile": "box185-10.htm"
     },
@@ -998,8 +998,8 @@
       "potential": "128"
     },
     "cap": {
-      "salary": "$40,976,469",
-      "room": "$9,023,531"
+      "salary": "$38,246,681",
+      "room": "$11,753,319"
     },
     "strengths": [
       {
@@ -1025,7 +1025,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "Valencia 127, @Manchester United 123",
       "boxscoreFile": "box185-11.htm"
     },
@@ -1082,7 +1082,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@Juventus 101, Marseille 82",
       "boxscoreFile": "box185-9.htm"
     },
@@ -1112,8 +1112,8 @@
       "potential": "157"
     },
     "cap": {
-      "salary": "$68,154,898",
-      "room": "$1,845,102"
+      "salary": "$61,791,240",
+      "room": "$8,208,760"
     },
     "strengths": [
       {
@@ -1139,7 +1139,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "Monaco 94, @Tottenham Hotspur 74",
       "boxscoreFile": "box185-12.htm"
     },
@@ -1169,8 +1169,8 @@
       "potential": "154"
     },
     "cap": {
-      "salary": "$59,981,024",
-      "room": "$40,018,976"
+      "salary": "$51,682,000",
+      "room": "$48,318,000"
     },
     "strengths": [
       {
@@ -1196,7 +1196,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@Paris Saint-Germain 125, Arsenal 110",
       "boxscoreFile": "box185-1.htm"
     },
@@ -1253,7 +1253,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "@AC Milan 109, Real Madrid 92",
       "boxscoreFile": "box185-4.htm"
     },
@@ -1283,8 +1283,8 @@
       "potential": "144"
     },
     "cap": {
-      "salary": "$49,614,059",
-      "room": "$385,941"
+      "salary": "$46,206,627",
+      "room": "$3,793,373"
     },
     "strengths": [
       {
@@ -1310,7 +1310,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "Monaco 94, @Tottenham Hotspur 74",
       "boxscoreFile": "box185-12.htm"
     },
@@ -1335,7 +1335,7 @@
       "name": "A.C. Green",
       "url": "../players/player240.htm",
       "pos": "PF",
-      "age": "27",
+      "age": "28",
       "overall": "116",
       "potential": "116"
     },
@@ -1367,7 +1367,7 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "4/21/1988",
+      "date": "21/04/1988",
       "text": "Valencia 127, @Manchester United 123",
       "boxscoreFile": "box185-11.htm"
     },

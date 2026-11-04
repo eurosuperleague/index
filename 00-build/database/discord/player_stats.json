@@ -2342,8 +2342,8 @@
   {
     "id": "player1528",
     "name": "Aday Mara",
-    "teamId": "roster13",
-    "team": "Benfica",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "C",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -9602,8 +9602,8 @@
   {
     "id": "player1522",
     "name": "Ben Simmons",
-    "teamId": "roster21",
-    "team": "Paris Saint-Germain",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "PG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -18782,8 +18782,8 @@
   {
     "id": "player1303",
     "name": "Christian Braun",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster13",
+    "team": "Benfica",
     "pos": "SF",
     "statLine": "2.1 PTS, 0.3 DRB, 0.3 AST, 0.3 STL, 0.0 BLK in 4.9 MIN",
     "season": {
@@ -24362,8 +24362,8 @@
   {
     "id": "player459",
     "name": "Delon Wright",
-    "teamId": "roster26",
-    "team": "Inter Milan",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "PG",
     "statLine": "13.9 PTS, 2.9 DRB, 4.2 AST, 1.7 STL, 0.4 BLK in 36.6 MIN",
     "season": {
@@ -29762,8 +29762,8 @@
   {
     "id": "player1525",
     "name": "Ervin Johnson",
-    "teamId": "roster13",
-    "team": "Benfica",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "C",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -33722,8 +33722,8 @@
   {
     "id": "player165",
     "name": "Gheorghe Muresan",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster20",
+    "team": "Monaco",
     "pos": "C",
     "statLine": "12.8 PTS, 7.4 DRB, 1.5 AST, 0.7 STL, 3.6 BLK in 36.5 MIN",
     "season": {
@@ -35102,8 +35102,8 @@
   {
     "id": "player162",
     "name": "Greg Kite",
-    "teamId": "roster26",
-    "team": "Inter Milan",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "C",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -41102,8 +41102,8 @@
   {
     "id": "player576",
     "name": "James Worthy",
-    "teamId": "roster20",
-    "team": "Monaco",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "SF",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -45182,8 +45182,8 @@
   {
     "id": "player613",
     "name": "Joe Kleine",
-    "teamId": "roster5",
-    "team": "Manchester United",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "C",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -51542,8 +51542,8 @@
   {
     "id": "player495",
     "name": "Kevon Looney",
-    "teamId": "roster26",
-    "team": "Inter Milan",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "PG",
     "statLine": "0.6 PTS, 0.3 DRB, 0.2 AST, 0.0 STL, 0.0 BLK in 3.5 MIN",
     "season": {
@@ -55142,8 +55142,8 @@
   {
     "id": "player1484",
     "name": "Luc Richard Mbah A Moute",
-    "teamId": "roster10",
-    "team": "Brighton",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "SF",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -57362,8 +57362,8 @@
   {
     "id": "player496",
     "name": "Marcus Thornton",
-    "teamId": "roster26",
-    "team": "Inter Milan",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "SG",
     "statLine": "6.6 PTS, 1.6 DRB, 1.6 AST, 0.8 STL, 0.1 BLK in 19.6 MIN",
     "season": {
@@ -61022,8 +61022,8 @@
   {
     "id": "player722",
     "name": "Mike Gminski",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster28",
+    "team": "Manchester City",
     "pos": "C",
     "statLine": "21.6 PTS, 7.8 DRB, 3.1 AST, 1.0 STL, 3.0 BLK in 43.8 MIN",
     "season": {
@@ -62702,8 +62702,8 @@
   {
     "id": "player572",
     "name": "Morris Peterson",
-    "teamId": "roster20",
-    "team": "Monaco",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "SF",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -65222,8 +65222,8 @@
   {
     "id": "player178",
     "name": "Otis Thorpe",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster7",
+    "team": "ACF Fiorentina",
     "pos": "PF",
     "statLine": "33.5 PTS, 7.6 DRB, 2.4 AST, 0.7 STL, 0.7 BLK in 40.7 MIN",
     "season": {
@@ -66782,8 +66782,8 @@
   {
     "id": "player693",
     "name": "Paul Pierce",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster24",
+    "team": "Barcelona",
     "pos": "SF",
     "statLine": "25.8 PTS, 5.5 DRB, 4.7 AST, 1.7 STL, 0.6 BLK in 38.0 MIN",
     "season": {
@@ -67862,8 +67862,8 @@
   {
     "id": "player1521",
     "name": "Popeye Jones",
-    "teamId": "roster21",
-    "team": "Paris Saint-Germain",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "PF",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -72902,8 +72902,8 @@
   {
     "id": "player1495",
     "name": "Rodney Stuckey",
-    "teamId": "roster13",
-    "team": "Benfica",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "PG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -73082,8 +73082,8 @@
   {
     "id": "player568",
     "name": "Roger Mason",
-    "teamId": "roster20",
-    "team": "Monaco",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "SG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -73202,8 +73202,8 @@
   {
     "id": "player871",
     "name": "Rolando Blackman",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster6",
+    "team": "Crystal Palace",
     "pos": "SF",
     "statLine": "28.5 PTS, 3.7 DRB, 4.1 AST, 1.1 STL, 0.4 BLK in 39.6 MIN",
     "season": {
@@ -74762,8 +74762,8 @@
   {
     "id": "player556",
     "name": "Salah Mejri",
-    "teamId": "roster26",
-    "team": "Inter Milan",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "C",
     "statLine": "0.6 PTS, 0.3 DRB, 0.4 AST, 0.0 STL, 0.1 BLK in 5.1 MIN",
     "season": {
@@ -81842,8 +81842,8 @@
   {
     "id": "player1497",
     "name": "Tony Wroten",
-    "teamId": "roster10",
-    "team": "Brighton",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "PG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -83462,8 +83462,8 @@
   {
     "id": "player552",
     "name": "Tyrone Hill",
-    "teamId": "roster20",
-    "team": "Monaco",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "PF",
     "statLine": "2.9 PTS, 1.7 DRB, 0.3 AST, 0.3 STL, 0.1 BLK in 9.8 MIN",
     "season": {
@@ -84662,8 +84662,8 @@
   {
     "id": "player412",
     "name": "Victor Oladipo",
-    "teamId": "roster22",
-    "team": "Tottenham Hotspur",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "SG",
     "statLine": "4.0 PTS, 1.1 DRB, 0.9 AST, 0.6 STL, 0.0 BLK in 11.0 MIN",
     "season": {
@@ -85322,8 +85322,8 @@
   {
     "id": "player1476",
     "name": "Wallace Bryant",
-    "teamId": "roster7",
-    "team": "ACF Fiorentina",
+    "teamId": "FA",
+    "team": "FA",
     "pos": "C",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {

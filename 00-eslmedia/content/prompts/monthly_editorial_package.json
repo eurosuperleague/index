@@ -79,7 +79,7 @@
                             "avgMargin": 8.88,
                             "pointDiff": 373,
                             "bestWin": {
-                                "date": "2/13/1988",
+                                "date": "13/02/1988",
                                 "opponent": "Aston Villa",
                                 "result": "W",
                                 "margin": 41,
@@ -88,7 +88,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "11/15/1987",
+                                "date": "15/11/1987",
                                 "opponent": "FL Fart",
                                 "result": "L",
                                 "margin": 27,
@@ -105,7 +105,7 @@
                             "avgMargin": 10.25,
                             "pointDiff": 82,
                             "bestWin": {
-                                "date": "4/20/1988",
+                                "date": "20/04/1988",
                                 "opponent": "Chelsea",
                                 "result": "W",
                                 "margin": 27,
@@ -114,7 +114,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/2/1988",
+                                "date": "2/04/1988",
                                 "opponent": "AC Sparta Praha",
                                 "result": "L",
                                 "margin": 8,
@@ -143,7 +143,7 @@
                             "avgMargin": 8.21,
                             "pointDiff": 345,
                             "bestWin": {
-                                "date": "12/7/1987",
+                                "date": "7/12/1987",
                                 "opponent": "Aston Villa",
                                 "result": "W",
                                 "margin": 37,
@@ -152,7 +152,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "1/27/1988",
+                                "date": "27/01/1988",
                                 "opponent": "FL Fart",
                                 "result": "L",
                                 "margin": 31,
@@ -169,7 +169,7 @@
                             "avgMargin": 0.33,
                             "pointDiff": 2,
                             "bestWin": {
-                                "date": "4/9/1988",
+                                "date": "9/04/1988",
                                 "opponent": "Inter Milan",
                                 "result": "W",
                                 "margin": 8,
@@ -178,7 +178,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/16/1988",
+                                "date": "16/04/1988",
                                 "opponent": "Crystal Palace",
                                 "result": "L",
                                 "margin": 10,
@@ -190,12 +190,12 @@
                         },
                         "rosterUrl": "./rosters/roster24.htm",
                         "starPlayer": {
-                            "name": "Jeff Ruland",
-                            "url": "../players/player718.htm",
-                            "pos": "C",
-                            "age": "26",
-                            "overall": "131",
-                            "potential": "131"
+                            "name": "Paul Pierce",
+                            "url": "../players/player693.htm",
+                            "pos": "SF",
+                            "age": "24",
+                            "overall": "157",
+                            "potential": "157"
                         }
                     },
                     {
@@ -207,7 +207,7 @@
                             "avgMargin": 5.83,
                             "pointDiff": 245,
                             "bestWin": {
-                                "date": "11/9/1987",
+                                "date": "9/11/1987",
                                 "opponent": "Ajax",
                                 "result": "W",
                                 "margin": 37,
@@ -216,7 +216,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "2/1/1988",
+                                "date": "1/02/1988",
                                 "opponent": "Brighton",
                                 "result": "L",
                                 "margin": 14,
@@ -233,7 +233,7 @@
                             "avgMargin": 11.4,
                             "pointDiff": 57,
                             "bestWin": {
-                                "date": "4/8/1988",
+                                "date": "8/04/1988",
                                 "opponent": "Arsenal",
                                 "result": "W",
                                 "margin": 31,
@@ -242,7 +242,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/17/1988",
+                                "date": "17/04/1988",
                                 "opponent": "Arsenal",
                                 "result": "L",
                                 "margin": 9,
@@ -271,7 +271,7 @@
                             "avgMargin": 1.83,
                             "pointDiff": 77,
                             "bestWin": {
-                                "date": "1/6/1988",
+                                "date": "6/01/1988",
                                 "opponent": "Real Madrid",
                                 "result": "W",
                                 "margin": 35,
@@ -280,7 +280,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "12/1/1987",
+                                "date": "1/12/1987",
                                 "opponent": "Benfica",
                                 "result": "L",
                                 "margin": 61,
@@ -297,7 +297,7 @@
                             "avgMargin": 2.5,
                             "pointDiff": 15,
                             "bestWin": {
-                                "date": "4/3/1988",
+                                "date": "3/04/1988",
                                 "opponent": "Ajax",
                                 "result": "W",
                                 "margin": 30,
@@ -306,7 +306,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/8/1988",
+                                "date": "8/04/1988",
                                 "opponent": "AC Milan",
                                 "result": "L",
                                 "margin": 31,
@@ -335,7 +335,7 @@
                             "avgMargin": 4.33,
                             "pointDiff": 182,
                             "bestWin": {
-                                "date": "12/7/1987",
+                                "date": "7/12/1987",
                                 "opponent": "Paris Saint-Germain",
                                 "result": "W",
                                 "margin": 41,
@@ -344,7 +344,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "1/26/1988",
+                                "date": "26/01/1988",
                                 "opponent": "AC Milan",
                                 "result": "L",
                                 "margin": 30,
@@ -361,7 +361,7 @@
                             "avgMargin": 2.17,
                             "pointDiff": 13,
                             "bestWin": {
-                                "date": "4/20/1988",
+                                "date": "20/04/1988",
                                 "opponent": "Real Madrid",
                                 "result": "W",
                                 "margin": 14,
@@ -370,7 +370,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "Ajax",
                                 "result": "L",
                                 "margin": 15,
@@ -385,7 +385,7 @@
                             "name": "Kiki Vandeweghe",
                             "url": "../players/player701.htm",
                             "pos": "SF",
-                            "age": "27",
+                            "age": "28",
                             "overall": "174",
                             "potential": "174"
                         }
@@ -399,7 +399,7 @@
                             "avgMargin": 3.55,
                             "pointDiff": 149,
                             "bestWin": {
-                                "date": "12/1/1987",
+                                "date": "1/12/1987",
                                 "opponent": "Arsenal",
                                 "result": "W",
                                 "margin": 61,
@@ -408,7 +408,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "1/8/1988",
+                                "date": "8/01/1988",
                                 "opponent": "Paris Saint-Germain",
                                 "result": "L",
                                 "margin": 24,
@@ -425,7 +425,7 @@
                             "avgMargin": 9.5,
                             "pointDiff": 76,
                             "bestWin": {
-                                "date": "4/14/1988",
+                                "date": "14/04/1988",
                                 "opponent": "AFC Richmond",
                                 "result": "W",
                                 "margin": 40,
@@ -434,7 +434,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "AFC Richmond",
                                 "result": "L",
                                 "margin": 21,
@@ -463,7 +463,7 @@
                             "avgMargin": 1.45,
                             "pointDiff": 61,
                             "bestWin": {
-                                "date": "11/15/1987",
+                                "date": "15/11/1987",
                                 "opponent": "Ajax",
                                 "result": "W",
                                 "margin": 54,
@@ -472,7 +472,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "1/6/1988",
+                                "date": "6/01/1988",
                                 "opponent": "Arsenal",
                                 "result": "L",
                                 "margin": 35,
@@ -489,7 +489,7 @@
                             "avgMargin": -10.14,
                             "pointDiff": -71,
                             "bestWin": {
-                                "date": "4/10/1988",
+                                "date": "10/04/1988",
                                 "opponent": "Paris Saint-Germain",
                                 "result": "W",
                                 "margin": 4,
@@ -498,7 +498,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "AC Milan",
                                 "result": "L",
                                 "margin": 17,
@@ -527,7 +527,7 @@
                             "avgMargin": 1.02,
                             "pointDiff": 43,
                             "bestWin": {
-                                "date": "12/11/1987",
+                                "date": "11/12/1987",
                                 "opponent": "Ajax",
                                 "result": "W",
                                 "margin": 37,
@@ -536,7 +536,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "12/7/1987",
+                                "date": "7/12/1987",
                                 "opponent": "Brighton",
                                 "result": "L",
                                 "margin": 41,
@@ -553,7 +553,7 @@
                             "avgMargin": -3.67,
                             "pointDiff": -22,
                             "bestWin": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "Arsenal",
                                 "result": "W",
                                 "margin": 15,
@@ -562,7 +562,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/2/1988",
+                                "date": "2/04/1988",
                                 "opponent": "Arsenal",
                                 "result": "L",
                                 "margin": 29,
@@ -649,7 +649,7 @@
                             "avgMargin": 10.33,
                             "pointDiff": 434,
                             "bestWin": {
-                                "date": "1/7/1988",
+                                "date": "7/01/1988",
                                 "opponent": "Marseille",
                                 "result": "W",
                                 "margin": 35,
@@ -658,7 +658,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/5/1988",
+                                "date": "5/04/1988",
                                 "opponent": "Valencia",
                                 "result": "L",
                                 "margin": 15,
@@ -675,7 +675,7 @@
                             "avgMargin": 8.14,
                             "pointDiff": 57,
                             "bestWin": {
-                                "date": "4/16/1988",
+                                "date": "16/04/1988",
                                 "opponent": "Manchester United",
                                 "result": "W",
                                 "margin": 32,
@@ -684,7 +684,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/5/1988",
+                                "date": "5/04/1988",
                                 "opponent": "Valencia",
                                 "result": "L",
                                 "margin": 15,
@@ -713,7 +713,7 @@
                             "avgMargin": 5.93,
                             "pointDiff": 249,
                             "bestWin": {
-                                "date": "1/13/1988",
+                                "date": "13/01/1988",
                                 "opponent": "Marseille",
                                 "result": "W",
                                 "margin": 44,
@@ -722,7 +722,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "3/24/1988",
+                                "date": "24/03/1988",
                                 "opponent": "Tottenham Hotspur",
                                 "result": "L",
                                 "margin": 24,
@@ -739,7 +739,7 @@
                             "avgMargin": 12.67,
                             "pointDiff": 76,
                             "bestWin": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "Atletico Madrid",
                                 "result": "W",
                                 "margin": 27,
@@ -752,12 +752,12 @@
                         },
                         "rosterUrl": "./rosters/roster28.htm",
                         "starPlayer": {
-                            "name": "Luol Deng",
-                            "url": "../players/player342.htm",
-                            "pos": "SF",
-                            "age": "23",
-                            "overall": "132",
-                            "potential": "134"
+                            "name": "Mike Gminski",
+                            "url": "../players/player722.htm",
+                            "pos": "C",
+                            "age": "27",
+                            "overall": "145",
+                            "potential": "145"
                         }
                     },
                     {
@@ -769,7 +769,7 @@
                             "avgMargin": 9.86,
                             "pointDiff": 414,
                             "bestWin": {
-                                "date": "12/26/1987",
+                                "date": "26/12/1987",
                                 "opponent": "AC Sparta Praha",
                                 "result": "W",
                                 "margin": 49,
@@ -778,7 +778,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "2/13/1988",
+                                "date": "13/02/1988",
                                 "opponent": "Barcelona",
                                 "result": "L",
                                 "margin": 21,
@@ -795,7 +795,7 @@
                             "avgMargin": 18.57,
                             "pointDiff": 130,
                             "bestWin": {
-                                "date": "4/20/1988",
+                                "date": "20/04/1988",
                                 "opponent": "AC Sparta Praha",
                                 "result": "W",
                                 "margin": 47,
@@ -804,7 +804,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "Chelsea",
                                 "result": "L",
                                 "margin": 11,
@@ -816,12 +816,12 @@
                         },
                         "rosterUrl": "./rosters/roster6.htm",
                         "starPlayer": {
-                            "name": "Edgar Jones",
-                            "url": "../players/player752.htm",
-                            "pos": "PF",
-                            "age": "30",
-                            "overall": "127",
-                            "potential": "127"
+                            "name": "Rolando Blackman",
+                            "url": "../players/player871.htm",
+                            "pos": "SF",
+                            "age": "27",
+                            "overall": "156",
+                            "potential": "157"
                         }
                     },
                     {
@@ -833,7 +833,7 @@
                             "avgMargin": 10.6,
                             "pointDiff": 445,
                             "bestWin": {
-                                "date": "3/21/1988",
+                                "date": "21/03/1988",
                                 "opponent": "Aston Villa",
                                 "result": "W",
                                 "margin": 74,
@@ -842,7 +842,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "2/27/1988",
+                                "date": "27/02/1988",
                                 "opponent": "Crystal Palace",
                                 "result": "L",
                                 "margin": 33,
@@ -859,7 +859,7 @@
                             "avgMargin": 14.2,
                             "pointDiff": 71,
                             "bestWin": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "Inter Milan",
                                 "result": "W",
                                 "margin": 61,
@@ -868,7 +868,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/14/1988",
+                                "date": "14/04/1988",
                                 "opponent": "ACF Fiorentina",
                                 "result": "L",
                                 "margin": 15,
@@ -897,7 +897,7 @@
                             "avgMargin": -0.31,
                             "pointDiff": -13,
                             "bestWin": {
-                                "date": "3/25/1988",
+                                "date": "25/03/1988",
                                 "opponent": "Aston Villa",
                                 "result": "W",
                                 "margin": 47,
@@ -906,7 +906,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "FL Fart",
                                 "result": "L",
                                 "margin": 61,
@@ -923,7 +923,7 @@
                             "avgMargin": -10.8,
                             "pointDiff": -54,
                             "bestWin": {
-                                "date": "4/16/1988",
+                                "date": "16/04/1988",
                                 "opponent": "Chelsea",
                                 "result": "W",
                                 "margin": 23,
@@ -932,7 +932,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "FL Fart",
                                 "result": "L",
                                 "margin": 61,
@@ -961,7 +961,7 @@
                             "avgMargin": -4.43,
                             "pointDiff": -186,
                             "bestWin": {
-                                "date": "11/30/1987",
+                                "date": "30/11/1987",
                                 "opponent": "Ajax",
                                 "result": "W",
                                 "margin": 27,
@@ -970,7 +970,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/14/1988",
+                                "date": "14/04/1988",
                                 "opponent": "Benfica",
                                 "result": "L",
                                 "margin": 40,
@@ -987,7 +987,7 @@
                             "avgMargin": -3.33,
                             "pointDiff": -20,
                             "bestWin": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "Benfica",
                                 "result": "W",
                                 "margin": 21,
@@ -996,7 +996,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/14/1988",
+                                "date": "14/04/1988",
                                 "opponent": "Benfica",
                                 "result": "L",
                                 "margin": 40,
@@ -1025,7 +1025,7 @@
                             "avgMargin": -9.48,
                             "pointDiff": -398,
                             "bestWin": {
-                                "date": "12/20/1987",
+                                "date": "20/12/1987",
                                 "opponent": "Aston Villa",
                                 "result": "W",
                                 "margin": 21,
@@ -1034,7 +1034,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/11/1988",
+                                "date": "11/04/1988",
                                 "opponent": "Crystal Palace",
                                 "result": "L",
                                 "margin": 41,
@@ -1051,7 +1051,7 @@
                             "avgMargin": -20.33,
                             "pointDiff": -122,
                             "bestWin": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "Crystal Palace",
                                 "result": "W",
                                 "margin": 11,
@@ -1060,7 +1060,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/11/1988",
+                                "date": "11/04/1988",
                                 "opponent": "Crystal Palace",
                                 "result": "L",
                                 "margin": 41,
@@ -1075,7 +1075,7 @@
                             "name": "Jim Paxson",
                             "url": "../players/player875.htm",
                             "pos": "SG",
-                            "age": "29",
+                            "age": "28",
                             "overall": "142",
                             "potential": "142"
                         }
@@ -1089,7 +1089,7 @@
                             "avgMargin": -13.6,
                             "pointDiff": -571,
                             "bestWin": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "Brighton",
                                 "result": "W",
                                 "margin": 15,
@@ -1098,7 +1098,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "11/15/1987",
+                                "date": "15/11/1987",
                                 "opponent": "Real Madrid",
                                 "result": "L",
                                 "margin": 54,
@@ -1115,7 +1115,7 @@
                             "avgMargin": -8.0,
                             "pointDiff": -48,
                             "bestWin": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "Brighton",
                                 "result": "W",
                                 "margin": 15,
@@ -1124,7 +1124,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/3/1988",
+                                "date": "3/04/1988",
                                 "opponent": "Arsenal",
                                 "result": "L",
                                 "margin": 30,
@@ -1211,7 +1211,7 @@
                             "avgMargin": 5.64,
                             "pointDiff": 237,
                             "bestWin": {
-                                "date": "11/13/1987",
+                                "date": "13/11/1987",
                                 "opponent": "Atletico Madrid",
                                 "result": "W",
                                 "margin": 43,
@@ -1220,7 +1220,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "12/21/1987",
+                                "date": "21/12/1987",
                                 "opponent": "Atletico Madrid",
                                 "result": "L",
                                 "margin": 32,
@@ -1237,7 +1237,7 @@
                             "avgMargin": 9.0,
                             "pointDiff": 45,
                             "bestWin": {
-                                "date": "4/4/1988",
+                                "date": "4/04/1988",
                                 "opponent": "Manchester United",
                                 "result": "W",
                                 "margin": 32,
@@ -1246,7 +1246,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "Monaco",
                                 "result": "L",
                                 "margin": 20,
@@ -1284,7 +1284,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "12/4/1987",
+                                "date": "4/12/1987",
                                 "opponent": "Monaco",
                                 "result": "L",
                                 "margin": 31,
@@ -1301,7 +1301,7 @@
                             "avgMargin": 5.0,
                             "pointDiff": 25,
                             "bestWin": {
-                                "date": "4/5/1988",
+                                "date": "5/04/1988",
                                 "opponent": "Monaco",
                                 "result": "W",
                                 "margin": 15,
@@ -1310,7 +1310,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/17/1988",
+                                "date": "17/04/1988",
                                 "opponent": "Tottenham Hotspur",
                                 "result": "L",
                                 "margin": 10,
@@ -1325,7 +1325,7 @@
                             "name": "A.C. Green",
                             "url": "../players/player240.htm",
                             "pos": "PF",
-                            "age": "27",
+                            "age": "28",
                             "overall": "116",
                             "potential": "116"
                         }
@@ -1339,7 +1339,7 @@
                             "avgMargin": 4.26,
                             "pointDiff": 179,
                             "bestWin": {
-                                "date": "3/19/1988",
+                                "date": "19/03/1988",
                                 "opponent": "Manchester United",
                                 "result": "W",
                                 "margin": 41,
@@ -1348,7 +1348,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "11/13/1987",
+                                "date": "13/11/1987",
                                 "opponent": "Tottenham Hotspur",
                                 "result": "L",
                                 "margin": 43,
@@ -1365,7 +1365,7 @@
                             "avgMargin": -3.75,
                             "pointDiff": -15,
                             "bestWin": {
-                                "date": "4/15/1988",
+                                "date": "15/04/1988",
                                 "opponent": "Marseille",
                                 "result": "W",
                                 "margin": 18,
@@ -1374,7 +1374,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "Manchester City",
                                 "result": "L",
                                 "margin": 27,
@@ -1403,7 +1403,7 @@
                             "avgMargin": -4.12,
                             "pointDiff": -173,
                             "bestWin": {
-                                "date": "2/3/1988",
+                                "date": "3/02/1988",
                                 "opponent": "Manchester United",
                                 "result": "W",
                                 "margin": 29,
@@ -1412,7 +1412,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "11/8/1987",
+                                "date": "8/11/1987",
                                 "opponent": "Manchester United",
                                 "result": "L",
                                 "margin": 37,
@@ -1429,7 +1429,7 @@
                             "avgMargin": -4.2,
                             "pointDiff": -21,
                             "bestWin": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "Marseille",
                                 "result": "W",
                                 "margin": 19,
@@ -1438,7 +1438,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/8/1988",
+                                "date": "8/04/1988",
                                 "opponent": "Tottenham Hotspur",
                                 "result": "L",
                                 "margin": 15,
@@ -1467,7 +1467,7 @@
                             "avgMargin": -7.29,
                             "pointDiff": -306,
                             "bestWin": {
-                                "date": "11/21/1987",
+                                "date": "21/11/1987",
                                 "opponent": "Marseille",
                                 "result": "W",
                                 "margin": 48,
@@ -1476,7 +1476,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "12/16/1987",
+                                "date": "16/12/1987",
                                 "opponent": "Manchester City",
                                 "result": "L",
                                 "margin": 41,
@@ -1493,7 +1493,7 @@
                             "avgMargin": -8.0,
                             "pointDiff": -48,
                             "bestWin": {
-                                "date": "4/6/1988",
+                                "date": "6/04/1988",
                                 "opponent": "Marseille",
                                 "result": "W",
                                 "margin": 42,
@@ -1502,7 +1502,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/4/1988",
+                                "date": "4/04/1988",
                                 "opponent": "Tottenham Hotspur",
                                 "result": "L",
                                 "margin": 32,
@@ -1531,7 +1531,7 @@
                             "avgMargin": -11.67,
                             "pointDiff": -490,
                             "bestWin": {
-                                "date": "1/17/1988",
+                                "date": "17/01/1988",
                                 "opponent": "Aston Villa",
                                 "result": "W",
                                 "margin": 25,
@@ -1540,7 +1540,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "3/28/1988",
+                                "date": "28/03/1988",
                                 "opponent": "FL Fart",
                                 "result": "L",
                                 "margin": 51,
@@ -1557,7 +1557,7 @@
                             "avgMargin": -9.33,
                             "pointDiff": -56,
                             "bestWin": {
-                                "date": "4/2/1988",
+                                "date": "2/04/1988",
                                 "opponent": "ACF Fiorentina",
                                 "result": "W",
                                 "margin": 8,
@@ -1566,7 +1566,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/20/1988",
+                                "date": "20/04/1988",
                                 "opponent": "Crystal Palace",
                                 "result": "L",
                                 "margin": 47,
@@ -1581,7 +1581,7 @@
                             "name": "Doug Christie",
                             "url": "../players/player243.htm",
                             "pos": "SF",
-                            "age": "27",
+                            "age": "26",
                             "overall": "141",
                             "potential": "142"
                         }
@@ -1595,7 +1595,7 @@
                             "avgMargin": -16.1,
                             "pointDiff": -676,
                             "bestWin": {
-                                "date": "11/16/1987",
+                                "date": "16/11/1987",
                                 "opponent": "AC Sparta Praha",
                                 "result": "W",
                                 "margin": 43,
@@ -1604,7 +1604,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "3/21/1988",
+                                "date": "21/03/1988",
                                 "opponent": "FL Fart",
                                 "result": "L",
                                 "margin": 74,
@@ -1621,7 +1621,7 @@
                             "avgMargin": -10.6,
                             "pointDiff": -53,
                             "bestWin": {
-                                "date": "4/16/1988",
+                                "date": "16/04/1988",
                                 "opponent": "AC Sparta Praha",
                                 "result": "W",
                                 "margin": 5,
@@ -1630,7 +1630,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "4/21/1988",
+                                "date": "21/04/1988",
                                 "opponent": "ACF Fiorentina",
                                 "result": "L",
                                 "margin": 22,
@@ -1659,7 +1659,7 @@
                             "avgMargin": -16.98,
                             "pointDiff": -713,
                             "bestWin": {
-                                "date": "2/19/1988",
+                                "date": "19/02/1988",
                                 "opponent": "Tottenham Hotspur",
                                 "result": "W",
                                 "margin": 8,
@@ -1668,7 +1668,7 @@
                                 "section": "Regular Season"
                             },
                             "worstLoss": {
-                                "date": "11/21/1987",
+                                "date": "21/11/1987",
                                 "opponent": "Manchester United",
                                 "result": "L",
                                 "margin": 48,
@@ -1686,7 +1686,7 @@
                             "pointDiff": -119,
                             "bestWin": null,
                             "worstLoss": {
-                                "date": "4/6/1988",
+                                "date": "6/04/1988",
                                 "opponent": "Manchester United",
                                 "result": "L",
                                 "margin": 42,
@@ -2226,7 +2226,7 @@
                     "streak": "L1",
                     "recentResults": [
                         {
-                            "date": "4/1/1988",
+                            "date": "1/04/1988",
                             "opponent": "ACF Fiorentina",
                             "result": "W",
                             "margin": 4,
@@ -2235,7 +2235,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/7/1988",
+                            "date": "7/04/1988",
                             "opponent": "Chelsea",
                             "result": "W",
                             "margin": 22,
@@ -2244,7 +2244,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/11/1988",
+                            "date": "11/04/1988",
                             "opponent": "Chelsea",
                             "result": "W",
                             "margin": 41,
@@ -2253,7 +2253,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/12/1988",
+                            "date": "12/04/1988",
                             "opponent": "Aston Villa",
                             "result": "W",
                             "margin": 17,
@@ -2262,7 +2262,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/16/1988",
+                            "date": "16/04/1988",
                             "opponent": "Barcelona",
                             "result": "W",
                             "margin": 10,
@@ -2271,7 +2271,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/20/1988",
+                            "date": "20/04/1988",
                             "opponent": "AC Sparta Praha",
                             "result": "W",
                             "margin": 47,
@@ -2280,7 +2280,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/21/1988",
+                            "date": "21/04/1988",
                             "opponent": "Chelsea",
                             "result": "L",
                             "margin": 11,
@@ -2290,7 +2290,7 @@
                         }
                     ],
                     "bestWin": {
-                        "date": "4/20/1988",
+                        "date": "20/04/1988",
                         "opponent": "AC Sparta Praha",
                         "result": "W",
                         "margin": 47,
@@ -2299,7 +2299,7 @@
                         "section": "Regular Season"
                     },
                     "worstLoss": {
-                        "date": "4/21/1988",
+                        "date": "21/04/1988",
                         "opponent": "Chelsea",
                         "result": "L",
                         "margin": 11,
@@ -2309,7 +2309,7 @@
                     },
                     "closeGames": [
                         {
-                            "date": "4/1/1988",
+                            "date": "1/04/1988",
                             "opponent": "ACF Fiorentina",
                             "result": "W",
                             "margin": 4,
@@ -2320,7 +2320,7 @@
                     ],
                     "blowoutWins": [
                         {
-                            "date": "4/7/1988",
+                            "date": "7/04/1988",
                             "opponent": "Chelsea",
                             "result": "W",
                             "margin": 22,
@@ -2329,7 +2329,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/11/1988",
+                            "date": "11/04/1988",
                             "opponent": "Chelsea",
                             "result": "W",
                             "margin": 41,
@@ -2338,7 +2338,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/12/1988",
+                            "date": "12/04/1988",
                             "opponent": "Aston Villa",
                             "result": "W",
                             "margin": 17,
@@ -2347,7 +2347,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/20/1988",
+                            "date": "20/04/1988",
                             "opponent": "AC Sparta Praha",
                             "result": "W",
                             "margin": 47,
@@ -2379,7 +2379,7 @@
                     "streak": "W6",
                     "recentResults": [
                         {
-                            "date": "4/1/1988",
+                            "date": "1/04/1988",
                             "opponent": "Crystal Palace",
                             "result": "L",
                             "margin": 4,
@@ -2388,7 +2388,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/2/1988",
+                            "date": "2/04/1988",
                             "opponent": "AC Sparta Praha",
                             "result": "L",
                             "margin": 8,
@@ -2397,7 +2397,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/8/1988",
+                            "date": "8/04/1988",
                             "opponent": "Aston Villa",
                             "result": "W",
                             "margin": 14,
@@ -2406,7 +2406,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/9/1988",
+                            "date": "9/04/1988",
                             "opponent": "AC Sparta Praha",
                             "result": "W",
                             "margin": 14,
@@ -2415,7 +2415,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/14/1988",
+                            "date": "14/04/1988",
                             "opponent": "FL Fart",
                             "result": "W",
                             "margin": 15,
@@ -2424,7 +2424,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/15/1988",
+                            "date": "15/04/1988",
                             "opponent": "Barcelona",
                             "result": "W",
                             "margin": 2,
@@ -2433,7 +2433,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/20/1988",
+                            "date": "20/04/1988",
                             "opponent": "Chelsea",
                             "result": "W",
                             "margin": 27,
@@ -2442,7 +2442,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/21/1988",
+                            "date": "21/04/1988",
                             "opponent": "Aston Villa",
                             "result": "W",
                             "margin": 22,
@@ -2452,7 +2452,7 @@
                         }
                     ],
                     "bestWin": {
-                        "date": "4/20/1988",
+                        "date": "20/04/1988",
                         "opponent": "Chelsea",
                         "result": "W",
                         "margin": 27,
@@ -2461,7 +2461,7 @@
                         "section": "Regular Season"
                     },
                     "worstLoss": {
-                        "date": "4/2/1988",
+                        "date": "2/04/1988",
                         "opponent": "AC Sparta Praha",
                         "result": "L",
                         "margin": 8,
@@ -2471,7 +2471,7 @@
                     },
                     "closeGames": [
                         {
-                            "date": "4/1/1988",
+                            "date": "1/04/1988",
                             "opponent": "Crystal Palace",
                             "result": "L",
                             "margin": 4,
@@ -2480,7 +2480,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/15/1988",
+                            "date": "15/04/1988",
                             "opponent": "Barcelona",
                             "result": "W",
                             "margin": 2,
@@ -2491,7 +2491,7 @@
                     ],
                     "blowoutWins": [
                         {
-                            "date": "4/14/1988",
+                            "date": "14/04/1988",
                             "opponent": "FL Fart",
                             "result": "W",
                             "margin": 15,
@@ -2500,7 +2500,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/20/1988",
+                            "date": "20/04/1988",
                             "opponent": "Chelsea",
                             "result": "W",
                             "margin": 27,
@@ -2509,7 +2509,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/21/1988",
+                            "date": "21/04/1988",
                             "opponent": "Aston Villa",
                             "result": "W",
                             "margin": 22,
@@ -2541,7 +2541,7 @@
                     "streak": "W6",
                     "recentResults": [
                         {
-                            "date": "4/3/1988",
+                            "date": "3/04/1988",
                             "opponent": "Atletico Madrid",
                             "result": "W",
                             "margin": 3,
@@ -2550,7 +2550,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/4/1988",
+                            "date": "4/04/1988",
                             "opponent": "Juventus",
                             "result": "W",
                             "margin": 9,
@@ -2559,7 +2559,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/10/1988",
+                            "date": "10/04/1988",
                             "opponent": "Marseille",
                             "result": "W",
                             "margin": 25,
@@ -2568,7 +2568,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/14/1988",
+                            "date": "14/04/1988",
                             "opponent": "Monaco",
                             "result": "W",
                             "margin": 7,
@@ -2577,7 +2577,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/19/1988",
+                            "date": "19/04/1988",
                             "opponent": "Marseille",
                             "result": "W",
                             "margin": 5,
@@ -2586,7 +2586,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/21/1988",
+                            "date": "21/04/1988",
                             "opponent": "Atletico Madrid",
                             "result": "W",
                             "margin": 27,
@@ -2596,7 +2596,7 @@
                         }
                     ],
                     "bestWin": {
-                        "date": "4/21/1988",
+                        "date": "21/04/1988",
                         "opponent": "Atletico Madrid",
                         "result": "W",
                         "margin": 27,
@@ -2607,7 +2607,7 @@
                     "worstLoss": null,
                     "closeGames": [
                         {
-                            "date": "4/3/1988",
+                            "date": "3/04/1988",
                             "opponent": "Atletico Madrid",
                             "result": "W",
                             "margin": 3,
@@ -2616,7 +2616,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/19/1988",
+                            "date": "19/04/1988",
                             "opponent": "Marseille",
                             "result": "W",
                             "margin": 5,
@@ -2627,7 +2627,7 @@
                     ],
                     "blowoutWins": [
                         {
-                            "date": "4/10/1988",
+                            "date": "10/04/1988",
                             "opponent": "Marseille",
                             "result": "W",
                             "margin": 25,
@@ -2636,7 +2636,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/21/1988",
+                            "date": "21/04/1988",
                             "opponent": "Atletico Madrid",
                             "result": "W",
                             "margin": 27,
@@ -2670,7 +2670,7 @@
                     "streak": "L6",
                     "recentResults": [
                         {
-                            "date": "4/1/1988",
+                            "date": "1/04/1988",
                             "opponent": "Monaco",
                             "result": "L",
                             "margin": 10,
@@ -2679,7 +2679,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/6/1988",
+                            "date": "6/04/1988",
                             "opponent": "Manchester United",
                             "result": "L",
                             "margin": 42,
@@ -2688,7 +2688,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/10/1988",
+                            "date": "10/04/1988",
                             "opponent": "Manchester City",
                             "result": "L",
                             "margin": 25,
@@ -2697,7 +2697,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/15/1988",
+                            "date": "15/04/1988",
                             "opponent": "Atletico Madrid",
                             "result": "L",
                             "margin": 18,
@@ -2706,7 +2706,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/19/1988",
+                            "date": "19/04/1988",
                             "opponent": "Manchester City",
                             "result": "L",
                             "margin": 5,
@@ -2715,7 +2715,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/21/1988",
+                            "date": "21/04/1988",
                             "opponent": "Juventus",
                             "result": "L",
                             "margin": 19,
@@ -2726,7 +2726,7 @@
                     ],
                     "bestWin": null,
                     "worstLoss": {
-                        "date": "4/6/1988",
+                        "date": "6/04/1988",
                         "opponent": "Manchester United",
                         "result": "L",
                         "margin": 42,
@@ -2736,7 +2736,7 @@
                     },
                     "closeGames": [
                         {
-                            "date": "4/19/1988",
+                            "date": "19/04/1988",
                             "opponent": "Manchester City",
                             "result": "L",
                             "margin": 5,
@@ -2748,7 +2748,7 @@
                     "blowoutWins": [],
                     "blowoutLosses": [
                         {
-                            "date": "4/6/1988",
+                            "date": "6/04/1988",
                             "opponent": "Manchester United",
                             "result": "L",
                             "margin": 42,
@@ -2757,7 +2757,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/10/1988",
+                            "date": "10/04/1988",
                             "opponent": "Manchester City",
                             "result": "L",
                             "margin": 25,
@@ -2766,7 +2766,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/15/1988",
+                            "date": "15/04/1988",
                             "opponent": "Atletico Madrid",
                             "result": "L",
                             "margin": 18,
@@ -2775,7 +2775,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/21/1988",
+                            "date": "21/04/1988",
                             "opponent": "Juventus",
                             "result": "L",
                             "margin": 19,
@@ -2806,7 +2806,7 @@
                     "streak": "W1",
                     "recentResults": [
                         {
-                            "date": "4/1/1988",
+                            "date": "1/04/1988",
                             "opponent": "FL Fart",
                             "result": "L",
                             "margin": 20,
@@ -2815,7 +2815,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/7/1988",
+                            "date": "7/04/1988",
                             "opponent": "Crystal Palace",
                             "result": "L",
                             "margin": 22,
@@ -2824,7 +2824,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/11/1988",
+                            "date": "11/04/1988",
                             "opponent": "Crystal Palace",
                             "result": "L",
                             "margin": 41,
@@ -2833,7 +2833,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/16/1988",
+                            "date": "16/04/1988",
                             "opponent": "Inter Milan",
                             "result": "L",
                             "margin": 23,
@@ -2842,7 +2842,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/20/1988",
+                            "date": "20/04/1988",
                             "opponent": "ACF Fiorentina",
                             "result": "L",
                             "margin": 27,
@@ -2851,7 +2851,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/21/1988",
+                            "date": "21/04/1988",
                             "opponent": "Crystal Palace",
                             "result": "W",
                             "margin": 11,
@@ -2861,7 +2861,7 @@
                         }
                     ],
                     "bestWin": {
-                        "date": "4/21/1988",
+                        "date": "21/04/1988",
                         "opponent": "Crystal Palace",
                         "result": "W",
                         "margin": 11,
@@ -2870,7 +2870,7 @@
                         "section": "Regular Season"
                     },
                     "worstLoss": {
-                        "date": "4/11/1988",
+                        "date": "11/04/1988",
                         "opponent": "Crystal Palace",
                         "result": "L",
                         "margin": 41,
@@ -2882,7 +2882,7 @@
                     "blowoutWins": [],
                     "blowoutLosses": [
                         {
-                            "date": "4/1/1988",
+                            "date": "1/04/1988",
                             "opponent": "FL Fart",
                             "result": "L",
                             "margin": 20,
@@ -2891,7 +2891,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/7/1988",
+                            "date": "7/04/1988",
                             "opponent": "Crystal Palace",
                             "result": "L",
                             "margin": 22,
@@ -2900,7 +2900,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/11/1988",
+                            "date": "11/04/1988",
                             "opponent": "Crystal Palace",
                             "result": "L",
                             "margin": 41,
@@ -2909,7 +2909,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/16/1988",
+                            "date": "16/04/1988",
                             "opponent": "Inter Milan",
                             "result": "L",
                             "margin": 23,
@@ -2918,7 +2918,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/20/1988",
+                            "date": "20/04/1988",
                             "opponent": "ACF Fiorentina",
                             "result": "L",
                             "margin": 27,
@@ -2949,7 +2949,7 @@
                     "streak": "L4",
                     "recentResults": [
                         {
-                            "date": "4/1/1988",
+                            "date": "1/04/1988",
                             "opponent": "AFC Richmond",
                             "result": "L",
                             "margin": 4,
@@ -2958,7 +2958,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/6/1988",
+                            "date": "6/04/1988",
                             "opponent": "Brighton",
                             "result": "L",
                             "margin": 12,
@@ -2967,7 +2967,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/10/1988",
+                            "date": "10/04/1988",
                             "opponent": "Paris Saint-Germain",
                             "result": "W",
                             "margin": 4,
@@ -2976,7 +2976,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/14/1988",
+                            "date": "14/04/1988",
                             "opponent": "Brighton",
                             "result": "L",
                             "margin": 12,
@@ -2985,7 +2985,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/16/1988",
+                            "date": "16/04/1988",
                             "opponent": "Benfica",
                             "result": "L",
                             "margin": 16,
@@ -2994,7 +2994,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/20/1988",
+                            "date": "20/04/1988",
                             "opponent": "Brighton",
                             "result": "L",
                             "margin": 14,
@@ -3003,7 +3003,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/21/1988",
+                            "date": "21/04/1988",
                             "opponent": "AC Milan",
                             "result": "L",
                             "margin": 17,
@@ -3013,7 +3013,7 @@
                         }
                     ],
                     "bestWin": {
-                        "date": "4/10/1988",
+                        "date": "10/04/1988",
                         "opponent": "Paris Saint-Germain",
                         "result": "W",
                         "margin": 4,
@@ -3022,7 +3022,7 @@
                         "section": "Regular Season"
                     },
                     "worstLoss": {
-                        "date": "4/21/1988",
+                        "date": "21/04/1988",
                         "opponent": "AC Milan",
                         "result": "L",
                         "margin": 17,
@@ -3032,7 +3032,7 @@
                     },
                     "closeGames": [
                         {
-                            "date": "4/1/1988",
+                            "date": "1/04/1988",
                             "opponent": "AFC Richmond",
                             "result": "L",
                             "margin": 4,
@@ -3041,7 +3041,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/10/1988",
+                            "date": "10/04/1988",
                             "opponent": "Paris Saint-Germain",
                             "result": "W",
                             "margin": 4,
@@ -3053,7 +3053,7 @@
                     "blowoutWins": [],
                     "blowoutLosses": [
                         {
-                            "date": "4/16/1988",
+                            "date": "16/04/1988",
                             "opponent": "Benfica",
                             "result": "L",
                             "margin": 16,
@@ -3062,7 +3062,7 @@
                             "section": "Regular Season"
                         },
                         {
-                            "date": "4/21/1988",
+                            "date": "21/04/1988",
                             "opponent": "AC Milan",
                             "result": "L",
                             "margin": 17,
@@ -3132,7 +3132,7 @@
                     "data": {
                         "section": "Regular Season",
                         "sectionSlug": "regular-season",
-                        "date": "4/21/1988",
+                        "date": "21/04/1988",
                         "matchupText": "@FL Fart 168, Inter Milan 107",
                         "boxscoreUrl": "./boxes/box185-5.htm",
                         "boxscoreFile": "box185-5.htm",
@@ -3162,7 +3162,7 @@
                         "streak": "L1",
                         "avgMargin": 18.57,
                         "bestWin": {
-                            "date": "4/20/1988",
+                            "date": "20/04/1988",
                             "opponent": "AC Sparta Praha",
                             "result": "W",
                             "margin": 47,
@@ -3186,7 +3186,7 @@
                         "streak": "L6",
                         "avgMargin": -19.83,
                         "worstLoss": {
-                            "date": "4/6/1988",
+                            "date": "6/04/1988",
                             "opponent": "Manchester United",
                             "result": "L",
                             "margin": 42,
@@ -3207,7 +3207,7 @@
                     "data": {
                         "section": "Regular Season",
                         "sectionSlug": "regular-season",
-                        "date": "4/15/1988",
+                        "date": "15/04/1988",
                         "matchupText": "ACF Fiorentina 102, @Barcelona 100",
                         "boxscoreUrl": "./boxes/box179-1.htm",
                         "boxscoreFile": "box179-1.htm",
@@ -3234,7 +3234,7 @@
                     "data": {
                         "section": "Regular Season",
                         "sectionSlug": "regular-season",
-                        "date": "4/21/1988",
+                        "date": "21/04/1988",
                         "matchupText": "Valencia 127, @Manchester United 123",
                         "boxscoreUrl": "./boxes/box185-11.htm",
                         "boxscoreFile": "box185-11.htm",
@@ -3270,7 +3270,7 @@
                         "name": "Doug Christie",
                         "url": "../players/player243.htm",
                         "pos": "SF",
-                        "age": "27",
+                        "age": "26",
                         "overall": "141",
                         "potential": "142"
                     }
@@ -3344,12 +3344,12 @@
                 {
                     "team": "Barcelona",
                     "starPlayer": {
-                        "name": "Jeff Ruland",
-                        "url": "../players/player718.htm",
-                        "pos": "C",
-                        "age": "26",
-                        "overall": "131",
-                        "potential": "131"
+                        "name": "Paul Pierce",
+                        "url": "../players/player693.htm",
+                        "pos": "SF",
+                        "age": "24",
+                        "overall": "157",
+                        "potential": "157"
                     }
                 },
                 {
@@ -3369,7 +3369,7 @@
                         "name": "Kiki Vandeweghe",
                         "url": "../players/player701.htm",
                         "pos": "SF",
-                        "age": "27",
+                        "age": "28",
                         "overall": "174",
                         "potential": "174"
                     }
@@ -3380,7 +3380,7 @@
                         "name": "Jim Paxson",
                         "url": "../players/player875.htm",
                         "pos": "SG",
-                        "age": "29",
+                        "age": "28",
                         "overall": "142",
                         "potential": "142"
                     }
@@ -3388,12 +3388,12 @@
                 {
                     "team": "Crystal Palace",
                     "starPlayer": {
-                        "name": "Edgar Jones",
-                        "url": "../players/player752.htm",
-                        "pos": "PF",
-                        "age": "30",
-                        "overall": "127",
-                        "potential": "127"
+                        "name": "Rolando Blackman",
+                        "url": "../players/player871.htm",
+                        "pos": "SF",
+                        "age": "27",
+                        "overall": "156",
+                        "potential": "157"
                     }
                 },
                 {
@@ -3432,12 +3432,12 @@
                 {
                     "team": "Manchester City",
                     "starPlayer": {
-                        "name": "Luol Deng",
-                        "url": "../players/player342.htm",
-                        "pos": "SF",
-                        "age": "23",
-                        "overall": "132",
-                        "potential": "134"
+                        "name": "Mike Gminski",
+                        "url": "../players/player722.htm",
+                        "pos": "C",
+                        "age": "27",
+                        "overall": "145",
+                        "potential": "145"
                     }
                 },
                 {
@@ -3512,7 +3512,7 @@
                         "name": "A.C. Green",
                         "url": "../players/player240.htm",
                         "pos": "PF",
-                        "age": "27",
+                        "age": "28",
                         "overall": "116",
                         "potential": "116"
                     }
@@ -3899,8 +3899,8 @@
                     },
                     {
                         "name": "Rolando Blackman",
-                        "team": "FA",
-                        "teamName": "FA",
+                        "team": "roster6",
+                        "teamName": "Crystal Palace",
                         "pos": "SF",
                         "url": "../players/player871.htm",
                         "overall": "156",
@@ -3929,8 +3929,8 @@
                     },
                     {
                         "name": "Paul Pierce",
-                        "team": "FA",
-                        "teamName": "FA",
+                        "team": "roster24",
+                        "teamName": "Barcelona",
                         "pos": "SF",
                         "url": "../players/player693.htm",
                         "overall": "157",
@@ -4111,8 +4111,8 @@
                     },
                     {
                         "name": "Otis Thorpe",
-                        "team": "FA",
-                        "teamName": "FA",
+                        "team": "roster7",
+                        "teamName": "ACF Fiorentina",
                         "pos": "PF",
                         "url": "../players/player178.htm",
                         "overall": "123",
