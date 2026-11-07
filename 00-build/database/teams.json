@@ -22,7 +22,7 @@
             "name": "Doug Christie",
             "url": "../players/player243.htm",
             "pos": "SF",
-            "age": "26",
+            "age": "27",
             "overall": "141",
             "potential": "142"
         }
@@ -162,7 +162,7 @@
             "name": "Jim Paxson",
             "url": "../players/player875.htm",
             "pos": "SG",
-            "age": "28",
+            "age": "29",
             "overall": "142",
             "potential": "142"
         }
@@ -201,12 +201,12 @@
         "file": "roster26.htm",
         "url": "../rosters/roster26.htm",
         "starPlayer": {
-            "name": "David West",
-            "url": "../players/player262.htm",
-            "pos": "PF",
-            "age": "28",
-            "overall": "124",
-            "potential": "125"
+            "name": "Moses Malone",
+            "url": "../players/player872.htm",
+            "pos": "C",
+            "age": "31",
+            "overall": "156",
+            "potential": "156"
         }
     },
     {
@@ -285,12 +285,12 @@
         "file": "roster21.htm",
         "url": "../rosters/roster21.htm",
         "starPlayer": {
-            "name": "Brad Davis",
-            "url": "../players/player714.htm",
-            "pos": "PG",
-            "age": "29",
-            "overall": "154",
-            "potential": "154"
+            "name": "Larry Bird",
+            "url": "../players/player697.htm",
+            "pos": "SF",
+            "age": "28",
+            "overall": "156",
+            "potential": "156"
         }
     },
     {
@@ -330,7 +330,7 @@
             "name": "A.C. Green",
             "url": "../players/player240.htm",
             "pos": "PF",
-            "age": "28",
+            "age": "27",
             "overall": "116",
             "potential": "116"
         }

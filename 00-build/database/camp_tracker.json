@@ -2,7 +2,7 @@
   "source": {
     "type": "google_sheets_csv",
     "url": "https://docs.google.com/spreadsheets/d/1ZCa_G7E9h6Z7Yf6gdFCBL9Aj4nhi92Um2rxb0rgDYew/gviz/tq?tqx=out:csv",
-    "fetchedAtUtc": "2026-11-04T08:11:36.783017+00:00"
+    "fetchedAtUtc": "2026-11-07T01:46:31.618851+00:00"
   },
   "careerLimits": {
     "regular": 3,

@@ -4322,8 +4322,8 @@
   {
     "id": "player711",
     "name": "Alex English",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster8",
+    "team": "Real Madrid",
     "pos": "SF",
     "statLine": "11.5 PTS, 1.7 DRB, 2.1 AST, 0.9 STL, 0.4 BLK in 18.5 MIN",
     "season": {
@@ -6662,8 +6662,8 @@
   {
     "id": "player1369",
     "name": "Armen Gilliam",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster27",
+    "team": "FL Fart",
     "pos": "C",
     "statLine": "8.5 PTS, 2.7 DRB, 1.3 AST, 0.7 STL, 0.7 BLK in 17.5 MIN",
     "season": {
@@ -9602,8 +9602,8 @@
   {
     "id": "player1522",
     "name": "Ben Simmons",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster7",
+    "team": "ACF Fiorentina",
     "pos": "PG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -10202,8 +10202,8 @@
   {
     "id": "player713",
     "name": "Bernard King",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster7",
+    "team": "ACF Fiorentina",
     "pos": "SF",
     "statLine": "15.9 PTS, 2.4 DRB, 2.7 AST, 0.9 STL, 0.1 BLK in 23.2 MIN",
     "season": {
@@ -10682,8 +10682,8 @@
   {
     "id": "player874",
     "name": "Bill Laimbeer",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster21",
+    "team": "Paris Saint-Germain",
     "pos": "PF",
     "statLine": "16.5 PTS, 7.5 DRB, 2.8 AST, 0.5 STL, 1.0 BLK in 37.7 MIN",
     "season": {
@@ -11462,8 +11462,8 @@
   {
     "id": "player755",
     "name": "Bobby Jones",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster10",
+    "team": "Brighton",
     "pos": "PF",
     "statLine": "7.6 PTS, 3.6 DRB, 2.0 AST, 1.5 STL, 1.7 BLK in 28.3 MIN",
     "season": {
@@ -12002,8 +12002,8 @@
   {
     "id": "player939",
     "name": "Brad Branson",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster22",
+    "team": "Tottenham Hotspur",
     "pos": "PF",
     "statLine": "5.1 PTS, 2.1 DRB, 0.5 AST, 0.4 STL, 0.7 BLK in 11.3 MIN",
     "season": {
@@ -12962,8 +12962,8 @@
   {
     "id": "player180",
     "name": "Brian Shaw",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster21",
+    "team": "Paris Saint-Germain",
     "pos": "SG",
     "statLine": "16.8 PTS, 4.5 DRB, 6.5 AST, 1.2 STL, 0.4 BLK in 36.4 MIN",
     "season": {
@@ -19682,8 +19682,8 @@
   {
     "id": "player261",
     "name": "Cody Martin",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster21",
+    "team": "Paris Saint-Germain",
     "pos": "PF",
     "statLine": "9.3 PTS, 3.4 DRB, 1.8 AST, 1.8 STL, 0.2 BLK in 21.4 MIN",
     "season": {
@@ -20282,8 +20282,8 @@
   {
     "id": "player1504",
     "name": "Courtney Lee",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster10",
+    "team": "Brighton",
     "pos": "SG",
     "statLine": "3.3 PTS, 0.9 DRB, 1.0 AST, 0.6 STL, 0.1 BLK in 11.3 MIN",
     "season": {
@@ -22742,8 +22742,8 @@
   {
     "id": "player1056",
     "name": "Darnell Valentine",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster25",
+    "team": "Valencia",
     "pos": "PG",
     "statLine": "1.9 PTS, 1.1 DRB, 3.5 AST, 0.9 STL, 0.0 BLK in 11.7 MIN",
     "season": {
@@ -22862,8 +22862,8 @@
   {
     "id": "player703",
     "name": "Darrell Griffith",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster6",
+    "team": "Crystal Palace",
     "pos": "SG",
     "statLine": "20.8 PTS, 2.7 DRB, 3.3 AST, 2.0 STL, 0.5 BLK in 35.8 MIN",
     "season": {
@@ -25922,8 +25922,8 @@
   {
     "id": "player1348",
     "name": "Dion Waiters",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster10",
+    "team": "Brighton",
     "pos": "SG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -29162,8 +29162,8 @@
   {
     "id": "player339",
     "name": "Eric Gordon",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster6",
+    "team": "Crystal Palace",
     "pos": "SG",
     "statLine": "13.7 PTS, 1.5 DRB, 3.4 AST, 1.4 STL, 0.1 BLK in 26.6 MIN",
     "season": {
@@ -29522,8 +29522,8 @@
   {
     "id": "player45",
     "name": "Eric Snow",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster7",
+    "team": "ACF Fiorentina",
     "pos": "PG",
     "statLine": "3.0 PTS, 0.7 DRB, 1.5 AST, 0.8 STL, 0.1 BLK in 9.7 MIN",
     "season": {
@@ -30962,8 +30962,8 @@
   {
     "id": "player266",
     "name": "Festus Ezeli",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster21",
+    "team": "Paris Saint-Germain",
     "pos": "C",
     "statLine": "7.5 PTS, 4.2 DRB, 1.4 AST, 0.4 STL, 3.5 BLK in 28.0 MIN",
     "season": {
@@ -31382,8 +31382,8 @@
   {
     "id": "player747",
     "name": "Frank Johnson",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster7",
+    "team": "ACF Fiorentina",
     "pos": "PG",
     "statLine": "11.3 PTS, 2.3 DRB, 9.3 AST, 2.2 STL, 0.1 BLK in 36.4 MIN",
     "season": {
@@ -33122,8 +33122,8 @@
   {
     "id": "player1046",
     "name": "George Gervin",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster9",
+    "team": "AC Milan",
     "pos": "SG",
     "statLine": "8.3 PTS, 1.2 DRB, 1.8 AST, 0.6 STL, 0.2 BLK in 18.6 MIN",
     "season": {
@@ -34202,8 +34202,8 @@
   {
     "id": "player1297",
     "name": "Glen Rice",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster8",
+    "team": "Real Madrid",
     "pos": "SG",
     "statLine": "23.7 PTS, 3.9 DRB, 3.5 AST, 0.8 STL, 0.2 BLK in 33.3 MIN",
     "season": {
@@ -34442,8 +34442,8 @@
   {
     "id": "player1512",
     "name": "Goran Dragic",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster10",
+    "team": "Brighton",
     "pos": "PG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -34802,8 +34802,8 @@
   {
     "id": "player728",
     "name": "Greg Ballard",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster9",
+    "team": "AC Milan",
     "pos": "PF",
     "statLine": "8.8 PTS, 3.3 DRB, 2.1 AST, 1.3 STL, 0.3 BLK in 19.0 MIN",
     "season": {
@@ -38222,8 +38222,8 @@
   {
     "id": "player1047",
     "name": "Isiah Thomas",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster13",
+    "team": "Benfica",
     "pos": "PG",
     "statLine": "20.7 PTS, 1.9 DRB, 10.3 AST, 1.7 STL, 0.3 BLK in 36.5 MIN",
     "season": {
@@ -38642,8 +38642,8 @@
   {
     "id": "player373",
     "name": "J.J. Redick",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster13",
+    "team": "Benfica",
     "pos": "PG",
     "statLine": "9.0 PTS, 1.6 DRB, 2.2 AST, 0.7 STL, 0.2 BLK in 19.9 MIN",
     "season": {
@@ -39062,8 +39062,8 @@
   {
     "id": "player870",
     "name": "Jack Sikma",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster6",
+    "team": "Crystal Palace",
     "pos": "C",
     "statLine": "20.3 PTS, 6.7 DRB, 3.8 AST, 0.9 STL, 0.8 BLK in 39.6 MIN",
     "season": {
@@ -39662,8 +39662,8 @@
   {
     "id": "player264",
     "name": "Jalen Duren",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster6",
+    "team": "Crystal Palace",
     "pos": "C",
     "statLine": "5.6 PTS, 2.7 DRB, 0.9 AST, 0.2 STL, 1.2 BLK in 14.1 MIN",
     "season": {
@@ -41102,8 +41102,8 @@
   {
     "id": "player576",
     "name": "James Worthy",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster17",
+    "team": "Chelsea",
     "pos": "SF",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -48602,8 +48602,8 @@
   {
     "id": "player258",
     "name": "Jrue Holiday",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster22",
+    "team": "Tottenham Hotspur",
     "pos": "SG",
     "statLine": "9.7 PTS, 2.8 DRB, 4.1 AST, 1.2 STL, 0.2 BLK in 28.1 MIN",
     "season": {
@@ -52922,8 +52922,8 @@
   {
     "id": "player697",
     "name": "Larry Bird",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster21",
+    "team": "Paris Saint-Germain",
     "pos": "SF",
     "statLine": "16.3 PTS, 5.0 DRB, 4.7 AST, 1.3 STL, 0.4 BLK in 30.3 MIN",
     "season": {
@@ -53042,8 +53042,8 @@
   {
     "id": "player1053",
     "name": "Larry Drew",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster13",
+    "team": "Benfica",
     "pos": "PG",
     "statLine": "21.1 PTS, 2.3 DRB, 9.1 AST, 1.9 STL, 0.1 BLK in 32.3 MIN",
     "season": {
@@ -54902,8 +54902,8 @@
   {
     "id": "player1083",
     "name": "Lorenzo Romar",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster10",
+    "team": "Brighton",
     "pos": "PG",
     "statLine": "4.3 PTS, 1.4 DRB, 4.4 AST, 1.0 STL, 0.0 BLK in 18.3 MIN",
     "season": {
@@ -60182,8 +60182,8 @@
   {
     "id": "player729",
     "name": "Micheal Ray Richardson",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster8",
+    "team": "Real Madrid",
     "pos": "SF",
     "statLine": "13.0 PTS, 3.5 DRB, 5.7 AST, 2.9 STL, 0.3 BLK in 32.6 MIN",
     "season": {
@@ -61562,8 +61562,8 @@
   {
     "id": "player720",
     "name": "Mike Woodson",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster6",
+    "team": "Crystal Palace",
     "pos": "SG",
     "statLine": "6.8 PTS, 0.9 DRB, 1.6 AST, 1.2 STL, 0.2 BLK in 16.2 MIN",
     "season": {
@@ -62762,8 +62762,8 @@
   {
     "id": "player872",
     "name": "Moses Malone",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster26",
+    "team": "Inter Milan",
     "pos": "C",
     "statLine": "22.4 PTS, 7.3 DRB, 3.3 AST, 0.9 STL, 4.9 BLK in 38.3 MIN",
     "season": {
@@ -64682,8 +64682,8 @@
   {
     "id": "player237",
     "name": "Oliver Miller",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster10",
+    "team": "Brighton",
     "pos": "C",
     "statLine": "4.3 PTS, 2.9 DRB, 1.1 AST, 0.7 STL, 2.0 BLK in 15.6 MIN",
     "season": {
@@ -65402,8 +65402,8 @@
   {
     "id": "player621",
     "name": "Ousmane Dieng",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster20",
+    "team": "Monaco",
     "pos": "PF",
     "statLine": "0.0 PTS, 0.0 DRB, 0.7 AST, 0.0 STL, 0.3 BLK in 1.3 MIN",
     "season": {
@@ -68102,8 +68102,8 @@
   {
     "id": "player879",
     "name": "Purvis Short",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster21",
+    "team": "Paris Saint-Germain",
     "pos": "SG",
     "statLine": "14.9 PTS, 3.3 DRB, 3.7 AST, 1.2 STL, 0.2 BLK in 34.1 MIN",
     "season": {
@@ -70982,8 +70982,8 @@
   {
     "id": "player746",
     "name": "Rick Mahorn",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster27",
+    "team": "FL Fart",
     "pos": "C",
     "statLine": "5.5 PTS, 3.8 DRB, 1.3 AST, 0.4 STL, 2.3 BLK in 19.3 MIN",
     "season": {
@@ -72902,8 +72902,8 @@
   {
     "id": "player1495",
     "name": "Rodney Stuckey",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster5",
+    "team": "Manchester United",
     "pos": "PG",
     "statLine": "0.0 PTS, 0.0 DRB, 0.0 AST, 0.0 STL, 0.0 BLK in 0.0 MIN",
     "season": {
@@ -74042,8 +74042,8 @@
   {
     "id": "player323",
     "name": "Ruben Patterson",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster7",
+    "team": "ACF Fiorentina",
     "pos": "SG",
     "statLine": "16.0 PTS, 3.3 DRB, 2.5 AST, 1.8 STL, 0.4 BLK in 30.9 MIN",
     "season": {
@@ -78122,8 +78122,8 @@
   {
     "id": "player897",
     "name": "Steve Johnson",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster21",
+    "team": "Paris Saint-Germain",
     "pos": "PF",
     "statLine": "27.0 PTS, 6.7 DRB, 3.4 AST, 0.8 STL, 2.8 BLK in 37.1 MIN",
     "season": {
@@ -79622,8 +79622,8 @@
   {
     "id": "player254",
     "name": "Theo Ratliff",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster7",
+    "team": "ACF Fiorentina",
     "pos": "PF",
     "statLine": "7.6 PTS, 3.7 DRB, 0.7 AST, 0.5 STL, 3.1 BLK in 22.5 MIN",
     "season": {
@@ -82802,8 +82802,8 @@
   {
     "id": "player737",
     "name": "Tree Rollins",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster8",
+    "team": "Real Madrid",
     "pos": "C",
     "statLine": "8.7 PTS, 7.2 DRB, 1.7 AST, 1.0 STL, 4.0 BLK in 34.5 MIN",
     "season": {
@@ -85742,8 +85742,8 @@
   {
     "id": "player899",
     "name": "Wayne Cooper",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster8",
+    "team": "Real Madrid",
     "pos": "C",
     "statLine": "3.6 PTS, 2.8 DRB, 0.5 AST, 0.1 STL, 1.8 BLK in 14.1 MIN",
     "season": {
@@ -86102,8 +86102,8 @@
   {
     "id": "player477",
     "name": "Wesley Person",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster21",
+    "team": "Paris Saint-Germain",
     "pos": "C",
     "statLine": "1.3 PTS, 0.9 DRB, 0.6 AST, 0.2 STL, 0.1 BLK in 7.9 MIN",
     "season": {
@@ -87002,8 +87002,8 @@
   {
     "id": "player1048",
     "name": "World B. Free",
-    "teamId": "FA",
-    "team": "FA",
+    "teamId": "roster9",
+    "team": "AC Milan",
     "pos": "PG",
     "statLine": "19.1 PTS, 2.2 DRB, 4.4 AST, 1.3 STL, 0.3 BLK in 33.9 MIN",
     "season": {
