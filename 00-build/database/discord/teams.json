@@ -12,18 +12,18 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "7-3",
+    "last10": "3-3",
     "starPlayer": {
       "name": "Dan Majerle",
       "url": "../players/player332.htm",
       "pos": "SG",
-      "age": "27",
+      "age": "28",
       "overall": "154",
-      "potential": "155"
+      "potential": "154"
     },
     "cap": {
-      "salary": "$102,549,864",
-      "room": "($2,549,864)"
+      "salary": "$108,099,864",
+      "room": "($8,099,864)"
     },
     "strengths": [
       {
@@ -49,11 +49,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@AC Milan 109, Real Madrid 92",
-      "boxscoreFile": "box185-4.htm"
+      "date": "10/29/1988",
+      "text": "AC Milan 135, @Barcelona 132",
+      "boxscoreFile": "box12-2.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/4/1988",
+      "text": "ACF Fiorentina @ AC Milan",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster9"
   },
   {
@@ -69,13 +73,13 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "3-7",
+    "last10": "3-3",
     "starPlayer": {
       "name": "Doug Christie",
       "url": "../players/player243.htm",
       "pos": "SF",
       "age": "27",
-      "overall": "141",
+      "overall": "142",
       "potential": "142"
     },
     "cap": {
@@ -106,11 +110,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@Barcelona 111, AC Sparta Praha 108",
-      "boxscoreFile": "box185-8.htm"
+      "date": "10/29/1988",
+      "text": "@Atletico Madrid 110, AC Sparta Praha 108",
+      "boxscoreFile": "box12-6.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/2/1988",
+      "text": "AC Sparta Praha @ Valencia",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster16"
   },
   {
@@ -126,18 +134,18 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "7-3",
+    "last10": "2-4",
     "starPlayer": {
-      "name": "Jawann Oldham",
-      "url": "../players/player1064.htm",
-      "pos": "C",
-      "age": "29",
-      "overall": "124",
-      "potential": "124"
+      "name": "Otis Thorpe",
+      "url": "../players/player178.htm",
+      "pos": "PF",
+      "age": "26",
+      "overall": "129",
+      "potential": "136"
     },
     "cap": {
-      "salary": "$77,964,596",
-      "room": "$22,035,404"
+      "salary": "$87,964,596",
+      "room": "$12,035,404"
     },
     "strengths": [
       {
@@ -163,11 +171,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@ACF Fiorentina 113, Aston Villa 91",
-      "boxscoreFile": "box185-7.htm"
+      "date": "10/30/1988",
+      "text": "@ACF Fiorentina 123, Real Madrid 102",
+      "boxscoreFile": "box13-1.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/2/1988",
+      "text": "Brighton @ ACF Fiorentina",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster7"
   },
   {
@@ -183,7 +195,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "5-5",
+    "last10": "4-2",
     "starPlayer": {
       "name": "Michael Cooper",
       "url": "../players/player705.htm",
@@ -220,11 +232,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "AFC Richmond 118, @Benfica 97",
-      "boxscoreFile": "box185-3.htm"
+      "date": "10/28/1988",
+      "text": "@Inter Milan 121, AFC Richmond 89",
+      "boxscoreFile": "box11-4.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/3/1988",
+      "text": "AFC Richmond @ Manchester City",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster12"
   },
   {
@@ -240,13 +256,13 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "2-8",
+    "last10": "1-5",
     "starPlayer": {
       "name": "Andrew Toney",
       "url": "../players/player709.htm",
       "pos": "SG",
       "age": "27",
-      "overall": "140",
+      "overall": "143",
       "potential": "143"
     },
     "cap": {
@@ -277,11 +293,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@Ajax 115, Brighton 100",
-      "boxscoreFile": "box185-2.htm"
+      "date": "10/30/1988",
+      "text": "Monaco 129, @Ajax 96",
+      "boxscoreFile": "box13-3.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/1/1988",
+      "text": "Chelsea @ Ajax",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster18"
   },
   {
@@ -297,14 +317,14 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "5-5",
+    "last10": "4-2",
     "starPlayer": {
       "name": "Reggie Theus",
       "url": "../players/player708.htm",
       "pos": "SG",
-      "age": "28",
-      "overall": "150",
-      "potential": "151"
+      "age": "29",
+      "overall": "147",
+      "potential": "148"
     },
     "cap": {
       "salary": "$91,436,951",
@@ -334,11 +354,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@Paris Saint-Germain 125, Arsenal 110",
-      "boxscoreFile": "box185-1.htm"
+      "date": "10/29/1988",
+      "text": "ACF Fiorentina 104, @Arsenal 90",
+      "boxscoreFile": "box12-1.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/1/1988",
+      "text": "Benfica @ Arsenal",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster23"
   },
   {
@@ -354,7 +378,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "2-8",
+    "last10": "4-2",
     "starPlayer": {
       "name": "Xavier McDaniel",
       "url": "../players/player238.htm",
@@ -391,11 +415,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@ACF Fiorentina 113, Aston Villa 91",
-      "boxscoreFile": "box185-7.htm"
+      "date": "10/28/1988",
+      "text": "Aston Villa 133, @Marseille 102",
+      "boxscoreFile": "box11-5.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/3/1988",
+      "text": "Atletico Madrid @ Aston Villa",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster19"
   },
   {
@@ -411,18 +439,18 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "5-5",
+    "last10": "2-4",
     "starPlayer": {
       "name": "Reggie Miller",
       "url": "../players/player55.htm",
       "pos": "SG",
-      "age": "23",
-      "overall": "153",
+      "age": "24",
+      "overall": "162",
       "potential": "171"
     },
     "cap": {
-      "salary": "$38,568,396",
-      "room": "$11,431,604"
+      "salary": "$39,213,396",
+      "room": "$10,786,604"
     },
     "strengths": [
       {
@@ -448,11 +476,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@Manchester City 110, Atletico Madrid 83",
-      "boxscoreFile": "box185-10.htm"
+      "date": "10/29/1988",
+      "text": "@Atletico Madrid 110, AC Sparta Praha 108",
+      "boxscoreFile": "box12-6.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/3/1988",
+      "text": "Atletico Madrid @ Aston Villa",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster11"
   },
   {
@@ -468,18 +500,18 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "5-5",
+    "last10": "3-3",
     "starPlayer": {
       "name": "Paul Pierce",
       "url": "../players/player693.htm",
       "pos": "SF",
-      "age": "24",
+      "age": "25",
       "overall": "157",
       "potential": "157"
     },
     "cap": {
-      "salary": "$90,091,901",
-      "room": "$9,908,099"
+      "salary": "$100,611,901",
+      "room": "($611,901)"
     },
     "strengths": [
       {
@@ -505,11 +537,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@Barcelona 111, AC Sparta Praha 108",
-      "boxscoreFile": "box185-8.htm"
+      "date": "10/30/1988",
+      "text": "Barcelona 129, @Paris Saint-Germain 126",
+      "boxscoreFile": "box13-2.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/3/1988",
+      "text": "Barcelona @ Real Madrid",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster24"
   },
   {
@@ -525,18 +561,18 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "6-4",
+    "last10": "2-4",
     "starPlayer": {
-      "name": "Andre Iguodala",
-      "url": "../players/player1314.htm",
-      "pos": "SF",
-      "age": "24",
-      "overall": "153",
-      "potential": "154"
+      "name": "J.J. Redick",
+      "url": "../players/player373.htm",
+      "pos": "PG",
+      "age": "28",
+      "overall": "143",
+      "potential": "151"
     },
     "cap": {
-      "salary": "$95,760,000",
-      "room": "$4,240,000"
+      "salary": "$104,430,000",
+      "room": "($4,430,000)"
     },
     "strengths": [
       {
@@ -562,11 +598,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "AFC Richmond 118, @Benfica 97",
-      "boxscoreFile": "box185-3.htm"
+      "date": "10/28/1988",
+      "text": "Arsenal 135, @Benfica 126",
+      "boxscoreFile": "box11-1.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/1/1988",
+      "text": "Benfica @ Arsenal",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster13"
   },
   {
@@ -582,7 +622,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "7-3",
+    "last10": "4-2",
     "starPlayer": {
       "name": "Kiki Vandeweghe",
       "url": "../players/player701.htm",
@@ -592,8 +632,8 @@
       "potential": "174"
     },
     "cap": {
-      "salary": "$93,342,216",
-      "room": "$6,657,784"
+      "salary": "$102,682,216",
+      "room": "($2,682,216)"
     },
     "strengths": [
       {
@@ -617,20 +657,17 @@
         "rank": 1
       }
     ],
-    "injuries": [
-      {
-        "name": "Rickey Green",
-        "pos": "PG",
-        "injury": "Torn MCL",
-        "length": "80"
-      }
-    ],
+    "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@Ajax 115, Brighton 100",
-      "boxscoreFile": "box185-2.htm"
+      "date": "10/28/1988",
+      "text": "@Real Madrid 104, Brighton 94",
+      "boxscoreFile": "box11-2.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/2/1988",
+      "text": "Brighton @ ACF Fiorentina",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster10"
   },
   {
@@ -646,7 +683,7 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "2-8",
+    "last10": "2-4",
     "starPlayer": {
       "name": "Jim Paxson",
       "url": "../players/player875.htm",
@@ -683,11 +720,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@Chelsea 119, Crystal Palace 108",
-      "boxscoreFile": "box185-6.htm"
+      "date": "10/29/1988",
+      "text": "Chelsea 110, @Crystal Palace 107",
+      "boxscoreFile": "box12-3.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/1/1988",
+      "text": "Chelsea @ Ajax",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster17"
   },
   {
@@ -703,18 +744,18 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "8-2",
+    "last10": "1-5",
     "starPlayer": {
       "name": "Rolando Blackman",
       "url": "../players/player871.htm",
       "pos": "SF",
       "age": "27",
-      "overall": "156",
+      "overall": "157",
       "potential": "157"
     },
     "cap": {
-      "salary": "$68,555,713",
-      "room": "$1,444,287"
+      "salary": "$68,023,713",
+      "room": "$1,976,287"
     },
     "strengths": [
       {
@@ -740,11 +781,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@Chelsea 119, Crystal Palace 108",
-      "boxscoreFile": "box185-6.htm"
+      "date": "10/29/1988",
+      "text": "Chelsea 110, @Crystal Palace 107",
+      "boxscoreFile": "box12-3.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/4/1988",
+      "text": "Ajax @ Crystal Palace",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster6"
   },
   {
@@ -760,13 +805,13 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "8-2",
+    "last10": "5-1",
     "starPlayer": {
       "name": "Eddie Johnson",
       "url": "../players/player704.htm",
       "pos": "SF",
       "age": "27",
-      "overall": "143",
+      "overall": "144",
       "potential": "144"
     },
     "cap": {
@@ -797,11 +842,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@FL Fart 168, Inter Milan 107",
-      "boxscoreFile": "box185-5.htm"
+      "date": "10/28/1988",
+      "text": "@FL Fart 125, Chelsea 106",
+      "boxscoreFile": "box11-3.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/3/1988",
+      "text": "FL Fart @ Monaco",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster27"
   },
   {
@@ -817,18 +866,18 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "5-5",
+    "last10": "3-3",
     "starPlayer": {
       "name": "Moses Malone",
       "url": "../players/player872.htm",
       "pos": "C",
       "age": "31",
-      "overall": "156",
-      "potential": "156"
+      "overall": "149",
+      "potential": "149"
     },
     "cap": {
-      "salary": "$54,394,904",
-      "room": "$15,605,096"
+      "salary": "$56,578,904",
+      "room": "$13,421,096"
     },
     "strengths": [
       {
@@ -854,11 +903,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@FL Fart 168, Inter Milan 107",
-      "boxscoreFile": "box185-5.htm"
+      "date": "10/28/1988",
+      "text": "@Inter Milan 121, AFC Richmond 89",
+      "boxscoreFile": "box11-4.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/1/1988",
+      "text": "Inter Milan @ Monaco",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster26"
   },
   {
@@ -874,14 +927,14 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "3-7",
+    "last10": "1-5",
     "starPlayer": {
-      "name": "Dirk Nowitzki",
-      "url": "../players/player1325.htm",
-      "pos": "SF",
-      "age": "24",
-      "overall": "121",
-      "potential": "122"
+      "name": "Jon Koncak",
+      "url": "../players/player62.htm",
+      "pos": "C",
+      "age": "23",
+      "overall": "119",
+      "potential": "125"
     },
     "cap": {
       "salary": "$36,298,517",
@@ -911,11 +964,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@Juventus 101, Marseille 82",
-      "boxscoreFile": "box185-9.htm"
+      "date": "10/30/1988",
+      "text": "@Valencia 127, Juventus 120",
+      "boxscoreFile": "box13-4.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/4/1988",
+      "text": "Atletico Madrid @ Juventus",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster14"
   },
   {
@@ -931,14 +988,14 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "8-2",
+    "last10": "2-4",
     "starPlayer": {
       "name": "Mike Gminski",
       "url": "../players/player722.htm",
       "pos": "C",
       "age": "27",
       "overall": "145",
-      "potential": "145"
+      "potential": "146"
     },
     "cap": {
       "salary": "$70,000,000",
@@ -968,11 +1025,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@Manchester City 110, Atletico Madrid 83",
-      "boxscoreFile": "box185-10.htm"
+      "date": "10/29/1988",
+      "text": "@Monaco 108, Manchester City 85",
+      "boxscoreFile": "box12-4.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/3/1988",
+      "text": "AFC Richmond @ Manchester City",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster28"
   },
   {
@@ -988,14 +1049,14 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "2-8",
+    "last10": "5-1",
     "starPlayer": {
       "name": "Tony Parker",
       "url": "../players/player1327.htm",
       "pos": "PG",
       "age": "23",
-      "overall": "124",
-      "potential": "128"
+      "overall": "126",
+      "potential": "129"
     },
     "cap": {
       "salary": "$38,626,681",
@@ -1025,11 +1086,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "Valencia 127, @Manchester United 123",
-      "boxscoreFile": "box185-11.htm"
+      "date": "10/28/1988",
+      "text": "@Manchester United 110, Juventus 106",
+      "boxscoreFile": "box11-7.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/1/1988",
+      "text": "Tottenham Hotspur @ Manchester United",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster5"
   },
   {
@@ -1045,13 +1110,13 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "1-9",
+    "last10": "2-4",
     "starPlayer": {
       "name": "Anthony Black",
       "url": "../players/player351.htm",
       "pos": "SF",
       "age": "22",
-      "overall": "122",
+      "overall": "130",
       "potential": "144"
     },
     "cap": {
@@ -1082,11 +1147,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@Juventus 101, Marseille 82",
-      "boxscoreFile": "box185-9.htm"
+      "date": "10/29/1988",
+      "text": "@Marseille 115, Tottenham Hotspur 91",
+      "boxscoreFile": "box12-5.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/3/1988",
+      "text": "Marseille @ Manchester United",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster15"
   },
   {
@@ -1102,13 +1171,13 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "7-3",
+    "last10": "6-0",
     "starPlayer": {
       "name": "Alvin Robertson",
       "url": "../players/player423.htm",
       "pos": "SG",
       "age": "25",
-      "overall": "149",
+      "overall": "154",
       "potential": "157"
     },
     "cap": {
@@ -1139,11 +1208,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "Monaco 94, @Tottenham Hotspur 74",
-      "boxscoreFile": "box185-12.htm"
+      "date": "10/30/1988",
+      "text": "Monaco 129, @Ajax 96",
+      "boxscoreFile": "box13-3.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/1/1988",
+      "text": "Inter Milan @ Monaco",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster20"
   },
   {
@@ -1159,18 +1232,18 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "2-8",
+    "last10": "3-3",
     "starPlayer": {
       "name": "Larry Bird",
       "url": "../players/player697.htm",
       "pos": "SF",
       "age": "28",
-      "overall": "156",
-      "potential": "156"
+      "overall": "155",
+      "potential": "155"
     },
     "cap": {
-      "salary": "$99,562,000",
-      "room": "$438,000"
+      "salary": "$106,782,000",
+      "room": "($6,782,000)"
     },
     "strengths": [
       {
@@ -1196,11 +1269,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@Paris Saint-Germain 125, Arsenal 110",
-      "boxscoreFile": "box185-1.htm"
+      "date": "10/30/1988",
+      "text": "Barcelona 129, @Paris Saint-Germain 126",
+      "boxscoreFile": "box13-2.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/2/1988",
+      "text": "Real Madrid @ Paris Saint-Germain",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster21"
   },
   {
@@ -1216,18 +1293,18 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "3-7",
+    "last10": "3-3",
     "starPlayer": {
       "name": "Sidney Moncrief",
       "url": "../players/player699.htm",
       "pos": "SG",
-      "age": "28",
-      "overall": "157",
-      "potential": "157"
+      "age": "29",
+      "overall": "154",
+      "potential": "154"
     },
     "cap": {
-      "salary": "$107,467,426",
-      "room": "($7,467,426)"
+      "salary": "$99,960,000",
+      "room": "$40,000"
     },
     "strengths": [
       {
@@ -1253,11 +1330,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "@AC Milan 109, Real Madrid 92",
-      "boxscoreFile": "box185-4.htm"
+      "date": "10/30/1988",
+      "text": "@ACF Fiorentina 123, Real Madrid 102",
+      "boxscoreFile": "box13-1.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/2/1988",
+      "text": "Real Madrid @ Paris Saint-Germain",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster8"
   },
   {
@@ -1273,13 +1354,13 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "8-2",
+    "last10": "4-2",
     "starPlayer": {
       "name": "Hubert Davis",
       "url": "../players/player440.htm",
       "pos": "SF",
       "age": "27",
-      "overall": "137",
+      "overall": "139",
       "potential": "144"
     },
     "cap": {
@@ -1310,11 +1391,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "Monaco 94, @Tottenham Hotspur 74",
-      "boxscoreFile": "box185-12.htm"
+      "date": "10/29/1988",
+      "text": "@Marseille 115, Tottenham Hotspur 91",
+      "boxscoreFile": "box12-5.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/1/1988",
+      "text": "Tottenham Hotspur @ Manchester United",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster22"
   },
   {
@@ -1330,14 +1415,14 @@
     "pa": 0.0,
     "diff": 0.0,
     "streak": "-",
-    "last10": "6-4",
+    "last10": "3-3",
     "starPlayer": {
-      "name": "A.C. Green",
-      "url": "../players/player240.htm",
-      "pos": "PF",
-      "age": "27",
-      "overall": "116",
-      "potential": "116"
+      "name": "Rod Higgins",
+      "url": "../players/player103.htm",
+      "pos": "SF",
+      "age": "23",
+      "overall": "121",
+      "potential": "132"
     },
     "cap": {
       "salary": "$48,276,356",
@@ -1367,11 +1452,15 @@
     ],
     "injuries": [],
     "recentGame": {
-      "date": "1988-04-21",
-      "text": "Valencia 127, @Manchester United 123",
-      "boxscoreFile": "box185-11.htm"
+      "date": "10/30/1988",
+      "text": "@Valencia 127, Juventus 120",
+      "boxscoreFile": "box13-4.htm"
     },
-    "nextGame": null,
+    "nextGame": {
+      "date": "11/2/1988",
+      "text": "AC Sparta Praha @ Valencia",
+      "boxscoreFile": ""
+    },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster25"
   }
 ]

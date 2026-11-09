@@ -8,9 +8,9 @@
             "name": "Dan Majerle",
             "url": "../players/player332.htm",
             "pos": "SG",
-            "age": "27",
+            "age": "28",
             "overall": "154",
-            "potential": "155"
+            "potential": "154"
         }
     },
     {
@@ -23,7 +23,7 @@
             "url": "../players/player243.htm",
             "pos": "SF",
             "age": "27",
-            "overall": "141",
+            "overall": "142",
             "potential": "142"
         }
     },
@@ -33,12 +33,12 @@
         "file": "roster7.htm",
         "url": "../rosters/roster7.htm",
         "starPlayer": {
-            "name": "Jawann Oldham",
-            "url": "../players/player1064.htm",
-            "pos": "C",
-            "age": "29",
-            "overall": "124",
-            "potential": "124"
+            "name": "Otis Thorpe",
+            "url": "../players/player178.htm",
+            "pos": "PF",
+            "age": "26",
+            "overall": "129",
+            "potential": "136"
         }
     },
     {
@@ -65,7 +65,7 @@
             "url": "../players/player709.htm",
             "pos": "SG",
             "age": "27",
-            "overall": "140",
+            "overall": "143",
             "potential": "143"
         }
     },
@@ -78,9 +78,9 @@
             "name": "Reggie Theus",
             "url": "../players/player708.htm",
             "pos": "SG",
-            "age": "28",
-            "overall": "150",
-            "potential": "151"
+            "age": "29",
+            "overall": "147",
+            "potential": "148"
         }
     },
     {
@@ -106,8 +106,8 @@
             "name": "Reggie Miller",
             "url": "../players/player55.htm",
             "pos": "SG",
-            "age": "23",
-            "overall": "153",
+            "age": "24",
+            "overall": "162",
             "potential": "171"
         }
     },
@@ -120,7 +120,7 @@
             "name": "Paul Pierce",
             "url": "../players/player693.htm",
             "pos": "SF",
-            "age": "24",
+            "age": "25",
             "overall": "157",
             "potential": "157"
         }
@@ -131,12 +131,12 @@
         "file": "roster13.htm",
         "url": "../rosters/roster13.htm",
         "starPlayer": {
-            "name": "Andre Iguodala",
-            "url": "../players/player1314.htm",
-            "pos": "SF",
-            "age": "24",
-            "overall": "153",
-            "potential": "154"
+            "name": "J.J. Redick",
+            "url": "../players/player373.htm",
+            "pos": "PG",
+            "age": "28",
+            "overall": "143",
+            "potential": "151"
         }
     },
     {
@@ -177,7 +177,7 @@
             "url": "../players/player871.htm",
             "pos": "SF",
             "age": "27",
-            "overall": "156",
+            "overall": "157",
             "potential": "157"
         }
     },
@@ -191,7 +191,7 @@
             "url": "../players/player704.htm",
             "pos": "SF",
             "age": "27",
-            "overall": "143",
+            "overall": "144",
             "potential": "144"
         }
     },
@@ -205,8 +205,8 @@
             "url": "../players/player872.htm",
             "pos": "C",
             "age": "31",
-            "overall": "156",
-            "potential": "156"
+            "overall": "149",
+            "potential": "149"
         }
     },
     {
@@ -215,12 +215,12 @@
         "file": "roster14.htm",
         "url": "../rosters/roster14.htm",
         "starPlayer": {
-            "name": "Dirk Nowitzki",
-            "url": "../players/player1325.htm",
-            "pos": "SF",
-            "age": "24",
-            "overall": "121",
-            "potential": "122"
+            "name": "Jon Koncak",
+            "url": "../players/player62.htm",
+            "pos": "C",
+            "age": "23",
+            "overall": "119",
+            "potential": "125"
         }
     },
     {
@@ -234,7 +234,7 @@
             "pos": "C",
             "age": "27",
             "overall": "145",
-            "potential": "145"
+            "potential": "146"
         }
     },
     {
@@ -247,8 +247,8 @@
             "url": "../players/player1327.htm",
             "pos": "PG",
             "age": "23",
-            "overall": "124",
-            "potential": "128"
+            "overall": "126",
+            "potential": "129"
         }
     },
     {
@@ -261,7 +261,7 @@
             "url": "../players/player351.htm",
             "pos": "SF",
             "age": "22",
-            "overall": "122",
+            "overall": "130",
             "potential": "144"
         }
     },
@@ -275,7 +275,7 @@
             "url": "../players/player423.htm",
             "pos": "SG",
             "age": "25",
-            "overall": "149",
+            "overall": "154",
             "potential": "157"
         }
     },
@@ -289,8 +289,8 @@
             "url": "../players/player697.htm",
             "pos": "SF",
             "age": "28",
-            "overall": "156",
-            "potential": "156"
+            "overall": "155",
+            "potential": "155"
         }
     },
     {
@@ -302,9 +302,9 @@
             "name": "Sidney Moncrief",
             "url": "../players/player699.htm",
             "pos": "SG",
-            "age": "28",
-            "overall": "157",
-            "potential": "157"
+            "age": "29",
+            "overall": "154",
+            "potential": "154"
         }
     },
     {
@@ -317,7 +317,7 @@
             "url": "../players/player440.htm",
             "pos": "SF",
             "age": "27",
-            "overall": "137",
+            "overall": "139",
             "potential": "144"
         }
     },
@@ -327,12 +327,12 @@
         "file": "roster25.htm",
         "url": "../rosters/roster25.htm",
         "starPlayer": {
-            "name": "A.C. Green",
-            "url": "../players/player240.htm",
-            "pos": "PF",
-            "age": "27",
-            "overall": "116",
-            "potential": "116"
+            "name": "Rod Higgins",
+            "url": "../players/player103.htm",
+            "pos": "SF",
+            "age": "23",
+            "overall": "121",
+            "potential": "132"
         }
     }
 ]

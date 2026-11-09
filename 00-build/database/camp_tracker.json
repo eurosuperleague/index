@@ -2,7 +2,7 @@
   "source": {
     "type": "google_sheets_csv",
     "url": "https://docs.google.com/spreadsheets/d/1ZCa_G7E9h6Z7Yf6gdFCBL9Aj4nhi92Um2rxb0rgDYew/gviz/tq?tqx=out:csv",
-    "fetchedAtUtc": "2026-11-07T01:46:31.618851+00:00"
+    "fetchedAtUtc": "2026-11-09T01:40:25.128873+00:00"
   },
   "careerLimits": {
     "regular": 3,
@@ -315,13 +315,6 @@
       "name": "Quincy Douby",
       "sourceName": "Quincy Douby",
       "regular": 1,
-      "rehab": 0
-    },
-    "player419": {
-      "playerId": "player419",
-      "name": "Jim Jackson",
-      "sourceName": "Jim Jackson",
-      "regular": 2,
       "rehab": 0
     },
     "player423": {
@@ -941,12 +934,34 @@
       "rehab": 0
     }
   },
-  "issues": [],
+  "issues": [
+    {
+      "type": "ambiguous_database_name",
+      "severity": "warning",
+      "name": "Jim Jackson",
+      "row": 59,
+      "candidates": [
+        {
+          "playerId": "player1195",
+          "name": "Jim Jackson",
+          "team": "Draft"
+        },
+        {
+          "playerId": "player419",
+          "name": "Jim Jackson",
+          "team": "AFC Richmond"
+        }
+      ],
+      "message": "Jim Jackson matches multiple players.json records: player1195, player419."
+    }
+  ],
   "summary": {
     "trackerNames": 133,
-    "matchedPlayers": 133,
-    "flaggedNames": 0,
-    "totalIssues": 0,
-    "issueCounts": {}
+    "matchedPlayers": 132,
+    "flaggedNames": 1,
+    "totalIssues": 1,
+    "issueCounts": {
+      "ambiguous_database_name": 1
+    }
   }
 }
