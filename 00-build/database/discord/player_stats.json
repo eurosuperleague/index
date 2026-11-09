@@ -2822,8 +2822,8 @@
   {
     "id": "player1318",
     "name": "Alexey Shved",
-    "teamId": "roster16",
-    "team": "AC Sparta Praha",
+    "teamId": "roster28",
+    "team": "Manchester City",
     "pos": "PG",
     "statLine": "14.7 PTS, 2.6 DRB, 4.0 AST, 1.5 STL, 0.3 BLK in 34.8 MIN",
     "season": {
@@ -17762,8 +17762,8 @@
   {
     "id": "player549",
     "name": "Craig Hodges",
-    "teamId": "roster16",
-    "team": "AC Sparta Praha",
+    "teamId": "roster20",
+    "team": "Monaco",
     "pos": "SG",
     "statLine": "15.1 PTS, 2.6 DRB, 3.4 AST, 1.1 STL, 0.1 BLK in 38.0 MIN",
     "season": {
@@ -20462,8 +20462,8 @@
   {
     "id": "player450",
     "name": "Darrick Martin",
-    "teamId": "roster16",
-    "team": "AC Sparta Praha",
+    "teamId": "roster28",
+    "team": "Manchester City",
     "pos": "PG",
     "statLine": "14.8 PTS, 1.7 DRB, 4.8 AST, 1.5 STL, 0.1 BLK in 34.7 MIN",
     "season": {
@@ -83462,8 +83462,8 @@
   {
     "id": "player516",
     "name": "Trae Young",
-    "teamId": "roster19",
-    "team": "Aston Villa",
+    "teamId": "roster20",
+    "team": "Monaco",
     "pos": "PG",
     "statLine": "21.5 PTS, 3.1 DRB, 9.5 AST, 0.9 STL, 0.0 BLK in 38.5 MIN",
     "season": {
