@@ -685,6 +685,7 @@
           <div class="history-nav-item"><a class="history-nav-link" href="records.htm">Records</a><div class="history-mega"><div class="mega-line"><strong>All-Time:</strong> <a href="records.htm#career-records">Career Totals</a> | <a href="records.htm#game-highs">Single-Game Highs</a> | <a href="records.htm#franchise-records">Franchises</a></div><div class="mega-line"><strong>Database Sections:</strong> <a href="finance.htm">Finance</a> | <a href="finance.htm#cap-history">Cap History</a> | <a href="finance.htm#earnings">Player Earnings</a> | <a href="future-pool.htm">Future Pool</a> | <a href="future-pool.htm#potential-ratings">Potential Ratings</a></div></div></div>
           <div class="history-nav-item"><a class="history-nav-link" href="supercup.htm">Super Cup</a><div class="history-mega"><div class="mega-line"><strong>Cup Archive:</strong> <a href="supercup.htm#knockout">Knockout Bracket</a> | <a href="supercup.htm#group-stage">Group Stage</a> | <a href="supercup.htm#cup-leaders">Stat Leaders</a></div></div></div>
           <div class="history-nav-item"><a class="history-nav-link" href="youth-intake.htm">Youth Intake</a><div class="history-mega"><div class="mega-line"><strong>Youth History:</strong> <a href="youth-intake.htm">Youth Intake</a> | <a href="youth-intake.htm?season=all">All Seasons</a> | <a href="development-stats.htm">Development Stats</a></div></div></div>
+          <div class="history-nav-item"><a class="history-nav-link" href="training-camp.htm">Training Camps</a><div class="history-mega"><div class="mega-line"><strong>Development:</strong> <a href="training-camp.htm">Team Camp Rankings</a> | <a href="../training-camp.htm">Player Camp Changes</a></div></div></div>
           <div class="history-nav-item"><a class="history-nav-link" href="compare.htm">Compare</a><div class="history-mega"><div class="mega-line"><strong>Compare:</strong> <a href="compare.htm?type=players">Players</a> | <a href="compare.htm?type=teams">Teams</a></div></div></div>
         </nav>
       </header>`;
@@ -2708,7 +2709,7 @@
 
   function navigate(href, options = {}) {
     const url = new URL(href, window.location.href);
-    if (!isInternalHistoryUrl(url)) {
+    if (!isInternalHistoryUrl(url) || /\/training-camp\.htm$/.test(url.pathname)) {
       window.location.href = url.href;
       return;
     }
@@ -2743,6 +2744,10 @@
   }
 
   async function init() {
+    if (document.body.dataset.page === "training-camp") {
+      await initCore();
+      return;
+    }
     setupSpaNavigation();
     await renderRoute();
   }

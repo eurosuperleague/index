@@ -1,0 +1,19 @@
+/* Shared history components match Youth Intake Development Stats. */
+.camp-controls { grid-template-columns: repeat(4, minmax(130px, 1fr)); }
+.camp-note { font-size: 12px; color: var(--hist-muted); line-height: 1.5; margin: 8px 0 0; }
+.camp-panel-head { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.camp-panel-head h2 { margin-bottom: 0; }
+#status { font-size: 12px; color: var(--hist-muted); }
+.camp-summary { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.camp-chip { border: 1px solid var(--hist-line); background: var(--hist-soft); padding: 5px 8px; font-size: 11px; }
+.camp-chip strong { margin-left: 6px; }
+.camp-positive { color: #187342; font-weight: 700; }
+.camp-negative { color: #b42318; font-weight: 700; }
+.camp-score { font: inherit; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; border: 0; padding: 0; background: none; cursor: pointer; }
+.camp-empty { padding: 20px 8px; color: var(--hist-muted); }
+table.ref-table th, table.ref-table td { font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+table.ref-table th:nth-child(2), table.ref-table td:nth-child(2) { text-align: left; }
+#breakdown { scroll-margin-top: 130px; }
+button:focus-visible, a:focus-visible, select:focus-visible { outline: 2px solid #4677c4; outline-offset: 2px; }
+[hidden] { display: none !important; }
+@media (max-width: 640px) { .camp-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); } .camp-controls select { width: 100%; min-width: 0; } }

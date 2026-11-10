@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Training Camp History | European Superleague</title>
+  <link rel="icon" type="image/png" href="../../../00-build/database/favicon.png">
+  <link rel="stylesheet" href="history.css?v=20260827-1">
+  <link rel="stylesheet" href="training-camp.css">
+  <script src="history.js?v=20261109-camp" defer></script>
+  <script src="../../js/training-camp-history-data.js" defer></script>
+  <script src="training-camp.js" defer></script>
+</head>
+<body data-page="training-camp">
+  <div id="history-topbar"></div>
+  <main class="history-page" id="history-app">
+    <header class="history-hero">
+      <h1>Team Training Camp History</h1>
+      <p>Every team's recorded camps, ranked from best to worst by the impact of player development.</p>
+    </header>
+    <section class="reference-section compact-controls" aria-label="Ranking controls">
+      <h2>Training Camp Controls</h2>
+      <div class="filter-bar camp-controls">
+        <input type="hidden" id="view" value="camps">
+        <label>Weight by<select id="weight"><option value="potImpact">Pre-camp POT</option><option value="ovrImpact">Pre-camp OVR</option></select></label>
+        <label>Camp<select id="camp"><option value="all">All recorded camps</option></select></label>
+        <label>Team<select id="team"><option value="all">All teams</option></select></label>
+        <label>Order<select id="order"><option value="best">Best to worst</option><option value="worst">Worst to best</option></select></label>
+      </div>
+      <p id="formula" class="camp-note"></p>
+
+    </section>
+    <section id="highlights" class="dashboard-grid compact-summary" aria-label="Training camp highlights"></section>
+    <section class="reference-section" aria-labelledby="ranking-title">
+      <nav class="section-tabs" aria-label="Ranking view"><a class="section-tab active" id="camps-tab" href="training-camp.htm?view=camps" data-view="camps">Team Camps</a><a class="section-tab" id="franchises-tab" href="training-camp.htm?view=franchises" data-view="franchises">Franchises</a></nav>
+      <div class="camp-panel-head"><h2 id="ranking-title">All-time team camps</h2><span id="status" role="status">Loading rating snapshots…</span></div>
+      <div id="summary" class="camp-summary"></div>
+      <div class="table-wrap" id="rankings"></div>
+      <p id="ranking-note" class="camp-note">Select a camp's impact score to inspect every player's contribution.</p>
+    </section>
+    <section class="reference-section" id="breakdown" hidden aria-labelledby="breakdown-title">
+      <div class="camp-panel-head"><h2 id="breakdown-title">Player contributions</h2><button id="close" type="button">Close</button></div>
+      <p id="breakdown-note" class="camp-note"></p><div id="players" class="table-wrap"></div>
+    </section>
+      <details class="development-definitions"><summary>How scores and historical comparisons work</summary>
+        <p>Player impact = POT delta × pre-camp POT ÷ 100, where POT delta is after-camp POT minus pre-camp POT. Team camp impact sums the player contributions. Switch the weight to OVR to multiply that same POT delta by pre-camp OVR instead. Ratings above 100 retain their full weight. Net skill change is supporting context and does not affect impact.</p>
+        <p>Declines count negatively. Ties use average POT change, then the share of players whose POT increased. Team history ranks the average camp impact, giving each recorded camp equal weight. Raw POT delta is summed per camp; franchise rows show both its average per camp and cumulative total.</p>
+        <p>Includes matched roster players with OVR of at least 50 in either snapshot, including players with no change. Mascots and free agents are excluded. Players without a matching identity or complete ratings are excluded and counted in the coverage column. Players are credited to their team in the later snapshot; team history groups by roster identity.</p>
+        <p>Historical comparisons use the same adjacent archived season snapshots as Player Camp Changes. They can include other rating changes between snapshots and players who changed teams. The current camp compares live ratings against the saved PreTC snapshot, so it can change as the live database updates.</p>
+      </details>
+  </main>
+</body>
+</html>
