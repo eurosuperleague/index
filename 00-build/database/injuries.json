@@ -1,4 +1,115 @@
 {
     "source": "injuries.htm",
-    "injuries": []
+    "injuries": [
+        {
+            "pos": "SG",
+            "name": "Sterling Brown",
+            "url": "",
+            "team": "roster12",
+            "teamName": "AFC Richmond",
+            "rosterUrl": "./rosters/roster12.htm",
+            "length": "54",
+            "injury": "Broken Foot",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "SF",
+            "name": "Rolando Blackman",
+            "url": "",
+            "team": "roster6",
+            "teamName": "Crystal Palace",
+            "rosterUrl": "./rosters/roster6.htm",
+            "length": "46",
+            "injury": "Dislocated Shoulder",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "SG",
+            "name": "Jim Paxson",
+            "url": "",
+            "team": "roster17",
+            "teamName": "Chelsea",
+            "rosterUrl": "./rosters/roster17.htm",
+            "length": "41",
+            "injury": "Torn Ligament",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PG",
+            "name": "Pooh Richardson",
+            "url": "",
+            "team": "roster12",
+            "teamName": "AFC Richmond",
+            "rosterUrl": "./rosters/roster12.htm",
+            "length": "31",
+            "injury": "Fractured Leg",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "PG",
+            "name": "Mike Conley",
+            "url": "",
+            "team": "roster10",
+            "teamName": "Brighton",
+            "rosterUrl": "./rosters/roster10.htm",
+            "length": "24",
+            "injury": "Stress Fracture",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "PG",
+            "name": "Jalen Brunson",
+            "url": "",
+            "team": "roster17",
+            "teamName": "Chelsea",
+            "rosterUrl": "./rosters/roster17.htm",
+            "length": "16",
+            "injury": "Patellar Tendanitis",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "SF",
+            "name": "LeBron James",
+            "url": "",
+            "team": "roster20",
+            "teamName": "Monaco",
+            "rosterUrl": "./rosters/roster20.htm",
+            "length": "8",
+            "injury": "Broken Foot",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "SF",
+            "name": "Glen Rice",
+            "url": "",
+            "team": "roster8",
+            "teamName": "Real Madrid",
+            "rosterUrl": "./rosters/roster8.htm",
+            "length": "5",
+            "injury": "Broken Finger",
+            "rowClass": "row2"
+        },
+        {
+            "pos": "C",
+            "name": "Anderson Varejao",
+            "url": "",
+            "team": "roster24",
+            "teamName": "Barcelona",
+            "rosterUrl": "./rosters/roster24.htm",
+            "length": "4",
+            "injury": "Fractured Cheekbone",
+            "rowClass": "row1"
+        },
+        {
+            "pos": "SF",
+            "name": "Nick Anderson",
+            "url": "",
+            "team": "roster28",
+            "teamName": "Manchester City",
+            "rosterUrl": "./rosters/roster28.htm",
+            "length": "3",
+            "injury": "Concussion",
+            "rowClass": "row2"
+        }
+    ]
 }

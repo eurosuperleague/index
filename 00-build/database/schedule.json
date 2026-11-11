@@ -6,7 +6,7 @@
             "slug": "preseason",
             "days": [
                 {
-                    "date": "10/18/1988",
+                    "date": "18/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -203,7 +203,7 @@
                     ]
                 },
                 {
-                    "date": "10/19/1988",
+                    "date": "19/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -336,7 +336,7 @@
                     ]
                 },
                 {
-                    "date": "10/20/1988",
+                    "date": "20/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -405,7 +405,7 @@
                     ]
                 },
                 {
-                    "date": "10/21/1988",
+                    "date": "21/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -506,7 +506,7 @@
                     ]
                 },
                 {
-                    "date": "10/22/1988",
+                    "date": "22/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -575,7 +575,7 @@
                     ]
                 },
                 {
-                    "date": "10/23/1988",
+                    "date": "23/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -612,7 +612,7 @@
                     ]
                 },
                 {
-                    "date": "10/24/1988",
+                    "date": "24/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -681,7 +681,7 @@
                     ]
                 },
                 {
-                    "date": "10/25/1988",
+                    "date": "25/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -798,7 +798,7 @@
                     ]
                 },
                 {
-                    "date": "10/26/1988",
+                    "date": "26/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -867,7 +867,7 @@
                     ]
                 },
                 {
-                    "date": "10/27/1988",
+                    "date": "27/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -936,7 +936,7 @@
                     ]
                 },
                 {
-                    "date": "10/28/1988",
+                    "date": "28/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -1053,7 +1053,7 @@
                     ]
                 },
                 {
-                    "date": "10/29/1988",
+                    "date": "29/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -1154,7 +1154,7 @@
                     ]
                 },
                 {
-                    "date": "10/30/1988",
+                    "date": "30/10/1988",
                     "games": [
                         {
                             "status": "completed",
@@ -1229,1338 +1229,1614 @@
             "slug": "regular-season",
             "days": [
                 {
-                    "date": "11/1/1988",
+                    "date": "1/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Benfica @ Arsenal",
-                            "awayTeam": "roster13",
-                            "awayTeamName": "Benfica",
-                            "awayRosterUrl": "./rosters/roster13.htm",
-                            "awayRosterFile": "roster13.htm",
+                            "status": "completed",
+                            "matchupText": "@Arsenal 106, Benfica 101",
+                            "boxscoreUrl": "./boxes/box15-1.htm",
+                            "boxscoreFile": "box15-1.htm",
                             "homeTeam": "roster23",
                             "homeTeamName": "Arsenal",
-                            "homeRosterUrl": "./rosters/roster23.htm",
-                            "homeRosterFile": "roster23.htm",
+                            "homeScore": 106,
+                            "awayTeam": "roster13",
+                            "awayTeamName": "Benfica",
+                            "awayScore": 101,
+                            "winner": "roster23",
+                            "winnerName": "Arsenal",
+                            "margin": 5,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Chelsea @ Ajax",
-                            "awayTeam": "roster17",
-                            "awayTeamName": "Chelsea",
-                            "awayRosterUrl": "./rosters/roster17.htm",
-                            "awayRosterFile": "roster17.htm",
+                            "status": "completed",
+                            "matchupText": "Chelsea 116, @Ajax 102",
+                            "boxscoreUrl": "./boxes/box15-2.htm",
+                            "boxscoreFile": "box15-2.htm",
                             "homeTeam": "roster18",
                             "homeTeamName": "Ajax",
-                            "homeRosterUrl": "./rosters/roster18.htm",
-                            "homeRosterFile": "roster18.htm",
+                            "homeScore": 102,
+                            "awayTeam": "roster17",
+                            "awayTeamName": "Chelsea",
+                            "awayScore": 116,
+                            "winner": "roster17",
+                            "winnerName": "Chelsea",
+                            "margin": 14,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Inter Milan @ Monaco",
+                            "status": "completed",
+                            "matchupText": "@Monaco 125, Inter Milan 111",
+                            "boxscoreUrl": "./boxes/box15-3.htm",
+                            "boxscoreFile": "box15-3.htm",
+                            "homeTeam": "roster20",
+                            "homeTeamName": "Monaco",
+                            "homeScore": 125,
                             "awayTeam": "roster26",
                             "awayTeamName": "Inter Milan",
-                            "awayRosterUrl": "./rosters/roster26.htm",
-                            "awayRosterFile": "roster26.htm",
-                            "homeTeam": "roster20",
-                            "homeTeamName": "Monaco",
-                            "homeRosterUrl": "./rosters/roster20.htm",
-                            "homeRosterFile": "roster20.htm",
+                            "awayScore": 111,
+                            "winner": "roster20",
+                            "winnerName": "Monaco",
+                            "margin": 14,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Tottenham Hotspur @ Manchester United",
-                            "awayTeam": "roster22",
-                            "awayTeamName": "Tottenham Hotspur",
-                            "awayRosterUrl": "./rosters/roster22.htm",
-                            "awayRosterFile": "roster22.htm",
+                            "status": "completed",
+                            "matchupText": "Tottenham Hotspur 115, @Manchester United 103",
+                            "boxscoreUrl": "./boxes/box15-4.htm",
+                            "boxscoreFile": "box15-4.htm",
                             "homeTeam": "roster5",
                             "homeTeamName": "Manchester United",
-                            "homeRosterUrl": "./rosters/roster5.htm",
-                            "homeRosterFile": "roster5.htm",
+                            "homeScore": 103,
+                            "awayTeam": "roster22",
+                            "awayTeamName": "Tottenham Hotspur",
+                            "awayScore": 115,
+                            "winner": "roster22",
+                            "winnerName": "Tottenham Hotspur",
+                            "margin": 12,
                             "rowClass": "row2"
                         }
                     ]
                 },
                 {
-                    "date": "11/2/1988",
+                    "date": "2/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Brighton @ ACF Fiorentina",
-                            "awayTeam": "roster10",
-                            "awayTeamName": "Brighton",
-                            "awayRosterUrl": "./rosters/roster10.htm",
-                            "awayRosterFile": "roster10.htm",
+                            "status": "completed",
+                            "matchupText": "Brighton 113, @ACF Fiorentina 111",
+                            "boxscoreUrl": "./boxes/box16-1.htm",
+                            "boxscoreFile": "box16-1.htm",
                             "homeTeam": "roster7",
                             "homeTeamName": "ACF Fiorentina",
-                            "homeRosterUrl": "./rosters/roster7.htm",
-                            "homeRosterFile": "roster7.htm",
+                            "homeScore": 111,
+                            "awayTeam": "roster10",
+                            "awayTeamName": "Brighton",
+                            "awayScore": 113,
+                            "winner": "roster10",
+                            "winnerName": "Brighton",
+                            "margin": 2,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Real Madrid @ Paris Saint-Germain",
-                            "awayTeam": "roster8",
-                            "awayTeamName": "Real Madrid",
-                            "awayRosterUrl": "./rosters/roster8.htm",
-                            "awayRosterFile": "roster8.htm",
+                            "status": "completed",
+                            "matchupText": "@Paris Saint-Germain 130, Real Madrid 98",
+                            "boxscoreUrl": "./boxes/box16-2.htm",
+                            "boxscoreFile": "box16-2.htm",
                             "homeTeam": "roster21",
                             "homeTeamName": "Paris Saint-Germain",
-                            "homeRosterUrl": "./rosters/roster21.htm",
-                            "homeRosterFile": "roster21.htm",
+                            "homeScore": 130,
+                            "awayTeam": "roster8",
+                            "awayTeamName": "Real Madrid",
+                            "awayScore": 98,
+                            "winner": "roster21",
+                            "winnerName": "Paris Saint-Germain",
+                            "margin": 32,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "AC Sparta Praha @ Valencia",
-                            "awayTeam": "roster16",
-                            "awayTeamName": "AC Sparta Praha",
-                            "awayRosterUrl": "./rosters/roster16.htm",
-                            "awayRosterFile": "roster16.htm",
+                            "status": "completed",
+                            "matchupText": "AC Sparta Praha 120, @Valencia 110",
+                            "boxscoreUrl": "./boxes/box16-3.htm",
+                            "boxscoreFile": "box16-3.htm",
                             "homeTeam": "roster25",
                             "homeTeamName": "Valencia",
-                            "homeRosterUrl": "./rosters/roster25.htm",
-                            "homeRosterFile": "roster25.htm",
+                            "homeScore": 110,
+                            "awayTeam": "roster16",
+                            "awayTeamName": "AC Sparta Praha",
+                            "awayScore": 120,
+                            "winner": "roster16",
+                            "winnerName": "AC Sparta Praha",
+                            "margin": 10,
                             "rowClass": "row1"
                         }
                     ]
                 },
                 {
-                    "date": "11/3/1988",
+                    "date": "3/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Barcelona @ Real Madrid",
-                            "awayTeam": "roster24",
-                            "awayTeamName": "Barcelona",
-                            "awayRosterUrl": "./rosters/roster24.htm",
-                            "awayRosterFile": "roster24.htm",
+                            "status": "completed",
+                            "matchupText": "@Real Madrid 116, Barcelona 112",
+                            "boxscoreUrl": "./boxes/box17-1.htm",
+                            "boxscoreFile": "box17-1.htm",
                             "homeTeam": "roster8",
                             "homeTeamName": "Real Madrid",
-                            "homeRosterUrl": "./rosters/roster8.htm",
-                            "homeRosterFile": "roster8.htm",
+                            "homeScore": 116,
+                            "awayTeam": "roster24",
+                            "awayTeamName": "Barcelona",
+                            "awayScore": 112,
+                            "winner": "roster8",
+                            "winnerName": "Real Madrid",
+                            "margin": 4,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "AFC Richmond @ Manchester City",
-                            "awayTeam": "roster12",
-                            "awayTeamName": "AFC Richmond",
-                            "awayRosterUrl": "./rosters/roster12.htm",
-                            "awayRosterFile": "roster12.htm",
+                            "status": "completed",
+                            "matchupText": "AFC Richmond 110, @Manchester City 90",
+                            "boxscoreUrl": "./boxes/box17-2.htm",
+                            "boxscoreFile": "box17-2.htm",
                             "homeTeam": "roster28",
                             "homeTeamName": "Manchester City",
-                            "homeRosterUrl": "./rosters/roster28.htm",
-                            "homeRosterFile": "roster28.htm",
+                            "homeScore": 90,
+                            "awayTeam": "roster12",
+                            "awayTeamName": "AFC Richmond",
+                            "awayScore": 110,
+                            "winner": "roster12",
+                            "winnerName": "AFC Richmond",
+                            "margin": 20,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "FL Fart @ Monaco",
-                            "awayTeam": "roster27",
-                            "awayTeamName": "FL Fart",
-                            "awayRosterUrl": "./rosters/roster27.htm",
-                            "awayRosterFile": "roster27.htm",
+                            "status": "completed",
+                            "matchupText": "@Monaco 105, FL Fart 87",
+                            "boxscoreUrl": "./boxes/box17-3.htm",
+                            "boxscoreFile": "box17-3.htm",
                             "homeTeam": "roster20",
                             "homeTeamName": "Monaco",
-                            "homeRosterUrl": "./rosters/roster20.htm",
-                            "homeRosterFile": "roster20.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Marseille @ Manchester United",
-                            "awayTeam": "roster15",
-                            "awayTeamName": "Marseille",
-                            "awayRosterUrl": "./rosters/roster15.htm",
-                            "awayRosterFile": "roster15.htm",
-                            "homeTeam": "roster5",
-                            "homeTeamName": "Manchester United",
-                            "homeRosterUrl": "./rosters/roster5.htm",
-                            "homeRosterFile": "roster5.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Atletico Madrid @ Aston Villa",
-                            "awayTeam": "roster11",
-                            "awayTeamName": "Atletico Madrid",
-                            "awayRosterUrl": "./rosters/roster11.htm",
-                            "awayRosterFile": "roster11.htm",
-                            "homeTeam": "roster19",
-                            "homeTeamName": "Aston Villa",
-                            "homeRosterUrl": "./rosters/roster19.htm",
-                            "homeRosterFile": "roster19.htm",
-                            "rowClass": "row1"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/4/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "ACF Fiorentina @ AC Milan",
-                            "awayTeam": "roster7",
-                            "awayTeamName": "ACF Fiorentina",
-                            "awayRosterUrl": "./rosters/roster7.htm",
-                            "awayRosterFile": "roster7.htm",
-                            "homeTeam": "roster9",
-                            "homeTeamName": "AC Milan",
-                            "homeRosterUrl": "./rosters/roster9.htm",
-                            "homeRosterFile": "roster9.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Ajax @ Crystal Palace",
-                            "awayTeam": "roster18",
-                            "awayTeamName": "Ajax",
-                            "awayRosterUrl": "./rosters/roster18.htm",
-                            "awayRosterFile": "roster18.htm",
-                            "homeTeam": "roster6",
-                            "homeTeamName": "Crystal Palace",
-                            "homeRosterUrl": "./rosters/roster6.htm",
-                            "homeRosterFile": "roster6.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Atletico Madrid @ Juventus",
-                            "awayTeam": "roster11",
-                            "awayTeamName": "Atletico Madrid",
-                            "awayRosterUrl": "./rosters/roster11.htm",
-                            "awayRosterFile": "roster11.htm",
-                            "homeTeam": "roster14",
-                            "homeTeamName": "Juventus",
-                            "homeRosterUrl": "./rosters/roster14.htm",
-                            "homeRosterFile": "roster14.htm",
-                            "rowClass": "row1"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/5/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Chelsea @ Inter Milan",
-                            "awayTeam": "roster17",
-                            "awayTeamName": "Chelsea",
-                            "awayRosterUrl": "./rosters/roster17.htm",
-                            "awayRosterFile": "roster17.htm",
-                            "homeTeam": "roster26",
-                            "homeTeamName": "Inter Milan",
-                            "homeRosterUrl": "./rosters/roster26.htm",
-                            "homeRosterFile": "roster26.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "FL Fart @ Ajax",
+                            "homeScore": 105,
                             "awayTeam": "roster27",
                             "awayTeamName": "FL Fart",
-                            "awayRosterUrl": "./rosters/roster27.htm",
-                            "awayRosterFile": "roster27.htm",
-                            "homeTeam": "roster18",
-                            "homeTeamName": "Ajax",
-                            "homeRosterUrl": "./rosters/roster18.htm",
-                            "homeRosterFile": "roster18.htm",
+                            "awayScore": 87,
+                            "winner": "roster20",
+                            "winnerName": "Monaco",
+                            "margin": 18,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Manchester United 111, Marseille 83",
+                            "boxscoreUrl": "./boxes/box17-4.htm",
+                            "boxscoreFile": "box17-4.htm",
+                            "homeTeam": "roster5",
+                            "homeTeamName": "Manchester United",
+                            "homeScore": 111,
+                            "awayTeam": "roster15",
+                            "awayTeamName": "Marseille",
+                            "awayScore": 83,
+                            "winner": "roster5",
+                            "winnerName": "Manchester United",
+                            "margin": 28,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Tottenham Hotspur @ AC Sparta Praha",
-                            "awayTeam": "roster22",
-                            "awayTeamName": "Tottenham Hotspur",
-                            "awayRosterUrl": "./rosters/roster22.htm",
-                            "awayRosterFile": "roster22.htm",
+                            "status": "completed",
+                            "matchupText": "@Aston Villa 114, Atletico Madrid 94",
+                            "boxscoreUrl": "./boxes/box17-5.htm",
+                            "boxscoreFile": "box17-5.htm",
+                            "homeTeam": "roster19",
+                            "homeTeamName": "Aston Villa",
+                            "homeScore": 114,
+                            "awayTeam": "roster11",
+                            "awayTeamName": "Atletico Madrid",
+                            "awayScore": 94,
+                            "winner": "roster19",
+                            "winnerName": "Aston Villa",
+                            "margin": 20,
+                            "rowClass": "row1"
+                        }
+                    ]
+                },
+                {
+                    "date": "4/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "ACF Fiorentina 101, @AC Milan 97",
+                            "boxscoreUrl": "./boxes/box18-1.htm",
+                            "boxscoreFile": "box18-1.htm",
+                            "homeTeam": "roster9",
+                            "homeTeamName": "AC Milan",
+                            "homeScore": 97,
+                            "awayTeam": "roster7",
+                            "awayTeamName": "ACF Fiorentina",
+                            "awayScore": 101,
+                            "winner": "roster7",
+                            "winnerName": "ACF Fiorentina",
+                            "margin": 4,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Crystal Palace 116, Ajax 103",
+                            "boxscoreUrl": "./boxes/box18-2.htm",
+                            "boxscoreFile": "box18-2.htm",
+                            "homeTeam": "roster6",
+                            "homeTeamName": "Crystal Palace",
+                            "homeScore": 116,
+                            "awayTeam": "roster18",
+                            "awayTeamName": "Ajax",
+                            "awayScore": 103,
+                            "winner": "roster6",
+                            "winnerName": "Crystal Palace",
+                            "margin": 13,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Juventus 99, Atletico Madrid 98",
+                            "boxscoreUrl": "./boxes/box18-3.htm",
+                            "boxscoreFile": "box18-3.htm",
+                            "homeTeam": "roster14",
+                            "homeTeamName": "Juventus",
+                            "homeScore": 99,
+                            "awayTeam": "roster11",
+                            "awayTeamName": "Atletico Madrid",
+                            "awayScore": 98,
+                            "winner": "roster14",
+                            "winnerName": "Juventus",
+                            "margin": 1,
+                            "rowClass": "row1"
+                        }
+                    ]
+                },
+                {
+                    "date": "5/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "@Inter Milan 123, Chelsea 118",
+                            "boxscoreUrl": "./boxes/box19-1.htm",
+                            "boxscoreFile": "box19-1.htm",
+                            "homeTeam": "roster26",
+                            "homeTeamName": "Inter Milan",
+                            "homeScore": 123,
+                            "awayTeam": "roster17",
+                            "awayTeamName": "Chelsea",
+                            "awayScore": 118,
+                            "winner": "roster26",
+                            "winnerName": "Inter Milan",
+                            "margin": 5,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "FL Fart 100, @Ajax 85",
+                            "boxscoreUrl": "./boxes/box19-2.htm",
+                            "boxscoreFile": "box19-2.htm",
+                            "homeTeam": "roster18",
+                            "homeTeamName": "Ajax",
+                            "homeScore": 85,
+                            "awayTeam": "roster27",
+                            "awayTeamName": "FL Fart",
+                            "awayScore": 100,
+                            "winner": "roster27",
+                            "winnerName": "FL Fart",
+                            "margin": 15,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@AC Sparta Praha 113, Tottenham Hotspur 100",
+                            "boxscoreUrl": "./boxes/box19-3.htm",
+                            "boxscoreFile": "box19-3.htm",
                             "homeTeam": "roster16",
                             "homeTeamName": "AC Sparta Praha",
-                            "homeRosterUrl": "./rosters/roster16.htm",
-                            "homeRosterFile": "roster16.htm",
+                            "homeScore": 113,
+                            "awayTeam": "roster22",
+                            "awayTeamName": "Tottenham Hotspur",
+                            "awayScore": 100,
+                            "winner": "roster16",
+                            "winnerName": "AC Sparta Praha",
+                            "margin": 13,
                             "rowClass": "row1"
                         }
                     ]
                 },
                 {
-                    "date": "11/6/1988",
+                    "date": "6/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Arsenal @ Paris Saint-Germain",
-                            "awayTeam": "roster23",
-                            "awayTeamName": "Arsenal",
-                            "awayRosterUrl": "./rosters/roster23.htm",
-                            "awayRosterFile": "roster23.htm",
+                            "status": "completed",
+                            "matchupText": "Arsenal 135, @Paris Saint-Germain 133",
+                            "boxscoreUrl": "./boxes/box20-1.htm",
+                            "boxscoreFile": "box20-1.htm",
                             "homeTeam": "roster21",
                             "homeTeamName": "Paris Saint-Germain",
-                            "homeRosterUrl": "./rosters/roster21.htm",
-                            "homeRosterFile": "roster21.htm",
+                            "homeScore": 133,
+                            "awayTeam": "roster23",
+                            "awayTeamName": "Arsenal",
+                            "awayScore": 135,
+                            "winner": "roster23",
+                            "winnerName": "Arsenal",
+                            "margin": 2,
                             "rowClass": "row1"
                         }
                     ]
                 },
                 {
-                    "date": "11/7/1988",
+                    "date": "7/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Arsenal @ Benfica",
-                            "awayTeam": "roster23",
-                            "awayTeamName": "Arsenal",
-                            "awayRosterUrl": "./rosters/roster23.htm",
-                            "awayRosterFile": "roster23.htm",
+                            "status": "completed",
+                            "matchupText": "Arsenal 106, @Benfica 102",
+                            "boxscoreUrl": "./boxes/box21-1.htm",
+                            "boxscoreFile": "box21-1.htm",
                             "homeTeam": "roster13",
                             "homeTeamName": "Benfica",
-                            "homeRosterUrl": "./rosters/roster13.htm",
-                            "homeRosterFile": "roster13.htm",
+                            "homeScore": 102,
+                            "awayTeam": "roster23",
+                            "awayTeamName": "Arsenal",
+                            "awayScore": 106,
+                            "winner": "roster23",
+                            "winnerName": "Arsenal",
+                            "margin": 4,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Brighton @ Barcelona",
-                            "awayTeam": "roster10",
-                            "awayTeamName": "Brighton",
-                            "awayRosterUrl": "./rosters/roster10.htm",
-                            "awayRosterFile": "roster10.htm",
+                            "status": "completed",
+                            "matchupText": "Brighton 117, @Barcelona 109",
+                            "boxscoreUrl": "./boxes/box21-2.htm",
+                            "boxscoreFile": "box21-2.htm",
                             "homeTeam": "roster24",
                             "homeTeamName": "Barcelona",
-                            "homeRosterUrl": "./rosters/roster24.htm",
-                            "homeRosterFile": "roster24.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "AFC Richmond @ Manchester City",
-                            "awayTeam": "roster12",
-                            "awayTeamName": "AFC Richmond",
-                            "awayRosterUrl": "./rosters/roster12.htm",
-                            "awayRosterFile": "roster12.htm",
-                            "homeTeam": "roster28",
-                            "homeTeamName": "Manchester City",
-                            "homeRosterUrl": "./rosters/roster28.htm",
-                            "homeRosterFile": "roster28.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Valencia @ Marseille",
-                            "awayTeam": "roster25",
-                            "awayTeamName": "Valencia",
-                            "awayRosterUrl": "./rosters/roster25.htm",
-                            "awayRosterFile": "roster25.htm",
-                            "homeTeam": "roster15",
-                            "homeTeamName": "Marseille",
-                            "homeRosterUrl": "./rosters/roster15.htm",
-                            "homeRosterFile": "roster15.htm",
-                            "rowClass": "row2"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/8/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "ACF Fiorentina @ AC Milan",
-                            "awayTeam": "roster7",
-                            "awayTeamName": "ACF Fiorentina",
-                            "awayRosterUrl": "./rosters/roster7.htm",
-                            "awayRosterFile": "roster7.htm",
-                            "homeTeam": "roster9",
-                            "homeTeamName": "AC Milan",
-                            "homeRosterUrl": "./rosters/roster9.htm",
-                            "homeRosterFile": "roster9.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Juventus @ Manchester United",
-                            "awayTeam": "roster14",
-                            "awayTeamName": "Juventus",
-                            "awayRosterUrl": "./rosters/roster14.htm",
-                            "awayRosterFile": "roster14.htm",
-                            "homeTeam": "roster5",
-                            "homeTeamName": "Manchester United",
-                            "homeRosterUrl": "./rosters/roster5.htm",
-                            "homeRosterFile": "roster5.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Atletico Madrid @ Tottenham Hotspur",
-                            "awayTeam": "roster11",
-                            "awayTeamName": "Atletico Madrid",
-                            "awayRosterUrl": "./rosters/roster11.htm",
-                            "awayRosterFile": "roster11.htm",
-                            "homeTeam": "roster22",
-                            "homeTeamName": "Tottenham Hotspur",
-                            "homeRosterUrl": "./rosters/roster22.htm",
-                            "homeRosterFile": "roster22.htm",
-                            "rowClass": "row1"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/9/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Real Madrid @ Paris Saint-Germain",
-                            "awayTeam": "roster8",
-                            "awayTeamName": "Real Madrid",
-                            "awayRosterUrl": "./rosters/roster8.htm",
-                            "awayRosterFile": "roster8.htm",
-                            "homeTeam": "roster21",
-                            "homeTeamName": "Paris Saint-Germain",
-                            "homeRosterUrl": "./rosters/roster21.htm",
-                            "homeRosterFile": "roster21.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Brighton @ AC Milan",
+                            "homeScore": 109,
                             "awayTeam": "roster10",
                             "awayTeamName": "Brighton",
-                            "awayRosterUrl": "./rosters/roster10.htm",
-                            "awayRosterFile": "roster10.htm",
-                            "homeTeam": "roster9",
-                            "homeTeamName": "AC Milan",
-                            "homeRosterUrl": "./rosters/roster9.htm",
-                            "homeRosterFile": "roster9.htm",
+                            "awayScore": 117,
+                            "winner": "roster10",
+                            "winnerName": "Brighton",
+                            "margin": 8,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "FL Fart @ Chelsea",
-                            "awayTeam": "roster27",
-                            "awayTeamName": "FL Fart",
-                            "awayRosterUrl": "./rosters/roster27.htm",
-                            "awayRosterFile": "roster27.htm",
-                            "homeTeam": "roster17",
-                            "homeTeamName": "Chelsea",
-                            "homeRosterUrl": "./rosters/roster17.htm",
-                            "homeRosterFile": "roster17.htm",
+                            "status": "completed",
+                            "matchupText": "AFC Richmond 117, @Manchester City 95",
+                            "boxscoreUrl": "./boxes/box21-3.htm",
+                            "boxscoreFile": "box21-3.htm",
+                            "homeTeam": "roster28",
+                            "homeTeamName": "Manchester City",
+                            "homeScore": 95,
+                            "awayTeam": "roster12",
+                            "awayTeamName": "AFC Richmond",
+                            "awayScore": 117,
+                            "winner": "roster12",
+                            "winnerName": "AFC Richmond",
+                            "margin": 22,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Crystal Palace @ Monaco",
-                            "awayTeam": "roster6",
-                            "awayTeamName": "Crystal Palace",
-                            "awayRosterUrl": "./rosters/roster6.htm",
-                            "awayRosterFile": "roster6.htm",
+                            "status": "completed",
+                            "matchupText": "Valencia 126, @Marseille 117",
+                            "boxscoreUrl": "./boxes/box21-4.htm",
+                            "boxscoreFile": "box21-4.htm",
+                            "homeTeam": "roster15",
+                            "homeTeamName": "Marseille",
+                            "homeScore": 117,
+                            "awayTeam": "roster25",
+                            "awayTeamName": "Valencia",
+                            "awayScore": 126,
+                            "winner": "roster25",
+                            "winnerName": "Valencia",
+                            "margin": 9,
+                            "rowClass": "row2"
+                        }
+                    ]
+                },
+                {
+                    "date": "8/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "@AC Milan 93, ACF Fiorentina 79",
+                            "boxscoreUrl": "./boxes/box22-1.htm",
+                            "boxscoreFile": "box22-1.htm",
+                            "homeTeam": "roster9",
+                            "homeTeamName": "AC Milan",
+                            "homeScore": 93,
+                            "awayTeam": "roster7",
+                            "awayTeamName": "ACF Fiorentina",
+                            "awayScore": 79,
+                            "winner": "roster9",
+                            "winnerName": "AC Milan",
+                            "margin": 14,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Manchester United 116, Juventus 87",
+                            "boxscoreUrl": "./boxes/box22-2.htm",
+                            "boxscoreFile": "box22-2.htm",
+                            "homeTeam": "roster5",
+                            "homeTeamName": "Manchester United",
+                            "homeScore": 116,
+                            "awayTeam": "roster14",
+                            "awayTeamName": "Juventus",
+                            "awayScore": 87,
+                            "winner": "roster5",
+                            "winnerName": "Manchester United",
+                            "margin": 29,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "Atletico Madrid 105, @Tottenham Hotspur 96",
+                            "boxscoreUrl": "./boxes/box22-3.htm",
+                            "boxscoreFile": "box22-3.htm",
+                            "homeTeam": "roster22",
+                            "homeTeamName": "Tottenham Hotspur",
+                            "homeScore": 96,
+                            "awayTeam": "roster11",
+                            "awayTeamName": "Atletico Madrid",
+                            "awayScore": 105,
+                            "winner": "roster11",
+                            "winnerName": "Atletico Madrid",
+                            "margin": 9,
+                            "rowClass": "row1"
+                        }
+                    ]
+                },
+                {
+                    "date": "9/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "@Paris Saint-Germain 110, Real Madrid 99",
+                            "boxscoreUrl": "./boxes/box23-1.htm",
+                            "boxscoreFile": "box23-1.htm",
+                            "homeTeam": "roster21",
+                            "homeTeamName": "Paris Saint-Germain",
+                            "homeScore": 110,
+                            "awayTeam": "roster8",
+                            "awayTeamName": "Real Madrid",
+                            "awayScore": 99,
+                            "winner": "roster21",
+                            "winnerName": "Paris Saint-Germain",
+                            "margin": 11,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "Brighton 113, @AC Milan 98",
+                            "boxscoreUrl": "./boxes/box23-2.htm",
+                            "boxscoreFile": "box23-2.htm",
+                            "homeTeam": "roster9",
+                            "homeTeamName": "AC Milan",
+                            "homeScore": 98,
+                            "awayTeam": "roster10",
+                            "awayTeamName": "Brighton",
+                            "awayScore": 113,
+                            "winner": "roster10",
+                            "winnerName": "Brighton",
+                            "margin": 15,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Chelsea 100, FL Fart 99",
+                            "boxscoreUrl": "./boxes/box23-3.htm",
+                            "boxscoreFile": "box23-3.htm",
+                            "homeTeam": "roster17",
+                            "homeTeamName": "Chelsea",
+                            "homeScore": 100,
+                            "awayTeam": "roster27",
+                            "awayTeamName": "FL Fart",
+                            "awayScore": 99,
+                            "winner": "roster17",
+                            "winnerName": "Chelsea",
+                            "margin": 1,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Monaco 124, Crystal Palace 113",
+                            "boxscoreUrl": "./boxes/box23-4.htm",
+                            "boxscoreFile": "box23-4.htm",
                             "homeTeam": "roster20",
                             "homeTeamName": "Monaco",
-                            "homeRosterUrl": "./rosters/roster20.htm",
-                            "homeRosterFile": "roster20.htm",
+                            "homeScore": 124,
+                            "awayTeam": "roster6",
+                            "awayTeamName": "Crystal Palace",
+                            "awayScore": 113,
+                            "winner": "roster20",
+                            "winnerName": "Monaco",
+                            "margin": 11,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Manchester City @ Inter Milan",
-                            "awayTeam": "roster28",
-                            "awayTeamName": "Manchester City",
-                            "awayRosterUrl": "./rosters/roster28.htm",
-                            "awayRosterFile": "roster28.htm",
+                            "status": "completed",
+                            "matchupText": "@Inter Milan 122, Manchester City 110",
+                            "boxscoreUrl": "./boxes/box23-5.htm",
+                            "boxscoreFile": "box23-5.htm",
                             "homeTeam": "roster26",
                             "homeTeamName": "Inter Milan",
-                            "homeRosterUrl": "./rosters/roster26.htm",
-                            "homeRosterFile": "roster26.htm",
+                            "homeScore": 122,
+                            "awayTeam": "roster28",
+                            "awayTeamName": "Manchester City",
+                            "awayScore": 110,
+                            "winner": "roster26",
+                            "winnerName": "Inter Milan",
+                            "margin": 12,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Aston Villa @ Juventus",
-                            "awayTeam": "roster19",
-                            "awayTeamName": "Aston Villa",
-                            "awayRosterUrl": "./rosters/roster19.htm",
-                            "awayRosterFile": "roster19.htm",
+                            "status": "completed",
+                            "matchupText": "@Juventus 121, Aston Villa 105",
+                            "boxscoreUrl": "./boxes/box23-6.htm",
+                            "boxscoreFile": "box23-6.htm",
                             "homeTeam": "roster14",
                             "homeTeamName": "Juventus",
-                            "homeRosterUrl": "./rosters/roster14.htm",
-                            "homeRosterFile": "roster14.htm",
+                            "homeScore": 121,
+                            "awayTeam": "roster19",
+                            "awayTeamName": "Aston Villa",
+                            "awayScore": 105,
+                            "winner": "roster14",
+                            "winnerName": "Juventus",
+                            "margin": 16,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Tottenham Hotspur @ AC Sparta Praha",
-                            "awayTeam": "roster22",
-                            "awayTeamName": "Tottenham Hotspur",
-                            "awayRosterUrl": "./rosters/roster22.htm",
-                            "awayRosterFile": "roster22.htm",
+                            "status": "completed",
+                            "matchupText": "Tottenham Hotspur 108, @AC Sparta Praha 107",
+                            "boxscoreUrl": "./boxes/box23-7.htm",
+                            "boxscoreFile": "box23-7.htm",
                             "homeTeam": "roster16",
                             "homeTeamName": "AC Sparta Praha",
-                            "homeRosterUrl": "./rosters/roster16.htm",
-                            "homeRosterFile": "roster16.htm",
+                            "homeScore": 107,
+                            "awayTeam": "roster22",
+                            "awayTeamName": "Tottenham Hotspur",
+                            "awayScore": 108,
+                            "winner": "roster22",
+                            "winnerName": "Tottenham Hotspur",
+                            "margin": 1,
                             "rowClass": "row1"
                         }
                     ]
                 },
                 {
-                    "date": "11/10/1988",
+                    "date": "10/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Ajax @ FL Fart",
-                            "awayTeam": "roster18",
-                            "awayTeamName": "Ajax",
-                            "awayRosterUrl": "./rosters/roster18.htm",
-                            "awayRosterFile": "roster18.htm",
+                            "status": "completed",
+                            "matchupText": "@FL Fart 131, Ajax 108",
+                            "boxscoreUrl": "./boxes/box24-1.htm",
+                            "boxscoreFile": "box24-1.htm",
                             "homeTeam": "roster27",
                             "homeTeamName": "FL Fart",
-                            "homeRosterUrl": "./rosters/roster27.htm",
-                            "homeRosterFile": "roster27.htm",
+                            "homeScore": 131,
+                            "awayTeam": "roster18",
+                            "awayTeamName": "Ajax",
+                            "awayScore": 108,
+                            "winner": "roster27",
+                            "winnerName": "FL Fart",
+                            "margin": 23,
                             "rowClass": "row1"
                         }
                     ]
                 },
                 {
-                    "date": "11/12/1988",
+                    "date": "12/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Valencia @ Marseille",
-                            "awayTeam": "roster25",
-                            "awayTeamName": "Valencia",
-                            "awayRosterUrl": "./rosters/roster25.htm",
-                            "awayRosterFile": "roster25.htm",
+                            "status": "completed",
+                            "matchupText": "Valencia 127, @Marseille 120",
+                            "boxscoreUrl": "./boxes/box26-1.htm",
+                            "boxscoreFile": "box26-1.htm",
                             "homeTeam": "roster15",
                             "homeTeamName": "Marseille",
-                            "homeRosterUrl": "./rosters/roster15.htm",
-                            "homeRosterFile": "roster15.htm",
+                            "homeScore": 120,
+                            "awayTeam": "roster25",
+                            "awayTeamName": "Valencia",
+                            "awayScore": 127,
+                            "winner": "roster25",
+                            "winnerName": "Valencia",
+                            "margin": 7,
                             "rowClass": "row1"
                         }
                     ]
                 },
                 {
-                    "date": "11/13/1988",
+                    "date": "13/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Barcelona @ Arsenal",
-                            "awayTeam": "roster24",
-                            "awayTeamName": "Barcelona",
-                            "awayRosterUrl": "./rosters/roster24.htm",
-                            "awayRosterFile": "roster24.htm",
+                            "status": "completed",
+                            "matchupText": "@Arsenal 110, Barcelona 102",
+                            "boxscoreUrl": "./boxes/box27-1.htm",
+                            "boxscoreFile": "box27-1.htm",
                             "homeTeam": "roster23",
                             "homeTeamName": "Arsenal",
-                            "homeRosterUrl": "./rosters/roster23.htm",
-                            "homeRosterFile": "roster23.htm",
+                            "homeScore": 110,
+                            "awayTeam": "roster24",
+                            "awayTeamName": "Barcelona",
+                            "awayScore": 102,
+                            "winner": "roster23",
+                            "winnerName": "Arsenal",
+                            "margin": 8,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Benfica @ ACF Fiorentina",
-                            "awayTeam": "roster13",
-                            "awayTeamName": "Benfica",
-                            "awayRosterUrl": "./rosters/roster13.htm",
-                            "awayRosterFile": "roster13.htm",
+                            "status": "completed",
+                            "matchupText": "@ACF Fiorentina 116, Benfica 104",
+                            "boxscoreUrl": "./boxes/box27-2.htm",
+                            "boxscoreFile": "box27-2.htm",
                             "homeTeam": "roster7",
                             "homeTeamName": "ACF Fiorentina",
-                            "homeRosterUrl": "./rosters/roster7.htm",
-                            "homeRosterFile": "roster7.htm",
+                            "homeScore": 116,
+                            "awayTeam": "roster13",
+                            "awayTeamName": "Benfica",
+                            "awayScore": 104,
+                            "winner": "roster7",
+                            "winnerName": "ACF Fiorentina",
+                            "margin": 12,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Brighton @ Real Madrid",
-                            "awayTeam": "roster10",
-                            "awayTeamName": "Brighton",
-                            "awayRosterUrl": "./rosters/roster10.htm",
-                            "awayRosterFile": "roster10.htm",
+                            "status": "completed",
+                            "matchupText": "Brighton 112, @Real Madrid 110",
+                            "boxscoreUrl": "./boxes/box27-3.htm",
+                            "boxscoreFile": "box27-3.htm",
                             "homeTeam": "roster8",
                             "homeTeamName": "Real Madrid",
-                            "homeRosterUrl": "./rosters/roster8.htm",
-                            "homeRosterFile": "roster8.htm",
+                            "homeScore": 110,
+                            "awayTeam": "roster10",
+                            "awayTeamName": "Brighton",
+                            "awayScore": 112,
+                            "winner": "roster10",
+                            "winnerName": "Brighton",
+                            "margin": 2,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Manchester City @ Crystal Palace",
+                            "status": "completed",
+                            "matchupText": "@Crystal Palace 107, Manchester City 106",
+                            "boxscoreUrl": "./boxes/box27-4.htm",
+                            "boxscoreFile": "box27-4.htm",
+                            "homeTeam": "roster6",
+                            "homeTeamName": "Crystal Palace",
+                            "homeScore": 107,
                             "awayTeam": "roster28",
                             "awayTeamName": "Manchester City",
-                            "awayRosterUrl": "./rosters/roster28.htm",
-                            "awayRosterFile": "roster28.htm",
-                            "homeTeam": "roster6",
-                            "homeTeamName": "Crystal Palace",
-                            "homeRosterUrl": "./rosters/roster6.htm",
-                            "homeRosterFile": "roster6.htm",
+                            "awayScore": 106,
+                            "winner": "roster6",
+                            "winnerName": "Crystal Palace",
+                            "margin": 1,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Monaco @ Inter Milan",
-                            "awayTeam": "roster20",
-                            "awayTeamName": "Monaco",
-                            "awayRosterUrl": "./rosters/roster20.htm",
-                            "awayRosterFile": "roster20.htm",
+                            "status": "completed",
+                            "matchupText": "@Inter Milan 122, Monaco 120",
+                            "boxscoreUrl": "./boxes/box27-5.htm",
+                            "boxscoreFile": "box27-5.htm",
                             "homeTeam": "roster26",
                             "homeTeamName": "Inter Milan",
-                            "homeRosterUrl": "./rosters/roster26.htm",
-                            "homeRosterFile": "roster26.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Manchester United @ Aston Villa",
-                            "awayTeam": "roster5",
-                            "awayTeamName": "Manchester United",
-                            "awayRosterUrl": "./rosters/roster5.htm",
-                            "awayRosterFile": "roster5.htm",
-                            "homeTeam": "roster19",
-                            "homeTeamName": "Aston Villa",
-                            "homeRosterUrl": "./rosters/roster19.htm",
-                            "homeRosterFile": "roster19.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Tottenham Hotspur @ Atletico Madrid",
-                            "awayTeam": "roster22",
-                            "awayTeamName": "Tottenham Hotspur",
-                            "awayRosterUrl": "./rosters/roster22.htm",
-                            "awayRosterFile": "roster22.htm",
-                            "homeTeam": "roster11",
-                            "homeTeamName": "Atletico Madrid",
-                            "homeRosterUrl": "./rosters/roster11.htm",
-                            "homeRosterFile": "roster11.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "AC Sparta Praha @ Marseille",
-                            "awayTeam": "roster16",
-                            "awayTeamName": "AC Sparta Praha",
-                            "awayRosterUrl": "./rosters/roster16.htm",
-                            "awayRosterFile": "roster16.htm",
-                            "homeTeam": "roster15",
-                            "homeTeamName": "Marseille",
-                            "homeRosterUrl": "./rosters/roster15.htm",
-                            "homeRosterFile": "roster15.htm",
-                            "rowClass": "row2"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/14/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "AFC Richmond @ Ajax",
-                            "awayTeam": "roster12",
-                            "awayTeamName": "AFC Richmond",
-                            "awayRosterUrl": "./rosters/roster12.htm",
-                            "awayRosterFile": "roster12.htm",
-                            "homeTeam": "roster18",
-                            "homeTeamName": "Ajax",
-                            "homeRosterUrl": "./rosters/roster18.htm",
-                            "homeRosterFile": "roster18.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Monaco @ Chelsea",
+                            "homeScore": 122,
                             "awayTeam": "roster20",
                             "awayTeamName": "Monaco",
-                            "awayRosterUrl": "./rosters/roster20.htm",
-                            "awayRosterFile": "roster20.htm",
-                            "homeTeam": "roster17",
-                            "homeTeamName": "Chelsea",
-                            "homeRosterUrl": "./rosters/roster17.htm",
-                            "homeRosterFile": "roster17.htm",
-                            "rowClass": "row2"
+                            "awayScore": 120,
+                            "winner": "roster26",
+                            "winnerName": "Inter Milan",
+                            "margin": 2,
+                            "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Juventus @ Aston Villa",
-                            "awayTeam": "roster14",
-                            "awayTeamName": "Juventus",
-                            "awayRosterUrl": "./rosters/roster14.htm",
-                            "awayRosterFile": "roster14.htm",
+                            "status": "completed",
+                            "matchupText": "@Aston Villa 110, Manchester United 99",
+                            "boxscoreUrl": "./boxes/box27-6.htm",
+                            "boxscoreFile": "box27-6.htm",
                             "homeTeam": "roster19",
                             "homeTeamName": "Aston Villa",
-                            "homeRosterUrl": "./rosters/roster19.htm",
-                            "homeRosterFile": "roster19.htm",
-                            "rowClass": "row1"
+                            "homeScore": 110,
+                            "awayTeam": "roster5",
+                            "awayTeamName": "Manchester United",
+                            "awayScore": 99,
+                            "winner": "roster19",
+                            "winnerName": "Aston Villa",
+                            "margin": 11,
+                            "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Tottenham Hotspur @ Manchester United",
+                            "status": "completed",
+                            "matchupText": "Tottenham Hotspur 104, @Atletico Madrid 87",
+                            "boxscoreUrl": "./boxes/box27-7.htm",
+                            "boxscoreFile": "box27-7.htm",
+                            "homeTeam": "roster11",
+                            "homeTeamName": "Atletico Madrid",
+                            "homeScore": 87,
                             "awayTeam": "roster22",
                             "awayTeamName": "Tottenham Hotspur",
-                            "awayRosterUrl": "./rosters/roster22.htm",
-                            "awayRosterFile": "roster22.htm",
-                            "homeTeam": "roster5",
-                            "homeTeamName": "Manchester United",
-                            "homeRosterUrl": "./rosters/roster5.htm",
-                            "homeRosterFile": "roster5.htm",
-                            "rowClass": "row2"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/15/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Paris Saint-Germain @ AC Milan",
-                            "awayTeam": "roster21",
-                            "awayTeamName": "Paris Saint-Germain",
-                            "awayRosterUrl": "./rosters/roster21.htm",
-                            "awayRosterFile": "roster21.htm",
-                            "homeTeam": "roster9",
-                            "homeTeamName": "AC Milan",
-                            "homeRosterUrl": "./rosters/roster9.htm",
-                            "homeRosterFile": "roster9.htm",
+                            "awayScore": 104,
+                            "winner": "roster22",
+                            "winnerName": "Tottenham Hotspur",
+                            "margin": 17,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "AFC Richmond @ FL Fart",
-                            "awayTeam": "roster12",
-                            "awayTeamName": "AFC Richmond",
-                            "awayRosterUrl": "./rosters/roster12.htm",
-                            "awayRosterFile": "roster12.htm",
-                            "homeTeam": "roster27",
-                            "homeTeamName": "FL Fart",
-                            "homeRosterUrl": "./rosters/roster27.htm",
-                            "homeRosterFile": "roster27.htm",
+                            "status": "completed",
+                            "matchupText": "AC Sparta Praha 104, @Marseille 88",
+                            "boxscoreUrl": "./boxes/box27-8.htm",
+                            "boxscoreFile": "box27-8.htm",
+                            "homeTeam": "roster15",
+                            "homeTeamName": "Marseille",
+                            "homeScore": 88,
+                            "awayTeam": "roster16",
+                            "awayTeamName": "AC Sparta Praha",
+                            "awayScore": 104,
+                            "winner": "roster16",
+                            "winnerName": "AC Sparta Praha",
+                            "margin": 16,
                             "rowClass": "row2"
                         }
                     ]
                 },
                 {
-                    "date": "11/17/1988",
+                    "date": "14/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Brighton @ Benfica",
+                            "status": "completed",
+                            "matchupText": "@Ajax 138, AFC Richmond 121",
+                            "boxscoreUrl": "./boxes/box28-1.htm",
+                            "boxscoreFile": "box28-1.htm",
+                            "homeTeam": "roster18",
+                            "homeTeamName": "Ajax",
+                            "homeScore": 138,
+                            "awayTeam": "roster12",
+                            "awayTeamName": "AFC Richmond",
+                            "awayScore": 121,
+                            "winner": "roster18",
+                            "winnerName": "Ajax",
+                            "margin": 17,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Chelsea 100, Monaco 92",
+                            "boxscoreUrl": "./boxes/box28-2.htm",
+                            "boxscoreFile": "box28-2.htm",
+                            "homeTeam": "roster17",
+                            "homeTeamName": "Chelsea",
+                            "homeScore": 100,
+                            "awayTeam": "roster20",
+                            "awayTeamName": "Monaco",
+                            "awayScore": 92,
+                            "winner": "roster17",
+                            "winnerName": "Chelsea",
+                            "margin": 8,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "Juventus 106, @Aston Villa 102",
+                            "boxscoreUrl": "./boxes/box28-3.htm",
+                            "boxscoreFile": "box28-3.htm",
+                            "homeTeam": "roster19",
+                            "homeTeamName": "Aston Villa",
+                            "homeScore": 102,
+                            "awayTeam": "roster14",
+                            "awayTeamName": "Juventus",
+                            "awayScore": 106,
+                            "winner": "roster14",
+                            "winnerName": "Juventus",
+                            "margin": 4,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "Tottenham Hotspur 116, @Manchester United 84",
+                            "boxscoreUrl": "./boxes/box28-4.htm",
+                            "boxscoreFile": "box28-4.htm",
+                            "homeTeam": "roster5",
+                            "homeTeamName": "Manchester United",
+                            "homeScore": 84,
+                            "awayTeam": "roster22",
+                            "awayTeamName": "Tottenham Hotspur",
+                            "awayScore": 116,
+                            "winner": "roster22",
+                            "winnerName": "Tottenham Hotspur",
+                            "margin": 32,
+                            "rowClass": "row2"
+                        }
+                    ]
+                },
+                {
+                    "date": "15/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "Paris Saint-Germain 133, @AC Milan 119",
+                            "boxscoreUrl": "./boxes/box29-1.htm",
+                            "boxscoreFile": "box29-1.htm",
+                            "homeTeam": "roster9",
+                            "homeTeamName": "AC Milan",
+                            "homeScore": 119,
+                            "awayTeam": "roster21",
+                            "awayTeamName": "Paris Saint-Germain",
+                            "awayScore": 133,
+                            "winner": "roster21",
+                            "winnerName": "Paris Saint-Germain",
+                            "margin": 14,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@FL Fart 119, AFC Richmond 96",
+                            "boxscoreUrl": "./boxes/box29-2.htm",
+                            "boxscoreFile": "box29-2.htm",
+                            "homeTeam": "roster27",
+                            "homeTeamName": "FL Fart",
+                            "homeScore": 119,
+                            "awayTeam": "roster12",
+                            "awayTeamName": "AFC Richmond",
+                            "awayScore": 96,
+                            "winner": "roster27",
+                            "winnerName": "FL Fart",
+                            "margin": 23,
+                            "rowClass": "row2"
+                        }
+                    ]
+                },
+                {
+                    "date": "17/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "Brighton 117, @Benfica 101",
+                            "boxscoreUrl": "./boxes/box31-1.htm",
+                            "boxscoreFile": "box31-1.htm",
+                            "homeTeam": "roster13",
+                            "homeTeamName": "Benfica",
+                            "homeScore": 101,
                             "awayTeam": "roster10",
                             "awayTeamName": "Brighton",
-                            "awayRosterUrl": "./rosters/roster10.htm",
-                            "awayRosterFile": "roster10.htm",
-                            "homeTeam": "roster13",
-                            "homeTeamName": "Benfica",
-                            "homeRosterUrl": "./rosters/roster13.htm",
-                            "homeRosterFile": "roster13.htm",
+                            "awayScore": 117,
+                            "winner": "roster10",
+                            "winnerName": "Brighton",
+                            "margin": 16,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Arsenal @ Real Madrid",
-                            "awayTeam": "roster23",
-                            "awayTeamName": "Arsenal",
-                            "awayRosterUrl": "./rosters/roster23.htm",
-                            "awayRosterFile": "roster23.htm",
+                            "status": "completed",
+                            "matchupText": "Arsenal 131, @Real Madrid 130",
+                            "boxscoreUrl": "./boxes/box31-2.htm",
+                            "boxscoreFile": "box31-2.htm",
                             "homeTeam": "roster8",
                             "homeTeamName": "Real Madrid",
-                            "homeRosterUrl": "./rosters/roster8.htm",
-                            "homeRosterFile": "roster8.htm",
+                            "homeScore": 130,
+                            "awayTeam": "roster23",
+                            "awayTeamName": "Arsenal",
+                            "awayScore": 131,
+                            "winner": "roster23",
+                            "winnerName": "Arsenal",
+                            "margin": 1,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Inter Milan @ Manchester City",
-                            "awayTeam": "roster26",
-                            "awayTeamName": "Inter Milan",
-                            "awayRosterUrl": "./rosters/roster26.htm",
-                            "awayRosterFile": "roster26.htm",
+                            "status": "completed",
+                            "matchupText": "Inter Milan 109, @Manchester City 101",
+                            "boxscoreUrl": "./boxes/box31-3.htm",
+                            "boxscoreFile": "box31-3.htm",
                             "homeTeam": "roster28",
                             "homeTeamName": "Manchester City",
-                            "homeRosterUrl": "./rosters/roster28.htm",
-                            "homeRosterFile": "roster28.htm",
+                            "homeScore": 101,
+                            "awayTeam": "roster26",
+                            "awayTeamName": "Inter Milan",
+                            "awayScore": 109,
+                            "winner": "roster26",
+                            "winnerName": "Inter Milan",
+                            "margin": 8,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "AC Sparta Praha @ Atletico Madrid",
-                            "awayTeam": "roster16",
-                            "awayTeamName": "AC Sparta Praha",
-                            "awayRosterUrl": "./rosters/roster16.htm",
-                            "awayRosterFile": "roster16.htm",
+                            "status": "completed",
+                            "matchupText": "@Atletico Madrid 99, AC Sparta Praha 89",
+                            "boxscoreUrl": "./boxes/box31-4.htm",
+                            "boxscoreFile": "box31-4.htm",
                             "homeTeam": "roster11",
                             "homeTeamName": "Atletico Madrid",
-                            "homeRosterUrl": "./rosters/roster11.htm",
-                            "homeRosterFile": "roster11.htm",
+                            "homeScore": 99,
+                            "awayTeam": "roster16",
+                            "awayTeamName": "AC Sparta Praha",
+                            "awayScore": 89,
+                            "winner": "roster11",
+                            "winnerName": "Atletico Madrid",
+                            "margin": 10,
                             "rowClass": "row2"
                         }
                     ]
                 },
                 {
-                    "date": "11/18/1988",
+                    "date": "18/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Barcelona @ Real Madrid",
-                            "awayTeam": "roster24",
-                            "awayTeamName": "Barcelona",
-                            "awayRosterUrl": "./rosters/roster24.htm",
-                            "awayRosterFile": "roster24.htm",
+                            "status": "completed",
+                            "matchupText": "@Real Madrid 107, Barcelona 88",
+                            "boxscoreUrl": "./boxes/box32-1.htm",
+                            "boxscoreFile": "box32-1.htm",
                             "homeTeam": "roster8",
                             "homeTeamName": "Real Madrid",
-                            "homeRosterUrl": "./rosters/roster8.htm",
-                            "homeRosterFile": "roster8.htm",
+                            "homeScore": 107,
+                            "awayTeam": "roster24",
+                            "awayTeamName": "Barcelona",
+                            "awayScore": 88,
+                            "winner": "roster8",
+                            "winnerName": "Real Madrid",
+                            "margin": 19,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Monaco @ Chelsea",
-                            "awayTeam": "roster20",
-                            "awayTeamName": "Monaco",
-                            "awayRosterUrl": "./rosters/roster20.htm",
-                            "awayRosterFile": "roster20.htm",
+                            "status": "completed",
+                            "matchupText": "@Chelsea 134, Monaco 104",
+                            "boxscoreUrl": "./boxes/box32-2.htm",
+                            "boxscoreFile": "box32-2.htm",
                             "homeTeam": "roster17",
                             "homeTeamName": "Chelsea",
-                            "homeRosterUrl": "./rosters/roster17.htm",
-                            "homeRosterFile": "roster17.htm",
+                            "homeScore": 134,
+                            "awayTeam": "roster20",
+                            "awayTeamName": "Monaco",
+                            "awayScore": 104,
+                            "winner": "roster17",
+                            "winnerName": "Chelsea",
+                            "margin": 30,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Juventus @ Manchester United",
+                            "status": "completed",
+                            "matchupText": "@Manchester United 113, Juventus 108",
+                            "boxscoreUrl": "./boxes/box32-3.htm",
+                            "boxscoreFile": "box32-3.htm",
+                            "homeTeam": "roster5",
+                            "homeTeamName": "Manchester United",
+                            "homeScore": 113,
                             "awayTeam": "roster14",
                             "awayTeamName": "Juventus",
-                            "awayRosterUrl": "./rosters/roster14.htm",
-                            "awayRosterFile": "roster14.htm",
-                            "homeTeam": "roster5",
-                            "homeTeamName": "Manchester United",
-                            "homeRosterUrl": "./rosters/roster5.htm",
-                            "homeRosterFile": "roster5.htm",
+                            "awayScore": 108,
+                            "winner": "roster5",
+                            "winnerName": "Manchester United",
+                            "margin": 5,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Marseille @ Valencia",
-                            "awayTeam": "roster15",
-                            "awayTeamName": "Marseille",
-                            "awayRosterUrl": "./rosters/roster15.htm",
-                            "awayRosterFile": "roster15.htm",
+                            "status": "completed",
+                            "matchupText": "@Valencia 129, Marseille 119",
+                            "boxscoreUrl": "./boxes/box32-4.htm",
+                            "boxscoreFile": "box32-4.htm",
                             "homeTeam": "roster25",
                             "homeTeamName": "Valencia",
-                            "homeRosterUrl": "./rosters/roster25.htm",
-                            "homeRosterFile": "roster25.htm",
+                            "homeScore": 129,
+                            "awayTeam": "roster15",
+                            "awayTeamName": "Marseille",
+                            "awayScore": 119,
+                            "winner": "roster25",
+                            "winnerName": "Valencia",
+                            "margin": 10,
                             "rowClass": "row2"
                         }
                     ]
                 },
                 {
-                    "date": "11/19/1988",
+                    "date": "19/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Paris Saint-Germain @ ACF Fiorentina",
+                            "status": "completed",
+                            "matchupText": "Paris Saint-Germain 126, @ACF Fiorentina 114",
+                            "boxscoreUrl": "./boxes/box33-1.htm",
+                            "boxscoreFile": "box33-1.htm",
+                            "homeTeam": "roster7",
+                            "homeTeamName": "ACF Fiorentina",
+                            "homeScore": 114,
                             "awayTeam": "roster21",
                             "awayTeamName": "Paris Saint-Germain",
-                            "awayRosterUrl": "./rosters/roster21.htm",
-                            "awayRosterFile": "roster21.htm",
-                            "homeTeam": "roster7",
-                            "homeTeamName": "ACF Fiorentina",
-                            "homeRosterUrl": "./rosters/roster7.htm",
-                            "homeRosterFile": "roster7.htm",
+                            "awayScore": 126,
+                            "winner": "roster21",
+                            "winnerName": "Paris Saint-Germain",
+                            "margin": 12,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Barcelona @ AC Milan",
-                            "awayTeam": "roster24",
-                            "awayTeamName": "Barcelona",
-                            "awayRosterUrl": "./rosters/roster24.htm",
-                            "awayRosterFile": "roster24.htm",
+                            "status": "completed",
+                            "matchupText": "@AC Milan 117, Barcelona 110",
+                            "boxscoreUrl": "./boxes/box33-2.htm",
+                            "boxscoreFile": "box33-2.htm",
                             "homeTeam": "roster9",
                             "homeTeamName": "AC Milan",
-                            "homeRosterUrl": "./rosters/roster9.htm",
-                            "homeRosterFile": "roster9.htm",
+                            "homeScore": 117,
+                            "awayTeam": "roster24",
+                            "awayTeamName": "Barcelona",
+                            "awayScore": 110,
+                            "winner": "roster9",
+                            "winnerName": "AC Milan",
+                            "margin": 7,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Chelsea @ AFC Richmond",
-                            "awayTeam": "roster17",
-                            "awayTeamName": "Chelsea",
-                            "awayRosterUrl": "./rosters/roster17.htm",
-                            "awayRosterFile": "roster17.htm",
+                            "status": "completed",
+                            "matchupText": "Chelsea 130, @AFC Richmond 108",
+                            "boxscoreUrl": "./boxes/box33-3.htm",
+                            "boxscoreFile": "box33-3.htm",
                             "homeTeam": "roster12",
                             "homeTeamName": "AFC Richmond",
-                            "homeRosterUrl": "./rosters/roster12.htm",
-                            "homeRosterFile": "roster12.htm",
+                            "homeScore": 108,
+                            "awayTeam": "roster17",
+                            "awayTeamName": "Chelsea",
+                            "awayScore": 130,
+                            "winner": "roster17",
+                            "winnerName": "Chelsea",
+                            "margin": 22,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Tottenham Hotspur @ Manchester United",
-                            "awayTeam": "roster22",
-                            "awayTeamName": "Tottenham Hotspur",
-                            "awayRosterUrl": "./rosters/roster22.htm",
-                            "awayRosterFile": "roster22.htm",
+                            "status": "completed",
+                            "matchupText": "@Manchester United 89, Tottenham Hotspur 88",
+                            "boxscoreUrl": "./boxes/box33-4.htm",
+                            "boxscoreFile": "box33-4.htm",
                             "homeTeam": "roster5",
                             "homeTeamName": "Manchester United",
-                            "homeRosterUrl": "./rosters/roster5.htm",
-                            "homeRosterFile": "roster5.htm",
+                            "homeScore": 89,
+                            "awayTeam": "roster22",
+                            "awayTeamName": "Tottenham Hotspur",
+                            "awayScore": 88,
+                            "winner": "roster5",
+                            "winnerName": "Manchester United",
+                            "margin": 1,
                             "rowClass": "row2"
                         }
                     ]
                 },
                 {
-                    "date": "11/20/1988",
+                    "date": "20/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "AFC Richmond @ FL Fart",
-                            "awayTeam": "roster12",
-                            "awayTeamName": "AFC Richmond",
-                            "awayRosterUrl": "./rosters/roster12.htm",
-                            "awayRosterFile": "roster12.htm",
+                            "status": "completed",
+                            "matchupText": "AFC Richmond 142, @FL Fart 103",
+                            "boxscoreUrl": "./boxes/box34-1.htm",
+                            "boxscoreFile": "box34-1.htm",
                             "homeTeam": "roster27",
                             "homeTeamName": "FL Fart",
-                            "homeRosterUrl": "./rosters/roster27.htm",
-                            "homeRosterFile": "roster27.htm",
+                            "homeScore": 103,
+                            "awayTeam": "roster12",
+                            "awayTeamName": "AFC Richmond",
+                            "awayScore": 142,
+                            "winner": "roster12",
+                            "winnerName": "AFC Richmond",
+                            "margin": 39,
                             "rowClass": "row1"
                         }
                     ]
                 },
                 {
-                    "date": "11/21/1988",
+                    "date": "21/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Crystal Palace @ Ajax",
-                            "awayTeam": "roster6",
-                            "awayTeamName": "Crystal Palace",
-                            "awayRosterUrl": "./rosters/roster6.htm",
-                            "awayRosterFile": "roster6.htm",
+                            "status": "completed",
+                            "matchupText": "Crystal Palace 131, @Ajax 125",
+                            "boxscoreUrl": "./boxes/box35-1.htm",
+                            "boxscoreFile": "box35-1.htm",
                             "homeTeam": "roster18",
                             "homeTeamName": "Ajax",
-                            "homeRosterUrl": "./rosters/roster18.htm",
-                            "homeRosterFile": "roster18.htm",
+                            "homeScore": 125,
+                            "awayTeam": "roster6",
+                            "awayTeamName": "Crystal Palace",
+                            "awayScore": 131,
+                            "winner": "roster6",
+                            "winnerName": "Crystal Palace",
+                            "margin": 6,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Aston Villa @ Atletico Madrid",
-                            "awayTeam": "roster19",
-                            "awayTeamName": "Aston Villa",
-                            "awayRosterUrl": "./rosters/roster19.htm",
-                            "awayRosterFile": "roster19.htm",
+                            "status": "completed",
+                            "matchupText": "@Atletico Madrid 116, Aston Villa 108",
+                            "boxscoreUrl": "./boxes/box35-2.htm",
+                            "boxscoreFile": "box35-2.htm",
                             "homeTeam": "roster11",
                             "homeTeamName": "Atletico Madrid",
-                            "homeRosterUrl": "./rosters/roster11.htm",
-                            "homeRosterFile": "roster11.htm",
-                            "rowClass": "row2"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/22/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Monaco @ Inter Milan",
-                            "awayTeam": "roster20",
-                            "awayTeamName": "Monaco",
-                            "awayRosterUrl": "./rosters/roster20.htm",
-                            "awayRosterFile": "roster20.htm",
-                            "homeTeam": "roster26",
-                            "homeTeamName": "Inter Milan",
-                            "homeRosterUrl": "./rosters/roster26.htm",
-                            "homeRosterFile": "roster26.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Valencia @ Juventus",
-                            "awayTeam": "roster25",
-                            "awayTeamName": "Valencia",
-                            "awayRosterUrl": "./rosters/roster25.htm",
-                            "awayRosterFile": "roster25.htm",
-                            "homeTeam": "roster14",
-                            "homeTeamName": "Juventus",
-                            "homeRosterUrl": "./rosters/roster14.htm",
-                            "homeRosterFile": "roster14.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "AC Sparta Praha @ Marseille",
-                            "awayTeam": "roster16",
-                            "awayTeamName": "AC Sparta Praha",
-                            "awayRosterUrl": "./rosters/roster16.htm",
-                            "awayRosterFile": "roster16.htm",
-                            "homeTeam": "roster15",
-                            "homeTeamName": "Marseille",
-                            "homeRosterUrl": "./rosters/roster15.htm",
-                            "homeRosterFile": "roster15.htm",
-                            "rowClass": "row1"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/23/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Arsenal @ Benfica",
-                            "awayTeam": "roster23",
-                            "awayTeamName": "Arsenal",
-                            "awayRosterUrl": "./rosters/roster23.htm",
-                            "awayRosterFile": "roster23.htm",
-                            "homeTeam": "roster13",
-                            "homeTeamName": "Benfica",
-                            "homeRosterUrl": "./rosters/roster13.htm",
-                            "homeRosterFile": "roster13.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Barcelona @ Paris Saint-Germain",
-                            "awayTeam": "roster24",
-                            "awayTeamName": "Barcelona",
-                            "awayRosterUrl": "./rosters/roster24.htm",
-                            "awayRosterFile": "roster24.htm",
-                            "homeTeam": "roster21",
-                            "homeTeamName": "Paris Saint-Germain",
-                            "homeRosterUrl": "./rosters/roster21.htm",
-                            "homeRosterFile": "roster21.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Manchester United @ Tottenham Hotspur",
-                            "awayTeam": "roster5",
-                            "awayTeamName": "Manchester United",
-                            "awayRosterUrl": "./rosters/roster5.htm",
-                            "awayRosterFile": "roster5.htm",
-                            "homeTeam": "roster22",
-                            "homeTeamName": "Tottenham Hotspur",
-                            "homeRosterUrl": "./rosters/roster22.htm",
-                            "homeRosterFile": "roster22.htm",
-                            "rowClass": "row1"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/24/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "AC Milan @ Brighton",
-                            "awayTeam": "roster9",
-                            "awayTeamName": "AC Milan",
-                            "awayRosterUrl": "./rosters/roster9.htm",
-                            "awayRosterFile": "roster9.htm",
-                            "homeTeam": "roster10",
-                            "homeTeamName": "Brighton",
-                            "homeRosterUrl": "./rosters/roster10.htm",
-                            "homeRosterFile": "roster10.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Benfica @ Paris Saint-Germain",
-                            "awayTeam": "roster13",
-                            "awayTeamName": "Benfica",
-                            "awayRosterUrl": "./rosters/roster13.htm",
-                            "awayRosterFile": "roster13.htm",
-                            "homeTeam": "roster21",
-                            "homeTeamName": "Paris Saint-Germain",
-                            "homeRosterUrl": "./rosters/roster21.htm",
-                            "homeRosterFile": "roster21.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Real Madrid @ Barcelona",
-                            "awayTeam": "roster8",
-                            "awayTeamName": "Real Madrid",
-                            "awayRosterUrl": "./rosters/roster8.htm",
-                            "awayRosterFile": "roster8.htm",
-                            "homeTeam": "roster24",
-                            "homeTeamName": "Barcelona",
-                            "homeRosterUrl": "./rosters/roster24.htm",
-                            "homeRosterFile": "roster24.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Arsenal @ ACF Fiorentina",
-                            "awayTeam": "roster23",
-                            "awayTeamName": "Arsenal",
-                            "awayRosterUrl": "./rosters/roster23.htm",
-                            "awayRosterFile": "roster23.htm",
-                            "homeTeam": "roster7",
-                            "homeTeamName": "ACF Fiorentina",
-                            "homeRosterUrl": "./rosters/roster7.htm",
-                            "homeRosterFile": "roster7.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "AFC Richmond @ Manchester City",
-                            "awayTeam": "roster12",
-                            "awayTeamName": "AFC Richmond",
-                            "awayRosterUrl": "./rosters/roster12.htm",
-                            "awayRosterFile": "roster12.htm",
-                            "homeTeam": "roster28",
-                            "homeTeamName": "Manchester City",
-                            "homeRosterUrl": "./rosters/roster28.htm",
-                            "homeRosterFile": "roster28.htm",
-                            "rowClass": "row1"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/26/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "FL Fart @ AFC Richmond",
-                            "awayTeam": "roster27",
-                            "awayTeamName": "FL Fart",
-                            "awayRosterUrl": "./rosters/roster27.htm",
-                            "awayRosterFile": "roster27.htm",
-                            "homeTeam": "roster12",
-                            "homeTeamName": "AFC Richmond",
-                            "homeRosterUrl": "./rosters/roster12.htm",
-                            "homeRosterFile": "roster12.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Chelsea @ Crystal Palace",
-                            "awayTeam": "roster17",
-                            "awayTeamName": "Chelsea",
-                            "awayRosterUrl": "./rosters/roster17.htm",
-                            "awayRosterFile": "roster17.htm",
-                            "homeTeam": "roster6",
-                            "homeTeamName": "Crystal Palace",
-                            "homeRosterUrl": "./rosters/roster6.htm",
-                            "homeRosterFile": "roster6.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Monaco @ Ajax",
-                            "awayTeam": "roster20",
-                            "awayTeamName": "Monaco",
-                            "awayRosterUrl": "./rosters/roster20.htm",
-                            "awayRosterFile": "roster20.htm",
-                            "homeTeam": "roster18",
-                            "homeTeamName": "Ajax",
-                            "homeRosterUrl": "./rosters/roster18.htm",
-                            "homeRosterFile": "roster18.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Inter Milan @ Manchester City",
-                            "awayTeam": "roster26",
-                            "awayTeamName": "Inter Milan",
-                            "awayRosterUrl": "./rosters/roster26.htm",
-                            "awayRosterFile": "roster26.htm",
-                            "homeTeam": "roster28",
-                            "homeTeamName": "Manchester City",
-                            "homeRosterUrl": "./rosters/roster28.htm",
-                            "homeRosterFile": "roster28.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Marseille @ Aston Villa",
-                            "awayTeam": "roster15",
-                            "awayTeamName": "Marseille",
-                            "awayRosterUrl": "./rosters/roster15.htm",
-                            "awayRosterFile": "roster15.htm",
-                            "homeTeam": "roster19",
-                            "homeTeamName": "Aston Villa",
-                            "homeRosterUrl": "./rosters/roster19.htm",
-                            "homeRosterFile": "roster19.htm",
-                            "rowClass": "row1"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/27/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "AC Sparta Praha @ Juventus",
-                            "awayTeam": "roster16",
-                            "awayTeamName": "AC Sparta Praha",
-                            "awayRosterUrl": "./rosters/roster16.htm",
-                            "awayRosterFile": "roster16.htm",
-                            "homeTeam": "roster14",
-                            "homeTeamName": "Juventus",
-                            "homeRosterUrl": "./rosters/roster14.htm",
-                            "homeRosterFile": "roster14.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Atletico Madrid @ Valencia",
-                            "awayTeam": "roster11",
-                            "awayTeamName": "Atletico Madrid",
-                            "awayRosterUrl": "./rosters/roster11.htm",
-                            "awayRosterFile": "roster11.htm",
-                            "homeTeam": "roster25",
-                            "homeTeamName": "Valencia",
-                            "homeRosterUrl": "./rosters/roster25.htm",
-                            "homeRosterFile": "roster25.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Aston Villa @ Manchester United",
+                            "homeScore": 116,
                             "awayTeam": "roster19",
                             "awayTeamName": "Aston Villa",
-                            "awayRosterUrl": "./rosters/roster19.htm",
-                            "awayRosterFile": "roster19.htm",
-                            "homeTeam": "roster5",
-                            "homeTeamName": "Manchester United",
-                            "homeRosterUrl": "./rosters/roster5.htm",
-                            "homeRosterFile": "roster5.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Tottenham Hotspur @ Marseille",
-                            "awayTeam": "roster22",
-                            "awayTeamName": "Tottenham Hotspur",
-                            "awayRosterUrl": "./rosters/roster22.htm",
-                            "awayRosterFile": "roster22.htm",
-                            "homeTeam": "roster15",
-                            "homeTeamName": "Marseille",
-                            "homeRosterUrl": "./rosters/roster15.htm",
-                            "homeRosterFile": "roster15.htm",
+                            "awayScore": 108,
+                            "winner": "roster11",
+                            "winnerName": "Atletico Madrid",
+                            "margin": 8,
                             "rowClass": "row2"
                         }
                     ]
                 },
                 {
-                    "date": "11/28/1988",
+                    "date": "22/11/1988",
                     "games": [
                         {
-                            "status": "scheduled",
-                            "matchupText": "Barcelona @ Benfica",
-                            "awayTeam": "roster24",
-                            "awayTeamName": "Barcelona",
-                            "awayRosterUrl": "./rosters/roster24.htm",
-                            "awayRosterFile": "roster24.htm",
-                            "homeTeam": "roster13",
-                            "homeTeamName": "Benfica",
-                            "homeRosterUrl": "./rosters/roster13.htm",
-                            "homeRosterFile": "roster13.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "ACF Fiorentina @ Paris Saint-Germain",
-                            "awayTeam": "roster7",
-                            "awayTeamName": "ACF Fiorentina",
-                            "awayRosterUrl": "./rosters/roster7.htm",
-                            "awayRosterFile": "roster7.htm",
-                            "homeTeam": "roster21",
-                            "homeTeamName": "Paris Saint-Germain",
-                            "homeRosterUrl": "./rosters/roster21.htm",
-                            "homeRosterFile": "roster21.htm",
-                            "rowClass": "row2"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Arsenal @ Brighton",
-                            "awayTeam": "roster23",
-                            "awayTeamName": "Arsenal",
-                            "awayRosterUrl": "./rosters/roster23.htm",
-                            "awayRosterFile": "roster23.htm",
-                            "homeTeam": "roster10",
-                            "homeTeamName": "Brighton",
-                            "homeRosterUrl": "./rosters/roster10.htm",
-                            "homeRosterFile": "roster10.htm",
-                            "rowClass": "row1"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/29/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Real Madrid @ Arsenal",
-                            "awayTeam": "roster8",
-                            "awayTeamName": "Real Madrid",
-                            "awayRosterUrl": "./rosters/roster8.htm",
-                            "awayRosterFile": "roster8.htm",
-                            "homeTeam": "roster23",
-                            "homeTeamName": "Arsenal",
-                            "homeRosterUrl": "./rosters/roster23.htm",
-                            "homeRosterFile": "roster23.htm",
-                            "rowClass": "row1"
-                        },
-                        {
-                            "status": "scheduled",
-                            "matchupText": "AC Milan @ Barcelona",
-                            "awayTeam": "roster9",
-                            "awayTeamName": "AC Milan",
-                            "awayRosterUrl": "./rosters/roster9.htm",
-                            "awayRosterFile": "roster9.htm",
-                            "homeTeam": "roster24",
-                            "homeTeamName": "Barcelona",
-                            "homeRosterUrl": "./rosters/roster24.htm",
-                            "homeRosterFile": "roster24.htm",
-                            "rowClass": "row2"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/30/1988",
-                    "games": [
-                        {
-                            "status": "scheduled",
-                            "matchupText": "Monaco @ Manchester City",
+                            "status": "completed",
+                            "matchupText": "@Inter Milan 126, Monaco 106",
+                            "boxscoreUrl": "./boxes/box36-1.htm",
+                            "boxscoreFile": "box36-1.htm",
+                            "homeTeam": "roster26",
+                            "homeTeamName": "Inter Milan",
+                            "homeScore": 126,
                             "awayTeam": "roster20",
                             "awayTeamName": "Monaco",
-                            "awayRosterUrl": "./rosters/roster20.htm",
-                            "awayRosterFile": "roster20.htm",
-                            "homeTeam": "roster28",
-                            "homeTeamName": "Manchester City",
-                            "homeRosterUrl": "./rosters/roster28.htm",
-                            "homeRosterFile": "roster28.htm",
+                            "awayScore": 106,
+                            "winner": "roster26",
+                            "winnerName": "Inter Milan",
+                            "margin": 20,
                             "rowClass": "row1"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Ajax @ AFC Richmond",
-                            "awayTeam": "roster18",
-                            "awayTeamName": "Ajax",
-                            "awayRosterUrl": "./rosters/roster18.htm",
-                            "awayRosterFile": "roster18.htm",
-                            "homeTeam": "roster12",
-                            "homeTeamName": "AFC Richmond",
-                            "homeRosterUrl": "./rosters/roster12.htm",
-                            "homeRosterFile": "roster12.htm",
+                            "status": "completed",
+                            "matchupText": "@Juventus 117, Valencia 101",
+                            "boxscoreUrl": "./boxes/box36-2.htm",
+                            "boxscoreFile": "box36-2.htm",
+                            "homeTeam": "roster14",
+                            "homeTeamName": "Juventus",
+                            "homeScore": 117,
+                            "awayTeam": "roster25",
+                            "awayTeamName": "Valencia",
+                            "awayScore": 101,
+                            "winner": "roster14",
+                            "winnerName": "Juventus",
+                            "margin": 16,
                             "rowClass": "row2"
                         },
                         {
-                            "status": "scheduled",
-                            "matchupText": "Crystal Palace @ FL Fart",
-                            "awayTeam": "roster6",
-                            "awayTeamName": "Crystal Palace",
-                            "awayRosterUrl": "./rosters/roster6.htm",
-                            "awayRosterFile": "roster6.htm",
-                            "homeTeam": "roster27",
-                            "homeTeamName": "FL Fart",
-                            "homeRosterUrl": "./rosters/roster27.htm",
-                            "homeRosterFile": "roster27.htm",
+                            "status": "completed",
+                            "matchupText": "@Marseille 118, AC Sparta Praha 115",
+                            "boxscoreUrl": "./boxes/box36-3.htm",
+                            "boxscoreFile": "box36-3.htm",
+                            "homeTeam": "roster15",
+                            "homeTeamName": "Marseille",
+                            "homeScore": 118,
+                            "awayTeam": "roster16",
+                            "awayTeamName": "AC Sparta Praha",
+                            "awayScore": 115,
+                            "winner": "roster15",
+                            "winnerName": "Marseille",
+                            "margin": 3,
                             "rowClass": "row1"
                         }
                     ]
                 },
                 {
-                    "date": "12/1/1988",
+                    "date": "23/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "Arsenal 107, @Benfica 105",
+                            "boxscoreUrl": "./boxes/box37-1.htm",
+                            "boxscoreFile": "box37-1.htm",
+                            "homeTeam": "roster13",
+                            "homeTeamName": "Benfica",
+                            "homeScore": 105,
+                            "awayTeam": "roster23",
+                            "awayTeamName": "Arsenal",
+                            "awayScore": 107,
+                            "winner": "roster23",
+                            "winnerName": "Arsenal",
+                            "margin": 2,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Paris Saint-Germain 126, Barcelona 96",
+                            "boxscoreUrl": "./boxes/box37-2.htm",
+                            "boxscoreFile": "box37-2.htm",
+                            "homeTeam": "roster21",
+                            "homeTeamName": "Paris Saint-Germain",
+                            "homeScore": 126,
+                            "awayTeam": "roster24",
+                            "awayTeamName": "Barcelona",
+                            "awayScore": 96,
+                            "winner": "roster21",
+                            "winnerName": "Paris Saint-Germain",
+                            "margin": 30,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Tottenham Hotspur 104, Manchester United 97",
+                            "boxscoreUrl": "./boxes/box37-3.htm",
+                            "boxscoreFile": "box37-3.htm",
+                            "homeTeam": "roster22",
+                            "homeTeamName": "Tottenham Hotspur",
+                            "homeScore": 104,
+                            "awayTeam": "roster5",
+                            "awayTeamName": "Manchester United",
+                            "awayScore": 97,
+                            "winner": "roster22",
+                            "winnerName": "Tottenham Hotspur",
+                            "margin": 7,
+                            "rowClass": "row1"
+                        }
+                    ]
+                },
+                {
+                    "date": "24/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "@Brighton 101, AC Milan 92",
+                            "boxscoreUrl": "./boxes/box38-1.htm",
+                            "boxscoreFile": "box38-1.htm",
+                            "homeTeam": "roster10",
+                            "homeTeamName": "Brighton",
+                            "homeScore": 101,
+                            "awayTeam": "roster9",
+                            "awayTeamName": "AC Milan",
+                            "awayScore": 92,
+                            "winner": "roster10",
+                            "winnerName": "Brighton",
+                            "margin": 9,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Paris Saint-Germain 143, Benfica 102",
+                            "boxscoreUrl": "./boxes/box38-2.htm",
+                            "boxscoreFile": "box38-2.htm",
+                            "homeTeam": "roster21",
+                            "homeTeamName": "Paris Saint-Germain",
+                            "homeScore": 143,
+                            "awayTeam": "roster13",
+                            "awayTeamName": "Benfica",
+                            "awayScore": 102,
+                            "winner": "roster21",
+                            "winnerName": "Paris Saint-Germain",
+                            "margin": 41,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Barcelona 122, Real Madrid 109",
+                            "boxscoreUrl": "./boxes/box38-3.htm",
+                            "boxscoreFile": "box38-3.htm",
+                            "homeTeam": "roster24",
+                            "homeTeamName": "Barcelona",
+                            "homeScore": 122,
+                            "awayTeam": "roster8",
+                            "awayTeamName": "Real Madrid",
+                            "awayScore": 109,
+                            "winner": "roster24",
+                            "winnerName": "Barcelona",
+                            "margin": 13,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@ACF Fiorentina 114, Arsenal 106",
+                            "boxscoreUrl": "./boxes/box38-4.htm",
+                            "boxscoreFile": "box38-4.htm",
+                            "homeTeam": "roster7",
+                            "homeTeamName": "ACF Fiorentina",
+                            "homeScore": 114,
+                            "awayTeam": "roster23",
+                            "awayTeamName": "Arsenal",
+                            "awayScore": 106,
+                            "winner": "roster7",
+                            "winnerName": "ACF Fiorentina",
+                            "margin": 8,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "AFC Richmond 128, @Manchester City 116",
+                            "boxscoreUrl": "./boxes/box38-5.htm",
+                            "boxscoreFile": "box38-5.htm",
+                            "homeTeam": "roster28",
+                            "homeTeamName": "Manchester City",
+                            "homeScore": 116,
+                            "awayTeam": "roster12",
+                            "awayTeamName": "AFC Richmond",
+                            "awayScore": 128,
+                            "winner": "roster12",
+                            "winnerName": "AFC Richmond",
+                            "margin": 12,
+                            "rowClass": "row1"
+                        }
+                    ]
+                },
+                {
+                    "date": "26/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "FL Fart 129, @AFC Richmond 118",
+                            "boxscoreUrl": "./boxes/box40-1.htm",
+                            "boxscoreFile": "box40-1.htm",
+                            "homeTeam": "roster12",
+                            "homeTeamName": "AFC Richmond",
+                            "homeScore": 118,
+                            "awayTeam": "roster27",
+                            "awayTeamName": "FL Fart",
+                            "awayScore": 129,
+                            "winner": "roster27",
+                            "winnerName": "FL Fart",
+                            "margin": 11,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "Chelsea 131, @Crystal Palace 113",
+                            "boxscoreUrl": "./boxes/box40-2.htm",
+                            "boxscoreFile": "box40-2.htm",
+                            "homeTeam": "roster6",
+                            "homeTeamName": "Crystal Palace",
+                            "homeScore": 113,
+                            "awayTeam": "roster17",
+                            "awayTeamName": "Chelsea",
+                            "awayScore": 131,
+                            "winner": "roster17",
+                            "winnerName": "Chelsea",
+                            "margin": 18,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "Monaco 104, @Ajax 89",
+                            "boxscoreUrl": "./boxes/box40-3.htm",
+                            "boxscoreFile": "box40-3.htm",
+                            "homeTeam": "roster18",
+                            "homeTeamName": "Ajax",
+                            "homeScore": 89,
+                            "awayTeam": "roster20",
+                            "awayTeamName": "Monaco",
+                            "awayScore": 104,
+                            "winner": "roster20",
+                            "winnerName": "Monaco",
+                            "margin": 15,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "Inter Milan 126, @Manchester City 110",
+                            "boxscoreUrl": "./boxes/box40-4.htm",
+                            "boxscoreFile": "box40-4.htm",
+                            "homeTeam": "roster28",
+                            "homeTeamName": "Manchester City",
+                            "homeScore": 110,
+                            "awayTeam": "roster26",
+                            "awayTeamName": "Inter Milan",
+                            "awayScore": 126,
+                            "winner": "roster26",
+                            "winnerName": "Inter Milan",
+                            "margin": 16,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Aston Villa 121, Marseille 109",
+                            "boxscoreUrl": "./boxes/box40-5.htm",
+                            "boxscoreFile": "box40-5.htm",
+                            "homeTeam": "roster19",
+                            "homeTeamName": "Aston Villa",
+                            "homeScore": 121,
+                            "awayTeam": "roster15",
+                            "awayTeamName": "Marseille",
+                            "awayScore": 109,
+                            "winner": "roster19",
+                            "winnerName": "Aston Villa",
+                            "margin": 12,
+                            "rowClass": "row1"
+                        }
+                    ]
+                },
+                {
+                    "date": "27/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "@Juventus 106, AC Sparta Praha 100",
+                            "boxscoreUrl": "./boxes/box41-1.htm",
+                            "boxscoreFile": "box41-1.htm",
+                            "homeTeam": "roster14",
+                            "homeTeamName": "Juventus",
+                            "homeScore": 106,
+                            "awayTeam": "roster16",
+                            "awayTeamName": "AC Sparta Praha",
+                            "awayScore": 100,
+                            "winner": "roster14",
+                            "winnerName": "Juventus",
+                            "margin": 6,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Valencia 112, Atletico Madrid 98",
+                            "boxscoreUrl": "./boxes/box41-2.htm",
+                            "boxscoreFile": "box41-2.htm",
+                            "homeTeam": "roster25",
+                            "homeTeamName": "Valencia",
+                            "homeScore": 112,
+                            "awayTeam": "roster11",
+                            "awayTeamName": "Atletico Madrid",
+                            "awayScore": 98,
+                            "winner": "roster25",
+                            "winnerName": "Valencia",
+                            "margin": 14,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Manchester United 129, Aston Villa 101",
+                            "boxscoreUrl": "./boxes/box41-3.htm",
+                            "boxscoreFile": "box41-3.htm",
+                            "homeTeam": "roster5",
+                            "homeTeamName": "Manchester United",
+                            "homeScore": 129,
+                            "awayTeam": "roster19",
+                            "awayTeamName": "Aston Villa",
+                            "awayScore": 101,
+                            "winner": "roster5",
+                            "winnerName": "Manchester United",
+                            "margin": 28,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "Tottenham Hotspur 120, @Marseille 110",
+                            "boxscoreUrl": "./boxes/box41-4.htm",
+                            "boxscoreFile": "box41-4.htm",
+                            "homeTeam": "roster15",
+                            "homeTeamName": "Marseille",
+                            "homeScore": 110,
+                            "awayTeam": "roster22",
+                            "awayTeamName": "Tottenham Hotspur",
+                            "awayScore": 120,
+                            "winner": "roster22",
+                            "winnerName": "Tottenham Hotspur",
+                            "margin": 10,
+                            "rowClass": "row2"
+                        }
+                    ]
+                },
+                {
+                    "date": "28/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "Barcelona 122, @Benfica 104",
+                            "boxscoreUrl": "./boxes/box42-1.htm",
+                            "boxscoreFile": "box42-1.htm",
+                            "homeTeam": "roster13",
+                            "homeTeamName": "Benfica",
+                            "homeScore": 104,
+                            "awayTeam": "roster24",
+                            "awayTeamName": "Barcelona",
+                            "awayScore": 122,
+                            "winner": "roster24",
+                            "winnerName": "Barcelona",
+                            "margin": 18,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Paris Saint-Germain 126, ACF Fiorentina 115",
+                            "boxscoreUrl": "./boxes/box42-2.htm",
+                            "boxscoreFile": "box42-2.htm",
+                            "homeTeam": "roster21",
+                            "homeTeamName": "Paris Saint-Germain",
+                            "homeScore": 126,
+                            "awayTeam": "roster7",
+                            "awayTeamName": "ACF Fiorentina",
+                            "awayScore": 115,
+                            "winner": "roster21",
+                            "winnerName": "Paris Saint-Germain",
+                            "margin": 11,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@Brighton 111, Arsenal 87",
+                            "boxscoreUrl": "./boxes/box42-3.htm",
+                            "boxscoreFile": "box42-3.htm",
+                            "homeTeam": "roster10",
+                            "homeTeamName": "Brighton",
+                            "homeScore": 111,
+                            "awayTeam": "roster23",
+                            "awayTeamName": "Arsenal",
+                            "awayScore": 87,
+                            "winner": "roster10",
+                            "winnerName": "Brighton",
+                            "margin": 24,
+                            "rowClass": "row1"
+                        }
+                    ]
+                },
+                {
+                    "date": "29/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "@Arsenal 123, Real Madrid 114",
+                            "boxscoreUrl": "./boxes/box43-1.htm",
+                            "boxscoreFile": "box43-1.htm",
+                            "homeTeam": "roster23",
+                            "homeTeamName": "Arsenal",
+                            "homeScore": 123,
+                            "awayTeam": "roster8",
+                            "awayTeamName": "Real Madrid",
+                            "awayScore": 114,
+                            "winner": "roster23",
+                            "winnerName": "Arsenal",
+                            "margin": 9,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "AC Milan 117, @Barcelona 115",
+                            "boxscoreUrl": "./boxes/box43-2.htm",
+                            "boxscoreFile": "box43-2.htm",
+                            "homeTeam": "roster24",
+                            "homeTeamName": "Barcelona",
+                            "homeScore": 115,
+                            "awayTeam": "roster9",
+                            "awayTeamName": "AC Milan",
+                            "awayScore": 117,
+                            "winner": "roster9",
+                            "winnerName": "AC Milan",
+                            "margin": 2,
+                            "rowClass": "row2"
+                        }
+                    ]
+                },
+                {
+                    "date": "30/11/1988",
+                    "games": [
+                        {
+                            "status": "completed",
+                            "matchupText": "@Manchester City 108, Monaco 82",
+                            "boxscoreUrl": "./boxes/box44-1.htm",
+                            "boxscoreFile": "box44-1.htm",
+                            "homeTeam": "roster28",
+                            "homeTeamName": "Manchester City",
+                            "homeScore": 108,
+                            "awayTeam": "roster20",
+                            "awayTeamName": "Monaco",
+                            "awayScore": 82,
+                            "winner": "roster28",
+                            "winnerName": "Manchester City",
+                            "margin": 26,
+                            "rowClass": "row1"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@AFC Richmond 111, Ajax 101",
+                            "boxscoreUrl": "./boxes/box44-2.htm",
+                            "boxscoreFile": "box44-2.htm",
+                            "homeTeam": "roster12",
+                            "homeTeamName": "AFC Richmond",
+                            "homeScore": 111,
+                            "awayTeam": "roster18",
+                            "awayTeamName": "Ajax",
+                            "awayScore": 101,
+                            "winner": "roster12",
+                            "winnerName": "AFC Richmond",
+                            "margin": 10,
+                            "rowClass": "row2"
+                        },
+                        {
+                            "status": "completed",
+                            "matchupText": "@FL Fart 103, Crystal Palace 92",
+                            "boxscoreUrl": "./boxes/box44-3.htm",
+                            "boxscoreFile": "box44-3.htm",
+                            "homeTeam": "roster27",
+                            "homeTeamName": "FL Fart",
+                            "homeScore": 103,
+                            "awayTeam": "roster6",
+                            "awayTeamName": "Crystal Palace",
+                            "awayScore": 92,
+                            "winner": "roster27",
+                            "winnerName": "FL Fart",
+                            "margin": 11,
+                            "rowClass": "row1"
+                        }
+                    ]
+                },
+                {
+                    "date": "1/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -2643,7 +2919,7 @@
                     ]
                 },
                 {
-                    "date": "12/3/1988",
+                    "date": "3/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -2687,7 +2963,7 @@
                     ]
                 },
                 {
-                    "date": "12/4/1988",
+                    "date": "4/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -2718,7 +2994,7 @@
                     ]
                 },
                 {
-                    "date": "12/5/1988",
+                    "date": "5/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -2788,7 +3064,7 @@
                     ]
                 },
                 {
-                    "date": "12/6/1988",
+                    "date": "6/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -2832,7 +3108,7 @@
                     ]
                 },
                 {
-                    "date": "12/7/1988",
+                    "date": "7/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -2889,7 +3165,7 @@
                     ]
                 },
                 {
-                    "date": "12/8/1988",
+                    "date": "8/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -2907,7 +3183,7 @@
                     ]
                 },
                 {
-                    "date": "12/9/1988",
+                    "date": "9/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -2951,7 +3227,7 @@
                     ]
                 },
                 {
-                    "date": "12/10/1988",
+                    "date": "10/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -2982,7 +3258,7 @@
                     ]
                 },
                 {
-                    "date": "12/11/1988",
+                    "date": "11/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3122,7 +3398,7 @@
                     ]
                 },
                 {
-                    "date": "12/13/1988",
+                    "date": "13/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3140,7 +3416,7 @@
                     ]
                 },
                 {
-                    "date": "12/14/1988",
+                    "date": "14/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3171,7 +3447,7 @@
                     ]
                 },
                 {
-                    "date": "12/15/1988",
+                    "date": "15/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3241,7 +3517,7 @@
                     ]
                 },
                 {
-                    "date": "12/16/1988",
+                    "date": "16/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3298,7 +3574,7 @@
                     ]
                 },
                 {
-                    "date": "12/18/1988",
+                    "date": "18/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3342,7 +3618,7 @@
                     ]
                 },
                 {
-                    "date": "12/19/1988",
+                    "date": "19/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3412,7 +3688,7 @@
                     ]
                 },
                 {
-                    "date": "12/20/1988",
+                    "date": "20/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3430,7 +3706,7 @@
                     ]
                 },
                 {
-                    "date": "12/21/1988",
+                    "date": "21/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3461,7 +3737,7 @@
                     ]
                 },
                 {
-                    "date": "12/22/1988",
+                    "date": "22/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3505,7 +3781,7 @@
                     ]
                 },
                 {
-                    "date": "12/23/1988",
+                    "date": "23/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3575,7 +3851,7 @@
                     ]
                 },
                 {
-                    "date": "12/24/1988",
+                    "date": "24/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3593,7 +3869,7 @@
                     ]
                 },
                 {
-                    "date": "12/25/1988",
+                    "date": "25/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3624,7 +3900,7 @@
                     ]
                 },
                 {
-                    "date": "12/26/1988",
+                    "date": "26/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3681,7 +3957,7 @@
                     ]
                 },
                 {
-                    "date": "12/27/1988",
+                    "date": "27/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3751,7 +4027,7 @@
                     ]
                 },
                 {
-                    "date": "12/28/1988",
+                    "date": "28/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3769,7 +4045,7 @@
                     ]
                 },
                 {
-                    "date": "12/29/1988",
+                    "date": "29/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3787,7 +4063,7 @@
                     ]
                 },
                 {
-                    "date": "12/30/1988",
+                    "date": "30/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3818,7 +4094,7 @@
                     ]
                 },
                 {
-                    "date": "12/31/1988",
+                    "date": "31/12/1988",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3914,7 +4190,7 @@
                     ]
                 },
                 {
-                    "date": "1/1/1989",
+                    "date": "1/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3932,7 +4208,7 @@
                     ]
                 },
                 {
-                    "date": "1/2/1989",
+                    "date": "2/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3950,7 +4226,7 @@
                     ]
                 },
                 {
-                    "date": "1/3/1989",
+                    "date": "3/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -3981,7 +4257,7 @@
                     ]
                 },
                 {
-                    "date": "1/4/1989",
+                    "date": "4/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4064,7 +4340,7 @@
                     ]
                 },
                 {
-                    "date": "1/5/1989",
+                    "date": "5/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4121,7 +4397,7 @@
                     ]
                 },
                 {
-                    "date": "1/6/1989",
+                    "date": "6/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4139,7 +4415,7 @@
                     ]
                 },
                 {
-                    "date": "1/7/1989",
+                    "date": "7/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4157,7 +4433,7 @@
                     ]
                 },
                 {
-                    "date": "1/8/1989",
+                    "date": "8/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4214,7 +4490,7 @@
                     ]
                 },
                 {
-                    "date": "1/9/1989",
+                    "date": "9/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4284,7 +4560,7 @@
                     ]
                 },
                 {
-                    "date": "1/10/1989",
+                    "date": "10/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4302,7 +4578,7 @@
                     ]
                 },
                 {
-                    "date": "1/11/1989",
+                    "date": "11/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4346,7 +4622,7 @@
                     ]
                 },
                 {
-                    "date": "1/12/1989",
+                    "date": "12/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4377,7 +4653,7 @@
                     ]
                 },
                 {
-                    "date": "1/13/1989",
+                    "date": "13/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4460,7 +4736,7 @@
                     ]
                 },
                 {
-                    "date": "1/15/1989",
+                    "date": "15/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4504,7 +4780,7 @@
                     ]
                 },
                 {
-                    "date": "1/16/1989",
+                    "date": "16/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4548,7 +4824,7 @@
                     ]
                 },
                 {
-                    "date": "1/17/1989",
+                    "date": "17/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4618,7 +4894,7 @@
                     ]
                 },
                 {
-                    "date": "1/18/1989",
+                    "date": "18/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4636,7 +4912,7 @@
                     ]
                 },
                 {
-                    "date": "1/19/1989",
+                    "date": "19/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4693,7 +4969,7 @@
                     ]
                 },
                 {
-                    "date": "1/20/1989",
+                    "date": "20/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4724,7 +5000,7 @@
                     ]
                 },
                 {
-                    "date": "1/21/1989",
+                    "date": "21/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4781,7 +5057,7 @@
                     ]
                 },
                 {
-                    "date": "1/22/1989",
+                    "date": "22/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4812,7 +5088,7 @@
                     ]
                 },
                 {
-                    "date": "1/23/1989",
+                    "date": "23/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4869,7 +5145,7 @@
                     ]
                 },
                 {
-                    "date": "1/24/1989",
+                    "date": "24/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4913,7 +5189,7 @@
                     ]
                 },
                 {
-                    "date": "1/25/1989",
+                    "date": "25/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4957,7 +5233,7 @@
                     ]
                 },
                 {
-                    "date": "1/26/1989",
+                    "date": "26/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -4988,7 +5264,7 @@
                     ]
                 },
                 {
-                    "date": "1/27/1989",
+                    "date": "27/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5032,7 +5308,7 @@
                     ]
                 },
                 {
-                    "date": "1/28/1989",
+                    "date": "28/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5102,7 +5378,7 @@
                     ]
                 },
                 {
-                    "date": "1/29/1989",
+                    "date": "29/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5133,7 +5409,7 @@
                     ]
                 },
                 {
-                    "date": "1/30/1989",
+                    "date": "30/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5164,7 +5440,7 @@
                     ]
                 },
                 {
-                    "date": "1/31/1989",
+                    "date": "31/01/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5195,7 +5471,7 @@
                     ]
                 },
                 {
-                    "date": "2/1/1989",
+                    "date": "1/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5226,7 +5502,7 @@
                     ]
                 },
                 {
-                    "date": "2/2/1989",
+                    "date": "2/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5296,7 +5572,7 @@
                     ]
                 },
                 {
-                    "date": "2/3/1989",
+                    "date": "3/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5340,7 +5616,7 @@
                     ]
                 },
                 {
-                    "date": "2/4/1989",
+                    "date": "4/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5371,7 +5647,7 @@
                     ]
                 },
                 {
-                    "date": "2/5/1989",
+                    "date": "5/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5402,7 +5678,7 @@
                     ]
                 },
                 {
-                    "date": "2/6/1989",
+                    "date": "6/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5433,7 +5709,7 @@
                     ]
                 },
                 {
-                    "date": "2/7/1989",
+                    "date": "7/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5477,7 +5753,7 @@
                     ]
                 },
                 {
-                    "date": "2/8/1989",
+                    "date": "8/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5521,7 +5797,7 @@
                     ]
                 },
                 {
-                    "date": "2/9/1989",
+                    "date": "9/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5604,7 +5880,7 @@
                     ]
                 },
                 {
-                    "date": "2/14/1989",
+                    "date": "14/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5687,7 +5963,7 @@
                     ]
                 },
                 {
-                    "date": "2/15/1989",
+                    "date": "15/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5744,7 +6020,7 @@
                     ]
                 },
                 {
-                    "date": "2/16/1989",
+                    "date": "16/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5801,7 +6077,7 @@
                     ]
                 },
                 {
-                    "date": "2/17/1989",
+                    "date": "17/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5845,7 +6121,7 @@
                     ]
                 },
                 {
-                    "date": "2/18/1989",
+                    "date": "18/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5863,7 +6139,7 @@
                     ]
                 },
                 {
-                    "date": "2/19/1989",
+                    "date": "19/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5920,7 +6196,7 @@
                     ]
                 },
                 {
-                    "date": "2/20/1989",
+                    "date": "20/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5964,7 +6240,7 @@
                     ]
                 },
                 {
-                    "date": "2/21/1989",
+                    "date": "21/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -5995,7 +6271,7 @@
                     ]
                 },
                 {
-                    "date": "2/22/1989",
+                    "date": "22/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6026,7 +6302,7 @@
                     ]
                 },
                 {
-                    "date": "2/23/1989",
+                    "date": "23/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6083,7 +6359,7 @@
                     ]
                 },
                 {
-                    "date": "2/24/1989",
+                    "date": "24/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6127,7 +6403,7 @@
                     ]
                 },
                 {
-                    "date": "2/25/1989",
+                    "date": "25/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6210,7 +6486,7 @@
                     ]
                 },
                 {
-                    "date": "2/26/1989",
+                    "date": "26/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6228,7 +6504,7 @@
                     ]
                 },
                 {
-                    "date": "2/27/1989",
+                    "date": "27/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6246,7 +6522,7 @@
                     ]
                 },
                 {
-                    "date": "2/28/1989",
+                    "date": "28/02/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6290,7 +6566,7 @@
                     ]
                 },
                 {
-                    "date": "3/1/1989",
+                    "date": "1/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6360,7 +6636,7 @@
                     ]
                 },
                 {
-                    "date": "3/2/1989",
+                    "date": "2/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6391,7 +6667,7 @@
                     ]
                 },
                 {
-                    "date": "3/3/1989",
+                    "date": "3/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6435,7 +6711,7 @@
                     ]
                 },
                 {
-                    "date": "3/4/1989",
+                    "date": "4/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6505,7 +6781,7 @@
                     ]
                 },
                 {
-                    "date": "3/5/1989",
+                    "date": "5/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6549,7 +6825,7 @@
                     ]
                 },
                 {
-                    "date": "3/6/1989",
+                    "date": "6/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6567,7 +6843,7 @@
                     ]
                 },
                 {
-                    "date": "3/7/1989",
+                    "date": "7/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6598,7 +6874,7 @@
                     ]
                 },
                 {
-                    "date": "3/8/1989",
+                    "date": "8/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6642,7 +6918,7 @@
                     ]
                 },
                 {
-                    "date": "3/9/1989",
+                    "date": "9/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6712,7 +6988,7 @@
                     ]
                 },
                 {
-                    "date": "3/10/1989",
+                    "date": "10/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6743,7 +7019,7 @@
                     ]
                 },
                 {
-                    "date": "3/11/1989",
+                    "date": "11/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6774,7 +7050,7 @@
                     ]
                 },
                 {
-                    "date": "3/12/1989",
+                    "date": "12/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6805,7 +7081,7 @@
                     ]
                 },
                 {
-                    "date": "3/13/1989",
+                    "date": "13/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6862,7 +7138,7 @@
                     ]
                 },
                 {
-                    "date": "3/14/1989",
+                    "date": "14/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6906,7 +7182,7 @@
                     ]
                 },
                 {
-                    "date": "3/15/1989",
+                    "date": "15/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -6989,7 +7265,7 @@
                     ]
                 },
                 {
-                    "date": "3/16/1989",
+                    "date": "16/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7020,7 +7296,7 @@
                     ]
                 },
                 {
-                    "date": "3/17/1989",
+                    "date": "17/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7051,7 +7327,7 @@
                     ]
                 },
                 {
-                    "date": "3/18/1989",
+                    "date": "18/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7069,7 +7345,7 @@
                     ]
                 },
                 {
-                    "date": "3/19/1989",
+                    "date": "19/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7126,7 +7402,7 @@
                     ]
                 },
                 {
-                    "date": "3/20/1989",
+                    "date": "20/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7183,7 +7459,7 @@
                     ]
                 },
                 {
-                    "date": "3/21/1989",
+                    "date": "21/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7253,7 +7529,7 @@
                     ]
                 },
                 {
-                    "date": "3/22/1989",
+                    "date": "22/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7271,7 +7547,7 @@
                     ]
                 },
                 {
-                    "date": "3/23/1989",
+                    "date": "23/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7289,7 +7565,7 @@
                     ]
                 },
                 {
-                    "date": "3/24/1989",
+                    "date": "24/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7346,7 +7622,7 @@
                     ]
                 },
                 {
-                    "date": "3/25/1989",
+                    "date": "25/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7416,7 +7692,7 @@
                     ]
                 },
                 {
-                    "date": "3/26/1989",
+                    "date": "26/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7447,7 +7723,7 @@
                     ]
                 },
                 {
-                    "date": "3/27/1989",
+                    "date": "27/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7491,7 +7767,7 @@
                     ]
                 },
                 {
-                    "date": "3/28/1989",
+                    "date": "28/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7535,7 +7811,7 @@
                     ]
                 },
                 {
-                    "date": "3/29/1989",
+                    "date": "29/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7566,7 +7842,7 @@
                     ]
                 },
                 {
-                    "date": "3/30/1989",
+                    "date": "30/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7623,7 +7899,7 @@
                     ]
                 },
                 {
-                    "date": "3/31/1989",
+                    "date": "31/03/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7667,7 +7943,7 @@
                     ]
                 },
                 {
-                    "date": "4/1/1989",
+                    "date": "1/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7724,7 +8000,7 @@
                     ]
                 },
                 {
-                    "date": "4/2/1989",
+                    "date": "2/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7742,7 +8018,7 @@
                     ]
                 },
                 {
-                    "date": "4/3/1989",
+                    "date": "3/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7786,7 +8062,7 @@
                     ]
                 },
                 {
-                    "date": "4/4/1989",
+                    "date": "4/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7843,7 +8119,7 @@
                     ]
                 },
                 {
-                    "date": "4/5/1989",
+                    "date": "5/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7861,7 +8137,7 @@
                     ]
                 },
                 {
-                    "date": "4/6/1989",
+                    "date": "6/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7931,7 +8207,7 @@
                     ]
                 },
                 {
-                    "date": "4/7/1989",
+                    "date": "7/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -7975,7 +8251,7 @@
                     ]
                 },
                 {
-                    "date": "4/8/1989",
+                    "date": "8/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -8006,7 +8282,7 @@
                     ]
                 },
                 {
-                    "date": "4/10/1989",
+                    "date": "10/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -8076,7 +8352,7 @@
                     ]
                 },
                 {
-                    "date": "4/11/1989",
+                    "date": "11/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -8120,7 +8396,7 @@
                     ]
                 },
                 {
-                    "date": "4/12/1989",
+                    "date": "12/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -8164,7 +8440,7 @@
                     ]
                 },
                 {
-                    "date": "4/14/1989",
+                    "date": "14/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -8221,7 +8497,7 @@
                     ]
                 },
                 {
-                    "date": "4/15/1989",
+                    "date": "15/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -8265,7 +8541,7 @@
                     ]
                 },
                 {
-                    "date": "4/16/1989",
+                    "date": "16/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -8322,7 +8598,7 @@
                     ]
                 },
                 {
-                    "date": "4/17/1989",
+                    "date": "17/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -8353,7 +8629,7 @@
                     ]
                 },
                 {
-                    "date": "4/18/1989",
+                    "date": "18/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -8371,7 +8647,7 @@
                     ]
                 },
                 {
-                    "date": "4/19/1989",
+                    "date": "19/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
@@ -8415,7 +8691,7 @@
                     ]
                 },
                 {
-                    "date": "4/20/1989",
+                    "date": "20/04/1989",
                     "games": [
                         {
                             "status": "scheduled",
