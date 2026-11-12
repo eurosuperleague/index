@@ -39,7 +39,7 @@
             "data": {
                 "section": "Regular Season",
                 "sectionSlug": "regular-season",
-                "date": "24/11/1988",
+                "date": "11/24/1988",
                 "matchupText": "@Paris Saint-Germain 143, Benfica 102",
                 "boxscoreUrl": "./boxes/box38-2.htm",
                 "boxscoreFile": "box38-2.htm",
@@ -69,7 +69,7 @@
                 "streak": "W6",
                 "avgMargin": 18.62,
                 "bestWin": {
-                    "date": "24/11/1988",
+                    "date": "11/24/1988",
                     "opponent": "Benfica",
                     "result": "W",
                     "margin": 41,
@@ -90,7 +90,7 @@
             "data": {
                 "section": "Regular Season",
                 "sectionSlug": "regular-season",
-                "date": "4/11/1988",
+                "date": "11/4/1988",
                 "matchupText": "@Juventus 99, Atletico Madrid 98",
                 "boxscoreUrl": "./boxes/box18-3.htm",
                 "boxscoreFile": "box18-3.htm",
@@ -120,7 +120,7 @@
                 "streak": "L7",
                 "avgMargin": -14.0,
                 "worstLoss": {
-                    "date": "24/11/1988",
+                    "date": "11/24/1988",
                     "opponent": "Paris Saint-Germain",
                     "result": "L",
                     "margin": 41,
@@ -141,7 +141,7 @@
             "data": {
                 "section": "Regular Season",
                 "sectionSlug": "regular-season",
-                "date": "1/11/1988",
+                "date": "11/1/1988",
                 "matchupText": "@Monaco 125, Inter Milan 111",
                 "boxscoreUrl": "./boxes/box15-3.htm",
                 "boxscoreFile": "box15-3.htm",

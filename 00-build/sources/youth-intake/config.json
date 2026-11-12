@@ -1,16 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T12:14:08Z",
+  "updatedAt": "2026-11-12T00:41:40Z",
   "teams": [
     {
-      "team": "Benfica",
-      "gm": "christofu",
-      "positionFocus": "C"
-    },
-    {
-      "team": "Arsenal",
-      "gm": "lionbryant",
-      "positionFocus": "PG"
+      "team": "Brighton",
+      "gm": "Lamora",
+      "positionFocus": "SF"
     },
     {
       "team": "Paris Saint-Germain",
@@ -18,33 +13,8 @@
       "positionFocus": "PF"
     },
     {
-      "team": "AFC Richmond",
-      "gm": "Ted Lasso",
-      "positionFocus": "SG"
-    },
-    {
-      "team": "Real Madrid",
-      "gm": "Sus",
-      "positionFocus": "C"
-    },
-    {
-      "team": "AC Milan",
-      "gm": "Dr Tequila",
-      "positionFocus": "PF"
-    },
-    {
-      "team": "Brighton",
-      "gm": "Lamora",
-      "positionFocus": "SF"
-    },
-    {
-      "team": "Ajax",
-      "gm": "No gm",
-      "positionFocus": "C"
-    },
-    {
-      "team": "Barcelona",
-      "gm": "JDK",
+      "team": "Arsenal",
+      "gm": "no gm",
       "positionFocus": "PG"
     },
     {
@@ -53,29 +23,29 @@
       "positionFocus": "PG"
     },
     {
-      "team": "Inter Milan",
-      "gm": "Reflex",
-      "positionFocus": "SG"
+      "team": "AC Milan",
+      "gm": "Dr Tequila",
+      "positionFocus": "PF"
     },
     {
-      "team": "FL Fart",
-      "gm": "Bean Morn",
-      "positionFocus": "PG"
-    },
-    {
-      "team": "Aston Villa",
-      "gm": "Plasma",
-      "positionFocus": "PG"
-    },
-    {
-      "team": "Crystal Palace",
-      "gm": "Superbat",
+      "team": "Real Madrid",
+      "gm": "Sus",
       "positionFocus": "C"
     },
     {
-      "team": "AC Sparta Praha",
-      "gm": "October",
-      "positionFocus": "SF"
+      "team": "Barcelona",
+      "gm": "JDK",
+      "positionFocus": "PG"
+    },
+    {
+      "team": "Benfica",
+      "gm": "christofu",
+      "positionFocus": "C"
+    },
+    {
+      "team": "Inter Milan",
+      "gm": "Reflex",
+      "positionFocus": "SG"
     },
     {
       "team": "Chelsea",
@@ -83,23 +53,33 @@
       "positionFocus": "PG"
     },
     {
-      "team": "Tottenham Hotspur",
-      "gm": "Yaworski",
-      "positionFocus": "SG"
-    },
-    {
-      "team": "Valencia",
-      "gm": "Alley",
+      "team": "FL Fart",
+      "gm": "Bean Morn",
       "positionFocus": "PG"
     },
     {
-      "team": "Manchester City",
-      "gm": "Skillriky",
-      "positionFocus": "SF"
+      "team": "AFC Richmond",
+      "gm": "Ted Lasso",
+      "positionFocus": "SG"
+    },
+    {
+      "team": "Crystal Palace",
+      "gm": "Superbat",
+      "positionFocus": "C"
     },
     {
       "team": "Monaco",
       "gm": "omni2sweet",
+      "positionFocus": "SF"
+    },
+    {
+      "team": "Ajax",
+      "gm": "naix",
+      "positionFocus": "C"
+    },
+    {
+      "team": "Manchester City",
+      "gm": "Skillriky",
       "positionFocus": "SF"
     },
     {
@@ -108,14 +88,34 @@
       "positionFocus": "C"
     },
     {
-      "team": "Atletico Madrid",
-      "gm": "Young Wolf",
+      "team": "Tottenham Hotspur",
+      "gm": "Yaworski",
       "positionFocus": "SG"
+    },
+    {
+      "team": "Valencia",
+      "gm": "Jeremy R",
+      "positionFocus": "PG"
     },
     {
       "team": "Manchester United",
       "gm": "Cody",
       "positionFocus": "C"
+    },
+    {
+      "team": "Atletico Madrid",
+      "gm": "no gm",
+      "positionFocus": "SG"
+    },
+    {
+      "team": "Aston Villa",
+      "gm": "Plasma",
+      "positionFocus": "PG"
+    },
+    {
+      "team": "AC Sparta Praha",
+      "gm": "October",
+      "positionFocus": "SF"
     },
     {
       "team": "Marseille",

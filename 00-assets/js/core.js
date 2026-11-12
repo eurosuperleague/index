@@ -26,6 +26,7 @@
     unifiedStandings: toSitePath("00-assets/html/unified-standings.htm"),
     unifiedTeamLeaders: toSitePath("00-assets/html/unified-team-leaders.htm"),
     settings: toSitePath("00-assets/html/settings.htm"),
+    rules: toSitePath("00-assets/html/rules.html"),
     mainIndex: toSitePath("index.htm"),
     leagueDashboard: toSitePath("00-assets/html/league%20dashboard.htm"),
     leagueLogo: toSitePath("00-assets/images/ESLcropped-removebg-preview.png"),

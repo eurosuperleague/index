@@ -724,11 +724,11 @@
     {
       "prospectKey": "mariochalmers|31551|74",
       "name": "Mario Chalmers",
-      "season": "season-5",
-      "team": "AC Milan",
-      "publishedAt": "2026-08-17T01:21:53Z",
+      "season": "season-8",
+      "team": "Manchester City",
+      "publishedAt": "2026-11-12T00:49:39Z",
       "source": "commissioner-app",
-      "status": "reversed",
+      "status": "active",
       "awardId": "award-27831d2ddcff3078",
       "reversedAt": "2026-08-29T00:27:22Z",
       "reversalReason": "test roll"
@@ -2182,7 +2182,717 @@
       "source": "commissioner-app",
       "status": "active",
       "awardId": "award-91ede8da52ad1dab"
+    },
+    {
+      "prospectKey": "chrismills|25593|78",
+      "name": "Chris Mills",
+      "season": "season-8",
+      "team": "Brighton",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "marquisdaniels|29593|78",
+      "name": "Marquis Daniels",
+      "season": "season-8",
+      "team": "Brighton",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "blairrasmussen|22963|84",
+      "name": "Blair Rasmussen",
+      "season": "season-8",
+      "team": "Paris Saint-Germain",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "timperry|23897|81",
+      "name": "Tim Perry",
+      "season": "season-8",
+      "team": "Paris Saint-Germain",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "jamaalmagloire|28631|83",
+      "name": "Jamaal Magloire",
+      "season": "season-8",
+      "team": "Arsenal",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "boneshyland|36783|74",
+      "name": "Bones Hyland",
+      "season": "season-8",
+      "team": "Arsenal",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "raferalston|27965|74",
+      "name": "Rafer Alston",
+      "season": "season-8",
+      "team": "ACF Fiorentina",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "brooksthompson|25768|76",
+      "name": "Brooks Thompson",
+      "season": "season-8",
+      "team": "ACF Fiorentina",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "pjwashington|36030|79",
+      "name": "P.J. Washington",
+      "season": "season-8",
+      "team": "AC Milan",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "averybradley|33203|74",
+      "name": "Avery Bradley",
+      "season": "season-8",
+      "team": "AC Milan",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "andrewlang|24286|83",
+      "name": "Andrew Lang",
+      "season": "season-8",
+      "team": "Real Madrid",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "terrencejones|33612|81",
+      "name": "Terrence Jones",
+      "season": "season-8",
+      "team": "Real Madrid",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "sedalethreatt|22534|74",
+      "name": "Sedale Threatt",
+      "season": "season-8",
+      "team": "Barcelona",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "sabenlee|36334|74",
+      "name": "Saben Lee",
+      "season": "season-8",
+      "team": "Barcelona",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "dahntayjones|29582|78",
+      "name": "Dahntay Jones",
+      "season": "season-8",
+      "team": "Benfica",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "alexabrines|34547|78",
+      "name": "Alex Abrines",
+      "season": "season-8",
+      "team": "Benfica",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "bobsura|26748|77",
+      "name": "Bob Sura",
+      "season": "season-8",
+      "team": "Inter Milan",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "randywittman|21851|78",
+      "name": "Randy Wittman",
+      "season": "season-8",
+      "team": "Inter Milan",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "kevingamble|24059|78",
+      "name": "Kevin Gamble",
+      "season": "season-8",
+      "team": "Inter Milan",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "georgehill|31536|74",
+      "name": "George Hill",
+      "season": "season-8",
+      "team": "Chelsea",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "enniswhatley|22869|75",
+      "name": "Ennis Whatley",
+      "season": "season-8",
+      "team": "Chelsea",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "makurmaker|37199|83",
+      "name": "Makur Maker",
+      "season": "season-8",
+      "team": "Chelsea",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "bobanmarjanovic|32370|88",
+      "name": "Boban Marjanovic",
+      "season": "season-8",
+      "team": "FL Fart",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "isaiahwhitehead|35497|76",
+      "name": "Isaiah Whitehead",
+      "season": "season-8",
+      "team": "FL Fart",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "dikembemutombo|24283|86",
+      "name": "Dikembe Mutombo",
+      "season": "season-8",
+      "team": "FL Fart",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "davidwingate|23360|77",
+      "name": "David Wingate",
+      "season": "season-8",
+      "team": "AFC Richmond",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "kendricknunn|34914|74",
+      "name": "Kendrick Nunn",
+      "season": "season-8",
+      "team": "AFC Richmond",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "jamesrobinson|25811|74",
+      "name": "James Robinson",
+      "season": "season-8",
+      "team": "AFC Richmond",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "kwamebrown|30020|83",
+      "name": "Kwame Brown",
+      "season": "season-8",
+      "team": "Crystal Palace",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "clintcapela|34472|82",
+      "name": "Clint Capela",
+      "season": "season-8",
+      "team": "Crystal Palace",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "kennywilliams|25363|81",
+      "name": "Kenny Williams",
+      "season": "season-8",
+      "team": "Crystal Palace",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "omerasik|31597|84",
+      "name": "Omer Asik",
+      "season": "season-8",
+      "team": "Monaco",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "brianhoward|24764|78",
+      "name": "Brian Howard",
+      "season": "season-8",
+      "team": "Monaco",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "lorenzenwright|27702|83",
+      "name": "Lorenzen Wright",
+      "season": "season-8",
+      "team": "Monaco",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "evanfournier|33906|78",
+      "name": "Evan Fournier",
+      "season": "season-8",
+      "team": "Ajax",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "zeljkorebraca|26398|84",
+      "name": "Zeljko Rebraca",
+      "season": "season-8",
+      "team": "Ajax",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "brentbarry|26298|78",
+      "name": "Brent Barry",
+      "season": "season-8",
+      "team": "Ajax",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "jeffgreen|31652|81",
+      "name": "Jeff Green",
+      "season": "season-8",
+      "team": "Manchester City",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "tyresemaxey|37564|74",
+      "name": "Tyrese Maxey",
+      "season": "season-8",
+      "team": "Manchester City",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "tjford|30399|72",
+      "name": "T.J. Ford",
+      "season": "season-8",
+      "team": "Juventus",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "jahidiwhite|27809|81",
+      "name": "Jahidi White",
+      "season": "season-8",
+      "team": "Juventus",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "hotrodwilliams|22867|83",
+      "name": "Hot Rod Williams",
+      "season": "season-8",
+      "team": "Juventus",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "julesbernard|36546|79",
+      "name": "Jules Bernard",
+      "season": "season-8",
+      "team": "Juventus",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "reggiewilliams|23441|79",
+      "name": "Reggie Williams",
+      "season": "season-8",
+      "team": "Tottenham Hotspur",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "kylesingler|32267|80",
+      "name": "Kyle Singler",
+      "season": "season-8",
+      "team": "Tottenham Hotspur",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "gregbuckner|28019|76",
+      "name": "Greg Buckner",
+      "season": "season-8",
+      "team": "Tottenham Hotspur",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "chrispaul|31173|72",
+      "name": "Chris Paul",
+      "season": "season-8",
+      "team": "Tottenham Hotspur",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "bennedictmathurin|37061|78",
+      "name": "Bennedict Mathurin",
+      "season": "season-8",
+      "team": "Valencia",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "ebukaokorie|39182|73",
+      "name": "Ebuka Okorie",
+      "season": "season-8",
+      "team": "Valencia",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "lionelsimmons|25156|79",
+      "name": "Lionel Simmons",
+      "season": "season-8",
+      "team": "Valencia",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "dandickau|28749|72",
+      "name": "Dan Dickau",
+      "season": "season-8",
+      "team": "Valencia",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "wendallcarterjr|36266|82",
+      "name": "Wendall Carter Jr.",
+      "season": "season-8",
+      "team": "Manchester United",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "garretttemple|31540|78",
+      "name": "Garrett Temple",
+      "season": "season-8",
+      "team": "Manchester United",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "eldencampbell|25042|83",
+      "name": "Elden Campbell",
+      "season": "season-8",
+      "team": "Manchester United",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "trevorruffin|25837|73",
+      "name": "Trevor Ruffin",
+      "season": "season-8",
+      "team": "Manchester United",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "toddday|25575|78",
+      "name": "Todd Day",
+      "season": "season-8",
+      "team": "Atletico Madrid",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "labradfordsmith|25296|75",
+      "name": "LaBradford Smith",
+      "season": "season-8",
+      "team": "Atletico Madrid",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "quentingrimes|36654|77",
+      "name": "Quentin Grimes",
+      "season": "season-8",
+      "team": "Atletico Madrid",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "laronprofit|28342|77",
+      "name": "Laron Profit",
+      "season": "season-8",
+      "team": "Atletico Madrid",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "preciousachiuwa|36422|80",
+      "name": "Precious Achiuwa",
+      "season": "season-8",
+      "team": "Aston Villa",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "rumealrobinson|24424|74",
+      "name": "Rumeal Robinson",
+      "season": "season-8",
+      "team": "Aston Villa",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "ramonsessions|31513|75",
+      "name": "Ramon Sessions",
+      "season": "season-8",
+      "team": "Aston Villa",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "imeudoka|28346|78",
+      "name": "Ime Udoka",
+      "season": "season-8",
+      "team": "Aston Villa",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "ersanilyasova|31912|81",
+      "name": "Ersan Ilyasova",
+      "season": "season-8",
+      "team": "AC Sparta Praha",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "derekstrong|24877|80",
+      "name": "Derek Strong",
+      "season": "season-8",
+      "team": "AC Sparta Praha",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "jakelayman|35131|80",
+      "name": "Jake Layman",
+      "season": "season-8",
+      "team": "AC Sparta Praha",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "mettaworldpeace|29172|79",
+      "name": "Metta World Peace",
+      "season": "season-8",
+      "team": "AC Sparta Praha",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "mauriceevans|28802|77",
+      "name": "Maurice Evans",
+      "season": "season-8",
+      "team": "Marseille",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "speedyclaxton|28618|71",
+      "name": "Speedy Claxton",
+      "season": "season-8",
+      "team": "Marseille",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "chrisgatling|24718|82",
+      "name": "Chris Gatling",
+      "season": "season-8",
+      "team": "Marseille",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
+    },
+    {
+      "prospectKey": "dennisschroder|34227|73",
+      "name": "Dennis Schroder",
+      "season": "season-8",
+      "team": "Marseille",
+      "publishedAt": "2026-11-12T00:49:39Z",
+      "source": "commissioner-app",
+      "status": "active",
+      "awardId": ""
     }
   ],
-  "updatedAt": "2026-10-31T03:59:56Z"
+  "updatedAt": "2026-11-12T00:49:39Z"
 }

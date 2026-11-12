@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="European Superleague rules for salary caps, contracts, free agency, trades, youth intake, the Super Cup, and camps.">
+  <title>Rules | European Superleague</title>
+  <script src="../js/theme-preload.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/unified-components.css">
+  <link rel="stylesheet" href="../css/rules.css">
+  <script src="../js/core.js" defer></script>
+  <script src="../js/settings.js" defer></script>
+  <script src="../js/menu.js" defer></script>
+  <script src="../js/rules.js" defer></script>
+</head>
+<body class="ui-page rules-page">
+  <a class="rules-skip" href="#rulebook">Skip to rulebook</a>
+  <div class="rules-shell">
+    <header class="ui-identity-banner rules-hero" id="top">
+      <div>
+        <p class="ui-kicker">European Superleague · Admin</p>
+        <h1 class="ui-title">Rules</h1>
+        <p class="ui-subtitle">The league rulebook. Find a rule, check a contract, or jump to the section you need.</p>
+      </div>
+      <div class="rules-actions">
+        <a class="ui-button" href="../../index.htm" target="_top">League home</a>
+        <button class="ui-button" id="rulesPrint" type="button">Print rulebook</button>
+      </div>
+    </header>
+    <div class="rules-layout">
+      <aside class="rules-sidebar ui-panel" aria-label="Find a rule">
+        <label class="ui-label" for="rulesSearch">Search rules</label>
+        <div class="rules-search">
+          <input class="ui-input" id="rulesSearch" type="search" placeholder="e.g. Bird Rights" autocomplete="off" aria-controls="rulebook" aria-describedby="rulesStatus">
+          <button class="ui-button" id="rulesClear" type="button" hidden>Clear</button>
+        </div>
+        <p class="rules-search-status" id="rulesStatus" role="status" aria-live="polite">All 12 sections</p>
+        <details open>
+          <summary>Contents</summary>
+          <nav class="rules-toc" aria-label="Rulebook sections">
+<a href="#league-structure"><span>01</span>League Structure</a>
+<a href="#salary-cap-and-roster-compliance"><span>02</span>Salary Cap and Roster Compliance</a>
+<a href="#contracts"><span>03</span>Contracts</a>
+<a href="#free-agency-and-extensions"><span>04</span>Free Agency and Extensions</a>
+<a href="#cuts-and-trades"><span>05</span>Cuts and Trades</a>
+<a href="#youth-intake"><span>06</span>Youth Intake</a>
+<a href="#academy-bridge-contracts"><span>07</span>Academy Bridge Contracts</a>
+<a href="#promotion-and-relegation-draft"><span>08</span>Promotion and Relegation Draft</a>
+<a href="#super-cup"><span>09</span>Super Cup</a>
+<a href="#camps"><span>10</span>Camps</a>
+<a href="#media-camps"><span>11</span>Media Camps</a>
+<a href="#administration"><span>12</span>Administration</a>
+          </nav>
+        </details>
+      </aside>
+      <main class="rules-content" id="rulebook" tabindex="-1">
+        <div class="rules-intro ui-panel">
+<p>This rulebook covers league structure, contracts, transactions, youth intake, the Super Cup, and camps. It replaces earlier versions and amendments. GMs must follow all applicable requirements and meet the published deadlines.</p>
+<p><strong>CLB</strong> means Champions League, <strong>ELB</strong> means Europa League, and <strong>ECL</strong> means Conference League. <strong>FBB3</strong> is the league’s game engine. The <strong>index</strong> is the league’s published player pages and statistics.</p>
+        </div>
+        <p class="rules-empty ui-panel" id="rulesEmpty" hidden>No matching sections. Try a different term or clear the search.</p>
+<section class="rules-section ui-panel" id="league-structure" aria-labelledby="league-structure-title"><h2 id="league-structure-title"><span class="rules-number" aria-hidden="true">01</span>League Structure</h2>
+<p>The league contains 24 teams across three divisions.</p>
+<div class="rules-table-wrap" role="region" aria-label="League Structure" tabindex="0"><table>
+<thead><tr><th scope="col">Tier</th><th scope="col">Division</th><th scope="col">Hard salary cap</th></tr></thead><tbody>
+<tr><td>1</td><td>Champions League — CLB</td><td>$100,000,000</td></tr>
+<tr><td>2</td><td>Europa League — ELB</td><td>$70,000,000</td></tr>
+<tr><td>3</td><td>Conference League — ECL</td><td>$50,000,000</td></tr>
+</tbody></table></div>
+<p><strong>There is no salary floor.</strong></p>
+<p>Movement between divisions is determined by <strong>final regular-season standings</strong>:</p>
+<ul>
+<li>The bottom two CLB teams are relegated to ELB.</li>
+<li>The top two ELB teams are promoted to CLB.</li>
+<li>The bottom two ELB teams are relegated to ECL.</li>
+<li>The top two ECL teams are promoted to ELB.</li>
+<li>CLB teams cannot be promoted further. ECL teams are not relegated out of the league.</li>
+</ul>
+</section>
+<section class="rules-section ui-panel" id="salary-cap-and-roster-compliance" aria-labelledby="salary-cap-and-roster-compliance-title"><h2 id="salary-cap-and-roster-compliance-title"><span class="rules-number" aria-hidden="true">02</span>Salary Cap and Roster Compliance</h2>
+<h3>What counts toward the cap</h3>
+<p>A team’s cap total includes every rostered player’s salary for the current season and every dead-cap charge payable that season.</p>
+<p>Unsigned prospect rights carry <strong>no salary or roster charge</strong> until the player is officially activated.</p>
+<p>A player’s individual contract may legally increase above their original maximum starting salary. The team must still satisfy its total hard cap.</p>
+<h3>Offseason exceptions</h3>
+<p>Teams may temporarily exceed the hard cap during the offseason because of existing contracts, scheduled raises, relegation, intake activation, or promotion/relegation draft selections.</p>
+<p>For offseason signings:</p>
+<ul>
+<li>An outside free agent signing above minimum salary must fit entirely within available cap space.</li>
+<li>A team cannot use an outside signing above minimum salary to cross the hard cap.</li>
+<li><strong>Re-signing its own Bird-eligible player or signing a minimum-salary player may take a team over the cap.</strong></li>
+<li>These exceptions do not remove the obligation to become compliant before Sim 1.</li>
+</ul>
+<p>For ordinary trades:</p>
+<ul>
+<li>A team below the cap cannot make a trade that puts it above the cap.</li>
+<li>A team already above the cap during an authorized offseason grace period may trade only if the trade <strong>reduces its cap total</strong>.</li>
+<li>Every participating team must independently satisfy the applicable rule.</li>
+</ul>
+<h3>Compliance deadline</h3>
+<p>Teams must be under their division’s hard cap by the <strong>published roster deadline before Sim 1</strong>. This replaces the old Tier 3 Sim 2 allowance and the old RJ youth-player penalty.</p>
+<p>After that deadline, transactions that would create a cap violation are rejected.</p>
+<h3>Cap violation penalty</h3>
+<p>A team that misses the compliance deadline has its <strong>second-highest OVR player suspended</strong>.</p>
+<p>Player selection uses the roster and index OVR at the missed deadline:</p>
+<ol>
+<li>Rank by OVR, highest first.</li>
+<li>Break OVR ties by current-season salary, highest first.</li>
+<li>Resolve remaining ties through a commissioner-run random draw.</li>
+</ol>
+<p>The selected player remains the suspension target; ordinary rating changes do not trigger a new selection.</p>
+<p>During suspension:</p>
+<ul>
+<li>The player’s full salary counts toward the cap.</li>
+<li>The player occupies a roster place.</li>
+<li>The suspension continues until the team becomes compliant.</li>
+<li>The GM must notify the commissioner by DM or in the designated channel.</li>
+<li>Eligibility returns for the next sim only after commissioner verification before its roster deadline.</li>
+</ul>
+<p>If the suspended player is traded or cut, the original team’s next second-highest OVR player inherits the unresolved suspension. Moving the player does not cancel the team’s penalty.</p>
+<p>If an administrative error creates an in-season cap violation, the same suspension procedure applies until corrected.</p>
+<h3>Roster size</h3>
+<p>The normal roster requirement is <strong>8–15 players</strong>.</p>
+<p>Temporary offseason excess is permitted for free agency and intake activation, with compliance required by the Sim 1 roster deadline. Promotion/relegation draft selections also remain subject to that deadline.</p>
+<p>During the season, transactions must leave a legal roster. Linked cuts and acquisitions should be submitted together where needed.</p>
+</section>
+<section class="rules-section ui-panel" id="contracts" aria-labelledby="contracts-title"><h2 id="contracts-title"><span class="rules-number" aria-hidden="true">03</span>Contracts</h2>
+<h3>Contract length and annual raises</h3>
+<div class="rules-table-wrap" role="region" aria-label="Contract length and annual raises" tabindex="0"><table>
+<thead><tr><th scope="col">Eligibility when signed</th><th scope="col">Maximum length</th><th scope="col">Maximum annual raise</th></tr></thead><tbody>
+<tr><td>Without Bird Rights</td><td>4 total seasons</td><td>5%</td></tr>
+<tr><td>With Bird Rights</td><td>5 total seasons</td><td>7.5%</td></tr>
+</tbody></table></div>
+<p>Contracts may be flat or contain increases in <strong>0.5 percentage-point increments</strong>. Salary decreases are prohibited.</p>
+<p>Raises use a <strong>fixed dollar amount calculated from the first-year salary</strong>, rather than compounding. For example, a three-year contract starting at $10 million with a 5% annual raise pays $10 million, $10.5 million, and $11 million.</p>
+<p>FBB3’s accepted and displayed salary amounts are authoritative for rounding and minimum-salary compliance.</p>
+<p>All contracts have fixed annual salaries and guaranteed seasons, subject to the release and dead-cap rules. Team options, player options, bonuses, and non-guaranteed seasons are prohibited.</p>
+<h3>Bird Rights</h3>
+<p>A player qualifies when their <strong>in-game player page shows at least 3 Bird Years with the team offering the contract</strong>.</p>
+<ul>
+<li>Check eligibility when the contract is signed.</li>
+<li>Use the player page to determine eligibility after trades or contract expiry.</li>
+<li>Cutting a player resets their Bird service, including if the same team later re-signs them.</li>
+<li>A player cannot earn eligibility during an existing contract and use it to rewrite that contract.</li>
+</ul>
+<p>Bird Rights permit longer contracts, higher raises, and qualifying offseason re-signings above the cap. They do not exempt a team from the Sim 1 compliance deadline.</p>
+<h3>Maximum starting salaries</h3>
+<p>Experience is the value shown on the index when the contract is signed.</p>
+<p><strong>Multi-year contracts</strong></p>
+<div class="rules-table-wrap" role="region" aria-label="Maximum starting salaries" tabindex="0"><table>
+<thead><tr><th scope="col">Division</th><th scope="col">Fewer than 7 years of experience</th><th scope="col">7 or more years of experience</th></tr></thead><tbody>
+<tr><td>CLB</td><td>$25,000,000</td><td>$30,000,000</td></tr>
+<tr><td>ELB</td><td>$17,500,000</td><td>$21,000,000</td></tr>
+<tr><td>ECL</td><td>$12,500,000</td><td>$15,000,000</td></tr>
+</tbody></table></div>
+<p><strong>Ordinary one-year contracts</strong></p>
+<p>The starting salary cannot exceed the lower of the applicable tier/experience maximum above and <strong>$15 million without Bird Rights</strong>, or <strong>$20 million with Bird Rights</strong>.</p>
+<p>The academy bridge contract is a specific exception to the ordinary one-year limits.</p>
+<p>These limits apply to <strong>starting salary only</strong>. Permitted raises may take later salaries above that starting maximum.</p>
+<h3>Minimum salaries</h3>
+<div class="rules-table-wrap" role="region" aria-label="Minimum salaries" tabindex="0"><table>
+<thead><tr><th scope="col">Experience</th><th scope="col">CLB</th><th scope="col">ELB</th><th scope="col">ECL</th></tr></thead><tbody>
+<tr><td>0 years</td><td>$760,000</td><td>$532,000</td><td>$380,000</td></tr>
+<tr><td>1 year</td><td>$1,110,000</td><td>$777,000</td><td>$555,000</td></tr>
+<tr><td>2 years</td><td>$1,290,000</td><td>$903,000</td><td>$645,000</td></tr>
+<tr><td>3 years</td><td>$1,350,000</td><td>$945,000</td><td>$675,000</td></tr>
+<tr><td>4 years</td><td>$1,410,000</td><td>$987,000</td><td>$705,000</td></tr>
+<tr><td>5 years</td><td>$1,550,000</td><td>$1,085,000</td><td>$775,000</td></tr>
+<tr><td>6 years</td><td>$1,710,000</td><td>$1,197,000</td><td>$855,000</td></tr>
+<tr><td>7 years</td><td>$1,850,000</td><td>$1,295,000</td><td>$925,000</td></tr>
+<tr><td>8 years</td><td>$2,000,000</td><td>$1,400,000</td><td>$1,000,000</td></tr>
+<tr><td>9 years</td><td>$2,300,000</td><td>$1,610,000</td><td>$1,150,000</td></tr>
+<tr><td>10 or more years</td><td>$2,380,000</td><td>$1,666,000</td><td>$1,190,000</td></tr>
+</tbody></table></div>
+<p>FBB3 enforces minimum salaries. A contract accepted by the game satisfies that requirement; GMs do not manually recalculate existing contracts each season. Promotion, relegation, and trades do not independently rewrite an existing contract.</p>
+</section>
+<section class="rules-section ui-panel" id="free-agency-and-extensions" aria-labelledby="free-agency-and-extensions-title"><h2 id="free-agency-and-extensions-title"><span class="rules-number" aria-hidden="true">04</span>Free Agency and Extensions</h2>
+<h3>Offseason free agency</h3>
+<div class="rules-table-wrap" role="region" aria-label="Offseason free agency" tabindex="0"><table>
+<thead><tr><th scope="col">Round</th><th scope="col">Simulated days</th><th scope="col">Bid allowance</th></tr></thead><tbody>
+<tr><td>Round 1</td><td>1–4</td><td>3, plus bids on the team’s own Bird-eligible players</td></tr>
+<tr><td>Round 2</td><td>5–11</td><td>10 total</td></tr>
+<tr><td>Round 3 and preseason</td><td>12–30</td><td>10 total</td></tr>
+</tbody></table></div>
+<p>The commissioner may announce different dates or allowances for a season.</p>
+<p>The Bird bid exemption applies <strong>only in Round 1</strong>. In later rounds, those bids count toward the normal allowance. A new bid on the same player in a later round uses another bid slot.</p>
+<h3>Submitting bids</h3>
+<p>Send bids by DM to the commissioner using:</p>
+<p><strong>Player Name — Starting Salary — Annual Increase % — Total Years</strong></p>
+<p>Submissions must:</p>
+<ul>
+<li>List players alphabetically.</li>
+<li>Number every bid.</li>
+<li>Include only one active offer per player.</li>
+<li>Follow the contract rules and applicable cap restrictions.</li>
+</ul>
+<p>Before the deadline, the latest <strong>complete submission replaces the entire previous submission</strong>.</p>
+<p>Teams may submit offers that would not all fit simultaneously. FBB3 determines which legal offers can succeed and which offers players accept.</p>
+<h3>Invalid and late bids</h3>
+<ul>
+<li>An illegal salary, raise, or contract length invalidates that bid. It may be corrected only before the deadline.</li>
+<li>A late submission may be accepted if processing has not started, under the same policy for every team.</li>
+<li>Alphabetical, numbering, or bid-count errors are returned for correction; the commissioner may allow those corrections after the deadline.</li>
+</ul>
+<p>A formatting correction does not independently permit a late change to an illegal contract’s financial terms.</p>
+<h3>In season free agents</h3>
+<p>Ordinary in-season signings are limited to <strong>one-year minimum contracts</strong> for the team’s tier and the player’s experience.</p>
+<p>The first valid request received in the designated public channel gets the player. A request that violates cap, roster, or return restrictions is not valid.</p>
+<p>During the offseason, ordinary signings are permitted only during free-agency sims.</p>
+<h3>In season extensions</h3>
+<p>After Sim 1, the commissioner may post extension requests from expiring players.</p>
+<ul>
+<li>Only the player’s exact posted terms may be offered. Counteroffers are prohibited.</li>
+<li>Posted terms must satisfy normal salary, length, raise, and eligibility rules.</li>
+<li>If the player is traded, the new team may offer the original requested terms, provided they remain legal for that team.</li>
+<li>FBB3 determines acceptance when the offer is processed.</li>
+<li>Accepted extensions cannot be withdrawn.</li>
+<li>Responses are due by the published season-end deadline.</li>
+<li>An extension begins the following season, after the existing contract expires.</li>
+</ul>
+<p>Waiting may reduce the chance of acceptance.</p>
+</section>
+<section class="rules-section ui-panel" id="cuts-and-trades" aria-labelledby="cuts-and-trades-title"><h2 id="cuts-and-trades-title"><span class="rules-number" aria-hidden="true">05</span>Cuts and Trades</h2>
+<h3>Free cuts</h3>
+<p>A player may be released without dead cap if either condition applies:</p>
+<ul>
+<li>Their salary is at or below the minimum for the releasing team’s tier and the player’s experience.</li>
+<li>They remain on their <strong>original youth-intake contract</strong>, including after a trade.</li>
+</ul>
+<p>A renewed contract, bridge contract, or later free-agent contract is not the original intake contract. There is no separate second-round-pick exemption.</p>
+<h3>Other cuts</h3>
+<p>All other releases create dead cap equal to <strong>50% of each remaining contract year’s salary</strong>, charged in that original season.</p>
+<p>Example: releasing a player with $8 million this season and $10 million next season creates $4 million dead cap this season and $5 million next season.</p>
+<p>The released player leaves the roster. The applicable dead-cap charge replaces their active salary obligation for cap accounting.</p>
+<h3>Trade requirements</h3>
+<p>All trades must be posted in <strong>#pending-trades</strong> and accepted by every participating GM. Posting the proposal counts as acceptance by its author.</p>
+<ul>
+<li>Maximum four teams per trade.</li>
+<li>Identify every player, prospect-rights slot, and condition.</li>
+<li>Every team must satisfy the applicable cap and roster rules.</li>
+<li>Players transfer with their existing contracts.</li>
+<li>Future youth-intake rights cannot be traded.</li>
+<li>Changing any term requires fresh acceptance from every team.</li>
+</ul>
+<p>A trade becomes binding when all participating GMs accept it. Cancellation afterward requires commissioner approval for an error or invalidity.</p>
+<h3>Return restrictions</h3>
+<p>Timers begin when the relevant transaction is <strong>processed</strong>, using real elapsed time.</p>
+<ul>
+<li>A cut player cannot re-sign with the cutting team for 24 hours.</li>
+<li>A traded player cannot be traded back to the original team for 24 hours.</li>
+<li>A player cut to facilitate a trade cannot re-sign with the cutting team for 24 hours.</li>
+<li>A player traded and then cut cannot return to the original team until <strong>both</strong> 24 hours have passed and the next league sim has been processed.</li>
+</ul>
+<p>Where multiple restrictions apply, the player must satisfy all of them.</p>
+</section>
+<section class="rules-section ui-panel" id="youth-intake" aria-labelledby="youth-intake-title"><h2 id="youth-intake-title"><span class="rules-number" aria-hidden="true">06</span>Youth Intake</h2>
+<h3>Allocation</h3>
+<p>The originating franchise’s division for that intake class determines its allocation.</p>
+<div class="rules-table-wrap" role="region" aria-label="Allocation" tabindex="0"><table>
+<thead><tr><th scope="col">Division</th><th scope="col">Guaranteed prospects</th><th scope="col">Additional wildcards</th></tr></thead><tbody>
+<tr><td>CLB</td><td>1 B and 1 C</td><td>None</td></tr>
+<tr><td>ELB</td><td>1 B and 1 C</td><td>One draw: 25% A, 25% B, 50% D</td></tr>
+<tr><td>ECL</td><td>1 B and 1 C</td><td>One 50/50 B-or-D draw, plus one independent 50/50 A-or-D draw</td></tr>
+</tbody></table></div>
+<p>The ECL draws are independent. Receiving two D-grade wildcards is possible.</p>
+<h3>Revelation and activation</h3>
+<p>An intake class is normally revealed around Sim 1. That class is officially added to rosters during the <strong>common offseason turnaround after the entire Super Cup knockout tournament ends</strong>.</p>
+<ul>
+<li>Revelation alone does not create salary or roster charges.</li>
+<li>Charges begin at official roster activation.</li>
+<li>Every incoming player must first be activated; teams may then use the normal free-cut exemption.</li>
+<li>Teams have the offseason to make room and must comply by the following Sim 1 roster deadline.</li>
+</ul>
+<p>The commissioner announces the processing dates.</p>
+<h3>Intake contracts</h3>
+<p>Guaranteed B prospects receive a <strong>four-year, first-round-equivalent rookie contract</strong>. Guaranteed C prospects receive a <strong>two-year, second-round-equivalent rookie contract</strong>.</p>
+<p>These are salary formulas, not actual draft selections. The assigned FBB3 draft slot determines the applicable rookie scale.</p>
+<div class="rules-table-wrap" role="region" aria-label="Intake contracts" tabindex="0"><table>
+<thead><tr><th scope="col">Originating division</th><th scope="col">A wildcard</th><th scope="col">B wildcard</th><th scope="col">D wildcard</th></tr></thead><tbody>
+<tr><td>ELB</td><td>$10m/year for 4 years</td><td>$5m/year for 4 years</td><td>1-year minimum</td></tr>
+<tr><td>ECL</td><td>$7.5m/year for 4 years</td><td>$3.75m/year for 4 years</td><td>1-year minimum</td></tr>
+</tbody></table></div>
+<p>A- and B-grade wildcard salaries are flat across all four seasons.</p>
+<p>Intake terms remain tied to the originating franchise, including the tier used for a D-grade minimum. Trading rights does not regenerate or reprice the prospect.</p>
+<p>Fixed intake contracts remain valid after a rights trade even if they exceed the receiving tier’s ordinary individual starting-salary maximum. Team hard-cap obligations still apply.</p>
+<h3>Academy Position Focus</h3>
+<p>Each franchise selects PG, SG, SF, PF, or C. Each prospect independently receives:</p>
+<ul>
+<li>A <strong>40% chance</strong> of matching that primary position.</li>
+<li>A <strong>60% chance</strong> of a random archetype from the other four primary positions.</li>
+</ul>
+<p>Focus changes playing identity, not prospect grade or quality.</p>
+<p>A selection is locked for <strong>three full intake classes</strong>. A new GM receives one immediate reset; that selection then begins a new three-class lock.</p>
+<h3>Trading intake rights</h3>
+<p>The rights-trading window opens after the final relevant free-agency sim and closes at roster activation. It includes the intervening season.</p>
+<ul>
+<li>Revealed but unactivated rights may be traded.</li>
+<li>Identify the exact slot: guaranteed B, guaranteed C, B/D wildcard, A/D wildcard, or another specifically awarded slot.</li>
+<li>Before activation, rights carry no salary or roster charge.</li>
+<li>After activation, the player is traded normally with their contract.</li>
+<li>Future intake classes cannot be traded.</li>
+<li>Rights cannot be traded before their permitted window opens.</li>
+</ul>
+</section>
+<section class="rules-section ui-panel" id="academy-bridge-contracts" aria-labelledby="academy-bridge-contracts-title"><h2 id="academy-bridge-contracts-title"><span class="rules-number" aria-hidden="true">07</span>Academy Bridge Contracts</h2>
+<p>A team in ELB or ECL may give its own academy player a <strong>one-year max bridge contract when the original intake contract expires</strong>.</p>
+<ul>
+<li>All intake grades qualify.</li>
+<li>The player must have been generated through that franchise’s academy.</li>
+<li>A player traded away and later reacquired can qualify.</li>
+<li>Each player may receive <strong>only one bridge contract in their career</strong>.</li>
+<li>The salary is the applicable tier/experience maximum, overriding ordinary one-year salary limits.</li>
+<li>Normal team-cap rules still apply; a bridge contract is not an additional over-cap exception.</li>
+</ul>
+<p>At the end of the bridge year, the player enters ordinary free agency <strong>whether or not the team wins promotion</strong>.</p>
+<p>The team may bid to re-sign them. There is no automatic retention right and no special ban on re-signing.</p>
+</section>
+<section class="rules-section ui-panel" id="promotion-and-relegation-draft" aria-labelledby="promotion-and-relegation-draft-title"><h2 id="promotion-and-relegation-draft-title"><span class="rules-number" aria-hidden="true">08</span>Promotion and Relegation Draft</h2>
+<p>There are two separate draft pools:</p>
+<ul>
+<li>Teams promoted from ELB draft from teams relegated from CLB.</li>
+<li>Teams promoted from ECL draft from teams relegated from ELB.</li>
+</ul>
+<h3>Protection</h3>
+<p>Each relegated team protects three players by the published deadline.</p>
+<ul>
+<li>All other rostered players enter the relevant pool.</li>
+<li>Youth-intake players are included.</li>
+<li>Unactivated prospect rights are not rostered players.</li>
+<li>If a team misses the deadline, automatically protect its top three players by OVR, breaking ties by salary. The commissioner resolves any remaining tie.</li>
+</ul>
+<h3>Selections</h3>
+<p>The higher-finishing promoted team is <strong>A</strong>; the other is <strong>B</strong>. The order is <strong>A → B → A → B</strong>.</p>
+<p>Each promoted team may select up to two players. A relegated team may lose any number of its unprotected players through valid selections.</p>
+<p>Selected players transfer with their full existing contracts:</p>
+<ul>
+<li>No automatic salary reduction.</li>
+<li>No salary retention by the relegated team.</li>
+<li>Offseason cap excess is permitted.</li>
+<li>The receiving team must restore compliance by the Sim 1 deadline.</li>
+</ul>
+</section>
+<section class="rules-section ui-panel" id="super-cup" aria-labelledby="super-cup-title"><h2 id="super-cup-title"><span class="rules-number" aria-hidden="true">09</span>Super Cup</h2>
+<p>All 24 teams participate, regardless of division.</p>
+<h3>Format</h3>
+<ul>
+<li>One 24-team group-stage table.</li>
+<li>Eight group-stage games per team.</li>
+<li>Top 16 qualify using FBB3 standings and tiebreakers.</li>
+<li>Knockouts are single elimination.</li>
+<li>Initial matchups are 1 vs 16, 2 vs 15, and so on.</li>
+<li>The bracket stays fixed; there is no reseeding.</li>
+</ul>
+<h3>Starting lineup</h3>
+<p>Submit a separate Super Cup depth chart. For <strong>every Super Cup game</strong>, the starting five must contain either:</p>
+<ul>
+<li><strong>At least two homegrown players</strong>, or</li>
+<li><strong>At least two qualifying bench players</strong>.</li>
+</ul>
+<p>Teams may use whichever route they satisfy for that game.</p>
+<p>All five starters must have <strong>at least 24 assigned depth-chart minutes</strong>. Actual minutes may fall below that because of game events.</p>
+<h3>Homegrown status</h3>
+<p>A player is permanently homegrown for the franchise whose intake slot generated them and the franchise that first activates them, if their rights were acquired before activation.</p>
+<p>Leaving a franchise does not erase that status if the player later returns. An ordinary post-activation trade does not give the acquiring franchise homegrown status.</p>
+<h3>Bench player eligibility</h3>
+<p>Eligibility is fixed after Sim 5 using league regular-season games only. Calculate:</p>
+<p><strong>Total league starts ÷ total league games the player’s teams played while the player was on those rosters</strong></p>
+<ul>
+<li>The result must be <strong>strictly below 50%</strong>.</li>
+<li>Exactly 50% does not qualify.</li>
+<li>Zero-appearance players qualify.</li>
+<li>Preseason and Super Cup games are excluded.</li>
+<li>Later starts or trades do not change the locked eligibility.</li>
+</ul>
+<h3>Errors and unavailable players</h3>
+<p>Illegal depth charts are returned for correction before the deadline. An uncorrected violation forfeits the affected game.</p>
+<p>Injuries, suspensions, or roster errors do not create an automatic exemption. Fix roster shortages through a legal free-agent signing or another permitted transaction. The resulting lineup must still meet eligibility requirements.</p>
+<h3>Winner prize</h3>
+<p>The winner receives an additional B-grade prospect alongside the ordinary intake. The bonus prospect follows ordinary intake generation and activation procedures and receives a flat four-year contract.</p>
+<div class="rules-table-wrap" role="region" aria-label="Winner prize" tabindex="0"><table>
+<thead><tr><th scope="col">Winner division</th><th scope="col">Annual salary</th><th scope="col">Contract length</th></tr></thead><tbody>
+<tr><td>CLB</td><td>$5,000,000</td><td>4 years</td></tr>
+<tr><td>ELB</td><td>$5,000,000</td><td>4 years</td></tr>
+<tr><td>ECL</td><td>$3,750,000</td><td>4 years</td></tr>
+</tbody></table></div>
+<p>The award does not create a hard-cap exemption.</p>
+</section>
+<section class="rules-section ui-panel" id="camps" aria-labelledby="camps-title"><h2 id="camps-title"><span class="rules-number" aria-hidden="true">10</span>Camps</h2>
+<h3>Team allocation</h3>
+<p>Each team receives the following allocation per season.</p>
+<div class="rules-table-wrap" role="region" aria-label="Team allocation" tabindex="0"><table>
+<thead><tr><th scope="col">Camp allocation</th><th scope="col">Uses</th></tr></thead><tbody>
+<tr><td>Regular</td><td>3</td></tr>
+<tr><td>Tendency</td><td>2</td></tr>
+<tr><td>Development</td><td>2</td></tr>
+<tr><td>Injury — choose Rehab or Painkillers</td><td>1</td></tr>
+</tbody></table></div>
+<p>Allocated camps expire at season end. Earned Media Camps carry over. Camp uses cannot be traded or given away.</p>
+<h3>Player limits</h3>
+<p>Each player may receive:</p>
+<ul>
+<li>At most <strong>two different non-injury camps per season</strong>.</li>
+<li>At most one use of each camp type per season.</li>
+<li>At most one injury-related camp per season.</li>
+<li>At most three Regular Camps over their career.</li>
+<li>At most one Rehab Camp over their career.</li>
+</ul>
+<p>Media counts toward the two-camp limit. Rehab and Painkillers do not. All seasonal usage and career limits follow the player through trades and other team changes.</p>
+<h3>Submission and rating limits</h3>
+<p>Camps may be submitted during the season before the next sim’s roster deadline.</p>
+<ul>
+<li>Use whole rating points.</li>
+<li>Stay within FBB3’s valid rating ranges.</li>
+<li>Regular and Development allocations must spend the full available budget in one submission.</li>
+<li>An allocation exceeding a rating maximum is rejected for correction before the deadline.</li>
+<li>Only published camp-eligible skills, the specified physical attributes, and the listed tendencies may be edited.</li>
+<li>Camps cannot directly edit potential, personality, or OVR.</li>
+</ul>
+<p>For these rules, physical attributes are <strong>Quickness, Strength, Jumping, and Stamina</strong>.</p>
+<h3>Regular Camp</h3>
+<ul>
+<li>Any age.</li>
+<li>Allocate <strong>10 points</strong> across eligible attributes.</li>
+<li>At most <strong>5 total points</strong> may go to physical attributes.</li>
+</ul>
+<h3>Development Camp</h3>
+<ul>
+<li>Index age must be <strong>24 or younger when applied</strong>.</li>
+<li>Skills only; no physical attributes.</li>
+<li>Use index potential colour when applied.</li>
+</ul>
+<div class="rules-table-wrap" role="region" aria-label="Development Camp" tabindex="0"><table>
+<thead><tr><th scope="col">Potential</th><th scope="col">Points</th></tr></thead><tbody>
+<tr><td>Green</td><td>4</td></tr>
+<tr><td>Yellow</td><td>8</td></tr>
+<tr><td>Orange</td><td>10</td></tr>
+</tbody></table></div>
+<p>Other potential colours are ineligible.</p>
+<h3>Tendency Camp</h3>
+<p>A shared <strong>10-point absolute-change budget</strong> may be allocated across <strong>3PT Usage, Fouling, and Injury Avoidance</strong>.</p>
+<p>Count increases and decreases without their signs. For example, +6 and −4 spend all 10 points; they do not offset each other.</p>
+<h3>Rehab Camp</h3>
+<ul>
+<li>Player must still be injured when applied.</li>
+<li>Restore only documented rating losses from the current injury.</li>
+<li>Do not restore unrelated development losses or older injuries.</li>
+<li>Once per player’s career.</li>
+</ul>
+<h3>Painkillers Camp</h3>
+<p>Halve remaining recovery time, rounding up. For example, five remaining days becomes three. The player must be injured when applied.</p>
+<h3>Injury Avoidance cost</h3>
+<p>Both Rehab and Painkillers impose a <strong>10-point Injury Avoidance deduction per application</strong>. Rehab cannot refund that deduction.</p>
+</section>
+<section class="rules-section ui-panel" id="media-camps" aria-labelledby="media-camps-title"><h2 id="media-camps-title"><span class="rules-number" aria-hidden="true">11</span>Media Camps</h2>
+<p>Each Media Camp gives <strong>+3 to one eligible skill</strong>.</p>
+<ul>
+<li>Available at any age.</li>
+<li>One Media Camp per player per season.</li>
+<li>Counts toward the player’s two non-injury camps.</li>
+<li>Cannot be spent on physical attributes.</li>
+<li>Unused earned Media Camps carry over but cannot be transferred between teams.</li>
+</ul>
+<h3>Articles</h3>
+<p>Earn one camp per <strong>complete 250 original words in each article</strong>. For example, 249 words earns no camps, 500 words earns two, and 750 words earns three.</p>
+<p>Original titles and captions count. Copied material, quotations, and repeated filler do not. Leftover words do not carry between articles.</p>
+<h3>Podcasts</h3>
+<p>Earn one camp per <strong>complete 10 minutes of original league discussion</strong>.</p>
+<h3>Joint contributions</h3>
+<p>A contribution earns one total reward, divided among contributors’ teams by agreement. It does not earn the full reward separately for every contributor.</p>
+<h3>AI policy</h3>
+<p>Brainstorming, proofreading, and verbatim transcription are allowed. AI-generated final article writing, final podcast speech, or other submitted final content is prohibited.</p>
+<h3>Crediting and review</h3>
+<p>Rewards become available immediately upon publication, subject to commissioner review. The commissioner may remove invalid rewards and correct resulting boosts or other benefits.</p>
+</section>
+<section class="rules-section ui-panel" id="administration" aria-labelledby="administration-title"><h2 id="administration-title"><span class="rules-number" aria-hidden="true">12</span>Administration</h2>
+<p>GMs are responsible for checking their cap total, roster, submissions, player eligibility, camp usage, and deadlines.</p>
+<p>The commissioner has final authority over cases not covered by the written rules, administrative errors, disputed eligibility, immediate amendments, corrective action, and penalties.</p>
+<p>A legal contract, valid camp, or accepted trade does not waive another applicable rule. Where several restrictions apply, all must be satisfied unless an explicit exception says otherwise.</p>
+</section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
