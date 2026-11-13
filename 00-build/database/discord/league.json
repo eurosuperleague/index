@@ -6,21 +6,21 @@
       "title": "CLB Standings",
       "teams": [
         {
-          "name": "Brighton",
-          "wins": 7,
-          "losses": 0,
-          "streak": "W7"
+          "name": "Paris Saint-Germain",
+          "wins": 12,
+          "losses": 4,
+          "streak": "L1"
         },
         {
-          "name": "Paris Saint-Germain",
-          "wins": 7,
-          "losses": 1,
-          "streak": "W6"
+          "name": "Brighton",
+          "wins": 11,
+          "losses": 4,
+          "streak": "L2"
         },
         {
           "name": "Arsenal",
-          "wins": 7,
-          "losses": 2,
+          "wins": 12,
+          "losses": 5,
           "streak": "W1"
         }
       ]
@@ -29,22 +29,22 @@
       "title": "ELB Standings",
       "teams": [
         {
-          "name": "Inter Milan",
-          "wins": 6,
-          "losses": 1,
-          "streak": "W6"
-        },
-        {
           "name": "Chelsea",
-          "wins": 6,
-          "losses": 1,
-          "streak": "W5"
+          "wins": 12,
+          "losses": 3,
+          "streak": "W1"
         },
         {
           "name": "FL Fart",
-          "wins": 5,
-          "losses": 3,
-          "streak": "W2"
+          "wins": 9,
+          "losses": 5,
+          "streak": "L1"
+        },
+        {
+          "name": "Inter Milan",
+          "wins": 10,
+          "losses": 7,
+          "streak": "L1"
         }
       ]
     },
@@ -52,22 +52,22 @@
       "title": "ECL Standings",
       "teams": [
         {
-          "name": "Juventus",
-          "wins": 5,
-          "losses": 2,
-          "streak": "W2"
+          "name": "Valencia",
+          "wins": 10,
+          "losses": 3,
+          "streak": "L1"
         },
         {
           "name": "Tottenham Hotspur",
-          "wins": 6,
-          "losses": 3,
-          "streak": "W2"
+          "wins": 11,
+          "losses": 5,
+          "streak": "W4"
         },
         {
-          "name": "Valencia",
-          "wins": 4,
-          "losses": 2,
-          "streak": "W1"
+          "name": "Aston Villa",
+          "wins": 8,
+          "losses": 6,
+          "streak": "W3"
         }
       ]
     }
@@ -77,13 +77,13 @@
       "category": "Minutes",
       "player": "Bill Cartwright",
       "team": "AC Milan",
-      "value": "41.9"
+      "value": "42.3"
     },
     {
       "category": "Points",
       "player": "Kiki Vandeweghe",
       "team": "Brighton",
-      "value": "39.9"
+      "value": "35.7"
     },
     {
       "category": "Rebounds",
@@ -95,13 +95,13 @@
       "category": "Assists",
       "player": "Brad Davis",
       "team": "Paris Saint-Germain",
-      "value": "10.3"
+      "value": "10.8"
     },
     {
       "category": "Steals",
-      "player": "Michael Adams",
+      "player": "Dan Majerle",
       "team": "AC Milan",
-      "value": "3.3"
+      "value": "2.9"
     }
   ]
 }
