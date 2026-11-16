@@ -486,19 +486,25 @@
     return isBird ? MAX_YEARS_BIRD : MAX_YEARS_NO_BIRD;
   }
 
-  function maxStartingSalary(isBird, years) {
-    if (numberValue(years) > 1) return MAX_SALARY_MULTI_YEAR;
-    return isBird ? MAX_SALARY_ONE_YEAR_BIRD : MAX_SALARY_ONE_YEAR_NO_BIRD;
+  function maxStartingSalary(isBird, years, tierLimit) {
+    var maximum = tierLimit ? tierLimit.maxSalary : null;
+    if (numberValue(years) > 1) return maximum;
+    var oneYear = isBird ? MAX_SALARY_ONE_YEAR_BIRD : MAX_SALARY_ONE_YEAR_NO_BIRD;
+    return maximum == null ? oneYear : Math.min(maximum, oneYear);
   }
 
-  function tierSalaryLimitFromEntry(entry) {
+  function tierSalaryLimitFromEntry(entry, player) {
     var title = normalizeName(entry && entry.tierTitle);
+    var experience = clean(player && enrichedPlayer(player).experience);
+    if (!experience) return null;
+    var veteran = numberValue(experience.replace(/[^0-9.]/g, "")) >= 7;
     if (title.indexOf("europaleague") >= 0) {
-      return { label: "T2", maxSalary: MAX_SALARY_TIER_2 };
+      return { label: "T2", maxSalary: veteran ? 21000000 : MAX_SALARY_TIER_2 };
     }
     if (title.indexOf("conferenceleague") >= 0) {
-      return { label: "T3", maxSalary: MAX_SALARY_TIER_3 };
+      return { label: "T3", maxSalary: veteran ? 15000000 : MAX_SALARY_TIER_3 };
     }
+    if (title.indexOf("championsleague") >= 0) return { label: "T1", maxSalary: veteran ? 30000000 : MAX_SALARY_MULTI_YEAR };
     return null;
   }
 
@@ -534,8 +540,9 @@
   }
 
   function normalBids() {
+    var round = ROUNDS[state.selectedRound] || ROUNDS.round1;
     return state.bids.filter(function (bid) {
-      return !bid.bird;
+      return !round.birdUnlimited || !bid.bird || !isBirdEligible(playerByFile(bid.file));
     });
   }
 
@@ -544,7 +551,6 @@
     var round = ROUNDS[state.selectedRound] || ROUNDS.round1;
     var capEntry = selectedTeamCapEntry();
     var hardCap = hardCapFromEntry(capEntry);
-    var tierSalaryLimit = tierSalaryLimitFromEntry(capEntry);
     var seen = {};
     var names = state.bids.map(function (bid) {
       return clean(bid.name);
@@ -561,7 +567,8 @@
       var years = numberValue(bid.years);
       var maxYears = maxYearsForBird(bid.bird);
       var maxRaise = maxRaiseForBird(bid.bird);
-      var maxSalary = maxStartingSalary(bid.bird, years);
+      var tierSalaryLimit = tierSalaryLimitFromEntry(capEntry, player);
+      var maxSalary = maxStartingSalary(bid.bird, years, tierSalaryLimit);
       var projectedSalary = capEntry && salary != null ? Number(capEntry.salary || 0) + salary : null;
 
       if (seen[key]) {
@@ -586,7 +593,7 @@
       if (raise != null && Math.round(raise * 2) !== raise * 2) {
         warnings.push({ type: "bad", title: "Annual raise", text: bid.name + " must use 0.5% intervals." });
       }
-      if (salary != null && salary > maxSalary) {
+      if (salary != null && maxSalary != null && salary > maxSalary) {
         warnings.push({ type: "bad", title: "Starting salary", text: bid.name + " exceeds the " + formatSalaryForCopy(maxSalary) + " starting salary maximum." });
       }
       if (salary != null && tierSalaryLimit && salary > tierSalaryLimit.maxSalary) {
@@ -596,7 +603,7 @@
           text: bid.name + " exceeds the " + tierSalaryLimit.label + " maximum salary of " + formatSalaryForCopy(tierSalaryLimit.maxSalary) + "."
         });
       }
-      if (capEntry && salary != null && hardCap != null && projectedSalary > hardCap) {
+      if (capEntry && salary != null && hardCap != null && projectedSalary > hardCap && !(bid.bird && isBirdEligible(player))) {
         warnings.push({
           type: "bad",
           title: "Hard cap",

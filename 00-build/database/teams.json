@@ -260,7 +260,7 @@
             "name": "Anthony Black",
             "url": "../players/player351.htm",
             "pos": "SF",
-            "age": "22",
+            "age": "23",
             "overall": "130",
             "potential": "144"
         }
@@ -285,10 +285,10 @@
         "file": "roster21.htm",
         "url": "../rosters/roster21.htm",
         "starPlayer": {
-            "name": "Larry Bird",
-            "url": "../players/player697.htm",
-            "pos": "PF",
-            "age": "29",
+            "name": "Brad Davis",
+            "url": "../players/player714.htm",
+            "pos": "PG",
+            "age": "30",
             "overall": "155",
             "potential": "155"
         }
@@ -330,7 +330,7 @@
             "name": "Rod Higgins",
             "url": "../players/player103.htm",
             "pos": "SF",
-            "age": "23",
+            "age": "24",
             "overall": "121",
             "potential": "132"
         }

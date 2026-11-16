@@ -423,6 +423,7 @@
       {
         title: "Admin",
         links: [
+          { label: "New GM Tour", href: core.paths.gmTour },
           { label: "Rules", href: core.paths.rules },
           { label: "Settings", href: core.paths.settings },
           { label: "Human Coaches", href: "humancoaches.htm" }

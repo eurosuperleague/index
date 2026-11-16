@@ -27,6 +27,7 @@
     unifiedTeamLeaders: toSitePath("00-assets/html/unified-team-leaders.htm"),
     settings: toSitePath("00-assets/html/settings.htm"),
     rules: toSitePath("00-assets/html/rules.html"),
+    gmTour: toSitePath("00-assets/html/gm-tour.htm"),
     mainIndex: toSitePath("index.htm"),
     leagueDashboard: toSitePath("00-assets/html/league%20dashboard.htm"),
     leagueLogo: toSitePath("00-assets/images/ESLcropped-removebg-preview.png"),
@@ -527,4 +528,11 @@
     enrichPlayers: enrichPlayers,
     renderResults: renderResults
   };
+  // Load on custom shells as well as export pages enhanced by inject_css_js.py.
+  // The tour stays dormant until started and does not touch tool draft storage.
+  if (!usesSuperCupPlayerPages() && !/\/00-assets\/html\/history\//i.test(window.location.pathname)) {
+    var tourScript = document.createElement("script");
+    tourScript.src = toSitePath("00-assets/js/gm-tour.js?v=1");
+    document.head.appendChild(tourScript);
+  }
 })();
