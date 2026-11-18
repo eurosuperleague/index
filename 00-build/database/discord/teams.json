@@ -3,14 +3,14 @@
     "id": "roster9",
     "name": "AC Milan",
     "record": {
-      "wins": 4,
-      "losses": 11,
-      "pct": 0.267
+      "wins": 6,
+      "losses": 24,
+      "pct": 0.2
     },
     "section": "CLB Standings",
-    "pf": 103.3,
-    "pa": 109.9,
-    "diff": -6.5,
+    "pf": 103.4,
+    "pa": 114.3,
+    "diff": -10.9,
     "streak": "L1",
     "last10": "2-8",
     "starPlayer": {
@@ -27,42 +27,35 @@
     },
     "strengths": [
       {
-        "label": "O.Rebounds",
-        "value": 12.9,
-        "rank": 3
-      },
-      {
-        "label": "Rebounds",
-        "value": 40.9,
-        "rank": 3
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 28.0,
+        "label": "FT%",
+        "value": 0.764,
         "rank": 4
       },
       {
+        "label": "O.Rebounds",
+        "value": 11.5,
+        "rank": 5
+      },
+      {
+        "label": "D.Rebounds",
+        "value": 28.1,
+        "rank": 5
+      },
+      {
         "label": "Steals",
-        "value": 10.3,
+        "value": 10.0,
         "rank": 5
       }
     ],
-    "injuries": [
-      {
-        "name": "Cameron Thomas",
-        "pos": "SG",
-        "injury": "Pulled Hamstring",
-        "length": "3"
-      }
-    ],
+    "injuries": [],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "@Benfica 106, AC Milan 103",
-      "boxscoreFile": "box75-1.htm"
+      "date": "28/02/1989",
+      "text": "@Brighton 105, AC Milan 89",
+      "boxscoreFile": "box134-1.htm"
     },
     "nextGame": {
-      "date": "1/4/1989",
-      "text": "AC Milan @ Brighton",
+      "date": "4/03/1989",
+      "text": "ACF Fiorentina @ AC Milan",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster9"
@@ -71,16 +64,16 @@
     "id": "roster16",
     "name": "AC Sparta Praha",
     "record": {
-      "wins": 7,
-      "losses": 9,
-      "pct": 0.438
+      "wins": 15,
+      "losses": 14,
+      "pct": 0.517
     },
     "section": "ECL Standings",
-    "pf": 103.1,
-    "pa": 105.3,
-    "diff": -2.3,
-    "streak": "W1",
-    "last10": "4-6",
+    "pf": 100.2,
+    "pa": 101.3,
+    "diff": -1.2,
+    "streak": "L1",
+    "last10": "6-4",
     "starPlayer": {
       "name": "Doug Christie",
       "url": "../players/player243.htm",
@@ -96,34 +89,34 @@
     "strengths": [
       {
         "label": "O.Rebounds",
-        "value": 13.2,
+        "value": 13.4,
+        "rank": 2
+      },
+      {
+        "label": "Turnovers",
+        "value": 14.1,
         "rank": 2
       },
       {
         "label": "Rebounds",
-        "value": 41.6,
+        "value": 42.5,
         "rank": 3
       },
       {
         "label": "Steals",
-        "value": 8.7,
-        "rank": 3
-      },
-      {
-        "label": "Turnovers",
-        "value": 14.9,
-        "rank": 3
+        "value": 8.3,
+        "rank": 4
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "12/29/1988",
-      "text": "@AC Sparta Praha 102, Marseille 96",
-      "boxscoreFile": "box73-1.htm"
+      "date": "25/02/1989",
+      "text": "Manchester United 103, @AC Sparta Praha 97",
+      "boxscoreFile": "box131-4.htm"
     },
     "nextGame": {
-      "date": "1/5/1989",
-      "text": "Marseille @ AC Sparta Praha",
+      "date": "2/03/1989",
+      "text": "AC Sparta Praha @ Valencia",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster16"
@@ -132,16 +125,16 @@
     "id": "roster7",
     "name": "ACF Fiorentina",
     "record": {
-      "wins": 8,
-      "losses": 8,
-      "pct": 0.5
+      "wins": 15,
+      "losses": 14,
+      "pct": 0.517
     },
     "section": "CLB Standings",
-    "pf": 107.3,
-    "pa": 105.8,
-    "diff": 1.5,
-    "streak": "W1",
-    "last10": "5-5",
+    "pf": 106.9,
+    "pa": 105.3,
+    "diff": 1.6,
+    "streak": "L2",
+    "last10": "4-6",
     "starPlayer": {
       "name": "Otis Thorpe",
       "url": "../players/player178.htm",
@@ -156,42 +149,35 @@
     },
     "strengths": [
       {
-        "label": "FG%",
-        "value": 0.523,
+        "label": "Steals",
+        "value": 11.7,
         "rank": 2
       },
       {
         "label": "Blocks",
         "value": 8.9,
-        "rank": 3
+        "rank": 2
+      },
+      {
+        "label": "FG%",
+        "value": 0.525,
+        "rank": 2
       },
       {
         "label": "O.Rebounds",
-        "value": 12.8,
-        "rank": 4
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 28.0,
-        "rank": 4
+        "value": 12.4,
+        "rank": 3
       }
     ],
-    "injuries": [
-      {
-        "name": "Jawann Oldham",
-        "pos": "C",
-        "injury": "Hernia",
-        "length": "50"
-      }
-    ],
+    "injuries": [],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "@ACF Fiorentina 99, Brighton 70",
-      "boxscoreFile": "box75-3.htm"
+      "date": "26/02/1989",
+      "text": "Real Madrid 118, @ACF Fiorentina 111",
+      "boxscoreFile": "box132-1.htm"
     },
     "nextGame": {
-      "date": "1/2/1989",
-      "text": "Barcelona @ ACF Fiorentina",
+      "date": "3/03/1989",
+      "text": "Benfica @ ACF Fiorentina",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster7"
@@ -200,16 +186,16 @@
     "id": "roster12",
     "name": "AFC Richmond",
     "record": {
-      "wins": 8,
-      "losses": 8,
-      "pct": 0.5
+      "wins": 11,
+      "losses": 18,
+      "pct": 0.379
     },
     "section": "ELB Standings",
-    "pf": 113.5,
-    "pa": 115.9,
-    "diff": -2.4,
-    "streak": "W1",
-    "last10": "5-5",
+    "pf": 111.0,
+    "pa": 116.8,
+    "diff": -5.8,
+    "streak": "L2",
+    "last10": "3-7",
     "starPlayer": {
       "name": "Michael Cooper",
       "url": "../players/player705.htm",
@@ -224,42 +210,35 @@
     },
     "strengths": [
       {
-        "label": "Assists",
-        "value": 29.4,
-        "rank": 2
-      },
-      {
         "label": "FG%",
-        "value": 0.515,
+        "value": 0.5,
         "rank": 2
       },
       {
         "label": "Points Per Shot",
-        "value": 1.28,
+        "value": 1.24,
         "rank": 2
       },
       {
-        "label": "Adjusted FG%",
-        "value": 0.541,
-        "rank": 2
-      }
-    ],
-    "injuries": [
+        "label": "O.Rebounds",
+        "value": 12.9,
+        "rank": 3
+      },
       {
-        "name": "Sterling Brown",
-        "pos": "SG",
-        "injury": "Broken Foot",
-        "length": "23"
+        "label": "Steals",
+        "value": 9.2,
+        "rank": 3
       }
     ],
+    "injuries": [],
     "recentGame": {
-      "date": "12/30/1988",
-      "text": "@AFC Richmond 112, Inter Milan 111",
-      "boxscoreFile": "box74-1.htm"
+      "date": "25/02/1989",
+      "text": "@Crystal Palace 143, AFC Richmond 121",
+      "boxscoreFile": "box131-2.htm"
     },
     "nextGame": {
-      "date": "1/4/1989",
-      "text": "Monaco @ AFC Richmond",
+      "date": "1/03/1989",
+      "text": "AFC Richmond @ Crystal Palace",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster12"
@@ -268,15 +247,15 @@
     "id": "roster18",
     "name": "Ajax",
     "record": {
-      "wins": 2,
-      "losses": 14,
-      "pct": 0.125
+      "wins": 5,
+      "losses": 24,
+      "pct": 0.172
     },
     "section": "ELB Standings",
-    "pf": 99.2,
-    "pa": 118.0,
-    "diff": -18.8,
-    "streak": "L1",
+    "pf": 104.0,
+    "pa": 118.3,
+    "diff": -14.3,
+    "streak": "L2",
     "last10": "1-9",
     "starPlayer": {
       "name": "Andrew Toney",
@@ -293,31 +272,41 @@
     "strengths": [
       {
         "label": "3PT%",
-        "value": 0.346,
-        "rank": 4
+        "value": 0.366,
+        "rank": 2
+      },
+      {
+        "label": "Assists",
+        "value": 28.8,
+        "rank": 3
       },
       {
         "label": "Adjusted FG%",
-        "value": 0.514,
+        "value": 0.532,
+        "rank": 3
+      },
+      {
+        "label": "FG%",
+        "value": 0.486,
         "rank": 5
       }
     ],
     "injuries": [
       {
-        "name": "Sion James",
-        "pos": "SG",
-        "injury": "Torn Abdominal Muscle",
-        "length": "14"
+        "name": "Scott Skiles",
+        "pos": "PG",
+        "injury": "Bulging Disc",
+        "length": "55"
       }
     ],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "@Chelsea 123, Ajax 92",
-      "boxscoreFile": "box75-5.htm"
+      "date": "24/02/1989",
+      "text": "@Crystal Palace 122, Ajax 97",
+      "boxscoreFile": "box130-2.htm"
     },
     "nextGame": {
-      "date": "1/1/1989",
-      "text": "Ajax @ FL Fart",
+      "date": "1/03/1989",
+      "text": "Inter Milan @ Ajax",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster18"
@@ -326,16 +315,16 @@
     "id": "roster23",
     "name": "Arsenal",
     "record": {
-      "wins": 12,
-      "losses": 5,
-      "pct": 0.706
+      "wins": 19,
+      "losses": 10,
+      "pct": 0.655
     },
     "section": "CLB Standings",
-    "pf": 109.5,
-    "pa": 109.0,
-    "diff": 0.5,
+    "pf": 108.6,
+    "pa": 108.8,
+    "diff": -0.2,
     "streak": "W1",
-    "last10": "6-4",
+    "last10": "5-5",
     "starPlayer": {
       "name": "Reggie Theus",
       "url": "../players/player708.htm",
@@ -350,35 +339,35 @@
     },
     "strengths": [
       {
-        "label": "Turnovers",
-        "value": 16.5,
-        "rank": 1
-      },
-      {
         "label": "Fouls",
-        "value": 15.7,
+        "value": 16.3,
         "rank": 1
       },
       {
         "label": "Blocks",
-        "value": 8.9,
-        "rank": 2
+        "value": 8.8,
+        "rank": 3
+      },
+      {
+        "label": "Turnovers",
+        "value": 17.2,
+        "rank": 3
       },
       {
         "label": "FT%",
-        "value": 0.773,
+        "value": 0.78,
         "rank": 3
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "@Arsenal 113, Paris Saint-Germain 105",
-      "boxscoreFile": "box75-2.htm"
+      "date": "25/02/1989",
+      "text": "@Arsenal 91, Brighton 86",
+      "boxscoreFile": "box131-1.htm"
     },
     "nextGame": {
-      "date": "1/4/1989",
-      "text": "Benfica @ Arsenal",
+      "date": "4/03/1989",
+      "text": "Arsenal @ Real Madrid",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster23"
@@ -387,16 +376,16 @@
     "id": "roster19",
     "name": "Aston Villa",
     "record": {
-      "wins": 8,
-      "losses": 6,
+      "wins": 16,
+      "losses": 12,
       "pct": 0.571
     },
     "section": "ECL Standings",
-    "pf": 108.0,
-    "pa": 108.8,
-    "diff": -0.8,
-    "streak": "W3",
-    "last10": "6-4",
+    "pf": 105.7,
+    "pa": 107.7,
+    "diff": -2.0,
+    "streak": "W2",
+    "last10": "4-6",
     "starPlayer": {
       "name": "Xavier McDaniel",
       "url": "../players/player238.htm",
@@ -412,34 +401,47 @@
     "strengths": [
       {
         "label": "O.Rebounds",
-        "value": 13.4,
+        "value": 13.5,
         "rank": 1
       },
       {
-        "label": "Points",
-        "value": 108.0,
-        "rank": 2
-      },
-      {
-        "label": "Turnovers",
-        "value": 13.9,
-        "rank": 2
+        "label": "Steals",
+        "value": 8.7,
+        "rank": 1
       },
       {
         "label": "FT%",
-        "value": 0.76,
+        "value": 0.768,
+        "rank": 2
+      },
+      {
+        "label": "Points",
+        "value": 105.7,
         "rank": 3
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Chauncey Billups",
+        "pos": "SG",
+        "injury": "Broken Arm",
+        "length": "29"
+      },
+      {
+        "name": "Anthony Morrow",
+        "pos": "SF",
+        "injury": "Broken Ankle",
+        "length": "23"
+      }
+    ],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "Aston Villa 117, @Marseille 116",
-      "boxscoreFile": "box75-7.htm"
+      "date": "25/02/1989",
+      "text": "@Aston Villa 129, Marseille 106",
+      "boxscoreFile": "box131-5.htm"
     },
     "nextGame": {
-      "date": "1/5/1989",
-      "text": "Tottenham Hotspur @ Aston Villa",
+      "date": "1/03/1989",
+      "text": "Juventus @ Aston Villa",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster19"
@@ -448,16 +450,16 @@
     "id": "roster11",
     "name": "Atletico Madrid",
     "record": {
-      "wins": 9,
-      "losses": 7,
-      "pct": 0.563
+      "wins": 15,
+      "losses": 14,
+      "pct": 0.517
     },
     "section": "ECL Standings",
-    "pf": 107.2,
-    "pa": 99.9,
-    "diff": 7.3,
-    "streak": "W1",
-    "last10": "6-4",
+    "pf": 106.2,
+    "pa": 99.4,
+    "diff": 6.8,
+    "streak": "L3",
+    "last10": "5-5",
     "starPlayer": {
       "name": "Reggie Miller",
       "url": "../players/player55.htm",
@@ -472,35 +474,42 @@
     },
     "strengths": [
       {
-        "label": "Assists",
-        "value": 27.1,
+        "label": "Adjusted FG%",
+        "value": 0.531,
         "rank": 1
-      },
-      {
-        "label": "Steals",
-        "value": 8.9,
-        "rank": 1
-      },
-      {
-        "label": "Points Per Shot",
-        "value": 1.26,
-        "rank": 2
       },
       {
         "label": "Points",
-        "value": 107.2,
-        "rank": 3
+        "value": 106.2,
+        "rank": 2
+      },
+      {
+        "label": "D.Rebounds",
+        "value": 30.0,
+        "rank": 2
+      },
+      {
+        "label": "Assists",
+        "value": 26.6,
+        "rank": 2
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Johnny Moore",
+        "pos": "PG",
+        "injury": "Sprained Ankle",
+        "length": "4"
+      }
+    ],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "@Atletico Madrid 118, Juventus 99",
-      "boxscoreFile": "box75-6.htm"
+      "date": "25/02/1989",
+      "text": "@Tottenham Hotspur 113, Atletico Madrid 110",
+      "boxscoreFile": "box131-6.htm"
     },
     "nextGame": {
-      "date": "1/4/1989",
-      "text": "Atletico Madrid @ Juventus",
+      "date": "1/03/1989",
+      "text": "Atletico Madrid @ Tottenham Hotspur",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster11"
@@ -509,16 +518,16 @@
     "id": "roster24",
     "name": "Barcelona",
     "record": {
-      "wins": 5,
-      "losses": 11,
-      "pct": 0.313
+      "wins": 10,
+      "losses": 21,
+      "pct": 0.323
     },
     "section": "CLB Standings",
-    "pf": 111.7,
-    "pa": 113.6,
-    "diff": -1.9,
-    "streak": "L4",
-    "last10": "5-5",
+    "pf": 114.5,
+    "pa": 117.0,
+    "diff": -2.5,
+    "streak": "L2",
+    "last10": "3-7",
     "starPlayer": {
       "name": "Paul Pierce",
       "url": "../players/player693.htm",
@@ -533,35 +542,35 @@
     },
     "strengths": [
       {
-        "label": "Points Per Shot",
-        "value": 1.35,
+        "label": "FG%",
+        "value": 0.531,
         "rank": 1
       },
       {
-        "label": "Points",
-        "value": 111.7,
-        "rank": 2
-      },
-      {
-        "label": "D.Rebounds",
-        "value": 28.8,
-        "rank": 2
+        "label": "Points Per Shot",
+        "value": 1.4,
+        "rank": 1
       },
       {
         "label": "Adjusted FG%",
-        "value": 0.55,
+        "value": 0.562,
         "rank": 2
+      },
+      {
+        "label": "Points",
+        "value": 114.5,
+        "rank": 3
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "12/27/1988",
-      "text": "@AC Milan 120, Barcelona 106",
-      "boxscoreFile": "box71-3.htm"
+      "date": "28/02/1989",
+      "text": "Real Madrid 138, @Barcelona 133",
+      "boxscoreFile": "box134-3.htm"
     },
     "nextGame": {
-      "date": "1/2/1989",
-      "text": "Barcelona @ ACF Fiorentina",
+      "date": "4/03/1989",
+      "text": "Barcelona @ Paris Saint-Germain",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster24"
@@ -570,16 +579,16 @@
     "id": "roster13",
     "name": "Benfica",
     "record": {
-      "wins": 3,
-      "losses": 12,
-      "pct": 0.2
+      "wins": 9,
+      "losses": 20,
+      "pct": 0.31
     },
     "section": "CLB Standings",
-    "pf": 105.9,
-    "pa": 116.1,
-    "diff": -10.1,
-    "streak": "W3",
-    "last10": "3-7",
+    "pf": 107.8,
+    "pa": 113.4,
+    "diff": -5.6,
+    "streak": "W1",
+    "last10": "5-5",
     "starPlayer": {
       "name": "J.J. Redick",
       "url": "../players/player373.htm",
@@ -595,34 +604,41 @@
     "strengths": [
       {
         "label": "3PT%",
-        "value": 0.412,
-        "rank": 2
+        "value": 0.41,
+        "rank": 1
       },
       {
-        "label": "Assists",
-        "value": 28.7,
+        "label": "Rebounds",
+        "value": 40.3,
         "rank": 3
       },
       {
-        "label": "Adjusted FG%",
-        "value": 0.526,
-        "rank": 4
+        "label": "Assists",
+        "value": 29.0,
+        "rank": 3
       },
       {
         "label": "O.Rebounds",
-        "value": 12.5,
-        "rank": 5
+        "value": 12.0,
+        "rank": 4
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Andre Iguodala",
+        "pos": "PF",
+        "injury": "Groin Pull",
+        "length": "8"
+      }
+    ],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "@Benfica 106, AC Milan 103",
-      "boxscoreFile": "box75-1.htm"
+      "date": "28/02/1989",
+      "text": "@Benfica 102, Paris Saint-Germain 100",
+      "boxscoreFile": "box134-2.htm"
     },
     "nextGame": {
-      "date": "1/4/1989",
-      "text": "Benfica @ Arsenal",
+      "date": "3/03/1989",
+      "text": "Benfica @ ACF Fiorentina",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster13"
@@ -631,21 +647,21 @@
     "id": "roster10",
     "name": "Brighton",
     "record": {
-      "wins": 11,
-      "losses": 4,
-      "pct": 0.733
+      "wins": 18,
+      "losses": 11,
+      "pct": 0.621
     },
     "section": "CLB Standings",
-    "pf": 105.8,
-    "pa": 103.7,
-    "diff": 2.1,
-    "streak": "L2",
-    "last10": "6-4",
+    "pf": 106.5,
+    "pa": 106.2,
+    "diff": 0.3,
+    "streak": "W1",
+    "last10": "3-7",
     "starPlayer": {
       "name": "Kiki Vandeweghe",
       "url": "../players/player701.htm",
       "pos": "SF",
-      "age": "28",
+      "age": "29",
       "overall": "174",
       "potential": "174"
     },
@@ -660,30 +676,37 @@
         "rank": 1
       },
       {
-        "label": "Steals",
-        "value": 11.2,
-        "rank": 2
-      },
-      {
-        "label": "FT%",
-        "value": 0.775,
-        "rank": 2
+        "label": "Turnovers",
+        "value": 16.7,
+        "rank": 1
       },
       {
         "label": "D.Rebounds",
-        "value": 28.5,
+        "value": 28.9,
+        "rank": 2
+      },
+      {
+        "label": "Steals",
+        "value": 11.0,
         "rank": 3
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Mike Conley",
+        "pos": "SG",
+        "injury": "Broken Foot",
+        "length": "54"
+      }
+    ],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "@ACF Fiorentina 99, Brighton 70",
-      "boxscoreFile": "box75-3.htm"
+      "date": "28/02/1989",
+      "text": "@Brighton 105, AC Milan 89",
+      "boxscoreFile": "box134-1.htm"
     },
     "nextGame": {
-      "date": "1/4/1989",
-      "text": "AC Milan @ Brighton",
+      "date": "4/03/1989",
+      "text": "Brighton @ Benfica",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster10"
@@ -692,16 +715,16 @@
     "id": "roster17",
     "name": "Chelsea",
     "record": {
-      "wins": 12,
-      "losses": 3,
-      "pct": 0.8
+      "wins": 20,
+      "losses": 7,
+      "pct": 0.741
     },
     "section": "ELB Standings",
-    "pf": 121.7,
-    "pa": 109.4,
-    "diff": 12.3,
-    "streak": "W1",
-    "last10": "8-2",
+    "pf": 118.4,
+    "pa": 111.1,
+    "diff": 7.3,
+    "streak": "W4",
+    "last10": "7-3",
     "starPlayer": {
       "name": "Jim Paxson",
       "url": "../players/player875.htm",
@@ -717,47 +740,34 @@
     "strengths": [
       {
         "label": "Points",
-        "value": 121.7,
+        "value": 118.4,
         "rank": 1
       },
       {
         "label": "Assists",
-        "value": 30.5,
+        "value": 30.4,
         "rank": 1
       },
       {
         "label": "FG%",
-        "value": 0.553,
+        "value": 0.538,
         "rank": 1
       },
       {
         "label": "Points Per Shot",
-        "value": 1.42,
+        "value": 1.35,
         "rank": 1
       }
     ],
-    "injuries": [
-      {
-        "name": "Greg Oden",
-        "pos": "C",
-        "injury": "Torn Ligament",
-        "length": "20"
-      },
-      {
-        "name": "Charles Barkley",
-        "pos": "PF",
-        "injury": "Sprained Ankle",
-        "length": "10"
-      }
-    ],
+    "injuries": [],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "@Chelsea 123, Ajax 92",
-      "boxscoreFile": "box75-5.htm"
+      "date": "23/02/1989",
+      "text": "Chelsea 124, @Manchester City 108",
+      "boxscoreFile": "box129-3.htm"
     },
     "nextGame": {
-      "date": "1/4/1989",
-      "text": "Manchester City @ Chelsea",
+      "date": "2/03/1989",
+      "text": "Chelsea @ Inter Milan",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster17"
@@ -766,21 +776,21 @@
     "id": "roster6",
     "name": "Crystal Palace",
     "record": {
-      "wins": 7,
-      "losses": 7,
-      "pct": 0.5
+      "wins": 15,
+      "losses": 14,
+      "pct": 0.517
     },
     "section": "ELB Standings",
-    "pf": 116.8,
-    "pa": 117.6,
-    "diff": -0.8,
-    "streak": "W1",
-    "last10": "4-6",
+    "pf": 114.9,
+    "pa": 116.3,
+    "diff": -1.4,
+    "streak": "W2",
+    "last10": "6-4",
     "starPlayer": {
       "name": "Rolando Blackman",
       "url": "../players/player871.htm",
       "pos": "SF",
-      "age": "27",
+      "age": "28",
       "overall": "157",
       "potential": "157"
     },
@@ -791,41 +801,34 @@
     "strengths": [
       {
         "label": "Steals",
-        "value": 9.8,
+        "value": 10.5,
         "rank": 1
       },
       {
         "label": "3PT%",
-        "value": 0.395,
+        "value": 0.37,
         "rank": 1
       },
       {
         "label": "Points",
-        "value": 116.8,
+        "value": 114.9,
         "rank": 3
       },
       {
-        "label": "FG%",
-        "value": 0.495,
-        "rank": 3
+        "label": "O.Rebounds",
+        "value": 12.5,
+        "rank": 4
       }
     ],
-    "injuries": [
-      {
-        "name": "Rolando Blackman",
-        "pos": "SF",
-        "injury": "Dislocated Shoulder",
-        "length": "15"
-      }
-    ],
+    "injuries": [],
     "recentGame": {
-      "date": "12/27/1988",
-      "text": "Crystal Palace 103, @Monaco 99",
-      "boxscoreFile": "box71-5.htm"
+      "date": "25/02/1989",
+      "text": "@Crystal Palace 143, AFC Richmond 121",
+      "boxscoreFile": "box131-2.htm"
     },
     "nextGame": {
-      "date": "1/3/1989",
-      "text": "Crystal Palace @ Inter Milan",
+      "date": "1/03/1989",
+      "text": "AFC Richmond @ Crystal Palace",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster6"
@@ -834,21 +837,21 @@
     "id": "roster27",
     "name": "FL Fart",
     "record": {
-      "wins": 9,
-      "losses": 5,
-      "pct": 0.643
+      "wins": 17,
+      "losses": 11,
+      "pct": 0.607
     },
     "section": "ELB Standings",
-    "pf": 113.1,
-    "pa": 105.6,
-    "diff": 7.5,
-    "streak": "L1",
-    "last10": "7-3",
+    "pf": 112.6,
+    "pa": 105.8,
+    "diff": 6.8,
+    "streak": "W4",
+    "last10": "6-4",
     "starPlayer": {
       "name": "Eddie Johnson",
       "url": "../players/player704.htm",
       "pos": "SF",
-      "age": "27",
+      "age": "28",
       "overall": "144",
       "potential": "144"
     },
@@ -859,34 +862,41 @@
     "strengths": [
       {
         "label": "Blocks",
-        "value": 8.2,
+        "value": 8.6,
+        "rank": 1
+      },
+      {
+        "label": "Turnovers",
+        "value": 15.6,
         "rank": 1
       },
       {
         "label": "FT%",
-        "value": 0.786,
+        "value": 0.8,
         "rank": 1
       },
       {
         "label": "O.Rebounds",
-        "value": 12.9,
-        "rank": 2
-      },
-      {
-        "label": "Fouls",
-        "value": 18.8,
+        "value": 13.5,
         "rank": 2
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "John Long",
+        "pos": "SG",
+        "injury": "Broken Foot",
+        "length": "36"
+      }
+    ],
     "recentGame": {
-      "date": "12/26/1988",
-      "text": "Inter Milan 145, @FL Fart 123",
-      "boxscoreFile": "box70-2.htm"
+      "date": "27/02/1989",
+      "text": "@FL Fart 119, Manchester City 82",
+      "boxscoreFile": "box133-1.htm"
     },
     "nextGame": {
-      "date": "1/1/1989",
-      "text": "Ajax @ FL Fart",
+      "date": "3/03/1989",
+      "text": "FL Fart @ Chelsea",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster27"
@@ -895,15 +905,15 @@
     "id": "roster26",
     "name": "Inter Milan",
     "record": {
-      "wins": 10,
-      "losses": 7,
-      "pct": 0.588
+      "wins": 16,
+      "losses": 13,
+      "pct": 0.552
     },
     "section": "ELB Standings",
-    "pf": 118.1,
-    "pa": 113.6,
-    "diff": 4.5,
-    "streak": "L1",
+    "pf": 116.0,
+    "pa": 113.8,
+    "diff": 2.3,
+    "streak": "L4",
     "last10": "4-6",
     "starPlayer": {
       "name": "Moses Malone",
@@ -920,34 +930,34 @@
     "strengths": [
       {
         "label": "O.Rebounds",
-        "value": 16.6,
+        "value": 16.2,
         "rank": 1
       },
       {
         "label": "D.Rebounds",
-        "value": 33.0,
+        "value": 33.1,
         "rank": 1
       },
       {
         "label": "Rebounds",
-        "value": 49.6,
+        "value": 49.3,
         "rank": 1
       },
       {
         "label": "Points",
-        "value": 118.1,
+        "value": 116.0,
         "rank": 2
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "12/30/1988",
-      "text": "@AFC Richmond 112, Inter Milan 111",
-      "boxscoreFile": "box74-1.htm"
+      "date": "23/02/1989",
+      "text": "FL Fart 111, @Inter Milan 103",
+      "boxscoreFile": "box129-2.htm"
     },
     "nextGame": {
-      "date": "1/3/1989",
-      "text": "Crystal Palace @ Inter Milan",
+      "date": "1/03/1989",
+      "text": "Inter Milan @ Ajax",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster26"
@@ -956,15 +966,15 @@
     "id": "roster14",
     "name": "Juventus",
     "record": {
-      "wins": 7,
-      "losses": 8,
-      "pct": 0.467
+      "wins": 13,
+      "losses": 16,
+      "pct": 0.448
     },
     "section": "ECL Standings",
-    "pf": 104.3,
-    "pa": 107.1,
-    "diff": -2.8,
-    "streak": "L3",
+    "pf": 103.7,
+    "pa": 104.5,
+    "diff": -0.8,
+    "streak": "L1",
     "last10": "4-6",
     "starPlayer": {
       "name": "Jon Koncak",
@@ -981,7 +991,7 @@
     "strengths": [
       {
         "label": "D.Rebounds",
-        "value": 31.6,
+        "value": 31.3,
         "rank": 1
       },
       {
@@ -995,20 +1005,20 @@
         "rank": 1
       },
       {
-        "label": "Fouls",
-        "value": 18.9,
-        "rank": 3
+        "label": "FT%",
+        "value": 0.773,
+        "rank": 1
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "@Atletico Madrid 118, Juventus 99",
-      "boxscoreFile": "box75-6.htm"
+      "date": "25/02/1989",
+      "text": "@Valencia 115, Juventus 102",
+      "boxscoreFile": "box131-3.htm"
     },
     "nextGame": {
-      "date": "1/4/1989",
-      "text": "Atletico Madrid @ Juventus",
+      "date": "1/03/1989",
+      "text": "Juventus @ Aston Villa",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster14"
@@ -1017,66 +1027,72 @@
     "id": "roster28",
     "name": "Manchester City",
     "record": {
-      "wins": 6,
-      "losses": 10,
-      "pct": 0.375
+      "wins": 12,
+      "losses": 18,
+      "pct": 0.4
     },
     "section": "ELB Standings",
-    "pf": 103.9,
-    "pa": 106.7,
-    "diff": -2.8,
-    "streak": "L1",
-    "last10": "6-4",
+    "pf": 104.4,
+    "pa": 107.2,
+    "diff": -2.7,
+    "streak": "L4",
+    "last10": "3-7",
     "starPlayer": {
       "name": "Mike Gminski",
       "url": "../players/player722.htm",
       "pos": "C",
-      "age": "27",
+      "age": "28",
       "overall": "145",
       "potential": "146"
     },
     "cap": {
-      "salary": "$70,960,255",
-      "room": "($960,255)"
+      "salary": "$72,157,255",
+      "room": "($2,157,255)"
     },
     "strengths": [
       {
-        "label": "Turnovers",
-        "value": 14.9,
-        "rank": 1
-      },
-      {
         "label": "Fouls",
-        "value": 16.6,
+        "value": 16.7,
         "rank": 1
-      },
-      {
-        "label": "O.Rebounds",
-        "value": 12.3,
-        "rank": 3
       },
       {
         "label": "D.Rebounds",
-        "value": 31.3,
+        "value": 31.4,
+        "rank": 3
+      },
+      {
+        "label": "Turnovers",
+        "value": 16.2,
+        "rank": 3
+      },
+      {
+        "label": "3PT%",
+        "value": 0.358,
         "rank": 3
       }
     ],
     "injuries": [
       {
-        "name": "Eddy Curry",
-        "pos": "PF",
-        "injury": "Patellar Tendanitis",
-        "length": "17"
+        "name": "Luol Deng",
+        "pos": "SF",
+        "injury": "Broken Arm",
+        "length": "21"
+      },
+      {
+        "name": "Alexey Shved",
+        "pos": "SG",
+        "injury": "Strained Back",
+        "length": "13"
       }
     ],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "Monaco 103, @Manchester City 93",
-      "boxscoreFile": "box75-4.htm"
+      "date": "27/02/1989",
+      "text": "@FL Fart 119, Manchester City 82",
+      "boxscoreFile": "box133-1.htm"
     },
     "nextGame": {
-      "date": "1/4/1989",
-      "text": "Manchester City @ Chelsea",
+      "date": "5/03/1989",
+      "text": "Manchester City @ Ajax",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster28"
@@ -1085,16 +1101,16 @@
     "id": "roster5",
     "name": "Manchester United",
     "record": {
-      "wins": 7,
-      "losses": 9,
-      "pct": 0.438
+      "wins": 14,
+      "losses": 15,
+      "pct": 0.483
     },
     "section": "ECL Standings",
-    "pf": 99.8,
-    "pa": 101.0,
-    "diff": -1.2,
-    "streak": "W1",
-    "last10": "4-6",
+    "pf": 103.1,
+    "pa": 101.1,
+    "diff": 1.9,
+    "streak": "W2",
+    "last10": "6-4",
     "starPlayer": {
       "name": "Tony Parker",
       "url": "../players/player1327.htm",
@@ -1104,40 +1120,47 @@
       "potential": "129"
     },
     "cap": {
-      "salary": "$41,031,681",
-      "room": "$8,968,319"
+      "salary": "$38,076,681",
+      "room": "$11,923,319"
     },
     "strengths": [
       {
+        "label": "Assists",
+        "value": 27.6,
+        "rank": 1
+      },
+      {
         "label": "Turnovers",
-        "value": 13.3,
+        "value": 13.6,
         "rank": 1
       },
       {
         "label": "Fouls",
-        "value": 15.0,
+        "value": 15.7,
         "rank": 1
       },
       {
-        "label": "Assists",
-        "value": 25.9,
-        "rank": 4
-      },
-      {
-        "label": "Blocks",
-        "value": 5.0,
-        "rank": 4
+        "label": "FG%",
+        "value": 0.485,
+        "rank": 3
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Tony Parker",
+        "pos": "PG",
+        "injury": "Severe Migraines",
+        "length": "3"
+      }
+    ],
     "recentGame": {
-      "date": "12/30/1988",
-      "text": "@Manchester United 100, Valencia 90",
-      "boxscoreFile": "box74-2.htm"
+      "date": "25/02/1989",
+      "text": "Manchester United 103, @AC Sparta Praha 97",
+      "boxscoreFile": "box131-4.htm"
     },
     "nextGame": {
-      "date": "1/3/1989",
-      "text": "Valencia @ Manchester United",
+      "date": "1/03/1989",
+      "text": "Marseille @ Manchester United",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster5"
@@ -1146,21 +1169,21 @@
     "id": "roster15",
     "name": "Marseille",
     "record": {
-      "wins": 2,
-      "losses": 14,
-      "pct": 0.125
+      "wins": 7,
+      "losses": 21,
+      "pct": 0.25
     },
     "section": "ECL Standings",
-    "pf": 105.6,
-    "pa": 117.7,
-    "diff": -12.1,
-    "streak": "L7",
-    "last10": "1-9",
+    "pf": 104.0,
+    "pa": 113.7,
+    "diff": -9.7,
+    "streak": "L3",
+    "last10": "5-5",
     "starPlayer": {
       "name": "Anthony Black",
       "url": "../players/player351.htm",
       "pos": "SF",
-      "age": "22",
+      "age": "23",
       "overall": "130",
       "potential": "144"
     },
@@ -1170,35 +1193,35 @@
     },
     "strengths": [
       {
-        "label": "FT%",
-        "value": 0.764,
-        "rank": 2
-      },
-      {
         "label": "Points",
-        "value": 105.6,
-        "rank": 5
+        "value": 104.0,
+        "rank": 4
       },
       {
         "label": "O.Rebounds",
-        "value": 12.1,
-        "rank": 5
+        "value": 12.6,
+        "rank": 4
+      },
+      {
+        "label": "Rebounds",
+        "value": 42.1,
+        "rank": 4
       },
       {
         "label": "D.Rebounds",
-        "value": 28.6,
+        "value": 29.5,
         "rank": 5
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "Aston Villa 117, @Marseille 116",
-      "boxscoreFile": "box75-7.htm"
+      "date": "25/02/1989",
+      "text": "@Aston Villa 129, Marseille 106",
+      "boxscoreFile": "box131-5.htm"
     },
     "nextGame": {
-      "date": "1/5/1989",
-      "text": "Marseille @ AC Sparta Praha",
+      "date": "1/03/1989",
+      "text": "Marseille @ Manchester United",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster15"
@@ -1207,16 +1230,16 @@
     "id": "roster20",
     "name": "Monaco",
     "record": {
-      "wins": 8,
-      "losses": 8,
-      "pct": 0.5
+      "wins": 19,
+      "losses": 10,
+      "pct": 0.655
     },
     "section": "ELB Standings",
-    "pf": 104.2,
-    "pa": 102.4,
-    "diff": 1.8,
-    "streak": "W1",
-    "last10": "5-5",
+    "pf": 107.4,
+    "pa": 98.7,
+    "diff": 8.8,
+    "streak": "W5",
+    "last10": "9-1",
     "starPlayer": {
       "name": "Alvin Robertson",
       "url": "../players/player423.htm",
@@ -1231,35 +1254,35 @@
     },
     "strengths": [
       {
-        "label": "FT%",
-        "value": 0.786,
-        "rank": 1
+        "label": "D.Rebounds",
+        "value": 32.0,
+        "rank": 2
       },
       {
-        "label": "Steals",
-        "value": 9.7,
+        "label": "Rebounds",
+        "value": 43.9,
+        "rank": 2
+      },
+      {
+        "label": "Assists",
+        "value": 28.8,
         "rank": 2
       },
       {
         "label": "Blocks",
-        "value": 7.2,
+        "value": 8.3,
         "rank": 2
-      },
-      {
-        "label": "Turnovers",
-        "value": 16.1,
-        "rank": 3
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "Monaco 103, @Manchester City 93",
-      "boxscoreFile": "box75-4.htm"
+      "date": "24/02/1989",
+      "text": "@Monaco 106, AFC Richmond 100",
+      "boxscoreFile": "box130-3.htm"
     },
     "nextGame": {
-      "date": "1/4/1989",
-      "text": "Monaco @ AFC Richmond",
+      "date": "3/03/1989",
+      "text": "Ajax @ Monaco",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster20"
@@ -1268,21 +1291,21 @@
     "id": "roster21",
     "name": "Paris Saint-Germain",
     "record": {
-      "wins": 12,
-      "losses": 4,
-      "pct": 0.75
+      "wins": 22,
+      "losses": 8,
+      "pct": 0.733
     },
     "section": "CLB Standings",
-    "pf": 125.3,
-    "pa": 111.3,
-    "diff": 14.1,
+    "pf": 122.8,
+    "pa": 110.2,
+    "diff": 12.6,
     "streak": "L1",
     "last10": "7-3",
     "starPlayer": {
-      "name": "Larry Bird",
-      "url": "../players/player697.htm",
-      "pos": "PF",
-      "age": "29",
+      "name": "Brad Davis",
+      "url": "../players/player714.htm",
+      "pos": "PG",
+      "age": "30",
       "overall": "155",
       "potential": "155"
     },
@@ -1293,34 +1316,41 @@
     "strengths": [
       {
         "label": "Points",
-        "value": 125.3,
+        "value": 122.8,
         "rank": 1
       },
       {
         "label": "O.Rebounds",
-        "value": 13.7,
+        "value": 14.0,
         "rank": 1
       },
       {
         "label": "D.Rebounds",
-        "value": 29.3,
+        "value": 29.5,
         "rank": 1
       },
       {
         "label": "Rebounds",
-        "value": 43.0,
+        "value": 43.5,
         "rank": 1
       }
     ],
-    "injuries": [],
+    "injuries": [
+      {
+        "name": "Steve Johnson",
+        "pos": "C",
+        "injury": "Fractured Hip",
+        "length": "18"
+      }
+    ],
     "recentGame": {
-      "date": "12/31/1988",
-      "text": "@Arsenal 113, Paris Saint-Germain 105",
-      "boxscoreFile": "box75-2.htm"
+      "date": "28/02/1989",
+      "text": "@Benfica 102, Paris Saint-Germain 100",
+      "boxscoreFile": "box134-2.htm"
     },
     "nextGame": {
-      "date": "1/4/1989",
-      "text": "Real Madrid @ Paris Saint-Germain",
+      "date": "4/03/1989",
+      "text": "Barcelona @ Paris Saint-Germain",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster21"
@@ -1329,16 +1359,16 @@
     "id": "roster8",
     "name": "Real Madrid",
     "record": {
-      "wins": 7,
-      "losses": 7,
-      "pct": 0.5
+      "wins": 19,
+      "losses": 10,
+      "pct": 0.655
     },
     "section": "CLB Standings",
-    "pf": 111.5,
-    "pa": 112.1,
-    "diff": -0.6,
-    "streak": "W1",
-    "last10": "6-4",
+    "pf": 116.2,
+    "pa": 111.4,
+    "diff": 4.8,
+    "streak": "W8",
+    "last10": "9-1",
     "starPlayer": {
       "name": "Sidney Moncrief",
       "url": "../players/player699.htm",
@@ -1354,34 +1384,34 @@
     "strengths": [
       {
         "label": "Steals",
-        "value": 11.4,
+        "value": 11.9,
         "rank": 1
       },
       {
         "label": "FT%",
-        "value": 0.781,
+        "value": 0.806,
         "rank": 1
       },
       {
-        "label": "O.Rebounds",
-        "value": 13.6,
+        "label": "Points",
+        "value": 116.2,
         "rank": 2
       },
       {
-        "label": "Rebounds",
-        "value": 41.1,
+        "label": "O.Rebounds",
+        "value": 13.0,
         "rank": 2
       }
     ],
     "injuries": [],
     "recentGame": {
-      "date": "12/27/1988",
-      "text": "@Real Madrid 110, ACF Fiorentina 94",
-      "boxscoreFile": "box71-1.htm"
+      "date": "28/02/1989",
+      "text": "Real Madrid 138, @Barcelona 133",
+      "boxscoreFile": "box134-3.htm"
     },
     "nextGame": {
-      "date": "1/4/1989",
-      "text": "Real Madrid @ Paris Saint-Germain",
+      "date": "4/03/1989",
+      "text": "Arsenal @ Real Madrid",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster8"
@@ -1390,16 +1420,16 @@
     "id": "roster22",
     "name": "Tottenham Hotspur",
     "record": {
-      "wins": 11,
-      "losses": 5,
-      "pct": 0.688
+      "wins": 18,
+      "losses": 10,
+      "pct": 0.643
     },
     "section": "ECL Standings",
-    "pf": 107.0,
+    "pf": 104.0,
     "pa": 98.0,
-    "diff": 9.0,
-    "streak": "W4",
-    "last10": "7-3",
+    "diff": 6.0,
+    "streak": "W3",
+    "last10": "6-4",
     "starPlayer": {
       "name": "Hubert Davis",
       "url": "../players/player440.htm",
@@ -1414,42 +1444,35 @@
     },
     "strengths": [
       {
-        "label": "Steals",
-        "value": 8.9,
+        "label": "3PT%",
+        "value": 0.372,
         "rank": 1
       },
       {
-        "label": "D.Rebounds",
-        "value": 29.9,
+        "label": "Rebounds",
+        "value": 42.6,
         "rank": 2
       },
       {
-        "label": "Rebounds",
-        "value": 42.4,
+        "label": "Steals",
+        "value": 8.4,
         "rank": 2
       },
       {
         "label": "Blocks",
-        "value": 5.8,
+        "value": 6.0,
         "rank": 2
       }
     ],
-    "injuries": [
-      {
-        "name": "Hubert Davis",
-        "pos": "SF",
-        "injury": "Broken Foot",
-        "length": "12"
-      }
-    ],
+    "injuries": [],
     "recentGame": {
-      "date": "12/28/1988",
-      "text": "@Tottenham Hotspur 115, AC Sparta Praha 93",
-      "boxscoreFile": "box72-1.htm"
+      "date": "25/02/1989",
+      "text": "@Tottenham Hotspur 113, Atletico Madrid 110",
+      "boxscoreFile": "box131-6.htm"
     },
     "nextGame": {
-      "date": "1/5/1989",
-      "text": "Tottenham Hotspur @ Aston Villa",
+      "date": "1/03/1989",
+      "text": "Atletico Madrid @ Tottenham Hotspur",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster22"
@@ -1458,21 +1481,21 @@
     "id": "roster25",
     "name": "Valencia",
     "record": {
-      "wins": 10,
-      "losses": 3,
-      "pct": 0.769
+      "wins": 16,
+      "losses": 12,
+      "pct": 0.571
     },
     "section": "ECL Standings",
-    "pf": 112.8,
-    "pa": 109.6,
-    "diff": 3.2,
-    "streak": "L1",
-    "last10": "8-2",
+    "pf": 107.1,
+    "pa": 108.4,
+    "diff": -1.3,
+    "streak": "W1",
+    "last10": "5-5",
     "starPlayer": {
       "name": "Rod Higgins",
       "url": "../players/player103.htm",
       "pos": "SF",
-      "age": "23",
+      "age": "24",
       "overall": "121",
       "potential": "132"
     },
@@ -1483,41 +1506,34 @@
     "strengths": [
       {
         "label": "Points",
-        "value": 112.8,
+        "value": 107.1,
         "rank": 1
       },
       {
         "label": "FG%",
-        "value": 0.519,
+        "value": 0.497,
         "rank": 1
       },
       {
-        "label": "FT%",
-        "value": 0.766,
+        "label": "Points Per Shot",
+        "value": 1.32,
         "rank": 1
       },
       {
-        "label": "3PT%",
-        "value": 0.408,
-        "rank": 1
+        "label": "Fouls",
+        "value": 18.3,
+        "rank": 2
       }
     ],
-    "injuries": [
-      {
-        "name": "Rod Higgins",
-        "pos": "SF",
-        "injury": "Stress Fracture",
-        "length": "25"
-      }
-    ],
+    "injuries": [],
     "recentGame": {
-      "date": "12/30/1988",
-      "text": "@Manchester United 100, Valencia 90",
-      "boxscoreFile": "box74-2.htm"
+      "date": "25/02/1989",
+      "text": "@Valencia 115, Juventus 102",
+      "boxscoreFile": "box131-3.htm"
     },
     "nextGame": {
-      "date": "1/3/1989",
-      "text": "Valencia @ Manchester United",
+      "date": "2/03/1989",
+      "text": "AC Sparta Praha @ Valencia",
       "boxscoreFile": ""
     },
     "url": "https://eurosuperleague.github.io/index/00-assets/html/unified-roster.htm?id=roster25"
