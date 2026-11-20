@@ -7,21 +7,21 @@
       "teams": [
         {
           "name": "Paris Saint-Germain",
-          "wins": 22,
-          "losses": 8,
-          "streak": "L1"
-        },
-        {
-          "name": "Arsenal",
-          "wins": 19,
+          "wins": 27,
           "losses": 10,
-          "streak": "W1"
+          "streak": "W3"
         },
         {
           "name": "Real Madrid",
-          "wins": 19,
-          "losses": 10,
-          "streak": "W8"
+          "wins": 22,
+          "losses": 13,
+          "streak": "W2"
+        },
+        {
+          "name": "Arsenal",
+          "wins": 22,
+          "losses": 14,
+          "streak": "L1"
         }
       ]
     },
@@ -29,22 +29,22 @@
       "title": "ELB Standings",
       "teams": [
         {
-          "name": "Chelsea",
-          "wins": 20,
-          "losses": 7,
-          "streak": "W4"
-        },
-        {
           "name": "Monaco",
-          "wins": 19,
-          "losses": 10,
-          "streak": "W5"
+          "wins": 27,
+          "losses": 11,
+          "streak": "W2"
         },
         {
-          "name": "FL Fart",
-          "wins": 17,
-          "losses": 11,
-          "streak": "W4"
+          "name": "Chelsea",
+          "wins": 24,
+          "losses": 13,
+          "streak": "L1"
+        },
+        {
+          "name": "Inter Milan",
+          "wins": 21,
+          "losses": 17,
+          "streak": "L1"
         }
       ]
     },
@@ -53,21 +53,21 @@
       "teams": [
         {
           "name": "Tottenham Hotspur",
-          "wins": 18,
-          "losses": 10,
-          "streak": "W3"
+          "wins": 25,
+          "losses": 11,
+          "streak": "W4"
         },
         {
           "name": "Valencia",
-          "wins": 16,
-          "losses": 12,
-          "streak": "W1"
+          "wins": 22,
+          "losses": 14,
+          "streak": "W2"
         },
         {
-          "name": "Aston Villa",
-          "wins": 16,
-          "losses": 12,
-          "streak": "W2"
+          "name": "AC Sparta Praha",
+          "wins": 20,
+          "losses": 17,
+          "streak": "W1"
         }
       ]
     }
@@ -77,13 +77,13 @@
       "category": "Minutes",
       "player": "Brad Davis",
       "team": "Paris Saint-Germain",
-      "value": "41.0"
+      "value": "40.8"
     },
     {
       "category": "Points",
       "player": "Kiki Vandeweghe",
       "team": "Brighton",
-      "value": "34.6"
+      "value": "32.9"
     },
     {
       "category": "Rebounds",
@@ -95,13 +95,13 @@
       "category": "Assists",
       "player": "Allen Leavell",
       "team": "Real Madrid",
-      "value": "11.9"
+      "value": "11.8"
     },
     {
       "category": "Steals",
       "player": "Allen Leavell",
       "team": "Real Madrid",
-      "value": "3.1"
+      "value": "3.3"
     }
   ]
 }

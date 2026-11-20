@@ -148,7 +148,7 @@
             "name": "Kiki Vandeweghe",
             "url": "../players/player701.htm",
             "pos": "SF",
-            "age": "29",
+            "age": "28",
             "overall": "174",
             "potential": "174"
         }
@@ -190,7 +190,7 @@
             "name": "Eddie Johnson",
             "url": "../players/player704.htm",
             "pos": "SF",
-            "age": "28",
+            "age": "27",
             "overall": "144",
             "potential": "144"
         }
@@ -204,7 +204,7 @@
             "name": "Moses Malone",
             "url": "../players/player872.htm",
             "pos": "C",
-            "age": "31",
+            "age": "32",
             "overall": "149",
             "potential": "149"
         }
@@ -231,8 +231,8 @@
         "starPlayer": {
             "name": "Mike Gminski",
             "url": "../players/player722.htm",
-            "pos": "C",
-            "age": "28",
+            "pos": "PF",
+            "age": "27",
             "overall": "145",
             "potential": "146"
         }
